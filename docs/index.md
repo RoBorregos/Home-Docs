@@ -1,34 +1,208 @@
-# @Home
+# Welcome to RoBorregos @Home
 
-Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Group of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis.
+
+<script src="https://kit.fontawesome.com/db131c0a32.js" crossorigin="anonymous"></script>
+
+
+<p align="center">
+  <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
+</p>
+
+Welcome to the official documentation of [RoBorregos](https://roborregos.com), the Robotics Representative Group of [Tecnológico de Monterrey](https://tec.mx). Our project focuses on developing a multipurpose modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition.
 
 ## About the Competition
 
-The RoboCup@Home league is a part of the RoboCup initiative and is the largest annual competition for autonomous service robots. Its goal is to develop service and assistive robot technology for future domestic applications. The competition evaluates robots abilities in a realistic home environment through benchmark tests. 
-The focus areas include: 
+The RoboCup@Home league is the largest annual competition for autonomous service robots. It aims to develop service and assistive robot technology for future domestic applications. The competition evaluates robots' abilities in a realistic home environment through benchmark tests.
 
-- Human-Robot Interaction
-- Navigation and Mapping
-- Computer Vision
-- Object Manipulation
-- System Integration
- 
-The RoboCup@Home competition is divided into two categories: the [Domestic Standard Platform League](https://www.robocup.org/leagues/34) (DSPL) and the [Open Platform League](https://www.robocup.org/leagues/14) (OPL). Our team competes in the Open Platform League.
+<div id="carousel" class="carousel">
+  <div class="carousel-item active">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperset.com%2Fw%2Ffull%2F0%2Fd%2F5%2F183330.jpg&f=1&nofb=1&ipt=50ba9a4d1fae901a5f70f24a8b9b1e05611da1d973bd6745e9815a58b122e7d2&ipo=images" alt="Robot 1">
+  </div>
+  <div class="carousel-item">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FBackground-Beautiful-Nature-Images-HD.jpg&f=1&nofb=1&ipt=29b016f3f0afdd1949670fdc8822d2c4443c7ba7217b2f4aa958c44cd1408224&ipo=images" alt="Robot 2">
+  </div>
+  <div class="carousel-item">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2Fd%2F3%2Fc%2F968676-hi-res-background-images-2651x1813-retina.jpg&f=1&nofb=1&ipt=15b5fc8c260d4a408095a68eb30e4d555e97365461d15fda33046747699d3da2&ipo=images" alt="Robot 3">
+  </div>
+  <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
+  <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
+</div>
 
-In the [Open Platform League](https://www.robocup.org/leagues/14), we have the opportunity to explore and showcase our innovations and advancements without limitations on the choice of hardware platforms. This category allows us to push the boundaries of robotics and demonstrate our capabilities in a variety of areas.
+<style>
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
 
-## Project Objective
+.carousel-item {
+  display: none;
+  text-align: center;
+}
 
-The main objective is to actively research, integrate and develop state-of-the-art technologies in the field of robotics. Through our participation in the RoboCup@Home competition's Open Platform League, we aim to demonstrate our knowledge, skills, and innovative thinking in developing advanced robotic systems. By leveraging cutting-edge hardware and software, we strive to push the boundaries of current technology and create innovative solutions for real-world problems.
+.carousel-item.active {
+  display: block;
+}
 
-Each year, in order to qualify for the international competition, the team has to upload a Team Description Paper with the most important scientific contributions during the last months.
+.carousel img {
+  width: 400px;
+  height: 300px; 
+  object-fit: cover; 
+  border-radius: 15px; 
+}
 
-## Contributing
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2em;
+  color: black;
+  cursor: pointer;
+  user-select: none;
+}
 
-We welcome contributions from the open-source community. If you are interested in contributing to our project, please contact the team-members to explore how to get involved.
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+</style>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll('.carousel-item');
+
+function showSlide(index) {
+  slides[currentSlide].classList.remove('active');
+  currentSlide = (index + slides.length) % slides.length;
+  slides[currentSlide].classList.add('active');
+}
+
+function nextSlide() {
+  showSlide(currentSlide + 1);
+}
+
+function prevSlide() {
+  showSlide(currentSlide - 1);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  showSlide(currentSlide);
+});
+</script>
+
+## Explore Our Work
+
+<details>
+  <summary>Achievements from 2024</summary>
+  <ul>
+    <li><a href="docs/2024/index.md">Achievements from 2024</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Human-Robot Interaction</summary>
+  <ul>
+    <li><a href="docs/2023/Human%20Robot%20Interaction/index.md">Human-Robot Interaction</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Computer Vision</summary>
+  <ul>
+    <li><a href="docs/2022%20-%20Jun%202023/Computer%20Vision/index.md">Computer Vision</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Object Detection</summary>
+  <ul>
+    <li><a href="docs/2022%20-%20Jun%202023/Computer%20Vision/Object%20Detection/index.md">Object Detection</a></li>
+  </ul>
+</details>
+
+## Meet the Team
+
+<div class="team-section">
+  <div class="team-member">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 1" class="team-photo">
+    <div class="overlay">
+      <p>mini desc</p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 2" class="team-photo">
+    <div class="overlay">
+      <p>mini des.</p>
+    </div>
+  </div>
+  <div class="team-member">
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 3" class="team-photo">
+    <div class="overlay">
+      <p>mini desc.</p>
+    </div>
+  </div>
+</div>
+
+<style>
+.team-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+  justify-items: center;
+}
+
+.team-member {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  overflow: hidden;
+  border-radius: 0%;
+}
+
+.team-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 50%;
+  text-align: center;
+  padding: 10px;
+}
+
+.team-member:hover .overlay {
+  opacity: 1;
+}
+</style>
 
 ## Contact Us
-    
-If you have any questions, suggestions, or feedback regarding our project or this documentation, please feel free to reach out to us. 
 
-We hope you find our documentation helpful, and we wish you success in exploring and utilizing our software modules for the RoboCup@Home competition.
+If you have any questions, suggestions, or feedback, please feel free to reach out to us. We hope you find our documentation helpful and wish you success in exploring and utilizing our software modules for the RoboCup@Home competition.
+
+<div class="social-icons">
+  <a href="https://www.facebook.com/roborregos" target="_blank"><i class="fab fa-facebook"></i></a>
+  <i class="fa-brands fa-facebook"></i>
+  <a href="https://twitter.com/roborregos" target="_blank"><i class="fab fa-twitter"></i></a>
+  <a href="https://www.instagram.com/roborregos" target="_blank"><i class="fab fa-instagram"></i></a>
+  <a href="https://www.linkedin.com/company/roborregos" target="_blank"><i class="fab fa-linkedin"></i></a>
+</div>
+
