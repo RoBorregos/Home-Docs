@@ -6,7 +6,7 @@
 
 [Qualification video 2023-2024](https://www.youtube.com/watch?v=rPmSxZlzO78)
 
-[TDP 2024-2025]()
+[TDP 2024-2025](https://drive.google.com/file/d/10FyBgaWyursuGMaPBESxRaa4QKf1DSsK/view?usp=sharing)
 
 [Qualification video 2024-2025](https://www.youtube.com/watch?v=sLtIkkQiF9M&feature=youtu.be)
 
