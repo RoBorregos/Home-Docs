@@ -2,10 +2,18 @@
 
 Human-Robot Interaction (HRI) refers to the study and design of interactions between humans and robots. It encompasses the development of technologies, interfaces, and systems that enable effective communication, collaboration, and cooperation between humans and robots. HRI aims to create intuitive and natural ways for humans to interact with robots, allowing for seamless integration of robots into various domains such as healthcare, manufacturing, entertainment, and personal assistance.
 
+A general overview of the HRI Pipeline is showed as follows
+![Pipeline](/assets/home/HRI/HRI-Pipeline.jpeg)
+---
+
+- [ROS NODES DESCRITPION](#ROS-Nodes-Documentation)
+- [RUNNING THE SYSTEM](#Comprehensive-Instructions-for-Running-the-System)
+
+
+
 # ROS Nodes Documentation
 
 This document provides detailed documentation on the ROS nodes, their purpose, and usage. It covers all the ROS nodes and their tasks, providing comprehensive instructions for running the system.
-
 
 ## ROS Nodes in `ws/src/frida_language_processing/scripts`
 
@@ -93,7 +101,8 @@ This document provides detailed documentation on the ROS nodes, their purpose, a
   - Provides service: `/speech/service/raw_command`
   - Description: This node uses the Whisper model to transcribe audio to text.
 
-## Comprehensive Instructions for Running the System
+---
+# Comprehensive Instructions for Running the System
 
 1. **Setup Docker**:
    - Follow the instructions in `docker/README.md` to set up Docker and create the necessary containers.
