@@ -6,19 +6,6 @@ Human-Robot Interaction (HRI) refers to the study and design of interactions bet
 
 This document provides detailed documentation on the ROS nodes, their purpose, and usage. It covers all the ROS nodes and their tasks, providing comprehensive instructions for running the system.
 
-## Achievements from 2024
-This year, after being accepted to participate in RoboCup 2024 held in Eindhoven, Netherlands, the team focused on developing a robust and reliable set of software modules, tailored to the specific needs for the tasks for the updated rulebook. This approach had the purpose of showcasing a functional robot for both the Mexican Robotics Tournament (April; Monterrey, Mexico) and the RoboCup (July; Eindhoven, Netherlands).
-
-The robot was renamed as FRIDA (Friendly Robotic Interactive Domestic Assistant), an acronym reflecting the purpose of the robot, and the name in reference to Mexican culture.
-
-With the vast knowledge acquired during the international tournament, the team defined the new objectives for the remainder of the year to be: an increased focus on research and literature review, and centralized and offline refactorization of the software and systems.
-
-## Human-Robot Interaction
-### Natural Language Processing
-Following the update of the GPSR task, a new model was fine-tuned to cover more complex scenarios, using the GPT-3.5 API as the base. The package `frida_language_processing` was created, with the command interpreter capable of storing context throughout the execution, a cleaner implementation of the embeddings match process for actual items in the scene, and specific features for the Receptionist task.
-
-### Speech
-The speech package was enhanced to include various functionalities such as audio capturing, text-to-speech, keyword spotting, and speech-to-text using the Whisper model.
 
 ## ROS Nodes in `ws/src/frida_language_processing/scripts`
 
