@@ -8,7 +8,7 @@
   <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
 </p>
 
-Welcome to the official documentation of [RoBorregos](https://roborregos.com), the Robotics Representative Group of [Tecnológico de Monterrey](https://tec.mx). Our project focuses on developing a multipurpose modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition.
+Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Team of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on researching and developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis and adapting this software architecture in affordable hardware.
 
 ## About the Competition
 
@@ -126,6 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
 ## Meet the team
 
+## Sections
+
+This project is divided into several sections, each focusing on a specific aspect of the competition and the history of our team. The sections are as follows:
+
+ - [Overview](/Overview): Provides an overview of the structure managed in the project. And how we are organized to achieve several tasks.
+ - [Areas](/Areas): Describes the main software and hardware modules develop by the team to achive the functionalities in the robot.
+ - [2022 - June 2023](/2022%20-%20Jun%202023): Describes the start of the project and how it has evolved over time.
+ - [2023](/2023)
+ - [2024](/2024)
+ - [Team Members](/Team): Lists the team members and their roles in the project. 
+
+## Contributing
+
 
 ## Contact Us
 
@@ -139,3 +152,4 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
   <a href="https://www.linkedin.com/company/roborregos" target="_blank"><i class="fab fa-linkedin"></i></a>
 </div>
 
+We hope you find our documentation helpful, and we wish you success in exploring and utilizing our software modules for the RoboCup@Home competition.
