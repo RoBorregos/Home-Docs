@@ -80,7 +80,6 @@
     <img src="https://roborregos.com/static/media/101.4772205eee89cf2404f7.jpg"/>
 </div>
 
-
 <div class="grid-cell">
     <h3>
       Kevin Vega
@@ -357,10 +356,50 @@
 
 <div class="grid-cell">
     <h3>
-        José Fregoso
+        Gerardo Fregoso
     </h3>
     <ul>
         <li>2024 Navigation, Manipulation, Integration and Networks</li>
+    </ul>
+    <img src=""/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandro González
+    </h3>
+    <ul>
+        <li>2024 Mechanics, Navigation, Manipulation</li>
+    </ul>
+    <img src=""/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        José Luis Domínguez
+    </h3>
+    <ul>
+        <li>2024 Navigation, Manipulation</li>
+    </ul>
+    <img src=""/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Jocelyn Velarde
+    </h3>
+    <ul>
+        <li>2024 Computer Vision</li>
+    </ul>
+    <img src=""/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Gilberto Malagamba
+    </h3>
+    <ul>
+        <li>2024 HRI</li>
     </ul>
     <img src=""/>
 </div>
