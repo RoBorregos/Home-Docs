@@ -1,8 +1,6 @@
 # Welcome to RoBorregos @Home
 
-
 <script src="https://kit.fontawesome.com/db131c0a32.js" crossorigin="anonymous"></script>
-
 
 <p align="center">
   <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
@@ -130,15 +128,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
 This project is divided into several sections, each focusing on a specific aspect of the competition and the history of our team. The sections are as follows:
 
- - [Overview](/Overview): Provides an overview of the structure managed in the project. And how we are organized to achieve several tasks.
- - [Areas](/Areas): Describes the main software and hardware modules develop by the team to achive the functionalities in the robot.
- - [2022 - June 2023](/2022%20-%20Jun%202023): Describes the start of the project and how it has evolved over time.
- - [2023](/2023)
- - [2024](/2024)
- - [Team Members](/Team): Lists the team members and their roles in the project. 
+- [Overview](/Overview): Provides an overview of the structure managed in the project. And how we are organized to achieve several tasks.
+- [Areas](/Areas): Describes the main software and hardware modules develop by the team to achive the functionalities in the robot.
+- [2022 - June 2023](/2022%20-%20Jun%202023): Describes the start of the project and how it has evolved over time.
+- [2023](/2023)
+- [2024](/2024)
+- [Team Members](/Team): Lists the team members and their roles in the project.
 
 ## Contributing
-
 
 ## Contact Us
 
