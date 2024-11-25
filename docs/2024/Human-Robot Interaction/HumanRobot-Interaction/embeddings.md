@@ -1,3 +1,13 @@
+## **Local Entities Similarity**
+  - Matches parsed command components (e.g., action, location, item) to the robot's context.
+  - Uses **embedding models** for semantic similarity with cosine similarity comparison.
+  - **Example**: "kitchen" inferred as "kitchen_table" if only "kitchen_table" and "office" exist.
+  - **Benchmarking**:
+    - Multiple embedding models evaluated for specific tasks.
+    - OpenAI text-embedding-3-small/large models used as a reference.
+    - Synonyms generated using GPT-4 for evaluation metrics.
+
+---
 # Embedding models benchmark#
 | MODEL                               | Accuracy (%) | Average embedding time (s) | Peak GPU Memory (MB) |
 |-------------------------------------|--------------|-----------------------------|-----------------------|

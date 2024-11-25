@@ -1,3 +1,11 @@
+## **Improved speech-to-text module**
+- Migration to **Faster-Whisper** after **benchmarking**:
+  - Improved speed (halved translation time).
+  - Higher accuracy in noisy environments.
+- **Dynamic Integration of "Hot Words"**:
+  - Context-specific vocabulary dynamically adjusted.
+  - Increases robustness and accuracy for uncommon terms.
+---
 # STT Benchmark#
 | File (10s)   | Size (MB) | Faster-whisper accuracy | Time (s) | Whisper accuracy | Time (s) |
 |--------------|-----------|-------------------------|----------|------------------|----------|
