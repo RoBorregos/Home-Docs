@@ -124,75 +124,8 @@ document.addEventListener('DOMContentLoaded', () => {
   </ul>
 </details>
 
-## Meet the Team
+## Meet the team
 
-<div class="team-section">
-  <div class="team-member">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 1" class="team-photo">
-    <div class="overlay">
-      <p>mini desc</p>
-    </div>
-  </div>
-  <div class="team-member">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 2" class="team-photo">
-    <div class="overlay">
-      <p>mini des.</p>
-    </div>
-  </div>
-  <div class="team-member">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 3" class="team-photo">
-    <div class="overlay">
-      <p>mini desc.</p>
-    </div>
-  </div>
-</div>
-
-<style>
-.team-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
-
-.team-member {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 0%;
-}
-
-.team-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 50%;
-  text-align: center;
-  padding: 10px;
-}
-
-.team-member:hover .overlay {
-  opacity: 1;
-}
-</style>
 
 ## Contact Us
 
