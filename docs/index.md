@@ -1,14 +1,12 @@
 # Welcome to RoBorregos @Home
 
-
 <script src="https://kit.fontawesome.com/db131c0a32.js" crossorigin="anonymous"></script>
-
 
 <p align="center">
   <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
 </p>
 
-Welcome to the official documentation of [RoBorregos](https://roborregos.com), the Robotics Representative Group of [Tecnológico de Monterrey](https://tec.mx). Our project focuses on developing a multipurpose modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition.
+Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Team of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on researching and developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis and adapting this software architecture in affordable hardware.
 
 ## About the Competition
 
@@ -124,75 +122,20 @@ document.addEventListener('DOMContentLoaded', () => {
   </ul>
 </details>
 
-## Meet the Team
+## Meet the team
 
-<div class="team-section">
-  <div class="team-member">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 1" class="team-photo">
-    <div class="overlay">
-      <p>mini desc</p>
-    </div>
-  </div>
-  <div class="team-member">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 2" class="team-photo">
-    <div class="overlay">
-      <p>mini des.</p>
-    </div>
-  </div>
-  <div class="team-member">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatic.vecteezy.com%2Fsystem%2Fresources%2Fpreviews%2F015%2F322%2F272%2Foriginal%2Fsmart-boy-character-isolated-flat-icon-illustration-png.png&f=1&nofb=1&ipt=87328062af9123e3488d9a0290f57bdb660ebb51acf14f052269de8000b908b7&ipo=images" alt="Member 3" class="team-photo">
-    <div class="overlay">
-      <p>mini desc.</p>
-    </div>
-  </div>
-</div>
+## Sections
 
-<style>
-.team-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
-  justify-items: center;
-}
+This project is divided into several sections, each focusing on a specific aspect of the competition and the history of our team. The sections are as follows:
 
-.team-member {
-  position: relative;
-  width: 150px;
-  height: 150px;
-  overflow: hidden;
-  border-radius: 0%;
-}
+- [Overview](/Overview): Provides an overview of the structure managed in the project. And how we are organized to achieve several tasks.
+- [Areas](/Areas): Describes the main software and hardware modules develop by the team to achive the functionalities in the robot.
+- [2022 - June 2023](/2022%20-%20Jun%202023): Describes the start of the project and how it has evolved over time.
+- [2023](/2023)
+- [2024](/2024)
+- [Team Members](/Team): Lists the team members and their roles in the project.
 
-.team-photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.7);
-  color: white;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-  border-radius: 50%;
-  text-align: center;
-  padding: 10px;
-}
-
-.team-member:hover .overlay {
-  opacity: 1;
-}
-</style>
+## Contributing
 
 ## Contact Us
 
@@ -206,3 +149,4 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
   <a href="https://www.linkedin.com/company/roborregos" target="_blank"><i class="fab fa-linkedin"></i></a>
 </div>
 
+We hope you find our documentation helpful, and we wish you success in exploring and utilizing our software modules for the RoboCup@Home competition.
