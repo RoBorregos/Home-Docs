@@ -97,28 +97,28 @@ document.addEventListener('DOMContentLoaded', () => {
 <details>
   <summary>Achievements from 2024</summary>
   <ul>
-    <li><a href="docs/2024/index.md">Achievements from 2024</a></li>
+    <li><a href="/docs/2024/index.md">Achievements from 2024</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Human-Robot Interaction</summary>
   <ul>
-    <li><a href="docs/2023/Human%20Robot%20Interaction/index.md">Human-Robot Interaction</a></li>
+    <li><a href="/docs/2024/Human%20Robot%20Interaction/index.md">Human-Robot Interaction</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Computer Vision</summary>
   <ul>
-    <li><a href="docs/2022%20-%20Jun%202023/Computer%20Vision/index.md">Computer Vision</a></li>
+    <li><a href="/docs/2024/Computer%20Vision/index.md">Computer Vision</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Object Detection</summary>
   <ul>
-    <li><a href="docs/2022%20-%20Jun%202023/Computer%20Vision/Object%20Detection/index.md">Object Detection</a></li>
+    <li><a href="/docs/2024/Navigation/index.md">Object Detection</a></li>
   </ul>
 </details>
 
