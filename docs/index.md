@@ -3,7 +3,7 @@
 <script src="https://kit.fontawesome.com/db131c0a32.js" crossorigin="anonymous"></script>
 
 <p align="center">
-  <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
+  <img src="./assets/logo.png" alt="RoBorregos Logo" width="200">
 </p>
 
 Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Team of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on researching and developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis and adapting this software architecture in affordable hardware.
@@ -97,32 +97,58 @@ document.addEventListener('DOMContentLoaded', () => {
 <details>
   <summary>Achievements from 2024</summary>
   <ul>
-    <li><a href="docs/2024/index.md">Achievements from 2024</a></li>
+    <li><a href="/docs/2024/index.md">Achievements from 2024</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Human-Robot Interaction</summary>
   <ul>
-    <li><a href="docs/2023/Human%20Robot%20Interaction/index.md">Human-Robot Interaction</a></li>
+    <li><a href="/docs/2024/Human%20Robot%20Interaction/index.md">Human-Robot Interaction</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Computer Vision</summary>
   <ul>
-    <li><a href="docs/2022%20-%20Jun%202023/Computer%20Vision/index.md">Computer Vision</a></li>
+    <li><a href="/docs/2024/Computer%20Vision/index.md">Computer Vision</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Object Detection</summary>
   <ul>
-    <li><a href="docs/2022%20-%20Jun%202023/Computer%20Vision/Object%20Detection/index.md">Object Detection</a></li>
+    <li><a href="/docs/2024/Navigation/index.md">Object Detection</a></li>
   </ul>
 </details>
 
 ## Meet the team
+
+
+| Name                       |  Role           |
+| -------------------------- | --------------- |
+| Alberto Muñoz | Professor |
+| Carlos Vázquez | Professor |
+| Gilberto Malagamba | Programmer |
+| Iván Romero | Programmer |
+| Oscar Arreola | Programmer |
+| Gerardo Fregoso | Programmer |
+| Adán Flores | Programmer |
+| Emiliano Flores | Programmer |
+| Alexis Chapa | Programmer |
+| Francisco Salas | Programmer |
+| David Vázquez | Programmer |
+| Diego Hernández | Programmer |
+| Marina Villanueva | Programmer |
+| José Domínguez | Programmer |
+| Jocelyn Velarde | Programmer |
+| Leonardo Llanas | Programmer |
+| Alejandra Coeto | Programmer|
+| Alejandro Guerrero | Mechanics|
+| Alejandro González | Mechanics|
+| Yair Reyes | Electronics|
+| Angel Cervantes | Electronics|
+
 
 ## Sections
 
