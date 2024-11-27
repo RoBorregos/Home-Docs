@@ -2,10 +2,6 @@
 
 <script src="https://kit.fontawesome.com/db131c0a32.js" crossorigin="anonymous"></script>
 
-<p align="center">
-  <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
-</p>
-
 Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Team of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on researching and developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis and adapting this software architecture in affordable hardware.
 
 <p align="center">
