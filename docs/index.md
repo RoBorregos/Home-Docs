@@ -3,10 +3,14 @@
 <script src="https://kit.fontawesome.com/db131c0a32.js" crossorigin="anonymous"></script>
 
 <p align="center">
-  <img src="./assets/logo.png" alt="RoBorregos Logo" width="200">
+  <img src="/assets/logo.png" alt="RoBorregos Logo" width="200">
 </p>
 
 Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Team of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on researching and developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis and adapting this software architecture in affordable hardware.
+
+<p align="center">
+  <img src="/assets/landing/TeamPicture.jpeg" alt="RoBorregos Logo">
+</p>
 
 ## About the Competition
 
@@ -14,13 +18,13 @@ The RoboCup@Home league is the largest annual competition for autonomous service
 
 <div id="carousel" class="carousel">
   <div class="carousel-item active">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpaperset.com%2Fw%2Ffull%2F0%2Fd%2F5%2F183330.jpg&f=1&nofb=1&ipt=50ba9a4d1fae901a5f70f24a8b9b1e05611da1d973bd6745e9815a58b122e7d2&ipo=images" alt="Robot 1">
+    <img src="/assets/mpPose.jpg" alt="Robot mmpose">
   </div>
   <div class="carousel-item">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.pixelstalk.net%2Fwp-content%2Fuploads%2F2016%2F07%2FBackground-Beautiful-Nature-Images-HD.jpg&f=1&nofb=1&ipt=29b016f3f0afdd1949670fdc8822d2c4443c7ba7217b2f4aa958c44cd1408224&ipo=images" alt="Robot 2">
+    <img src="/assets/home/ObjectDetection/Yolov5DetectionSample.png" alt="Detection">
   </div>
   <div class="carousel-item">
-    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallpapertag.com%2Fwallpaper%2Ffull%2Fd%2F3%2Fc%2F968676-hi-res-background-images-2651x1813-retina.jpg&f=1&nofb=1&ipt=15b5fc8c260d4a408095a68eb30e4d555e97365461d15fda33046747699d3da2&ipo=images" alt="Robot 3">
+    <img src="/assets/home/HRI/Display.png" alt="Robot Display">
   </div>
   <a class="carousel-control-prev" onclick="prevSlide()">&#10094;</a>
   <a class="carousel-control-next" onclick="nextSlide()">&#10095;</a>
@@ -97,58 +101,30 @@ document.addEventListener('DOMContentLoaded', () => {
 <details>
   <summary>Achievements from 2024</summary>
   <ul>
-    <li><a href="/docs/2024/index.md">Achievements from 2024</a></li>
+    <li><a href="2024/">Achievements from 2024</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Human-Robot Interaction</summary>
+  <summary>Achievements from 2023</summary>
   <ul>
-    <li><a href="/docs/2024/Human%20Robot%20Interaction/index.md">Human-Robot Interaction</a></li>
+    <li><a href="2023/">2023</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Computer Vision</summary>
+  <summary>Prior achievements</summary>
   <ul>
-    <li><a href="/docs/2024/Computer%20Vision/index.md">Computer Vision</a></li>
+    <li><a href="2022 - Jun 2023/">2022 - Jun 2023</a></li>
   </ul>
 </details>
 
 <details>
-  <summary>Object Detection</summary>
+  <summary>Videos of our robot</summary>
   <ul>
-    <li><a href="/docs/2024/Navigation/index.md">Object Detection</a></li>
+    <li><a href="Overview/Media/">Media</a></li>
   </ul>
 </details>
-
-## Meet the team
-
-
-| Name                       |  Role           |
-| -------------------------- | --------------- |
-| Alberto Muñoz | Professor |
-| Carlos Vázquez | Professor |
-| Gilberto Malagamba | Programmer |
-| Iván Romero | Programmer |
-| Oscar Arreola | Programmer |
-| Gerardo Fregoso | Programmer |
-| Adán Flores | Programmer |
-| Emiliano Flores | Programmer |
-| Alexis Chapa | Programmer |
-| Francisco Salas | Programmer |
-| David Vázquez | Programmer |
-| Diego Hernández | Programmer |
-| Marina Villanueva | Programmer |
-| José Domínguez | Programmer |
-| Jocelyn Velarde | Programmer |
-| Leonardo Llanas | Programmer |
-| Alejandra Coeto | Programmer|
-| Alejandro Guerrero | Mechanics|
-| Alejandro González | Mechanics|
-| Yair Reyes | Electronics|
-| Angel Cervantes | Electronics|
-
 
 ## Sections
 
@@ -162,6 +138,8 @@ This project is divided into several sections, each focusing on a specific aspec
 - [Team Members](/Team): Lists the team members and their roles in the project.
 
 ## Contributing
+
+Feel free to contribute to this documentation by submitting a pull request. If you have any questions or suggestions, please contact us.
 
 ## Contact Us
 
