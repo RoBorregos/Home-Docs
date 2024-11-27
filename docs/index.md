@@ -126,32 +126,6 @@ document.addEventListener('DOMContentLoaded', () => {
   </ul>
 </details>
 
-## Meet the team
-
-| Name               | Role        |
-| ------------------ | ----------- |
-| Alberto Muñoz      | Professor   |
-| Carlos Vázquez     | Professor   |
-| Gilberto Malagamba | Programmer  |
-| Iván Romero        | Programmer  |
-| Oscar Arreola      | Programmer  |
-| Gerardo Fregoso    | Programmer  |
-| Adán Flores        | Programmer  |
-| Emiliano Flores    | Programmer  |
-| Alexis Chapa       | Programmer  |
-| Francisco Salas    | Programmer  |
-| David Vázquez      | Programmer  |
-| Diego Hernández    | Programmer  |
-| Marina Villanueva  | Programmer  |
-| José Domínguez     | Programmer  |
-| Jocelyn Velarde    | Programmer  |
-| Leonardo Llanas    | Programmer  |
-| Alejandra Coeto    | Programmer  |
-| Alejandro Guerrero | Mechanics   |
-| Alejandro González | Mechanics   |
-| Yair Reyes         | Electronics |
-| Angel Cervantes    | Electronics |
-
 ## Sections
 
 This project is divided into several sections, each focusing on a specific aspect of the competition and the history of our team. The sections are as follows:
@@ -164,6 +138,8 @@ This project is divided into several sections, each focusing on a specific aspec
 - [Team Members](/Team): Lists the team members and their roles in the project.
 
 ## Contributing
+
+Feel free to contribute to this documentation by submitting a pull request. If you have any questions or suggestions, please contact us.
 
 ## Contact Us
 

@@ -1,6 +1,6 @@
+# Human-Robot Interaction | 2024 Development
 
-## Human-Robot Interaction
-# Development 2024
+This year's changes improve HRI by enhancing speech processing, NLP command parsing, and context-aware command execution while reducing latency and removing the need for internet in key modules.
 
 - **[Local command extraction](Areas/LCE.md)**
 
@@ -9,7 +9,3 @@
 - **[Speech and NLP pipeline upgrades](Areas/SpeechandNLP.md)**
 
 - **[Local Entities Similarity](Areas/embeddings.md)**
-
-
-
-This framework improves HRI by enhancing speech processing, NLP command parsing, and context-aware command execution while reducing latency and dependencies.
