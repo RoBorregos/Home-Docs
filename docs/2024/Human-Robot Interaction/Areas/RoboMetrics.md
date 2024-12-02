@@ -1,6 +1,7 @@
 # RoboMetrics
 
 RoboMetrics is a tool developed to messure system usage in a distribuited manner. Is a Python library for measuring system resources. Specially focused on CPU, Memory and GPU usage. It is designed to be used in a wide range of applications, from monitoring system resources to testing and benchmarking.
+![image](https://github.com/user-attachments/assets/b8e392b3-5e45-467b-bb27-090839dfd3a7)
 
 Goals of RoboMetrics:
 
