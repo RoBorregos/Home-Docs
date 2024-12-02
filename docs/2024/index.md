@@ -18,18 +18,20 @@ These are the major achievements divided by area:
 - A new package named `task_manager` was created to handle the flow of each task using general python submodules per area.
 - There's a Python ROS node for each task, following a state machine architecture.
 
-## [Human-Robot Interaction](Human-Robot%20Interaction/index.md)
+## [Human-Robot Interaction](./Human-Robot%20Interaction/index.md)
 ### Natural Language Processing
 - Following the update of GPSR task, a new model was fine-tuned to cover for more complex scenarios, using GPT3.5 API as the base
 - The package `frida_language_processing` was created, with the command interpreter capable of storing context throughout the execution, a cleaner implementation of the embeddings match process for actual items in the scene, and specific features for the **Receptionist** task.
+- [Embeddings benchmark](./Human-Robot%20Interaction/Areas/embeddings.md) for our use cases.
+- [Local command extraction](./Human-Robot%20Interaction/Areas/LCE.md) with llama 3.2.
 
 ### Speech
-- Keyword spotting (@Oscar-gg)
+- Keyword spotting implementation using porcupine
+- Migration to [Faster-whisper](./Human-Robot%20Interaction/Areas/STT.md) STT model, and use of hotwords.
+- Migration to local TTS model
+- Integrated ReSpeaker 4-mic array for better audio capture.
 
-### Display
-- Nadota (@FranciscoSP)
-
-## [Computer vision](Computer%20vision/index.md)
+## [Computer vision](./Computer%20Vision/index.md)
 - Nadota (@Ale-Coeto)
 
 ## [Manipulation](Manipulation/index.md)

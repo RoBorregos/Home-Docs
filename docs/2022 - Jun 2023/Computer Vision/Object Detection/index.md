@@ -22,6 +22,4 @@ To solve this problems, we decided to use a different approach. We decided to ma
 - [Dataset Generation](Dataset%20Automatization.md)
 - Customly Trained Object Detection Models
     - [Yolov5](Custom%20Models/yolov5.md)
-    - [NVIDIA TAO Toolkit](Custom%20Models/NVIDIA-Tao.md)
-    - [Tensorflow Object Detection API](Custom%20Models/TF%20Object%20Detection%20API.md)
     - [Tensorflow Lite Model Maker](Custom%20Models/TFLite%20Model%20Maker.md)
