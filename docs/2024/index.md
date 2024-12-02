@@ -8,7 +8,7 @@ With the vast knowledge acquired during the international tournament, the team d
 
 These are the major achievements divided by area:
 
-## [Integration](Integration/index2.md)
+## [Integration](Integration/index.md)
 
 ### Software Architecture
 

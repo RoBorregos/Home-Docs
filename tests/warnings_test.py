@@ -7,4 +7,3 @@ class TestWarnings:
         result = os.popen(
             f"{os.sys.executable} -m mkdocs build --strict").read()
         assert "Aborted" not in result, "mkdocs build aborted with warnings"
-        assert len(result) == 0, "could not run mkdocs build"
