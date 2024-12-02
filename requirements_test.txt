@@ -1,1 +1,4 @@
 pytest
+mkdocs-material
+mkdocs
+mkdocs-awesome-pages-plugin
