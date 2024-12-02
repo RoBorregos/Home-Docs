@@ -14,8 +14,8 @@ Finally, the NLP pipeline processes the interpreted text by parsing the string i
 
 ---
 
-- [ROS NODES DESCRITPION](#ROS-Nodes-Documentation)
-- [RUNNING THE SYSTEM](#Comprehensive-Instructions-for-Running-the-System)
+- [ROS NODES DESCRITPION](#ros-nodes-documentation)
+- [RUNNING THE SYSTEM](#comprehensive-instructions-for-running-the-system)
 
 # ROS Nodes Documentation
 
