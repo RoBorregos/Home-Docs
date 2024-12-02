@@ -9,6 +9,8 @@ Goals of RoboMetrics:
 - Be able to measure resources in real-time.
 - Interconnect workers in a network.
 
+https://github.com/RoBorregos/robometrics
+
 ## Installation
 To install the client install it via pip:
 
