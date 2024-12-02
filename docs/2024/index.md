@@ -12,6 +12,7 @@ These are the major achievements divided by area:
 ### Software Architecture
 - A new empty repository was created, alongside separate repositories for each area, added as submodules of the first. This allowed us to work of different branches of development in the central computational unit (Jetson AGX inside robot).
 - Every submodule was containerized, using Docker, to ease the installation process and dependency management.
+- Use of `python-statemachine` for some of the tasks, to ease the development of the state machines, obtain visualizations, and ease the debugging process.
 
 ### Task manager
 - A new package named `task_manager` was created to handle the flow of each task using general python submodules per area.
