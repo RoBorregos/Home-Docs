@@ -32,9 +32,9 @@ These are the major achievements divided by area:
 
 ### Speech
 
-- Keyword spotting implementation using porcupine
+- Keyword spotting implementation using [porcupine](Human-Robot%20Interaction/Areas/KWS.md).
 - Migration to [Faster-whisper](./Human-Robot%20Interaction/Areas/STT.md) STT model, and use of hotwords.
-- Migration to local TTS model
+- Migration to local TTS model.
 - Integrated ReSpeaker 4-mic array for better audio capture.
 
 ## [Computer vision](./Computer%20Vision/index.md)
