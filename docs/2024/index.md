@@ -9,30 +9,61 @@ With the vast knowledge acquired during the international tournament, the team d
 These are the major achievements divided by area:
 
 ## [Integration](Integration/index.md)
+
 ### Software Architecture
+
 - A new empty repository was created, alongside separate repositories for each area, added as submodules of the first. This allowed us to work of different branches of development in the central computational unit (Jetson AGX inside robot).
 - Every submodule was containerized, using Docker, to ease the installation process and dependency management.
+- Use of `python-statemachine` for some of the tasks, to ease the development of the state machines, obtain visualizations, and ease the debugging process.
 
 ### Task manager
+
 - A new package named `task_manager` was created to handle the flow of each task using general python submodules per area.
 - There's a Python ROS node for each task, following a state machine architecture.
 
-## [Human-Robot Interaction](Human-Robot%20Interaction/index.md)
+## [Human-Robot Interaction](./Human-Robot%20Interaction/index.md)
+
 ### Natural Language Processing
+
 - Following the update of GPSR task, a new model was fine-tuned to cover for more complex scenarios, using GPT3.5 API as the base
 - The package `frida_language_processing` was created, with the command interpreter capable of storing context throughout the execution, a cleaner implementation of the embeddings match process for actual items in the scene, and specific features for the **Receptionist** task.
+- [Embeddings benchmark](./Human-Robot%20Interaction/Areas/embeddings.md) for our use cases.
+- [Local command extraction](./Human-Robot%20Interaction/Areas/LCE.md) with llama 3.2.
 
 ### Speech
-- Keyword spotting (@Oscar-gg)
 
-### Display
-- Nadota (@FranciscoSP)
+- Keyword spotting implementation using [porcupine](Human-Robot%20Interaction/Areas/KWS.md).
+- Migration to [Faster-whisper](./Human-Robot%20Interaction/Areas/STT.md) STT model, and use of hotwords.
+- Migration to local TTS model.
+- Integrated ReSpeaker 4-mic array for better audio capture.
 
-## [Computer vision](Computer%20vision/index.md)
+## [Computer vision](./Computer%20Vision/index.md)
+
 - Nadota (@Ale-Coeto)
 
 ## [Manipulation](Manipulation/index.md)
-- Nadota (@deivideich, @emilianh)
+
+## Placing Algorithm with Gaussian Distribution
+
+To optimally place objects, we:
+
+1. **Isolate the Table Surface**:
+
+   - Use **RANSAC** to extract the table plane from 3D point cloud data.
+
+2. **Generate a Heat Map**:
+
+   - Apply a **Gaussian distribution** over the surface to create a heat map highlighting open spaces.
+
+3. **Select Optimal Placement**:
+
+   - Choose the area with the highest value on the heat map as the placing pose.
+
+4. **Plan Collision-Free Trajectory**:
+   - Use **MoveIt!** to plan a safe path to the placing pose.
+
+This concise approach ensures efficient space utilization and safe object placement.
 
 ## [Navigation](Navigation/index.md)
+
 - Nadota (@deivideich, @Chapa-1810)

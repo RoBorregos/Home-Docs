@@ -2,9 +2,13 @@
 
 Throughout the years, the Robocup@Home team at RoBorregos has had the opportunity to participate in various events and competitions. Here are some of the highlights of our journey.
 
+### RoboCup@Home 2025 Qualification video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bxXwOzza02E" title="RoboCup@Home Video 2025" frameborder="0" allowfullscreen></iframe>
+
 ### RoboCup@Home 2024 Qualification video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/g9W2A_bHTvg" title="RoboCup@Home Video" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/g9W2A_bHTvg" title="RoboCup@Home Video 2024" frameborder="0" allowfullscreen></iframe>
 
 ### Compilation of Demos, competitions, and events
 
