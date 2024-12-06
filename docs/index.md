@@ -111,7 +111,7 @@ document.addEventListener('DOMContentLoaded', () => {
 <details>
   <summary>Prior achievements</summary>
   <ul>
-    <li><a href="2022 - Jun 2023/">2022 - Jun 2023</a></li>
+    <li><a href="2022/">2022 - Jun 2023</a></li>
   </ul>
 </details>
 
@@ -131,7 +131,7 @@ This project is divided into several sections, each focusing on a specific aspec
 - [Team Members](/Team.md): Lists the team members and their roles in the project.
 - [2024](/2024/index.md)
 - [2023](/2023/index.md)
-- [2022 - June 2023](/2022%20-%20Jun%202023/index.md)
+- [2022](/2022/index.md)
 
 ## Contributing
 

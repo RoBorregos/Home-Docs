@@ -35,6 +35,7 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 |                         | Outstanding performance (see sec. 3.9.3)                 | 200         |
 | **Total**               | Total Score (excluding special penalties & standard bonuses) | 2000    |
 
+<hr />
 
 ## Tasks per Area
 
@@ -58,4 +59,35 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 - Take an order from a customer
 - Communicate any needs to the bar man
 - Interpret the objects to be served
+
+## Main states
+
+### Detecting customers
+- In this state, the robot should look for a customer calling or waving. 
+
+### Navigation to the customer
+- The robot should navigate to the customer’s table.
+- This could be achieved with a *follow person* approach as long as the customer can be re-identified.
+- Another approach would involve online mapping.
+
+### Taking the order
+- For this state, the robot should take the order from the customer.
+
+### Navigation to the kitchen bar
+- The robot should return to the kitchen bar to pick up the objects.
+
+### Picking objects
+- If a tray is used, the robot should request the objects from the barman to be placed in the tray or pick them and placing them in the tray by itself.
+- If no tray is used, the robot should pick up the objects one by one.
+
+### Returning to the customer
+- The robot should return to the customer’s table to serve the order.
+
+### Placing objects
+- The robot should place the objects on the table.
+- If a tray is used, the robot should serve the objects from the tray or request the customer to take them.
+
+<p align="center">
+  <img width="500px" src="/assets/tasks/restaurantDiagram.png" alt="Restaurant state diagram">
+</p>
 
