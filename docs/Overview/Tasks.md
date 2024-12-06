@@ -25,6 +25,6 @@ For this task, the robot stores groceries into a cabinet with shelves. However, 
 ### GPSR (General Purpose Service Robot)
 The robot is asked to understand and execute commands requiring a wide range of different abilities.
 
-## Stage 2
+**Current status:**
+The robot is able to understand and execute commands.
 
-### EGPSR (Enhanced General Purpose Service Robot)
