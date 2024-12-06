@@ -39,7 +39,19 @@ These are the major achievements divided by area:
 
 ## [Computer vision](./Computer%20Vision/index.md)
 
-- Nadota (@Ale-Coeto)
+### Human Analysis
+Several nodes were developed to cover the following main features:
+
+- Face recognition
+- Person tracking and re-identification
+- Pose and action detection
+- Person attributes and description
+
+### Object Detection
+The main objective for this year was the development of a robust pipeline to make datasets for training YOLO models, focusing on:
+
+- Dataset generation
+- Transform object detection datasets to segmentation datasets
 
 ## [Manipulation](Manipulation/index.md)
 
