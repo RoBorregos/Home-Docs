@@ -150,3 +150,5 @@ If you have any questions, suggestions, or feedback, please feel free to reach o
 </div>
 
 We hope you find our documentation helpful, and we wish you success in exploring and utilizing our software modules for the RoboCup@Home competition.
+
+If you want to see more of our projects, checkout our [GitHub](https://github.com/RoBorregos)
