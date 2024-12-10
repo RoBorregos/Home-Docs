@@ -22,10 +22,10 @@ Member status:
 | Fregoso  | 📝 🤝    |
 | Ivan     | 📝 🤝    |
 
-- **Documentation**:
+**Documentation**:
 
   - Analyzed 7 tasks, considering the main states, transitions, and the specific actions that need to be available for each of the tasks.
 
-- **Research**:
+**Research**:
   - ROS 2: Research about good practices in ros 2.
   - ROS 2: Designed package structure
