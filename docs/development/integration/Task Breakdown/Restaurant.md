@@ -88,6 +88,6 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 - If a tray is used, the robot should serve the objects from the tray or request the customer to take them.
 
 <p align="center">
-  <img width="500px" src="/assets/tasks/restaurantDiagram.png" alt="Restaurant state diagram">
+  <img width="500px" src="/assets/tasks/RestaurantDiagram.png" alt="Restaurant state diagram">
 </p>
 
