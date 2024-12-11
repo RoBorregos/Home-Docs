@@ -46,3 +46,5 @@ This setup creates a reliable and efficient pipeline for generating maps in a do
 
 
 
+## Path Planning and Localization
+
