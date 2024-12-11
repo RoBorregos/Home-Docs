@@ -60,6 +60,8 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 - Communicate any needs to the bar man
 - Interpret the objects to be served
 
+<hr />
+
 ## Main states
 
 ### Detecting customers
