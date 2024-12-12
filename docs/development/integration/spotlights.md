@@ -13,20 +13,22 @@ Member status:
 
 ## 2024-12-10
 
-| Name     | Stauts   |
-| -------- | -------- |
-| Diego    | 📝 🤝    |
-| Oscar    | 📝 🤝    |
-| Ale      | 📝 🤝    |
-| Gilberto | 📝 💻 🤝 |
-| Fregoso  | 📝 🤝    |
-| Ivan     | 📝 🤝    |
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     | 📝     |
+| Oscar     | 📝     |
+| Ale       | 📝     |
+| Gilberto  | 📝     |
+| Fregoso   | 📝 🔍  |
+| Ivan      | 📝     |
+| Domínguez | 🔍     |
 
 **Documentation**:
 
-  - Analyzed 7 tasks, considering the main states, transitions, and the specific actions that need to be available for each of the tasks.
+- Analyzed 7 tasks, considering the main states, transitions, and the specific actions that need to be available for each of the tasks.
 
 **Research**:
 
-  - ROS 2: Research about good practices in ros 2.
-  - ROS 2: Designed package structure
+- ROS 2: Research about good practices in ros 2.
+- ROS 2: Designed package structure
+- ROS 2: ROSBridge testing
