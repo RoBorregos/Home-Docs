@@ -44,4 +44,4 @@ The task consists of storing groceries in a cabinet from a table with the object
 | Outstanding performance (see sec. 3.9.3) | 114 | 
 | **Total Score (excluding special penalties & standard bonuses)** | 1140 |
 
-![Storing Groceries](/tasks/StoringGroceries.png)
+![Storing Groceries](-assets/tasks/StoringGroceries.png)
