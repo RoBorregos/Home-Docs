@@ -11,7 +11,7 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2024-12-10
+## 2024-12-13
 
 | Name      | Stauts |
 | --------- | ------ |
@@ -26,6 +26,7 @@ Member status:
 **Documentation**:
 
 - Analyzed 7 tasks, considering the main states, transitions, and the specific actions that need to be available for each of the tasks.
+- Summarized the [tasks per area](./Task%20Breakdown/AreaTasks.md).
 
 **Research**:
 
