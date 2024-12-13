@@ -1,6 +1,6 @@
 # Hardware overview
 
-<p align="center">
+<p align="center" width="563" height="1209">
   <img src="/assets/overview/FRIDA.jpg" alt="Robot Image">
 </p>
 
