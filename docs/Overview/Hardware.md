@@ -1,7 +1,7 @@
 # Hardware overview
 
 <p align="center">
-  <img src="/assets/overview/FRIDA.jpg" alt="Robot Image" width="563" height="1209">
+  <img src="/assets/overview/FRIDA.jpg" alt="Robot Image" width="281" height="604">
 </p>
 
 ### Mobility and Manipulation
