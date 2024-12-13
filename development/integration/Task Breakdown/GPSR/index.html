@@ -1,0 +1,4452 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../AreaTasks/">
+      
+      
+        <link rel="next" href="../Restaurant/">
+      
+      
+      <link rel="icon" href="../../../../assets/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.21">
+    
+    
+      
+        <title>General Purpose Serivce Robot - RoBorregos@Home Docs</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.66ac8b77.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#general-purpose-serivce-robot" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="RoBorregos@Home Docs" class="md-header__button md-logo" aria-label="RoBorregos@Home Docs" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            RoBorregos@Home Docs
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              General Purpose Serivce Robot
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="RoBorregos@Home Docs" class="md-nav__button md-logo" aria-label="RoBorregos@Home Docs" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.png" alt="logo">
+
+    </a>
+    RoBorregos@Home Docs
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Welcome to RoBorregos @Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Overview
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Overview/Hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hardware [WIP]
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Overview/Media/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Media
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Overview/Project%20Structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Overview/Tasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Areas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Areas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Areas
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/Computer%20Vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/Electronics%20and%20Control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electronics and Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/HRI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Human Robot Interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/Integration%20and%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration and Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/Manipulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manipulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/Mechanics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mechanics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Areas/Navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../Team/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team Members
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2024
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            2024
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Achievements from 2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_2" id="__nav_5_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Human Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Human%20Analysis/Face%20Recognition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Face detection and recognition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Human%20Analysis/Person%20Counting/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Person Counting and Finding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Human%20Analysis/Person%20Description/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Person Description
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Human%20Analysis/Person%20Tracking/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Person Tracking
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_3" id="__nav_5_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Object Detection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Object Detection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Object%20Detection/Dataset%20Generation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dataset generation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Object%20Detection/Seat%20Detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Seat detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Object%20Detection/ShelfDetection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Shelf Object detection
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_2_4" id="__nav_5_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Utils
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            Utils
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Computer%20Vision/Utils/ZED_Simulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ZED_Simulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3" id="__nav_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Robot Interaction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Human Robot Interaction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HRI 2024 Summary
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_3_2" id="__nav_5_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Areas
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Areas
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/KWS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Keyword Spotting (KWS)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/LCE/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local command extraction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/Local%20TTS/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local TTS
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/Respeaker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Respeaker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/RoboMetrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    RoboMetrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/STT/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Improved speech-to-text module
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/SpeechandNLP/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Speech and NLP pipeline upgrades
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Human-Robot%20Interaction/Areas/embeddings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Local Entities Similarity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Integration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Integration/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Integration/project-structure/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Project Structure
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_4_3" id="__nav_5_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Troubleshooting
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_5_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Troubleshooting
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Integration/troubleshooting/JavierAGXFlashing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Javier AGX Flashing - Board ID not recognized
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manipulation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
+            <span class="md-nav__icon md-icon"></span>
+            Manipulation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Manipulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manipulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_5_6" id="__nav_5_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_6">
+            <span class="md-nav__icon md-icon"></span>
+            Navigation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2024/Navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2023
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            2023
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Achievements from 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Team%20Members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team Members 2023-2024
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_3">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Computer%20Vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electronics and Control
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_4">
+            <span class="md-nav__icon md-icon"></span>
+            Electronics and Control
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Electronics%20and%20Control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5" id="__nav_6_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Robot Interaction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5">
+            <span class="md-nav__icon md-icon"></span>
+            Human Robot Interaction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Human%20Robot%20Interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Human Robot Interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_2" id="__nav_6_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Physical Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Human Physical Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Human%20Robot%20Interaction/Human%20Physical%20Analysis/Face%20Following/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Face following
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_3" id="__nav_6_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Robot Interface
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Robot Interface
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Human%20Robot%20Interaction/Robot%20Interface/Display/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Display
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_5_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_5_4" id="__nav_6_5_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Speech
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_6_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_5_4">
+            <span class="md-nav__icon md-icon"></span>
+            Speech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Human%20Robot%20Interaction/Speech/Action%20Interpretation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NATURAL LANGUAGE PROCESSING (NLP)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Human%20Robot%20Interaction/Speech/Human%20Speech%20Processing/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Human Speech Processing
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_6" id="__nav_6_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integration and Networks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_6">
+            <span class="md-nav__icon md-icon"></span>
+            Integration and Networks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Integration%20and%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Integration and Networks
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_7" id="__nav_6_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Manipulation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_7">
+            <span class="md-nav__icon md-icon"></span>
+            Manipulation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Manipulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Manipulation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Manipulation/Pick%20and%20Place/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pick and Place
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Manipulation/Planning%20and%20Hardware/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Planning and Hardware
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_8" id="__nav_6_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mechanics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_8">
+            <span class="md-nav__icon md-icon"></span>
+            Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Mechanics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mechanics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_9" >
+        
+          
+          <label class="md-nav__link" for="__nav_6_9" id="__nav_6_9_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6_9">
+            <span class="md-nav__icon md-icon"></span>
+            Navigation
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2023/Navigation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Navigation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    2022
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            2022
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Achievements from 2022 - June 2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Team%20Members/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Team Members 2022-2023
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
+            <span class="md-nav__icon md-icon"></span>
+            Computer Vision
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Computer Vision
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_2" id="__nav_7_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Analysis
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Human Analysis
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/Human%20Analysis/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/Human%20Analysis/Pose%20Estimation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Pose Estimation with MediaPipe
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_3" id="__nav_7_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Object Detection
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Object Detection
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/Object%20Detection/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/Object%20Detection/Dataset%20Automatization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dataset Automatization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_3_3" id="__nav_7_3_3_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Custom Models
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            Custom Models
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/Object%20Detection/Custom%20Models/TFLite%20Model%20Maker/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TensorFlow Lite Model Maker
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Computer%20Vision/Object%20Detection/Custom%20Models/yolov5/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    YOLOv5
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Electronics and Control
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            Electronics and Control
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Electronics%20and%20Control/Control/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Control
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Electronics%20and%20Control/Electronics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Electronics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4_3" id="__nav_7_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Boards
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            Boards
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Electronics%20and%20Control/Boards/Boards/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Boards
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5" id="__nav_7_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Human Robot Interaction
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5">
+            <span class="md-nav__icon md-icon"></span>
+            Human Robot Interaction
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Human%20Robot%20Interaction/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Human Robot Interaction
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_5_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_5_2" id="__nav_7_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Speech
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Speech
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Human%20Robot%20Interaction/speech/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Human%20Robot%20Interaction/speech/GPT-3%20API/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    GPT-3 API
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Human%20Robot%20Interaction/speech/speech_to_text/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Speech To text
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Human%20Robot%20Interaction/speech/text_to_speech/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Text To Speech
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_6" id="__nav_7_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integration and Networks
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_6">
+            <span class="md-nav__icon md-icon"></span>
+            Integration and Networks
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Integration%20and%20Networks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Overview
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Integration%20and%20Networks/Jetson%20Nano/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jetson Nano Setup
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Integration%20and%20Networks/Jetson%20Xavier%20Agx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Jetson AGX Xavier
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Integration%20and%20Networks/Network/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Network
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7" id="__nav_7_7_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Mechanics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7">
+            <span class="md-nav__icon md-icon"></span>
+            Mechanics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_1" id="__nav_7_7_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    DashGO x ARM
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_1">
+            <span class="md-nav__icon md-icon"></span>
+            DashGO x ARM
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Mechanics/DashGO%20x%20ARM/Design/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dash Go + xARM
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_7_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_7_2" id="__nav_7_7_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    RBGS
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            RBGS
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../2022/Mechanics/RBGS/Base/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Base Omnidireccional
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Development
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Development
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Integration
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            Integration
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Meeting notes
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../spotlights/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Weekly Spotlights
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_8_2_3" id="__nav_8_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Task Breakdown
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_8_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Task Breakdown
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../AreaTasks/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tasks per area
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    General Purpose Serivce Robot
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    General Purpose Serivce Robot
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#previous-related-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previous related work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command generator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command generator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-command-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the command generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-down-each-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breaking down each command
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breaking down each command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow up command
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Follow up command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#findprs" class="md-nav__link">
+    <span class="md-ellipsis">
+      findPrs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meetname" class="md-nav__link">
+    <span class="md-ellipsis">
+      meetName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findobj" class="md-nav__link">
+    <span class="md-ellipsis">
+      findObj
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks-per-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasks per Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks per Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hri" class="md-nav__link">
+    <span class="md-ellipsis">
+      HRI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Restaurant/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Restaurant
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../StoringGroceries/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Storing Groceries
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#previous-related-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      Previous related work
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#possible-points" class="md-nav__link">
+    <span class="md-ellipsis">
+      Possible points
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#command-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Command generator
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Command generator">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#source" class="md-nav__link">
+    <span class="md-ellipsis">
+      Source
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#types-of-commands" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types of commands
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-command-generator" class="md-nav__link">
+    <span class="md-ellipsis">
+      Understanding the command generator
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#breaking-down-each-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Breaking down each command
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Breaking down each command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#start-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Start command
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#follow-up-command" class="md-nav__link">
+    <span class="md-ellipsis">
+      Follow up command
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Follow up command">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#findprs" class="md-nav__link">
+    <span class="md-ellipsis">
+      findPrs
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#meetname" class="md-nav__link">
+    <span class="md-ellipsis">
+      meetName
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#findobj" class="md-nav__link">
+    <span class="md-ellipsis">
+      findObj
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tasks-per-area" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tasks per Area
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tasks per Area">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#vision" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vision
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#navigation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Navigation
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#hri" class="md-nav__link">
+    <span class="md-ellipsis">
+      HRI
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#manipulation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Manipulation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+<h1 id="general-purpose-serivce-robot">General Purpose Serivce Robot</h1>
+<h2 id="previous-related-work">Previous related work</h2>
+<ul>
+<li>GPSR wiki by Adán: https://github.com/RoBorregos/home/wiki/TMR-@HOME-2024</li>
+</ul>
+<h2 id="description">Description</h2>
+<p>The robot is asked to understand and execute commands requiring a wide range of different
+abilities</p>
+<p><code>Main Goal</code>: Execute 3 commands requested by the operator.</p>
+<p><code>Optional Goals</code>: Understand a command given by a non-expert operator</p>
+<h2 id="possible-points">Possible points</h2>
+<table>
+<thead>
+<tr>
+<th><strong>Category</strong></th>
+<th><strong>Action</strong></th>
+<th><strong>Score</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Regular Rewards</strong></td>
+<td>Executing the task associated with each command</td>
+<td>3×400</td>
+</tr>
+<tr>
+<td><strong>Bonus Rewards</strong></td>
+<td>Understanding a command given by a non-expert operator</td>
+<td>3×100</td>
+</tr>
+<tr>
+<td><strong>Deus ex Machina Penalties</strong></td>
+<td>Using a custom operator</td>
+<td>3×–50</td>
+</tr>
+<tr>
+<td></td>
+<td>Bypassing speech recognition</td>
+<td>3×–50</td>
+</tr>
+<tr>
+<td></td>
+<td>Instructing a human to perform parts of the task will apply a percentage penalty</td>
+<td>3×–400</td>
+</tr>
+<tr>
+<td><strong>Special Penalties &amp; Bonuses</strong></td>
+<td>Not attending (see sec. 3.9.1)</td>
+<td>–500</td>
+</tr>
+<tr>
+<td></td>
+<td>Using alternative start signal (see sec. 3.7.8)</td>
+<td>–100</td>
+</tr>
+<tr>
+<td></td>
+<td>Outstanding performance (see sec. 3.9.3)</td>
+<td>200</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td>Total Score (excluding special penalties &amp; standard bonuses)</td>
+<td>1500</td>
+</tr>
+</tbody>
+</table>
+<h2 id="command-generator">Command generator</h2>
+<h3 id="source">Source</h3>
+<p>The commands are generated using: <code>https://github.com/johaq/CommandGenerator</code></p>
+<p>This repository contains examples including names, objects, and locations: <code>https://github.com/johaq/CompetitionTemplate</code>.</p>
+<h3 id="types-of-commands">Types of commands</h3>
+<p>The commands are divided into:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="s1">&#39;1&#39;</span>:<span class="w"> </span>Any<span class="w"> </span>command,
+<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="s1">&#39;2&#39;</span>:<span class="w"> </span>Command<span class="w"> </span>without<span class="w"> </span>manipulation,
+<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="s1">&#39;3&#39;</span>:<span class="w"> </span>Command<span class="w"> </span>with<span class="w"> </span>manipulation,
+<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="s1">&#39;4&#39;</span>:<span class="w"> </span>Batch<span class="w"> </span>of<span class="w"> </span>three<span class="w"> </span>commands,
+<a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="s1">&#39;5&#39;</span>:<span class="w"> </span>Generate<span class="w"> </span>EGPSR<span class="w"> </span>setup,
+<a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="s1">&#39;0&#39;</span>:<span class="w"> </span>Generate<span class="w"> </span>QR<span class="w"> </span>code,
+</code></pre></div>
+<p>Some examples of commands are:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>Bring<span class="w"> </span>me<span class="w"> </span>a<span class="w"> </span>milk<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>sink
+<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>Take<span class="w"> </span>a<span class="w"> </span>knife<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>kitchen<span class="w"> </span>table<span class="w"> </span>and<span class="w"> </span>deliver<span class="w"> </span>it<span class="w"> </span>to<span class="w"> </span>me
+<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>Follow<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span>raising<span class="w"> </span>their<span class="w"> </span>left<span class="w"> </span>arm<span class="w"> </span>at<span class="w"> </span>the<span class="w"> </span>desk<span class="w"> </span>lamp
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>Greet<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span>wearing<span class="w"> </span>a<span class="w"> </span>white<span class="w"> </span>coat<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>kitchen<span class="w"> </span>and<span class="w"> </span>follow<span class="w"> </span>them<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>pantry
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>Find<span class="w"> </span>a<span class="w"> </span>coffee<span class="w"> </span>grounds<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>kitchen<span class="w"> </span><span class="k">then</span><span class="w"> </span>get<span class="w"> </span>it<span class="w"> </span>and<span class="w"> </span>give<span class="w"> </span>it<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>lying<span class="w"> </span>person<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>kitchen
+<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Locate<span class="w"> </span>a<span class="w"> </span>dish<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>bedroom<span class="w"> </span><span class="k">then</span><span class="w"> </span>grasp<span class="w"> </span>it<span class="w"> </span>and<span class="w"> </span>deliver<span class="w"> </span>it<span class="w"> </span>to<span class="w"> </span>me
+<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>Tell<span class="w"> </span>me<span class="w"> </span>what<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>thinnest<span class="w"> </span>object<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>storage<span class="w"> </span>rack
+<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>Follow<span class="w"> </span>the<span class="w"> </span>sitting<span class="w"> </span>person<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>bedroom
+<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>Find<span class="w"> </span>an<span class="w"> </span>orange<span class="w"> </span>juice<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>bedroom<span class="w"> </span><span class="k">then</span><span class="w"> </span>grasp<span class="w"> </span>it<span class="w"> </span>and<span class="w"> </span>bring<span class="w"> </span>it<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>standing<span class="w"> </span>person<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>bedroom
+<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>Tell<span class="w"> </span>me<span class="w"> </span>how<span class="w"> </span>many<span class="w"> </span>persons<span class="w"> </span>raising<span class="w"> </span>their<span class="w"> </span>left<span class="w"> </span>arm<span class="w"> </span>are<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>office
+<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>Tell<span class="w"> </span>me<span class="w"> </span>what<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span>biggest<span class="w"> </span>cleaning<span class="w"> </span>supply<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>sink
+<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>Go<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>office<span class="w"> </span><span class="k">then</span><span class="w"> </span>find<span class="w"> </span>the<span class="w"> </span>standing<span class="w"> </span>person<span class="w"> </span>and<span class="w"> </span>answer<span class="w"> </span>a<span class="w"> </span>question
+<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>Tell<span class="w"> </span>me<span class="w"> </span>how<span class="w"> </span>many<span class="w"> </span>cleaning<span class="w"> </span>supplies<span class="w"> </span>there<span class="w"> </span>are<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>tv<span class="w"> </span>stand
+<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>Meet<span class="w"> </span>Charlie<span class="w"> </span>at<span class="w"> </span>the<span class="w"> </span>armchair<span class="w"> </span><span class="k">then</span><span class="w"> </span>look<span class="w"> </span><span class="k">for</span><span class="w"> </span>them<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>kitchen
+<a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>Navigate<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>storage<span class="w"> </span>rack<span class="w"> </span><span class="k">then</span><span class="w"> </span>find<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span>pointing<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>left<span class="w"> </span>and<span class="w"> </span>follow<span class="w"> </span>them
+<a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>Guide<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span>raising<span class="w"> </span>their<span class="w"> </span>left<span class="w"> </span>arm<span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span>storage<span class="w"> </span>rack<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>bedroom
+<a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>Go<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>living<span class="w"> </span>room<span class="w"> </span><span class="k">then</span><span class="w"> </span>find<span class="w"> </span>an<span class="w"> </span>apple<span class="w"> </span>and<span class="w"> </span>get<span class="w"> </span>it<span class="w"> </span>and<span class="w"> </span>give<span class="w"> </span>it<span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span>lying<span class="w"> </span>person<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>office
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>Tell<span class="w"> </span>me<span class="w"> </span>the<span class="w"> </span>pose<span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>bedroom
+<a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>Greet<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span>wearing<span class="w"> </span>a<span class="w"> </span>red<span class="w"> </span>blouse<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span>kitchen<span class="w"> </span>and<span class="w"> </span>follow<span class="w"> </span>them
+</code></pre></div>
+<h3 id="understanding-the-command-generator">Understanding the command generator</h3>
+<p>The script divides the commands in 2 categories: HRI &amp; people perception, and object manipulation &amp; perception. Unless one category is specified, any command can be generated at <a href="https://github.com/johaq/CommandGenerator/blob/master/gpsr_commands.py#L104">random</a>.</p>
+<p>For each command, the script generates a command with placeholders that contain names, locations, verbs, connectors, among others. The script then replaces these placeholders with random values from the lists in the <code>CompetitionTemplate</code> repository. The lists in the verb dictionary and the preposition dictionary are built-in the script, but other values (e.g. names, locations, objects) can be dinamically loaded.</p>
+<p>Some commands are a combination of a start command + one or more follow up command.</p>
+<p>The following are all the commands available:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="c1"># HRI and people perception commands</span>
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">        </span><span class="nv">person_cmd_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;goToLoc&quot;</span>,<span class="w"> </span><span class="s2">&quot;findPrsInRoom&quot;</span>,<span class="w"> </span><span class="s2">&quot;meetPrsAtBeac&quot;</span>,<span class="w"> </span><span class="s2">&quot;countPrsInRoom&quot;</span>,<span class="w"> </span><span class="s2">&quot;tellPrsInfoInLoc&quot;</span>,
+<a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">                           </span><span class="s2">&quot;talkInfoToGestPrsInRoom&quot;</span>,<span class="w"> </span><span class="s2">&quot;answerToGestPrsInRoom&quot;</span>,<span class="w"> </span><span class="s2">&quot;followNameFromBeacToRoom&quot;</span>,
+<a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">                           </span><span class="s2">&quot;guideNameFromBeacToBeac&quot;</span>,<span class="w"> </span><span class="s2">&quot;guidePrsFromBeacToBeac&quot;</span>,<span class="w"> </span><span class="s2">&quot;guideClothPrsFromBeacToBeac&quot;</span>,
+<a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">                           </span><span class="s2">&quot;greetClothDscInRm&quot;</span>,<span class="w"> </span><span class="s2">&quot;greetNameInRm&quot;</span>,<span class="w"> </span><span class="s2">&quot;meetNameAtLocThenFindInRm&quot;</span>,<span class="w"> </span><span class="s2">&quot;countClothPrsInRoom&quot;</span>,
+<a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">                           </span><span class="s2">&quot;tellPrsInfoAtLocToPrsAtLoc&quot;</span>,<span class="w"> </span><span class="s2">&quot;followPrsAtLoc&quot;</span><span class="o">]</span>
+<a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">        </span><span class="c1"># Object manipulation and perception commands</span>
+<a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">        </span><span class="nv">object_cmd_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;goToLoc&quot;</span>,<span class="w"> </span><span class="s2">&quot;takeObjFromPlcmt&quot;</span>,<span class="w"> </span><span class="s2">&quot;findObjInRoom&quot;</span>,<span class="w"> </span><span class="s2">&quot;countObjOnPlcmt&quot;</span>,<span class="w"> </span><span class="s2">&quot;tellObjPropOnPlcmt&quot;</span>,
+<a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">                           </span><span class="s2">&quot;bringMeObjFromPlcmt&quot;</span>,<span class="w"> </span><span class="s2">&quot;tellCatPropOnPlcmt&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="breaking-down-each-command">Breaking down each command</h3>
+<ol>
+<li><code>goToLoc</code>: The robot is asked to navigate to a specific location and interact with people or an object. The command has a start command up to 2 follow up commands.</li>
+</ol>
+<h4 id="start-command">Start command</h4>
+<p><code>command_string</code>:"{go | navigate} to the {loc_room | (select either location or room)} then " + <code>follow up command</code></p>
+<p>Steps:
+| Action | Status |
+| -------- | ---------- |
+| Understand location | ✔️ |
+| Navigate to location | ✔️ |</p>
+<h4 id="follow-up-command">Follow up command</h4>
+<p>There are 3 options for a follow up command: <code>findPrs</code>, <code>findObj</code>, <code>meetName</code>.</p>
+<h5 id="findprs"><code>findPrs</code></h5>
+<p>self.generate_command_followup("atLoc", {people | objects})</p>
+<p>command_string = "{find | locate | look for} the {either gesture or pose} and" either:</p>
+<ul>
+<li>{tell | say} {"something about yourself" | "the time" | "what day is today" | "what day is tomorrow" | "your teams name" | "your teams country" | "your teams affiliation" |"the day of the week" | "the day of the month"}</li>
+<li>{answer} a {quiz | question} -&gt; the quiz or questions aren't specified, so the robot can answer anything</li>
+<li>{follow} them.</li>
+<li>{follow} them to {loc or room}.</li>
+<li>{guide | escort | take | lead} them to {loc or room}.</li>
+</ul>
+<h5 id="meetname"><code>meetName</code></h5>
+<p>command_string = "{meet} the {loaded name} and" same as findPrs:</p>
+<h5 id="findobj"><code>findObj</code></h5>
+<p>command_string = "{find | locate | look for} the {object or single_category} and {take | get | grasp | fetch} and " (self.generate_command_followup("hasObj")) either:</p>
+<ul>
+<li>{place | put} it on the {placement loc | differs from first location}.</li>
+<li>{deliver | give} it to {person speaking}.</li>
+<li>{bring | give | deliver} it to the {gesture or pose} in the {room}"</li>
+<li>
+<p>{deliver | give} it to the {name} in the {room}"</p>
+</li>
+<li>
+<p><code>takeObjFromPlcmt</code>: The robot is asked to navigate to take an object form a location to another and perform an action.</p>
+</li>
+<li>
+<p>The follow up action (self.generate_command_followup("hasObj")) are the same as the follow up for <code>findObj</code> discussed above.</p>
+</li>
+<li>
+<p><code>findPrsInRoom</code>: The robot is asked to find a person in a room and perform an action.</p>
+</li>
+<li>
+<p>The actions performed are the same as the follow up for <code>findPrs</code> discussed above. It seems to be equivalent to <code>goToLoc</code> but with the location specified syntactically differently.</p>
+</li>
+<li>
+<p><code>findObjInRoom</code>: The robot is asked to find an object in a room and perform an action. The action is the same as <code>findObj</code> discussed above.</p>
+</li>
+<li>
+<p><code>meetPrsAtBeac</code>: The robot is asked to meet a person at a location and perform an action. The action is the same as the follow up of <code>findPrs</code> discussed above.</p>
+</li>
+<li>
+<p><code>countObjOnPlcmt</code>: The robot is asked to count objects on a placement.</p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="o">{</span>tell<span class="w"> </span>me<span class="w"> </span>how<span class="w"> </span>many<span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="s1">&#39;drinks&#39;</span>,<span class="w"> </span><span class="s1">&#39;fruits&#39;</span>,<span class="w"> </span><span class="s1">&#39;snacks&#39;</span>,<span class="w"> </span><span class="s1">&#39;foods&#39;</span>,<span class="w"> </span><span class="s1">&#39;dishes&#39;</span>,<span class="w"> </span><span class="s1">&#39;toys&#39;</span>,<span class="w"> </span><span class="s1">&#39;cleaning supplies&#39;</span><span class="o">}</span><span class="w"> </span>there<span class="w"> </span>are<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>location<span class="o">}</span>
+</code></pre></div>
+<ol>
+<li><code>countPrsInRoom</code>: The robot is asked to count people in a room that have a particular gesture or pose.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="o">{</span>tell<span class="w"> </span>me<span class="w"> </span>how<span class="w"> </span>many<span class="o">}</span><span class="w"> </span><span class="o">{</span>posture<span class="w"> </span>or<span class="w"> </span>gesture<span class="o">}</span><span class="w"> </span>are<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span><span class="o">{</span>room<span class="o">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<ol>
+<li><code>tellPrsInfoInLoc</code>: The robot is asked to tell information about people in a location.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="o">{</span>tell<span class="o">}</span><span class="w"> </span>me<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>name<span class="w"> </span><span class="p">|</span><span class="w"> </span>pose<span class="w"> </span><span class="p">|</span><span class="w"> </span>gesture<span class="o">}</span><span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span>person<span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span><span class="o">{</span>room<span class="w"> </span>or<span class="w"> </span>loc<span class="o">}</span>
+</code></pre></div>
+<ol>
+<li><code>tellObjPropOnPlcmt</code>: The robot is asked to tell information about objects on a placement.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="o">{</span>tell<span class="o">}</span><span class="w"> </span>me<span class="w"> </span>the<span class="w"> </span>what<span class="w"> </span>is<span class="w"> </span>the<span class="w"> </span><span class="o">{</span><span class="s2">&quot;biggest&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;largest&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;smallest&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;heaviest&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;lightest&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;thinnest&quot;</span><span class="o">}</span><span class="w"> </span>object<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>placement<span class="w"> </span>location<span class="o">}</span>
+</code></pre></div>
+<ol>
+<li><code>talkInfoToGestPrsInRoom</code>: The robot is asked to tell information to a specific person in a room.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="o">{</span>tell<span class="w"> </span><span class="p">|</span><span class="w"> </span>say<span class="o">}</span><span class="w"> </span><span class="o">{</span><span class="s2">&quot;something about yourself&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;the time&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;what day is today&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;what day is tomorrow&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;your teams name&quot;</span><span class="w"> </span><span class="p">|</span><span class="s2">&quot;your teams country&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;your teams affiliation&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;the day of the week&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;the day of the month&quot;</span><span class="o">}</span><span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>gesture<span class="w"> </span>person<span class="o">}</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span><span class="o">{</span>room<span class="o">}</span>
+</code></pre></div>
+<ol>
+<li><code>answerToGestPrsInRoom</code>: The robot is asked to answer a question to a specific person in a room.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a><span class="o">{</span>answer<span class="o">}</span><span class="w"> </span>the<span class="w"> </span><span class="o">{</span><span class="s2">&quot;question&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="s2">&quot;quiz&quot;</span><span class="o">}</span><span class="w"> </span>of<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>gesture<span class="w"> </span>person<span class="o">}</span><span class="w"> </span><span class="k">in</span><span class="w"> </span>the<span class="w"> </span><span class="o">{</span>room<span class="o">}</span><span class="s2">&quot;</span>
+</code></pre></div>
+<ol>
+<li><code>followNameFromBeacToRoom</code>: The robot is asked to follow a person from a location to another.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="o">{</span>follow<span class="o">}</span><span class="w"> </span><span class="o">{</span>name<span class="o">}</span><span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>loc<span class="o">}</span><span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>room<span class="o">}</span>
+</code></pre></div>
+<ol>
+<li><code>guideNameFromBeacToBeac</code>: The robot is asked to guide a person from a location to another.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a><span class="o">{</span>guide<span class="o">}</span><span class="w"> </span><span class="o">{</span>name<span class="o">}</span><span class="w"> </span>from<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>loc<span class="o">}</span><span class="w"> </span>to<span class="w"> </span>the<span class="w"> </span><span class="o">{</span>room<span class="w"> </span>or<span class="w"> </span>room<span class="w"> </span><span class="m">2</span><span class="o">}</span>
+</code></pre></div>
+<ol>
+<li>
+<p><code>guidePrsFromBeacToBeac</code>: Same as <code>guideNameFromBeacToBeac</code> but with a person. Identify the person either with a gesture or pose.</p>
+</li>
+<li>
+<p><code>guideClothPrsFromBeacToBeac</code>: Same as <code>guideNameFromBeacToBeac</code> but with a person. Identify the person with a cloth description (clothe + color).</p>
+</li>
+<li>
+<p><code>bringMeObjFromPlcmt</code>: The robot is asked to bring an object from a placement to the person giving the instruction.</p>
+</li>
+<li>
+<p><code>tellCatPropOnPlcmt</code>: Similar to <code>tellObjPropOnPlcmt</code> but with a category of objects.</p>
+</li>
+<li>
+<p><code>greetClothDscInRm</code>: Greet person by cloth and then follow up. The follow up is the same as <code>findPrs</code>.</p>
+</li>
+<li>
+<p><code>greetNameInRm</code>: Greet person by name and then follow up. The follow up is the same as <code>findPrs</code>.</p>
+</li>
+<li>
+<p><code>meetNameAtLocThenFindInRm</code>: Meet a person at a location and then find them in a room.</p>
+</li>
+<li>
+<p><code>countClothPrsInRoom</code>: Count people in a room by cloth description.</p>
+</li>
+<li>
+<p><code>tellPrsInfoAtLocToPrsAtLoc</code>: Tell information about a person at a location to a person at another location.</p>
+</li>
+<li>
+<p><code>followPrsAtLoc</code>: Follow a person at a location. Identify by either gesture or pose and found in a specified room.</p>
+</li>
+</ol>
+<h2 id="tasks-per-area">Tasks per Area</h2>
+<h3 id="vision">Vision</h3>
+<ul>
+<li>Save names and associate with persons.</li>
+<li>Be able to recall previous persons</li>
+<li>Save gestures and poses and associate with persons</li>
+<li>Be able to identify the following gestures and poses:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a><span class="c1"># Gestures</span>
+<a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a><span class="o">[</span><span class="s2">&quot;waving person&quot;</span>,<span class="w"> </span><span class="s2">&quot;person raising their left arm&quot;</span>,<span class="w"> </span><span class="s2">&quot;person raising their right arm&quot;</span><span class="w"> </span><span class="s2">&quot;person pointing to the left&quot;</span>,<span class="w"> </span><span class="s2">&quot;person pointing to the right&quot;</span><span class="o">]</span>
+<a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>
+<a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a><span class="c1"># Poses</span>
+<a id="__codelineno-11-5" name="__codelineno-11-5" href="#__codelineno-11-5"></a><span class="o">[</span><span class="s2">&quot;sitting person&quot;</span>,<span class="w"> </span><span class="s2">&quot;standing person&quot;</span>,<span class="w"> </span><span class="s2">&quot;lying person&quot;</span><span class="o">]</span>
+</code></pre></div>
+<ul>
+<li>Be able to identify the following clothes and colors:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a><span class="nv">color_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;blue&quot;</span>,<span class="w"> </span><span class="s2">&quot;yellow&quot;</span>,<span class="w"> </span><span class="s2">&quot;black&quot;</span>,<span class="w"> </span><span class="s2">&quot;white&quot;</span>,<span class="w"> </span><span class="s2">&quot;red&quot;</span>,<span class="w"> </span><span class="s2">&quot;orange&quot;</span>,<span class="w"> </span><span class="s2">&quot;gray&quot;</span><span class="o">]</span>
+<a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a><span class="nv">clothe_list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">[</span><span class="s2">&quot;t shirt&quot;</span>,<span class="w"> </span><span class="s2">&quot;shirt&quot;</span>,<span class="w"> </span><span class="s2">&quot;blouse&quot;</span>,<span class="w"> </span><span class="s2">&quot;sweater&quot;</span>,<span class="w"> </span><span class="s2">&quot;coat&quot;</span>,<span class="w"> </span><span class="s2">&quot;jacket&quot;</span><span class="o">]</span>
+</code></pre></div>
+<h3 id="navigation">Navigation</h3>
+<ul>
+<li>Follow persons</li>
+<li>Guide persons (go to x while making sure person follows)</li>
+<li>Go to locations</li>
+<li>General obstacle avoidance</li>
+</ul>
+<h3 id="hri">HRI</h3>
+<ul>
+<li>Recognize and remember person asking the question</li>
+<li>Understand commands</li>
+<li>Find someone by name</li>
+<li>Answer questions related to this context:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>{&quot;something about yourself&quot; | &quot;the time&quot; | &quot;what day is today&quot; | &quot;what day is tomorrow&quot; | &quot;your teams name&quot; | &quot;your teams country&quot; | &quot;your teams affiliation&quot; |&quot;the day of the week&quot; | &quot;the day of the month&quot;}
+</code></pre></div>
+<ul>
+<li>Answer generic questions or quizzes</li>
+<li>Interpret objects by category and properties</li>
+</ul>
+<h3 id="manipulation">Manipulation</h3>
+<ul>
+<li>Pick and place or give to a person the objects that appear in the rulebook.</li>
+<li>Some of the objects are:</li>
+</ul>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="o">{</span>
+<a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="w"> </span><span class="s1">&#39;orange juice&#39;</span>,<span class="w"> </span><span class="s1">&#39;red wine&#39;</span>,<span class="w"> </span><span class="s1">&#39;milk&#39;</span>,<span class="w"> </span><span class="s1">&#39;iced tea&#39;</span>,<span class="w"> </span><span class="s1">&#39;cola&#39;</span>,
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="w"> </span><span class="s1">&#39;tropical juice&#39;</span>,<span class="w"> </span><span class="s1">&#39;juice pack&#39;</span>,<span class="w"> </span><span class="s1">&#39;apple&#39;</span>,<span class="w"> </span><span class="s1">&#39;pear&#39;</span>,<span class="w"> </span><span class="s1">&#39;lemon&#39;</span>,
+<a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a><span class="w"> </span><span class="s1">&#39;peach&#39;</span>,<span class="w"> </span><span class="s1">&#39;banana&#39;</span>,<span class="w"> </span><span class="s1">&#39;strawberry&#39;</span>,<span class="w"> </span><span class="s1">&#39;orange&#39;</span>,<span class="w"> </span><span class="s1">&#39;plum&#39;</span>,<span class="w"> </span><span class="s1">&#39;cheezit&#39;</span>,
+<a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a><span class="w"> </span><span class="s1">&#39;cornflakes&#39;</span>,<span class="w"> </span><span class="s1">&#39;pringles&#39;</span>,<span class="w"> </span><span class="s1">&#39;tuna&#39;</span>,<span class="w"> </span><span class="s1">&#39;sugar&#39;</span>,<span class="w"> </span><span class="s1">&#39;strawberry jello&#39;</span>,
+<a id="__codelineno-14-6" name="__codelineno-14-6" href="#__codelineno-14-6"></a><span class="w"> </span><span class="s1">&#39;tomato soup&#39;</span>,<span class="w"> </span><span class="s1">&#39;mustard&#39;</span>,<span class="w"> </span><span class="s1">&#39;chocolate jello&#39;</span>,<span class="w"> </span><span class="s1">&#39;spam&#39;</span>,<span class="w"> </span><span class="s1">&#39;coffee grounds&#39;</span>,
+<a id="__codelineno-14-7" name="__codelineno-14-7" href="#__codelineno-14-7"></a><span class="w"> </span><span class="s1">&#39;plate&#39;</span>,<span class="w"> </span><span class="s1">&#39;fork&#39;</span>,<span class="w"> </span><span class="s1">&#39;spoon&#39;</span>,<span class="w"> </span><span class="s1">&#39;cup&#39;</span>,<span class="w"> </span><span class="s1">&#39;knife&#39;</span>,<span class="w"> </span><span class="s1">&#39;bowl&#39;</span>,<span class="w"> </span><span class="s1">&#39;rubiks cube&#39;</span>,
+<a id="__codelineno-14-8" name="__codelineno-14-8" href="#__codelineno-14-8"></a><span class="w"> </span><span class="s1">&#39;soccer ball&#39;</span>,<span class="w"> </span><span class="s1">&#39;dice&#39;</span>,<span class="w"> </span><span class="s1">&#39;tennis ball&#39;</span>,<span class="w"> </span><span class="s1">&#39;baseball&#39;</span>,<span class="w"> </span><span class="s1">&#39;cleanser&#39;</span>,<span class="w"> </span><span class="s1">&#39;sponge&#39;</span>
+<a id="__codelineno-14-9" name="__codelineno-14-9" href="#__codelineno-14-9"></a><span class="o">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.annotate"], "search": "../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.a7c05c9e.min.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
