@@ -25,6 +25,8 @@ Member status:
 **Development**:
 
 - Integrated local structured output on main (`extract_data`, `command_interpreter_v2`) while maintaining backwards compatibility.
+- Tested new Ollama version, which includes a new feature for structured output that supports our fine tuned model.
+- The fine tuned model didn't work as expected with the Orin Nano, likely due to a lack of resources, since it worked on a laptop. We will test it on the Xavier AGX.
 
 **Research**:
 
