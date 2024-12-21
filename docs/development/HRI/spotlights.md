@@ -11,6 +11,26 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2024-12-20
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto | 🤝     |
+| Ivan     | 💻     |
+| Jocelyn  |        |
+| Leo L.   | 💻     |
+| Oscar    | 💻     |
+
+**Development**:
+
+- Tests using function calling
+- Vector embedding database
+- Integration of benchmarked embeddings on several use cases using ROS 2.
+- Migrated docker cuda container to ROS 2 .
+
+**Research**:
+
 ## 2024-12-13
 
 | Name     | Stauts |
