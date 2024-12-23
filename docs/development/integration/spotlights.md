@@ -51,6 +51,7 @@ Planning of new tasks:
 **Documentation**:
 
 - Analyzed 7 tasks, considering the main states, transitions, and the specific actions that need to be available for each of the tasks.
+- Summarized the [tasks per area](./Task%20Breakdown/AreaTasks.md).
 
 **Research**:
 

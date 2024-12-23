@@ -102,12 +102,6 @@ The following are all the commands available:
 
 `command_string`:"{go | navigate} to the {loc_room | (select either location or room)} then " + `follow up command`
 
-Steps:
-| Action | Status |
-| -------- | ---------- |
-| Understand location | ✔️ |
-| Navigate to location | ✔️ |
-
 #### Follow up command
 
 There are 3 options for a follow up command: `findPrs`, `findObj`, `meetName`.
