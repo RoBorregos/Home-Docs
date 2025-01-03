@@ -13,6 +13,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Tracker node: 
     - Research on different approaches
 - Pose/gesture/clothes detector
+    - Person's center detection and tracking methods added
+    - Investigation started on angle detection
 - Moondream2 wrapper
 
 **To do:**
