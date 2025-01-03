@@ -28,6 +28,9 @@ Member status:
 - Integrated pre-commit to home2 repository & github action.
 - Implemented python linter and formatter (ruff) to home2.
 - Base docker images with ROS2 for cuda and cpu.
+- Added task manager and frida_interfaces package.
+- Added workflow to check ROS2 build.
+- Added vision subtask_manager. 
 
 **Documentation**:
 
