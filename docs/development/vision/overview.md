@@ -2,20 +2,20 @@
 
 ## General Nodes
 
-### Object Detector (Trained Model) - Benvenuto
+### Object Detector (Trained Model) 
 - Objects specified in the rulebook  
 - Objects given in competition  
 
-### Object Detector (Meta) - Joce
+### Object Detector (Meta)
 - Potentially new objects (other tools)  
 
 ### Object Detector (3D)
 
-### Face Recognition - Ale
+### Face Recognition
 - Recognize known faces  
 - Save new face  
 
-### Person Tracker - Ale
+### Person Tracker
 - Single tracker (track one person)  
   - By toggle  
   - By pose/gesture/pose  
@@ -72,7 +72,7 @@
 
 ## Utils (Classes)
 
-### Pose/Gesture/Clothes Detector - Gil
+### Pose/Gesture/Clothes Detector 
 - Given an image with a person, return:  
   - Pose  
   - Gesture  
@@ -82,7 +82,7 @@
   - Center of the person (chest)  
   - Angle of the person  
 
-### Moondream2 Wrapper - Joce
+### Moondream2 Wrapper 
 - Given a prompt and an image, return the output  
 - Check fastest way to import moondream (ollama, transformers, etc)  
 
