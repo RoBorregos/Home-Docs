@@ -10,7 +10,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 **In progress:**
 
-- Tracker node
+- Tracker node: 
+    - Research on different approaches
 - Pose/gesture/clothes detector
 - Moondream2 wrapper
 
