@@ -18,13 +18,15 @@ Member status:
 | Diego    |             |
 | Gilberto |             |
 | Ivan     |             |
-| Jocelyn  |             |
+| Jocelyn  |💻 🔍         |
 | Leo L.   |             |
 | Oscar    | 💻 🔄 📝 🤝 |
 
 **Development**:
 
 - Automatically download piper TTS models if not locally present (avoid committing heavy files).
+- Trained 3 different KWS models: "Frida", "Yes" and "No". Obtained both .onnx and .tflite files.
+- Generated 15GB worth of synthetic audio clips to obtain performance metrics.
 
 **Documentation**:
 
@@ -38,6 +40,9 @@ Member status:
 - Ros2 package setup for speech.
 - Migrated speech utility files.
 - Migrated `audio_capturer.py` and `say.py` to ROS 2.
+
+**Research**:
+- Active in discussion [channel](https://github.com/dscripka/openWakeWord/discussions/227) on GitHub to find out how to obtain metrics for our KWS models.
 
 ## 2024-12-27
 
