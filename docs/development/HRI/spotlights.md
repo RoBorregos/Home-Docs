@@ -11,6 +11,47 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-1-03
+
+| Name     | Stauts      |
+| -------- | ----------- |
+| Diego    |             |
+| Gilberto |             |
+| Ivan     |             |
+| Jocelyn  |             |
+| Leo L.   |             |
+| Oscar    | 💻 🔄 📝 🤝 |
+
+**Development**:
+
+- Automatically download piper TTS models if not locally present (avoid committing heavy files).
+
+**Documentation**:
+
+- Instructions on how to build HRI with docker compose.
+- HRI Tree structure.
+
+**Refactoring**:
+
+- Cleaned Dockerfiles for CPU and Cuda images for ROS2.
+- Moved docker compose for devices to use CPU image.
+- Ros2 package setup for speech.
+- Migrated speech utility files.
+- Migrated `audio_capturer.py` and `say.py` to ROS 2.
+
+## 2024-12-27
+
+(Holiday break)
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    |        |
+
 ## 2024-12-20
 
 | Name     | Stauts |
