@@ -11,6 +11,46 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2024-1-3
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     | 💻 📝  |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+**Development**:
+
+- Integrated pre-commit to home2 repository & github action.
+- Implemented python linter and formatter (ruff) to home2.
+- Base docker images with ROS2 for cuda and cpu.
+- Added task manager and frida_interfaces package.
+- Added workflow to check ROS2 build.
+- Added vision subtask_manager. 
+
+**Documentation**:
+
+- Added README.md for docker naming conventions.
+- Added README.md for setting up the project with pre-commit & ruff.
+
+## 2024-12-27
+
+(Holiday break)
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |        |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
 ## 2024-12-20
 
 | Name      | Stauts |
@@ -18,7 +58,7 @@ Member status:
 | Diego     |        |
 | Oscar     |        |
 | Ale       |        |
-| Gilberto  | 🔄 🤝      |
+| Gilberto  | 🔄 🤝  |
 | Fregoso   |        |
 | Ivan      |        |
 | Domínguez |        |
