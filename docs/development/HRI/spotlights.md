@@ -11,6 +11,39 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-1-15
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    |        |
+
+**Development**:
+
+- TODO
+
+## 2025-1-10
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto | 🔄     |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    | 🔄     |
+
+**Refactoring**:
+
+- `nlp` package setup in ROS 2.
+- Migrated `command_interpreter.py` node to ROS 2.
+- Migration of several speech nodes to ROS 2: `hear.py`, `kws.py`, `respeaker.py`, `useful_audio.py`.
+- Integration of some speech nodes to the speech launchfile.
+
 ## 2025-1-03
 
 | Name     | Stauts      |
@@ -18,7 +51,7 @@ Member status:
 | Diego    |             |
 | Gilberto |             |
 | Ivan     |             |
-| Jocelyn  |💻 🔍         |
+| Jocelyn  | 💻 🔍       |
 | Leo L.   |             |
 | Oscar    | 💻 🔄 📝 🤝 |
 
@@ -42,6 +75,7 @@ Member status:
 - Migrated `audio_capturer.py` and `say.py` to ROS 2.
 
 **Research**:
+
 - Active in discussion [channel](https://github.com/dscripka/openWakeWord/discussions/227) on GitHub to find out how to obtain metrics for our KWS models.
 
 ## 2024-12-27
