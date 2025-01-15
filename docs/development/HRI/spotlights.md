@@ -16,7 +16,7 @@ Member status:
 | Name     | Stauts |
 | -------- | ------ |
 | Diego    |        |
-| Gilberto |        |
+| Gilberto | 🔄     |
 | Ivan     |        |
 | Jocelyn  |        |
 | Leo L.   |        |
@@ -25,6 +25,12 @@ Member status:
 **Development**:
 
 - Installed the nvidia container runtime on the Jetson Orin AGX through the SDK manager and tested the ollama container with the fine-tuned model using structured output, which worked.
+
+**Refactoring**
+
+- Fixed hear and useful_audio ROS2 nodes.
+- Integrated with gRPC speech to text docker microservice.
+- Added functional speech launch file.
 
 ## 2025-1-10
 
