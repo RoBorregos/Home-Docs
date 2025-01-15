@@ -24,7 +24,7 @@ Member status:
 
 **Development**:
 
-- TODO
+- Installed the nvidia container runtime on the Jetson Orin AGX through the SDK manager and tested the ollama container with the fine-tuned model using structured output, which worked.
 
 ## 2025-1-10
 
