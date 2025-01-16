@@ -2,6 +2,22 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-01-15
+**Done:**
+
+- Moondream2 wrapper
+
+**In progress:**
+
+- Tracker node: 
+    - REID module 
+- Pose/gesture/clothes detector:
+    - Implemented S2T ratio with MediaPipe to determine person's general angle
+
+**To do:**
+
+- Object detector v1
+
 ## 2025-01-03
 **Done:**
 
