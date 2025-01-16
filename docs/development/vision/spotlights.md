@@ -11,8 +11,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 - Tracker node: 
     - REID module 
-- Pose/gesture/clothes detector
-    - 
+- Pose/gesture/clothes detector:
+    - Implemented S2T ratio with MediaPipe to determine person's general angle
 
 **To do:**
 
