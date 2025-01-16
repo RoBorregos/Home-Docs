@@ -18,13 +18,15 @@ Member status:
 | Diego    |        |
 | Gilberto | 🔄     |
 | Ivan     |   🔄   |
-| Jocelyn  |        |
+| Jocelyn  | 💻     |
 | Leo L.   |        |
 | Oscar    |        |
 
 **Development**:
 
 - Installed the nvidia container runtime on the Jetson Orin AGX through the SDK manager and tested the ollama container with the fine-tuned model using structured output, which worked.
+- Created ROS2 node that interacts with OpenWakeWord library for keyword spotting
+- Loaded models to hri project directory
 
 **Refactoring**
 
