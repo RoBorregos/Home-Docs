@@ -17,7 +17,7 @@ Member status:
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
-| Ivan     |        |
+| Ivan     |   🔄   |
 | Jocelyn  |        |
 | Leo L.   |        |
 | Oscar    |        |
@@ -31,6 +31,8 @@ Member status:
 - Fixed hear and useful_audio ROS2 nodes.
 - Integrated with gRPC speech to text docker microservice.
 - Added functional speech launch file.
+- Migrated extract_data node
+- Migrated stop_listener node
 
 ## 2025-1-10
 
