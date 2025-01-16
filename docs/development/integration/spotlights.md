@@ -11,6 +11,35 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2024-1-15
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |        |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+**Research**:
+
+- Feasibility / how to integrate behavior trees with ROS2 for the task managers.
+- Schedule meeting to propose new features for task managers and sub task managers.
+
+## 2024-1-10
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |        |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
 ## 2024-1-3
 
 | Name      | Stauts |
@@ -30,7 +59,7 @@ Member status:
 - Base docker images with ROS2 for cuda and cpu.
 - Added task manager and frida_interfaces package.
 - Added workflow to check ROS2 build.
-- Added vision subtask_manager. 
+- Added vision subtask_manager.
 
 **Documentation**:
 
