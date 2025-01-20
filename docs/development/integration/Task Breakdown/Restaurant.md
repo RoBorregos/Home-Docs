@@ -37,28 +37,123 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 
 <hr />
 
-## Tasks per Area
+# Tasks per Area
 
-### Vision
+## Navigation
 
-- Detect calling or waving customer
-- Re-identify the person in case they lower their hand and the robot loses sight of them
-- Detect objects from the kitchen bar
+### navigate_to_target
 
-### Navigation
-- Reach a customer’s table in an unknown environment
-- Return to the kitchen bar
-- If computer vision is used to re-identify the customer, the robot should return to the customer’s table according to the customer’s position provided by the vision system. However, a different approach would be to keep track of the customer’s position by online mapping or other means.
+Move to a target coordinate (customer)
 
-### Manipulation
-- Follow the face of a person when taking an order
-- Pick up an object from the kitchen bar
-- Place the object on the table
+*Subtask Manager*
 
-### HRI
-- Take an order from a customer
-- Communicate any needs to the bar man
-- Interpret the objects to be served
+Args
+- coordinates: Tuple[float,float,float] (3D coordinates to set nav goal)
+
+Return
+- None
+
+### navigate_to_origin
+
+Return to starting point (kitchen bar)
+
+*Subtask Manager*
+
+Args
+- None
+
+Return
+- None
+
+## Manipulation
+
+### pan_camera
+
+Move the arm horizontally either left or right to allow the camera to have a different field of view for customer detection.
+
+*Subtask Manager*
+
+Args
+- direction: int (either -1(pan to left) or 1(pan to right))
+
+Return
+- None
+
+### follow_face
+
+Follow the face of a person with the arm.
+
+*Subtask Manager*
+
+Args
+- follow: bool (True to follow the face, False to stop following)
+
+Return
+- None
+
+## HRI
+### say
+Say text provided
+
+### get_order
+Get items asked by customer and quantity
+
+*Subtask Manager*
+
+Args
+- None
+
+Return
+- order: string? (will depend on picking approach
+)
+
+## Vision
+
+### detect_waving_customer
+
+  Check if a person is waving/raising their hand.
+
+  *Subtask Manager*
+
+  Args
+  - None
+
+  Return 
+  - status: int (success, execution error, terminal error or target not found ENUM)
+  - coordinates: Tuple[float,float,float] (3D coordinates to set nav goal)
+
+  *Node implementation: First iteration:*
+  
+  Capture current frame and check if there is a person waving/raising their hand.
+
+  Service that returns msg:
+  - bool found: if a person waving/raising hand is found
+  - point coordinates (from geometry msgs): 3D coordinates of the person detected
+
+  *Node implementation: Second iteration (if first option is unstable for nav):*
+
+  If needed, the person detected should be tracked and their coordinates should be published 
+  to improve performance.
+
+  Service that returns msg:
+  - bool found
+  - point coordinates(from geometry msgs)
+
+  Publisher:
+  - point coordinates (from geometry msgs) of the person being tracked 
+
+### follow_person
+  Activate tracking to publish coordinates of person that will be followed.
+
+  *Subtask Manager*
+  Args
+  - None
+
+  Return
+  - None
+
+### follow_face
+A node should publish the coordinates of the largest face available so that the arm can follow it.
 
 <hr />
 
