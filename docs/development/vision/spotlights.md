@@ -2,6 +2,21 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-01-22
+**Done:**
+
+- 
+
+**In progress:**
+
+- Tracker node tests 
+
+
+**To do:**
+
+- Storing groceries commands
+- Restaurant commands
+
 ## 2025-01-15
 **Done:**
 
