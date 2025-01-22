@@ -11,6 +11,22 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2024-1-22
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     | 💻     |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+**Development**:
+
+- Package for constant management (python support)
+
 ## 2024-1-15
 
 | Name      | Stauts |
