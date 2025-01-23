@@ -19,8 +19,13 @@ Member status:
 | Gilberto | 🔄     |
 | Ivan     |        |
 | Jocelyn  |        |
-| Leo L.   |        |
+| Leo L.   |   💻   |
 | Oscar    |        |
+
+
+**Development**
+
+-Migrating the item_categorization service to ChromaDB (vector database) for better performance and scalabilty.
 
 **Refactoring**
 
