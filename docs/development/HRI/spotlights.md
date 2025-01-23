@@ -11,13 +11,33 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-1-22
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto | 🔄     |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |   💻   |
+| Oscar    |        |
+
+
+**Development**
+
+-Migrating the item_categorization service to ChromaDB (vector database) for better performance and scalabilty.
+
+**Refactoring**
+
+- Moved Speech To Text service to hear node and integrated callback groups for async calling.
+
 ## 2025-1-15
 
 | Name     | Stauts |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
-| Ivan     |   🔄   |
+| Ivan     | 🔄     |
 | Jocelyn  | 💻     |
 | Leo L.   |        |
 | Oscar    |        |
