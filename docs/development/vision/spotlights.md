@@ -9,7 +9,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 **In progress:**
 
-- Tracker node tests 
+- Tracker node tests
+- Investigation for pose estimation classification. Considering training a Tensorflow Lite model with MediaPipe.
 
 
 **To do:**
