@@ -16,11 +16,15 @@ Member status:
 | Name     | Stauts |
 | -------- | ------ |
 | Diego    |        |
-| Gilberto |        |
+| Gilberto | 🔄     |
 | Ivan     |        |
 | Jocelyn  |        |
 | Leo L.   |        |
 | Oscar    |        |
+
+**Refactoring**
+
+- Moved Speech To Text service to hear node and integrated callback groups for async calling.
 
 ## 2025-1-15
 
