@@ -11,13 +11,25 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2024-1-29
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |        |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
 ## 2024-1-22
 
 | Name      | Stauts |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     | 💻     |
-| Ale       |        |
+| Ale       | 💻     |
 | Gilberto  |        |
 | Fregoso   |        |
 | Ivan      |        |
@@ -26,6 +38,8 @@ Member status:
 **Development**:
 
 - Package for constant management (python support)
+- Implementation of mock config for subtask managers
+- Implementation of topic checks for subtask managers
 
 ## 2024-1-15
 
