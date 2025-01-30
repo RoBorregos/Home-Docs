@@ -19,8 +19,12 @@ Member status:
 | Gilberto |        |
 | Ivan     |        |
 | Jocelyn  |        |
-| Leo L.   |        |
+| Leo L.   |  💻      |
 | Oscar    |        |
+
+**Development**
+
+-ChromaDB for embeddings query set up and working.
 
 ## 2025-1-22
 
