@@ -11,6 +11,17 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-1-27
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    |        |
+
 ## 2025-1-22
 
 | Name     | Stauts |
@@ -19,9 +30,8 @@ Member status:
 | Gilberto | 🔄     |
 | Ivan     |        |
 | Jocelyn  |        |
-| Leo L.   |   💻   |
+| Leo L.   | 💻     |
 | Oscar    |        |
-
 
 **Development**
 
