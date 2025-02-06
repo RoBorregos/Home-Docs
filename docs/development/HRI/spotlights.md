@@ -11,6 +11,32 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-05
+
+| Name     | Stauts   |
+| -------- | -------- |
+| Diego    |          |
+| Gilberto |          |
+| Ivan     |          |
+| Jocelyn  |          |
+| Leo L.   | 💻       |
+| Oscar    | 🔧 🔄 📝 |
+
+**Development**:
+
+- Add the embeddings to the DB only when needed (skip if cached).
+- Added params to node to control the embeddings to be added to the DB.
+- Integration of embeddings to subtask manager.
+
+**Refactoring**:
+
+- Launchfiles for hri.
+- Added needed containers to general, hri docker-compose.
+
+**Documentation**:
+
+- Updated HRI README for new docker-compose structure.
+
 ## 2025-1-27
 
 | Name     | Stauts |
@@ -19,7 +45,7 @@ Member status:
 | Gilberto |        |
 | Ivan     |        |
 | Jocelyn  |        |
-| Leo L.   |  💻      |
+| Leo L.   | 💻     |
 | Oscar    |        |
 
 **Development**
