@@ -11,6 +11,32 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-13
+
+| Name     | Stauts   |
+| -------- | -------- |
+| Diego    |          |
+| Gilberto |          |
+| Ivan     |          |
+| Jocelyn  | 🔧       |
+| Leo L.   |          |
+| Oscar    | 🔧 📝 💻 |
+
+**Bug fixing**:
+
+- OpenWakeWord in jetson orin (runtime)
+- OpenWakeWord installation
+
+**Development**:
+
+- Docker image for jetson Orin
+- Docker compose for jetson orin
+
+**Documentation**:
+
+- Added instructions for pulseaudio setup sink and source setup in the README.
+- Running HRI area for the demo.
+
 ## 2025-2-05
 
 | Name     | Stauts   |
