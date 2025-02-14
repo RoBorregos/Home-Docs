@@ -2,6 +2,19 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-02-13
+**Done:**
+
+- Update subtask_manager for follow_face demo
+
+**In progress:**
+
+- Restaurant commands
+- Storing groceries commands
+- Object detector
+
+**To do:**
+- GPSR Commands
 
 ## 2025-02-05
 **Done:**
