@@ -74,14 +74,14 @@ Move the arm horizontally either left or right to allow the camera to have a dif
 *Subtask Manager*
 
 Args
-- direction: int (either -1(pan to left) or 1(pan to right))
+- direction: int (either -1(pan to left) or 1(pan to right)), maybe also sending the angle 
 
 Return
 - None
 
 ### follow_face
 
-Follow the face of a person with the arm.
+Follow the face of a person with the arm. There should be a subscriber for the vision topic, but the arm should only start following the face when requested (this could be a service or a subscriber).
 
 *Subtask Manager*
 
