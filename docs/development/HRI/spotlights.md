@@ -11,13 +11,99 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-13
+
+| Name     | Stauts   |
+| -------- | -------- |
+| Diego    |          |
+| Gilberto |          |
+| Ivan     |          |
+| Jocelyn  | 🔧       |
+| Leo L.   |          |
+| Oscar    | 🔧 📝 💻 |
+
+**Bug fixing**:
+
+- OpenWakeWord in jetson orin (runtime)
+- OpenWakeWord installation
+
+**Development**:
+
+- Docker image for jetson Orin
+- Docker compose for jetson orin
+
+**Documentation**:
+
+- Added instructions for pulseaudio setup sink and source setup in the README.
+- Running HRI area for the demo.
+
+## 2025-2-05
+
+| Name     | Stauts   |
+| -------- | -------- |
+| Diego    |          |
+| Gilberto |          |
+| Ivan     |          |
+| Jocelyn  |          |
+| Leo L.   | 💻       |
+| Oscar    | 🔧 🔄 📝 |
+
+**Development**:
+
+- Add the embeddings to the DB only when needed (skip if cached).
+- Added params to node to control the embeddings to be added to the DB.
+- Integration of embeddings to subtask manager.
+
+**Refactoring**:
+
+- Launchfiles for hri.
+- Added needed containers to general, hri docker-compose.
+
+**Documentation**:
+
+- Updated HRI README for new docker-compose structure.
+
+## 2025-1-27
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   | 💻     |
+| Oscar    |        |
+
+**Development**
+
+-ChromaDB for embeddings query set up and working.
+
+## 2025-1-22
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto | 🔄     |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   | 💻     |
+| Oscar    |        |
+
+**Development**
+
+-Migrating the item_categorization service to ChromaDB (vector database) for better performance and scalabilty.
+
+**Refactoring**
+
+- Moved Speech To Text service to hear node and integrated callback groups for async calling.
+
 ## 2025-1-15
 
 | Name     | Stauts |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
-| Ivan     |   🔄   |
+| Ivan     | 🔄     |
 | Jocelyn  | 💻     |
 | Leo L.   |        |
 | Oscar    |        |

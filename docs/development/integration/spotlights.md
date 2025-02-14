@@ -11,7 +11,53 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2024-1-15
+## 2025-1-29
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     | 💻     |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+**Development**:
+
+- Sub task manager for HRI (Command interpreter service, Grammar node, hear, find_closest). Todo: ask function (retrieve from vector store), interpret_keyword (high-level api)
+
+## 2025-1-29
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |        |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+## 2025-1-22
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     | 💻     |
+| Ale       | 💻     |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+**Development**:
+
+- Package for constant management (python support)
+- Implementation of mock config for subtask managers
+- Implementation of topic checks for subtask managers
+
+## 2025-1-15
 
 | Name      | Stauts |
 | --------- | ------ |
@@ -28,7 +74,7 @@ Member status:
 - Feasibility / how to integrate behavior trees with ROS2 for the task managers.
 - Schedule meeting to propose new features for task managers and sub task managers.
 
-## 2024-1-10
+## 2025-1-10
 
 | Name      | Stauts |
 | --------- | ------ |
@@ -40,7 +86,7 @@ Member status:
 | Ivan      |        |
 | Domínguez |        |
 
-## 2024-1-3
+## 2025-1-3
 
 | Name      | Stauts |
 | --------- | ------ |
