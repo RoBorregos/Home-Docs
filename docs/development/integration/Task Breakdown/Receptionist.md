@@ -41,31 +41,28 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 
 ## Navigation
 
-### navigate_to_target
+### navigate_to_position
 
-Move to a target coordinate (customer)
-
-*Subtask Manager*
+Move to a predefined position
 
 Args
-- coordinates: Tuple[float,float,float] (3D coordinates to set nav goal)
-
-Return
-- None
-
-### navigate_to_origin
-
-Return to starting point (kitchen bar)
-
-*Subtask Manager*
-
-Args
-- None
+- position: to be defined
 
 Return
 - None
 
 ## Manipulation
+
+### move_to_position
+Move the arm to predefined positions: Navigation and Interaction
+Navigation: Arm should be pointing to the navigation direction.
+Interaction: Arm should be positioned at an angle to see guest faces of potentially different heights.
+
+Args
+- position: string or int (representing navigation or interaction position)
+
+Return:
+- None
 
 ### pan_camera
 
@@ -91,21 +88,25 @@ Args
 Return
 - None
 
+### open_door
+
+For extra points the robot should open the door :o
+
 ## HRI
 ### say
 Say text provided
 
-### get_order
-Get items asked by customer and quantity
+### hear
+The robot should listen and be prepared for varying responses in order to identify: name, favorite drink and interests
 
-*Subtask Manager*
+  Return
+  - value: string (either name, drink or interest)
 
-Args
-- None
+### generate_small_talk
+Given 2-3 guest interests, generate an introduction with small talk regarding common interests.
 
-Return
-- order: string? (will depend on picking approach
-)
+    Return
+    - small_talk: string
 
 ## Vision
 
@@ -134,6 +135,16 @@ Return
   Return
   - position: Point (normalized)
 
+### save_face
+  Save the name of a guest and associate it to a face.
+
+  *Subtask Manager*
+  Args
+  - name: string
+
+  Return
+  - status: int (success, execution error, terminal error or target not found ENUM)
+
 ### follow_face
 A node should publish the coordinates of the largest face available so that the arm can follow it.
 
@@ -141,32 +152,33 @@ A node should publish the coordinates of the largest face available so that the 
 
 ## Main states
 
-### Detecting customers
-- In this state, the robot should look for a customer calling or waving. 
+### Wait for guest
+- Wait for a guest to be in front of the robot
 
-### Navigation to the customer
-- The robot should navigate to the customer’s table.
-- This could be achieved with a *follow person* approach as long as the customer can be re-identified.
-- Another approach would involve online mapping.
+### Greeting
+- Greet the new guest
+- Ask for name 
+- Associate name to face
 
-### Taking the order
-- For this state, the robot should take the order from the customer.
+### Navigate to beverages
+- Guide guest to beverage area
 
-### Navigation to the kitchen bar
-- The robot should return to the kitchen bar to pick up the objects.
+### Beverages
+- Ask for favorite drink
+- Check if the drink is available
+- Ask for interest
 
-### Picking objects
-- If a tray is used, the robot should request the objects from the barman to be placed in the tray or pick them and placing them in the tray by itself.
-- If no tray is used, the robot should pick up the objects one by one.
+### Navigate to living room
+- Guide guest to living room area
 
-### Returning to the customer
-- The robot should return to the customer’s table to serve the order.
+### Find seat
+- Find an available seat 
+- Point to seat
+- Ask guest to take a seat
 
-### Placing objects
-- The robot should place the objects on the table.
-- If a tray is used, the robot should serve the objects from the tray or request the customer to take them.
+### Introduction
+- Gaze at the host and introduce him to the new guest
+- If available, gaze at other guest and repeat 
 
-<p align="center">
-  <img width="500px" src="/assets/tasks/RestaurantDiagram.png" alt="Restaurant state diagram">
-</p>
-
+### Navigate to entrance
+- Go back to the entrance

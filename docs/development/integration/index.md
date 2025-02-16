@@ -1,20 +1,9 @@
-# Meeting notes
+# Integration Overview 
 
 ---
 
-## 2024-12-01
-
-Written by: `Oscar`
-
-| Name     | Attendance |
-| -------- | ---------- |
-| Diego    | ✔️         |
-| Oscar    | ✔️         |
-| Ale      | ✔️         |
-| Gilberto | ✔️         |
-| Fregoso  | ✔️         |
-| Ivan     | ✔️         |
-| Ale      | ✔️         |
+### Rulebook
+[Robocup @Home](https://robocupathome.github.io/RuleBook/rulebook/master.pdf)
 
 ### Agreements:
 
