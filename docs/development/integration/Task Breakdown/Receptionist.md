@@ -1,52 +1,58 @@
-# Restaurant
+# Receptionist
 
 ## Description
 
-The robot retrieves and serves orders to several customers in a real restaurant previously unknown to the robot.
+The robot has to take two new guests to the living room to introduce them and offer a free place
+to sit. (5 min limit)
 
-`Main Goal`: Detect calling or waving customer, reach a customer’s table without prior guidance/training. Take and serve all orders.
+`Main Goal`: The robot welcomes and assists two newcomers at a party while maintaining
+appropriate gaze direction during conversation (at person speaking, direction of navigation).
 
-`Optional Goals`: Use an unattached tray to transport the order.
-
-## Task Breakdown
-1. The robot should identify a customer calling or waving.
-2. The robot should reach the customer’s table.
-3. The robot should take the order (keep eye contact).
-4. The robot should go back to the *Kitchen bar* and pick the requested object.
-5. The robot should return to the identified customer and serve the order.
+`Optional Goals`: 
+1. Open the entrance door for each arriving guest.
+2. Describe the first guest for the second guest before reaching the living room
+3. Identify similarities between the guests and the host and incorporate them into the conversation.
 
 
 ## Possible points
-| **Category**           | **Action**                                                 | **Score**   |
-|-------------------------|-----------------------------------------------------------|-------------|
-| **Regular Rewards**     | Detect calling or waving customer                         | 2×100       |
-|                         | Reach a customer’s table without prior guidance/training  | 2×100       |
-|                         | Take an order.                                            | 2×300       |
-|                         | Serve an order.                                           | 2×300       |
-| **Bonus Rewards**       | Use an unattached tray to transport                       | 2×200       |
-| **Regular Penalties**   | Not making eye-contact when taking an order               | 2×–80       |
-|                         | Not reaching the bar (barman has to move from behind the bar to interact with the robot) | 2×–80 |
-| **Deus ex Machina Penalties** | Being guided to a table                              | 2×–200      |
-|                         | Asking the Barman to handover object to the robot         | 4×–50       |
-|                         | Guest needing to take the object from a tray or the robot’s hand | 4×–50  |
-|                         | Being told/pointed where is a table/Kitchen-bar           | 2×–100      |
-| **Special Penalties & Bonuses** | Not attending (see sec. 3.9.1)                   | –500        |
-|                         | Using alternative start signal (see sec. 3.7.8)          | –100        |
-|                         | Outstanding performance (see sec. 3.9.3)                 | 200         |
-| **Total**               | Total Score (excluding special penalties & standard bonuses) | 2000    |
+| **Category**                     | **Action**                                                      | **Score**   |
+|-----------------------------------|----------------------------------------------------------------|-------------|
+| **Main Goal**                     | Show the guest around (navigate to the beverage area and living room) | 2×30        |
+|                                   | Look in the direction of navigation or at the navigation goal  | 2×15        |
+|                                   | Confirm favorite drink                                          | 2×20        |
+|                                   | Confirm interest of guest                                       | 2×20        |
+|                                   | Tell position of favorite drink                                 | 2×20        |
+|                                   | Offer a free seat to the new guest                             | 2×100       |
+|                                   | Look at the person talking                                     | 2×75        |
+|                                   | Introduce both guests to each other                           | 75          |
+| **Bonus Rewards**                 | Open the entrance door for a guest                            | 2×200       |
+|                                   | State a shared interest between two or more persons           | 50          |
+|                                   | Describe the first guest to the second guest (per correct attribute) | 4×30        |
+| **Penalties**                     | Wrong guest information was memorized (continue with wrong name or drink) | 2×–50  |
+|                                   | Interest was not or wrongly memorized                         | 2×–50       |
+|                                   | Persistent inappropriate gaze (away from conversational partner) | –50     |
+|                                   | Persistent gaze not in the direction of navigation while moving | –25      |
+|                                   | Describe the first guest to the second guest (per incorrect attribute) | 4×–30  |
+|                                   | Wrongly stating a similarity                                  | –30         |
+| **Deus Ex Machina**               | Alternative HRI                                               | 2×–75       |
+|                                   | Not recognizing people                                        | 2×–200      |
+| **Special Penalties & Bonuses**   | Not attending (see sec. 3.9.1)                                | –500        |
+|                                   | Outstanding performance (see sec. 3.9.3)                      | 120         |
+| **Total Score (excluding special penalties & standard bonuses)** |                            | 1205        |
 
 <hr />
+<br />
 
 # Tasks per Area
 
 ## Navigation
 
-### navigate_to_position
+### navigate_to
 
 Move to a predefined position
 
 Args
-- position: to be defined
+- position: to be defined but should represent predefined locations
 
 Return
 - None
@@ -54,31 +60,33 @@ Return
 ## Manipulation
 
 ### move_to_position
-Move the arm to predefined positions: Navigation and Interaction
+Move the arm to predefined positions: 
+
 Navigation: Arm should be pointing to the navigation direction.
-Interaction: Arm should be positioned at an angle to see guest faces of potentially different heights.
+Gaze: Arm should be positioned at an angle to see guest faces of potentially different heights.
+Table: Arm should be pointed to a table top-view to identify items.
 
 Args
-- position: string or int (representing navigation or interaction position)
+- position: string, int or enum (find best option), representing positions
 
 Return:
 - None
 
-### pan_camera
+### pan_to
 
-Move the arm horizontally either left or right to allow the camera to have a different field of view for customer detection.
+Move the arm horizontally at gaze level given an angle to allow the camera to have a different field of view for seat detection.
 
 *Subtask Manager*
 
 Args
-- direction: int (either -1(pan to left) or 1(pan to right)), maybe also sending the angle 
+- angle: int (in degrees, where 0 is the center, - is to the left and + is to the right)
 
 Return
 - None
 
 ### follow_face
 
-Follow the face of a person with the arm. There should be a subscriber for the vision topic, but the arm should only start following the face when requested (this could be a service or a subscriber).
+Follow the face of a person with the arm. The vision topic will always be publishing the Point of the face to be tracked, so for manipulation, there should be a service to start following the face with the arm when requested or to stop following.
 
 *Subtask Manager*
 
@@ -102,15 +110,24 @@ The robot should listen and be prepared for varying responses in order to identi
   Return
   - value: string (either name, drink or interest)
 
-### generate_small_talk
-Given 2-3 guest interests, generate an introduction with small talk regarding common interests.
+### is_positive
+The robot will sometime need to ensure it heard something correctly, so it will ask for confirmation. Hence a function is necessary to identify if the response is positive (yes) or not.
 
-    Return
-    - small_talk: string
+Args
+- statement: str (guest response, eg: yes, that's right, wrong, etc)
+
+Return 
+- result: bool 
+
+### common interest
+Given the common interest and name of two people, find something in common and return a message such as: X is interested in soccer and Y in basketball, so you both like team sports.
+
+Return
+- common_message: string
 
 ## Vision
 
-### find_beverage
+### find_drink
 
   Check if there is a beverage available in a table and return its approximate position.
 
@@ -135,7 +152,7 @@ Given 2-3 guest interests, generate an introduction with small talk regarding co
   Return
   - position: Point (normalized)
 
-### save_face
+### save_face_name
   Save the name of a guest and associate it to a face.
 
   *Subtask Manager*
@@ -148,9 +165,32 @@ Given 2-3 guest interests, generate an introduction with small talk regarding co
 ### follow_face
 A node should publish the coordinates of the largest face available so that the arm can follow it.
 
+### detect_person
+Return true when a person is detected or stop when timeout is reached.
+
+Args:
+- timeout: float (time limit)
+
+Return:
+- None
+
+### detect_guest
+There should be a service to change the person's face to be followed to a specific guest instead of publishing largest face and vice-versa. Additionally, when following by name, the service should only return true when the person is detected or a timeout is reached.
+
+ Args:
+ - name: str (either person name or "largest_face")
+ - timeout: float? (time limit)
+
+ Return:
+ - result: bool (return true when the person is detected)
+
+### describe_guest
+Given the image of the guest, provide a description of the person.
+
+<br />
 <hr />
 
-## Main states
+# Main states
 
 ### Wait for guest
 - Wait for a guest to be in front of the robot
