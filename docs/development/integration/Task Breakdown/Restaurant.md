@@ -74,14 +74,14 @@ Move the arm horizontally either left or right to allow the camera to have a dif
 *Subtask Manager*
 
 Args
-- direction: int (either -1(pan to left) or 1(pan to right))
+- direction: int (either -1(pan to left) or 1(pan to right)), maybe also sending the angle 
 
 Return
 - None
 
 ### follow_face
 
-Follow the face of a person with the arm.
+Follow the face of a person with the arm. There should be a subscriber for the vision topic, but the arm should only start following the face when requested (this could be a service or a subscriber).
 
 *Subtask Manager*
 
@@ -109,48 +109,30 @@ Return
 
 ## Vision
 
-### detect_waving_customer
+### find_beverage
 
-  Check if a person is waving/raising their hand.
+  Check if there is a beverage available in a table and return its approximate position.
 
   *Subtask Manager*
 
   Args
-  - None
+  - drink: string (could be any type of drink)
 
   Return 
   - status: int (success, execution error, terminal error or target not found ENUM)
-  - coordinates: Tuple[float,float,float] (3D coordinates to set nav goal)
+  - found: bool (if the drink is available or not)
+  - position: string (aproximate position on the table: left, right, center, top, bottom)
 
-  *Node implementation: First iteration:*
-  
-  Capture current frame and check if there is a person waving/raising their hand.
 
-  Service that returns msg:
-  - bool found: if a person waving/raising hand is found
-  - point coordinates (from geometry msgs): 3D coordinates of the person detected
-
-  *Node implementation: Second iteration (if first option is unstable for nav):*
-
-  If needed, the person detected should be tracked and their coordinates should be published 
-  to improve performance.
-
-  Service that returns msg:
-  - bool found
-  - point coordinates(from geometry msgs)
-
-  Publisher:
-  - point coordinates (from geometry msgs) of the person being tracked 
-
-### follow_person
-  Activate tracking to publish coordinates of person that will be followed.
+### find_seat
+  Find an available seat.
 
   *Subtask Manager*
   Args
   - None
 
   Return
-  - None
+  - position: Point (normalized)
 
 ### follow_face
 A node should publish the coordinates of the largest face available so that the arm can follow it.
