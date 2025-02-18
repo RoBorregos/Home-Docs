@@ -49,12 +49,14 @@ appropriate gaze direction during conversation (at person speaking, direction of
 
 ### navigate_to
 
-Move to a predefined position
+Move to a predefined position (entrance, beverage_area, living_room)
 
 Args
+
 - position: to be defined but should represent predefined locations
 
 Return
+
 - None
 
 ## Manipulation
@@ -63,13 +65,18 @@ Return
 Move the arm to predefined positions: 
 
 Navigation: Arm should be pointing to the navigation direction.
+
 Gaze: Arm should be positioned at an angle to see guest faces of potentially different heights.
+
 Table: Arm should be pointed to a table top-view to identify items.
 
+<br />
 Args
+
 - position: string, int or enum (find best option), representing positions
 
 Return:
+
 - None
 
 ### pan_to
@@ -79,9 +86,11 @@ Move the arm horizontally at gaze level given an angle to allow the camera to ha
 *Subtask Manager*
 
 Args
+
 - angle: int (in degrees, where 0 is the center, - is to the left and + is to the right)
 
 Return
+
 - None
 
 ### follow_face
@@ -91,9 +100,11 @@ Follow the face of a person with the arm. The vision topic will always be publis
 *Subtask Manager*
 
 Args
+
 - follow: bool (True to follow the face, False to stop following)
 
 Return
+
 - None
 
 ### open_door
@@ -108,21 +119,30 @@ Say text provided
 The robot should listen and be prepared for varying responses in order to identify: name, favorite drink and interests
 
   Return
+
   - value: string (either name, drink or interest)
 
 ### is_positive
 The robot will sometime need to ensure it heard something correctly, so it will ask for confirmation. Hence a function is necessary to identify if the response is positive (yes) or not.
 
 Args
+
 - statement: str (guest response, eg: yes, that's right, wrong, etc)
 
 Return 
+
 - result: bool 
 
-### common interest
+### common_interest
 Given the common interest and name of two people, find something in common and return a message such as: X is interested in soccer and Y in basketball, so you both like team sports.
 
+Args
+
+- person1: tuple (name: str, interest: str)
+- person2: tuple (name: str, interest: str)
+
 Return
+
 - common_message: string
 
 ## Vision
@@ -134,9 +154,11 @@ Return
   *Subtask Manager*
 
   Args
+
   - drink: string (could be any type of drink)
 
   Return 
+
   - status: int (success, execution error, terminal error or target not found ENUM)
   - found: bool (if the drink is available or not)
   - position: string (aproximate position on the table: left, right, center, top, bottom)
@@ -147,9 +169,11 @@ Return
 
   *Subtask Manager*
   Args
+
   - None
 
   Return
+
   - position: Point (normalized)
 
 ### save_face_name
@@ -157,9 +181,11 @@ Return
 
   *Subtask Manager*
   Args
+
   - name: string
 
   Return
+
   - status: int (success, execution error, terminal error or target not found ENUM)
 
 ### follow_face
@@ -169,23 +195,35 @@ A node should publish the coordinates of the largest face available so that the 
 Return true when a person is detected or stop when timeout is reached.
 
 Args:
+
 - timeout: float (time limit)
 
 Return:
+
 - None
 
 ### detect_guest
 There should be a service to change the person's face to be followed to a specific guest instead of publishing largest face and vice-versa. Additionally, when following by name, the service should only return true when the person is detected or a timeout is reached.
 
  Args:
+
  - name: str (either person name or "largest_face")
  - timeout: float? (time limit)
 
  Return:
+
  - result: bool (return true when the person is detected)
 
 ### describe_guest
 Given the image of the guest, provide a description of the person.
+
+Args:
+
+- None
+
+Return:
+
+- description: string
 
 <br />
 <hr />
