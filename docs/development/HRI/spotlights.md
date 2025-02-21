@@ -11,6 +11,21 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-20
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    |        |
+
+**Planning**:
+
+- Backlog created in Github projects.
+
 ## 2025-2-13
 
 | Name     | Stauts   |
