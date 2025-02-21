@@ -11,6 +11,22 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-20
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |        |
+| Ale       |        |
+| Gilberto  |        |
+| Fregoso   |        |
+| Ivan      |        |
+| Domínguez |        |
+
+**Development**:
+
+- Receptionist task manager
+
 ## 2025-1-29
 
 | Name      | Stauts |
@@ -26,6 +42,7 @@ Member status:
 **Development**:
 
 - Sub task manager for HRI (Command interpreter service, Grammar node, hear, find_closest). Todo: ask function (retrieve from vector store), interpret_keyword (high-level api)
+- Update vision subtask manager to support follow face
 
 ## 2025-1-29
 
