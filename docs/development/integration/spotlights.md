@@ -11,6 +11,27 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-6
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     | 💻 |
+| Oscar     | 💻🔧 |
+| Ale       | 💻 |
+| Gilberto  | 💻🔧 |
+| Fregoso   | 💻 |
+| Ivan      | 💻 |
+| Domínguez | 💻 |
+| David     | 💻 |
+
+Status on: 
+
+- hri containers (devices on orin)
+
+**Development**:
+
+-   
+
 ## 2025-2-27
 
 | Name      | Stauts |
