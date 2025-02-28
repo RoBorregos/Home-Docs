@@ -11,6 +11,27 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-27
+
+| Name      | Stauts |
+| --------- | ------ |
+| Diego     |        |
+| Oscar     |   💻🔧    |
+| Ale       |   💻    |
+| Gilberto  |        |
+| Fregoso   |   💻    |
+| Ivan      |   💻   |
+| Domínguez |   💻    |
+| David     |   💻    |
+
+# **Development**:
+
+- Vision's subtask manager: Updated needs and methods for the *Receptionist* task manager.
+- GPSR: Clarified and added visions needs for subtask manager.
+- TODO -> Reaserch and investigate why are the HRI services faulty on jetsons containers.
+- Manipulation's subtask manager: Added an implemented setJointPosition method.
+- Follow Face node: change functionality for it to be available as a service.
+
 ## 2025-2-20
 
 | Name      | Stauts |
