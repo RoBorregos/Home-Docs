@@ -6,16 +6,16 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ### News
 - Welcoming new team member: Ricardo Guerrero
-- New team for the February-May period is:
-  - Iván Romero Wells
-  - José Luis Dominguez
-  - David Vázquez
-  - Alexis Chapa
-  - Alejandro González
-  - Ricardo Guerrero
-  - Gerardo Fregoso
-  - Yair Reyes
-  - Emiliano Flores
+- New team for the February-May period:
+    * Iván Romero Wells
+    * José Luis Dominguez
+    * David Vázquez
+    * Alexis Chapa
+    * Alejandro González
+    * Ricardo Guerrero
+    * Gerardo Fregoso
+    * Yair Reyes
+    * Emiliano Flores
 
 This is the largest team we have had so far, with 9 members.
 
