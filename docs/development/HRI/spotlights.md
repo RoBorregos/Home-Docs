@@ -11,6 +11,21 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-2-27
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   | 💻     |
+| Oscar    | 💻     |
+
+**Development**:
+- Added the AddItem service into the task manager + the feature to add/query by metadata
+- Added scripts for setting the default sink and source in the pulseaudio server (`setup.bash`).
+
 ## 2025-2-20
 
 | Name     | Stauts |
