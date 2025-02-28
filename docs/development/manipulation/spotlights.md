@@ -3,7 +3,8 @@
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
 ## 2025-02-27
-**News:**
+
+### News
 - Welcoming new team member: Ricardo Guerrero
 - New team for the February-May period is:
   - Iván Romero Wells
@@ -18,14 +19,14 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 This is the largest team we have had so far, with 9 members.
 
-**Done:**
+### Done
 - Table/Surface extraction migrated
 - MoveIt2 interface on Python integrated within subtask manager
-
-**In progress:**
+### In Progress
 - Object 2D detection and extraction
 - Object 3D extraction -> Clustering and mesh reconstruction
 - Pick and Place server for motion planning
 
-**Notes:**
+### Notes
+- A pick and place demo has been scheduled for March 15th, which will mark the start of development into the next phase of the project, involving new motion planning methods and accelerating 3D perception.
 - A pick and place demo has been scheduled for March 15th, which will mark the start of develoomoent into the next phase of the project, involving new motion planning methods and accelerating 3D perception.
