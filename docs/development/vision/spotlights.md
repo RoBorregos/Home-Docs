@@ -8,12 +8,12 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 **In progress:**
 - Waiting for task manager requirements
-- Created moondream method for detecting beverage from an image fram
-- Created moondream method for describing person's clothes from an image frame using yolo person detection and image cropping
-- Implemented both methods on receptionist commands
 
 **To do:**
 - Define tasks
+- Created moondream method for detecting beverage from an image fram
+- Created moondream method for describing person's clothes from an image frame using yolo person detection and image cropping
+- Implemented both methods on receptionist commands
 
 ## 2025-02-20
 **Done:**
