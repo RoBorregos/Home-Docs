@@ -2,6 +2,16 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-02-27
+**Done:**
+- 
+
+**In progress:**
+- Waiting for task manager requirements
+
+**To do:**
+- Define tasks
+
 ## 2025-02-20
 **Done:**
 - 
