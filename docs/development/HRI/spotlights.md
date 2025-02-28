@@ -19,11 +19,11 @@ Member status:
 | Gilberto |        |
 | Ivan     |        |
 | Jocelyn  |        |
-| Leo L.   |        |
+| Leo L.   | 💻     |
 | Oscar    | 💻     |
 
 **Development**:
-
+- Added the AddItem service into the task manager + the feature to add/query by metadata
 - Added scripts for setting the default sink and source in the pulseaudio server (`setup.bash`).
 
 ## 2025-2-20
