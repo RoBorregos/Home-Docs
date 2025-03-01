@@ -131,7 +131,7 @@ command_string = "{find | locate | look for} the {object or single_category} and
 - {bring | give | deliver} it to the {gesture or pose} in the {room}"
 - {deliver | give} it to the {name} in the {room}"
 
-2. `takeObjFromPlcmt`: The robot is asked to navigate to take an object form a location to another and perform an action.
+2. `takeObjFromPlcmt`: The robot is asked to navigate to take an object from a location to another and perform an action.
 
 - The follow up action (self.generate_command_followup("hasObj")) are the same as the follow up for `findObj` discussed above.
 
@@ -272,3 +272,13 @@ clothe_list = ["t shirt", "shirt", "blouse", "sweater", "coat", "jacket"]
  'soccer ball', 'dice', 'tennis ball', 'baseball', 'cleanser', 'sponge'
 }
 ```
+
+# Proposed subtask API for GPSR
+
+## Vision
+
+count_persons(clothe, color, gesture, pose, room)
+
+identify_person_by_gesture()
+identify_person_by_pose()
+identify_person_by_name()
