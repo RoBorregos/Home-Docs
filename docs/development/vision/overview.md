@@ -27,46 +27,36 @@
 
 ### GPSR
 - gpsr_commands
-    - Person counting  
-    - Object counting  
+  - Count by gestures, poses, clothes, colors
+  - Count by objects
+  - Find pose/gesture/name of person
+  - Publish bbox of gestures, poses, clothes, colors
 - *Face recognition*  
-- *Person tracking*  
+- *Person tracking* (trigger by gestures, poses, clothes, colors, name) 
 
 ### Carry My Luggage
 - carry_commands 
-    - Pointing detection  
+    - Pointing detection (pending) 
     - Bag detection  
 - *Person tracking*  
 
-### Receptionist
+### Receptionist (done)
 - receptionist_commands
     - Seat detection  
     - Person detection  
 - *Face recognition*  
 
-### Breakfast
-- Object detector 2D  
-- Object detector 3D  
-
 ### Storing Groceries
 - groceries_commands
-    - List objects (moondream)  
+  - Shelf detection (each level bbox)  
 - *Object detector 2D*  
 - *Object detector 3D* 
-
-### Stickler for the Rules
-- stickler_commands
-    - Trash detection  
-    - Shoes on/off detection  
-    - Cups/drinks detection  
-    - Person detection  
-- *Person tracking*  
 
 ### Restaurant
 - restaurant_commands
     - Customer detection (waving)  
 - *Object detection*  
-- *Person tracking*  
+- *Person tracking* (trigger by waving)
 
 ---
 
@@ -118,3 +108,5 @@
 - "red"  
 - "orange"  
 - "gray"  
+
+ 
