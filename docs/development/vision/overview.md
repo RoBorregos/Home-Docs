@@ -27,10 +27,10 @@
 
 ### GPSR
 - gpsr_commands
-  - Count by gestures, poses, clothes, colors
-  - Count by objects
-  - Find pose/gesture/name of person
-  - Publish bbox of gestures, poses, clothes, colors
+    - Count by gestures, poses, clothes, colors
+    - Count by objects
+    - Find pose/gesture/name of person
+    - Publish bbox of gestures, poses, clothes, colors
 - *Face recognition*  
 - *Person tracking* (trigger by gestures, poses, clothes, colors, name) 
 
@@ -48,7 +48,7 @@
 
 ### Storing Groceries
 - groceries_commands
-  - Shelf detection (each level bbox)  
+    - Shelf detection (each level bbox)  
 - *Object detector 2D*  
 - *Object detector 3D* 
 
@@ -64,13 +64,13 @@
 
 ### Pose/Gesture/Clothes Detector 
 - Given an image with a person, return:  
-  - Pose  
-  - Gesture  
-  - Clothes and color  
+    - Pose  
+    - Gesture  
+    - Clothes and color  
 - Given an image with a person, return:  
-  - Is visible (is chest visible)  
-  - Center of the person (chest)  
-  - Angle of the person  
+    - Is visible (is chest visible)  
+    - Center of the person (chest)  
+    - Angle of the person  
 
 ### Moondream2 Wrapper 
 - Given a prompt and an image, return the output  
