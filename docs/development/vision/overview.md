@@ -2,11 +2,11 @@
 
 ## General Nodes
 
-### Object Detector (Trained Model) 
+### Object Detector (Trained Model) - Emi
 - Objects specified in the rulebook  
 - Objects given in competition  
 
-### Object Detector (Meta)
+### Object Detector (Meta) - Joce
 - Potentially new objects (other tools)  
 
 ### Object Detector (3D)
@@ -15,7 +15,7 @@
 - Recognize known faces  
 - Save new face  
 
-### Person Tracker
+### Person Tracker - Ale
 - Single tracker (track one person)  
   - By toggle  
   - By pose/gesture/pose  
@@ -25,7 +25,7 @@
 
 ## Task-Specific Nodes
 
-### GPSR
+### GPSR - Danae
 - gpsr_commands
     - Count by gestures, poses, clothes, colors
     - Count by objects
@@ -52,7 +52,7 @@
 - *Object detector 2D*  
 - *Object detector 3D* 
 
-### Restaurant
+### Restaurant - Yair
 - restaurant_commands
     - Customer detection (waving)  
 - *Object detection*  
@@ -62,7 +62,7 @@
 
 ## Utils (Classes)
 
-### Pose/Gesture/Clothes Detector 
+### Pose/Gesture/Clothes Detector - Gil
 - Given an image with a person, return:  
     - Pose  
     - Gesture  
