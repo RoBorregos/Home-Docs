@@ -31,7 +31,7 @@ In addition, the ReSpeaker Mic Array has LED ring support, which can be used to 
 The `ReSpeaker.py` file needs some permitions to interact with the ReSpeaker hardware (lights). To do so, you need to add the following udev rule:
 
 ```bash
-echo "SUBSYSTEM=="usb", ATTRS{idVendor}=="2886", MODE="0666"" | sudo tee -a /etc/udev/rules.d/99-usbftdi.rules
+echo "SUBSYSTEM=="usb", ATTR{idVendor}=="2886", ATTR{idProduct}=="0018", MODE="0666"" | sudo tee -a /etc/udev/rules.d/99-usb.rules
 ```
 
 After adding the rule, you need to reload the udev rules:
