@@ -48,3 +48,12 @@
  'soccer ball', 'dice', 'tennis ball', 'baseball', 'cleanser', 'sponge'
 }
 ```
+
+## HRI
+
+1. interpret_commands(interpreted_instruction: str) -> CommandList
+
+- interpreted_instruction (str): The instruction heard by the robot, which the user should mention.
+- CommandList -> returns a list of commands to be executed by the robot. The commands possible are specified in commands.md.
+
+2.
