@@ -8,7 +8,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Divided tasks 
 
 **In progress:**
-- 
+- Checking docker
 
 **To do:**
 - 
