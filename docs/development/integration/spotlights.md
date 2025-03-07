@@ -16,7 +16,7 @@ Member status:
 | Name      | Stauts |
 | --------- | ------ |
 | Diego     |        |
-| Oscar     |   💻🔧    |
+| Oscar     |   💻🔧  |
 | Ale       |   💻    |
 | Gilberto  |        |
 | Fregoso   |   💻    |
