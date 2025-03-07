@@ -4,26 +4,32 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2025-03-06
 **Done:**
+
 - Tracker node with person angle
 - Divided tasks 
 - Moondream integration to detect: laying down, standing or sitting down
 - Beverage location in relation to image detection: center, left or right
 
 **In progress:**
+
 - Checking docker
 
 **To do:**
+
 - 
 
 
 ## 2025-02-27
 **Done:**
+
 - 
 
 **In progress:**
+
 - Waiting for task manager requirements
 
 **To do:**
+
 - Define tasks
 - Created moondream method for detecting beverage from an image fram
 - Created moondream method for describing person's clothes from an image frame using yolo person detection and image cropping
@@ -31,12 +37,15 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2025-02-20
 **Done:**
+
 - 
 
 **In progress:**
+
 - Updating receptionist task manager
 
 **To do:**
+
 - Backlog
 
 ## 2025-02-13
@@ -51,10 +60,12 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Object detector
 
 **To do:**
+
 - GPSR Commands
 
 ## 2025-02-05
 **Done:**
+
 - Single person tracker
 
 **In progress:**
@@ -64,6 +75,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Object detector
 
 **To do:**
+
 - GPSR Commands
 
 ## 2025-01-29
