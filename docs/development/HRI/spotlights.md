@@ -13,9 +13,9 @@ Member status:
 
 ## 2025-3-06
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
-| Diego    |        |
+| Diego    |   💻   |
 | Gilberto |        |
 | Ivan     |        |
 | Jocelyn  |        |
@@ -24,11 +24,13 @@ Member status:
 
 **Development**:
 - Integrated keyword detection with timeout in subtask manager
-
+- Added common interests service
+- Fine tuned a new model using a base model distilled from Deepseek-R1. Has better accuracy but is heavy.
+- Tested a model finetuned using GRPO to verify structured output support.
 
 ## 2025-2-27
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -43,7 +45,7 @@ Member status:
 
 ## 2025-2-20
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -58,7 +60,7 @@ Member status:
 
 ## 2025-2-13
 
-| Name     | Stauts   |
+| Name     | Status   |
 | -------- | -------- |
 | Diego    |          |
 | Gilberto |          |
@@ -84,7 +86,7 @@ Member status:
 
 ## 2025-2-05
 
-| Name     | Stauts   |
+| Name     | Status   |
 | -------- | -------- |
 | Diego    |          |
 | Gilberto |          |
@@ -110,7 +112,7 @@ Member status:
 
 ## 2025-1-27
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -125,7 +127,7 @@ Member status:
 
 ## 2025-1-22
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
@@ -144,7 +146,7 @@ Member status:
 
 ## 2025-1-15
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
@@ -169,7 +171,7 @@ Member status:
 
 ## 2025-1-10
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
@@ -187,7 +189,7 @@ Member status:
 
 ## 2025-1-03
 
-| Name     | Stauts      |
+| Name     | Status      |
 | -------- | ----------- |
 | Diego    |             |
 | Gilberto |             |
@@ -223,7 +225,7 @@ Member status:
 
 (Holiday break)
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -234,7 +236,7 @@ Member status:
 
 ## 2024-12-20
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🤝     |
@@ -252,7 +254,7 @@ Member status:
 
 ## 2024-12-13
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    | 💻     |
 | Gilberto |        |
