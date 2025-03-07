@@ -2,6 +2,20 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-03-06
+**Done:**
+- Tracker node with person angle
+- Divided tasks 
+- Moondream integration to detect: laying down, standing or sitting down
+- Beverage location in relation to image detection: center, left or right
+
+**In progress:**
+- Checking docker
+
+**To do:**
+- 
+
+
 ## 2025-02-27
 **Done:**
 - 
