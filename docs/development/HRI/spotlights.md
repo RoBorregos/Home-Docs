@@ -18,7 +18,7 @@ Member status:
 | Diego    |   💻   |
 | Gilberto |        |
 | Ivan     |        |
-| Jocelyn  |        |
+| Jocelyn  |    💻    |
 | Leo L.   |      |
 | Oscar    |   💻   |
 
@@ -27,6 +27,9 @@ Member status:
 - Added common interests service
 - Fine tuned a new model using a base model distilled from Deepseek-R1. Has better accuracy but is heavy.
 - Tested a model finetuned using GRPO to verify structured output support.
+- Created 3 knowledge bases: frida, roborregos, tec de monterrey to answer questions. Manually divided the content to keep semantic meaning
+- Created RAG to generate answers using context + llm response
+- Scoring to identify between quizz questions (when embedding score is less than 0.4) from direct context questions for the gpsr
 
 ## 2025-2-27
 
