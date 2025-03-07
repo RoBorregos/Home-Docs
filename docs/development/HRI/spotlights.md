@@ -19,7 +19,7 @@ Member status:
 | Gilberto | 💻     |
 | Ivan     |        |
 | Jocelyn  | 💻     |
-| Leo L.   |        |
+| Leo L.   | 💻     |
 | Oscar    | 💻     |
 
 **Development**:
@@ -33,6 +33,7 @@ Member status:
 - Created RAG to generate answers using context + llm response
 - Scoring to identify between quizz questions (when embedding score is less than 0.4) from direct context questions for the gpsr
 - Finished dockerfile for running faster-whisper microservice on l4t with cuda
+- Added chroma adapter to recycle methods
 
 ## 2025-2-27
 
