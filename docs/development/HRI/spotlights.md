@@ -15,14 +15,15 @@ Member status:
 
 | Name     | Status |
 | -------- | ------ |
-| Diego    |   💻   |
-| Gilberto |        |
+| Diego    | 💻     |
+| Gilberto | 💻     |
 | Ivan     |        |
-| Jocelyn  |    💻    |
-| Leo L.   |      |
-| Oscar    |   💻   |
+| Jocelyn  | 💻     |
+| Leo L.   |        |
+| Oscar    | 💻     |
 
 **Development**:
+
 - Integrated keyword detection with timeout in subtask manager
 - Added common interests service
 - Fine tuned a new model using a base model distilled from Deepseek-R1. Has better accuracy but is heavy.
@@ -31,6 +32,7 @@ Member status:
 - Created 3 knowledge bases: frida, roborregos, tec de monterrey to answer questions. Manually divided the content to keep semantic meaning
 - Created RAG to generate answers using context + llm response
 - Scoring to identify between quizz questions (when embedding score is less than 0.4) from direct context questions for the gpsr
+- Finished dockerfile for running faster-whisper microservice on l4t with cuda
 
 ## 2025-2-27
 
@@ -44,6 +46,7 @@ Member status:
 | Oscar    | 💻     |
 
 **Development**:
+
 - Added the AddItem service into the task manager + the feature to add/query by metadata
 - Added scripts for setting the default sink and source in the pulseaudio server (`setup.bash`).
 
