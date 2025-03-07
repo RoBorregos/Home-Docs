@@ -2,6 +2,32 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-03-06
+
+### News
+- no news
+
+### Done
+- Object Detector 2D working with 2D, no 3D yet
+- Refactored Motion Planning and Object Detector code
+- Dashgo moveit config working
+- Working gripper with xarm_api
+- Working Action Services and services for most motion planning tasks (plan, execute, collision objects)
+- Demo for scholarships (??)
+ 
+### In Progress
+- Object 2D projection to 3D
+- Object 3D extraction -> Clustering and mesh reconstruction
+- Full pick pipeline tests
+- Grasping pose detection
+- Working octomap from zed input
+- Gazebo simulation 
+
+### Notes
+- We seem to be on track for good results on March 15th :)
+
+
+
 ## 2025-02-27
 
 ### News
