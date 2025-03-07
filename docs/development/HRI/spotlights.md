@@ -11,9 +11,33 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-06
+
+| Name     | Status |
+| -------- | ------ |
+| Diego    | 💻     |
+| Gilberto | 💻     |
+| Ivan     |        |
+| Jocelyn  | 💻     |
+| Leo L.   | 💻     |
+| Oscar    | 💻     |
+
+**Development**:
+
+- Integrated keyword detection with timeout in subtask manager
+- Added common interests service
+- Fine tuned a new model using a base model distilled from Deepseek-R1. Has better accuracy but is heavy.
+- Tested a model finetuned using GRPO to verify structured output support.
+- Added compose files to run ollama on jetson and other computers
+- Created 3 knowledge bases: frida, roborregos, tec de monterrey to answer questions. Manually divided the content to keep semantic meaning
+- Created RAG to generate answers using context + llm response
+- Scoring to identify between quizz questions (when embedding score is less than 0.4) from direct context questions for the gpsr
+- Finished dockerfile for running faster-whisper microservice on l4t with cuda
+- Added chroma adapter to recycle methods
+
 ## 2025-2-27
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -23,12 +47,13 @@ Member status:
 | Oscar    | 💻     |
 
 **Development**:
+
 - Added the AddItem service into the task manager + the feature to add/query by metadata
 - Added scripts for setting the default sink and source in the pulseaudio server (`setup.bash`).
 
 ## 2025-2-20
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -43,7 +68,7 @@ Member status:
 
 ## 2025-2-13
 
-| Name     | Stauts   |
+| Name     | Status   |
 | -------- | -------- |
 | Diego    |          |
 | Gilberto |          |
@@ -69,7 +94,7 @@ Member status:
 
 ## 2025-2-05
 
-| Name     | Stauts   |
+| Name     | Status   |
 | -------- | -------- |
 | Diego    |          |
 | Gilberto |          |
@@ -95,7 +120,7 @@ Member status:
 
 ## 2025-1-27
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -110,7 +135,7 @@ Member status:
 
 ## 2025-1-22
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
@@ -129,7 +154,7 @@ Member status:
 
 ## 2025-1-15
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
@@ -154,7 +179,7 @@ Member status:
 
 ## 2025-1-10
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🔄     |
@@ -172,7 +197,7 @@ Member status:
 
 ## 2025-1-03
 
-| Name     | Stauts      |
+| Name     | Status      |
 | -------- | ----------- |
 | Diego    |             |
 | Gilberto |             |
@@ -208,7 +233,7 @@ Member status:
 
 (Holiday break)
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto |        |
@@ -219,7 +244,7 @@ Member status:
 
 ## 2024-12-20
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    |        |
 | Gilberto | 🤝     |
@@ -237,7 +262,7 @@ Member status:
 
 ## 2024-12-13
 
-| Name     | Stauts |
+| Name     | Status |
 | -------- | ------ |
 | Diego    | 💻     |
 | Gilberto |        |
