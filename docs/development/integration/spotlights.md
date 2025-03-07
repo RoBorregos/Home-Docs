@@ -11,9 +11,33 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-6
+
+| Name      | Status |
+| --------- | ------ |
+| Diego     |  |
+| Oscar     | 💻 |
+| Ale       | 💻 |
+| Gilberto  | 💻 |
+| Fregoso   | 💻 |
+| Ivan      |  |
+| Domínguez |  |
+| David     |  |
+
+**Development**:
+
+- Update a receptionist: 
+    - added person description
+    - ⁠added beverage location
+    - ⁠fixed action services issue
+- GPSR: Break down commands for possible command_interpreter
+- Integrated nav docker
+- TODO -> actual problems: ros user not added on video group on dockers
+- Small updates to demo follow face node
+
 ## 2025-2-27
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |   💻🔧    |
@@ -35,7 +59,7 @@ Member status:
 
 ## 2025-2-20
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |        |
@@ -51,7 +75,7 @@ Member status:
 
 ## 2025-1-29
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     | 💻     |
@@ -68,7 +92,7 @@ Member status:
 
 ## 2025-1-29
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |        |
@@ -80,7 +104,7 @@ Member status:
 
 ## 2025-1-22
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     | 💻     |
@@ -98,7 +122,7 @@ Member status:
 
 ## 2025-1-15
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |        |
@@ -115,7 +139,7 @@ Member status:
 
 ## 2025-1-10
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |        |
@@ -127,7 +151,7 @@ Member status:
 
 ## 2025-1-3
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     | 💻 📝  |
@@ -155,7 +179,7 @@ Member status:
 
 (Holiday break)
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |        |
@@ -167,7 +191,7 @@ Member status:
 
 ## 2024-12-20
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     |        |
 | Oscar     |        |
@@ -192,7 +216,7 @@ Planning of new tasks:
 
 ## 2024-12-13
 
-| Name      | Stauts |
+| Name      | Status |
 | --------- | ------ |
 | Diego     | 📝     |
 | Oscar     | 📝     |
