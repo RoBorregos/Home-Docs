@@ -11,6 +11,21 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-06
+
+| Name     | Stauts |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |      |
+| Oscar    |   💻   |
+
+**Development**:
+- Integrated keyword detection with timeout in subtask manager
+
+
 ## 2025-2-27
 
 | Name     | Stauts |
