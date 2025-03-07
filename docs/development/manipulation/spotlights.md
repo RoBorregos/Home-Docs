@@ -13,6 +13,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Dashgo moveit config working
 - Working gripper with xarm_api
 - Working Action Services and services for most motion planning tasks (plan, execute, collision objects)
+- Demo for scholarships (??)
  
 ### In Progress
 - Object 2D projection to 3D
