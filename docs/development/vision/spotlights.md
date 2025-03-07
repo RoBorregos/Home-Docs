@@ -6,6 +6,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 **Done:**
 - Tracker node with person angle
 - Divided tasks 
+- Moondream integration to detect: laying down, standing or sitting down
+- Beverage location in relation to image detection: center, left or right
 
 **In progress:**
 - Checking docker
