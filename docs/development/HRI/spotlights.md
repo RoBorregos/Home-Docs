@@ -11,6 +11,29 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-20
+
+| Name     | Status |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto |        |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    | 🔄 💻  |
+
+**Development**:
+
+- Enable passing context to data_extractor function
+- 2 step data extraction -> thinking + structured output
+
+
+**Refactoring**:
+
+- Added service_checks to hri subtask manager
+- Modified prompting to pass test cases related to receptionist
+
+
 ## 2025-3-06
 
 | Name     | Status |
