@@ -16,9 +16,9 @@ Member status:
 | Name     | Status |
 | -------- | ------ |
 | Diego    |        |
-| Gilberto |        |
+| Gilberto | 💻     |
 | Ivan     |        |
-| Jocelyn  |        |
+| Jocelyn  | 💻     |
 | Leo L.   |        |
 | Oscar    | 🔄 💻  |
 
@@ -26,7 +26,8 @@ Member status:
 
 - Enable passing context to data_extractor function
 - 2 step data extraction -> thinking + structured output
-
+- Service to modify hot words for STT model
+- Started service for relating interpreted places to registered places. llm approach 
 
 **Refactoring**:
 
