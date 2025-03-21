@@ -11,6 +11,33 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-20
+
+| Name      | Status |
+| --------- | ------ |
+| Diego     |   💻  |
+| Oscar     |        |
+| Ale       |   💻  |
+| Gilberto  |        |
+| Fregoso   |   💻  |
+| Ivan      |   💻  |
+| Domínguez |        |
+| David     |   💻  |
+| Emiliano  |        |
+
+**Development**:
+
+- First complete Reception
+- Network tests:
+  - Test better router -> no major improvements
+  - Small test on qos subscriber -> better results
+  - pending: testing dds discovery server
+- Docker images fixed for permissions and added user to video group, enabled gpu.
+- Carry My luggage: On going, defined logic.
+- Pushing docker images to dockerhub.
+- Starting orchestration efforts.
+
+
 ## 2025-3-6
 
 | Name      | Status |
