@@ -2,6 +2,38 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-03-20
+**Done:**
+
+- Poses and gestures detection
+- GPSR commands first version
+- Moondream dependency fix and new package
+- Object detector 2d
+
+**In progress:**
+
+- Test in orin
+
+**To do:**
+
+- Test model training pipeline
+
+## 2025-03-13
+**Done:**
+
+- 
+- 
+
+**In progress:**
+
+- Fix docker
+
+**To do:**
+
+- Test tracker node
+
+
+
 ## 2025-03-06
 **Done:**
 
