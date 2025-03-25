@@ -1,44 +1,70 @@
-# Navigation docs
+# Navigation Docs
 
-## How to run 
-1- connect to roborregos_home on wifi
+## How to Run
+
+1. Connect to `roborregos_home` on Wi-Fi.
+
 On your computer:
-'bash'
-    ssh jetson@192.168.31.161
+```bash
+ssh orin@192.168.31.10
+cd home2
+./run.sh navigation # Now you should be on the navigation Docker
+```
 
-Inside jetson nano the schema of repos
-    repo with main branch = /home/jetson/home2
-    repo for development  = /home/jetson/home_development
+2. Run
 
-!!WARNING!! 
-only use development to change any value and commit and push after using the repo
-we dont want to lose progress
-Dont change main repo to another branch which is not main, we need a stable repo for the jetson
+---
 
-- Compiling our basics
-We dont have to build all the repository because we only want to use 
--Navigation packages 
--Description packages
+## Running Nav Basics
 
-Recommendation only build nav_main sllidar_ros2 frida_description
-How to build
-- Development
-'bash'
-cd /home/jetson/home_development
-colcon build --packages-select nav_main sllidar_ros2 frida_description
-source install/setup.bash
+The Nav Basics include the following components:
+- Dashgo driver
+- RP Lidar fixed
+- EKF filter for odom transform
+- (Optional) URDF state publisher to link `base_link` and lidar
 
-- Main repo
-'bash'
-cd /home/jetson/home2
-colcon build --packages-select nav_main sllidar_ros2 frida_description
-source install/setup.bash
+### Arguments
+- `publish_tf` (default: `true`): Active URDF publish state.
+  - **WARNING:** Set to `false` if MoveIt config is active.
 
-## Running lidar_vi
-1- Compile the repository on jetson nano
-run following command on jetson
-'bash'
-ros2 launch nav_main pr
+### Run Command
+```bash
+ros2 launch nav_main nav_basics.launch.py
+```
 
+---
 
---to be completed
+## Running AMCL Localization
+
+The AMCL launch includes the following components:
+- Nav Basics launch (**Do not** launch `nav_basics` in another terminal if AMCL launch is running)
+- Nav2 Map Server
+- Nav2 AMCL
+- Nav2 Lifecycle Manager
+
+### Arguments
+- `publish_tf` (default: `true`): Active URDF publish state.
+  - **WARNING:** Set to `false` if MoveIt config is active.
+- `map` (default: Path for lab map): Provide an **absolute path** to import the map.
+
+### Run Command
+```bash
+ros2 launch nav_main nav_amcl.launch.py
+```
+
+---
+
+## Running Navigation Node
+
+> **IMPORTANT:** You must run a SLAM before. Examples include `nav_amcl` or `rtabmap` (in development).
+
+The Navigation Node includes the following components:
+- Nav2 Server
+
+### Arguments
+- `Custom yaml config`
+
+### Run Command
+```bash
+ros2 launch nav_main navigation_launch.py
+```
