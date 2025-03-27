@@ -11,6 +11,33 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-3-27
+
+| Name     | Status   |
+| -------- | ------   |
+| Diego    |          |
+| Gilberto | 💻       |
+| Ivan     |          |
+| Jocelyn  |          |
+| Leo L.   | 💻       |
+| Oscar    | 🔄 💻 🔧 |
+
+**Development**:
+
+- Display with ROS2
+- ask_and_confirm, confirm added to subtask manager
+- Match places using embeddings
+
+**Bug fixing**:
+
+- Remove thinking from llm responses
+
+**Refactor**:
+
+- Return state in the subtask manager
+- Added service checks to hri subtask manager
+- Run script for hri
+
 ## 2025-3-20
 
 | Name     | Status |
