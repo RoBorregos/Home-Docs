@@ -2,6 +2,21 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-03-27
+**Done:**
+
+- Fix docker
+- Moondream running in jetson
+
+**In progress:**
+
+- Optimizing moondream
+- Testing tracker in orin
+
+**To do:**
+
+- Test model training pipeline
+
 ## 2025-03-20
 **Done:**
 
