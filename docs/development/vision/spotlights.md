@@ -11,6 +11,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 **In progress:**
 
+- Shelve Detection
 - Optimizing moondream
 - Testing tracker in orin
 - Testing and improving dataset generator pipeline
