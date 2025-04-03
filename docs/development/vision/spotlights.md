@@ -2,6 +2,19 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-04-03
+
+**Done:**
+
+- Tracker in orin with reid and angle detection
+
+**In progress:**
+
+- 
+**To do:**
+
+- 
+
 ## 2025-03-27
 
 **Done:**
