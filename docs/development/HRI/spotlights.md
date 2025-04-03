@@ -11,6 +11,21 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-4-3
+
+| Name     | Status  |
+| -------- | ------  |
+| Diego    |         |
+| Gilberto |         |
+| Ivan     |         |
+| Jocelyn  |         |
+| Leo L.   |         |
+| Oscar    |  🔧     |
+
+**Bug fixing**:
+- Fix audio reset when running hri's `setup.bash` script on `run.sh`
+- Fix permissions issue for audio devices
+
 ## 2025-3-27
 
 | Name     | Status   |
