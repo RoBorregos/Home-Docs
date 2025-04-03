@@ -37,28 +37,105 @@ The robot retrieves and serves orders to several customers in a real restaurant 
 
 <hr />
 
-## Tasks per Area
+# Tasks per Area
 
-### Vision
+## Navigation
 
-- Detect calling or waving customer
-- Re-identify the person in case they lower their hand and the robot loses sight of them
-- Detect objects from the kitchen bar
+### navigate_to_target
 
-### Navigation
-- Reach a customer’s table in an unknown environment
-- Return to the kitchen bar
-- If computer vision is used to re-identify the customer, the robot should return to the customer’s table according to the customer’s position provided by the vision system. However, a different approach would be to keep track of the customer’s position by online mapping or other means.
+Move to a target coordinate (customer)
 
-### Manipulation
-- Follow the face of a person when taking an order
-- Pick up an object from the kitchen bar
-- Place the object on the table
+*Subtask Manager*
 
-### HRI
-- Take an order from a customer
-- Communicate any needs to the bar man
-- Interpret the objects to be served
+Args
+- coordinates: Tuple[float,float,float] (3D coordinates to set nav goal)
+
+Return
+- None
+
+### navigate_to_origin
+
+Return to starting point (kitchen bar)
+
+*Subtask Manager*
+
+Args
+- None
+
+Return
+- None
+
+## Manipulation
+
+### pan_camera
+
+Move the arm horizontally either left or right to allow the camera to have a different field of view for customer detection.
+
+*Subtask Manager*
+
+Args
+- direction: int (either -1(pan to left) or 1(pan to right)), maybe also sending the angle 
+
+Return
+- None
+
+### follow_face
+
+Follow the face of a person with the arm. There should be a subscriber for the vision topic, but the arm should only start following the face when requested (this could be a service or a subscriber).
+
+*Subtask Manager*
+
+Args
+- follow: bool (True to follow the face, False to stop following)
+
+Return
+- None
+
+## HRI
+### say
+Say text provided
+
+### get_order
+Get items asked by customer and quantity
+
+*Subtask Manager*
+
+Args
+- None
+
+Return
+- order: string? (will depend on picking approach
+)
+
+## Vision
+
+### find_beverage
+
+  Check if there is a beverage available in a table and return its approximate position.
+
+  *Subtask Manager*
+
+  Args
+  - drink: string (could be any type of drink)
+
+  Return 
+  - status: int (success, execution error, terminal error or target not found ENUM)
+  - found: bool (if the drink is available or not)
+  - position: string (aproximate position on the table: left, right, center, top, bottom)
+
+
+### find_seat
+  Find an available seat.
+
+  *Subtask Manager*
+  Args
+  - None
+
+  Return
+  - position: Point (normalized)
+
+### follow_face
+A node should publish the coordinates of the largest face available so that the arm can follow it.
 
 <hr />
 

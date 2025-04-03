@@ -2,11 +2,11 @@
 
 ## General Nodes
 
-### Object Detector (Trained Model) 
+### Object Detector (Trained Model) - Emi
 - Objects specified in the rulebook  
 - Objects given in competition  
 
-### Object Detector (Meta)
+### Object Detector (Meta) - Joce
 - Potentially new objects (other tools)  
 
 ### Object Detector (3D)
@@ -15,7 +15,7 @@
 - Recognize known faces  
 - Save new face  
 
-### Person Tracker
+### Person Tracker - Ale
 - Single tracker (track one person)  
   - By toggle  
   - By pose/gesture/pose  
@@ -25,12 +25,12 @@
 
 ## Task-Specific Nodes
 
-### GPSR
+### GPSR - Danae
 - gpsr_commands
-  - Count by gestures, poses, clothes, colors
-  - Count by objects
-  - Find pose/gesture/name of person
-  - Publish bbox of gestures, poses, clothes, colors
+    - Count by gestures, poses, clothes, colors
+    - Count by objects
+    - Find pose/gesture/name of person
+    - Publish bbox of gestures, poses, clothes, colors
 - *Face recognition*  
 - *Person tracking* (trigger by gestures, poses, clothes, colors, name) 
 
@@ -48,11 +48,11 @@
 
 ### Storing Groceries
 - groceries_commands
-  - Shelf detection (each level bbox)  
+    - Shelf detection (each level bbox)  
 - *Object detector 2D*  
 - *Object detector 3D* 
 
-### Restaurant
+### Restaurant - Yair
 - restaurant_commands
     - Customer detection (waving)  
 - *Object detection*  
@@ -62,15 +62,15 @@
 
 ## Utils (Classes)
 
-### Pose/Gesture/Clothes Detector 
+### Pose/Gesture/Clothes Detector - Gil
 - Given an image with a person, return:  
-  - Pose  
-  - Gesture  
-  - Clothes and color  
+    - Pose  
+    - Gesture  
+    - Clothes and color  
 - Given an image with a person, return:  
-  - Is visible (is chest visible)  
-  - Center of the person (chest)  
-  - Angle of the person  
+    - Is visible (is chest visible)  
+    - Center of the person (chest)  
+    - Angle of the person  
 
 ### Moondream2 Wrapper 
 - Given a prompt and an image, return the output  
