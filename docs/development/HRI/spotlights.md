@@ -13,23 +13,28 @@ Member status:
 
 ## 2025-4-3
 
-| Name     | Status  |
-| -------- | ------  |
-| Diego    |         |
-| Gilberto |         |
-| Ivan     |         |
-| Jocelyn  |         |
-| Leo L.   |         |
-| Oscar    |  🔧     |
+| Name     | Status |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto | 💻     |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   |        |
+| Oscar    | 🔧     |
+
+**Development**
+
+- Added microphone icon to display for visualizing the audio state and voice detection value.
 
 **Bug fixing**:
+
 - Fix audio reset when running hri's `setup.bash` script on `run.sh`
 - Fix permissions issue for audio devices
 
 ## 2025-3-27
 
 | Name     | Status   |
-| -------- | ------   |
+| -------- | -------- |
 | Diego    |          |
 | Gilberto | 💻       |
 | Ivan     |          |
@@ -69,13 +74,12 @@ Member status:
 - Enable passing context to data_extractor function
 - 2 step data extraction -> thinking + structured output
 - Service to modify hot words for STT model
-- Started service for relating interpreted places to registered places. llm approach 
+- Started service for relating interpreted places to registered places. llm approach
 
 **Refactoring**:
 
 - Added service_checks to hri subtask manager
 - Modified prompting to pass test cases related to receptionist
-
 
 ## 2025-3-06
 
