@@ -4,6 +4,11 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2025-04-03
 
+<div style="display: flex; justify-content: space-between;">
+    <!-- Add any images here -->
+    <img src="/assets/development/vision/spotlights/spotlight_2025_04_03.gif" alt="image" width="300"/>
+</div>
+
 **Done:**
 
 - Tracker in orin with reid and angle detection
@@ -11,6 +16,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 **In progress:**
 
 - 
+
 **To do:**
 
 - 
