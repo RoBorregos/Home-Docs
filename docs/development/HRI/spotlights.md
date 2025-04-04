@@ -13,19 +13,20 @@ Member status:
 
 ## 2025-4-3
 
-| Name     | Status |
-| -------- | ------ |
-| Diego    |        |
-| Gilberto | 💻     |
-| Ivan     |        |
+| Name     | Status   |
+| -------- | ------   |
+| Diego    |          |
+| Gilberto | 💻       |
+| Ivan     |          |
 | Jocelyn  | 💻       |
-| Leo L.   |        |
-| Oscar    | 🔧     |
+| Leo L.   |          |
+| Oscar    | 🔧 💻    |
 
 **Development**
 
 - Added microphone icon to display for visualizing the audio state and voice detection value.
-- Added dialog for known places with schema tests from document `areas.json` of manipulation
+- Added dialog for known places with schema tests from document `areas.json` of manipulation.
+- Implement min audio duration and max audio duration for hear method.
 
 **Bug fixing**:
 
