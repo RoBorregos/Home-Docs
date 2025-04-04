@@ -6,6 +6,26 @@ This page is a collection of weekly spotlights that highlight the progress of th
 This includes both weeks from 2025-03-07 to 2025-03-20
 
 ### News
+- No news
+
+### Done
+- Cleaned up task manager, got some remaining things ready for receptionist
+- Fixed an issue where collision objects were collising among themselves
+- Heatmap for getting place position
+
+### In Progress
+- CuRobo worked on PCs, environment on the Orin is not ready yet.
+- List of GPDs ready, some already tested and discarded (SamsungLabs)
+    - Reason: Picks on unusable poses e.g. below the object, and has no way of taking as input the characteristics of the gripper.
+- Advances on the placing object pipeline.
+
+### Notes
+- Slow week but the @Home manipulation team is known for rising from the ashes like a phoenix.
+
+## 2025-03-27
+This includes both weeks from 2025-03-07 to 2025-03-20
+
+### News
 - First pick of the year
 
 ### Done
