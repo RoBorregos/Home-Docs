@@ -18,13 +18,14 @@ Member status:
 | Diego    |        |
 | Gilberto | 💻     |
 | Ivan     |        |
-| Jocelyn  |        |
+| Jocelyn  | 💻       |
 | Leo L.   |        |
 | Oscar    | 🔧     |
 
 **Development**
 
 - Added microphone icon to display for visualizing the audio state and voice detection value.
+- Added dialog for known places with schema tests from document `areas.json` of manipulation
 
 **Bug fixing**:
 
