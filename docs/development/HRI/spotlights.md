@@ -11,6 +11,29 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-4-10
+
+| Name     | Status   |
+| -------- | ------   |
+| Diego    |          |
+| Gilberto |          |
+| Ivan     |          |
+| Jocelyn  |          |
+| Leo L.   |          |
+| Oscar    | 🔄 💻 📝 |
+
+**Development**
+
+- Automate gpsr dataset generation
+
+**Refactoring**:
+- Added dialog for known places with schema tests from document `areas.json` of manipulation.
+- HRI docker structure (profiles, integration with run.sh)
+- Refactored download model script to only download models if not present in the system.
+
+**Documentation**:
+- Added instructions for running the HRI docker image with the new run.sh.
+
 ## 2025-4-3
 
 | Name     | Status   |
