@@ -27,7 +27,6 @@ Member status:
 - Automate gpsr dataset generation
 
 **Refactoring**:
-- Added dialog for known places with schema tests from document `areas.json` of manipulation.
 - HRI docker structure (profiles, integration with run.sh)
 - Refactored download model script to only download models if not present in the system.
 
