@@ -2,6 +2,24 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-04-10
+
+**Done:**
+
+- Moondream general service
+- Detector 2d
+- Subtask manager update for carry
+- GPSR Node
+
+**In progress:**
+
+- New yolo testing
+- Shelf detector node
+
+**To do:**
+
+- Test model training pipeline
+
 ## 2025-04-03
 
 <div style="display: flex; justify-content: space-between;">
