@@ -16,6 +16,7 @@ Member status:
 **Development**:
 
 - Subtask manager update for carry my luggage (vision)
+- Network tests
 
 ## 2025-3-20
 
