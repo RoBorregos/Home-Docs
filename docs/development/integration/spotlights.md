@@ -11,6 +11,12 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-4-10
+
+**Development**:
+
+- Subtask manager update for carry my luggage (vision)
+
 ## 2025-3-20
 
 | Name      | Status |
