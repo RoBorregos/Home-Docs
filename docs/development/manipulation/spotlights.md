@@ -2,8 +2,34 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
-## 2025-03-27
-This includes both weeks from 2025-03-07 to 2025-03-20
+## 2025-04-10
+
+### News
+- No news
+
+### Done
+- Added simulation with real robot's ZED camera and gripper, working with 2D and 3D camera
+- Fixed transform time issues when deploying some scripts on simulation e.g. object detector.
+- Integrated the full pick pipeline with object detector 2D on simulation. Refactored the code to make it easier to use and to scale better for new tasks.
+- Tested pipeline on real robot with ZED camera
+    - Once again, sim-to-real was smooth without any logic changes
+    - Adjustements were made so all our heavy topics use "Best Effort" QoS policy which made real-robot tests possible -> receiving images and pointclouds through WiFi.
+    - Robot was not able to pick the object as some URDF changes are yet to be added.
+- Face follow tested and working.
+- New poses for Carry my Luggage and Receptionist
+
+![image](../../assets/development/manipulation/spotlights/spotlight_2025_04_10_pickreal.jpeg)
+
+### In Progress
+- CuRobo environment setup
+- Three issues were detected on Receptionist runs:
+    - Sometimes, planning hangs on the custom planning_server, not detecting planning failed and not returning a result.
+    - GetJoints service may return all 0s.
+    - MoveIt did not notics position all 0s as invalid even when it's on collision
+- Place pipeline with all services added.
+- URDF QoL changes.
+
+## 2025-04-03
 
 ### News
 - No news
