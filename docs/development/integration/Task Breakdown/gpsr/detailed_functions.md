@@ -47,7 +47,7 @@ Many commands involve the interaction of several areas. For such tasks, the idea
     - pseudocode: while get_question(): if confirm_question(): answer_question()
 
 ## Vision
-### visual_info(complement = ("biggest" | "largest" | "smallest" | "heaviest" | "lightest" | "thinnest") + " object" | "describe the person name" | "describe the person posture", characteristic = "object category" | "non")
+### visual_info(complement = ("biggest" | "largest" | "smallest" | "heaviest" | "lightest" | "thinnest") + " object", characteristic = "object category" | "")
     - purpose: get some information about an image.
     - prerequisites: have the camera located in the needed position to get the frame.
     - behaviour: Get the requested data. Consider the characteristic as a filter.
@@ -89,7 +89,7 @@ Many commands involve the interaction of several areas. For such tasks, the idea
     - postconditions: robot saves the specified information about the person.
     - pseudocode: if (complement == 'gesture' || complement == 'posture) return visual_info(complement) else return get_person_name()
 
-## Nav, Vision
+## Nav, Vision, HRI
 ### find_object(complement = "placement location" | "room", characteristic = "object to find")
     - purpose: find an object in a place, and approach it for a pick
     - prerequisites: assumes robot is at a location
