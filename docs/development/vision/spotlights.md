@@ -14,7 +14,6 @@ This page is a collection of weekly spotlights that highlight the progress of th
 **In progress:**
 
 - Testing subtask functions
-- Integration of color-clothes 
 - Pipeline
 
 **To do:**
