@@ -15,6 +15,17 @@ Member status:
 
 **Development**:
 
+- Subtask managers update
+- Storing groceries task manager
+- GPSR task manager
+- Receptionist task manager improvements
+- Carry my luggage task manager improvements
+- VCN
+
+## 2025-4-10
+
+**Development**:
+
 - Subtask manager update for carry my luggage (vision)
 - Network tests
 
