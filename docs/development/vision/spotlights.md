@@ -2,6 +2,24 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-04-24
+
+**Done:**
+
+- Fixes for receptionist (find seat)
+- Zero-shot + yolo models
+- Subtasks for GPSR
+- Carry launch
+
+**In progress:**
+
+- Testing subtask functions
+- Pipeline
+
+**To do:**
+
+- 
+
 ## 2025-04-10
 
 **Done:**
