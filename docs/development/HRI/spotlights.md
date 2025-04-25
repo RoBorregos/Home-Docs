@@ -22,7 +22,6 @@ Member status:
 | Leo L.   |  💻        |
 | Oscar    |  💻🔄🔧    |
 
-
 **Development**
 - Embedding services to find_closest elements
 - Insert gpsr action results into the database
@@ -32,6 +31,8 @@ Member status:
 - Test added for `is_negative`, `common_interests`, and `command_interpreter`
 - Mock command interpreter for GPSR.
 - Implementation of ~4 functions out of ~12 for GPSR.
+- started working on running grpo training on orin
+- display video and quality of life improvements
 
 **Refactoring**
 - Added debug logs to faster-whisper to help debug interpretation issues
