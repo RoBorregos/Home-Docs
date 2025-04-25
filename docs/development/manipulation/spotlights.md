@@ -2,6 +2,42 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-04-24
+
+### News
+- Pick & Place on historic prime
+
+### Done
+- Place pipeline developed
+    - Has adaptability for any object size and table height
+    - Incorporated within pick code structure and ROS node, making it easy to use, develop and scale
+    - Tested on simulation and real robot
+- Heatmap extraction for place position
+    - Developed for Robocup 2024 but never used, works far better than previous KNN clustering
+![image](../../assets/development/manipulation/spotlights/2025_04_24/heatmap_result.png)
+- Pick and Place fully tested on real life
+    - Massive improvements on speed, obtained from collision object generation, reducing use of octomap and collision meshes and tuning GPD estimated grasp poses
+    - Planning times in comparison:
+        - Original MoveIt Pipeline (TMR2023, TDP2024): >1 minute
+        - Cartesian Planning (no collision detection, inferior working distance) (TMR2024, Robocup2024): ~20s
+        - New Moveit Pipeline (TMR2025): ~10s
+    - Octomap integrated within perception pipeline, enabling very safe pick and place operations
+    - Integrated on subtask manager for GPSR and Storing Groceries
+- New URDF for Simulation and Real robot
+    - Fixed for use on simulation
+    - Fixed a big issue which caused the pointcloud to be shifted ~3cm from its real position
+- Give & take operations for task manager
+- Improved face follower
+- Documentation and new easy to use launches for pick & place pipeline
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VFtXomtwfvM" title="Pick and Place tests April 24, 2025" frameborder="0" allowfullscreen></iframe>
+
+
+### In Progress
+- Robot still has issues picking big objects
+- Storing Groceries task involves placing on a difficult surface and at a high risk of colliding, which requires further testing
+- Plane extraction to generate a collision object for the table requires tuning to be working on a wider range of scenarios
+
 ## 2025-04-10
 
 ### News
