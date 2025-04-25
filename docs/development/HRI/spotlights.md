@@ -11,6 +11,37 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-4-24
+
+| Name     | Status     |
+| -------- | ------     |
+| Diego    |  💻        |
+| Gilberto |  💻        | 
+| Ivan     |            |
+| Jocelyn  |            |
+| Leo L.   |  💻        |
+| Oscar    |  💻🔄🔧    |
+
+**Development**
+- Embedding services to find_closest elements
+- Insert gpsr action results into the database
+- LRU cache implementation to useful_audio to speed interaction 
+- LLM model fine tuned
+- Speed up of common interest generation
+- Test added for `is_negative`, `common_interests`, and `command_interpreter`
+- Mock command interpreter for GPSR.
+- Implementation of ~4 functions out of ~12 for GPSR.
+- started working on running grpo training on orin
+- display video and quality of life improvements
+
+**Refactoring**
+- Added debug logs to faster-whisper to help debug interpretation issues
+- Persist `build` and `install` directories in the docker image.
+
+**Bug fixing**
+- Issue with `is_negative` fixed in the subtask manager.
+- Command generation malformation on 2 subcommands fixed.
+
 ## 2025-4-10
 
 | Name     | Status   |
