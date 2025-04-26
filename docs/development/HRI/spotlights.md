@@ -23,6 +23,7 @@ Member status:
 | Oscar    |  💻🔄🔧    |
 
 **Development**
+
 - Embedding services to find_closest elements
 - Insert gpsr action results into the database
 - LRU cache implementation to useful_audio to speed interaction 
@@ -35,10 +36,12 @@ Member status:
 - display video and quality of life improvements
 
 **Refactoring**
+
 - Added debug logs to faster-whisper to help debug interpretation issues
 - Persist `build` and `install` directories in the docker image.
 
 **Bug fixing**
+
 - Issue with `is_negative` fixed in the subtask manager.
 - Command generation malformation on 2 subcommands fixed.
 
@@ -58,6 +61,7 @@ Member status:
 - Automate gpsr dataset generation
 
 **Refactoring**:
+
 - HRI docker structure (profiles, integration with run.sh)
 - Refactored download model script to only download models if not present in the system.
 
