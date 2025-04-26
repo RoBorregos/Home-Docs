@@ -47,7 +47,7 @@ Many commands involve the interaction of several areas. For such tasks, the idea
     - pseudocode: while get_question(): if confirm_question(): answer_question()
 
 ## Vision
-### visual_info(complement = ("biggest" | "largest" | "smallest" | "heaviest" | "lightest" | "thinnest") + " object", characteristic = "object category" | "")
+### visual_info(complement = "biggest" | "largest" | "smallest" | "heaviest" | "lightest" | "thinnest", characteristic = object_category | "object")
     - purpose: get some information about an image.
     - preconditions: have the camera located in the needed position to get the frame.
     - behaviour: Get the requested data. Consider the characteristic as a filter.
