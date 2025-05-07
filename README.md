@@ -4,6 +4,9 @@ RoBorregos Official Documentation for the RoboCup@Home competition.
 
 This documentation is based on mkdocs, using the material theme.
 
+Official rulebook:
+https://robocupathome.github.io/RuleBook/rulebook/master.pdf
+
 ## Run locally
 
 To run the documentation locally, you need to have python installed.
