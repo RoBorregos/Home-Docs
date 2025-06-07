@@ -25,7 +25,7 @@ Clean the table by placing drinks on the trash bin, placing tableware and cutler
 Total: 265 
 
 If we place drinks in trash bin: +150 = 415
-
+If we pick up the tab: +100 = 515
 
 
 ## Possible points
@@ -79,5 +79,6 @@ If we place drinks in trash bin: +150 = 415
 - Optional: wipe table
 - Optional: open and close dishwasher door
 - Optional: pull and push dishwasher racks
-- Optional: place dishwasher tab inside the dishwasher
+- Optional: pick up dishwasher tab
+- Optional: place dishwasher tab inside the dishwasher hatch
 
