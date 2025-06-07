@@ -3,7 +3,7 @@
 ## Description
 
 The robot has to take two new guests to the living room to introduce them and offer a free place
-to sit. (5 min limit)
+to sit. (6 min limit)
 
 `Main Goal`: The robot welcomes and assists two newcomers at a party while maintaining
 appropriate gaze direction during conversation (at person speaking, direction of navigation).
