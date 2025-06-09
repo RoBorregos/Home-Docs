@@ -1,5 +1,18 @@
 # General Purpose Serivce Robot
 
+## Tasks remaining per Area
+
+## Navigation
+- Follow people
+
+## Vision
+- Read generated commands (just in case)
+- Object detection to pick up objects
+
+## HRI
+- Clarify ambiguous commands
+
+
 ## Previous related work
 
 - GPSR wiki by Adán: https://github.com/RoBorregos/home/wiki/TMR-@HOME-2024
@@ -272,13 +285,3 @@ clothe_list = ["t shirt", "shirt", "blouse", "sweater", "coat", "jacket"]
  'soccer ball', 'dice', 'tennis ball', 'baseball', 'cleanser', 'sponge'
 }
 ```
-
-# Proposed subtask API for GPSR
-
-## Vision
-
-count_persons(clothe, color, gesture, pose, room)
-
-identify_person_by_gesture()
-identify_person_by_pose()
-identify_person_by_name()
