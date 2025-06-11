@@ -170,3 +170,8 @@ A node should publish the coordinates of the largest face available so that the 
   <img width="500px" src="/assets/tasks/RestaurantDiagram.png" alt="Restaurant state diagram">
 </p>
 
+# Currently Pending:
+
+- Navigate to target (in unknown environment) - Nav
+- Navigate to origin (in unknown environment) - Nav
+- Get items asked by customer and quantity - HRI
