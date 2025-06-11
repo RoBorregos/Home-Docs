@@ -25,6 +25,7 @@ Clean the table by placing drinks on the trash bin, placing tableware and cutler
 Total: 265 
 
 If we place drinks in trash bin: +150 = 415
+
 If we pick up the tab: +100 = 515
 
 
