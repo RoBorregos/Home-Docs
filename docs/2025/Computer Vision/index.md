@@ -1,6 +1,6 @@
 # Computer Vision
 
-This module focuses on two main areas: Human Analysis and Object Detection, obtaining images from a Stereolabs ZED2. 
+This module focuses on two main areas: Human Analysis and Object Detection, obtaining images from a Stereolabs ZED2. Additionally, this year we also explored Visual-Language Models (VLMs) to enhance our capabilities in understanding visual content. To check the current architecture, check the [Vision Architecture](Architecture.md) document.
 
 ### Human Analysis
 This subarea focuses on analyzing human features and behaviors using computer vision techniques. Some of the main tasks include:
