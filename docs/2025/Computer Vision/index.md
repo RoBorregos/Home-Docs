@@ -17,3 +17,6 @@ The main objective of this subarea is the [dataset generation pipeline](Object%2
 ### VLM
 This subarea explores visual-language models (VLMs) to enhance the understanding of visual content in conjunction with language processing. Currently, the team uses the model [moondream](VLM/Moondream.md) for image prompting.
 
+## Running vision
+
+For details on how to run the vision module, check the home repo: [Run Vision](https://github.com/RoBorregos/home2/blob/main/docs/Run/Areas/vision.md)
