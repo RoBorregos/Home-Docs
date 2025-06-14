@@ -4,6 +4,7 @@ This module focuses on two main areas: Human Analysis and Object Detection, obta
 
 ### Human Analysis
 This subarea focuses on analyzing human features and behaviors using computer vision techniques. Some of the main tasks include:
+
 - [Recognizing faces](Human%20Analysis/Face%20Recognition.md)
 - [Tracking persons and re-identifying them across different frames](Human%20Analysis/Person%20Tracking.md)
 - [Detecting poses and gestures](Human%20Analysis/Poses%20and%20Gestures.md)
