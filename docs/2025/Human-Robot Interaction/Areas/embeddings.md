@@ -1,6 +1,6 @@
 # Embeddings
 
-@ Leo
+@Leo
 
 # Use cases
 
