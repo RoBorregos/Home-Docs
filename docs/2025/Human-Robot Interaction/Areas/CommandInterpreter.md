@@ -15,6 +15,9 @@ Dataset generator
 Schema Aligned Parsing for command interpreter
 @Adan
 
+Embeddings and RAG for grounding commands
+@Leo @Joce
+
 Areas of improvement
 @any
 
