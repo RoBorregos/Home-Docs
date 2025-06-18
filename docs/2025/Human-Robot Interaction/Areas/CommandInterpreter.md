@@ -12,7 +12,7 @@ Comparison to online finetuning
 Dataset generator
 @Oscar
 
-Baml Integration
+Schema Aligned Parsing for command interpreter
 @Adan
 
 Areas of improvement
