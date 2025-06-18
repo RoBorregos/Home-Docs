@@ -1,5 +1,17 @@
 # Manipulation Onboarding Guide
 
+## Cloning
+
+Be aware manipulation uses several submodules to work properly. You can clone the repository with the following command:
+```bash
+git clone --recurse-submodules
+```
+
+Or initiate the submodules after cloning with:
+```bash
+git submodule update --init --recursive --remote
+```
+
 ## Docker
 
 Installation of every requirement used for this area can be both slow and difficult, particularly when using GPUs. Follow the guide from [this repo](https://github.com/EmilianoHFlores/ros-docker) to install docker with GPU support. GPU is NOT required, but it is highly recommended to use it for faster simulation and inference when using neural networks.
@@ -49,18 +61,46 @@ Whether you are on simulation or on the real robot, you can run the pick and pla
 ros2 launch pick_and_place pick_and_place.launch.py
 ```
 
-## Vision
-To test the vision nodes, you can run the following command:
+### Vision
+
+To get object detections going, you have two options:
+
+#### Using vision container
+
+Launch the vision docker container with the following command, this one launches the object detector and the zero-shot object detector:
+```bash
+./run.sh vision --storing-groceries
+```
+
+#### Using manipulation container
+
 ```bash
 ./run.sh manipulation
-ros2 launch object_detector_2d object_detector_2d.launch.py
-ros2 launch object_detector_2d zero_shot_object_detector.launch.py
+ros2 launch object_detector_2d object_detector_node.launch.py
+ros2 launch object_detector_2d zero_shot_object_detector_node.launch.py
 ```
 Either of them will work, second one will allow you to use zero-shot detection, which classes you can edit in the vision_constants.py file within frida_constants package.
 
-### Trying up stuff
-Launch the keyboard node to try up stuff:
+#### Visualizing
+
+Use rqt's image plugin to visualize what your camera is seeing. You will also be able to change topics and the object detectors will pop up in the list of topics. Use this to visualize if it is working correctly:
+```bash
+rqt
+```
+Add the image plugin by clicking on Plugins -> Visualization -> Image View. Then select the topic you want to visualize, such as `/zed2/zed_node/left/image_rect_color`.
+
+### Trying up pick & place
+Launch the keyboard node to try picking objects up:
 ```bash
 ros2 run pick_and_place keyboard_input.py
 ```
 When running this node, you will see printed if the robot is seeing a detected object. Change the zero shot classes or use a trained model to detect different objects. When the robot sees something, trigger tasks by following the instructions printed on the terminal.
+
+## Troubleshooting
+
+Should anything go wrong, you can always call your fellow manipulation team members for help. This year, we have people working on these areas:
+
+- **Pipeline and Motion Planning**: Emiliano Flores, José Luis Domínguez, Ricardo Guerrero
+- **3D Perception**: Iván Romero
+- **2D Perception**: Emiliano Flores
+- **Simulation and Real Robot**: Emiliano Flores, Gerardo Fregoso, David Vázquez
