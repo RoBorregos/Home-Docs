@@ -11,10 +11,89 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2025-3-27
+## 2025-4-24
+
+| Name     | Status     |
+| -------- | ------     |
+| Diego    |  💻        |
+| Gilberto |  💻        | 
+| Ivan     |            |
+| Jocelyn  |            |
+| Leo L.   |  💻        |
+| Oscar    |  💻🔄🔧    |
+
+**Development**
+
+- Embedding services to find_closest elements
+- Insert gpsr action results into the database
+- LRU cache implementation to useful_audio to speed interaction 
+- LLM model fine tuned
+- Speed up of common interest generation
+- Test added for `is_negative`, `common_interests`, and `command_interpreter`
+- Mock command interpreter for GPSR.
+- Implementation of ~4 functions out of ~12 for GPSR.
+- started working on running grpo training on orin
+- display video and quality of life improvements
+
+**Refactoring**
+
+- Added debug logs to faster-whisper to help debug interpretation issues
+- Persist `build` and `install` directories in the docker image.
+
+**Bug fixing**
+
+- Issue with `is_negative` fixed in the subtask manager.
+- Command generation malformation on 2 subcommands fixed.
+
+## 2025-4-10
 
 | Name     | Status   |
 | -------- | ------   |
+| Diego    |          |
+| Gilberto |          |
+| Ivan     |          |
+| Jocelyn  |          |
+| Leo L.   |          |
+| Oscar    | 🔄 💻 📝 |
+
+**Development**
+
+- Automate gpsr dataset generation
+
+**Refactoring**:
+
+- HRI docker structure (profiles, integration with run.sh)
+- Refactored download model script to only download models if not present in the system.
+
+**Documentation**:
+- Added instructions for running the HRI docker image with the new run.sh.
+
+## 2025-4-3
+
+| Name     | Status   |
+| -------- | ------   |
+| Diego    |          |
+| Gilberto | 💻       |
+| Ivan     |          |
+| Jocelyn  | 💻       |
+| Leo L.   |          |
+| Oscar    | 🔧 💻    |
+
+**Development**
+
+- Added microphone icon to display for visualizing the audio state and voice detection value.
+- Added dialog for known places with schema tests from document `areas.json` of manipulation.
+- Implement min audio duration and max audio duration for hear method.
+
+**Bug fixing**:
+
+- Fix audio reset when running hri's `setup.bash` script on `run.sh`
+- Fix permissions issue for audio devices
+
+## 2025-3-27
+
+| Name     | Status   |
+| -------- | -------- |
 | Diego    |          |
 | Gilberto | 💻       |
 | Ivan     |          |
@@ -54,13 +133,12 @@ Member status:
 - Enable passing context to data_extractor function
 - 2 step data extraction -> thinking + structured output
 - Service to modify hot words for STT model
-- Started service for relating interpreted places to registered places. llm approach 
+- Started service for relating interpreted places to registered places. llm approach
 
 **Refactoring**:
 
 - Added service_checks to hri subtask manager
 - Modified prompting to pass test cases related to receptionist
-
 
 ## 2025-3-06
 
