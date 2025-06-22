@@ -2,7 +2,7 @@
 
 [Moondream](https://moondream.ai/) is an open-source visual language model that understands images using simple text prompts.
 
-We integrated Moondream along with YOLOv8 and a language-vision model via gRPC to power robot vision capabilities like posture analysis, object detection, and natural language querying.
+We integrated Moondream along with YOLOv8 and gRPC to power robot vision capabilities like posture analysis, object detection, and natural language querying.
 
 ---
 
