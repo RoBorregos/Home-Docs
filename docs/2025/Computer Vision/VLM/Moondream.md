@@ -12,9 +12,7 @@ We integrated Moondream along with YOLOv8 and gRPC to power robot vision capabil
 - [Features](#features)
 - [ROS Node](#ros-node)
 - [gRPC Server](#grpc-server)
-- [Model Interface](#model-interface)
 - [Protobuf API](#protobuf-api)
-- [Usage](#usage)
 - [Project Structure](#project-structure)
 
 ---
