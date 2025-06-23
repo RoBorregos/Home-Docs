@@ -49,5 +49,5 @@ To ensure everything runs properly, try to run the zed-simulator (this will simu
 ## Check out the docs
 Finally, check out our documentation to see the different subareas, current implementations and areas of improvement.
 
-- [Docs 2025](/docs/2025/Computer%20Vision/index.md)
+- [Docs 2025](../../../2025/Computer%20Vision/index.md)
 - [Architecture](Architecture.md)
