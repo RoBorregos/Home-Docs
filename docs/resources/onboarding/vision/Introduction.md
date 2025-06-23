@@ -30,7 +30,7 @@ It is recommended to install ubuntu to use ROS2, however it is also possible to 
 
 Also, make sure to check out how we use ROS2 in the home2 repo. If possible, try to run some of the examples:
 
-- [Home2 ROS2](/docs/resources/codelabs/ros2.md)
+- [Home2 ROS2](../../codelabs/ros2.md)
 
 ## Docker
 Docker is a tool that we use to run the modules in containers. This allows us to have a consistent environment across different machines and it gets everything setup and ready to use. It is not necessary to understand it at fist because we already have bash scripts that run everything automatically, but it is a powerful tool worth learning.
