@@ -115,7 +115,7 @@ if __name__ == "__main__":
     main()
 
 ```
-Check the complete node in [example_node.py](../vision/vision_general/scripts/example_node.py)
+Check the complete node in [example_node.py](https://github.com/RoBorregos/home2/blob/main/vision/packages/vision_general/scripts/example_node.py)
 
 ## Subscribers
 A subscriber will listen to a topic and receive messages from it. 
