@@ -88,4 +88,19 @@ for out in results:
 
 </details>
 
+<details><summary>Hint 3</summary>
+You would need to add a srv to frida_interfaces that expects a string and returns an int. You can check the following example:
 
+``` python
+# This would be in home2/frida_interfaces/vision/srv/YourSRVName.srv
+
+string object_name 
+---
+int32 count
+```
+
+and use it in your node like this:
+
+```python
+from frida_interfaces.srv import YourSRVName
+```
