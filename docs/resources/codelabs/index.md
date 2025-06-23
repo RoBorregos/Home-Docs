@@ -4,26 +4,26 @@ This section contains a collection of codelabs that guide you through various as
 
 
 ## General Codelabs
-- [Running ros2 on docker](codelabs/general/RosDocker.md)
-- [Connecting to orin via Tailscale](codelabs/general/Tailscale.md)
-- [Your first PR in home2](codelabs/general/PRs.md)
-
+- (Running ros2 on docker)(general/RosDocker.md)
+- (Connecting to orin via Tailscale)(general/Tailscale.md)
+- (Your first PR in home2)(general/PRs.md)
+- [Using tmux](general/tmux.md)
 
 ## HRI Codelabs
 
 ### NLP
-- [Run your llm locally](codelabs/hri/local-llm.md)
-- [Running the command interpreter](codelabs/hri/cmd-interpreter.md)
-- [Run your vector db locally](codelabs/hri/vector-db.md)
-- [LLM with RAG](codelabs/hri/vector-db.md)
+- (Run your llm locally)(hri/local-llm.md)
+- (Running the command interpreter)(hri/cmd-interpreter.md)
+- (Run your vector db locally)(hri/vector-db.md)
+- (LLM with RAG)(hri/vector-db.md)
 
 ### Speech
-- [Connect your microphone with docker](codelabs/hri/speech/codelab1.md)
-- [Generate TTS](codelabs/hri/speech/tts.md)
-- [Local STT](codelabs/hri/speech/stt.md)
+- (Connect your microphone with docker)(hri/speech/codelab1.md)
+- (Generate TTS)(hri/speech/tts.md)
+- (Local STT)(hri/speech/stt.md)
 
 ### Display
-- [Run the display package](codelabs/hri/display/codelab1.md)
+- (Run the display package)(hri/display/codelab1.md)
 
 ### Challenges
-- [Run a local voice assistant with RAG](codelabs/hri/challenge1.md)
+- (Run a local voice assistant with RAG)(hri/challenge1.md)
