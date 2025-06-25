@@ -26,6 +26,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Pipeline tutorial
 - Single camera depth inference
 
+
 ## 2025-06-18
 
 **Done:**
