@@ -2,23 +2,6 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
-## 2025-06-25
-
-**Done:**
-
-- OnBoarding pt2
-- Task definition and prioritization
-
-**In progress:**
-
-- Mask detected people to avoid those who are outside of the arena
-- ReId download model and requirements without internet
-
-**To do:**
-
-- Pipeline segmentation
-- Pipeline dataset augmentation
-- Pipeline tutorial
 
 ## 2025-06-18
 
