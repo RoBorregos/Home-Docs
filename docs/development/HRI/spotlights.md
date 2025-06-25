@@ -11,6 +11,31 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-6-25
+
+| Name     | Status     |
+| -------- | ------     |
+| Diego    |  📝💻      |
+| Gilberto |            | 
+| Ivan     |            |
+| Jocelyn  |  📝        |
+| Leo L.   |            |
+| Oscar    |  📝💻      |
+| Benvenuto|  💻        |
+| Camila   |            |
+| Alex     |            |
+
+**Development**
+
+- Faster-whisper with bidirectional streaming
+- AEC (Acoustic Echo Cancellation) testing
+- async implementation for llm-related functions (extract_data)
+
+**Documentation**
+
+- Documentation of fine-tuning, rag, and OpenWakeWord
+- Initial template for HRI codelabs
+
 ## 2025-4-24
 
 | Name     | Status     |
