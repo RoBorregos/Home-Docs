@@ -18,7 +18,7 @@ We integrated Moondream along with YOLOv8 and gRPC to power robot vision capabil
 ---
 
 ## Architecture
-![image](moondream.png)
+![image](/assets/home/Vision/moondream.png)
 
 ---
 
