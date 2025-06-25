@@ -9,6 +9,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 - OnBoarding pt2
 - Task definition and prioritization
+- Documentation for Moondream and Zero Shot model YOLOe
 
 **In progress:**
 
