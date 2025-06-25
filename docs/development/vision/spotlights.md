@@ -15,12 +15,16 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 - Mask detected people to avoid those who are outside of the arena
 - ReId download model and requirements without internet
+- ReID modifications:
+    - Now extracts multiple embeddings for each person based on similarity with own tracklet over past frames
+    - Will integrate batch feature extraction and batch feature comparison for increased speed and allow for more comparisons -> multiple embeddings for each person
 
 **To do:**
 
 - Pipeline segmentation
 - Pipeline dataset augmentation
 - Pipeline tutorial
+- Single camera depth inference
 
 ## 2025-06-18
 
