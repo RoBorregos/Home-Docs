@@ -33,6 +33,7 @@ TMR2025 finished, manipulation team had ONE SUCCESFUL PICK on rounds.
 - Fixed URDF precision issues
 - Tests with navigation and within task managers
 
+
 ## 2025-04-24
 
 ### News
