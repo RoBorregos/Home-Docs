@@ -45,3 +45,8 @@ The task consists of storing groceries in a cabinet from a table with the object
 | **Total Score (excluding special penalties & standard bonuses)** | 1140 |
 
 ![Storing Groceries](/assets/tasks/StoringGroceries.png)
+
+## Missing tasks
+- Pour cereal finish details and intensive testing
+- Improve perception3d small fixes and overall pick pipeline reliability
+- Chronometrize and depurate better strategies
