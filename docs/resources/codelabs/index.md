@@ -5,7 +5,7 @@ This section contains a collection of codelabs that guide you through various as
 
 ## General Codelabs
 - (Running ros2 on docker)(general/RosDocker.md)
-- (Connecting to orin via Tailscale)(general/Tailscale.md)
+- [Connecting to orin via Tailscale](general/tailscale.md)
 - (Your first PR in home2)(general/PRs.md)
 - [Using tmux](general/tmux.md)
 
