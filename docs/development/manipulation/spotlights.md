@@ -2,6 +2,19 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-07-05
+
+### Done
+- Added environment spherization to avoid collisions near the object to pick
+- Increased pipeline reliability (fixed lots of hanging issues)
+- Tuned GPD for new gripper, now has a better success rate
+- Fully tested for storing groceries task
+
+### In Progress
+- Trajectory recording as a file
+- Trajectory projection
+- Serving cereal on container real robot tests
+
 ## 2025-06-25
 
 ### News
