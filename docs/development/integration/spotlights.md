@@ -10,6 +10,12 @@ Member status:
 - 🔄: Refactoring
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
+## 2025-7-5
+- mock nav
+- frida_interfaces cache
+- clean the table task manager
+- storing and receptionists tests
+- Active topics/status checks
 
 ## 2025-4-10
 
