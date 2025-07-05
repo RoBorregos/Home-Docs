@@ -8,7 +8,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Added environment spherization to avoid collisions near the object to pick
 - Increased pipeline reliability (fixed lots of hanging issues)
 - Tuned GPD for new gripper, now has a better success rate
-- Fully tested for storig groceries task
+- Fully tested for storing groceries task
 
 ### In Progress
 - Trajectory recording as a file
