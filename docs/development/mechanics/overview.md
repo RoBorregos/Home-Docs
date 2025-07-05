@@ -6,7 +6,14 @@ The team aims to increase the robot sturdiness, aesthetics, user friendliness an
 
 - Alejandro González Escamilla
 - Alejandro Guerrero Carrillo
-- Diego López Hernández
 - Marcela Jimenez Peñarrieta
 - Ian Manzano Iribas
-- Carlos Amin
+- Carlos Amín Méndez Cáceres
+- Barbara Alejandra Novau Martínez
+- Angela Leticia Rosales Díaz
+- Jordan Arturo Palafox Salinas
+
+**Legacy Members**
+
+- Diego López Hernández
+- Leonardo Fabián Sánchez Hernández
