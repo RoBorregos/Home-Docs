@@ -23,7 +23,6 @@ This section contains a collection of codelabs that guide you through various as
 - (Local STT)(hri/speech/stt.md)
 
 ### Display
-- (Run the display package)(hri/display/codelab1.md)
-
+[Run the display package](../../2025/Human-Robot%20Interaction/Codelabs/display.md)
 ### Challenges
 - (Run a local voice assistant with RAG)(hri/challenge1.md)
