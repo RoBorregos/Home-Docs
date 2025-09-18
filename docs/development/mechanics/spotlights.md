@@ -2,6 +2,20 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-09-18
+
+**In Progress:**
+
+- Babi: in charge of changing the robot front wheels
+
+- Ale: in charge of solving the problem of the robot disassembly during transport due to vibrations
+
+Manufacture of metal plates today:
+
+<p align="center">
+  <img src="/assets/development/mechanics/spotlights/metalPlates.jpeg" alt="metal plates CAD" width="281" height="604">
+</p>
+
 ## 2025-07-02
 
 **Done:**
