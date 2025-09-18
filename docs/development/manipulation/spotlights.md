@@ -2,6 +2,59 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
+Member status:
+
+- 🔍: Research
+- 💻: Development
+- 📝: Documentation
+- 🔄: Refactoring
+- 🔧: Bug fixing
+- 🤝: Participation in other subteam
+
+
+## 2025-09-18
+### News
+New member:
+- Hector Tovar
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻 📝    |
+| Ale G.   |  💻📝     | 
+| Ricardo  |  💻       |
+| Fernando |  💻        |
+| Luis     |  💻        |
+| Emil     |  💻 🔍     |
+| Fregoso  |  💻       |
+| Paola    |  📝 🔍     |
+| Hector   |  🤝         |
+
+### Done
+- Investigation on how to detect a transparent container
+![image](../../assets/development/manipulation/spotlights/2025_09_18/ClearGrasp.png)
+- Optimize the downsampling and clustering to improve the speed and accuracy in detected objects
+
+| Before | After |
+| :---: | :---: |
+| ![Perception 1](../../assets/development/manipulation/spotlights/2025_09_18/Perception1.jpg) | ![Perception 2](../../assets/development/manipulation/spotlights/2025_09_18/Perception2.jpg) |
+
+<!-- ![image](../../assets/development/manipulation/spotlights/2025_09_18/Perception1.jpg) ![image](../../assets/development/manipulation/spotlights/2025_09_18/Perception2.jpg) -->
+- Testing MuJoco for simulation
+![image](../../assets/development/manipulation/spotlights/2025_09_18/Mujoco.png)
+
+### In Progress
+- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
+<!-- - Simplify and standardize the API to make it more intuitive and less prone to errors -->
+- Inspect the pipeline and manage correctly the expceptions in each step
+- Correct and stabilize the follow face module to work in real time
+- Remake the follow person module to improve the reliability and accuracy
+- Working on the TDP2026 paper
+- Simulation:
+    - Isaac Sim
+        - Add the urdf of Frida to Isaac Sim
+        - Add the environment of the receptionist to Isaac Sim
+        - Make a way that allow us to enter more than two people to different simulations
+
 ## 2025-07-05
 
 ### Done
