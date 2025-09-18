@@ -18,7 +18,7 @@ Member status:
 | Gilberto  | 🔄     |
 | Jocelyn   |        |
 | Benvenuto |        |
-| Guajardo  |        |
+| Alex      |        |
 | Camila    |        |
 
 **Refactoring**
@@ -26,6 +26,61 @@ Member status:
 - Implemented --open-display, --build-display and --download-model arguments in docker/hri/run.sh.
 - Always build and setup HRI when running integration container.
 - Persist STT model downloads and use a smaller one for CPU inference.
+
+## 2025-7-05
+
+| Name      | Status |
+| --------- | ------ |
+| Diego     | 💻     |
+| Gilberto  |        |
+| Ivan      | 💻     |
+| Jocelyn   |        |
+| Leo L.    |        |
+| Oscar     | 💻🔄   |
+| Benvenuto | 💻     |
+| Camila    | 💻📝   |
+| Alex      |        |
+
+**Development**
+
+- Async implementaiton for llm-related functions finished
+- Show realtime text in display UI and hear icon
+- Integrated postgresql with HRI
+- Implementation for give me a hand started.
+- AEC testing and integration with repo
+
+**Refactoring**
+
+- HRI's greatest cleanup so far, removing unused files and folders (over 2k lines of code removed)
+
+**Documentation**
+
+- Display codelab documentation
+
+## 2025-6-25
+
+| Name      | Status |
+| --------- | ------ |
+| Diego     | 📝💻   |
+| Gilberto  |        |
+| Ivan      |        |
+| Jocelyn   | 📝     |
+| Leo L.    |        |
+| Oscar     | 📝💻   |
+| Benvenuto | 💻     |
+| Camila    |        |
+| Alex      |        |
+
+**Development**
+
+- Faster-whisper with bidirectional streaming
+- AEC (Acoustic Echo Cancellation) testing
+- async implementation for llm-related functions (extract_data)
+
+**Documentation**
+
+- Documentation of fine-tuning, rag, and OpenWakeWord
+- Initial template for HRI codelabs
 
 ## 2025-4-24
 

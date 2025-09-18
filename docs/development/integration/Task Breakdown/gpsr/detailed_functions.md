@@ -32,13 +32,6 @@ Many commands involve the interaction of several areas. For such tasks, the idea
     - postconditions: none
     - pseudocode: say(llm_response(complement, fetch_info(characteristic)))
 
-### say(complement = text, characteristic = "")
-    - purpose: say something to the user.
-    - preconditions: none
-    - behaviour: The robot says the provided text (complement).
-    - postconditions: none
-    - pseudocode: say(text)
-
 ### ask_answer_question(complement = "", characteristic = "")
     - purpose: answer the user's question.
     - preconditions: be in front of the user.
@@ -119,7 +112,7 @@ Many commands involve the interaction of several areas. For such tasks, the idea
 
 ## HRI, Manipulation, Nav, Vision
 ### find_person_by_name(complement = "name", characteristic = "")
-    - purpose: find a person, approach it to interact, and save its information for further interactions. Further interaction may be: following the person, guiding the person, interacting with the person, describing the person, give an object to a person.
+    - purpose: find a person, approach it to interact, and save its information for further interactions. Further interaction may be: following the person, guiding the person, interacting with the person, describing the person, give an object to a person. Also, mention the name of the person found if it was known or unkown.
     - preconditions: assumes robot is at a location
     - behaviour: robot keeps searching for a specific person in the room until found. For each person, it checks if it's already saved, if it's not known the name is asked and saved.
     - postconditions: robot approaches the person with the specified name, and also saves all the people it finds.

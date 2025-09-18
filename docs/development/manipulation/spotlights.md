@@ -2,6 +2,51 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-07-05
+
+### Done
+- Added environment spherization to avoid collisions near the object to pick
+- Increased pipeline reliability (fixed lots of hanging issues)
+- Tuned GPD for new gripper, now has a better success rate
+- Fully tested for storing groceries task
+
+### In Progress
+- Trajectory recording as a file
+- Trajectory projection
+- Serving cereal on container real robot tests
+
+## 2025-06-25
+
+### News
+New members:
+- Paola Llamas
+- Emil Winkler
+
+### Done
+- Onboarding
+- Tested new GPDs, decided to keep the current one
+- Pointcloud resolution based on distance to points
+
+### In Progress
+- Decided on proposal to open doors, using recorded trajectories and adjusting for new observations
+- Clustering door handles
+- Serving cereal on container
+
+## 2025-04-24 ---> TMR
+This includes both weeks last week from april and developments right before and during TMR 2025.
+
+### News
+TMR2025 finished, manipulation team had ONE SUCCESFUL PICK on rounds.
+
+### Done
+
+- Place on shelfs done
+- New gripper fully tested and upgraded over previous pipeline
+- Added both vertical and horizontal grasping poses generation, tuned for new gripper
+- Fixed URDF precision issues
+- Tests with navigation and within task managers
+
+
 ## 2025-04-24
 
 ### News

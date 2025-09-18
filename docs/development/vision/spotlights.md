@@ -2,6 +2,61 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-09-25
+
+**In Progress:**
+| Owners              | Task                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Danaé & Brisma 💻   | Simplifying YOLO usage by creating a single shared instance           |
+| Danaé & Brisma 💻   | Implementing object detection filtering based on distance             |
+| Fernando 💻         | Improving DINO for more accurate segmentation                        |
+| Jocelyn          | Supporting "Candidatos Avanzados" through mentoring                   |
+| Jocelyn & Danaé 📄  | Planning the @Home vision research paper                              |
+
+
+
+## 2025-06-25
+
+**Done:**
+
+- OnBoarding pt2
+- Task definition and prioritization
+- Documentation for Moondream and Zero Shot model YOLOe
+
+**In progress:**
+
+- Mask detected people to avoid those who are outside of the arena
+- ReId download model and requirements without internet
+- ReID modifications:
+    - Now extracts multiple embeddings for each person based on similarity with own tracklet over past frames
+    - Will integrate batch feature extraction and batch feature comparison for increased speed and allow for more comparisons -> multiple embeddings for each person
+
+**To do:**
+
+- Pipeline segmentation
+- Pipeline dataset augmentation
+- Pipeline tutorial
+- Single camera depth inference
+
+
+## 2025-06-18
+
+**Done:**
+
+- OnBoarding pt1
+
+**In progress:**
+
+- Documentation
+- Mask detected people to avoid those who are outside of the arena
+- ReId download model and requirements without internet
+
+**To do:**
+
+- Define and assign new tasks for stage 2 and stage 1 fixes/improvements
+- Pipeline segmentation
+- Pipeline dataset augmentation
+
 ## 2025-04-24
 
 **Done:**
