@@ -2,6 +2,18 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-09-25
+
+**In Progress:**
+| Owners              | Task                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Danaé & Brisma 💻   | Simplifying YOLO usage by creating a single shared instance           |
+| Danaé & Brisma 💻   | Implementing object detection filtering based on distance             |
+| Fernando 💻         | Improving DINO for more accurate segmentation                        |
+| Jocelyn          | Supporting "Candidatos Avanzados" through mentoring                   |
+| Jocelyn & Danaé 📄  | Planning the @Home vision research paper                              |
+
+
 
 ## 2025-06-25
 
