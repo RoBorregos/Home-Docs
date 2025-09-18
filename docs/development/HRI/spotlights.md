@@ -11,75 +11,38 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2025-7-05
+## 2025-9-18
 
-| Name     | Status     |
-| -------- | ------     |
-| Diego    |  💻        |
-| Gilberto |            | 
-| Ivan     |  💻        |
-| Jocelyn  |            |
-| Leo L.   |            |
-| Oscar    |  💻🔄      |
-| Benvenuto|  💻        |
-| Camila   |  💻📝      |
-| Alex     |            |
-
-**Development**
-- Async implementaiton for llm-related functions finished
-- Show realtime text in display UI and hear icon
-- Integrated postgresql with HRI
-- Implementation for give me a hand started.
-- AEC testing and integration with repo
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Guajardo  |        |
+| Camila    |        |
 
 **Refactoring**
-- HRI's greatest cleanup so far, removing unused files and folders (over 2k lines of code removed)
 
-**Documentation**
-- Display codelab documentation
-
-
-## 2025-6-25
-
-| Name     | Status     |
-| -------- | ------     |
-| Diego    |  📝💻      |
-| Gilberto |            | 
-| Ivan     |            |
-| Jocelyn  |  📝        |
-| Leo L.   |            |
-| Oscar    |  📝💻      |
-| Benvenuto|  💻        |
-| Camila   |            |
-| Alex     |            |
-
-**Development**
-
-- Faster-whisper with bidirectional streaming
-- AEC (Acoustic Echo Cancellation) testing
-- async implementation for llm-related functions (extract_data)
-
-**Documentation**
-
-- Documentation of fine-tuning, rag, and OpenWakeWord
-- Initial template for HRI codelabs
+- Implemented --open-display, --build-display and --download-model arguments in docker/hri/run.sh.
+- Always build and setup HRI when running integration container.
+- Persist STT model downloads and use a smaller one for CPU inference.
 
 ## 2025-4-24
 
-| Name     | Status     |
-| -------- | ------     |
-| Diego    |  💻        |
-| Gilberto |  💻        | 
-| Ivan     |            |
-| Jocelyn  |            |
-| Leo L.   |  💻        |
-| Oscar    |  💻🔄🔧    |
+| Name     | Status |
+| -------- | ------ |
+| Diego    | 💻     |
+| Gilberto | 💻     |
+| Ivan     |        |
+| Jocelyn  |        |
+| Leo L.   | 💻     |
+| Oscar    | 💻🔄🔧 |
 
 **Development**
 
 - Embedding services to find_closest elements
 - Insert gpsr action results into the database
-- LRU cache implementation to useful_audio to speed interaction 
+- LRU cache implementation to useful_audio to speed interaction
 - LLM model fine tuned
 - Speed up of common interest generation
 - Test added for `is_negative`, `common_interests`, and `command_interpreter`
@@ -101,7 +64,7 @@ Member status:
 ## 2025-4-10
 
 | Name     | Status   |
-| -------- | ------   |
+| -------- | -------- |
 | Diego    |          |
 | Gilberto |          |
 | Ivan     |          |
@@ -119,18 +82,19 @@ Member status:
 - Refactored download model script to only download models if not present in the system.
 
 **Documentation**:
+
 - Added instructions for running the HRI docker image with the new run.sh.
 
 ## 2025-4-3
 
-| Name     | Status   |
-| -------- | ------   |
-| Diego    |          |
-| Gilberto | 💻       |
-| Ivan     |          |
-| Jocelyn  | 💻       |
-| Leo L.   |          |
-| Oscar    | 🔧 💻    |
+| Name     | Status |
+| -------- | ------ |
+| Diego    |        |
+| Gilberto | 💻     |
+| Ivan     |        |
+| Jocelyn  | 💻     |
+| Leo L.   |        |
+| Oscar    | 🔧 💻  |
 
 **Development**
 
