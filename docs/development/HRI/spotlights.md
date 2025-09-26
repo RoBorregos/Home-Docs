@@ -22,6 +22,7 @@ Member status:
 | Camila    |        |
 
 **Development**
+- Implemented automation for ReSpeaker device detection
 
 ## 2025-9-18
 
