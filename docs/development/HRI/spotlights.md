@@ -15,6 +15,18 @@ Member status:
 
 | Name      | Status |
 | --------- | ------ |
+| Gilberto  |        |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    |        |
+
+**Development**
+
+## 2025-9-18
+
+| Name      | Status |
+| --------- | ------ |
 | Gilberto  | 🔄     |
 | Jocelyn   |        |
 | Benvenuto |        |
