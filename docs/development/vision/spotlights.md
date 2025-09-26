@@ -8,6 +8,17 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 | Owners              | Task                                                                 |
 |---------------------|----------------------------------------------------------------------|
+| Danaé & Brisma 💻   | Centralizing YOLO            |
+| Brisma 💻   | Test object detection filtering based on distance             |
+| Fernando and Jocelyn 💻  | Improving DINO for more accurate segmentation                    |
+| Daniela & Hector 📄 | Research: Alternatives/improvements for tracker, reID and pose detection       |
+
+## 2025-09-18
+
+**In Progress:**
+
+| Owners              | Task                                                                 |
+|---------------------|----------------------------------------------------------------------|
 | Danaé & Brisma 💻   | Simplifying YOLO usage by creating a single shared instance           |
 | Danaé & Brisma 💻   | Implementing object detection filtering based on distance             |
 | Fernando 💻         | Improving DINO for more accurate segmentation                        |
