@@ -12,6 +12,38 @@ Member status:
 - 🤝: Participation in other subteam
 
 
+## 2025-09-26
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻 📝    |
+| Ale G.   |  💻📝     | 
+| Ricardo  |  💻       |
+| Fernando |  💻        |
+| Luis     |  💻        |
+| Emil     |  💻 🔍     |
+| Fregoso  |  💻       |
+| Paola    |  📝 🔍     |
+| Hector   |  🤝         |
+
+### Done
+- Already tried ClearGrasp with the realsense d435i camera
+- Mini OnBoarding 
+
+### In Progress
+- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
+- Inspect the pipeline and manage correctly the exceptions in each step
+- Correct and stabilize the follow face module to work in real time
+- Remake the follow person module to improve the reliability and accuracy
+- Working on the TDP2026 paper
+- Simulation:
+    - Mujoco
+        - Add the urdf of Frida
+        - Add the environment of the receptionist to Mujoco
+        - Make a way that allow us to enter more than two people to different simulations
+
+
+
 ## 2025-09-18
 ### News
 New member:
@@ -50,9 +82,9 @@ New member:
 - Remake the follow person module to improve the reliability and accuracy
 - Working on the TDP2026 paper
 - Simulation:
-    - Isaac Sim
-        - Add the urdf of Frida to Isaac Sim
-        - Add the environment of the receptionist to Isaac Sim
+    - Mujoco
+        - Add the urdf of Frida to Mujoco
+        - Add the environment of the receptionist to Mujoco
         - Make a way that allow us to enter more than two people to different simulations
 
 ## 2025-07-05
