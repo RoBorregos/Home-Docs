@@ -2,6 +2,14 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-09-25
+
+- Plates, already machined, changing wheels in progress.
+
+<p align="center">
+  <img src="/assets/development/mechanics/spotlights/plate and wheels.jpeg" alt="metal plates CAD" width="281" height="604">
+</p>
+
 ## 2025-09-18
 
 **In Progress:**
