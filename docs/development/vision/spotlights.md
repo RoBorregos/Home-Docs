@@ -2,6 +2,26 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-10-02
+
+**Done:**
+| Owners              | Task                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Héctor & Daniela  📄 |  Research about pose detection, reID and tracker |
+| Danaé 💻 | Developed YOLO central node |
+
+**In Progress:**
+
+| Owners              | Task                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Fernando & Brisma  |  Testing object/person detection filter by distance |
+| Danaé  | Testing YOLO node |
+
+**To-do:**
+| Owners              | Task                                                                 |
+|---------------------|----------------------------------------------------------------------|
+| Fernando and Jocelyn 💻  | Improve DINO for more accurate segmentation |
+
 ## 2025-09-25
 
 **In Progress:**
