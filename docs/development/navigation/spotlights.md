@@ -36,7 +36,7 @@ Member status:
 
 # Weekly Spotlights
 Navigation Spotlights of the week:
--Meeting of capacitation Done
+-Meeting of Capacitation Done 
 -Investigation topics added
 -Problem solving targeted (LASER TIPICAL ERROR)
 
@@ -62,7 +62,7 @@ Member status:
 
 
 **Development**:
-- Correction of actual nav branch
+- Correction of current nav branch
 - Rtabmap Fixed lost parameters
 - XAVIER AGX revived
 
