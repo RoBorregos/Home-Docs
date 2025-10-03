@@ -14,20 +14,19 @@ Member status:
 
 | Name     | Stauts |
 | -------- | ------ |
-| Yair    |    🔍    |
+| Samuel       |    🔍    |
 | Fregoso |     💻   |
-| David    |     📝   |
-| Lopez |     📝   |
-| Ximena |     💻  |
-| Rogelio   |    💻     |
-| Rodrigo  |   💻  |
+| Melanie    |   🤝   |
+| Ximena |    Paused  |
+| Rogelio   |    Paused     |
+| Rodrigo  |  🔍   |
 | Daniel hinojosa |   💻  |
 
 
 **Development**:
-- PCB @home finished
 
 
 **On planning**:
-- Checking different alternatives energy
-- checking base
+-Review of the usefulness of the pudu batteries
+-Review of how the dog's batteries are if you carry them
+-Review of BMS papers
