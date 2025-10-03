@@ -12,6 +12,42 @@ Member status:
 - 🤝: Participation in other subteam
 
 
+
+## 2025-09-26
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻 📝    |
+| Ale G.   |  💻📝     | 
+| Ricardo  |  💻       |
+| Fernando |  💻        |
+| Luis     |  💻        |
+| Emil     |  💻 🔍     |
+| Fregoso  |  💻       |
+| Paola    |  📝 🔍     |
+| Hector   |  🤝         |
+
+### Done
+- Added the urdf of Frida to Mujoco
+
+![image](../../assets/development/manipulation/spotlights/2025_10_2/MujocoUrdf.png)
+
+- Tests with clear grasps
+
+![image](../../assets/development/manipulation/spotlights/2025_10_2/Clear.jpeg)
+
+- Onboarding
+
+### In Progress
+- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
+- Inspect the pipeline and manage correctly the exceptions in each step
+- Correct and stabilize the follow face module to work in real time
+- Remake the follow person module to improve the reliability and accuracy
+- Working on the TDP2026 paper
+- Simulation:
+    - Mujoco
+        - Add the environment of the receptionist to Mujoco
+
 ## 2025-09-26
 
 | Name     | Status     |
@@ -41,8 +77,6 @@ Member status:
         - Add the urdf of Frida
         - Add the environment of the receptionist to Mujoco
         - Make a way that allow us to enter more than two people to different simulations
-
-
 
 ## 2025-09-18
 ### News
