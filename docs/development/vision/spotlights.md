@@ -5,6 +5,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 ## 2025-10-02
 
 **Done:**
+
 | Owners              | Task                                                                 |
 |---------------------|----------------------------------------------------------------------|
 | Héctor & Daniela  📄 |  Research about pose detection, reID and tracker |
@@ -18,6 +19,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 | Danaé  | Testing YOLO node |
 
 **To-do:**
+
 | Owners              | Task                                                                 |
 |---------------------|----------------------------------------------------------------------|
 | Fernando and Jocelyn 💻  | Improve DINO for more accurate segmentation |
