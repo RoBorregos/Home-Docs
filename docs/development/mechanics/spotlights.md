@@ -2,7 +2,7 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
-## 2025-10-02
+## 2025-10-09
 
 - Install (finally) the metal plates to secure robot structure, they worked.
 - In progress of printing the omnibase motor gearbox pieces.
