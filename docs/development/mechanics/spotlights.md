@@ -4,6 +4,11 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2025-10-02
 
+- Install (finally) the metal plates to secure robot structure, they worked.
+- In progress of printing the omnibase motor gearbox pieces.
+
+## 2025-10-02
+
 - Fix URDF speaker collision (Dominguez please approve).
 
 ## 2025-09-25
