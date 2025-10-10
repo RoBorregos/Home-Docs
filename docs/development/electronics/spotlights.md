@@ -10,24 +10,24 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2025-3-6
+## 09-25-2025
 
-| Name     | Stauts |
-| -------- | ------ |
-| Yair    |    🔍    |
-| Fregoso |     💻   |
-| David    |     📝   |
-| Lopez |     📝   |
-| Ximena |     💻  |
-| Rogelio   |    💻     |
-| Rodrigo  |   💻  |
-| Daniel hinojosa |   💻  |
+| Name     |Status|
+| -------- | ---- |
+| Samuel   |  🔍  |
+| Rodrigo  |  💻  |
+| Fregoso  |  💻  |
+| Daniel   |  💻  |
+| Melanie  |  🤝  |
+| Ximena   |  💻  |
+| Rogelio  |  💻  |
+
 
 
 **Development**:
-- PCB @home finished
+- First PCB 
+![alt text](image.png)
 
 
 **On planning**:
-- Checking different alternatives energy
-- checking base
+- Creating a 
