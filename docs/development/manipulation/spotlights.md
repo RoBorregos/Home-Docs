@@ -11,9 +11,37 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-10-09
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  💻📝     | 
+| Ricardo  |  💻📝       |
+| Fernando |  💻📝        |
+| Luis     |  💻📝        |
+| Emil     |  💻📝🔍     |
+| Fregoso  |  💻📝       |
+| Paola    |  📝 🔍     |
+| Hector   |  🤝         |
+
+### Done
+- Test xarm with joint trajectory controller
+- Get point cloud from a transparent object
+- Inspect the pipeline and manage correctly the exceptions in each step
+
+### In Progress
+- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
+- Correct and stabilize the follow face module to work in real time
+- Working on the TDP2026 paper
+- Simulation:
+    - Mujoco
+        - Add the environment of the receptionist to Mujoco
 
 
-## 2025-09-26
+
+
+## 2025-10-02
 
 | Name     | Status     |
 | -------- | ------     |
