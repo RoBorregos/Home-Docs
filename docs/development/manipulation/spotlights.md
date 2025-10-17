@@ -11,6 +11,40 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+
+
+## 2025-10-16
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  💻📝     | 
+| Ricardo  |  💻📝       |
+| Fernando |  💻📝        |
+| Luis     |  💻📝        |
+| Emil     |  💻📝🔍     |
+| Fregoso  |  💻📝       |
+| Paola    |  📝 🔍     |
+| Hector   |  🤝         |
+
+### Done
+- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
+- Test with vamp
+![image](../../assets/development/manipulation/spotlights/2025_10_16/vamp.png)
+- Get point cloud from a transparent object in real time
+
+| Before | After |
+| :---: | :---: |
+| ![Perception 1](../../assets/development/manipulation/spotlights/2025_10_16/antes.jpeg) | ![Perception 2](../../assets/development/manipulation/spotlights/2025_10_16/despues.jpeg) |
+
+### In Progress
+- Correct and stabilize the follow face module to work in real time
+- Implement vamp into the manipulation pipeline
+- Working on the TDP2026 paper
+- Simulation:
+    - Mujoco
+        - Add the environment of the receptionist to Mujoco
+
 ## 2025-10-09
 
 | Name     | Status     |
