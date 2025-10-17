@@ -2,9 +2,29 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-10-16
+
+**In Progress:**
+
+| Owners   | Task   |
+|-------|---------|
+| Fernando & Brisma  |  Testing object/person detection filter by distance |
+| Brisma  | Research about face detection |
+| Fernando | Improving dataset pipeline |
+| Fernando | Integrating logic into pipeline interface (backend) |
+| Danaé | Research of new models / VLMs / repositories |
+
+**Done:**
+
+| Owners   | Task   |
+|-------|---------|
+| Brisma  | Frontend for dataset pipeline interface |
+
+
 ## 2025-10-09
 
 **In progress:**
+
 | Owners              | Task                                                                 |
 |---------------------|----------------------------------------------------------------------|
 | Brisma |  Proposal of interface for dataset creation |
