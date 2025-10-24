@@ -40,6 +40,21 @@ Member status:
 
 - Researching a better way to confirm commands
 
+## 2025-10-23
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄🔍   |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    |        |
+
+**Development**
+
+- Improved hri docker files organization
+- Researched about slot filling and conversations with data retrieval intent.
+
 ## 2025-9-18
 
 | Name      | Status |
