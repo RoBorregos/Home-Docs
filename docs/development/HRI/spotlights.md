@@ -60,6 +60,16 @@ Member status:
 - Researching about voice separation
 - Testing the AEC system
 
+## 2025-11-07
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |        |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    |        |
+
 ## 2025-10-23
 
 | Name      | Status |
