@@ -11,6 +11,16 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-11-07
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |        |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    |        |
+
 ## 2025-10-23
 
 | Name      | Status |
