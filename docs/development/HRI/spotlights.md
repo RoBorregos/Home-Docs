@@ -66,9 +66,14 @@ Member status:
 | --------- | ------ |
 | Gilberto  |        |
 | Jocelyn   |        |
-| Benvenuto |        |
+| Benvenuto | 🔍 💻  |
 | Alex      |        |
 | Camila    |        |
+
+**Development**
+
+- Researching about voice separation
+- Testing the AEC system
 
 ## 2025-10-23
 
