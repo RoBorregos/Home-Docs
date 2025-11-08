@@ -10,7 +10,7 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2025-11-08
+## 2025-11-07
 
 | Name     | Stauts |
 | -------- | ------ |
