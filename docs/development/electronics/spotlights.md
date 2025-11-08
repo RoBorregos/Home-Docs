@@ -10,6 +10,26 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-11-08
+
+| Name     | Stauts |
+| -------- | ------ |
+| Fregoso |     💻   |
+| Ximena |     🤝  |
+| Rogelio   |    🤝     |
+| Rodrigo  |   🤝  |
+| Samuel |   💻  |
+| Daniel hinojosa |   💻  |
+
+
+**Development**:
+- Finished BMS PCB
+
+**On planning**:
+- Get LIFEPO 3V 20A batteries
+- PCB that distributes power in Frida
+
+
 ## 2025-3-6
 
 | Name     | Stauts |

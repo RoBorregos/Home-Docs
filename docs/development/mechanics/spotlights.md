@@ -2,6 +2,14 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+
+## 2025-10-16
+
+**In Progress:**
+
+- Started omnibase BOM and searched for components in the lab 
+
+
 ## 2025-10-16
 
 - No spotlights for this week :c 
