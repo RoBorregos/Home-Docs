@@ -11,7 +11,7 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2025-3-20
+## 2025-11-07
 
 | Name      | Status |
 | --------- | ------ |
