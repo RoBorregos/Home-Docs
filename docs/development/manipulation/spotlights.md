@@ -36,9 +36,6 @@ Member status:
 - Simulation:
     - Mujoco: Add the environment of the receptionist to Mujoco
 
-
-
-
 ## 2025-10-16
 
 | Name     | Status     |
