@@ -10,7 +10,25 @@ Member status:
 - 🔄: Refactoring
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
+
+## 2025-3-20
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Fregoso   | 🔄     |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Refactoring**
+
+- Standarized run.sh and docker architecture of every area.
+
 ## 2025-7-5
+
 - mock nav
 - frida_interfaces cache
 - clean the table task manager
@@ -39,14 +57,14 @@ Member status:
 
 | Name      | Status |
 | --------- | ------ |
-| Diego     |   💻  |
+| Diego     | 💻     |
 | Oscar     |        |
-| Ale       |   💻  |
+| Ale       | 💻     |
 | Gilberto  |        |
-| Fregoso   |   💻  |
-| Ivan      |   💻  |
+| Fregoso   | 💻     |
+| Ivan      | 💻     |
 | Domínguez |        |
-| David     |   💻  |
+| David     | 💻     |
 | Emiliano  |        |
 
 **Development**:
@@ -61,26 +79,25 @@ Member status:
 - Pushing docker images to dockerhub.
 - Starting orchestration efforts.
 
-
 ## 2025-3-6
 
 | Name      | Status |
 | --------- | ------ |
-| Diego     |  |
-| Oscar     | 💻 |
-| Ale       | 💻 |
-| Gilberto  | 💻 |
-| Fregoso   | 💻 |
-| Ivan      |  |
-| Domínguez |  |
-| David     |  |
+| Diego     |        |
+| Oscar     | 💻     |
+| Ale       | 💻     |
+| Gilberto  | 💻     |
+| Fregoso   | 💻     |
+| Ivan      |        |
+| Domínguez |        |
+| David     |        |
 
 **Development**:
 
-- Update a receptionist: 
-    - added person description
-    - ⁠added beverage location
-    - ⁠fixed action services issue
+- Update a receptionist:
+  - added person description
+  - ⁠added beverage location
+  - ⁠fixed action services issue
 - GPSR: Break down commands for possible command_interpreter
 - Integrated nav docker
 - TODO -> actual problems: ros user not added on video group on dockers
@@ -91,17 +108,17 @@ Member status:
 | Name      | Status |
 | --------- | ------ |
 | Diego     |        |
-| Oscar     |   💻🔧    |
-| Ale       |   💻    |
+| Oscar     | 💻🔧   |
+| Ale       | 💻     |
 | Gilberto  |        |
-| Fregoso   |   💻    |
-| Ivan      |   💻   |
-| Domínguez |   💻    |
-| David     |   💻    |
+| Fregoso   | 💻     |
+| Ivan      | 💻     |
+| Domínguez | 💻     |
+| David     | 💻     |
 
 # **Development**:
 
-- Vision's subtask manager: Updated needs and methods for the *Receptionist* task manager.
+- Vision's subtask manager: Updated needs and methods for the _Receptionist_ task manager.
 - GPSR: Clarified and added visions needs for subtask manager.
 - TODO -> Reaserch and investigate why are the HRI services faulty on jetsons containers.
 - Manipulation's subtask manager: Added subtask manager and implemented setJointPosition method.
