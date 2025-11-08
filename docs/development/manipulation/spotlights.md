@@ -12,6 +12,29 @@ Member status:
 - 🤝: Participation in other subteam
 
 
+## 2025-11-07
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  💻📝     | 
+| Ricardo  |  💻📝       |
+| Fernando |  💻📝        |
+| Luis     |  💻📝        |
+| Emil     |  💻📝🔍     |
+| Fregoso  |  💻📝       |
+| Paola    |  📝 🔍     |
+| Hector   |  💻📝       |
+
+**Done:**
+- Tested xarm sim with vamp
+
+**In Progress:**
+- Correct and stabilize the follow face module to work in real time
+- Implement vamp into the manipulation pipeline
+- Working on the TDP2026 paper
+- Simulation:
+    - Mujoco: Add the environment of the receptionist to Mujoco
 
 ## 2025-10-16
 
