@@ -17,13 +17,15 @@ Member status:
 | --------- | ------ |
 | Gilberto  | 🔍     |
 | Jocelyn   |        |
-| Benvenuto |        |
+| Benvenuto | 🔍 💻  |
 | Alex      |        |
 | Camila    |        |
 
 **Research**
 
 - Researching a better way to confirm commands
+- Researching about voice separation
+- Testing the AEC system
 
 ## 2025-9-18
 
