@@ -53,22 +53,7 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto | 🔍 💻  |
 | Alex      |        |
-| Camila    |        |
-
-**Development**
-
-- Researching about voice separation
-- Testing the AEC system
-
-## 2025-11-14
-
-| Name      | Status |
-| --------- | ------ |
-| Gilberto  | 🔄🔧   |
-| Jocelyn   |        |
-| Benvenuto |        |
-| Alex      |        |
-| Camila    |        |
+| Camila    |  🔄🔧 |
 | Didier    |        |
 | Fabricio  |        |
 | Luis      |        |
@@ -92,6 +77,7 @@ Member status:
 - Pass ROLE to ollama container for initializing models
 - Fixed TTS image error by specifying transformers version, because of incompatibility with kokoro
 - Save TTS audios in correct directory
+-Improving the frontend of the displays for each specific task, fixing local issues with hri dockers.
 
 ## 2025-11-07
 
