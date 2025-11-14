@@ -200,3 +200,9 @@ Batrium BMS (Serie WatchMon), viene con interfaz de usuario y esclavos pero mas 
 
 Open source
 https://enaccess.org/materials/battery-management-system/
+
+
+##2025-14-11
+This week we sent the required bom to make the BMS, wa want a sponsorship from digikey in the BMS components
+We already bught 3 batteries of 3.2 V with 25Amp
+We have pending measure the current consumption of FRIDA and make a Power tree
