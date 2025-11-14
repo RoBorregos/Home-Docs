@@ -12,6 +12,53 @@ Member status:
 - 🤝: Participation in other subteam
 
 
+## 2025-11-14
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻📝        |
+| Luis     |  💻📝        |
+| Emil     |  💻📝🔍     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |         |
+
+**Main Priority:**
+
+- Add all the developments to the TDP2026 paper
+
+**Done:**
+
+- No major advances this week
+
+**In Progress:**
+
+- Working on the TDP2026 paper
+- Correct and stabilize the follow face module to work in real time
+- Working on place trash action
+- Working on pick error
+- Fix octomap logic issues
+- Handle Exceptions in the manipulation pipeline
+- Implement vamp into the manipulation pipeline
+- Simulation:
+    - Mujoco: Add the environment of the receptionist to Mujoco
+
+| Person | Assigned Tasks |
+| :--- | :--- |
+| **Domínguez** | `TDP2026 paper`, `Vamp integration`, `Mujoco environment` |
+| **Ale G.** | `TDP2026 paper` |
+| **Ricardo** | `Follow face module` |
+| **Fernando** |`Pick error`, `Detect transparent objects`|
+| **Luis** |  `Octomap fix`, `Handle Exceptions` |
+| **Emil** | `TDP2026 paper`, `Place trash action` |
+| **Paola** | `TDP2026 paper` |
+| **Fregoso** | *(Pending)* |
+| **Hector** | *(Pending)* |
+
+
 ## 2025-11-07
 
 | Name     | Status     |
@@ -27,9 +74,11 @@ Member status:
 | Hector   |  💻📝       |
 
 **Done:**
+
 - Tested xarm sim with vamp
 
 **In Progress:**
+
 - Correct and stabilize the follow face module to work in real time
 - Implement vamp into the manipulation pipeline
 - Working on the TDP2026 paper
