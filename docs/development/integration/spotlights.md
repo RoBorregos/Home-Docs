@@ -11,6 +11,26 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-11-14
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄📝   |
+| Fregoso   |        |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Refactoring**
+
+- Build images with local user ID to avoid permission errors with all volumes
+
+**Documentation**
+
+- Added docker documentation. Will fix root readme next week explaining new run.sh
+
 ## 2025-11-07
 
 | Name      | Status |
