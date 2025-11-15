@@ -2,6 +2,17 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-11-14
+
+**In Progress:**
+
+| Owners   | Task   |
+|-------|---------|
+| Héctor, Daniela & Brisma | Improve face detection |
+| Fernando | Integrating logic into pipeline interface (backend) |
+| Danaé, Joce | Working in TDP |
+| Danaé | Clean and standarize docker | 
+
 ## 2025-11-07
 
 **In Progress:**
