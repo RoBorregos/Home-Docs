@@ -2,6 +2,18 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-11-14
+
+**Done:**
+
+- New members integration (Justino)
+
+**In Progress:**
+
+- Omnibase BOM
+- Change DashGo LiDAR (from A1 to C1)
+- Change DashGo extra wheels
+
 
 ## 2025-11-07
 
