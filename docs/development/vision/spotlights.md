@@ -10,7 +10,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 |-------|---------|
 | Héctor, Daniela & Brisma | Improve face detection |
 | Fernando | Integrating logic into pipeline interface (backend) |
-| Danaé, Joce | Working in TDP 
+| Danaé, Joce | Working in TDP |
+| Danaé | Clean and standarize docker | 
 
 ## 2025-11-07
 
