@@ -1,3 +1,8 @@
+
+---
+hidden: true
+---
+
 # Embeddings
 
 @Leo
