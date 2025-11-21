@@ -11,6 +11,19 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-11-21
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |        |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    |        |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |        |
+
 ## 2025-11-14
 
 | Name      | Status |
@@ -19,7 +32,7 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto |        |
 | Alex      |        |
-| Camila    |  🔄🔧 |
+| Camila    | 🔄🔧   |
 | Didier    |        |
 | Fabricio  |        |
 | Luis      |        |
@@ -43,7 +56,7 @@ Member status:
 - Pass ROLE to ollama container for initializing models
 - Fixed TTS image error by specifying transformers version, because of incompatibility with kokoro
 - Save TTS audios in correct directory
--Improving the frontend of the displays for each specific task, fixing local issues with hri dockers.
+  -Improving the frontend of the displays for each specific task, fixing local issues with hri dockers.
 
 ## 2025-11-07
 
