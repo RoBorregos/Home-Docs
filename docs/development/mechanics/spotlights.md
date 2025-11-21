@@ -2,7 +2,7 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
-## 2025-11-14
+## 2025-11-21
 
 There has been continuity in weekly meetings, but nothing has been finalized yet. 
 
