@@ -17,7 +17,7 @@ Member status:
 | --------- | ------ |
 | Gilberto  |        |
 | Jocelyn   |        |
-| Benvenuto |        |
+| Benvenuto | 💻🔍   |
 | Alex      |        |
 | Camila    | 💻🔍   |
 | Didier    |        |
@@ -26,11 +26,13 @@ Member status:
 
 - **Research**
 
-  Investigate how Streamlit works and whether it is feasible to migrate the entire display to this framework in order to connect ROS directly to the frontend.
+  - Investigate how Streamlit works and whether it is feasible to migrate the entire display to this framework in order to connect ROS directly to the frontend.
+  - Research in improving audio processing and audio input quality.
 
 - **Development**
 
-  Finish the frontend of the different displays and send them for review.
+  - Finish the frontend of the different displays and send them for review.
+  - Tested audio input enhancement in Frida
 
 ## 2025-11-14
 
