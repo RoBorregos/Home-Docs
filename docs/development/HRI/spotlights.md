@@ -19,11 +19,15 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto |        |
 | Alex      |        |
-| Camila    |        |
+| Camila    |  💻🔍 |
 | Didier    |        |
 | Fabricio  |        |
 | Luis      |        |
 
+- **Research**
+Investigate how Streamlit works and whether it is feasible to migrate the entire display to this framework in order to connect ROS directly to the frontend.
+- **Development**
+Finish the frontend of the different displays and send them for review. 
 ## 2025-11-14
 
 | Name      | Status |
