@@ -4,6 +4,18 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2025-11-14
 
+There has been continuity in weekly meetings, but nothing has been finalized yet. 
+
+This week, due to certain incidents, the gripper and the rotating photo base were broken.
+
+**In Progress:**
+
+- Gripper Repair (Ale)
+- Change DashGo LiDAR (from A1 to C1) (Justino)
+- Change DashGo extra wheels (Babi)
+
+## 2025-11-14
+
 **Done:**
 
 - New members integration (Justino)
