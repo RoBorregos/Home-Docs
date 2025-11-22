@@ -6,11 +6,11 @@ This year's changes improve HRI by enhancing local task planning, speech process
 
 - **[Speech Processing](Areas/Speech.md)**
 
-- **[Embeddings](Areas/embeddings.md)**
+<!-- - **[Embeddings](Areas/embeddings.md)**-->
 
 - **[RAG](Areas/rag.md)**
 
-- **[Local TTS](Areas/Local%20TTS.md)**
+<!--- **[Local TTS](Areas/Local%20TTS.md)** -- >
 
 - **[OpenWakeWord (Keyword spotting)](Areas/OWW.md)**
 

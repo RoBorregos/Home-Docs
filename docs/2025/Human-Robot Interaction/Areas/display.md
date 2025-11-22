@@ -1,3 +1,8 @@
+
+---
+hidden: true
+---
+
 # Display
 
 @gil

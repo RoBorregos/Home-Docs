@@ -1,4 +1,4 @@
-site_name: RoBorregos@Home Docs
+site_name: Roborregos@Home Docs
 theme:
   name: material
   highlightjs: true
@@ -6,6 +6,16 @@ theme:
   favicon: "assets/favicon.png"
   features:
     - content.code.annotate
+  palette:
+    scheme: default
+    primary: blue
+    accent: blue
+  font:
+    text: Inter, Roboto, sans-serif
+    code: Roboto Mono, monospace
+
+extra_css:
+  - assets/stylesheets/extra.css
 
 markdown_extensions:
   - pymdownx.highlight:
