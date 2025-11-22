@@ -1,4 +1,6 @@
-# Active Members
+# Team Members
+
+## Active Members
 
 <div class="grid-wrapper">
 <div class="grid-cell">
@@ -219,7 +221,7 @@
 </div>
 </div>
 
-# Legacy Members
+## Legacy Members
 
 <div class="grid-wrapper">
 
