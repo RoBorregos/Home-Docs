@@ -2,6 +2,16 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2025-11-21
+
+**In Progress:**
+
+| Owners   | Task   |
+|-------|---------|
+| Héctor, Daniela & Brisma | Pose detection, face detection and ReID |
+| Danaé | Address comments in TDP |
+| Joce | Migrate to Moondream3 | 
+
 ## 2025-11-14
 
 **In Progress:**
