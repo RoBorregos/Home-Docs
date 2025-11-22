@@ -11,6 +11,29 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2025-11-21
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |        |
+| Jocelyn   |        |
+| Benvenuto | 💻🔍   |
+| Alex      |        |
+| Camila    | 💻🔍   |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |        |
+
+- **Research**
+
+  - Investigate how Streamlit works and whether it is feasible to migrate the entire display to this framework in order to connect ROS directly to the frontend.
+  - Research in improving audio processing and audio input quality.
+
+- **Development**
+
+  - Finish the frontend of the different displays and send them for review.
+  - Tested audio input enhancement in Frida
+
 ## 2025-11-14
 
 | Name      | Status |
@@ -19,7 +42,7 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto |        |
 | Alex      |        |
-| Camila    |  🔄🔧 |
+| Camila    | 🔄🔧   |
 | Didier    |        |
 | Fabricio  |        |
 | Luis      |        |
@@ -43,7 +66,7 @@ Member status:
 - Pass ROLE to ollama container for initializing models
 - Fixed TTS image error by specifying transformers version, because of incompatibility with kokoro
 - Save TTS audios in correct directory
--Improving the frontend of the displays for each specific task, fixing local issues with hri dockers.
+  -Improving the frontend of the displays for each specific task, fixing local issues with hri dockers.
 
 ## 2025-11-07
 
