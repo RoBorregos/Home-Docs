@@ -76,40 +76,6 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto | 🔍 💻  |
 | Alex      |        |
-| Camila    |  🔄🔧 |
-| Didier    |        |
-| Fabricio  |        |
-| Luis      |        |
-
-**New members!**
-
-- Luis Rosales
-- Fabricio Banda
-- Eduardo Didier
-
-**Refactoring**
-
-- Merged redundant docker compose yaml files and now they use the correct base image and runtime depending on the environment
-- APT install node instead of using NVM so that any user has access to npm
-
-- **Bug fixing**
-
-- Pip install requests module for cpu/cuda image because, apparently, the base image doesn't include it now
-- mkdir audios directory on run.sh to avoid permission errors
-- Autoremove and build when specified display temporary container
-- Pass ROLE to ollama container for initializing models
-- Fixed TTS image error by specifying transformers version, because of incompatibility with kokoro
-- Save TTS audios in correct directory
--Improving the frontend of the displays for each specific task, fixing local issues with hri dockers.
-
-## 2025-11-07
-
-| Name      | Status |
-| --------- | ------ |
-| Gilberto  |        |
-| Jocelyn   |        |
-| Benvenuto | 🔍 💻  |
-| Alex      |        |
 | Camila    |        |
 
 **Development**
