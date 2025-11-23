@@ -1,6 +1,234 @@
 # Team Members
 
+## Active Members
+
 <div class="grid-wrapper">
+<div class="grid-cell">
+    <h3>
+        Oscar Arreola
+    </h3>
+    <ul>
+        <li>2023 Navigation</li>
+        <li>2023-2024 Integration and Networks, HRI</li>
+        <li>2025 HRI, Integration</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/106.166704418035e85da17e.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandro Guerrero
+    </h3>
+    <ul>
+        <li>2023-2024 Mechanics</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/99.984ac4eac675b0c597bc.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandra Coeto
+    </h3>
+    <ul>
+        <li>2023-2024 Computer Vision</li>
+        <li>2024 Integration and Networks</li>
+        <li>2025 Vision, Integration</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/103.dcb5398110fcf54713bb.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Gerardo Fregoso
+    </h3>
+    <ul>
+        <li>2024 Navigation, Manipulation, Integration and Networks</li>
+        <li>2025 Navigation, Integration</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/117.b6cdf3161ceef48e1ade.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandro González
+    </h3>
+    <ul>
+        <li>2024 Mechanics, Navigation, Manipulation</li>
+        <li>2025 Mechanics, Manipulation</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/123.5ae3b21cfcd73cd22887.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        José Luis Domínguez
+    </h3>
+    <ul>
+        <li>2024 Navigation, Manipulation</li>
+        <li>2025 Manipulation, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3978.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Jocelyn Velarde
+    </h3>
+    <ul>
+        <li>2024 Computer Vision</li>
+        <li>2025 Vision, HRI</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/124.6a62f10bb96a26d8135f.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Gilberto Malagamba
+    </h3>
+    <ul>
+        <li>2024 HRI</li>
+        <li>2025 HRI, Integration</li>
+    </ul>
+    <img src="https://roborregos.com/static/media/125.f4ace8a93550a09c5128.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Danaé Sánchez
+    </h3>
+    <ul>
+        <li>2025 Vision, Navigation, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4006.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Emil Winkler
+    </h3>
+    <ul>
+        <li>2025 Manipulation</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3967.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Fernando Hernandez
+    </h3>
+    <ul>
+        <li>2025 Vision, Manipulation, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3979.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Camila Tite
+    </h3>
+    <ul>
+        <li>2025 HRI, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4016.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Daniela Herrera
+    </h3>
+    <ul>
+        <li>2025 Vision</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4003.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Luis Benvenuto
+    </h3>
+    <ul>
+        <li>2025 HRI, Manipulation</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4011.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Daniel Hinojosa
+    </h3>
+    <ul>
+        <li>2025 Navegation, Omnidirectional Base</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4012.jpg"/>
+</div>
+
+
+<div class="grid-cell">
+    <h3>
+        Samuel Granados
+    </h3>
+    <ul>
+        <li>2025 Electronics</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3977.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Rodrigo Gamboa
+    </h3>
+    <ul>
+        <li>2025 Electronics, Navegation</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3995.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Brisma Alvarez
+    </h3>
+    <ul>
+        <li>2025 Vision</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3974.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Barbara Novau
+    </h3>
+    <ul>
+        <li>2025 Mechanics</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3954.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Paola Llamas
+    </h3>
+    <ul>
+        <li>2025 Manipulation</li> 
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4004.jpg"/>
+
+</div>
+</div>
+
+## Legacy Members
+
+<div class="grid-wrapper">
+
+
+
+
+
 <div class="grid-cell">
     <h3>
         Leonardo LLanas
@@ -11,6 +239,7 @@
     </ul>
     <img src="https://roborregos.com/static/media/83.6e4c832a22fdf5dfa5fa.jpg"/>
 </div>
+
 <div class="grid-cell">
     <h3>
         David Vázquez
@@ -235,18 +464,7 @@
     <ul>
         <li>2023-2024 HRI</li>
     </ul>
-    <img src=""/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Oscar Arreola
-    </h3>
-    <ul>
-        <li>2023 Navigation</li>
-        <li>2023-2024 Integration and Networks, HRI</li>
-    </ul>
-    <img src="https://roborregos.com/static/media/106.166704418035e85da17e.jpg"/>
+    <img src="/assets/members/Fotos_members/placeholder.svg"/>
 </div>
 
 <div class="grid-cell">
@@ -273,16 +491,6 @@
 
 <div class="grid-cell">
     <h3>
-        Alejandro Guerrero
-    </h3>
-    <ul>
-        <li>2023-2024 Mechanics</li>
-    </ul>
-    <img src="https://roborregos.com/static/media/99.984ac4eac675b0c597bc.jpg"/>
-</div>
-
-<div class="grid-cell">
-    <h3>
         Jesús de Anda
     </h3>
     <ul>
@@ -299,7 +507,7 @@
     <ul>
         <li>2023 Mechanics</li>
     </ul>
-    <img src=""/>
+    <img src="/assets/members/Fotos_members/placeholder.svg"/>
 </div>
 
 <div class="grid-cell">
@@ -309,7 +517,7 @@
     <ul>
         <li>2023 Mechanics</li>
     </ul>
-    <img src=""/>
+    <img src="/assets/members/Fotos_members/placeholder.svg"/>
 </div>
 
 <div class="grid-cell">
@@ -335,17 +543,6 @@
 
 <div class="grid-cell">
     <h3>
-        Alejandra Coeto
-    </h3>
-    <ul>
-        <li>2023-2024 Computer Vision</li>
-        <li>2024 Integration and Networks</li>
-    </ul>
-    <img src="https://roborregos.com/static/media/103.dcb5398110fcf54713bb.jpg"/>
-</div>
-
-<div class="grid-cell">
-    <h3>
         Francisco Salas
     </h3>
     <ul>
@@ -354,71 +551,11 @@
     <img src="https://roborregos.com/static/media/102.f93af00887e4279db81f.jpg"/>
 </div>
 
-<div class="grid-cell">
-    <h3>
-        Gerardo Fregoso
-    </h3>
-    <ul>
-        <li>2024 Navigation, Manipulation, Integration and Networks</li>
-    </ul>
-    <img src=""/>
+
+
 </div>
 
-<div class="grid-cell">
-    <h3>
-        Alejandro González
-    </h3>
-    <ul>
-        <li>2024 Mechanics, Navigation, Manipulation</li>
-    </ul>
-    <img src=""/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        José Luis Domínguez
-    </h3>
-    <ul>
-        <li>2024 Navigation, Manipulation</li>
-    </ul>
-    <img src=""/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Jocelyn Velarde
-    </h3>
-    <ul>
-        <li>2024 Computer Vision</li>
-    </ul>
-    <img src=""/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Gilberto Malagamba
-    </h3>
-    <ul>
-        <li>2024 HRI</li>
-    </ul>
-    <img src=""/>
-</div>
-
-<style>
-.grid-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  grid-gap: 10px;
-  width: 100vh;
-}
-.grid-cell {
-  padding: 10px;
-  min-width: 250px;
-  max-height: 500px;
-  border: 1px solid #ccc ;
-  border-radius: 10px;
-}
-</style>
+<!-- Inline grid styles removed - using `extra.css` global stylesheet instead -->
 
 <!--
 |  |  |  |

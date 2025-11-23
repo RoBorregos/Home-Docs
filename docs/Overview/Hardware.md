@@ -1,8 +1,24 @@
 # Hardware overview
 
-<p align="center">
-  <img src="/assets/overview/FRIDA.jpg" alt="Robot Image" width="281" height="604">
-</p>
+<div class="timeline-compare">
+  <div class="timeline-item">
+    <div class="label">2024</div>
+    <div class="timeline-image-wrap">
+      <img class="timeline-image" src="/assets/overview/robot.jpg" alt="Robot 2024" />
+    </div>
+    <div class="caption">Before</div>
+  </div>
+
+  <div class="timeline-arrow" aria-hidden="true">&rarr;</div>
+
+  <div class="timeline-item">
+    <div class="label">2025</div>
+    <div class="timeline-image-wrap">
+      <img class="timeline-image" src="/assets/overview/frida.png" alt="Robot 2025" />
+    </div>
+    <div class="caption">Now</div>
+  </div>
+</div>
 
 ### Mobility and Manipulation
 A modified **EAI Dashgo B1** robot was used for mobility purposes, and a **uFactory xArm 6** was added for manipulation tasks and to mount the depth camera.
