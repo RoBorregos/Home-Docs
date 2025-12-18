@@ -4,7 +4,7 @@ TMR 2025 had the best implementation of both pick and place tasks from recent ye
 
 ## Node Architecture
 
-![image](../../assets/home/Manipulation/architecture_tmr2025.png)
+![image](../../assets/home/Manipulation/node_architecture.png)
 
 ## Task Pipeline
 
@@ -12,4 +12,4 @@ Manipulation Core connects most nodes and handles the logic to achieve every tas
 
 This core, internally, is structured to have "managers" for each task, which handle the logic of every tassk and use the assets from the core to execute them.
 
-![image](../../assets/home/Manipulation/pipeline_tmr2025.png)
+![image](../../assets/home/Manipulation/pipeline_AD2025.jpg)
