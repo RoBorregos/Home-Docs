@@ -11,6 +11,22 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-15
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Fregoso   |        |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Refactoring**
+
+- Change `run.sh` container running logic to avoid entrypoint commands from rerunning on the background.
+
 ## 2025-11-14
 
 | Name      | Status |
