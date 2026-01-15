@@ -11,6 +11,29 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-15
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Jocelyn   | 💻     |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    | 💻     |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |        |
+
+- **Refactoring**
+
+  - Removed display's backend using rosbridge and migrated to a ros package and docker image.
+  - Migrated NLP tests to run on integration container.
+
+- **Development**
+
+  - Check and filter ambiguos commands before command generation.
+  - Structure for display's task specific pages.
+
 ## 2025-11-21
 
 | Name      | Status |
