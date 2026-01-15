@@ -16,10 +16,10 @@ Member status:
 | Name      | Status |
 | --------- | ------ |
 | Gilberto  | 🔄     |
-| Jocelyn   |        |
+| Jocelyn   | 💻     |
 | Benvenuto |        |
 | Alex      |        |
-| Camila    |        |
+| Camila    | 💻     |
 | Didier    |        |
 | Fabricio  |        |
 | Luis      |        |
@@ -28,6 +28,11 @@ Member status:
 
   - Removed display's backend using rosbridge and migrated to a ros package and docker image.
   - Migrated NLP tests to run on integration container.
+
+- **Development**
+
+  - Check and filter ambiguos commands before command generation.
+  - Structure for display's task specific pages.
 
 ## 2025-11-21
 
