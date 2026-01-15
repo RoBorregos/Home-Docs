@@ -27,9 +27,11 @@ Member status:
 | Efrain   |  💻     |
 
 **Done:**
-- Fist manipulation meeting of 2026
+
+- First manipulation meeting of 2026
 
 **In Progress:**
+
 - Fixing the TDP2026 paper
 - Getting cluster of transparent objects
 - Working on simulation
