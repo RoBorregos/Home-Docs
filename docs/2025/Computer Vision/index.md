@@ -18,6 +18,13 @@ The main objective of this subarea is the [dataset generation pipeline](Object%2
 ### VLM
 This subarea explores visual-language models (VLMs) to enhance the understanding of visual content in conjunction with language processing. Currently, the team uses the model [moondream](VLM/Moondream.md) for image prompting.
 
+## General pipeline
+
+The following diagram provides an overview of the vision pipeline, illustrating how visual data from the ZED camera is processed through interconnected subsystems for human analysis, object detection, and visual–language understanding. The information produced by these subsystems is fused to generate a structured representation of the environment, enabling interaction and high-level decision-making in a home setting.
+
+![image](../../assets/home/Vision/Vision_pipeline.png)
+
 ## Running vision
 
 For details on how to run the vision module, check the home repo: [Run Vision](https://github.com/RoBorregos/home2/blob/main/docs/Run/Areas/vision.md)
+
