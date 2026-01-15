@@ -11,6 +11,28 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-15
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+- Fist manipulation meeting of 2026
+
+**In Progress:**
+- Fixing the TDP2026 paper
+- Getting cluster of transparent objects
+- Working on simulation
 
 ## 2025-11-21
 
