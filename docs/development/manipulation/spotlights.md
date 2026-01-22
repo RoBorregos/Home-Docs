@@ -11,6 +11,32 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-22
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+- No major advances this week
+
+**In Progress:**
+
+- Fixing the TDP2026 paper
+- Getting cluster of transparent objects
+- Working on simulation (Webots and Mujoco)
+- Vamp bridge to ROS2
+
 ## 2026-01-15
 
 | Name     | Status     |
