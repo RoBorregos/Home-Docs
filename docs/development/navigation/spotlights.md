@@ -19,7 +19,7 @@ Member status:
 | Bahena   |   🔍   |
 | Fregoso  |    🔄  |
 | Rodro    |   📝   |
-| Daniel   |   🔍   |
+| Daniel   |   🤝   |
 | Alberto  |   🔍   |
 | Dana     |   🔍   |
 
