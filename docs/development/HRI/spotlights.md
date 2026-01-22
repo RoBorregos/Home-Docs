@@ -26,6 +26,7 @@ Member status:
 
 - **Refactoring**
   - Migrated and refactored testing for command interpreter.
+  - Cleaned depricated files for nlp testing.
   - Improved the docker structure for ollama.
 
 - **Development**
