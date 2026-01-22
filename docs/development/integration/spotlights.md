@@ -11,6 +11,31 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-22
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Fregoso   | 📝     |
+| Domínguez | 🤝     |
+| Camila    |  🔍    |
+| Danaé     |   🤝   |
+| Fernando  |   🤝   |
+| Benvenuto |    🔍  |
+
+**Refactoring**
+
+- Updating docker images on dockerhub
+
+**Documenting**
+
+- Updating HOME2 Readme 
+
+**Research**
+
+- Sound and Visual UI with HRI x Integration
+
+
 ## 2026-01-15
 
 | Name      | Status |
