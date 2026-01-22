@@ -2,6 +2,18 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-01-22
+
+**Done:**
+
+- Changed to C1 LiDAR in FRIDA
+- Sent omnibase budget for fasteners and hardware
+
+**In Progress:**
+
+- Change DashGo extra wheels (Babi)
+- Omnibase CAD
+
 ## 2025-11-21
 
 There has been continuity in weekly meetings, but nothing has been finalized yet. 
