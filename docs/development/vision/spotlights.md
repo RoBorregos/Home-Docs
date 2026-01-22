@@ -2,6 +2,20 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-01-22
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Daniela 💻 | Trash detection |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Danaé 📝 | Editing TDP | 
+| Héctor 💻 | Developing benchmarking code for trackers and reID to select the best option; researching transparent object handling using ClearPose; refining the approach for gesture recognition |
 
 ## 2026-01-12
 
