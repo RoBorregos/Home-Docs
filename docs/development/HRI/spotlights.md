@@ -11,6 +11,29 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-22
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Jocelyn   | 💻     |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    | 💻     |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      | 🔄     |
+
+- **Refactoring**
+  - Migrated and refactored testing for command interpreter.
+  - Cleaned depricated files for nlp testing.
+  - Improved the docker structure for ollama.
+
+- **Development**
+  - Added feedback to display via thinking and loading animations.
+  - Added chime for when switching to listening state.
+  - Test for ambiguos command filtration.
+
 ## 2026-01-15
 
 | Name      | Status |
@@ -25,12 +48,10 @@ Member status:
 | Luis      |        |
 
 - **Refactoring**
-
   - Removed display's backend using rosbridge and migrated to a ros package and docker image.
   - Migrated NLP tests to run on integration container.
 
 - **Development**
-
   - Check and filter ambiguos commands before command generation.
   - Structure for display's task specific pages.
 
@@ -48,12 +69,10 @@ Member status:
 | Luis      |        |
 
 - **Research**
-
   - Investigate how Streamlit works and whether it is feasible to migrate the entire display to this framework in order to connect ROS directly to the frontend.
   - Research in improving audio processing and audio input quality.
 
 - **Development**
-
   - Finish the frontend of the different displays and send them for review.
   - Tested audio input enhancement in Frida
 
