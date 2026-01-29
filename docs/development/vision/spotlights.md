@@ -2,6 +2,17 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-01-29
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📝 | Edit TDP | 
+| Daniela 📄 | Research on silverware detection and handling reflections |
+| Fernando 💻 | Implementing seating verification for restaurant clients requesting to place an order |
+| Brisma 💻 | Detecting empty spaces in the dishwasher |
+
 ## 2026-01-22
 
 **Done:**
