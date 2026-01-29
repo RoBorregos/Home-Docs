@@ -11,6 +11,33 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-29
+
+ Name     | Status |
+| -------- | ------ |
+| Camila   |   💻   |
+| Bahena   |   🔍   |
+| Fregoso  |   💻   |
+| Rodro    |   💻   |
+| Daniel   |   💻   |
+| Alberto  |   🔍   |
+| Dana     |   🔍   |
+
+- **Research**
+
+  - New members are learning about nav2 repo and behaivor trees.
+
+- **Development**
+
+  - Webots first status simulation.
+  ![image](../../assets/development/navigation/spotlights/Webotsfirstversion.jpeg)
+  - Webots zed2 digital twin.
+  - Cleanup repository
+  ![image](../../assets/development/navigation/spotlights/RepoUpdate.png)
+  - Updating Performance for Nodes migrating to cpp.
+  - Tauri app development in progress
+  
+
 ## 2026-01-22
 
  Name     | Status |
