@@ -13,6 +13,8 @@ This page is a collection of weekly spotlights that highlight the progress of th
 | Fernando 💻 | Implementing seating verification for restaurant clients requesting to place an order |
 | Brisma 💻 | Detecting empty spaces in the dishwasher |
 
+* New member : Tania
+
 ## 2026-01-22
 
 **Done:**
