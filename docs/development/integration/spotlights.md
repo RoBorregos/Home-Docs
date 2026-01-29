@@ -11,6 +11,23 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+
+## 2026-01-29
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |  🥺    |
+| Fregoso   |  🥺    |
+| Domínguez | 🥺    |
+| Camila    |  🥺    |
+| Danaé     |   🥺   |
+| Fernando  |   🥺   |
+| Benvenuto |    🥺  |
+
+**Refactoring**
+- Im sowy no progress 🥺
+
+
 ## 2026-01-22
 
 | Name      | Status |
