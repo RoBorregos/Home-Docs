@@ -11,6 +11,41 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-29
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+- Vamp integration with xarm
+
+<!-- Add video -->
+<iframe width="560" height="315" src="https://youtu.be/XAExImV6TV4" title="Vamp integration with xarm" frameborder="0" allowfullscreen></iframe>
+
+- Webots connection with ROS2 for future manipulation implementation
+
+**In Progress:**
+
+- Fixing the TDP2026 paper
+- Getting cluster of transparent objects
+- Vamp integration with Frida
+- Spherization of Frida's gripper and base for vamp implementation
+- Working on simulation:
+    - Mujoco: Add the xarm controller to Mujoco
+    - Webots: Spawn Frida in Webots
+
+
 ## 2026-01-15
 
 | Name     | Status     |
