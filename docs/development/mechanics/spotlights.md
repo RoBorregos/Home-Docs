@@ -2,6 +2,20 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-01-29
+
+**Done:**
+
+- Changed DashGo extra wheels (Babi)
+- Bought omnibase gearbox bearings
+
+**In Progress:**
+
+- Mecanum wheels purchase
+- Fasteners purchase
+- Gearbox pieces 3D printing
+
+
 ## 2026-01-22
 
 **Done:**
