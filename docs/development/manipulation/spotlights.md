@@ -31,7 +31,7 @@ Member status:
 - Vamp integration with xarm
 
 <!-- Add video -->
-<iframe width="560" height="315" src="https://youtu.be/XAExImV6TV4" title="Vamp integration with xarm" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XAExImV6TV4" title="Vamp integration with xarm" frameborder="0" allowfullscreen></iframe>
 
 - Webots connection with ROS2 for future manipulation implementation
 
