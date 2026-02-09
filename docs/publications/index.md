@@ -25,7 +25,7 @@ A comprehensive collection of publications by RoBorregos team members covering v
 ---
 
 
-## Frida Papers
+## @Home Papers
 
 Adán Flores-Ramírez et al. Taming the llm: Reliable task planning for robotics
 using parsing and grounding. In Lourdes Martínez-Villaseñor, Roberto A. Vázquez,
@@ -34,7 +34,7 @@ Cham, 2026. Springer Nature Switzerland.
 del equipo:
 
 
-## Team Paper
+## Team Papers
 
 E Altamirano-Avila, A. Valdivia, and C. Vazquez-Hurtado. [AVV22] Work in
 ´ Progress: Implementation of a Digital Twin as Technology to support Discrete
