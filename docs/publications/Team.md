@@ -1,4 +1,4 @@
-# Publications
+# Team Paper
 
 E Altamirano-Avila, A. Valdivia, and C. Vazquez-Hurtado. [AVV22] Work in
 ´ Progress: Implementation of a Digital Twin as Technology to support Discrete

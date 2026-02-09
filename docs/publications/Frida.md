@@ -1,4 +1,4 @@
-# Publications
+# Frida Papers
 
 Adán Flores-Ramírez et al. Taming the llm: Reliable task planning for robotics
 using parsing and grounding. In Lourdes Martínez-Villaseñor, Roberto A. Vázquez,
