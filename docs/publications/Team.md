@@ -1,3 +1,5 @@
+# Publications
+
 E Altamirano-Avila, A. Valdivia, and C. Vazquez-Hurtado. [AVV22] Work in
 ´ Progress: Implementation of a Digital Twin as Technology to support Discrete
 Event Control Teaching. 2022 IEEE World Engineering Education Conference
