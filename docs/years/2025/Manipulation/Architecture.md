@@ -33,8 +33,7 @@ For the Pouring Strategy, the container's 3D cluster is analyzed (PCL) to determ
 Finally, the Custom Gripper is a parallel mechanism powered by a rack-and-pinion system. Its innovation lies in its fingers, which incorporate fractal-structured silicone covers and soft inner materials, enhancing deformation and adaptability for objects up to 1 kg.
 
 
-<<<<<<< HEAD:docs/2025/Manipulation/Architecture.md
-![image](../../assets/home/Manipulation/pipeline_tmr2025.png)
+![image](../../../assets/home/Manipulation/pipeline_AD2025.jpg)
 
 The developed pipeline enables precise interaction with a 6-DOF robotic arm and its custom gripper for picking, placing, and pouring, integrating perception and motion planning components.
 Motion Planning
@@ -56,6 +55,3 @@ Object-Pouring Phase
 
 The pouring phase, orchestrated by the *Pour Manager* process enables controlled liquid-transfer actions by a perception-driven, geometry-aware puritan action by analyzing 3D point cloud information to infer the spatial properties of the target container. After the pouring object has been successfully picked, the *Perception 3D* pipeline is requested to obtain a segmented point cloud of the container. From this point cloud, the centroid of the container is computed as the mean of all points, while the container height is estimated using the maximum vertical coordinates of the cluster. With this information, a **pour_pose** is defined above the center, retaining the gripper’s pick orientation and preserving the kinematic consistency between the grasp and pour. The computed pour_pose, together with the pick result is passed to the *Pour Motion Server*, which generates a collision-aware and orientation-constrained trajectory using motion planning. Throughout the pouring motion, the object remains attached to the end-effector in the planning scene, allowing an accurate collision checking. 
 Finally, the Custom Gripper is a parallel mechanism powered by a rack-and-pinion system. Its innovation lies in its fingers, which incorporate fractal-structured silicone covers and soft inner materials, enhancing deformation and adaptability for objects up to 1 kg.
-=======
-![image](../../../assets/home/Manipulation/pipeline_AD2025.jpg)
->>>>>>> 65ab6197f299b39679558ed3da707648be37af9e:docs/years/2025/Manipulation/Architecture.md
