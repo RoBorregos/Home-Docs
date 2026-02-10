@@ -5,11 +5,11 @@ After participating in the Mexican Robotics Tournament, a lot of senior college 
 
 Here is our uploaded [Team Description Paper](https://athome.robocup.org/wp-content/uploads/OPL-RoBorregosTDP2023.pdf) and [Video](https://www.youtube.com/watch?v=rPmSxZlzO78), for the Second Call for Participation for the Open Platform League.
 
-## [Electronics and Control](Electronics%20and%20Control/index.md)
+## [Electronics and Control](Electronics%20and%20Control.md)
 - Started development of PCBs for the omnidirectional mobile base.
 - Standardized the electronics of the main robot for full 24V operation.
 
-## [Mechanics](Mechanics/index.md)
+## [Mechanics](Mechanics.md)
 - Started development of the omnidirectional mobile base, with an octagonal shape and 4 omnidirectional wheels.
 - Designed and started manufacturing of several new grippers.
 - Redesigned the electronics protections for the Dashgo and Xarm6.
@@ -25,11 +25,11 @@ Here is our uploaded [Team Description Paper](https://athome.robocup.org/wp-cont
 - Developed a ROS Node for continuous arm movement to follow the user, enhancing the robot's interaction capabilities.
 - Installed and started development on an on-robot tablet for user interaction, including RVIZ and camera visualization and a custom interface for the robot's services.
 
-## [Integration and Networks](Integration%20and%20Networks/index.md)
+## [Integration and Networks](Integration%20and%20Networks.md)
 ### ROS
 - Replaced a previous web socket solution for communicating two roscores with a multimaster solution, allowing for more robust and faster communication between the robot software modules.
 
-## [Computer Vision](Computer%20Vision/index.md)
+## [Computer Vision](Computer%20Vision.md)
 ### Human Recognition
 - Replaced DeepFace for face_recognition from dlib, allowing for faster and more accurate face recognition.
 - Developed a custom human attribute recognition using the PETA dataset.
@@ -39,7 +39,7 @@ Here is our uploaded [Team Description Paper](https://athome.robocup.org/wp-cont
 - Increased adaptability and ease of use of the automated dataset generation method.
 - Started development of a custom dataset generation tool based on 3D scanning.
 
-## [Navigation](Navigation/index.md)
+## [Navigation](Navigation.md)
 ### Dashgo B1 mobile base
 - Developed a node for fusing LIDAR and on-arm depth camera for better obstacle avoidance.
 - Started work on a person follower node integrating SLAM for navigation on unknown environments.

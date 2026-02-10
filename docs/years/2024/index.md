@@ -53,7 +53,7 @@ The main objective for this year was the development of a robust pipeline to mak
 - Dataset generation
 - Transform object detection datasets to segmentation datasets
 
-## [Manipulation](Manipulation/index.md)
+## [Manipulation](Manipulation.md)
 
 ## Placing Algorithm with Gaussian Distribution
 
@@ -76,6 +76,6 @@ To optimally place objects, we:
 
 This concise approach ensures efficient space utilization and safe object placement.
 
-## [Navigation](Navigation/index.md)
+## [Navigation](Navigation.md)
 
 - Nadota (@deivideich, @Chapa-1810)
