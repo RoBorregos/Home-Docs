@@ -411,11 +411,13 @@ button:focus,
   position: relative;
 }
 
+/*
 @media (min-width: 900px) {
   .timeline-compare::before {
     display: block;
   }
 }
+*/
 
 @media (max-width: 760px) {
   .timeline-item {
