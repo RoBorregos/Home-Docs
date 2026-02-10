@@ -14,7 +14,7 @@ Currently, the vision module is made of several ROS2 packages:
 
 The following diagram shows the package structure:
 
-![image](../../assets/home/Vision/2025-arch-overview.png)
+![image](../../../assets/home/Vision/2025-arch-overview.png)
 
 Diagram key:
 
@@ -24,4 +24,4 @@ Diagram key:
 
 For a more detailed view of how some components interact check the following diagram. It shows an example of how nodes subscribe to the zed topic to receive images. It also shows examples of node publishers and services that are then used by the task manager to execute tasks.
 
-![image](../../assets/home/Vision/2025-ros-interaction.png)
+![image](../../../assets/home/Vision/2025-ros-interaction.png)

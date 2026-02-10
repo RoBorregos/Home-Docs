@@ -7,7 +7,7 @@ The core of the system is designed around robust communication and specialized m
 
 ## Node Architecture
 
-![image](../../assets/home/Manipulation/node_architecture.png)
+![image](../../../assets/home/Manipulation/node_architecture.png)
 
 ## Task Pipeline
 
@@ -23,4 +23,4 @@ For the Pouring Strategy, the container's 3D cluster is analyzed (PCL) to determ
 Finally, the Custom Gripper is a parallel mechanism powered by a rack-and-pinion system. Its innovation lies in its fingers, which incorporate fractal-structured silicone covers and soft inner materials, enhancing deformation and adaptability for objects up to 1 kg.
 
 
-![image](../../assets/home/Manipulation/pipeline_AD2025.jpg)
+![image](../../../assets/home/Manipulation/pipeline_AD2025.jpg)

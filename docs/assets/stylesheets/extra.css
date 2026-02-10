@@ -88,10 +88,11 @@ body {
 
 /* Compact Sidebar */
 :root {
-  --md-nav-indent-width: 0.625rem !important;
+  --md-nav-indent-width: 0;
+  --md-sidebar-width: 16rem;
 }
 
-.md-nav__link {
+.md-sidebar .md-nav__link {
   white-space: normal;
   height: auto;
   line-height: normal;

@@ -22,7 +22,7 @@ This subarea explores visual-language models (VLMs) to enhance the understanding
 
 The following diagram provides an overview of the vision pipeline, illustrating how visual data from the ZED camera is processed through interconnected subsystems for human analysis, object detection, and visual–language understanding. The information produced by these subsystems is fused to generate a structured representation of the environment, enabling interaction and high-level decision-making in a home setting.
 
-![image](../../assets/home/Vision/Vision_pipeline.png)
+![image](../../../assets/home/Vision/Vision_pipeline.png)
 
 ## Running vision
 
