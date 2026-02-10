@@ -84,6 +84,13 @@ body {
 /* Sidebar (left) navigation: make links dark/readable */
 .md-sidebar__scrollwrap {
   overflow-y: auto !important;
+  height: 100%;
+  position: relative;
+}
+
+.md-sidebar__inner {
+  height: 100%;
+  overflow-y: auto;
 }
 
 /* Compact Sidebar */
