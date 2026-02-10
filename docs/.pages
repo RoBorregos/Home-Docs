@@ -1,11 +1,9 @@
 nav:
     - index.md
     - Overview
-    - Publications.md
+    - Publications
     - Areas
     - Team.md
-    - "2025"
-    - "2024"
-    - "2023"
-    - "2022"
-    - ...
+    - years
+    - resources
+    - development
