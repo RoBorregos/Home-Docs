@@ -10,8 +10,8 @@ This year's changes improve HRI by enhancing local task planning, speech process
 
 - **[RAG](Areas/rag.md)**
 
-<!--- **[Local TTS](Areas/Local%20TTS.md)** -- >
+<!-- - **[Local TTS](Areas/Local%20TTS.md)** -->
 
 - **[OpenWakeWord (Keyword spotting)](Areas/OWW.md)**
 
-- **[Display Changes](Areas/display.md)**
+<!-- - **[Display Changes](Areas/display.md)** -->
