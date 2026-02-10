@@ -68,7 +68,7 @@
         <li>2024 Navigation, Manipulation</li>
         <li>2025 Manipulation, Integration</li>
     </ul>
-    <img src="/assets/members/Fotos_members/DSC_3978.jpg"/>
+    <img src="/assets/members/Fotos_members/dominguez.jpg"/>
 </div>
 
 <div class="grid-cell">
