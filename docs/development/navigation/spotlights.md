@@ -1,7 +1,6 @@
-
 # Weekly Spotlights
-Navigation Spotlights of the week:
-Demo successful
+
+This page is a collection of weekly spotlights that highlight the progress of the integration team. Each spotlight is a summary of the work done by the team in a week.
 
 Member status:
 
@@ -12,62 +11,54 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-## 2025-3-6
+## 2026-01-29
 
-| Name     | Status |
+ Name     | Status |
 | -------- | ------ |
-| Bahena   |   🤝   |
-| Fregoso  |   🤝   |
-| Rodro    |   🤝   |
+| Camila   |   💻   |
+| Bahena   |   🔍   |
+| Fregoso  |   💻   |
+| Rodro    |   💻   |
+| Daniel   |   💻   |
+| Alberto  |   🔍   |
+| Dana     |   🔍   |
+
+- **Research**
+
+  - New members are learning about nav2 repo and behaivor trees.
+
+- **Development**
+
+  - Webots first status simulation.
+  ![image](../../assets/development/navigation/spotlights/Webotsfirstversion.jpeg)
+  - Webots zed2 digital twin.
+  - Cleanup repository
+  ![image](../../assets/development/navigation/spotlights/RepoUpdate.png)
+  - Updating Performance for Nodes migrating to cpp.
+  - Tauri app development in progress
+  
+
+## 2026-01-22
+
+ Name     | Status |
+| -------- | ------ |
+| Camila   |   📝   |
+| Bahena   |   🔍   |
+| Fregoso  |    🔄  |
+| Rodro    |   📝   |
 | Daniel   |   🤝   |
-| Ricardo  |   🤝   |
-| Alberto  |   🤝   |
+| Alberto  |   🔍   |
+| Dana     |   🔍   |
 
+- **Research**
 
-**Development**:
-- Correction of laser error in nav
+  - New members are learning about nav2 introduction with Articulated Robotics videos.
 
-**In planning**:
-- Deterministic algorithm implementation for nav
-- CUDA on nav
+- **Refactor**
 
+  - Removing old stuff and updating packages.
 
-## 02-10-2025
+ **Documentation**
 
-# Weekly Spotlights
-Navigation Spotlights of the week:
--Meeting of Capacitation Done 
--Investigation topics added
--Problem solving targeted (LASER TIPICAL ERROR)
-
-Member status:
-
-- 🔍: Research
-- 💻: Development
-- 📝: Documentation
-- 🔄: Refactoring
-- 🔧: Bug fixing
-- 🤝: Participation in other subteam
-- 👻: Temporary unavailable
-
-| Name     | Status |
-| -------- | ------ |
-| Bahena   |   👻   |
-| Fregoso  |    📝 💻 |
-| Rodro    |   🔍   |
-| Daniel   |   🔍   |
-| Ricardo  |   🔍   |
-| Alberto  |   👻   |
-
-
-
-**Development**:
-- Correction of current nav branch
-- Rtabmap Fixed lost parameters
-- XAVIER AGX revived
-
-**In planning**:
-- AMCL testing and SLAMTOOLBOX
-- UI for navigation
-- Migration to own hardware resources 
-- Map person localization
+  - Creating first tauri app documentation.
+  - Documenting first takes with webots simulation.

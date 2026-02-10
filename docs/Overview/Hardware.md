@@ -2,11 +2,19 @@
 
 <div class="timeline-compare">
   <div class="timeline-item">
+    <div class="label">2023</div>
+    <div class="timeline-image-wrap">
+      <img class="timeline-image" src="/assets/overview/robot.jpg" alt="Robot 2023" />
+    </div>
+  </div>
+
+  <div class="timeline-arrow" aria-hidden="true">&rarr;</div>
+
+  <div class="timeline-item">
     <div class="label">2024</div>
     <div class="timeline-image-wrap">
-      <img class="timeline-image" src="/assets/overview/robot.jpg" alt="Robot 2024" />
+      <img class="timeline-image" src="/assets/overview/FRIDA.jpg" alt="Robot 2024" />
     </div>
-    <div class="caption">Before</div>
   </div>
 
   <div class="timeline-arrow" aria-hidden="true">&rarr;</div>
@@ -16,7 +24,6 @@
     <div class="timeline-image-wrap">
       <img class="timeline-image" src="/assets/overview/frida.png" alt="Robot 2025" />
     </div>
-    <div class="caption">Now</div>
   </div>
 </div>
 
@@ -30,22 +37,19 @@ A modified **EAI Dashgo B1** robot was used for mobility purposes, and a **uFact
 - Motors with encoders for odometry purposes.
 
 #### Computers
-- **Jetson Xavier AGX**: Handles manipulation and vision tasks.
-- **Jetson Nano**: Manages movement and sensor processing via a local Ethernet network.
+- **NVIDIA Jetson AGX Orin 64GB**
 
 #### Batteries
-- **24V Batteries**: Powers the xArm 6, Dashgo, and Jetson Nano.
-- **14.8V Battery**: Powers the Jetson Xavier.
+- **24V Batteries**: A total of three 24v li-ion batteries are used, one for the xArm,
+Jetson Orin and Dashgo.
 
 #### Arm
 - **Manipulator**: uFactory xArm 6.
-- **Gripper**: Universal custom gripper, interchangeable with:
-  - Parallel gripper.
-  - High-precision gripper for small objects.
-  - High-strength gripper using a stepper motor.
+- **Gripper**: 2 finger parallel custom 3D printed gripper with force resistive
+sensors on each finger and an IR sensor for detecting objects in front of it. It uses an ESP32 as the microcontroller.
 
 #### Vision
-- **Camera**: Stereolabs ZED2 attached to the xArm's end effector (EOF), transmits vision data via USB to the Jetson Xavier.
+- **Camera**: Stereolabs ZED2 attached to the xArm's end effector (EOF), transmits vision data via USB to the Jetson Orin.
 
 #### Human-Robot Interaction (HRI)
 - **Microphone**: Seed Studio ReSpeaker Microphone Array.
@@ -56,18 +60,16 @@ A modified **EAI Dashgo B1** robot was used for mobility purposes, and a **uFact
 - **Lidar**: RP Lidar A1.
 
 #### Base Cover
-- Custom sheet metal structure for passive heat dissipation.
+- Custom acrylic cover and aluminum profile structure for securing every component and hide the internal electronics.
 
 #### Physical Specifications
-- **Height**: 186 cm (fully extended).
-- **Width**: 42 cm.
-- **Weight**: 37 kg.
+- **Height**: 180 cm (fully extended).
+- **Base footprint**: 50 x 42 cm.
+- **Weight**: 40 kg.
 
 ### Additional Devices
-- **Power Indicators**: For the xArm 6 and Jetson Xavier batteries.
+- **Power Indicators**: For the xArm 6 and Jetson Orin batteries.
 - **5V Ethernet Switch**: Enables local data transmission.
-- **Emergency Stop Devices**: Independent for Jetson Xavier, xArm controller, and Dashgo.
-- **Customized Gripper Controller**.
 
 ---
 

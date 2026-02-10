@@ -2,6 +2,81 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-01-29
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📝 | Edit TDP | 
+| Daniela 📄 | Research on silverware detection and handling reflections |
+| Fernando 💻 | Implementing seating verification for restaurant clients requesting to place an order |
+| Brisma 💻 | Detecting empty spaces in the dishwasher |
+
+* New member : Tania
+
+## 2026-01-22
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Daniela 💻 | Trash detection |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Danaé 📝 | Editing TDP | 
+| Héctor 💻 | Developing benchmarking code for trackers and reID to select the best option; researching transparent object handling using ClearPose; refining the approach for gesture recognition |
+
+## 2026-01-12
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Danaé | Cleaning vision repo, editing TDP | 
+| Daniela 💻 | Trash detection node, pending: test on Frida |
+| Brisma & Héctor 💻 | Trackers pending testing |
+| Jocelyn 💻 | Fine-tuning Moondream; Moondream 3 token still pending |
+
+## 2026-01-05
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Daniela 💻 | Working on trash detection |
+| Brisma & Héctor 💻 | Pending testing and comparison of trackers (Norfair, DeepSort)|
+| Jocelyn 💻 | Migration to Moondream 3; token pending |
+
+## 2025-12-29
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Héctor 💻 | Tracker node with DeepSort, working on pose detection with dynamic movements |
+| Fernando 💻 | Draft of restaurant commands, waiting for tracker selection. |
+
+## 2025-12-22
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Fernando 💻 | Migration to SAM3 |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Brisma 💻 | Norfair node, pending YOLO integration |
+| Hector 💻 | Tracker using DeepSort with pretrained weights (~97% accuracy); pending ROS node integration |
+| Daniela 💻 | Trash detection |
+| Fernando 💻 | Restaurant commands |
+
 ## 2025-11-21
 
 **In Progress:**

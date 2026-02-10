@@ -11,6 +11,64 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+
+## 2026-01-29
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |  🥺    |
+| Fregoso   |  🥺    |
+| Domínguez | 🥺    |
+| Camila    |  🥺    |
+| Danaé     |   🥺   |
+| Fernando  |   🥺   |
+| Benvenuto |    🥺  |
+
+**Refactoring**
+- Im sowy no progress 🥺
+
+
+## 2026-01-22
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Fregoso   | 📝     |
+| Domínguez | 🤝     |
+| Camila    |  🔍    |
+| Danaé     |   🤝   |
+| Fernando  |   🤝   |
+| Benvenuto |    🔍  |
+
+**Refactoring**
+
+- Updating docker images on dockerhub
+
+**Documenting**
+
+- Updating HOME2 Readme 
+
+**Research**
+
+- Sound and Visual UI with HRI x Integration
+
+
+## 2026-01-15
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 🔄     |
+| Fregoso   |        |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Refactoring**
+
+- Change `run.sh` container running logic to avoid entrypoint commands from rerunning on the background.
+
 ## 2025-11-14
 
 | Name      | Status |

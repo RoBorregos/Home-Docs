@@ -68,7 +68,7 @@
         <li>2024 Navigation, Manipulation</li>
         <li>2025 Manipulation, Integration</li>
     </ul>
-    <img src="/assets/members/Fotos_members/DSC_3978.jpg"/>
+    <img src="/assets/members/Fotos_members/dominguez.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -104,6 +104,15 @@
     <img src="/assets/members/Fotos_members/DSC_4006.jpg"/>
 </div>
 
+<div class="grid-cell">
+    <h3>
+        Hector Tovar
+    </h3>
+    <ul>
+        <li>2025 Vision, Manipulation</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_3980.jpg"/>
+</div>
 
 <div class="grid-cell">
     <h3>

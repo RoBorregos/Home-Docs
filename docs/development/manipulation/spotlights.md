@@ -11,6 +11,105 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-01-29
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+- Vamp integration with Frida
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/zVAVS99MIHA" title="Vamp integration with Frida (Test1)" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7WcWclU6jmc" title="Vamp integration with Frida (Test2)" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-7KqlR9u-SM" title="Vamp integration with Frida (Test3)" frameborder="0" allowfullscreen></iframe>
+
+- Imported Frida's URDF to Webots
+
+![image](../../assets/development/manipulation/spotlights/2026-02-05/fridaWebots.jpeg)
+
+- Spherization of Frida's gripper and base for vamp implementation
+
+- Fixed manipulation pages TDP2026 paper
+
+**In Progress:**
+
+- Getting cluster of transparent objects
+- Import vamp to moveit environment
+- Working on simulation:
+    - Mujoco: Add the xarm controller to Mujoco
+    - Webots: Add gripper, zed camera and xarm controller to Frida in Webots
+
+## 2026-01-29
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+- Vamp integration with xarm
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XAExImV6TV4" title="Vamp integration with xarm" frameborder="0" allowfullscreen></iframe>
+
+- Webots connection with ROS2 for future manipulation implementation
+
+**In Progress:**
+
+- Fixing the TDP2026 paper
+- Getting cluster of transparent objects
+- Vamp integration with Frida
+- Spherization of Frida's gripper and base for vamp implementation
+- Working on simulation:
+    - Mujoco: Add the xarm controller to Mujoco
+    - Webots: Spawn Frida in Webots
+
+
+## 2026-01-15
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |  💻      |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+- First manipulation meeting of 2026
+
+**In Progress:**
+
+- Fixing the TDP2026 paper
+- Getting cluster of transparent objects
+- Working on simulation
 
 ## 2025-11-21
 
