@@ -1,8 +1,5 @@
 # **Command Interpreter**
 
-Summary of results
-@Diego o @Adan
-
 ## Local Model Finetuning
 
 ### Overview
@@ -29,21 +26,3 @@ The finetuning process is all contained in the finetune-llama.py script. This sc
 2. **Model Configuration**: The model is configured with specific parameters such as learning rate, batch size, and number of epochs.
 3. **Training**: The model is trained on the prepared dataset using the specified parameters.
 4. **Saving the Model**: The trained model is saved for later use, allowing it to be deployed in various applications. It is important to note that the model is saved in multiple quantization formats, to optimize the memory usage and performance.
-
-Comparison to online finetuning
-@Ivan
-
-Dataset generator
-@Oscar
-
-Schema Aligned Parsing for command interpreter
-@Adan
-
-Embeddings and RAG for grounding commands
-@Leo @Joce
-
-Areas of improvement
-@any
-
-Link of paper
-(Once available)

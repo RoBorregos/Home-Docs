@@ -92,6 +92,15 @@ body {
   --md-sidebar-width: 16rem;
 }
 
+/* Remove indentation from nested navigation items */
+.md-nav__item--nested>.md-nav>.md-nav__list {
+  padding-left: 0 !important;
+}
+
+.md-nav__item .md-nav__item {
+  padding-left: 0 !important;
+}
+
 .md-sidebar .md-nav__link {
   white-space: normal;
   height: auto;
