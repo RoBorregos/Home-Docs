@@ -130,9 +130,9 @@ This project is divided into several sections, each focusing on a specific aspec
 - [Publications](/Publications.md): Academic papers and research work by our team members.
 - [Areas](/Areas/index.md): Describes the main software and hardware modules develop by the team to achive the functionalities in the robot.
 - [Team Members](/Team.md): Lists the team members and their roles in the project.
-- [2024](/years/2024/index.md)
-- [2023](/years/2023/index.md)
-- [2022](/years/2022/index.md)
+- [2024](/2024/index.md)
+- [2023](/2023/index.md)
+- [2022](/2022/index.md)
 
 ## Contributing
 
