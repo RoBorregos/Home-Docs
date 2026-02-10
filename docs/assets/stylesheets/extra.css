@@ -240,9 +240,11 @@ a:focus, button:focus, .md-nav__link:focus { outline: 3px solid rgba(37,99,235,0
 }
 .timeline-compare { position: relative; }
 
+/*
 @media (min-width: 900px) {
   .timeline-compare::before { display: block; }
 }
+*/
 
 @media (max-width: 760px) {
   .timeline-item { width: 100%; }

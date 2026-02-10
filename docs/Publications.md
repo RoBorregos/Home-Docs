@@ -1,4 +1,4 @@
-# Overview
+# Publications
 
 Welcome to the RoBorregos @Home publications section. Here you can find academic papers, conference proceedings, and research work produced by our team members related to robotics, service robots, and RoboCup@Home competition.
 
@@ -29,4 +29,5 @@ Event Control Teaching. 2022 IEEE World Engineering Education Conference
 (EDUNINE), DOI: 10.1109/EDUNINE53672.2022. 9782154., 2022.
 
 E. A. Avila, D. P. Chapa, I. D. Arenas and C. V. Hurtado, "A Digital Twin implementation for Mobile and collaborative robot scenarios for teaching robotics based on Robot Operating System," 2022 IEEE Global Engineering Education Conference (EDUCON), Tunis, Tunisia, 2022, pp. 559-564, doi: 10.1109/EDUCON52537.2022.9766583.
+
 ---
