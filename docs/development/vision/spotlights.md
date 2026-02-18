@@ -2,6 +2,27 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-02-17
+
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📝 | Fixed vision pages TDP2026 paper |
+| Brisma 💻 | Detecting empty spaces in the dishwasher (Python script) |
+| Héctor | Benchmark to compare different trackers |
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📄💻 | Dishwasher empty slots -> ROS, update to YOLO26, research on clothing pile | 
+| Daniela 📄 | Research on silverware detection and handling reflections: ASGrasp combined with VPG |
+| Fernando 💻 | Seat + raising hand for restaurant clients requesting to place an order -> ROS |
+| Héctor | Reduce id switches rate in new tracker |
+
+* New members : Tania, JP
+
 ## 2026-01-29
 
 **In Progress:**
