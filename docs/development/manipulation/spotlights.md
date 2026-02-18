@@ -32,19 +32,14 @@ Member status:
 | Owners | Task |
 |------|------|
 
-|  |  |
-
-
 **In Progress:**
-
 
 | Owners | Task |
 |------|------|
-
 | Fernando 💻 | |
 | Dominguez 💻| Import vamp to moveit environment |
 | Ale G. 💻 | |
-| Luis 💻 | |
+| Luis 💻 | fast-planning |
 | Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
 | Hector 💻| Getting cluster of transparent objects|
 | Efrain 💻| Mujoco: Add the xarm controller and camera to Mujoco|
