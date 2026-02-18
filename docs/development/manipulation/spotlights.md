@@ -47,7 +47,7 @@ Member status:
 | Luis 💻 | |
 | Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
 | Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Add the xarm controller to Mujoco|
+| Efrain 💻| Mujoco: Add the xarm controller and camera to Mujoco|
 
 ## 2026-01-29
 
