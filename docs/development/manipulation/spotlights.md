@@ -16,21 +16,23 @@ Member status:
 
 | Name     | Status     |
 | -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  📝     | 
+| Domínguez|  💻    |
+| Ale G.   |       | 
 | Ricardo  |        |
 | Fernando |  💻        |
 | Luis     |  💻       |
-| Emil     |  💻📝     |
+| Emil     |  💻     |
 | Fregoso  |              |
-| Paola    |  📝     |
+| Paola    |       |
 | Hector   |  💻     |
 | Efrain   |  💻     |
 
 **Done:**
 
-| Owners | Task |
-|------|------|
+<!-- | Owners | Task |
+|------|------| -->
+
+- No major advances this week, we are still working on the tasks from last week.
 
 **In Progress:**
 
@@ -38,7 +40,6 @@ Member status:
 |------|------|
 | Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
 | Dominguez 💻| Import vamp to moveit environment |
-| Ale G. 💻 | |
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
 | Hector 💻| Getting cluster of transparent objects|
