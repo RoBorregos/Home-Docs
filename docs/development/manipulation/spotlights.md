@@ -39,7 +39,7 @@ Member status:
 | Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
 | Dominguez 💻| Import vamp to moveit environment |
 | Ale G. 💻 | |
-| Luis 💻 | fast-planning |
+| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
 | Hector 💻| Getting cluster of transparent objects|
 | Efrain 💻| Mujoco: Add the xarm controller and camera to Mujoco|
