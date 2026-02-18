@@ -11,6 +11,44 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+
+## 2026-02-27
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻📝    |
+| Ale G.   |  📝     | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻📝     |
+| Fregoso  |              |
+| Paola    |  📝     |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+
+|  |  |
+
+
+**In Progress:**
+
+
+| Owners | Task |
+|------|------|
+
+| Fernando 💻 | |
+| Dominguez 💻| Import vamp to moveit environment |
+| Ale G. 💻 | |
+| Luis 💻 | |
+| Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
+| Hector 💻| Getting cluster of transparent objects|
+| Efrain 💻| Mujoco: Add the xarm controller to Mujoco|
+
 ## 2026-01-29
 
 | Name     | Status     |
