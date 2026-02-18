@@ -2,6 +2,21 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-02-17
+
+**Done:**
+
+- Meetings with all team members (Bahena, Babi, Jordan and Ian).
+- Design for attaching the motor gearboxes to the base frame.
+- New batteries CAD.
+
+**In Progress:**
+
+- Fix and improvement of the rotatory photo base.
+- Wheels and screws purchase (still in progress :c).
+- Omni Base CAD.
+- Re-print broken wheel piece.
+
 ## 2026-01-29
 
 **Done:**
