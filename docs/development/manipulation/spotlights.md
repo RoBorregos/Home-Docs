@@ -36,7 +36,7 @@ Member status:
 
 | Owners | Task |
 |------|------|
-| Fernando 💻 | |
+| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
 | Dominguez 💻| Import vamp to moveit environment |
 | Ale G. 💻 | |
 | Luis 💻 | fast-planning |
