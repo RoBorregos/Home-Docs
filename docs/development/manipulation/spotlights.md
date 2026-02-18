@@ -11,6 +11,39 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+
+## 2026-02-27
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |       | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Fregoso  |              |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Dominguez, Ale G. 📝 | Fixed manipulation pages TDP2026 paper |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
+| Dominguez 💻| Import vamp to moveit environment |
+| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
+| Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
+| Hector 💻| Getting cluster of transparent objects|
+| Efrain 💻| Mujoco: Add the xarm controller and camera to Mujoco|
+
 ## 2026-01-29
 
 | Name     | Status     |
