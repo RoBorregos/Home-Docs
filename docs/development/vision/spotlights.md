@@ -8,6 +8,7 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 | Owners | Task |
 |--------|------|
+| Danaé 📝 | Fixed vision pages TDP2026 paper |
 | Brisma 💻 | Detecting empty spaces in the dishwasher (Python script) |
 | Héctor | Benchmark to compare different trackers |
 
