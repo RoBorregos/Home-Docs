@@ -12,7 +12,7 @@ Member status:
 - 🤝: Participation in other subteam
 
 
-## 2026-02-27
+## 2026-02-17
 
 | Name     | Status     |
 | -------- | ------     |
