@@ -29,10 +29,9 @@ Member status:
 
 **Done:**
 
-<!-- | Owners | Task |
-|------|------| -->
-
-- No major advances this week, we are still working on the tasks from last week.
+| Owners | Task |
+|------|------|
+| Dominguez, Ale G. 📝 | Fixed manipulation pages TDP2026 paper |
 
 **In Progress:**
 
