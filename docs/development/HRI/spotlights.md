@@ -11,6 +11,22 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-02-24
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Alex      |        |
+| Camila    |        |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |        |
+
+- **Development**
+  - Dynamically skip verbal data extraction confirmation (`ask_and_confirm`) based on transcription probability and similarity to provided options.
+
 ## 2026-01-22
 
 | Name      | Status |
