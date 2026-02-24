@@ -28,9 +28,11 @@ Member status:
 
 **Done:**
 
+[![Implementation of ros2_control with mujoco](https://img.youtube.com/vi/iYlQffC8MkQ/0.jpg)](https://www.youtube.com/watch?v=iYlQffC8MkQ)
+
 | Owners | Task |
 |------|------|
-| | |
+| Efrain 💻 | Mujoco: Added functional controller for xarm6 that connects to ros2_control as well as camera|
 
 **In Progress:**
 
@@ -41,7 +43,7 @@ Member status:
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
 | Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Add the xarm controller and camera to Mujoco|
+| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_controly|
 
 
 ## 2026-02-17
