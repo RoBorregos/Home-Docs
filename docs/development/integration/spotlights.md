@@ -11,6 +11,26 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-02-24
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Fregoso   | 🔧     |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Development**
+
+- Started work on new HRI Challenge task manager.
+
+**Bug fixing**
+
+- Replaced speaker temporarily which stopped working.
+
 ## 2025-11-14
 
 | Name      | Status |
