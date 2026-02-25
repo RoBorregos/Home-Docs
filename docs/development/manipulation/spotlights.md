@@ -38,7 +38,7 @@ Member status:
 
 | Owners | Task |
 |------|------|
-| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
+| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
 | Dominguez 💻| Import vamp to moveit environment |
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
