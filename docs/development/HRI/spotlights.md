@@ -19,7 +19,7 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto |        |
 | Camila    |        |
-| Didier    |        |
+| Didier    | 📝 🔄  |
 | Fabricio  |        |
 | Luis      |        |
 | Oscar     | 🔄 📝  |
@@ -29,9 +29,11 @@ Member status:
 
 - **Refactoring**
   - Removed common interest (deprecated in new tasks).
+  - Solved warinings when using regenerate-flag `docker/hri/scripts/regenerate_db.sh`
 
 - **Documentation**
   - Added HRI questions for several tasks.
+  - Documentation for reegenerate-db flag (flag to restore or upgrade db)
 
 ## 2026-01-22
 
