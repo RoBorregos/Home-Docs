@@ -11,22 +11,25 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
-
-## 2026-01-29
+## 2026-02-24
 
 | Name      | Status |
 | --------- | ------ |
-| Gilberto  |  🥺    |
-| Fregoso   |  🥺    |
-| Domínguez | 🥺    |
-| Camila    |  🥺    |
-| Danaé     |   🥺   |
-| Fernando  |   🥺   |
-| Benvenuto |    🥺  |
+| Gilberto  | 💻     |
+| Fregoso   | 🔧     |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
 
-**Refactoring**
-- Im sowy no progress 🥺
+**Development**
 
+- Started work on new HRI Challenge task manager.
+
+**Bug fixing**
+
+- Replaced speaker temporarily which stopped working.
 
 ## 2026-01-22
 
@@ -35,10 +38,10 @@ Member status:
 | Gilberto  | 🔄     |
 | Fregoso   | 📝     |
 | Domínguez | 🤝     |
-| Camila    |  🔍    |
-| Danaé     |   🤝   |
-| Fernando  |   🤝   |
-| Benvenuto |    🔍  |
+| Camila    | 🔍     |
+| Danaé     | 🤝     |
+| Fernando  | 🤝     |
+| Benvenuto | 🔍     |
 
 **Refactoring**
 
@@ -46,12 +49,11 @@ Member status:
 
 **Documenting**
 
-- Updating HOME2 Readme 
+- Updating HOME2 Readme
 
 **Research**
 
 - Sound and Visual UI with HRI x Integration
-
 
 ## 2026-01-15
 
