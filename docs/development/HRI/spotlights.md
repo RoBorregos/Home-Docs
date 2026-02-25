@@ -23,9 +23,16 @@ Member status:
 | Didier    |        |
 | Fabricio  |        |
 | Luis      |        |
+| Oscar     | 🔄 📝  |
 
 - **Development**
   - Dynamically skip verbal data extraction confirmation (`ask_and_confirm`) based on transcription probability and similarity to provided options.
+
+- **Refactoring**
+  - Removed common interest (deprecated in new tasks).
+
+- **Documentation**
+  - Added HRI questions for several tasks.
 
 ## 2026-01-22
 
