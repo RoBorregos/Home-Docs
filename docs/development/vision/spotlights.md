@@ -2,6 +2,19 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-02-25
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📄💻 | Update to YOLO26, reunion with nav for filtering person in map, doing laundry TM | 
+| Daniela 💻| Silverware detection and sending location of trash |
+| Fernando 💻 | Identify customers for restaurant: PR |
+| Héctor 💻 | Combine trackers |
+| Tania 📄| Research on clothing pile |
+| JP 💻| Dishwasher to ROS + opening dishwasher and laundry machine |
+
 ## 2026-02-17
 
 **Done:**
