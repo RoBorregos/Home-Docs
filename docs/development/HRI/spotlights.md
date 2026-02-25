@@ -11,6 +11,30 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-02-24
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Camila    |        |
+| Didier    | 📝 🔄  |
+| Fabricio  |        |
+| Luis      |        |
+| Oscar     | 🔄 📝  |
+
+- **Development**
+  - Dynamically skip verbal data extraction confirmation (`ask_and_confirm`) based on transcription probability and similarity to provided options.
+
+- **Refactoring**
+  - Removed common interest (deprecated in new tasks).
+  - Solved warinings when using regenerate-flag `docker/hri/scripts/regenerate_db.sh`
+
+- **Documentation**
+  - Added HRI questions for several tasks.
+  - Documentation for regenerate-db flag (flag to restore or upgrade db)
+
 ## 2026-01-22
 
 | Name      | Status |
