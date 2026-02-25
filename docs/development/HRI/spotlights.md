@@ -33,7 +33,7 @@ Member status:
 
 - **Documentation**
   - Added HRI questions for several tasks.
-  - Documentation for reegenerate-db flag (flag to restore or upgrade db)
+  - Documentation for regenerate-db flag (flag to restore or upgrade db)
 
 ## 2026-01-22
 
