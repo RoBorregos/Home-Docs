@@ -41,7 +41,7 @@ Member status:
 | Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
 | Dominguez 💻| Import vamp to moveit environment |
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
-| Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
+| Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
 | Hector 💻| Getting cluster of transparent objects|
 | Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_controly|
 
