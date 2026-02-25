@@ -33,13 +33,14 @@ Member status:
 | Owners | Task |
 |------|------|
 | Efrain 💻 | Mujoco: Added functional controller for xarm6 that connects to ros2_control as well as camera|
+| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
 
 **In Progress:**
 
 | Owners | Task |
 |------|------|
-| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
 | Dominguez 💻| Import vamp to moveit environment |
+| Dominguez 💻| Pick and Place Task Manager | 
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
 | Hector 💻| Getting cluster of transparent objects|
