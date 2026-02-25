@@ -11,6 +11,41 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-02-24
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |       | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Fregoso  |              |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+[![Implementation of ros2_control with mujoco](https://img.youtube.com/vi/iYlQffC8MkQ/0.jpg)](https://www.youtube.com/watch?v=iYlQffC8MkQ)
+
+| Owners | Task |
+|------|------|
+| Efrain 💻 | Mujoco: Added functional controller for xarm6 that connects to ros2_control as well as camera|
+| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Import vamp to moveit environment |
+| Dominguez 💻| Pick and Place Task Manager | 
+| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
+| Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
+| Hector 💻| Getting cluster of transparent objects|
+| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_controly|
+
 
 ## 2026-02-17
 
