@@ -6,6 +6,21 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 **Done:**
 
+- Finish One Drive setup to start modeling collaborative in Solidworks
+- Repair 3D printed piece for extra wheels
+- Screws and encoder magnets purchase!
+- Clean current FRIDA 3D model, erased unused models, and reorganize directories
+
+**In Progress:**
+
+- Omni Base CAD.
+- Wheels purchase (hope to have them by first week of march)
+- Rotatory photo base electronics.
+
+## 2026-02-17
+
+**Done:**
+
 - Meetings with all team members (Bahena, Babi, Jordan and Ian).
 - Design for attaching the motor gearboxes to the base frame.
 - New batteries CAD.
