@@ -18,7 +18,6 @@ Member status:
 | Gilberto  | 💻     |
 | Jocelyn   |        |
 | Benvenuto |        |
-| Alex      |        |
 | Camila    |        |
 | Didier    |        |
 | Fabricio  |        |
