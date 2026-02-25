@@ -2,6 +2,21 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-02-24
+
+**Done:**
+
+- Finish One Drive setup to start modeling collaborative in Solidworks
+- Repair 3D printed piece for extra wheels
+- Screws and encoder magnets purchase!
+- Clean current FRIDA 3D model, erased unused models, and reorganize directories
+
+**In Progress:**
+
+- Omni Base CAD.
+- Wheels purchase (hope to have them by first week of march)
+- Rotatory photo base electronics.
+
 ## 2026-02-17
 
 **Done:**
