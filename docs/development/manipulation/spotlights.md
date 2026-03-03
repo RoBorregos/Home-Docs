@@ -11,6 +11,40 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-3
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |       | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Fregoso  |              |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Place Bag on the floor |
+| Dominguez 💻| Import vamp to moveit environment |
+| Fernando 💻 | |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Test vamp integration with moveit |
+| Dominguez 💻| Pick and Place Task Manager | 
+| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
+| Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
+| Hector 💻| Getting cluster of transparent objects|
+| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_control|
+
 ## 2026-02-24
 
 | Name     | Status     |
@@ -44,7 +78,7 @@ Member status:
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
 | Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_controly|
+| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_control|
 
 
 ## 2026-02-17
