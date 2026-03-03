@@ -1,5 +1,6 @@
 # Weekly Spotlights
 
+
 This page is a collection of weekly spotlights that highlight the progress of the integration team. Each spotlight is a summary of the work done by the team in a week.
 
 Member status:
@@ -10,6 +11,24 @@ Member status:
 - 🔄: Refactoring
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
+
+## 2026-03-03
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |        |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Camila    |        |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |  💻    |
+| Oscar     |        |
+
+- **Development**
+  - Made nlp tests pass by adding an LLM fallback for extract data node in HRI and a condition so that when a phrase gets classified as no or yes by a thin margin compared to I dont know it returns I dont know.
+
+
 
 ## 2026-02-24
 
