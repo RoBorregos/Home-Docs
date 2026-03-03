@@ -34,6 +34,9 @@ Member status:
 | Dominguez 💻| Import vamp to moveit environment |
 | Fernando 💻 | |
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with with moveit test" frameborder="0" allowfullscreen></iframe>
+
+
 **In Progress:**
 
 | Owners | Task |
