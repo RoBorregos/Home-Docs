@@ -46,7 +46,7 @@ Member status:
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
 | Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_control|
+| Efrain 💻| Mujoco: Fix add gripper controll by xarm_service|
 
 ## 2026-02-24
 
@@ -69,7 +69,7 @@ Member status:
 
 | Owners | Task |
 |------|------|
-| Efrain 💻 | Mujoco: Added functional controller for xarm6 that connects to ros2_control as well as camera|
+| Efrain 💻 | Fixed the gripper joint bug|
 | Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
 
 **In Progress:**
