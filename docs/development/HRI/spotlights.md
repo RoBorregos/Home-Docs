@@ -11,6 +11,22 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-03
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Camila    |        |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |        |
+| Oscar     |        |
+
+- **Development**
+  - Started working on event sound detection (doorbell, knock).
+
 ## 2026-02-24
 
 | Name      | Status |
