@@ -2,6 +2,19 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-03-03
+
+**Done:**
+
+- Nothing has been finished yet :c
+
+**In Progress:**
+
+- Change gripper servomotor to DC motor, to allow for continuos pressure on grasped objects
+- Omni Base CAD
+- Wheels purchase (just waiting for them to arrive)
+- Rotatory photo base electronics (in pause)
+
 ## 2026-02-24
 
 **Done:**
