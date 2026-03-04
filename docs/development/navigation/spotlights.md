@@ -11,6 +11,28 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-02-03
+
+ Name     | Status |
+| -------- | ------ |
+| Camila   |   💻   |
+| Bahena   |   🔍   |
+| Fregoso  |   💻   |
+| Rodro    |   💻   |
+| Daniel   |   💻   |
+| Alberto  |   💻  |
+| Dana     |   🔍   |
+
+- **Research**
+
+  - New members still learning i guess.
+
+- **Development**
+   - Finish updating repository
+   - Finish rplidar fix and urdf change
+   - Started Nav custom UI with QT development
+  ![image](../../assets/development/navigation/spotlights/navUI.jpeg)
+  
 ## 2026-01-29
 
  Name     | Status |
