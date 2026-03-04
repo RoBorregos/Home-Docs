@@ -11,6 +11,23 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-03
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Fregoso   |        |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Development**
+
+- Testing of HRIC and integration improvements.
+- Fixed follow face node error.
+
 ## 2026-02-24
 
 | Name      | Status |
