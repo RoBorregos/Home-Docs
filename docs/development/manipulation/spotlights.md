@@ -11,6 +11,43 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-3
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |       | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Fregoso  |              |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Place Bag on the floor |
+| Dominguez 💻| Import vamp to moveit environment |
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with with moveit test" frameborder="0" allowfullscreen></iframe>
+
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Test vamp integration with moveit |
+| Dominguez 💻| Pick and Place Task Manager | 
+| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts. |
+| Emil 💻| Place on top of objects based on maximum z, and centroid for place trash and controllers on weboots |
+| Hector 💻| Follow hand for grasping bag |
+| Efrain 💻| Mujoco: Fix add gripper controll by xarm_service |
+| Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag |
+
 ## 2026-02-24
 
 | Name     | Status     |
@@ -32,7 +69,7 @@ Member status:
 
 | Owners | Task |
 |------|------|
-| Efrain 💻 | Mujoco: Added functional controller for xarm6 that connects to ros2_control as well as camera|
+| Efrain 💻 | Fixed the gripper joint bug|
 | Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
 
 **In Progress:**
@@ -44,7 +81,7 @@ Member status:
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
 | Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_controly|
+| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_control|
 
 
 ## 2026-02-17
