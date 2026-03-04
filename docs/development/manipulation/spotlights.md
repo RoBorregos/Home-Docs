@@ -32,7 +32,7 @@ Member status:
 |------|------|
 | Dominguez 💻| Place Bag on the floor |
 | Dominguez 💻| Import vamp to moveit environment |
-| Fernando 💻 | |
+| Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag (in progress)|
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with with moveit test" frameborder="0" allowfullscreen></iframe>
 
