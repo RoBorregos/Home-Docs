@@ -45,7 +45,7 @@ Member status:
 | Dominguez 💻| Pick and Place Task Manager | 
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
 | Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
-| Hector 💻| Getting cluster of transparent objects|
+| Hector 💻| Follow hand for grasping bag|
 | Efrain 💻| Mujoco: Fix add gripper controll by xarm_service|
 
 ## 2026-02-24
