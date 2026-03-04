@@ -17,15 +17,23 @@ Member status:
 | --------- | ------ |
 | Gilberto  | 💻     |
 | Jocelyn   |        |
-| Benvenuto |        |
-| Camila    |        |
+| Benvenuto | 💻🔄   |
+| Camila    | 🔄     |
 | Didier    |        |
 | Fabricio  |        |
-| Luis      |        |
+| Luis      | 💻     |
 | Oscar     |        |
 
 - **Development**
   - Started working on event sound detection (doorbell, knock).
+  - Avoid asking for confirmation with empty extracted data.
+  - Active noise cancellation
+  - Made nlp tests pass by adding an LLM fallback for extract data node and a condition so that when a phrase gets classified as no or yes by a thin margin compared to I dont know it returns I dont know.
+  - Minimize start task button in display when pressed.
+
+- **Refactoring**
+  - Moved microservice requirements files to correct location.
+  - Moved chime to a new node.
 
 ## 2026-02-24
 
