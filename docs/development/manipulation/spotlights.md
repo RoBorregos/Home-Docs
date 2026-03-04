@@ -44,7 +44,7 @@ Member status:
 | Dominguez 💻| Test vamp integration with moveit |
 | Dominguez 💻| Pick and Place Task Manager | 
 | Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
-| Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
+| Emil 💻| Place on top of objects based on maximum z, and centroid for place trash and controllers on weboots|
 | Hector 💻| Follow hand for grasping bag|
 | Efrain 💻| Mujoco: Fix add gripper controll by xarm_service|
 
