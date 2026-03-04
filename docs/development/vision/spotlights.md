@@ -4,6 +4,26 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2026-02-25
 
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📄💻 | Centralizied yolo node (YOLO 26) | 
+| Fernando 💻 | Identify customers for restaurant |
+| Héctor 💻 | Combine trackers (pending review) |
+| JP 💻| Dishwasher rack and empty slots detection |
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Daniela 💻| Silverware detection and sending location of trash |
+| Fernando 💻 | Identify tables and number of customers per table |
+| Héctor 💻 | Identify hand for bag handover |
+| Tania 📄| Research on clothing pile |
+
+## 2026-02-25
+
 **In Progress:**
 
 | Owners | Task |
