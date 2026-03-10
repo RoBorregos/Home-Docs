@@ -31,6 +31,7 @@ Member status:
 | Owners | Task |
 |------|------|
 | Dominguez 💻| Pick cutlery |
+| Hector 💻| Follow hand for grasping bag |
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nkaqR_LuLjs" title="Pick Cutlery" frameborder="0" allowfullscreen></iframe>
 
@@ -43,7 +44,6 @@ Member status:
 | Dominguez 💻| Test Pick and Place Task Manager | 
 | Luis 💻 | Test Pour / Research GraspNet to improve grasping and change the current implementation of gpd. |
 | Emil 💻| Place on top of objects based on maximum z, and centroid for place trash and controllers on weboots |
-| Hector 💻| Follow hand for grasping bag |
 | Efrain 💻| Mujoco: Fix add gripper controll by xarm_service |
 | Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag |
 
