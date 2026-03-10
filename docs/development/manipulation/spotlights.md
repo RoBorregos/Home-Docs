@@ -11,6 +11,43 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-10
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |       | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Fregoso  |              |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Pick cutlery |
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with with moveit test" frameborder="0" allowfullscreen></iframe>
+
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Test vamp integration with moveit |
+| Dominguez 💻| Pick and Place Task Manager | 
+| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts. |
+| Emil 💻| Place on top of objects based on maximum z, and centroid for place trash and controllers on weboots |
+| Hector 💻| Follow hand for grasping bag |
+| Efrain 💻| Mujoco: Fix add gripper controll by xarm_service |
+| Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag |
+
+
 ## 2026-03-3
 
 | Name     | Status     |
