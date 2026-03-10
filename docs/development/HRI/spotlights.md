@@ -11,6 +11,27 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-10
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Camila    | 💻🔧   |
+| Didier    |        |
+| Fabricio  |        |
+| Luis      |        |
+| Oscar     |        |
+
+- **Development**
+  - Tried Yamnet model for event sound detection, pivoting to training our own model with Edge Impulse.
+  - Get current areas from new navigation service when populating db.
+  - Autoreconnect ROS backend for the display.
+
+- **Bug fixing**
+  - Fixed mic icon blocking live transcription.
+
 ## 2026-03-03
 
 | Name      | Status |
