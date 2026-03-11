@@ -11,6 +11,22 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-10
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  |        |
+| Fregoso   | 💻     |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto | 💻     |
+
+**Development**
+
+- Upload images to dockerhub manually run.sh and with github actions.
+
 ## 2026-03-03
 
 | Name      | Status |
