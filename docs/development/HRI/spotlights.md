@@ -21,7 +21,7 @@ Member status:
 | Camila    | 💻🔧   |
 | Didier    | 💻     |
 | Fabricio  |        |
-| Luis      |        |
+| Luis      | 💻     |
 | Oscar     |        |
 
 - **Development**
@@ -29,6 +29,7 @@ Member status:
   - Get current areas from new navigation service when populating db.
   - Autoreconnect ROS backend for the display.
   - Restructure microservices STT and TTS at HRI workspace 
+  - Added llm fallback for name, standardized data_extract node and hooked up initial prompt to fastwhisper
 
 - **Bug fixing**
   - Fixed mic icon blocking live transcription.
