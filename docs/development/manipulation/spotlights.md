@@ -35,12 +35,26 @@ Member status:
 | Emil 💻|Place on top of object |
 | Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag |
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/nkaqR_LuLjs" title="Pick Cutlery" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/nkaqR_LuLjs"
+title="Pick Cutlery"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
-<iframe width="560" height="315" src="https://youtu.be/LAtaae2D7Zk" title="Go to hand" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/LAtaae2D7Zk"
+title="Go to hand"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
-
-<iframe width="560" height="315" src="https://youtube.com/embed/_r7oWEvyoiY" title="Place on top" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315"
+src="https://www.youtube.com/embed/_r7oWEvyoiY"
+title="Place on top"
+frameborder="0"
+allowfullscreen>
+</iframe>
 
 
 **In Progress:**
