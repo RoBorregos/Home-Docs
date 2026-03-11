@@ -2,6 +2,18 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-03-10
+
+**Done:**
+
+- Wheels finally here!
+- Gripper redesign for DC motor
+
+**In Progress:**
+
+- Initial omnibase prototype
+- Motor gearboxes assembly
+
 ## 2026-03-03
 
 **Done:**
