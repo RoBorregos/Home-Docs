@@ -11,6 +11,50 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-10
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |       | 
+| Ricardo  |        |
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Fregoso  |              |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Pick cutlery |
+| Hector 💻| Follow hand for grasping bag |
+| Emil 💻|Place on top of object |
+| Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag |
+| Efrain 💻| Mujoco: Fix add gripper controll by xarm_service |
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nkaqR_LuLjs" title="Pick Cutlery" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LAtaae2D7Zk" title="Go to hand" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_r7oWEvyoiY" title="Place on top" frameborder="0" allowfullscreen></iframe>
+
+ *Mujoco Video in progess*
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Test vamp integration with moveit |
+| Dominguez 💻| Test Pick and Place Task Manager | 
+| Luis 💻 | Test Pour / Research GraspNet to improve grasping and change the current implementation of gpd. |
+| Emil 💻| Test Place in trash / Placing in top of trashcans|
+
+
 ## 2026-03-3
 
 | Name     | Status     |
