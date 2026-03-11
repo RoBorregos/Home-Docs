@@ -19,7 +19,7 @@ Member status:
 | Jocelyn   |        |
 | Benvenuto |        |
 | Camila    | 💻🔧   |
-| Didier    |        |
+| Didier    | 💻     |
 | Fabricio  |        |
 | Luis      |        |
 | Oscar     |        |
@@ -28,6 +28,7 @@ Member status:
   - Tried Yamnet model for event sound detection, pivoting to training our own model with Edge Impulse.
   - Get current areas from new navigation service when populating db.
   - Autoreconnect ROS backend for the display.
+  - Restructure microservices STT and TTS at HRI workspace 
 
 - **Bug fixing**
   - Fixed mic icon blocking live transcription.
