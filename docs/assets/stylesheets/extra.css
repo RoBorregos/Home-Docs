@@ -81,16 +81,9 @@ body {
   box-shadow: none;
 }
 
-/* Sidebar (left) navigation: make links dark/readable */
-.md-sidebar__scrollwrap {
-  overflow-y: auto !important;
-  height: 100%;
-  position: relative;
-}
 
 .md-sidebar__inner {
-  height: 100%;
-  overflow-y: auto;
+  padding-top: 10px;
 }
 
 /* Compact Sidebar */
@@ -122,19 +115,18 @@ body {
   color: var(--text);
   border-radius: 8px;
   padding: 8px 10px;
-  transition: background .12s ease, transform .12s ease;
+  transition: background .15s ease;
 }
 
 .md-sidebar .md-nav__link:hover {
   background: rgba(11, 37, 69, 0.04);
   color: var(--primary);
-  transform: translateX(3px);
 }
 
 .md-sidebar .md-nav__link--active {
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: var(--primary);
   color: #fff !important;
-  box-shadow: 0 6px 18px rgba(11, 37, 69, 0.12);
+  font-weight: 600;
 }
 
 /* Search box */
