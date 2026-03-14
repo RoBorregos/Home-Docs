@@ -6,6 +6,12 @@ theme:
   favicon: "assets/favicon.png"
   features:
     - content.code.annotate
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
   palette:
     scheme: default
     primary: blue
