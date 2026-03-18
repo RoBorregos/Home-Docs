@@ -83,12 +83,12 @@ The control PCB is the central hub of the omnibase, designed entirely by the tea
 The schematic was designed in EasyEDA (V1.0) by Ximena Trejo. Full schematic PDF available [here](../../assets/development/omnibase/rev2_baseomni_shield.pdf).
 
 <p align="center">
-  <img src="../../assets/development/omnibase/pcbcontrol1.png" alt="Base Omni Shield - Page 1: STM32H755">
+  <img src="../../assets/development/omnibase/pcbcontrol_1.png" alt="Base Omni Shield - Page 1: STM32H755">
 </p>
 <p align="center" style="font-size:small"><i>Base Omni Shield Rev 2 — Page 1: STM32H755 pinout</i></p>
 
 <p align="center">
-  <img src="../../assets/development/omnibase/pcbcontrol2.png" alt="Base Omni Shield - Page 2: Peripherals and ODrive connectors">
+  <img src="../../assets/development/omnibase/pcbcontrol_2.png" alt="Base Omni Shield - Page 2: Peripherals and ODrive connectors">
 </p>
 <p align="center" style="font-size:small"><i>Base Omni Shield Rev 2 — Page 2: TJA1051, BNO055, BLE module and ODrive connectors</i></p>
 
