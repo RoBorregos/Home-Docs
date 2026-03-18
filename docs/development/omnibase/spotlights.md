@@ -25,8 +25,8 @@ Member status:
 **Development**:
 - First progress on the PCBs for motor control and odometry implementation on the omnibase.
 
-![PCB Control 1](../../assets/development/omnibase/pcbcontrol1.png)
-![PCB Control 2](../../assets/development/omnibase/pcbcontrol2.png)
+![PCB Control 1](../../assets/development/omnibase/pcbcontrol_1.png)
+![PCB Control 2](../../assets/development/omnibase/pcbcontrol_2.png)
 
 - Implementation of configuration and control functions via CAN for the ODrives on the STM32.
 - Started the motor mount design, adapting the previous motor anchoring to the 4040 extrusion profile.
