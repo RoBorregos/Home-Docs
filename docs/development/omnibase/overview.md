@@ -80,23 +80,33 @@ The control PCB is the central hub of the omnibase, designed entirely by the tea
 
 ### Control PCB
 
+The schematic was designed in EasyEDA (V1.0) by Ximena Trejo. The full schematic can be viewed and downloaded below:
+
+<p align="center">
+  <iframe src="../../assets/development/omnibase/rev2_baseomni_shield.pdf" width="100%" height="600px" style="border:1px solid #ccc; border-radius:4px;">
+    <a href="../../assets/development/omnibase/rev2_baseomni_shield.pdf">Download Base Omni Shield Schematic (PDF)</a>
+  </iframe>
+</p>
+
 <p align="center">
   <img src="../../assets/development/omnibase/pcbcontrol1.png" alt="Motor control PCB - view 1">
 </p>
 <p align="center">
   <img src="../../assets/development/omnibase/pcbcontrol2.png" alt="Motor control PCB - view 2">
 </p>
-<p align="center" style="font-size:small"><i>Custom motor control PCB schematics (in development)</i></p>
+<p align="center" style="font-size:small"><i>Base Omni Shield — Rev 2 schematic (EasyEDA V1.0, designed by Ximena Trejo)</i></p>
 
 ### Key Components
 
-| Component | Role |
-|---|---|
-| **STM32H755** | Dual-core (Cortex-M7 + Cortex-M4) main microcontroller; handles CAN communication, odometry, and BLE |
-| **BNO055** | 9-DOF IMU (accelerometer, gyroscope, magnetometer) for orientation and odometry fusion |
-| **TJA1051** | CAN bus transceiver; interfaces the STM32 CAN peripheral with the physical CAN bus connecting to the 4 ODrive S1s |
-| **BLE Module** | Bluetooth Low Energy module for wireless gamepad / controller connectivity |
-| **Motor connectors ×4** | Dedicated connectors for each ODrive S1 (CAN, power, signal) |
+| Component | Interface | Role |
+|---|---|---|
+| **STM32H755** | — | Dual-core (Cortex-M7 + Cortex-M4) main microcontroller; handles CAN communication, odometry, and BLE |
+| **BNO055** | I2C (SCL/SDA) | 9-DOF IMU (accelerometer, gyroscope, magnetometer) for orientation and odometry fusion; powered at 3.3V |
+| **TJA1051** | CAN (CTX/CRX) | CAN bus transceiver; interfaces the STM32 CAN peripheral with the physical CAN bus to the 4 ODrive S1s; powered at 5V |
+| **BLE Module** | UART (BLE_RXD/BLE_TXD) | Bluetooth Low Energy module for wireless gamepad connectivity; 6-pin connector, powered at 5V |
+| **ODrive connectors ×4** | 30-pin | Per ODrive: CANH/CANL, PWM, encoder channels A+B (ENCA/ENCB), GND |
+| **CAN termination** | — | 2×60Ω resistors in series (= 120Ω) with 100nF capacitor to GND, per CAN bus standard |
+| **Power input** | Terminal block 2-pin | PWR_5V input with power switch (SW_PWR_STM); 3.3V and 5V indicator LEDs onboard |
 
 ### Communication Topology
 
@@ -104,17 +114,20 @@ The control PCB is the central hub of the omnibase, designed entirely by the tea
 [Main Computer]
       |
     [STM32H755]
-      |  (CAN via TJA1051)
-      +——[ODrive S1 #1 — Front Left]
-      +——[ODrive S1 #2 — Front Right]
-      +——[ODrive S1 #3 — Rear Left]
-      +——[ODrive S1 #4 — Rear Right]
+      |  (CAN via TJA1051 — CANH/CANL)
+      +——[ODrive S1 #1]  ← CANH, CANL, PWM, ENCA, ENCB
+      +——[ODrive S1 #2]  ← CANH, CANL, PWM, ENCA, ENCB
+      +——[ODrive S1 #3]  ← CANH, CANL, PWM, ENCA, ENCB
+      +——[ODrive S1 #4]  ← CANH, CANL, PWM, ENCA, ENCB
+                                    [120Ω + 100nF termination]
 
-      + [BNO055] (I2C/UART — IMU)
-      + [BLE Module] (UART — Gamepad)
+      + [BNO055]     (I2C — SCL/SDA)
+      + [BLE Module] (UART — BLE_RXD/BLE_TXD)
 ```
 
-The STM32H755 acts as the bridge between the high-level computer (running ROS 2) and the low-level motor controllers. It sends velocity/torque commands over CAN to each ODrive S1, reads back encoder data for odometry, and fuses IMU data from the BNO055 for more accurate pose estimation.
+The STM32H755 acts as the bridge between the high-level computer (running ROS 2) and the low-level motor controllers. It sends velocity/torque commands over CAN to each ODrive S1, and also routes PWM and encoder signals (ENCA/ENCB) per motor. IMU data from the BNO055 is read over I2C for odometry fusion.
+
+The PCB was designed in **EasyEDA (V1.0)** by Ximena Trejo, created and updated on 2026-03-09/10.
 
 ---
 
