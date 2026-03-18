@@ -80,21 +80,17 @@ The control PCB is the central hub of the omnibase, designed entirely by the tea
 
 ### Control PCB
 
-The schematic was designed in EasyEDA (V1.0) by Ximena Trejo. The full schematic can be viewed and downloaded below:
+The schematic was designed in EasyEDA (V1.0) by Ximena Trejo. Full schematic PDF available [here](../../assets/development/omnibase/rev2_baseomni_shield.pdf).
 
 <p align="center">
-  <iframe src="../../assets/development/omnibase/rev2_baseomni_shield.pdf" width="100%" height="600px" style="border:1px solid #ccc; border-radius:4px;">
-    <a href="../../assets/development/omnibase/rev2_baseomni_shield.pdf">Download Base Omni Shield Schematic (PDF)</a>
-  </iframe>
+  <img src="../../assets/development/omnibase/pcbcontrol1.png" alt="Base Omni Shield - Page 1: STM32H755">
 </p>
+<p align="center" style="font-size:small"><i>Base Omni Shield Rev 2 — Page 1: STM32H755 pinout</i></p>
 
 <p align="center">
-  <img src="../../assets/development/omnibase/pcbcontrol1.png" alt="Motor control PCB - view 1">
+  <img src="../../assets/development/omnibase/pcbcontrol2.png" alt="Base Omni Shield - Page 2: Peripherals and ODrive connectors">
 </p>
-<p align="center">
-  <img src="../../assets/development/omnibase/pcbcontrol2.png" alt="Motor control PCB - view 2">
-</p>
-<p align="center" style="font-size:small"><i>Base Omni Shield — Rev 2 schematic (EasyEDA V1.0, designed by Ximena Trejo)</i></p>
+<p align="center" style="font-size:small"><i>Base Omni Shield Rev 2 — Page 2: TJA1051, BNO055, BLE module and ODrive connectors</i></p>
 
 ### Key Components
 
