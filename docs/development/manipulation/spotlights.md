@@ -45,7 +45,7 @@ Member status:
 | Dominguez 💻| Pick and Place Task Manager improvements |
 | Luis 💻| explain |
 | Emil 💻| explain |
-| Hector 💻| explain |
+| Hector 💻| Development on the open door task |
 | Efrain 💻| Test the point cloud in mujoco and its interaction with the pick |
 | Fernando 💻 | explain |
 
