@@ -29,7 +29,7 @@ Member status:
 | Owners | Task |
 |------|------|
 | Emil 💻| Throw trash  (explain) |
-| Fernando 💻 | (explain the integration of go to hand to the task manager)
+| Fernando 💻 | Integration of “go to hand” into the task manager with vision hand detection and transforms between ZED and robot frames (working in HRIC task).
 | Efrain 💻| Advanced in PR requirements and changes |
 | Hector 💻| Explain advances | 
 | Luis 💻| Explain advances |
@@ -47,7 +47,9 @@ Member status:
 | Emil 💻| explain |
 | Hector 💻| Development on the open door task |
 | Efrain 💻| Test the point cloud in mujoco and its interaction with the pick |
-| Fernando 💻 | explain |
+| Fernando 💻 | Fix plane collision (it generates rotation) |
+| Fernando 💻 | Search for a bag pose for navigation while holding a bag in the gripper |
+| Fernando 💻 | Open container? |
 
 ## 2026-03-10
 
