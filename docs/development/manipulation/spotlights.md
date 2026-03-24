@@ -30,7 +30,7 @@ Member status:
 |------|------|
 | Emil 💻| Throw trash  (explain) |
 | Fernando 💻 | (explain the integration of go to hand to the task manager)
-| Efrain 💻| Explain the advances of the simulation |
+| Efrain 💻| Advanced in PR requirements and changes |
 | Hector 💻| Explain advances | 
 | Luis 💻| Explain advances |
 | Dominguez 💻| Right implementation of vamp with boxes published |
@@ -46,7 +46,7 @@ Member status:
 | Luis 💻| explain |
 | Emil 💻| explain |
 | Hector 💻| explain |
-| Efrain 💻| explain |
+| Efrain 💻| Test the point cloud in mujoco and its interaction with the pick |
 | Fernando 💻 | explain |
 
 ## 2026-03-10
