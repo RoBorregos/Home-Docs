@@ -11,6 +11,44 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-24
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |  🤝   | 
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Emil 💻| Throw trash  (explain) |
+| Fernando 💻 | (explain the integration of go to hand to the task manager)
+| Efrain 💻| Explain the advances of the simulation |
+| Hector 💻| Explain advances | 
+| Luis 💻| Explain advances |
+| Dominguez 💻| Right implementation of vamp with boxes published |
+| Dominguez 💻| First test of the Pick and Place Task Manager |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Developing collision avoidance with the octomap |
+| Dominguez 💻| Improving the pick cutlery logic |
+| Dominguez 💻| Pick and Place Task Manager improvements |
+| Luis 💻| explain |
+| Emil 💻| explain |
+| Hector 💻| explain |
+| Efrain 💻| explain |
+| Fernando 💻 | explain |
+
 ## 2026-03-10
 
 | Name     | Status     |
