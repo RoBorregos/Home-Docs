@@ -2,6 +2,18 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-03-24
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 💻| Restaurant TM, cutlery detection topic |
+| Fernando 💻 | Improve table detection for restaurant |
+| Héctor 💻 | Detect handle and type of door |
+| JP | Testing of tracker |
+| Daniela 💻 | Trashcan detection (Point moondream) |
+
 ## 2026-03-10
 
 **Done:**
