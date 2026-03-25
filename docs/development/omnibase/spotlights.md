@@ -10,6 +10,26 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-24
+
+| Name     | Stauts |
+| -------- | ------ |
+| Fregoso |    🤝  |
+| Ximena |   💻  |
+| Roger   |    💻   |
+| Jordan  |   💻|
+| Samuel |   🤝  
+| Daniel hinojosa |   💻  |
+| Justino |  💻  |
+| Ale G. |  💻  |
+| Ian |  💻  |
+
+**Development**:
+- Completed the first general documentation of the omnibase.
+- Made corrections to the base CAD model.
+- Currently printing the fixed gearboxes for the base motors.
+- Started an initial simulation of the base in Webots instead of Gazebo.
+
 ## 2026-03-10
 
 | Name     | Stauts |
