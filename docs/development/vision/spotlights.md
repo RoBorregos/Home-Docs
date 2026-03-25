@@ -4,6 +4,12 @@ This page is a collection of weekly spotlights that highlight the progress of th
 
 ## 2026-03-24
 
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Daniela 💻 | Cutlery detection |
+
 **In Progress:**
 
 | Owners | Task |
