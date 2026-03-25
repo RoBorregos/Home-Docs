@@ -2,6 +2,25 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-03-24
+
+**Done:**
+
+- CAD corrections for Jordan omnibase design.
+
+**In Progress:**
+
+- Gripper redesign for DC motor, it is not ready yet, but we are working on it.
+- Motor gearboxes assembly.
+- Wheels for gripper fingerlids design.
+
+## 2026-03-03
+
+**Done:**
+
+- Nothing has been finished yet :c
+
+
 ## 2026-03-10
 
 **Done:**
