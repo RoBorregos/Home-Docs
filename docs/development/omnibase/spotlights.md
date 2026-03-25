@@ -1,6 +1,15 @@
 # Weekly Spotlights
 This page is a collection of weekly spotlights that highlight the progress of the omnibase team. Each spotlight is a summary of the work done by the team in a week.
 
+Member status:
+
+- 🔍: Research
+- 💻: Development
+- 📝: Documentation
+- 🔄: Refactoring
+- 🔧: Bug fixing
+- 🤝: Participation in other subteam
+
 ## 2026-03-24
 
 | Name     | Stauts |
@@ -20,15 +29,6 @@ This page is a collection of weekly spotlights that highlight the progress of th
 - Made corrections to the base CAD model.
 - Currently printing the fixed gearboxes for the base motors.
 - Started an initial simulation of the base in Webots instead of Gazebo.
-
-Member status:
-
-- 🔍: Research
-- 💻: Development
-- 📝: Documentation
-- 🔄: Refactoring
-- 🔧: Bug fixing
-- 🤝: Participation in other subteam
 
 ## 2026-03-10
 
