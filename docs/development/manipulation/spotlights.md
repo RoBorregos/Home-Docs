@@ -11,6 +11,45 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-03-24
+
+| Name     | Status     |
+| -------- | ------     |
+| Domínguez|  💻    |
+| Ale G.   |  🤝   | 
+| Fernando |  💻        |
+| Luis     |  💻       |
+| Emil     |  💻     |
+| Paola    |       |
+| Hector   |  💻     |
+| Efrain   |  💻     |
+
+**Done:**
+
+| Owners | Task |
+|------|------|
+| Emil 💻| Throw trash and feature to drop objects on top of any other known object using its point cloud |
+| Fernando 💻 | Integration of “go to hand” into the task manager with vision hand detection and transforms between ZED and robot frames (working in HRIC task).
+| Efrain 💻| Advanced in PR requirements and changes |
+| Luis 💻| Add dishwasher placement. |
+| Dominguez 💻| Right implementation of vamp with boxes published |
+| Dominguez 💻| First test of the Pick and Place Task Manager |
+
+**In Progress:**
+
+| Owners | Task |
+|------|------|
+| Dominguez 💻| Developing collision avoidance with the octomap |
+| Dominguez 💻| Improving the pick cutlery logic |
+| Dominguez 💻| Pick and Place Task Manager improvements |
+| Luis 💻| Move follow face node. Test pour manager. |
+| Emil 💻| Development on the grasp of handles (Specifically for laundry basket) with initial approach for lifting  |
+| Hector 💻| Development on the open door task |
+| Efrain 💻| Test the point cloud in mujoco and its interaction with the pick |
+| Fernando 💻 | Fix plane collision (it generates rotation) |
+| Fernando 💻 | Search for a bag pose for navigation while holding a bag in the gripper |
+| Fernando 💻 | Open container? |
+
 ## 2026-03-10
 
 | Name     | Status     |
