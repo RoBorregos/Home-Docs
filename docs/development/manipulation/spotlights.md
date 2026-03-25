@@ -32,7 +32,7 @@ Member status:
 | Fernando 💻 | Integration of “go to hand” into the task manager with vision hand detection and transforms between ZED and robot frames (working in HRIC task).
 | Efrain 💻| Advanced in PR requirements and changes |
 | Hector 💻| Explain advances | 
-| Luis 💻| Explain advances |
+| Luis 💻| Add dishwasher placement. |
 | Dominguez 💻| Right implementation of vamp with boxes published |
 | Dominguez 💻| First test of the Pick and Place Task Manager |
 
@@ -43,7 +43,7 @@ Member status:
 | Dominguez 💻| Developing collision avoidance with the octomap |
 | Dominguez 💻| Improving the pick cutlery logic |
 | Dominguez 💻| Pick and Place Task Manager improvements |
-| Luis 💻| explain |
+| Luis 💻| Move follow face node. Test pour manager. |
 | Emil 💻| explain |
 | Hector 💻| Development on the open door task |
 | Efrain 💻| Test the point cloud in mujoco and its interaction with the pick |
