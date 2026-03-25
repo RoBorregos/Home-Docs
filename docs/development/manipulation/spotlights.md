@@ -28,7 +28,7 @@ Member status:
 
 | Owners | Task |
 |------|------|
-| Emil 💻| Throw trash  (explain) |
+| Emil 💻| Throw trash and feature to drop objects on top of any other known object using its point cloud |
 | Fernando 💻 | Integration of “go to hand” into the task manager with vision hand detection and transforms between ZED and robot frames (working in HRIC task).
 | Efrain 💻| Advanced in PR requirements and changes |
 | Hector 💻| Explain advances | 
@@ -44,7 +44,7 @@ Member status:
 | Dominguez 💻| Improving the pick cutlery logic |
 | Dominguez 💻| Pick and Place Task Manager improvements |
 | Luis 💻| Move follow face node. Test pour manager. |
-| Emil 💻| explain |
+| Emil 💻| Development on the grasp of handles (Specifically for laundry basket) with initial approach for lifting  |
 | Hector 💻| Development on the open door task |
 | Efrain 💻| Test the point cloud in mujoco and its interaction with the pick |
 | Fernando 💻 | Fix plane collision (it generates rotation) |
