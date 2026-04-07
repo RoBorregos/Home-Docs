@@ -10,6 +10,41 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-04-07
+
+| Name     | Stauts |
+| -------- | ------ |
+| Fregoso |    🤝  |
+| Ximena |   💻  |
+| Roger   |    💻   |
+| Jordan  |   💻|
+| Samuel |   🤝  
+| Daniel hinojosa |   💻  |
+| Justino |  💻  |
+| Ale G. |  💻  |
+| Ian |  💻  |
+
+**Done:**
+- Provisional assembly of the omni base.
+
+![Provisional Base](../../assets/development/omnibase/BaseProvisional.jpeg)
+
+- Moving the omni base using ROS Twist.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0czr85DVt5A" title="Omnibase Twist Control" frameborder="0" allowfullscreen></iframe>
+
+- Moving the base using a mecanum base simulation with Nav.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GDL1n9IslLY" title="Mecanum Base Simulation with Nav" frameborder="0" allowfullscreen></iframe>
+
+**Development**:
+- Final assembly of the omni base.
+- Start implementing odometry using the IMU (yet to arrive).
+- Tune PI control within each ODrive for each motor.
+- Check current consumption under load.
+- Development of the base PCBs.
+- Both C1 LiDARs have been ordered.
+
 ## 2026-03-24
 
 | Name     | Stauts |
