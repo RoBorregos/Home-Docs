@@ -11,6 +11,26 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-04-07
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Fregoso   | 💻     |
+| Domínguez | 💻     |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Development**
+
+- Enabled bluetooth speaker.
+- Improved argument parsing for run.sh scripts.
+- Improved Roudi.
+- Added colors for task manager logs.
+- Moved non node scripts to be available globally.
+
 ## 2026-03-10
 
 | Name      | Status |
