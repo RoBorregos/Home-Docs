@@ -28,7 +28,6 @@ Member status:
 
 | Owners | Task |
 |------|------|
-
 | Efrain 💻| SImulation with MoveIt Implementation|
 | Luis 💻|  |
 | Dominguez 💻| Get the grasp_detector information from the custom gripper for grasp feedback |
