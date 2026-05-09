@@ -5,6 +5,7 @@
 ### Object Detector (Trained Model) - Emi
 - Objects specified in the rulebook  
 - Objects given in competition  
+- Trash (light): detector can mark objects as trash via category mapping (`SetTrashCategory` + `frida_constants/data/objects.json`).
 
 ### Object Detector (Meta) - Joce
 - Potentially new objects (other tools)  
