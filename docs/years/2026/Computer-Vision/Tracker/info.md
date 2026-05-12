@@ -1,6 +1,5 @@
 # Tracker Node — Person Tracking with DeepSORT + ReID
 
-**Contributors:** Hector Tovar, Juan Pablo Gutierrez
 **Source file:** `vision/packages/vision_general/scripts/tracker_node.py`
 **Base algorithm:** [Deep SORT](https://github.com/nwojke/deep_sort) — Simple Online and Realtime Tracking with a Deep Association Metric
 
