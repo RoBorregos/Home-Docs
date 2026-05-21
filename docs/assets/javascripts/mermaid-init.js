@@ -46,8 +46,7 @@
     var dragging = false, lastX = 0, lastY = 0;
 
     // RAF-throttle transform writes. We mutate scale/tx/ty freely but
-    // only flush to the DOM once per animation frame. This keeps wheel
-    // and mousemove handlers from triggering 60+ style recalcs per second.
+    // only flush to the DOM once per animation frame.
     var transformPending = false;
     function applyTransform() {
       if (transformPending) return;
@@ -55,12 +54,29 @@
       requestAnimationFrame(function () {
         transformPending = false;
         if (currentMoved) {
-          // translate3d() forces a GPU compositor layer — much cheaper
-          // for repeated transform updates than the 2D translate() form.
           currentMoved.style.transform =
             "translate3d(" + tx + "px," + ty + "px,0) scale(" + scale + ")";
         }
       });
+    }
+
+    // Crisp-vs-fast trade-off:
+    //   * With `will-change: transform` the browser pre-rasterizes the
+    //     element at its natural size and lets the GPU composite scale
+    //     it. Fast but blurry at high scale (bilinear filtering).
+    //   * Without it, the browser re-rasterizes the SVG on every transform
+    //     change. Crisp (SVG is vector) but slow on rapid input.
+    // We get both by toggling: enable it while the user is interacting
+    // (wheel/drag) and remove it after a short idle so the browser
+    // re-rasterizes the diagram at the final scale — crisp result.
+    var crispTimer = null;
+    function bumpInteractive() {
+      if (!currentMoved) return;
+      currentMoved.style.willChange = "transform";
+      clearTimeout(crispTimer);
+      crispTimer = setTimeout(function () {
+        if (currentMoved) currentMoved.style.willChange = "";
+      }, 180);
     }
     function close() {
       overlay.classList.remove("rb-lb-open");
@@ -98,6 +114,7 @@
       // → zoom IN. Scroll DOWN → zoom OUT.
       var factor = Math.exp(-e.deltaY * 0.0025);
       scale = Math.min(20, Math.max(0.1, scale * factor));
+      bumpInteractive();
       applyTransform();
     }, { passive: false });
     overlay.addEventListener("mousedown", function (e) {
@@ -106,6 +123,7 @@
       dragging = true;
       lastX = e.clientX; lastY = e.clientY;
       stage.style.cursor = "grabbing";
+      bumpInteractive();
       e.preventDefault();
     });
     document.addEventListener("mousemove", function (e) {
@@ -113,6 +131,7 @@
       tx += e.clientX - lastX;
       ty += e.clientY - lastY;
       lastX = e.clientX; lastY = e.clientY;
+      bumpInteractive();
       applyTransform();
     });
     document.addEventListener("mouseup", function () {
@@ -143,14 +162,15 @@
     mermaidDiv.parentNode.replaceChild(ph, mermaidDiv);
 
     // Style the diagram for the lightbox: it keeps its intrinsic size,
-    // but we apply a transform that scales/translates inside the stage.
-    // willChange + an initial translate3d() prime the GPU compositor
-    // layer so the first wheel event isn't slow from layer promotion.
+    // and we apply a transform that scales/translates inside the stage.
+    // No `will-change: transform` here — that would force the browser
+    // to pre-rasterize at natural size and bilinear-scale to the target
+    // (blur). bumpInteractive() turns it on only during wheel/drag and
+    // releases it after 180ms idle so the SVG re-rasterizes crisp at
+    // the final scale.
     mermaidDiv.style.cursor = "grab";
     mermaidDiv.style.transformOrigin = "center center";
     mermaidDiv.style.display = "block";
-    mermaidDiv.style.willChange = "transform";
-    mermaidDiv.style.transform = "translate3d(0,0,0) scale(1)";
     stage.appendChild(mermaidDiv);
     currentMoved = mermaidDiv;
     currentPlaceholder = ph;
