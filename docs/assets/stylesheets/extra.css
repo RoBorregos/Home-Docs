@@ -528,8 +528,9 @@ button:focus,
 #rb-mermaid-lightbox {
   position: fixed;
   inset: 0;
-  background: rgba(11, 22, 48, 0.92);
-  backdrop-filter: blur(6px);
+  /* Solid backdrop (more opaque) instead of backdrop-filter: blur(...) —
+     blur compositor work hurts wheel-zoom framerate significantly. */
+  background: rgba(7, 16, 35, 0.96);
   z-index: 99999;
   display: none;
   align-items: center;
@@ -537,6 +538,8 @@ button:focus,
   padding: 32px 48px 56px;
   box-sizing: border-box;
   opacity: 1;
+  /* Isolate from the rest of the page to skip layout/paint propagation. */
+  contain: layout style paint;
 }
 
 #rb-mermaid-lightbox.rb-lb-open {
@@ -565,15 +568,22 @@ button:focus,
   box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
 }
 
-/* The cloned content (SVG or div). max-width / max-height keep it
-   within the modal; transform-origin so wheel-zoom centers correctly. */
+/* The moved diagram (or any other content placed in the stage).
+   - max-width / max-height keep it inside the modal.
+   - transform-origin: center so wheel zoom centers correctly.
+   - NO CSS transition — wheel events already drive the transform from
+     JS at full RAF rate; layering a 0.08s ease on top causes the
+     compositor to interpolate every frame, killing zoom responsiveness.
+   - will-change + translateZ promote the element to its own GPU layer
+     so scale/translate operations bypass the main-thread paint cycle. */
 #rb-mermaid-lightbox .rb-lb-stage > * {
   max-width: 100%;
   max-height: 100%;
   width: auto;
   height: auto;
   transform-origin: center center;
-  transition: transform 0.08s ease-out;
+  transition: none;
+  will-change: transform;
   pointer-events: auto;
 }
 

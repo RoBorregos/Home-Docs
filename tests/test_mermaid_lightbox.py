@@ -143,6 +143,9 @@ def run() -> int:
               ov.dispatchEvent(new WheelEvent('wheel', { deltaY: -200, bubbles: true, cancelable: true }));
             }"""
         )
+        # RAF-batched write — wait one animation frame for the transform
+        # to be flushed to the DOM.
+        page.wait_for_timeout(50)
         post = page.evaluate(
             "() => { var el = document.querySelector('#rb-mermaid-lightbox .rb-lb-stage div.mermaid');"
             "        return el ? el.style.transform : null; }"

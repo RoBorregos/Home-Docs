@@ -45,20 +45,35 @@
     var scale = 1, tx = 0, ty = 0;
     var dragging = false, lastX = 0, lastY = 0;
 
+    // RAF-throttle transform writes. We mutate scale/tx/ty freely but
+    // only flush to the DOM once per animation frame. This keeps wheel
+    // and mousemove handlers from triggering 60+ style recalcs per second.
+    var transformPending = false;
     function applyTransform() {
-      if (currentMoved) {
-        currentMoved.style.transform =
-          "translate(" + tx + "px," + ty + "px) scale(" + scale + ")";
-      }
+      if (transformPending) return;
+      transformPending = true;
+      requestAnimationFrame(function () {
+        transformPending = false;
+        if (currentMoved) {
+          // translate3d() forces a GPU compositor layer — much cheaper
+          // for repeated transform updates than the 2D translate() form.
+          currentMoved.style.transform =
+            "translate3d(" + tx + "px," + ty + "px,0) scale(" + scale + ")";
+        }
+      });
     }
     function close() {
       overlay.classList.remove("rb-lb-open");
-      // Move the diagram back to its original spot.
+      // Move the diagram back and clear ALL inline styles we applied
+      // (including will-change, so the browser releases the GPU layer).
       if (currentMoved && currentPlaceholder) {
         currentMoved.style.transform = "";
         currentMoved.style.maxWidth = "";
         currentMoved.style.maxHeight = "";
         currentMoved.style.cursor = "";
+        currentMoved.style.willChange = "";
+        currentMoved.style.transformOrigin = "";
+        currentMoved.style.display = "";
         currentPlaceholder.parentNode.replaceChild(currentMoved, currentPlaceholder);
       }
       currentMoved = null;
@@ -128,10 +143,14 @@
     mermaidDiv.parentNode.replaceChild(ph, mermaidDiv);
 
     // Style the diagram for the lightbox: it keeps its intrinsic size,
-    // but we apply a transform: scale() that fills the stage.
+    // but we apply a transform that scales/translates inside the stage.
+    // willChange + an initial translate3d() prime the GPU compositor
+    // layer so the first wheel event isn't slow from layer promotion.
     mermaidDiv.style.cursor = "grab";
     mermaidDiv.style.transformOrigin = "center center";
     mermaidDiv.style.display = "block";
+    mermaidDiv.style.willChange = "transform";
+    mermaidDiv.style.transform = "translate3d(0,0,0) scale(1)";
     stage.appendChild(mermaidDiv);
     currentMoved = mermaidDiv;
     currentPlaceholder = ph;
