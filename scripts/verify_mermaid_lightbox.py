@@ -1,18 +1,32 @@
 """End-to-end verification of the Mermaid badge + lightbox.
 
-Material puts the rendered SVG inside a CLOSED shadow root attached
-to <div class="mermaid">. Our JS:
-  1. Wraps each .mermaid div + a badge in a sibling-based .rb-mermaid-wrap
-  2. On click, MOVES the .mermaid div into the lightbox stage
-  3. On close, moves it back into its placeholder
+This is a MANUAL verification script — it is intentionally not under
+tests/ because it requires playwright + chromium (~150 MB) which we do
+not want to install in CI.
 
-So the verification is:
-  * After Material renders, .mermaid divs have non-zero size (shadow OK)
-  * Each .mermaid is wrapped in .rb-mermaid-wrap with a badge sibling
-  * Click badge → lightbox opens, .mermaid moves into stage,
-    placeholder takes its place in the article
-  * Wheel scroll transforms the moved .mermaid
-  * Escape closes, moves diagram back
+How to run it:
+
+  # one-time setup
+  python3 -m venv /tmp/rb-pw
+  /tmp/rb-pw/bin/pip install playwright
+  /tmp/rb-pw/bin/playwright install chromium
+
+  # in one terminal:
+  mkdocs serve --dev-addr 127.0.0.1:8765 --no-livereload
+
+  # in another:
+  /tmp/rb-pw/bin/python scripts/verify_mermaid_lightbox.py
+
+The script asserts that:
+  * After Material renders, .mermaid divs have non-zero size (shadow OK).
+  * Each .mermaid is wrapped in .rb-mermaid-wrap with a badge sibling.
+  * Click badge → lightbox opens, .mermaid moves into stage, placeholder
+    takes its place in the article.
+  * Wheel scroll transforms the moved .mermaid.
+  * Escape closes, moves diagram back.
+
+Screenshots of the open + zoomed lightbox are saved to
+/tmp/rb-mermaid-screens/ for visual review.
 """
 import sys
 from pathlib import Path
