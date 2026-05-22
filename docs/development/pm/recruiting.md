@@ -65,19 +65,22 @@ gantt
 !!! info "Dates are approximate"
     Exact dates are set by RoBorregos every year and announced on the team's main channels. Confirm with the general PMs as soon as you start your cycle.
 
-## Criteria to accept (or not) someone in Home
+## Signals to read when assessing a candidate
 
-Home expects more autonomy than juniors. Before accepting, check that the candidate:
+Home does not have a formal acceptance test. There are no hard requirements like "X hours per week" or "must know ROS". What follows are **signals a PM can use** to spot whether a candidate will fit, based on past experience. None of them are deal-breakers on their own.
 
-| Question | Why it matters |
+| Signal | Why it helps you read the fit |
 |---|---|
-| Are they comfortable in a Linux terminal? | The stack runs on Ubuntu and Docker. Without Linux, the first two weeks are pure frustration. |
-| Can they program in Python or C++? | All project code is one of those. If not, they should be willing to learn one in the first few weeks. |
-| Are they willing to learn on their own? | Home requires self-driven learning. If they expect a step-by-step tutorial for everything, they will not fit. |
-| Can they commit at least 10 hours per week? | Active areas need that minimum to make real progress. |
-| Is it a problem that you do not know them personally? | Knowing the candidate from a previous team can help, but it can also bias your reading. Notice the bias. |
+| Comfort in a Linux terminal | The stack runs on Ubuntu and Docker. Without Linux, the first weeks are slow. Not a blocker if they want to learn. |
+| Programming experience in Python or C++ | All project code is in one of those. If they have neither, ask if they are interested in learning. |
+| Self-driven learning attitude | Home does not give step-by-step tutorials. If they expect one, the gap shows up by week three. |
+| Personal projects, hackathons, side experiments | A strong signal that they will keep going when something does not work the first try. |
+| You did not know them personally before | Sometimes useful (less bias), sometimes harder (no track record). Notice the asymmetry. |
 
-These are not formal team criteria. They are **signals you learn to read as a PM**. When in doubt, schedule a short interview before making the assignment official.
+These are **heuristics, not gatekeeping criteria**. Use them in a short conversation with the candidate, not as a checklist.
+
+!!! info "Home recruiting needs a real process"
+    Today's reality: Home does not have a formal recruiting funnel. We rely on the global RoBorregos call + word of mouth + reading signals like the ones above. **This is one of the areas where future PMs should invest**. A short intake questionnaire (background, motivation, time commitment, prior experience), plus a single structured conversation, would go a long way. The signals above are a starting point for that questionnaire when someone gets to it.
 
 ## Common recruiting mistakes
 

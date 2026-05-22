@@ -61,7 +61,16 @@ This section is the operational manual for the Project Managers (PMs) of the @Ho
 
 ## How the PM team is organized
 
-Home has **two general PMs** and **one PM per area** (Manipulation, Vision, Navigation, HRI, Mechanics, Electronics).
+Home has **two general PMs** and **one PM per area**. The areas as of this writing are:
+
+- Manipulation
+- Vision
+- Navigation
+- HRI
+- Mechanics
+- Electronics
+- Integration
+- Omnibase (mobile base)
 
 ```mermaid
 flowchart TB
@@ -74,6 +83,8 @@ flowchart TB
     PMH["HRI PM"]
     PMMec["Mechanics PM"]
     PMElec["Electronics PM"]
+    PMI["Integration PM"]
+    PMO["Omnibase PM"]
 
     Pres --> PMG
     Pres --> Fin
@@ -83,6 +94,8 @@ flowchart TB
     PMG --> PMH
     PMG --> PMMec
     PMG --> PMElec
+    PMG --> PMI
+    PMG --> PMO
 
     style Pres fill:#0b2545,color:#fff
     style PMG fill:#1e88e5,color:#fff
