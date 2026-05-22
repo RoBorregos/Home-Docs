@@ -10,14 +10,16 @@ The PM's rhythm is measured weekly and yearly. The week is built from meetings t
 
 Home runs **four distinct meetings every week**. None of them are optional. The cadence is what keeps the team synchronized and the spotlights alive.
 
+!!! tip "About meeting length"
+    Durations vary. The recommendation from past PMs is to keep regular meetings **under one hour**. The exception is a *work meeting*, where the team sits together to align on details and push work forward in a short time. Those can justify running longer because they replace a chunk of asynchronous work.
+
 ### 1. Home general meeting
 
 | | |
 |---|---|
 | **Attendees** | All Home members, general PMs, area PMs |
 | **Facilitator** | General PMs |
-| **Duration** | 60 to 90 minutes |
-| **Frequency** | Once a week, fixed day |
+| **Frequency** | Once a week |
 
 Each area PM presents the area's spotlight: what they did, what is in progress, what is blocking them. This is the moment where cross-area dependencies surface in real time.
 
@@ -30,8 +32,7 @@ Each area PM presents the area's spotlight: what they did, what is in progress, 
 |---|---|
 | **Attendees** | Area PM and area members |
 | **Facilitator** | Area PM |
-| **Duration** | 45 to 60 minutes |
-| **Frequency** | Once a week, different day from the general meeting |
+| **Frequency** | Once a week, on a different day than the general meeting |
 
 This is where work actually gets assigned, technical questions get resolved, and the area's spotlight gets written. The general meeting is the summary; the area meeting is where the real work happens.
 
@@ -48,7 +49,6 @@ Suggested agenda:
 |---|---|
 | **Attendees** | General PMs and area PMs |
 | **Facilitator** | General PMs |
-| **Duration** | About 45 minutes |
 | **Frequency** | Once a week |
 
 No regular members. This is where we discuss:
@@ -64,8 +64,7 @@ No regular members. This is where we discuss:
 |---|---|
 | **Attendees** | Home general PMs, leads of Home Maze, Soccer, etc., RoBorregos team president |
 | **Facilitator** | RoBorregos team president |
-| **Duration** | 45 to 60 minutes |
-| **Frequency** | Weekly or every two weeks |
+| **Frequency** | Set by the team president (confirm with them) |
 
 This meeting coordinates across sister competitions: shared budget, team events, press, sponsor visits. Only the general PMs attend (not the area PMs).
 
