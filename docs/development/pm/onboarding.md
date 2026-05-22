@@ -72,7 +72,7 @@ Be honest with them: getting comfortable with these tools takes time and they wi
 | This documentation | [home-docs](https://github.com/RoBorregos/Home-Docs) | All PMs |
 | Project repo | [home2](https://github.com/RoBorregos/home2) | The whole team |
 | Active member roster by area | Form / sheet in the RoBorregos Drive | General PM |
-| Per-area team chat channel | (varies by area) | Area PM |
+| Per-area WhatsApp / Teams channel | (varies by area) | Area PM |
 
 ## Common mistakes
 

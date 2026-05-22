@@ -13,7 +13,7 @@ There are two sides to a handoff: what you write down once at the end, and the o
 
 ## End-of-cycle checklist
 
-Before stepping down, leave the following in a place the next PM can find on day one (a shared Drive folder or a private repo works; do not leave it only in a chat thread or in your personal notes).
+Before stepping down, leave the following in a place the next PM can find on day one (a shared Drive folder or a private repo works; do not leave it only on WhatsApp or in your personal notes).
 
 ### System state
 
@@ -54,7 +54,7 @@ This is the part that gets forgotten and hurts the most. The new PM should not b
 - [ ] **Communication channels**: any admin role you held on the team's chat channels.
 
 !!! warning "Do not share passwords directly"
-    Use the team's password manager or rotate the credential and share through a secure channel. Passwords sent on a chat thread or by email stay in those channels forever.
+    Use the team's password manager or rotate the credential and share through a secure channel. Passwords sent on WhatsApp or by email stay in those channels forever.
 
 ## Habits during the year
 

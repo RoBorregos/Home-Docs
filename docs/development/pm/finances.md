@@ -30,7 +30,7 @@ flowchart LR
     - Defend the case to the president.
     - Keep a spending log.
 
-    Even when the purchase feels urgent, push it through the channel. If it really is urgent, ping the general PM through the team chat so they see it immediately.
+    Even when the purchase feels urgent, push it through the channel. If it really is urgent, ping the general PM on the team WhatsApp so they see it immediately.
 
 ## Step-by-step request
 
@@ -99,6 +99,9 @@ What this means as a PM:
 - **The hard part**: until the team qualifies and until member selection is done, you do not know exactly who is flying. Buying flights before that is risky (cancellation fees, refund rules). Buying after qualification is safer but more expensive.
 
 There is no clean fix for this trade-off. Use whatever sponsor commitment you have to absorb the risk where you can.
+
+!!! tip "Aim for the early RoBoCup call"
+    Targeting the early call (TDP due around November 30, qualification announced late December) makes everything below easier. The earlier the team is officially qualified, the earlier you can buy flights at lower prices and the sharper your sponsor pitch gets: instead of *"we are working toward the international"*, it becomes *"we are going to the international and we need help paying for it"*. See the [cadence page](cadence.md#robocup-home-call-deadlines) for the call windows.
 
 ## Transparent member selection for the international
 

@@ -117,8 +117,8 @@ flowchart TB
       to them; if the issue grows, escalate to the team president.
     - Approve requests from area PMs (especially purchases) before
       pushing them up to the president.
-    - Coordinate with the leads of sister competitions (Home Maze,
-      Soccer, and others) in the cross-competition meeting.
+    - Coordinate with the leads of the other RoBorregos competitions
+      in the cross-competition meeting.
 
 === "Area PMs"
 
@@ -157,7 +157,7 @@ This applies to purchases, serious issues with a member, sponsor outreach, schol
 
 | Term | Meaning |
 |---|---|
-| **RoBorregos** | Robotics team representing Tec de Monterrey campus Monterrey. Home is one of its competitions; sister competitions include Home Maze, Soccer, and others. |
+| **RoBorregos** | Robotics team representing Tec de Monterrey campus Monterrey. Home is one of several competitions the team participates in. |
 | **FRIDA** | Home's robot (Friendly Robotic Interactive Domestic Assistant). |
 | **Advanced candidate** | RoBorregos applicant who joined with prior experience. Usually goes straight into Home. |
 | **Beginner candidate** | Applicant with no prior experience. Usually starts in juniors. If they no longer qualify for juniors by age, they often end up in Home. |

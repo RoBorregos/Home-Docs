@@ -10,6 +10,8 @@ The PM's rhythm is measured weekly and yearly. The week is built from meetings t
 
 Home runs **four distinct meetings every week**. None of them are optional. The cadence is what keeps the team synchronized and the spotlights alive.
 
+The team uses **Microsoft Teams** for meetings and **WhatsApp** (the team's community group) for everything else.
+
 !!! tip "About meeting length"
     Durations vary. The recommendation from past PMs is to keep regular meetings **under one hour**. The exception is a *work meeting*, where the team sits together to align on details and push work forward in a short time. Those can justify running longer because they replace a chunk of asynchronous work.
 
@@ -62,7 +64,7 @@ No regular members. This is where we discuss:
 
 | | |
 |---|---|
-| **Attendees** | Home general PMs, leads of Home Maze, Soccer, etc., RoBorregos team president |
+| **Attendees** | Home general PMs, leads of the other RoBorregos competitions, RoBorregos team president |
 | **Facilitator** | RoBorregos team president |
 | **Frequency** | Set by the team president (confirm with them) |
 
@@ -110,15 +112,14 @@ Two patterns both work. Each area picks the one that fits.
 
 === "Pattern B. Members write their own"
 
-    Each member writes their own bullets (in the team chat, in a
-    Google Doc, or directly in the PR). The PM consolidates and
-    publishes.
+    Each member writes their own bullets (in WhatsApp, in a Google
+    Doc, or directly in the PR). The PM consolidates and publishes.
 
     **Pro**: distributes the work; members get used to documenting.
     **Con**: inconsistent style; the PM has to edit.
 
 !!! tip "Recommendation"
-    Use a mix. Ask members to send you one to three bullets through whatever team chat you use at the end of their area meeting. You consolidate and publish. It takes ten minutes, spreads the work, and the members' bullets show up in the repo (which motivates them).
+    Use a mix. Ask members to send you one to three bullets through the team WhatsApp at the end of their area meeting. You consolidate and publish. It takes ten minutes, spreads the work, and the members' bullets show up in the repo (which motivates them).
 
 ### When to publish
 
@@ -198,6 +199,14 @@ The official source is [athome.robocup.org/call-for-participation](https://athom
 | Qualification announcement | Dec 23, 2025 | Mar 6, 2026 |
 | Participation confirmation | Jan 23, 2026 | Apr 6, 2026 |
 
+!!! tip "Home's default is to target the early call"
+    Aim for the **early call** (TDP and qualification material due around November 30). Qualifying early lets the team:
+
+    - Buy flights and components well in advance, while they are cheaper.
+    - Use "we have qualified for the international competition" as concrete leverage in sponsor conversations, instead of "we are hoping to qualify".
+
+    The late call (February deadline) exists as a fallback. Treat it as the safety net, not the default plan.
+
 ### TMR (around April)
 
 The national competition. Exact date varies year to year, but it has happened in April in recent cycles. Confirm the current year's date with the general PMs.
@@ -221,7 +230,7 @@ The yearly paper that documents Home's system. It is a required deliverable for 
 
 - **Structure**: each area writes its section. The length is whatever the call requires that year.
 - **Lead**: general PMs coordinate; area PMs write their sections.
-- **Timing**: pick the call you are targeting and work back from there. For the early call the TDP is due Nov 30; for the late call it is due Feb 10.
+- **Timing**: aim for the **early call** (TDP due around Nov 30). That gives the team a qualified status by late December, which unlocks earlier flight bookings and stronger sponsor conversations. If the early call slips, the late call (TDP due around Feb 10) is the fallback.
 - **Where to submit**: through the upload portal on the [RoboCup @Home Call for Participation page](https://athome.robocup.org/call-for-participation/).
 
 ### Demos and presentations
