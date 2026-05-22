@@ -13,7 +13,7 @@ There are two sides to a handoff: what you write down once at the end, and the o
 
 ## End-of-cycle checklist
 
-Before stepping down, leave the following in a place the next PM can find on day one (a shared Drive folder or a private repo works; do not use Slack or your personal notes).
+Before stepping down, leave the following in a place the next PM can find on day one (a shared Drive folder or a private repo works; do not leave it only in a chat thread or in your personal notes).
 
 ### System state
 
@@ -25,21 +25,21 @@ Before stepping down, leave the following in a place the next PM can find on day
 
 ### Priorities for the next cycle
 
-- [ ] **Top three problems** to solve next, in order. Be specific. Not "improve manipulation" but "make pick-cutlery reliable above 80%".
+- [ ] **Top three problems** to solve next, in order. Be specific. Not "improve area X" but a concrete, measurable target.
 - [ ] **What you would NOT recommend** to start. Things that look tempting but cost more than they yield. Spend a paragraph on each so the next PM avoids the trap.
 - [ ] **Risks for the next TMR / RoboCup** that you see today. Even rough ones.
 
 ### Key contacts
 
-A simple sheet with name, role, when to contact, how. Examples:
+A simple sheet with name, role, when to contact, and how. Fill it in with the real people the next PM will need.
 
 | Name | Role | Reach out for | Channel |
 |---|---|---|---|
-| Dr. X | Academic advisor | Research questions, paper review, scholarships | Email |
-| (sponsor name) | Hardware sponsor | Donations, equipment loans | LinkedIn / email |
-| (RoBorregos pres.) | Team president | Escalations, budget, cross-competition issues | Slack |
-| (RoBorregos fin.) | Finance officer | Reimbursements, purchases, travel | Email |
-| (Active members) | By area | Technical questions per area | Slack channels |
+| _(academic advisor)_ | Academic advisor | Research questions, paper review, scholarships | |
+| _(sponsor representative)_ | Sponsor | Donations, equipment loans, sponsor visits | |
+| _(team president)_ | RoBorregos team president | Escalations, budget, cross-competition issues | |
+| _(finance officer)_ | RoBorregos finance officer | Reimbursements, purchases, travel | |
+| _(active members per area)_ | By area | Technical questions per area | |
 
 ### Accounts, permissions, credentials
 
@@ -50,11 +50,11 @@ This is the part that gets forgotten and hurts the most. The new PM should not b
 - [ ] **Shared Drive** folders (Tec, RoBorregos, area-specific).
 - [ ] **Overleaf** (TDP document, paper drafts).
 - [ ] **Sponsor accounts** if applicable (vendor portals, etc.).
-- [ ] **Robot lab access**: door, locker, drawer keys, hardware sign-out sheet.
-- [ ] **Communication channels**: Slack workspace admin role if you held it, WhatsApp group admin, etc.
+- [ ] **Robot lab access**: whatever the team uses to enter and store hardware (door access, locker, key, sign-out sheet).
+- [ ] **Communication channels**: any admin role you held on the team's chat channels.
 
 !!! warning "Do not share passwords directly"
-    Use the team's password manager or rotate the credential and share through a secure channel. Passwords sent on Slack or email stay in those channels forever.
+    Use the team's password manager or rotate the credential and share through a secure channel. Passwords sent on a chat thread or by email stay in those channels forever.
 
 ## Habits during the year
 
@@ -64,7 +64,7 @@ The handoff is easier if you do these things continuously, not the night before 
 - **Keep the spending log up to date** (see [Finances](finances.md#tracking-and-traceability)). At the end of the year you have the data for the TDP without scrambling.
 - **Maintain the active member roster**. Add joiners; mark people who left and when.
 - **Keep the cross-area dependency sheet** (see [Planning](planning.md#1-make-cross-area-dependencies-visible)). The next PM sees what shape the cross-area situation was in.
-- **Write the TDP early**. November to January is the right window. If you wait, it eats your March (which is feature-freeze time).
+- **Write the TDP early**. Work back from the RoBoCup @Home submission deadline you are targeting (see the [call windows](cadence.md#robocup-home-call-deadlines)). If you wait, TDP work eats into the weeks closest to TMR, which is the worst possible time.
 
 ## People management during your cycle
 
@@ -73,8 +73,8 @@ This is part of the role and gets less attention than it deserves. The pattern t
 ### When a member is not delivering
 
 1. **Talk 1:1 first**. Privately, no public callouts. Ask what is going on; sometimes it is a bad month at school, sometimes the task was unclear, sometimes the member quietly checked out. Listen first, react second.
-2. **Agree on a concrete commitment**. Not "do more"; something like "next Friday have task X open as a PR." Concrete enough that both of you know what success looks like.
-3. **If the pattern continues for two to three weeks**, escalate to a general PM. Bring data (which tasks, when, what was committed).
+2. **Agree on a concrete commitment**. Not "do more", but something specific that both of you understand as success.
+3. **If the pattern continues**, escalate to a general PM. Bring data (which tasks, when, what was committed). How long you wait before escalating is your judgment, but do not let it ride for months.
 4. **Do not let it ride**. If you say nothing, the other members notice. The implicit message is "you can stop delivering and nothing happens", and the rest of the team disengages too.
 
 ### When a member leaves

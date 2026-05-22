@@ -30,7 +30,7 @@ flowchart LR
     - Defend the case to the president.
     - Keep a spending log.
 
-    Even when the purchase feels urgent, push it through the channel. If it really is urgent, ping the general PM on Slack so they see it immediately.
+    Even when the purchase feels urgent, push it through the channel. If it really is urgent, ping the general PM through the team chat so they see it immediately.
 
 ## Step-by-step request
 
@@ -130,12 +130,11 @@ Some purchases (especially large ones) can come in as a **donation from a sponso
 
 ## Tracking and traceability
 
-As a general PM, keep a **spending log** for the whole year:
+As a general PM, keep a **spending log** for the whole year. A simple sheet works; what matters is that the columns let you answer the questions below.
 
 | Date | Area | Item | Amount | Status | Reason |
 |---|---|---|---|---|---|
-| 2026-02-15 | Manipulation | Custom gripper finger x 2 | $1,500 | Received | TMR2025 wear replacement |
-| 2026-03-01 | Vision | GigE industrial camera | $25,000 | Pending | ZED replacement for reflective scenes |
+| _(fill in for each purchase as it happens)_ | | | | | |
 
 This is useful for:
 

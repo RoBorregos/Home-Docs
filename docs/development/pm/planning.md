@@ -41,14 +41,14 @@ If those dependencies are not **listed somewhere** and **reviewed weekly**, area
 
 ### 2. Estimate in "person-weeks", not "calendar weeks"
 
-A calendar week is **not** a work week for a member. The average Home member contributes 8 to 15 hours per week. A 40-hour task is therefore **three to five calendar weeks of that person**, not one.
+A calendar week is **not** a work week for a member. Home members are students with classes, midterms, and other commitments. A task that would take one full work week consumes several calendar weeks of any single member.
 
-**Recommendation**: when you estimate, write "**3 person-weeks of Fulano**" instead of "3 weeks". When midterms hit, or Semana Tec, or holidays, the person-weeks do not advance. The calendar weeks do.
+**Recommendation**: when you estimate, write the estimate as person-weeks of a specific member, not raw weeks. When midterms hit, or Semana Tec, or holidays, the person-weeks do not advance, but the calendar weeks do.
 
 ```
 Task: Pick refactor
-Estimate: 4 person-weeks of Domínguez (about 60 hours)
-Realistic calendar: 6 to 8 calendar weeks (includes Semana Tec + midterm)
+Estimate: ~4 person-weeks of the assigned member
+Realistic calendar: noticeably longer, factor in Semana Tec, midterms, holidays
 ```
 
 If a task needs two people from different areas, it does not get twice as fast. Coordination has a cost, and neither of them is at 100%.
@@ -126,7 +126,7 @@ What was built in phase 1 needs to connect across areas. **This is when the cros
 
 ### Phase 3. Polish (also called "feature freeze")
 
-Some weeks before TMR (the exact number is your call, four to six is a common guess), the team should stop merging new functionality and switch to:
+Some weeks before TMR (the exact number is your call), the team should stop merging new functionality and switch to:
 
 - Bug fixes.
 - End-to-end scenario tests.

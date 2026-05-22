@@ -15,28 +15,24 @@ Onboarding in Home has **two phases**: a general meeting run by the general PMs 
 **When:** first Home meeting after applications close.
 **Attendees:** all new members, every area PM, both general PMs.
 
-### Typical agenda (about 90 min)
+### Typical agenda
 
-1. **Welcome and Home vision** (15 min).
+The four parts below are what the meeting should cover. Times depend on how many new members and how many areas present that year; keep the whole thing under an hour when possible (the [Cadence page](cadence.md) describes the meeting-length rule in more detail).
+
+1. **Welcome and Home vision.**
     - What @Home means inside RoBorregos and RoboCup.
     - What the robot is (FRIDA) and what it does.
-    - Macro calendar for the year: TMR (April / May), RoboCup (June / July), demos.
+    - Macro calendar for the year: TMR (around April), RoboCup (the international competition, dates vary by year), demos.
 
-2. **Each area presents** (about 8 min each, six areas = 48 min).
-    - The area PM explains:
-        - What the area does (what technical problem it solves).
-        - Sub-areas they work on and who is active there.
-        - What they look for in new members.
-        - Tutorial and tooling recommendations to start studying (videos, codelabs, books).
+2. **Each area presents.** Home has eight areas, so this is the longest part. For each area, the PM explains:
+    - What the area does (what technical problem it solves).
+    - Sub-areas they work on and who is active there.
+    - What they look for in new members.
+    - Tutorials and tools to start studying (videos, codelabs, books).
 
-3. **Area assignment** (15 min).
-    - New members pick an area. Many include a second and third choice in case the first one is full.
-    - General PMs validate and break ties.
+3. **Area assignment.** New members pick an area. Many include a second and third choice in case the first one is full. The general PMs validate the assignment and break ties.
 
-4. **Closing and next steps** (10 min).
-    - Remind everyone that per-area onboarding starts the following week.
-    - Restate the expectation of self-driven learning.
-    - Show where the documentation lives (this site, Home-Docs).
+4. **Closing and next steps.** Remind everyone that per-area onboarding starts the following week, restate that Home is self-directed, and show where the documentation lives (this site, Home-Docs).
 
 !!! tip "Half the value is the tutorial recommendations"
     The new member does not know what to study first. If your area uses ROS 2, recommend it explicitly: *"start with the official ROS 2 Humble tutorials, then come back to us."* Without that, they will stare at code for two weeks and learn nothing.
@@ -55,17 +51,19 @@ After the general meeting, **the area PM takes over** the new members assigned t
 
 ### For members without technical background { #for-members-without-technical-background }
 
-Some members land in Home because they no longer qualify for juniors by age (see [Recruiting](recruiting.md#2-beginners-who-outgrew-juniors)). These members usually need an extra two or three weeks before touching the area stack:
+Some members land in Home because they no longer qualify for juniors by age (see [Recruiting](recruiting.md#2-beginners-who-outgrew-juniors)). These members usually need extra time before touching the area stack while they learn the basic tools.
 
-| If they don't know... | Recommend first |
+The table below is a **starting list of public resources** that have worked for past members, not an official Home curriculum. Use whatever fits the area best.
+
+| If they don't know... | Public starting point |
 |---|---|
-| Linux / terminal | [The Missing Semester (MIT)](https://missing.csail.mit.edu/), first four lessons. |
-| Python | [Python official tutorial](https://docs.python.org/3/tutorial/) plus a tiny personal project. |
-| Git | [Pro Git book](https://git-scm.com/book/en/v2), first three chapters. |
-| Docker | [Docker getting started](https://docs.docker.com/get-started/), sections 1 to 4. |
-| ROS 2 | [ROS 2 Humble tutorials](https://docs.ros.org/en/humble/Tutorials.html): `Beginner: CLI tools` and `Beginner: Client libraries`. |
+| Linux / terminal | [The Missing Semester (MIT)](https://missing.csail.mit.edu/) |
+| Python | [Python official tutorial](https://docs.python.org/3/tutorial/) |
+| Git | [Pro Git book](https://git-scm.com/book/en/v2) |
+| Docker | [Docker getting started](https://docs.docker.com/get-started/) |
+| ROS 2 | [ROS 2 Humble tutorials](https://docs.ros.org/en/humble/Tutorials.html) |
 
-Be honest with them: "You will spend two weeks on tools before touching our code. It is normal and expected."
+Be honest with them: getting comfortable with these tools takes time and they will spend the first weeks on them before touching the project's code. It is normal and expected.
 
 ## What to publish and where
 
@@ -74,7 +72,7 @@ Be honest with them: "You will spend two weeks on tools before touching our code
 | This documentation | [home-docs](https://github.com/RoBorregos/Home-Docs) | All PMs |
 | Project repo | [home2](https://github.com/RoBorregos/home2) | The whole team |
 | Active member roster by area | Form / sheet in the RoBorregos Drive | General PM |
-| Per-area Slack / WhatsApp channel | (varies by area) | Area PM |
+| Per-area team chat channel | (varies by area) | Area PM |
 
 ## Common mistakes
 

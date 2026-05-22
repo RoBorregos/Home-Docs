@@ -110,14 +110,15 @@ Two patterns both work. Each area picks the one that fits.
 
 === "Pattern B. Members write their own"
 
-    Each member writes their own bullets (in Slack, in a Google Doc,
-    or directly in the PR). The PM consolidates and publishes.
+    Each member writes their own bullets (in the team chat, in a
+    Google Doc, or directly in the PR). The PM consolidates and
+    publishes.
 
     **Pro**: distributes the work; members get used to documenting.
     **Con**: inconsistent style; the PM has to edit.
 
 !!! tip "Recommendation"
-    Use a mix. Ask members to send you one to three bullets in Slack at the end of their area meeting. You consolidate and publish. It takes ten minutes, spreads the work, and the members' bullets show up in the repo (which motivates them).
+    Use a mix. Ask members to send you one to three bullets through whatever team chat you use at the end of their area meeting. You consolidate and publish. It takes ten minutes, spreads the work, and the members' bullets show up in the repo (which motivates them).
 
 ### When to publish
 

@@ -19,7 +19,7 @@ Every year RoBorregos runs an internal call that splits applicants into **beginn
 
 ### 2. Beginners who outgrew juniors
 
-Some beginner candidates are accepted into RoBorregos but **no longer qualify for junior categories by age** (FLL, FTC, WRO, etc.). Those members often land in Home because Home is one of the few RoBorregos competitions with no junior age cap.
+Some beginner candidates are accepted into RoBorregos but **no longer qualify for junior categories by age**. Those members often land in Home because Home is one of the few RoBorregos competitions with no junior age cap.
 
 These members usually need **more technical onboarding** than advanced candidates. They might have no exposure to Linux, ROS, or Docker. Plan for that from the start (see [Onboarding](onboarding.md)).
 
@@ -40,7 +40,7 @@ As a PM, your responsibilities around the form are:
     - How many members you start the cycle with.
     - Which advanced candidates self-selected into Home.
     - Which members are migrating from juniors.
-- [ ] **Talk 1:1 with each advanced candidate** to confirm interest and give them a small technical task as a smoke test.
+- [ ] **Talk 1:1 with each advanced candidate** to confirm interest and to start scoping where in Home they would fit best.
 - [ ] **For beginners who ended up in Home** by the age path, plan their [extended onboarding](onboarding.md#for-members-without-technical-background) during the first week.
 
 ## When each intake path opens
@@ -97,6 +97,6 @@ These are **heuristics, not gatekeeping criteria**. Use them in a short conversa
 ## Common recruiting mistakes
 
 - Accepting every applicant without filtering. Leads to demotivated members by week four.
-- Not reaching out to advanced candidates fast enough. Another competition (Soccer, Maze) takes them if Home is slow.
+- Not reaching out to advanced candidates fast enough. Another competition takes them if Home is slow.
 - Forgetting the junior-migration window. Members who hit one year in RoBorregos are ripe, but you need to go get them.
 - Not coordinating Home's presence on the global form with the general PMs. If your competition is not listed, no one applies.
