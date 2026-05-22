@@ -25,13 +25,13 @@ These members usually need **more technical onboarding** than advanced candidate
 
 ### 3. Internal migration from juniors
 
-Members who joined RoBorregos as juniors and competed in a junior competition can, **one year later**, decide they no longer want to keep doing juniors. At that point they can migrate to Home.
+After **TMR** (April), members who competed in junior competitions and decided not to continue into the international can switch to a different competition. Home is one of the options they can pick.
 
 This path tends to produce the most committed members. They have already spent a year inside RoBorregos and know the culture. But you need to find them actively; they do not show up by themselves.
 
-## The team census form
+## The team selection form
 
-When RoBorregos publishes the **global team spotlight** (not Home's, the one that covers every competition), it should include a **form for interested members to apply to next year's competitions**. That form is the way to keep a roster of who belongs to which competition.
+When the **global RoBorregos spotlight** is published (the one that covers every competition, not Home's), it includes a **form where interested members declare which competition they want to apply to next year**. That form is what gives the team a roster of who belongs where.
 
 As a PM, your responsibilities around the form are:
 
@@ -45,25 +45,36 @@ As a PM, your responsibilities around the form are:
 
 ## When each intake path opens
 
+The dates below are taken from the 2025 cycle. They are approximate and can shift year to year. Confirm with the general PMs at the start of your cycle.
+
 ```mermaid
 gantt
-    title Approximate RoBorregos recruiting calendar
+    title Recruiting calendar (approximate, based on the 2025 cycle)
     dateFormat YYYY-MM-DD
     axisFormat %b
-    section RoBorregos global
-    Beginner call : 2026-08-15, 2026-09-30
-    Advanced call : 2026-08-15, 2026-09-15
-    Global team census form : milestone, 2026-10-01, 0d
+
+    section Candidates (RoBorregos-wide)
+    Initial meeting (beginners + advanced kickoff) : milestone, 2025-08-25, 0d
+    Candidates event                               : 2025-08-25, 2025-10-31
+    Selection of accepted candidates               : 2025-10-31, 2025-11-15
+
     section Home
-    Filter candidates and reach out : 2026-09-15, 2026-10-15
-    General welcome meeting : milestone, 2026-10-05, 0d
-    Per-area onboarding : 2026-10-05, 2026-10-25
+    Welcoming meeting                              : milestone, 2025-11-15, 0d
+    Per-area onboarding (timing varies by area PM) : 2025-11-15, 2026-01-15
+
     section Junior migration
-    Migration window (post junior comps) : 2026-05-01, 2026-08-01
+    TMR (junior competitions end here)             : milestone, 2025-04-30, 0d
+    Migration window opens                         : 2025-04-30, 2025-08-25
 ```
 
-!!! info "Dates are approximate"
-    Exact dates are set by RoBorregos every year and announced on the team's main channels. Confirm with the general PMs as soon as you start your cycle.
+What each item means:
+
+- **Candidates kickoff (late August).** Single initial meeting at the start of the August semester. Both beginner and advanced candidates attend.
+- **Candidates event.** The full RoBorregos onboarding-and-evaluation period for new applicants. In 2025 the last day was Halloween (October 31).
+- **Selection.** Roughly two weeks after the event ends, accepted candidates are confirmed.
+- **Welcoming meeting (mid November).** First meeting where the accepted candidates meet their team. For Home this is the [Phase 1 onboarding](onboarding.md#phase-1-general-welcome-meeting).
+- **Per-area onboarding.** The area PM takes over their assigned members. There is no fixed schedule; it depends on the area.
+- **Junior migration window (post TMR).** After TMR finishes (April), junior members who decided not to continue into the international can switch competitions. Home is one of the options.
 
 ## Signals to read when assessing a candidate
 
@@ -71,6 +82,7 @@ Home does not have a formal acceptance test. There are no hard requirements like
 
 | Signal | Why it helps you read the fit |
 |---|---|
+| Real willingness to commit to the cycle | The cycle is several months long. Home does not work with members who are enthusiastic for two weeks and disengage by November. Look for someone who understands that the competition is a real time investment, without putting a specific hour count on it. |
 | Comfort in a Linux terminal | The stack runs on Ubuntu and Docker. Without Linux, the first weeks are slow. Not a blocker if they want to learn. |
 | Programming experience in Python or C++ | All project code is in one of those. If they have neither, ask if they are interested in learning. |
 | Self-driven learning attitude | Home does not give step-by-step tutorials. If they expect one, the gap shows up by week three. |

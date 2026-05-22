@@ -149,68 +149,85 @@ Emojis next to the owner: 💻 development, 📝 docs, 🔍 research, 🔧 bug f
 
 ## Yearly calendar
 
-These are the big milestones a Home PM should plan around.
+The big milestones a Home PM has to plan around. Dates below are taken from the 2025-2026 cycle. Confirm the current year's dates on the [RoboCup @Home Call for Participation page](https://athome.robocup.org/call-for-participation/).
 
 ```mermaid
 gantt
-    title Typical Home year
+    title Yearly calendar (based on the 2025-2026 cycle)
     dateFormat YYYY-MM-DD
     axisFormat %b
 
-    section Recruiting
-    RoBorregos call : 2026-08-15, 2026-09-30
-    Per-area onboarding : 2026-10-01, 2026-10-30
+    section Recruiting + onboarding
+    Candidates event              : 2025-08-25, 2025-10-31
+    Selection + welcoming         : 2025-10-31, 2025-11-15
+    Per-area onboarding (varies)  : 2025-11-15, 2026-01-15
 
-    section TDP
-    Initial TDP draft : 2026-11-01, 2027-01-15
-    Review and submit : 2027-01-15, 2027-02-15
+    section RoboCup early call
+    Call published                : milestone, 2025-10-07, 0d
+    Intention deadline            : milestone, 2025-10-31, 0d
+    TDP / video / website         : milestone, 2025-11-30, 0d
+    Qualification announcement    : milestone, 2025-12-23, 0d
+    Participation confirmation    : milestone, 2026-01-23, 0d
+
+    section RoboCup late call
+    Call published                : milestone, 2026-01-09, 0d
+    Intention deadline            : milestone, 2026-02-03, 0d
+    TDP / video / website         : milestone, 2026-02-10, 0d
+    Qualification announcement    : milestone, 2026-03-06, 0d
+    Participation confirmation    : milestone, 2026-04-06, 0d
 
     section Competitions
-    Intermediate demo (sponsors / school) : milestone, 2027-03-15, 0d
-    TMR (Torneo Mexicano de Robótica) : crit, 2027-04-15, 2027-04-30
-    RoboCup (if qualified) : crit, 2027-07-01, 2027-07-15
+    TMR (national, around April)  : crit, 2026-04-01, 2026-04-30
+    Junior migration window opens : milestone, 2026-04-30, 0d
+    RoboCup 2026                  : crit, 2026-06-30, 2026-07-06
 
-    section Misc
-    Migration from juniors : 2027-05-15, 2027-08-01
-    Handoff to next PM : milestone, 2027-08-01, 0d
+    section Ongoing
+    Saturday demos                : 2025-11-15, 2026-07-06
+    PM handoff (before they leave): milestone, 2026-08-01, 0d
 ```
 
-### TMR (April / May)
+### RoboCup @Home call deadlines
 
-The national competition. It is the critical deadline of the first semester. For PMs:
+The official source is [athome.robocup.org/call-for-participation](https://athome.robocup.org/call-for-participation/). There are typically two windows; teams aim for whichever fits their TDP readiness.
 
-- **Three months out**: feature freeze. Only bug fixes and polish.
-- **Six weeks out**: cross-area integration is mandatory. Every area tests with the others.
-- **Two weeks out**: tests in the closest possible match to the real arena.
-- **One week out**: logistics (travel, lodging, hardware, spare parts).
+| Stage | Early call | Late call |
+|---|---|---|
+| Call for Participation published | Oct 7, 2025 | Jan 9, 2026 |
+| Submission of participation intention | Oct 31, 2025 | Feb 3, 2026 |
+| Submission of qualification material (TDP, video, website) | Nov 30, 2025 | Feb 10, 2026 |
+| Qualification announcement | Dec 23, 2025 | Mar 6, 2026 |
+| Participation confirmation | Jan 23, 2026 | Apr 6, 2026 |
 
-!!! warning "If you do not qualify at TMR, you do not go to RoboCup"
-    TMR is the filter for RoboCup. If your team does not show up in good shape, RoboCup is cancelled. Do not push features two weeks before TMR.
+### TMR (around April)
 
-### RoboCup (June / July)
+The national competition. Exact date varies year to year, but it has happened in April in recent cycles. Confirm the current year's date with the general PMs.
 
-The international competition. Only if you qualified at TMR. It requires:
+For PMs the rule of thumb is: anything that lands in the last few weeks before TMR has to be a bug fix or a polish, not a new feature. Pushing a new feature two weeks before the competition is the most common cause of avoidable failures.
 
-- **International logistics** (visas, flights, lodging). Plan three months ahead.
-- **Submitted TDP**. It has its own deadline before RoboCup.
-- **Hardware packed and checked twice** before the trip.
+### RoboCup 2026
+
+In **2026 the dates are June 30 to July 6**. The location and exact schedule are published on the [RoboCup site](https://2026.robocup.org/).
+
+To attend the international competition the team has to qualify by submitting the **TDP, team video, and team website** by the deadline of either the early or late RoboCup @Home call (see the table above). Once qualified, the team needs to confirm participation by the corresponding date and then plan travel.
+
+For PMs:
+
+- **International logistics** (visas, flights, lodging) take months. Start them as soon as qualification is announced (December for the early call, March for the late call).
+- **Hardware packed and inspected twice** before the trip. Pack spares.
 
 ### TDP (Team Description Paper)
 
-The yearly paper that documents Home's system. It is a required deliverable for RoboCup (no TDP means no competing).
+The yearly paper that documents Home's system. It is a required deliverable for RoboCup; without it you do not qualify.
 
-- **Typical structure**: each area writes its section. Total length is around four to eight pages.
+- **Structure**: each area writes its section. The length is whatever the call requires that year.
 - **Lead**: general PMs coordinate; area PMs write their sections.
-- **Timing**: initial draft in November, review and submit in January or February.
-- **Where**: shared Overleaf (the account lives with the general PMs).
+- **Timing**: pick the call you are targeting and work back from there. For the early call the TDP is due Nov 30; for the late call it is due Feb 10.
+- **Where to submit**: through the upload portal on the [RoboCup @Home Call for Participation page](https://athome.robocup.org/call-for-participation/).
 
 ### Demos and presentations
 
-Demos happen throughout the year, for several audiences:
+The team runs **demos on Saturdays**. The reason is practical: on weekdays the lab tends to be busy and not clean enough to set up the task scenarios properly. Saturday gives space and quiet to run a real end-to-end demo without people bumping into the robot.
 
-- **Sponsors**: keep the funding rolling.
-- **Tec / school**: internal visibility, scholarships, internal budget.
-- **Advanced candidates**: attract talent.
-- **Tec internal press**: visibility every time there is a milestone.
+Demos happen for several audiences over the year (sponsors, the school, advanced candidates, internal press). The exact schedule of who comes to which Saturday is coordinated with the general PMs and the team president.
 
-As a PM you should **always have a demo-ready version of the robot**. That is what communicates progress to the outside. Keep a working version separate from the actively-developed one.
+As a PM you should **always have a demo-ready version of the robot**. That is what communicates progress to the outside. Keep a working version separate from the one that is actively in development.

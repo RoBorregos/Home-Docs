@@ -8,6 +8,9 @@ When your cycle ends, the next PM walks in cold. Whatever does not get written d
 
 There are two sides to a handoff: what you write down once at the end, and the ongoing habits during the year that make the final handoff easier. Both matter.
 
+!!! info "When does the handoff happen?"
+    There is no fixed date. The rule of thumb is **before the current PMs leave**: whatever your reason for stepping down (graduating, lab change, life), make sure the next PM is identified and you have a few weeks of overlap with them. A handoff written the day you leave is a handoff your replacement cannot ask questions about.
+
 ## End-of-cycle checklist
 
 Before stepping down, leave the following in a place the next PM can find on day one (a shared Drive folder or a private repo works; do not use Slack or your personal notes).
