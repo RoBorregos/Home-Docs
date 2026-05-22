@@ -10,8 +10,10 @@ A roster of who is in each PM role right now. When a PM hands off, the new perso
 
 | Name | Role |
 |---|---|
-| José Luis Domínguez Morales | General PM (also area PM for Manipulation) |
+| José Luis Domínguez Morales | General PM |
 | Alejandro González Escamilla | General PM |
+
+A general PM can also hold an area PM seat. Look at the area table below to see who covers what.
 
 ## Current area PMs
 
@@ -23,7 +25,7 @@ Each area PM should fill in their own entry below as part of taking the role.
 | Vision | _(to be filled in by the current PM)_ | |
 | Navigation | _(to be filled in by the current PM)_ | |
 | HRI | _(to be filled in by the current PM)_ | |
-| Mechanics | _(to be filled in by the current PM)_ | |
+| Mechanics | Alejandro González Escamilla | _(fill in)_ |
 | Electronics | _(to be filled in by the current PM)_ | |
 | Integration | _(to be filled in by the current PM)_ | |
 | Omnibase | _(to be filled in by the current PM)_ | |
