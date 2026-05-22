@@ -15,54 +15,54 @@ Member-status legend used inline:
 
 **Done:**
 
-- **Efrain** 💻 — Simulation with MoveIt implementation.
-- **Domínguez** 💻 — Get the `grasp_detector` information from the custom gripper for grasp feedback.
-- **Domínguez** 💻 — Pour refactor for object-already-grasped flow.
-- **Domínguez** 💻 — Improve picks.
-- **Domínguez** 💻 — Workflow to ensure `xarm_ros2` integrity.
-- **Domínguez** 💻 — IKFast analytical IK plugin for xArm 6.
+- **Efrain** 💻, Simulation with MoveIt implementation.
+- **Domínguez** 💻, Get the `grasp_detector` information from the custom gripper for grasp feedback.
+- **Domínguez** 💻, Pour refactor for object-already-grasped flow.
+- **Domínguez** 💻, Improve picks.
+- **Domínguez** 💻, Workflow to ensure `xarm_ros2` integrity.
+- **Domínguez** 💻, IKFast analytical IK plugin for xArm 6.
 
 **In Progress:**
 
-- **Domínguez** 💻 — Dense cloud database integration with the grasp detector.
-- **Domínguez** 💻 — Manipulation pipeline optimization.
-- **Domínguez** 💻 — Testing the Pick & Place Challenge.
-- **Domínguez** 💻 — Apply grasp-feedback logic in the manipulation pipeline.
-- **Efrain** 💻 — Connecting the MuJoCo simulation with the rest of the nodes.
+- **Domínguez** 💻, Dense cloud database integration with the grasp detector.
+- **Domínguez** 💻, Manipulation pipeline optimization.
+- **Domínguez** 💻, Testing the Pick & Place Challenge.
+- **Domínguez** 💻, Apply grasp-feedback logic in the manipulation pipeline.
+- **Efrain** 💻, Connecting the MuJoCo simulation with the rest of the nodes.
 
 ## 2026-03-24
 
 **Done:**
 
-- **Emil** 💻 — Throw-trash + drop-on-top-of-any-known-object using its point cloud.
-- **Fernando** 💻 — Integrate "go to hand" into the task manager with vision hand detection and ZED ↔ robot transforms (HRIC task).
-- **Efrain** 💻 — Advanced PR requirements and review changes.
-- **Luis** 💻 — Add dishwasher placement.
-- **Domínguez** 💻 — Correct implementation of VAMP with boxes published.
-- **Domínguez** 💻 — First test of the Pick & Place Task Manager.
+- **Emil** 💻, Throw-trash + drop-on-top-of-any-known-object using its point cloud.
+- **Fernando** 💻, Integrate "go to hand" into the task manager with vision hand detection and ZED ↔ robot transforms (HRIC task).
+- **Efrain** 💻, Advanced PR requirements and review changes.
+- **Luis** 💻, Add dishwasher placement.
+- **Domínguez** 💻, Correct implementation of VAMP with boxes published.
+- **Domínguez** 💻, First test of the Pick & Place Task Manager.
 
 **In Progress:**
 
-- **Domínguez** 💻 — Collision avoidance with the octomap.
-- **Domínguez** 💻 — Improve the pick-cutlery logic.
-- **Domínguez** 💻 — Pick & Place Task Manager improvements.
-- **Luis** 💻 — Move follow-face node. Test pour manager.
-- **Emil** 💻 — Grasp of handles (laundry basket) with initial lift approach.
-- **Hector** 💻 — Open-door task.
-- **Efrain** 💻 — Test the point cloud in MuJoCo and its interaction with the pick.
-- **Fernando** 💻 — Fix plane collision (it generates rotation).
-- **Fernando** 💻 — Search for a bag pose for navigation while holding a bag in the gripper.
-- **Fernando** 💻 — Open container.
+- **Domínguez** 💻, Collision avoidance with the octomap.
+- **Domínguez** 💻, Improve the pick-cutlery logic.
+- **Domínguez** 💻, Pick & Place Task Manager improvements.
+- **Luis** 💻, Move follow-face node. Test pour manager.
+- **Emil** 💻, Grasp of handles (laundry basket) with initial lift approach.
+- **Hector** 💻, Open-door task.
+- **Efrain** 💻, Test the point cloud in MuJoCo and its interaction with the pick.
+- **Fernando** 💻, Fix plane collision (it generates rotation).
+- **Fernando** 💻, Search for a bag pose for navigation while holding a bag in the gripper.
+- **Fernando** 💻, Open container.
 
 ## 2026-03-10
 
 **Done:**
 
-- **Domínguez** 💻 — Pick cutlery.
-- **Hector** 💻 — Follow hand for grasping bag.
-- **Emil** 💻 — Place on top of object.
-- **Fernando** 💻 — Go-to-hand and move-to-point action servers for HRIC "pick bag".
-- **Efrain** 💻 — MuJoCo: fix gripper control via `xarm_service`.
+- **Domínguez** 💻, Pick cutlery.
+- **Hector** 💻, Follow hand for grasping bag.
+- **Emil** 💻, Place on top of object.
+- **Fernando** 💻, Go-to-hand and move-to-point action servers for HRIC "pick bag".
+- **Efrain** 💻, MuJoCo: fix gripper control via `xarm_service`.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/nkaqR_LuLjs" title="Pick Cutlery" frameborder="0" allowfullscreen></iframe>
 
@@ -74,29 +74,29 @@ Member-status legend used inline:
 
 **In Progress:**
 
-- **Domínguez** 💻 — Test VAMP integration with MoveIt.
-- **Domínguez** 💻 — Test Pick & Place Task Manager.
-- **Luis** 💻 — Test pour; research GraspNet to replace current GPD.
-- **Emil** 💻 — Test "place in trash" / placing on top of trash cans.
+- **Domínguez** 💻, Test VAMP integration with MoveIt.
+- **Domínguez** 💻, Test Pick & Place Task Manager.
+- **Luis** 💻, Test pour; research GraspNet to replace current GPD.
+- **Emil** 💻, Test "place in trash" / placing on top of trash cans.
 
 ## 2026-03-03
 
 **Done:**
 
-- **Domínguez** 💻 — Place bag on the floor.
-- **Domínguez** 💻 — Import VAMP to MoveIt environment.
+- **Domínguez** 💻, Place bag on the floor.
+- **Domínguez** 💻, Import VAMP to MoveIt environment.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with moveit test" frameborder="0" allowfullscreen></iframe>
 
 **In Progress:**
 
-- **Domínguez** 💻 — Test VAMP integration with MoveIt.
-- **Domínguez** 💻 — Pick & Place Task Manager.
-- **Luis** 💻 — Add interruption when impossible paths are found; reduce planning attempts.
-- **Emil** 💻 — Place on top of objects (max-Z + centroid for trash place); controllers in Webots.
-- **Hector** 💻 — Follow hand for grasping bag.
-- **Efrain** 💻 — MuJoCo: fix gripper control via `xarm_service`.
-- **Fernando** 💻 — Go-to-hand + move-to-point action servers for HRIC "pick bag".
+- **Domínguez** 💻, Test VAMP integration with MoveIt.
+- **Domínguez** 💻, Pick & Place Task Manager.
+- **Luis** 💻, Add interruption when impossible paths are found; reduce planning attempts.
+- **Emil** 💻, Place on top of objects (max-Z + centroid for trash place); controllers in Webots.
+- **Hector** 💻, Follow hand for grasping bag.
+- **Efrain** 💻, MuJoCo: fix gripper control via `xarm_service`.
+- **Fernando** 💻, Go-to-hand + move-to-point action servers for HRIC "pick bag".
 
 ## 2026-02-24
 
@@ -104,32 +104,32 @@ Member-status legend used inline:
 
 [![Implementation of ros2_control with mujoco](https://img.youtube.com/vi/iYlQffC8MkQ/0.jpg)](https://www.youtube.com/watch?v=iYlQffC8MkQ)
 
-- **Efrain** 💻 — Fix the gripper joint bug.
-- **Fernando** 💻 — Distance mask: only pick objects within `[min_distance, max_distance]` (MERGED).
+- **Efrain** 💻, Fix the gripper joint bug.
+- **Fernando** 💻, Distance mask: only pick objects within `[min_distance, max_distance]` (MERGED).
 
 **In Progress:**
 
-- **Domínguez** 💻 — Import VAMP to MoveIt environment.
-- **Domínguez** 💻 — Pick & Place Task Manager.
-- **Luis** 💻 — Add interruption when impossible paths are found; reduce planning attempts.
-- **Emil** 💻 — Special-request placing on top of objects (max-Z + centroid for trash place).
-- **Hector** 💻 — Cluster of transparent objects.
-- **Efrain** 💻 — MuJoCo: fix `gripper_finger` joints and actuators for `ros2_control`.
+- **Domínguez** 💻, Import VAMP to MoveIt environment.
+- **Domínguez** 💻, Pick & Place Task Manager.
+- **Luis** 💻, Add interruption when impossible paths are found; reduce planning attempts.
+- **Emil** 💻, Special-request placing on top of objects (max-Z + centroid for trash place).
+- **Hector** 💻, Cluster of transparent objects.
+- **Efrain** 💻, MuJoCo: fix `gripper_finger` joints and actuators for `ros2_control`.
 
 ## 2026-02-17
 
 **Done:**
 
-- **Domínguez, Ale G.** 📝 — Fixed manipulation pages for the TDP 2026 paper.
+- **Domínguez, Ale G.** 📝, Fixed manipulation pages for the TDP 2026 paper.
 
 **In Progress:**
 
-- **Fernando** 💻 — Distance mask: only pick objects within `[min_distance, max_distance]`.
-- **Domínguez** 💻 — Import VAMP to MoveIt environment.
-- **Luis** 💻 — Add interruption when impossible paths are found; reduce planning attempts.
-- **Emil** 💻 — Webots: add gripper, ZED, and xArm controller to FRIDA.
-- **Hector** 💻 — Cluster of transparent objects.
-- **Efrain** 💻 — MuJoCo: add xArm controller and camera.
+- **Fernando** 💻, Distance mask: only pick objects within `[min_distance, max_distance]`.
+- **Domínguez** 💻, Import VAMP to MoveIt environment.
+- **Luis** 💻, Add interruption when impossible paths are found; reduce planning attempts.
+- **Emil** 💻, Webots: add gripper, ZED, and xArm controller to FRIDA.
+- **Hector** 💻, Cluster of transparent objects.
+- **Efrain** 💻, MuJoCo: add xArm controller and camera.
 
 ## 2026-01-29
 
@@ -204,18 +204,18 @@ Member-status legend used inline:
 - Fix octomap logic issues.
 - Handle exceptions in the manipulation pipeline.
 - Implement VAMP in the manipulation pipeline.
-- Simulation: MuJoCo — receptionist environment.
+- Simulation: MuJoCo, receptionist environment.
 
 **Assignments:**
 
-- **Domínguez** — TDP 2026 paper, VAMP integration, MuJoCo environment.
-- **Ale G.** — TDP 2026 paper.
-- **Ricardo** — Follow-face module.
-- **Fernando** — Pick error.
-- **Luis** — Octomap fix, exception handling.
-- **Emil** — TDP 2026 paper, place-trash action.
-- **Paola** — TDP 2026 paper.
-- **Hector** — Detect transparent objects.
+- **Domínguez**, TDP 2026 paper, VAMP integration, MuJoCo environment.
+- **Ale G.**, TDP 2026 paper.
+- **Ricardo**, Follow-face module.
+- **Fernando**, Pick error.
+- **Luis**, Octomap fix, exception handling.
+- **Emil**, TDP 2026 paper, place-trash action.
+- **Paola**, TDP 2026 paper.
+- **Hector**, Detect transparent objects.
 
 ## 2025-11-14
 
@@ -234,17 +234,17 @@ Member-status legend used inline:
 - Fix octomap logic issues.
 - Handle exceptions in the manipulation pipeline.
 - Implement VAMP in the manipulation pipeline.
-- Simulation: MuJoCo — receptionist environment.
+- Simulation: MuJoCo, receptionist environment.
 
 **Assignments:**
 
-- **Domínguez** — TDP 2026 paper, VAMP integration, MuJoCo environment.
-- **Ale G.** — TDP 2026 paper.
-- **Ricardo** — Follow-face module.
-- **Fernando** — Pick error, detect transparent objects.
-- **Luis** — Octomap fix, exception handling.
-- **Emil** — TDP 2026 paper, place-trash action.
-- **Paola** — TDP 2026 paper.
+- **Domínguez**, TDP 2026 paper, VAMP integration, MuJoCo environment.
+- **Ale G.**, TDP 2026 paper.
+- **Ricardo**, Follow-face module.
+- **Fernando**, Pick error, detect transparent objects.
+- **Luis**, Octomap fix, exception handling.
+- **Emil**, TDP 2026 paper, place-trash action.
+- **Paola**, TDP 2026 paper.
 
 ## 2025-11-07
 
@@ -257,7 +257,7 @@ Member-status legend used inline:
 - Stabilize the follow-face module in real time.
 - Implement VAMP in the manipulation pipeline.
 - TDP 2026 paper.
-- Simulation: MuJoCo — receptionist environment.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-10-16
 
@@ -278,7 +278,7 @@ Member-status legend used inline:
 - Stabilize the follow-face module in real time.
 - Implement VAMP in the manipulation pipeline.
 - TDP 2026 paper.
-- Simulation: MuJoCo — receptionist environment.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-10-09
 
@@ -293,7 +293,7 @@ Member-status legend used inline:
 - Unify movement control through ROS only.
 - Stabilize the follow-face module in real time.
 - TDP 2026 paper.
-- Simulation: MuJoCo — receptionist environment.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-10-02
 
@@ -316,7 +316,7 @@ Member-status legend used inline:
 - Stabilize the follow-face module in real time.
 - Remake the follow-person module to improve reliability and accuracy.
 - TDP 2026 paper.
-- Simulation: MuJoCo — receptionist environment.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-09-26
 
@@ -332,11 +332,11 @@ Member-status legend used inline:
 - Stabilize the follow-face module in real time.
 - Remake the follow-person module to improve reliability and accuracy.
 - TDP 2026 paper.
-- Simulation: MuJoCo — add FRIDA URDF, receptionist environment, multi-person sim.
+- Simulation: MuJoCo, add FRIDA URDF, receptionist environment, multi-person sim.
 
 ## 2025-09-18
 
-**News:** new member — Hector Tovar.
+**News:** new member, Hector Tovar.
 
 **Done:**
 
@@ -360,7 +360,7 @@ Member-status legend used inline:
 - Stabilize the follow-face module in real time.
 - Remake the follow-person module to improve reliability and accuracy.
 - TDP 2026 paper.
-- Simulation: MuJoCo — add FRIDA URDF, receptionist environment, multi-person sim.
+- Simulation: MuJoCo, add FRIDA URDF, receptionist environment, multi-person sim.
 
 ## 2025-07-05
 
@@ -375,11 +375,11 @@ Member-status legend used inline:
 
 - Trajectory recording to file.
 - Trajectory projection.
-- Serving cereal on container — real-robot tests.
+- Serving cereal on container, real-robot tests.
 
 ## 2025-06-25
 
-**News:** new members — Paola Llamas and Emil Winkler.
+**News:** new members, Paola Llamas and Emil Winkler.
 
 **Done:**
 
@@ -393,7 +393,7 @@ Member-status legend used inline:
 - Clustering door handles.
 - Serving cereal on container.
 
-## 2025-04-24 — TMR
+## 2025-04-24, TMR
 
 This entry covers the last week of April and developments right before and during TMR 2025.
 
@@ -415,7 +415,7 @@ This entry covers the last week of April and developments right before and durin
 
 - Place pipeline developed:
     - Adaptable to any object size and table height.
-    - Incorporated within the pick code structure and ROS node — easy to use, develop, and scale.
+    - Incorporated within the pick code structure and ROS node, easy to use, develop, and scale.
     - Tested on simulation and real robot.
 - Heatmap extraction for place position (developed for RoboCup 2024 but never used; works far better than the previous KNN clustering).
 
@@ -438,8 +438,8 @@ This entry covers the last week of April and developments right before and durin
 **In Progress:**
 
 - Picking big objects reliably.
-- Storing Groceries — placing on a difficult surface with high collision risk.
-- Plane extraction for the table collision object — tuning for more scenarios.
+- Storing Groceries, placing on a difficult surface with high collision risk.
+- Plane extraction for the table collision object, tuning for more scenarios.
 
 ## 2025-04-10
 
@@ -449,7 +449,7 @@ This entry covers the last week of April and developments right before and durin
 - Fixed transform-time issues when deploying scripts on simulation (e.g. object detector).
 - Integrated the full pick pipeline with the 2D object detector on simulation; refactor for scalability.
 - Tested pipeline on the real robot with the ZED camera:
-    - Sim-to-real was smooth — no logic changes.
+    - Sim-to-real was smooth, no logic changes.
     - Heavy topics moved to *Best Effort* QoS, enabling real-robot tests over Wi-Fi.
     - Robot could not pick due to pending URDF changes.
 - Face follow tested and working.
@@ -478,7 +478,7 @@ This entry covers the last week of April and developments right before and durin
 **In Progress:**
 
 - CuRobo worked on PCs; Orin environment not ready.
-- Listed candidate GPDs; some tested and discarded (e.g. SamsungLabs — picks on unusable poses, ignores gripper geometry).
+- Listed candidate GPDs; some tested and discarded (e.g. SamsungLabs, picks on unusable poses, ignores gripper geometry).
 - Placing-object pipeline advances.
 
 **Notes:** slow week; the @Home manipulation team is known for rising from the ashes like a phoenix.
@@ -491,7 +491,7 @@ This entry covers both weeks from 2025-03-07 to 2025-03-20.
 
 **Done:**
 
-- Successful tests on simulation and real life — zero sim-to-real code changes.
+- Successful tests on simulation and real life, zero sim-to-real code changes.
 - GPD connection to ROS 2.
 - 2D detection handler to ease use of 2D object detection.
 - Documentation on running pick & place methods and all nodes for Receptionist.
@@ -520,9 +520,9 @@ This entry covers both weeks from 2025-03-07 to 2025-03-20.
 
 - Pick server (motion planning to pick objects).
 - Manipulation Core (communicates with detector, GPD, and pick server).
-- Manipulation Server (external interface — task manager ↔ manipulation core).
+- Manipulation Server (external interface, task manager ↔ manipulation core).
 - 2D object detector with 3D point extraction.
-- 3D object extraction — clustering and mesh reconstruction. New method: reconstruct the table as a box and the object as a set of spheres instead of a mesh — accelerates planning.
+- 3D object extraction, clustering and mesh reconstruction. New method: reconstruct the table as a box and the object as a set of spheres instead of a mesh, accelerates planning.
 - Gazebo simulation and MoveIt config ready.
 - Octomap working on ZED input.
 - Pick using 3D object extraction + pick server.
@@ -563,7 +563,7 @@ This entry covers both weeks from 2025-03-07 to 2025-03-20.
 
 ## 2025-02-27
 
-**News:** new team member — Ricardo Guerrero. Team for the Feb–May period (9 members, the largest so far): Iván Romero Wells, José Luis Domínguez, David Vázquez, Alexis Chapa, Alejandro González, Ricardo Guerrero, Gerardo Fregoso, Yair Reyes, Emiliano Flores.
+**News:** new team member, Ricardo Guerrero. Team for the Feb–May period (9 members, the largest so far): Iván Romero Wells, José Luis Domínguez, David Vázquez, Alexis Chapa, Alejandro González, Ricardo Guerrero, Gerardo Fregoso, Yair Reyes, Emiliano Flores.
 
 **Done:**
 

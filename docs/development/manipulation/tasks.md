@@ -7,11 +7,11 @@ title: Running Tasks
 Practical guide to **launching** the manipulation stack and **sending** picks / places / pours. Everything below assumes you have already followed [Setup & Build](setup.md) and you are inside the manipulation container (`./run.sh manipulation`).
 
 !!! abstract "Quickstart"
-    1. `./run.sh vision` *(in another terminal)* — start vision so detections flow.
-    2. `./run.sh manipulation --ppc` — bring up MoveIt + the full pick/place stack.
+    1. `./run.sh vision` *(in another terminal)*, start vision so detections flow.
+    2. `./run.sh manipulation --ppc`, bring up MoveIt + the full pick/place stack.
     3. Place an object on the table.
-    4. `ros2 run pick_and_place keyboard_input.py` — open the interactive picker.
-    5. Type the number of the detection or its label — the robot picks it.
+    4. `ros2 run pick_and_place keyboard_input.py`, open the interactive picker.
+    5. Type the number of the detection or its label, the robot picks it.
 
 ## Launch hierarchy
 
@@ -76,12 +76,12 @@ Each competition task has a one-liner that enters the container and runs the rig
 ./run.sh manipulation --hric            # Human-Robot Interaction Challenge
 ```
 
-Each maps to `ros2 launch manipulation_general <task>.launch.py` — see [`docker/manipulation/run.sh`](https://github.com/RoBorregos/home2/blob/main/docker/manipulation/run.sh) for the exact dispatch.
+Each maps to `ros2 launch manipulation_general <task>.launch.py`, see [`docker/manipulation/run.sh`](https://github.com/RoBorregos/home2/blob/main/docker/manipulation/run.sh) for the exact dispatch.
 
-## First pick — end to end
+## First pick end to end
 
 !!! example "Walkthrough"
-    **1. Make sure vision is up** *(separate container — `./run.sh vision`)*. You need either:
+    **1. Make sure vision is up** *(separate container, `./run.sh vision`)*. You need either:
 
     - `/vision/detection_handler` service (for known objects), or
     - `ZERO_SHOT_DETECTIONS_TOPIC` (for open-set detection).
@@ -106,7 +106,7 @@ Each maps to `ros2 launch manipulation_general <task>.launch.py` — see [`docke
     ros2 run pick_and_place keyboard_input.py
     ```
 
-    **5. Select an object** from the list (or type a label not yet detected — it will be sent regardless).
+    **5. Select an object** from the list (or type a label not yet detected, it will be sent regardless).
 
 If you do not have vision, see [Picking without vision](#picking-without-vision).
 
@@ -140,14 +140,14 @@ q. Quit
 |---|---|---|
 | `1..N` | Pick the *N*-th listed detection. | `ManipulationTask.PICK` |
 | _free text_ | Pick by exact label (even if not yet detected). | `ManipulationTask.PICK` |
-| `-2` | Refresh detections (subscribes for 1 s). | — |
-| `-3` | Place — heatmap chooses the spot. | `ManipulationTask.PLACE` |
-| `-4` | Place on shelf — keeps the octomap, `is_shelf=True`. | `ManipulationTask.PLACE` |
+| `-2` | Refresh detections (subscribes for 1 s). |, |
+| `-3` | Place, heatmap chooses the spot. | `ManipulationTask.PLACE` |
+| `-4` | Place on shelf, keeps the octomap, `is_shelf=True`. | `ManipulationTask.PLACE` |
 | `-5` | Place on shelf at a specific height. | `place_params.table_height` + `table_height_tolerance` |
-| `-6` | Pour — type the object name and bowl name. | `ManipulationTask.POUR` |
+| `-6` | Pour, type the object name and bowl name. | `ManipulationTask.POUR` |
 | `-7` | Place at an RViz "Publish Point" click. | `place_params.forced_pose` |
 | `-8` | Place close to another known object. | `place_params.close_to` |
-| `-9` | Special-request place — `close` / `front` / `back` / `left` / `right`. | `place_params.special_request` (JSON) |
+| `-9` | Special-request place, `close` / `front` / `back` / `left` / `right`. | `place_params.special_request` (JSON) |
 | `-10` | Pour with `object_already_grasped=True`. | `pour_params.object_already_grasped` |
 | `-11` | Pick from a shelf (scans the environment first). | `scan_environment=True` |
 
@@ -196,9 +196,9 @@ For `PLACE`, set `goal.task_type = ManipulationTask.PLACE` and fill `goal.place_
 
 ## Lower-level motion calls
 
-Sometimes you only want to move the arm — no perception, no grasp planning. Use `motion_planning_server` directly.
+Sometimes you only want to move the arm, no perception, no grasp planning. Use `motion_planning_server` directly.
 
-=== "Joint goal — by name"
+=== "Joint goal, by name"
 
     Easiest path, using the Python helper:
 
@@ -212,7 +212,7 @@ Sometimes you only want to move the arm — no perception, no grasp planning. Us
     )
     ```
 
-=== "Joint goal — numeric"
+=== "Joint goal, numeric"
 
     ```python
     from frida_interfaces.action import MoveJoints
@@ -255,7 +255,7 @@ Sometimes you only want to move the arm — no perception, no grasp planning. Us
     open_gripper(client)    # SetBool data=False
     ```
 
-    Service: `/manipulation/gripper/set_state`. Booleans only — the gripper has no force control. `pick_server` detects contact via joint effort in mode 5.
+    Service: `/manipulation/gripper/set_state`. Booleans only, the gripper has no force control. `pick_server` detects contact via joint effort in mode 5.
 
 ### Named joint configurations
 
@@ -264,9 +264,9 @@ Defined in `frida_constants/xarm_configurations.py`. Use by name with `move_join
 | Name | Purpose |
 |---|---|
 | `FRONT_STARE` | Default front-facing pose (HRI, GPSR resting). |
-| `FRONT_LOW_STARE` | Slightly downward — receptionist, presenting. |
-| `TABLE_STARE` | Looks at the table — pick start pose. |
-| `CUTLERY_STARE` | Closer look at the table — pre-cutlery pick. |
+| `FRONT_LOW_STARE` | Slightly downward, receptionist, presenting. |
+| `TABLE_STARE` | Looks at the table, pick start pose. |
+| `CUTLERY_STARE` | Closer look at the table, pre-cutlery pick. |
 | `PICK_STARE_AT_TABLE` | Alternative to `TABLE_STARE` for taller surfaces. |
 | `NAV_POSE` | Compact pose while navigating. |
 | `NAV_CARRY_BAG_POSE` | Compact pose while carrying a bag. |
@@ -288,7 +288,7 @@ Click the cluster in RViz → the server treats that as the object centroid → 
 
 ## Picking cutlery (forks, knives, spoons)
 
-Cutlery uses a different sub-pipeline. **No special flag** — if the requested `object_name` is in `CUTLERY_NAMES = ["fork", "knife", "spoon", "cutlery"]`, `PickManager` automatically takes the cutlery path:
+Cutlery uses a different sub-pipeline. **No special flag**, if the requested `object_name` is in `CUTLERY_NAMES = ["fork", "knife", "spoon", "cutlery"]`, `PickManager` automatically takes the cutlery path:
 
 1. Move to `cutlery_stare`.
 2. Subscribe to `/manipulation/flat_grasp_pose` (`flat_grasp_estimator.py`, top-down PCA-aligned grasp).
@@ -320,13 +320,13 @@ Use `goal.scan_environment = True` (option `-11` in the keyboard tool). This:
 
 Returned grasp will be horizontal if the object pose suggests it (taller than wider).
 
-## Placing — `place_params` field reference
+## Placing, `place_params` field reference
 
 | Field | Meaning |
 |---|---|
 | `is_shelf` | If true, keep the octomap and don't go to `table_stare` first. |
 | `table_height`, `table_height_tolerance` | Override the detected plane height (meters). Useful for fixed shelves. |
-| `close_to` | A known object label — the heatmap will bias the place point near it. |
+| `close_to` | A known object label, the heatmap will bias the place point near it. |
 | `special_request` | JSON, e.g. `{"request":"close_by","object":"box","position":"left"}`. |
 | `forced_pose` | Skip the heatmap entirely and use this pose. |
 
@@ -342,7 +342,7 @@ Two modes:
 
 === "Already grasped"
 
-    `object_already_grasped=True`. Skips the pick — useful when chained from a previous `PICK`.
+    `object_already_grasped=True`. Skips the pick, useful when chained from a previous `PICK`.
 
 !!! info "Upright-pick objects"
     The source object must be in `POUR_OBJECT_NAMES = {"blue_cereal_box", "cereal", "chocomilk_box", "milk"}` to be picked **upright** instead of with GPD's best guess.
@@ -374,13 +374,13 @@ ros2 service call /manipulation/gripper/set_state std_srvs/srv/SetBool "{data: t
 When something goes wrong, walk through this checklist before diving into logs:
 
 ??? question "Did the action even arrive?"
-    `ros2 action info /manipulation/manipulation_action_server` should show your client. If not, you probably imported the wrong constant — make sure you used `MANIPULATION_ACTION_SERVER` from `frida_constants`.
+    `ros2 action info /manipulation/manipulation_action_server` should show your client. If not, you probably imported the wrong constant, make sure you used `MANIPULATION_ACTION_SERVER` from `frida_constants`.
 
 ??? question "Is perception failing?"
     Watch `/manipulation/table_place_point_debug` and the cluster extraction logs. If the cluster is wrong, look at `add_primitives.cpp` parameters. If the plane is tilted, look at `remove_plane.cpp`.
 
 ??? question "GPD returns nothing?"
-    Confirm `gpd_service` is alive (`ros2 node list | grep gpd`). Verify the configured `.cfg` path — the **testing** cfg has higher rejection. Check `/gpd_service` logs for the score distribution.
+    Confirm `gpd_service` is alive (`ros2 node list | grep gpd`). Verify the configured `.cfg` path, the **testing** cfg has higher rejection. Check `/gpd_service` logs for the score distribution.
 
 ??? question "MoveIt fails to plan?"
     The octomap may be polluted by a stale cloud. Clear it:

@@ -7,7 +7,7 @@ title: Packages
 All manipulation code lives in `home2/manipulation/packages/`. This page is a directory of what each package is for, what executables it exposes, and which files you should learn first.
 
 !!! tip "Use this page as a reading map"
-    Start with [`pick_and_place`](#pick_and_place) and [`frida_motion_planning`](#frida_motion_planning) — together they cover ~80 % of day-to-day work. Move to [`perception_3d`](#perception_3d) and [`arm_pkg`](#arm_pkg) for low-level integrations.
+    Start with [`pick_and_place`](#pick_and_place) and [`frida_motion_planning`](#frida_motion_planning), together they cover ~80 % of day-to-day work. Move to [`perception_3d`](#perception_3d) and [`arm_pkg`](#arm_pkg) for low-level integrations.
 
 ## Directory layout
 
@@ -72,9 +72,9 @@ The **central configuration package** for the arm: MoveIt config builder, GPD se
 
     Inside `frida_eigen_params_custom_gripper.cfg`:
 
-    - **`finger_width`**, **`hand_outer_diameter`**, **`hand_depth`** — match the physical gripper geometry.
-    - **`num_samples`**, **`approach_step`** — control GPD's sampling density.
-    - **`min_grasp_score`** — reject low-confidence grasps.
+    - **`finger_width`**, **`hand_outer_diameter`**, **`hand_depth`**, match the physical gripper geometry.
+    - **`num_samples`**, **`approach_step`**, control GPD's sampling density.
+    - **`min_grasp_score`**, reject low-confidence grasps.
 
     Inside `gpd_service.yaml`:
 
@@ -102,7 +102,7 @@ The **heart** of the manipulation area. Owns `ManipulationAction` and all high-l
     ├── launch/pick_and_place.launch.py        ← brings up the full stack
     └── pick_and_place/
         ├── manipulation_core.py               ← ManipulationAction server
-        ├── manipulation_client.py             ← debug — picks at /clicked_point
+        ├── manipulation_client.py             ← debug, picks at /clicked_point
         ├── keyboard_input.py                  ← interactive REPL
         ├── pick_server.py                     ← PickMotion + GoToHand
         ├── place_server.py                    ← PlaceMotion
@@ -127,7 +127,7 @@ The **heart** of the manipulation area. Owns `ManipulationAction` and all high-l
     | `managers/PourManager.py` | Optional pick → bowl detection → tilt sequence. |
     | `pick_server.py` | Approach / descend / grasp / lift. Force-guarded descent for cutlery. |
     | `place_server.py` | Approach / descend / open / detach / lift. |
-    | `keyboard_input.py` | Interactive shell — see [Running Tasks](tasks.md#interactive-keyboard-tool). |
+    | `keyboard_input.py` | Interactive shell, see [Running Tasks](tasks.md#interactive-keyboard-tool). |
 
 See [Architecture → Pick sequence](architecture.md#pick-sequence-diagram) for the runtime flow.
 
@@ -135,7 +135,7 @@ See [Architecture → Pick sequence](architecture.md#pick-sequence-diagram) for 
 
 ## frida_motion_planning { #frida_motion_planning }
 
-Python wrappers around MoveIt 2. Speaks neither to vision nor perception — a pure motion layer.
+Python wrappers around MoveIt 2. Speaks neither to vision nor perception, a pure motion layer.
 
 === "Layout"
 
@@ -287,15 +287,15 @@ Bootstraps MuJoCo with FRIDA. `mujoco_sim_init.launch.py`:
 
 Vendored `ros2_control` plugin that lets MuJoCo expose the same controller interfaces as the real arm. Files of note:
 
-- `mjcf/scene.xml` — the FRIDA scene.
-- `scripts/xacro2mjcf.py`, `scripts/urdf2mjcf.py` — URDF → MJCF conversion.
-- `scripts/run_coacd.py` — convex decomposition of meshes (required for accurate MuJoCo collisions).
+- `mjcf/scene.xml`, the FRIDA scene.
+- `scripts/xacro2mjcf.py`, `scripts/urdf2mjcf.py`, URDF → MJCF conversion.
+- `scripts/run_coacd.py`, convex decomposition of meshes (required for accurate MuJoCo collisions).
 
 ---
 
 ## gpd { #gpd }
 
-The Grasp Pose Detection C++ library — submodule pointing to [RoBorregos/gpd](https://github.com/RoBorregos/gpd) (a fork of [atenpas/gpd](https://github.com/atenpas/gpd)). Built into `/workspace/install/gpd` by `setup_gpd.sh`. Exposed to ROS through `arm_pkg`'s `gpd_service`.
+The Grasp Pose Detection C++ library, submodule pointing to [RoBorregos/gpd](https://github.com/RoBorregos/gpd) (a fork of [atenpas/gpd](https://github.com/atenpas/gpd)). Built into `/workspace/install/gpd` by `setup_gpd.sh`. Exposed to ROS through `arm_pkg`'s `gpd_service`.
 
 ---
 
@@ -317,10 +317,10 @@ Small package with helper launches/utilities specific to our integration (mode s
 
 ## pymoveit2 / frida_pymoveit2 { #frida_pymoveit2 }
 
-- **`pymoveit2`** — upstream Python MoveIt 2 wrapper, vendored.
-- **`frida_pymoveit2`** — our derivative with FRIDA-specific group names, IK frames, and named configurations.
+- **`pymoveit2`**, upstream Python MoveIt 2 wrapper, vendored.
+- **`frida_pymoveit2`**, our derivative with FRIDA-specific group names, IK frames, and named configurations.
 
-When wiring new motion code, prefer `frida_pymoveit2.robots.xarm6` — it has the right defaults. Touch upstream `pymoveit2` only when fixing a real bug.
+When wiring new motion code, prefer `frida_pymoveit2.robots.xarm6`, it has the right defaults. Touch upstream `pymoveit2` only when fixing a real bug.
 
 ---
 
@@ -328,7 +328,7 @@ When wiring new motion code, prefer `frida_pymoveit2.robots.xarm6` — it has th
 
 ```bash
 # In the manipulation container, /workspace
-build                                                # the alias — most common
+build                                                # the alias, most common
 colcon build --symlink-install --packages-select arm_pkg
 colcon build --symlink-install --packages-select pick_and_place
 colcon build --symlink-install --packages-select frida_motion_planning

@@ -4,7 +4,7 @@ title: Setup & Build
 
 # Setup & Build
 
-Every piece of manipulation code runs inside a **Docker container** managed by the top-level `./run.sh` script in [RoBorregos/home2](https://github.com/RoBorregos/home2). The host only needs Docker, Git, and — on a CUDA machine — the NVIDIA Container Toolkit.
+Every piece of manipulation code runs inside a **Docker container** managed by the top-level `./run.sh` script in [RoBorregos/home2](https://github.com/RoBorregos/home2). The host only needs Docker, Git, and, on a CUDA machine, the NVIDIA Container Toolkit.
 
 !!! danger "Do not install ROS / MoveIt / PCL on the host"
     All dependencies live inside the container. Anything you install on the host risks polluting future runs and confusing teammates. If you need a tool, add it to the Dockerfile.
@@ -51,13 +51,13 @@ flowchart LR
     E --> F
     F --> G[Build manipulation image<br/>roborregos/home2:manipulation-cuda]
     G --> H[docker compose up<br/>home2-manipulation]
-    H --> I[docker exec — shell inside container]
+    H --> I[docker exec, shell inside container]
 ```
 
 Inside the container, the entry script sources ROS, the cached `frida_interfaces`, GPD, and the CycloneDDS profile, then drops you at `/workspace`. Subsequent runs reuse the existing container instantly.
 
 !!! info "Bind mounts"
-    Your local working tree is bind-mounted into `/workspace/src`. Edits on the host are visible immediately inside the container — Python changes need no rebuild.
+    Your local working tree is bind-mounted into `/workspace/src`. Edits on the host are visible immediately inside the container, Python changes need no rebuild.
 
 ## Rebuilding
 

@@ -4,7 +4,7 @@ title: Interfaces
 
 # Interfaces
 
-Reference for every `.action`, `.srv`, and `.msg` under `frida_interfaces/manipulation/`. Endpoint names live in [`frida_constants/manipulation_constants.py`](https://github.com/RoBorregos/home2/blob/main/frida_constants/frida_constants/manipulation_constants.py) — always import them, never hard-code.
+Reference for every `.action`, `.srv`, and `.msg` under `frida_interfaces/manipulation/`. Endpoint names live in [`frida_constants/manipulation_constants.py`](https://github.com/RoBorregos/home2/blob/main/frida_constants/frida_constants/manipulation_constants.py), always import them, never hard-code.
 
 !!! abstract "Conventions used below"
     - Each block reproduces the **exact** content of the corresponding `.action`/`.srv`/`.msg` file.
@@ -430,7 +430,7 @@ Published on `/gripper/grasp_state`.
 | Topic | Direction | Purpose |
 |---|---|---|
 | `/manipulation/flat_grasp_pose` | pub: `flat_grasp_estimator` | Live top-down cutlery grasp candidate. |
-| `/gripper/grasp_state` | pub: gripper driver | `GripperGraspState` — has-contact flag. |
+| `/gripper/grasp_state` | pub: gripper driver | `GripperGraspState`, has-contact flag. |
 | `/manipulation/table_place_point_debug` | pub: `heatmap_place_service` | Last place point chosen. |
 | `/manipulation/debug_pose_goal` | pub: `motion_planning_server` | Last pose goal received. |
 | `/manipulator/place_ee_link_pose` | pub: `place_server` | Last EE pose used in a place. |
@@ -443,4 +443,4 @@ Published on `/gripper/grasp_state`.
 | `/filtered_cloud` | filter | MoveIt self-filtered cloud (sim default input). |
 | `/point_cloud` | downsampled | Default input to perception. |
 
-For any name not in this table, grep `frida_constants/manipulation_constants.py` — it is the source of truth.
+For any name not in this table, grep `frida_constants/manipulation_constants.py`, it is the source of truth.
