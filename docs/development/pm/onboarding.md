@@ -43,34 +43,15 @@ Onboarding in Home has **two phases**: a general meeting run by the general PMs 
 
 ## Phase 2. Per-area onboarding (area PM)
 
-After the general meeting, **the area PM takes over** the new members assigned to that area. The goal for this phase is that in **three to four weeks** the member can pick up real tasks.
+After the general meeting, **the area PM takes over** the new members assigned to that area. There is no fixed week-by-week program. The area PM gives the new member progressively harder tasks so they get familiar with the code and the area's conventions on their own. Almost everything else is self-directed.
 
-### Recommended plan
+### What works in practice
 
-=== "Week 1. Setup and orientation"
-
-    1. **Share the area docs**. Point them to this site's pages for your area. For Manipulation: `Development → Manipulation → Setup & Build`.
-    2. **Technical setup**:
-        - Clone the project repo (with `--recursive`).
-        - Install Docker.
-        - Run `./run.sh <area>` for the first time (this can take 30+ minutes on slower hardware).
-        - Confirm they can bring up the basic stack for the area.
-    3. **Code walkthrough**, group or 1:1.
-    4. **Buddy assignment**. A veteran member of the area is their first point of contact. This reduces friction more than anything else.
-
-=== "Week 2. First small task"
-
-    1. Give them a **scoped task** that touches the main flow of the area but with no risk of breaking anything critical. Examples:
-        - **Manipulation**: add a new named pose to `xarm_configurations.py` and try it from `keyboard_input`.
-        - **Vision**: wire an existing detector to the pipeline with a new parameter.
-        - **Navigation**: build a new map or tune planner parameters.
-    2. **Code review** their PR. That first review teaches team conventions.
-
-=== "Weeks 3 and 4. Cross-area task (optional)"
-
-    1. If the member is on track, give them something that requires coordinating with another area (for example vision plus manipulation).
-    2. Bring them to their first **cross-area discussion** so they see how API boundaries get negotiated.
-    3. By the end of week four they should be ready to pull tasks from the backlog without close supervision.
+1. **Point them at the area docs.** This site has pages per area. For Manipulation, send them to `Development → Manipulation → Setup & Build`.
+2. **Get the technical setup working.** Clone the project repo (with `--recursive`), install Docker, run `./run.sh <area>` for the first time (this can take 30+ minutes on slower hardware), confirm they can bring up the basic stack for the area.
+3. **Give them a small task early.** Something like a pose tweak in `xarm_configurations.py` for Manipulation, a flag added to a launch file, a docs update. They touch the code, open a PR, and learn the team's conventions through review.
+4. **Increase complexity gradually.** As they handle the simple tasks well, give them slightly bigger ones that touch more of the area.
+5. **Restate that Home is self-directed.** Home does not run tutorials for every tool. ROS 2, Docker, Linux: those are on them, with the recommendations from the general meeting as the starting point.
 
 ### For members without technical background { #for-members-without-technical-background }
 
@@ -100,5 +81,5 @@ Be honest with them: "You will spend two weeks on tools before touching our code
 - Skipping the general meeting. New members arrive at an area without global context. They do not understand how Home fits inside RoBorregos or RoboCup.
 - Running the general meeting but skipping per-area onboarding. The member floats. They do not even know what to clone.
 - Assuming everyone already knows Docker and ROS 2. If the person comes from juniors or from outside RoBorregos, they probably do not.
-- Not assigning a buddy. The PM cannot be the only point of contact. A veteran absorbs 80% of the technical questions.
-- Expecting results by day 14. A new member is realistically productive around week four in the best case. Plan for that.
+- Not giving them a task in the first weeks. Without something concrete to work on, they lose momentum. The task can be small; the point is they touch the code.
+- Expecting fast results. Home onboarding is self-directed and the first weeks are slow on purpose; that is the cost of the autonomy.

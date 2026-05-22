@@ -7,7 +7,7 @@ title: Overview
 This section is the operational manual for the Project Managers (PMs) of the @Home team. It exists because every new PM re-learns the same lessons by trial and error: recruiting, onboarding, keeping spotlights alive, chasing finances for hardware, and building Gantts that survive past March. The goal is that the next person walking into the role has one place to read that tells them what the job actually is, what cadence to keep, and where everything lives.
 
 !!! tip "If you just became a PM"
-    Read this page, then go in this order: [Cadence](cadence.md), [Onboarding](onboarding.md), [Recruiting](recruiting.md), [Finances](finances.md), [Planning](planning.md), [Handoff](handoff.md).
+    Read this page, check [Current and past PMs](current-pms.md) to know who to contact, then go in this order: [Cadence](cadence.md), [Onboarding](onboarding.md), [Recruiting](recruiting.md), [Finances](finances.md), [Planning](planning.md), [Handoff](handoff.md).
 
 ## What you will find here
 

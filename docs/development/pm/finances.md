@@ -40,8 +40,8 @@ Before pushing anything, prepare a **complete quote**.
 
 - [ ] **What you need**: exact part name, model, specifications.
 - [ ] **Why**: which task or milestone this unblocks. If you cannot answer this in one sentence, you are not ready to push the request.
-- [ ] **When**: deadline for when you need it (TMR? integration? sponsor demo?).
-- [ ] **Three quotes from different suppliers** if possible. Tec finance sometimes requires it; ask up front.
+- [ ] **When**: deadline for when you need it (TMR, integration, sponsor demo).
+- [ ] **More than one quote** when the item is generic. Multiple options give the general PM something to compare. Ask the finance officer up front whether multiple quotes are required for this specific purchase.
 - [ ] **Include shipping and taxes** in every quote. The listed price is never what gets paid.
 - [ ] **Link to the product page** in each quote, not screenshots.
 
@@ -72,18 +72,42 @@ Finance processes the purchase per Tec rules:
 - Small purchases can be **reimbursements** (someone buys from their own pocket, submits the invoice, gets paid back).
 - Larger purchases go through a **Tec purchase order**, which can take a few weeks.
 
-## Purchase types and lead times
+## What Home typically buys
 
-| Type | Example | Typical lead time |
-|---|---|---|
-| **Urgent spare** | Gripper finger broken before TMR | 1 to 2 weeks if there is local stock |
-| **Planned component** | Motor for the next arm version | 3 to 6 weeks if it needs to be imported |
-| **Consumables** | Screws, cables, basic tools | About 1 week |
-| **Large hardware** | New camera, GPU, computer | 4 to 8 weeks (Tec purchase order) |
-| **Software / licenses** | Notion, Overleaf subscriptions | Variable; extra approval steps |
+Most years, Home does not start a cycle from scratch with a long shopping list. The robot already exists, the basic stack already works, and the focus is iterating. **Big purchases tend to be driven by feedback from the previous international competition**: things that broke, things that were missing, ideas that came up while competing.
 
-!!! warning "Imports take longer"
-    Anything bought outside Mexico (Amazon US, Digikey, etc.) goes through customs and adds 2 to 4 weeks. Plan for it.
+Concrete example from the 2026 cycle. After RoboCup the team identified gaps that turned into:
+
+- Speakers for the robot (audio for HRI tasks).
+- Custom PCBs for the omnibase electronics.
+- A redesign of the omnibase itself.
+- A portable battery pack so FRIDA does not stay tethered during demos.
+
+The takeaway: it is hard to predict what hardware you need *before* the international. Once you have that feedback, the next cycle's shopping list almost writes itself.
+
+!!! info "On lead times"
+    Lead times vary a lot. Local stock can arrive in days; imports from outside Mexico add weeks for customs; a Tec purchase order for a large item can take more than a month. Get a real lead time from each vendor when you quote; do not assume.
+
+## The two biggest line items: flights and registration
+
+For Home, the largest expenses every cycle are **international travel** (flights) and **competition registration fees**. Both are paid in advance, and both depend on qualifying at TMR.
+
+What this means as a PM:
+
+- **Look for sponsors from day one**, assuming the team will qualify for the international. If you wait until qualification is announced, the runway to find sponsors is too short.
+- **Buy flights as early as possible**. The earlier you buy, the cheaper they are.
+- **The hard part**: until the team qualifies and until member selection is done, you do not know exactly who is flying. Buying flights before that is risky (cancellation fees, refund rules). Buying after qualification is safer but more expensive.
+
+There is no clean fix for this trade-off. Use whatever sponsor commitment you have to absorb the risk where you can.
+
+## Transparent member selection for the international
+
+Selecting who flies to the international is one of the most sensitive things a PM has to handle. Done badly it fractures the team. The two criteria past PMs have used:
+
+1. **Time dedicated to Home over the cycle.** Members who showed up consistently, did the work, attended the meetings.
+2. **Contribution during the competition itself.** Some members are essential because of what they own technically (the person who maintains the gripper, the person who knows the manipulation pipeline best, etc.).
+
+Whatever criteria you end up using, **share them with the team before announcing the selection**. The members who do not make the cut deserve to know what the criteria were and that the process was not arbitrary. This is the single best thing you can do to keep the team intact after the selection happens.
 
 ## Reimbursements
 
@@ -94,7 +118,7 @@ For small purchases that a member makes out of pocket:
 3. **After**: submit the invoice through whatever channel your finance uses (usually a Drive sheet; ask).
 
 !!! warning "A paper ticket does not count"
-    Tec does not accept paper receipts for substantial reimbursements. You need a CFDI with the right RFC. If the vendor cannot invoice, let another member buy it, or let finance order it directly.
+    Tec typically requires an electronic invoice (CFDI) addressed to RoBorregos or Tec for sizeable reimbursements. If the vendor cannot invoice, either let another member buy it, or let finance place the order directly. Confirm the exact requirement with the RoBorregos finance officer.
 
 ## Sponsors
 
