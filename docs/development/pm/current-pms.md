@@ -21,7 +21,7 @@ Each area PM should fill in their own entry below as part of taking the role.
 
 | Area | PM | Contact |
 |---|---|---|
-| Manipulation | José Luis Domínguez Morales | _(fill in)_ |
+| Manipulation | José Luis Domínguez Morales | joseldominguezmorales@gmail.com |
 | Vision | _(to be filled in by the current PM)_ | |
 | Navigation | _(to be filled in by the current PM)_ | |
 | HRI | _(to be filled in by the current PM)_ | |
