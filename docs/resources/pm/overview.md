@@ -170,6 +170,6 @@ This applies to purchases, serious issues with a member, sponsor outreach, schol
 
 ## What this section is not
 
-- It is not the technical documentation of the project. For how the code works, see [Development](../index.md) (Manipulation, Vision, Navigation, HRI).
+- It is not the technical documentation of the project. For how the code works, see [Development](../../development/index.md) (Manipulation, Vision, Navigation, HRI).
 - It is not a formal disciplinary manual. Conduct policy comes from Tec and from RoBorregos.
 - It is not static. If a process changes, edit this page in the same PR. Every PM generation inherits this doc; it only improves if you maintain it.
