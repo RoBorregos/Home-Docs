@@ -25,7 +25,7 @@ Each area PM should fill in their own entry below as part of taking the role.
 | Vision | _(to be filled in by the current PM)_ | |
 | Navigation | _(to be filled in by the current PM)_ | |
 | HRI | _(to be filled in by the current PM)_ | |
-| Mechanics | Alejandro González Escamilla | _(fill in)_ |
+| Mechanics | Alejandro González Escamilla | alejandroge3105@gmail.com |
 | Electronics | _(to be filled in by the current PM)_ | |
 | Integration | _(to be filled in by the current PM)_ | |
 | Omnibase | _(to be filled in by the current PM)_ | |
