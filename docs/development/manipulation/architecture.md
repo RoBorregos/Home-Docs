@@ -4,13 +4,13 @@ title: Architecture
 
 # Architecture
 
-How the manipulation stack is wired at runtime: which nodes come up, which interfaces they expose, and the exact data flow for each of the three core operations — **pick**, **place**, **pour**.
+How the manipulation stack is wired at runtime: which nodes come up, which interfaces they expose, and the exact data flow for each of the three core operations, **pick**, **place**, **pour**.
 
 !!! abstract "TL;DR"
     - `manipulation_core` is the single entry point for task managers. Everything below it is internal.
     - The pick / place / pour pipelines are coordinated by **Managers** that call perception → grasp generation → motion in sequence.
     - All motion goes through `motion_planning_server`, which wraps MoveIt 2.
-    - Endpoint names and tuning constants live in `frida_constants` — **never** hard-code them.
+    - Endpoint names and tuning constants live in `frida_constants`, **never** hard-code them.
 
 ## Node graph
 
@@ -107,7 +107,7 @@ Task managers should interact with manipulation only through:
 | **Action** | `MANIPULATION_ACTION_SERVER` | `/manipulation/manipulation_action_server` | `frida_interfaces/action/ManipulationAction` |
 | **Action** | `GO_TO_HAND_ACTION_SERVER` | `/manipulation/go_to_hand_action_server` | `frida_interfaces/action/GoToHand` |
 
-Everything below those — `MoveToPose`, `MoveJoints`, `PickMotion`, `PlaceMotion`, `PourMotion`, collision-scene services — is **internal**. Task-manager code should not call them directly.
+Everything below those, `MoveToPose`, `MoveJoints`, `PickMotion`, `PlaceMotion`, `PourMotion`, collision-scene services, is **internal**. Task-manager code should not call them directly.
 
 !!! example "How to call `ManipulationAction` from a task manager"
 
@@ -127,7 +127,7 @@ Everything below those — `MoveToPose`, `MoveJoints`, `PickMotion`, `PlaceMotio
     future = client.send_goal_async(goal)
     ```
 
-## Pick — sequence diagram
+## Pick sequence diagram
 
 ```mermaid
 sequenceDiagram
@@ -171,7 +171,7 @@ sequenceDiagram
     2. Subscribe to `/manipulation/flat_grasp_pose` and average ≥10 samples.
     3. Send the averaged pose to `pick_server`, which performs a **force-guarded descent** (xArm mode 5, ~20 mm/s, abort on joint-effort threshold).
 
-## Place — sequence diagram
+## Place sequence diagram
 
 ```mermaid
 sequenceDiagram
@@ -205,7 +205,7 @@ sequenceDiagram
     MC-->>TM: ManipulationAction.Result(success=True)
 ```
 
-## Pour — sequence diagram
+## Pour sequence diagram
 
 ```mermaid
 sequenceDiagram
@@ -279,9 +279,9 @@ All names live in `frida_constants/manipulation_constants.py`. Import them; do n
 | `PLACE_POINT_DEBUG_TOPIC` | `/manipulation/table_place_point_debug` | pub: heatmap |
 | `DEBUG_POSE_GOAL_TOPIC` | `/manipulation/debug_pose_goal` | pub: motion_planning_server |
 | `ZED_POINT_CLOUD_TOPIC` | `/zed/zed_node/point_cloud/cloud_registered` | sub: ZED |
-| — | `/manipulation/flat_grasp_pose` | pub: flat_grasp_estimator |
-| — | `/manipulator/place_ee_link_pose` | pub: place_server |
-| — | `/clicked_point` | sub: manipulation_client (debug) |
+|, | `/manipulation/flat_grasp_pose` | pub: flat_grasp_estimator |
+|, | `/manipulator/place_ee_link_pose` | pub: place_server |
+|, | `/clicked_point` | sub: manipulation_client (debug) |
 
 ## Tuning constants
 
@@ -322,9 +322,9 @@ All names live in `frida_constants/manipulation_constants.py`. Import them; do n
 
 | Frame | Meaning |
 |---|---|
-| `link_base` | Arm base — most internal poses are expressed here. |
+| `link_base` | Arm base, most internal poses are expressed here. |
 | `base_link` | Mobile base. The heatmap expects input clouds in this frame. |
-| `link_eef` | Last link of the kinematic chain — default MoveIt target. |
+| `link_eef` | Last link of the kinematic chain, default MoveIt target. |
 | `gripper_grasp_frame` | Gripper contact point. GPD grasp poses come back in this frame. |
 | `zed_left_camera_optical_frame` | Source frame of the ZED point cloud and depth image. |
 
