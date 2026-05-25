@@ -20,6 +20,7 @@ Member-status legend used inline:
 **In Progress:**
 
 - **Domínguez** 💻 — .
+- **Hector** 💻 , Get centroid and grasp marks for tableware 
 
 ## 2026-04-07
 
