@@ -11,6 +11,16 @@ Member-status legend used inline:
 - 🔧 Bug fixing
 - 🤝 Participation in other subteam
 
+## 2026-05-26
+
+**Done:**
+
+- **Domínguez** 💻 — .
+
+**In Progress:**
+
+- **Domínguez** 💻 — .
+
 ## 2026-04-07
 
 **Done:**
