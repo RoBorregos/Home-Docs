@@ -20,7 +20,8 @@ Member-status legend used inline:
 **In Progress:**
 
 - **Domínguez** 💻 — .
-- **Hector** 💻 , Get centroid and grasp marks for tableware 
+- **Hector** 💻 , Get centroid and grasp marks for tableware
+- **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
 
 ## 2026-04-07
 
