@@ -2,6 +2,34 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-05-26
+
+**Done:**
+
+- Orin shelves in omnibase (Bahena & Ale)
+- Speaker support (LARC & Ale)
+- PCB case (Bahena)
+- Gripper URDF with new camera angle (Jeremy & Bahena)
+- Omnibase initial URDF (Ale & Daniel)
+
+<p align="center">
+  <img src="/assets/development/mechanics/spotlights/omnibaseURDF.png" alt="urdf" width="281" height="604">
+</p>
+
+**In Progress:**
+
+- Battery drawer (Babi)
+- Voltage Regulators case (Jeremy)
+- Cases for LiFePO4 bateries transportation (Jeremy)
+- Monitor support for omnibase (LARC)
+- Research about lever and torque in the robot (Salette)
+- Omnibase cover (Ale)
+- Resin 3D printed gears (Bahena & Ale)
+
+**Tasks in Hiatus**
+
+- Gripper DC motor implementation
+
 ## 2026-04-07
 
 **Done:**
