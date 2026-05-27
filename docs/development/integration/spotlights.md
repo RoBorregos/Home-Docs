@@ -11,6 +11,23 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-05-26
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Fregoso   |        |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Development**
+
+- Fix HRIC task manager.
+- Docs for AI agents.
+
 ## 2026-04-07
 
 | Name      | Status |
