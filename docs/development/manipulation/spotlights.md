@@ -11,6 +11,22 @@ Member-status legend used inline:
 - 🔧 Bug fixing
 - 🤝 Participation in other subteam
 
+## 2026-05-26
+
+**Done:**
+- **Fernando** 💻, Fix remove plane
+- **Domínguez** 💻, Merge vamp.
+- **Domínguez** 💻, Document Manipulation in Home Docs.
+- **Domínguez** 💻, Merge fix simulation.
+
+**In Progress:**
+
+- **Fernando** 💻, Manage nodes respown and xarm restate
+- **Domínguez** 💻, Testing zed in parallel position with end effector.
+- **Hector** 💻 , Get centroid and grasp marks for tableware
+- **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
+- **Santiago** 💻 , Fix ZED offset, urdf seems correct
+
 ## 2026-04-07
 
 **Done:**
