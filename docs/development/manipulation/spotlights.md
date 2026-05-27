@@ -15,12 +15,14 @@ Member-status legend used inline:
 
 **Done:**
 - **Fernando** 💻, Fix remove plane
-- **Domínguez** 💻 — .
+- **Domínguez** 💻, Merge vamp.
+- **Domínguez** 💻, Document Manipulation in Home Docs.
+- **Domínguez** 💻, Merge fix simulation.
 
 **In Progress:**
 
 - **Fernando** 💻, Manage nodes respown and xarm restate
-- **Domínguez** 💻 — .
+- **Domínguez** 💻, Testing zed in parallel position with end effector.
 - **Hector** 💻 , Get centroid and grasp marks for tableware
 - **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
 - **Santiago** 💻 , Fix ZED offset, urdf seems correct
