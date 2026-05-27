@@ -2,6 +2,22 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-05-27
+
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Héctor / Fernando | Face detection and follow face |
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé | Centralized vision orchestration |
+| Danaé | Person description - moondream |
+| JP | Filter inside house/room |
+
 ## 2026-03-24
 
 **Done:**
