@@ -11,6 +11,54 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-04-07
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto | 💻     |
+| Camila    | 💻     |
+| Didier    | 💻     |
+| Fabricio  |        |
+| Luis      | 💻🔍   |
+| Oscar     | 💻     |
+
+- **Development**
+  - Finishing up knock and doorbell detector node.
+  - Fixed hotwords and initial prompt in speech pipeline.
+  - Built updated Ollama image for orin but ran into slower inference times.
+  - Tuned faster-whisper for faster and cleaner transcriptions.
+  - Developed a dynamic VAD for stopping transcription early.
+  - Working on displays by task.
+  - Added flag to build proto interfaces.
+
+- **Research**
+  - Ways to merge gpsr commands.
+
+## 2026-03-10
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto |        |
+| Camila    | 💻🔧   |
+| Didier    | 💻     |
+| Fabricio  |        |
+| Luis      | 💻     |
+| Oscar     |        |
+
+- **Development**
+  - Tried Yamnet model for event sound detection, pivoting to training our own model with Edge Impulse.
+  - Get current areas from new navigation service when populating db.
+  - Autoreconnect ROS backend for the display.
+  - Restructure microservices STT and TTS at HRI workspace
+  - Added llm fallback for name, standardized data_extract node and hooked up initial prompt to fastwhisper
+
+- **Bug fixing**
+  - Fixed mic icon blocking live transcription.
+
 ## 2026-03-03
 
 | Name      | Status |

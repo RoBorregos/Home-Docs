@@ -2,6 +2,63 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-03-24
+
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Daniela 💻 | Cutlery detection |
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 💻| Restaurant TM, cutlery detection topic |
+| Fernando 💻 | Improve table detection for restaurant |
+| Héctor 💻 | Detect handle and type of door |
+| JP | Testing of tracker |
+| Daniela 💻 | Trashcan detection (Point moondream) |
+
+## 2026-03-10
+
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Héctor 💻 | Hand detection for HRIC |
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 💻| Restaurant TM |
+| Daniela 💻| Silverware detection, trash detection |
+| Fernando 💻 | Improve table detection for restaurant |
+| Héctor 💻 | Detect handle and type of door |
+| JP | Testing of tracker |
+| Ale 📄 | Clothes detection |
+
+## 2026-03-03
+
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| Danaé 📄💻 | Centralized yolo node (YOLO 26) | 
+| Fernando 💻 | Identify customers for restaurant |
+| Héctor 💻 | Combine trackers (pending review) |
+| JP 💻| Dishwasher rack and empty slots detection |
+
+**In Progress:**
+
+| Owners | Task |
+|--------|------|
+| Daniela 💻| Silverware detection and sending location of trash |
+| Fernando 💻 | Identify tables and number of customers per table |
+| Héctor 💻 | Identify hand for bag handover |
+| Tania 📄| Research on clothing pile |
+
 ## 2026-02-25
 
 **In Progress:**

@@ -81,16 +81,9 @@ body {
   box-shadow: none;
 }
 
-/* Sidebar (left) navigation: make links dark/readable */
-.md-sidebar__scrollwrap {
-  overflow-y: auto !important;
-  height: 100%;
-  position: relative;
-}
 
 .md-sidebar__inner {
-  height: 100%;
-  overflow-y: auto;
+  padding-top: 10px;
 }
 
 /* Compact Sidebar */
@@ -122,19 +115,18 @@ body {
   color: var(--text);
   border-radius: 8px;
   padding: 8px 10px;
-  transition: background .12s ease, transform .12s ease;
+  transition: background .15s ease;
 }
 
 .md-sidebar .md-nav__link:hover {
   background: rgba(11, 37, 69, 0.04);
   color: var(--primary);
-  transform: translateX(3px);
 }
 
 .md-sidebar .md-nav__link--active {
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: var(--primary);
   color: #fff !important;
-  box-shadow: 0 6px 18px rgba(11, 37, 69, 0.12);
+  font-weight: 600;
 }
 
 /* Search box */
@@ -430,5 +422,223 @@ button:focus,
 
   .timeline-arrow {
     display: none;
+  }
+}
+/* =====================================================================
+   Mermaid diagrams — larger by default, click-to-zoom, breakout width
+   ===================================================================== */
+
+/* Container Material emits for fenced mermaid blocks.
+   - Center the SVG horizontally
+   - Allow horizontal scroll if the diagram exceeds the column width
+   - Give it a soft frame so it doesn't look like raw text
+*/
+.md-typeset pre.mermaid,
+.md-typeset .mermaid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(2, 6, 23, 0.08);
+  border-radius: 10px;
+  padding: 18px 12px;
+  margin: 18px 0 24px;
+  box-shadow: 0 6px 20px rgba(2, 6, 23, 0.05);
+  overflow-x: auto;
+  transition: box-shadow 0.18s ease, transform 0.18s ease;
+}
+
+.md-typeset pre.mermaid:hover,
+.md-typeset .mermaid:hover {
+  box-shadow: 0 10px 28px rgba(2, 6, 23, 0.10);
+}
+
+/* The mermaid container holds the SVG. Make the rendered SVG fill the
+   container width — never exceed it, never push into the sidebar/TOC.
+   Complex diagrams that would overflow trigger horizontal scroll inside
+   the container, and clicking opens the diagram at full size in a new
+   tab (see mermaid-init.js). */
+.md-typeset pre.mermaid svg,
+.md-typeset .mermaid svg {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+/* While Mermaid is fetching/parsing, the <pre> shows raw source. Hide it
+   so users don't see the source flash before the SVG renders. */
+.md-typeset pre.mermaid:not([data-processed="true"]) code {
+  color: transparent;
+  user-select: none;
+}
+
+/* =====================================================================
+   Mermaid lightbox — click any diagram to open it at full screen size
+   ===================================================================== */
+
+/* Wrapper containing the mermaid div AND the badge. Sibling-based so
+   the badge is never inside .mermaid (Material would extract its text
+   as source code and break the render). */
+.md-typeset .rb-mermaid-wrap {
+  position: relative;
+  margin: 18px 0 24px;
+  cursor: zoom-in;
+}
+
+/* Placeholder kept while the diagram is moved into the lightbox, so
+   article layout doesn't reflow. */
+.md-typeset .rb-mermaid-placeholder {
+  background: linear-gradient(180deg, #f4f6fb, #ffffff);
+  border: 1px dashed rgba(2, 6, 23, 0.15);
+  border-radius: 10px;
+}
+
+/* Top-right corner badge — bold colours so it's obviously interactive. */
+.md-typeset .rb-zoom-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 5;
+  background: var(--primary, #0b2545);
+  color: #ffffff !important;
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 14px;
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(2, 6, 23, 0.25);
+  opacity: 1;
+  transition: background 0.15s ease, transform 0.15s ease, box-shadow 0.15s ease;
+  pointer-events: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.md-typeset .rb-zoom-badge:hover {
+  background: #123b6a;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 22px rgba(2, 6, 23, 0.32);
+}
+
+/* Full-screen overlay. */
+#rb-mermaid-lightbox {
+  position: fixed;
+  inset: 0;
+  /* Solid backdrop (more opaque) instead of backdrop-filter: blur(...) —
+     blur compositor work hurts wheel-zoom framerate significantly. */
+  background: rgba(7, 16, 35, 0.96);
+  z-index: 99999;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 48px 56px;
+  box-sizing: border-box;
+  opacity: 1;
+  /* Isolate from the rest of the page to skip layout/paint propagation. */
+  contain: layout style paint;
+}
+
+#rb-mermaid-lightbox.rb-lb-open {
+  display: flex !important;
+}
+
+/* SVG stage — takes up the whole modal and hosts the cloned SVG. */
+#rb-mermaid-lightbox .rb-lb-stage {
+  width: 95vw;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+
+/* When a mermaid diagram is moved into the stage, wrap it visually in a
+   white card so the diagram's gray arrows, subgraph borders and labels
+   are readable against the dark backdrop. */
+#rb-mermaid-lightbox .rb-lb-stage > div.mermaid {
+  background: #ffffff;
+  padding: 28px 32px;
+  border-radius: 14px;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* The moved diagram (or any other content placed in the stage).
+   - max-width / max-height keep it inside the modal.
+   - transform-origin: center so wheel zoom centers correctly.
+   - NO CSS transition — JS already drives transform writes at RAF rate.
+   - NO `will-change: transform` here. JS toggles it on for the duration
+     of interaction (wheel/drag) and removes it after idle so the SVG
+     re-rasterizes crisp at the final scale (bilinear filtering on a
+     pre-rasterized GPU layer is what was causing the blur). */
+#rb-mermaid-lightbox .rb-lb-stage > * {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  transform-origin: center center;
+  transition: none;
+  pointer-events: auto;
+}
+
+#rb-mermaid-lightbox .rb-lb-stage svg {
+  display: block;
+}
+
+/* Close button. */
+#rb-mermaid-lightbox .rb-lb-close {
+  position: absolute;
+  top: 18px;
+  right: 22px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  line-height: 1;
+  cursor: pointer;
+  transition: background 0.15s ease, transform 0.15s ease;
+  z-index: 2;
+}
+
+#rb-mermaid-lightbox .rb-lb-close:hover {
+  background: rgba(255, 255, 255, 0.22);
+  transform: scale(1.08);
+}
+
+/* Bottom hint. */
+#rb-mermaid-lightbox .rb-lb-hint {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-family: Inter, system-ui, sans-serif;
+  font-size: 0.85rem;
+  pointer-events: none;
+  user-select: none;
+}
+
+@media (max-width: 720px) {
+  .rb-zoom-badge {
+    font-size: 0.72rem;
+    padding: 5px 10px;
+  }
+
+  #rb-mermaid-lightbox {
+    padding: 16px 16px 40px;
+  }
+
+  #rb-mermaid-lightbox .rb-lb-stage {
+    width: 100vw;
+    height: 84vh;
   }
 }

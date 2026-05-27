@@ -1,139 +1,157 @@
 # Weekly Spotlights
 
-This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a week.
+This page is a collection of weekly spotlights that highlight the progress of the Object Manipulation team. Each spotlight is a summary of the work done by the team in a given week.
 
-Member status:
+Member-status legend used inline:
 
-- 🔍: Research
-- 💻: Development
-- 📝: Documentation
-- 🔄: Refactoring
-- 🔧: Bug fixing
-- 🤝: Participation in other subteam
+- 🔍 Research
+- 💻 Development
+- 📝 Documentation
+- 🔄 Refactoring
+- 🔧 Bug fixing
+- 🤝 Participation in other subteam
 
-## 2026-03-3
-
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻    |
-| Ale G.   |       | 
-| Ricardo  |        |
-| Fernando |  💻        |
-| Luis     |  💻       |
-| Emil     |  💻     |
-| Fregoso  |              |
-| Paola    |       |
-| Hector   |  💻     |
-| Efrain   |  💻     |
+## 2026-05-26
 
 **Done:**
-
-| Owners | Task |
-|------|------|
-| Dominguez 💻| Place Bag on the floor |
-| Dominguez 💻| Import vamp to moveit environment |
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with with moveit test" frameborder="0" allowfullscreen></iframe>
-
+- **Fernando** 💻, Fix remove plane
+- **Domínguez** 💻, Merge vamp.
+- **Domínguez** 💻, Document Manipulation in Home Docs.
+- **Domínguez** 💻, Merge fix simulation.
 
 **In Progress:**
 
-| Owners | Task |
-|------|------|
-| Dominguez 💻| Test vamp integration with moveit |
-| Dominguez 💻| Pick and Place Task Manager | 
-| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts. |
-| Emil 💻| Place on top of objects based on maximum z, and centroid for place trash and controllers on weboots |
-| Hector 💻| Follow hand for grasping bag |
-| Efrain 💻| Mujoco: Fix add gripper controll by xarm_service |
-| Fernando 💻 | Go to hand and move to point action servers for HRIC "pick"(not pick) bag |
+- **Fernando** 💻, Manage nodes respown and xarm restate
+- **Domínguez** 💻, Testing zed in parallel position with end effector.
+- **Hector** 💻 , Get centroid and grasp marks for tableware
+- **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
+- **Santiago** 💻 , Fix ZED offset, urdf seems correct
+
+## 2026-04-07
+
+**Done:**
+
+- **Efrain** 💻, Simulation with MoveIt implementation.
+- **Domínguez** 💻, Get the `grasp_detector` information from the custom gripper for grasp feedback.
+- **Domínguez** 💻, Pour refactor for object-already-grasped flow.
+- **Domínguez** 💻, Improve picks.
+- **Domínguez** 💻, Workflow to ensure `xarm_ros2` integrity.
+- **Domínguez** 💻, IKFast analytical IK plugin for xArm 6.
+
+**In Progress:**
+
+- **Domínguez** 💻, Dense cloud database integration with the grasp detector.
+- **Domínguez** 💻, Manipulation pipeline optimization.
+- **Domínguez** 💻, Testing the Pick & Place Challenge.
+- **Domínguez** 💻, Apply grasp-feedback logic in the manipulation pipeline.
+- **Efrain** 💻, Connecting the MuJoCo simulation with the rest of the nodes.
+
+## 2026-03-24
+
+**Done:**
+
+- **Emil** 💻, Throw-trash + drop-on-top-of-any-known-object using its point cloud.
+- **Fernando** 💻, Integrate "go to hand" into the task manager with vision hand detection and ZED ↔ robot transforms (HRIC task).
+- **Efrain** 💻, Advanced PR requirements and review changes.
+- **Luis** 💻, Add dishwasher placement.
+- **Domínguez** 💻, Correct implementation of VAMP with boxes published.
+- **Domínguez** 💻, First test of the Pick & Place Task Manager.
+
+**In Progress:**
+
+- **Domínguez** 💻, Collision avoidance with the octomap.
+- **Domínguez** 💻, Improve the pick-cutlery logic.
+- **Domínguez** 💻, Pick & Place Task Manager improvements.
+- **Luis** 💻, Move follow-face node. Test pour manager.
+- **Emil** 💻, Grasp of handles (laundry basket) with initial lift approach.
+- **Hector** 💻, Open-door task.
+- **Efrain** 💻, Test the point cloud in MuJoCo and its interaction with the pick.
+- **Fernando** 💻, Fix plane collision (it generates rotation).
+- **Fernando** 💻, Search for a bag pose for navigation while holding a bag in the gripper.
+- **Fernando** 💻, Open container.
+
+## 2026-03-10
+
+**Done:**
+
+- **Domínguez** 💻, Pick cutlery.
+- **Hector** 💻, Follow hand for grasping bag.
+- **Emil** 💻, Place on top of object.
+- **Fernando** 💻, Go-to-hand and move-to-point action servers for HRIC "pick bag".
+- **Efrain** 💻, MuJoCo: fix gripper control via `xarm_service`.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nkaqR_LuLjs" title="Pick Cutlery" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LAtaae2D7Zk" title="Go to hand" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_r7oWEvyoiY" title="Place on top" frameborder="0" allowfullscreen></iframe>
+
+*MuJoCo video in progress.*
+
+**In Progress:**
+
+- **Domínguez** 💻, Test VAMP integration with MoveIt.
+- **Domínguez** 💻, Test Pick & Place Task Manager.
+- **Luis** 💻, Test pour; research GraspNet to replace current GPD.
+- **Emil** 💻, Test "place in trash" / placing on top of trash cans.
+
+## 2026-03-03
+
+**Done:**
+
+- **Domínguez** 💻, Place bag on the floor.
+- **Domínguez** 💻, Import VAMP to MoveIt environment.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eMPKwX4tec8" title="Vamp integration with moveit test" frameborder="0" allowfullscreen></iframe>
+
+**In Progress:**
+
+- **Domínguez** 💻, Test VAMP integration with MoveIt.
+- **Domínguez** 💻, Pick & Place Task Manager.
+- **Luis** 💻, Add interruption when impossible paths are found; reduce planning attempts.
+- **Emil** 💻, Place on top of objects (max-Z + centroid for trash place); controllers in Webots.
+- **Hector** 💻, Follow hand for grasping bag.
+- **Efrain** 💻, MuJoCo: fix gripper control via `xarm_service`.
+- **Fernando** 💻, Go-to-hand + move-to-point action servers for HRIC "pick bag".
 
 ## 2026-02-24
-
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻    |
-| Ale G.   |       | 
-| Ricardo  |        |
-| Fernando |  💻        |
-| Luis     |  💻       |
-| Emil     |  💻     |
-| Fregoso  |              |
-| Paola    |       |
-| Hector   |  💻     |
-| Efrain   |  💻     |
 
 **Done:**
 
 [![Implementation of ros2_control with mujoco](https://img.youtube.com/vi/iYlQffC8MkQ/0.jpg)](https://www.youtube.com/watch?v=iYlQffC8MkQ)
 
-| Owners | Task |
-|------|------|
-| Efrain 💻 | Fixed the gripper joint bug|
-| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) MERGED|
+- **Efrain** 💻, Fix the gripper joint bug.
+- **Fernando** 💻, Distance mask: only pick objects within `[min_distance, max_distance]` (MERGED).
 
 **In Progress:**
 
-| Owners | Task |
-|------|------|
-| Dominguez 💻| Import vamp to moveit environment |
-| Dominguez 💻| Pick and Place Task Manager | 
-| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
-| Emil 💻| Special request placing in top of objects based on maximum z, and centroid for place trash |
-| Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Fix gripper_finger joints and its actuators for ros2_control|
-
+- **Domínguez** 💻, Import VAMP to MoveIt environment.
+- **Domínguez** 💻, Pick & Place Task Manager.
+- **Luis** 💻, Add interruption when impossible paths are found; reduce planning attempts.
+- **Emil** 💻, Special-request placing on top of objects (max-Z + centroid for trash place).
+- **Hector** 💻, Cluster of transparent objects.
+- **Efrain** 💻, MuJoCo: fix `gripper_finger` joints and actuators for `ros2_control`.
 
 ## 2026-02-17
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻    |
-| Ale G.   |       | 
-| Ricardo  |        |
-| Fernando |  💻        |
-| Luis     |  💻       |
-| Emil     |  💻     |
-| Fregoso  |              |
-| Paola    |       |
-| Hector   |  💻     |
-| Efrain   |  💻     |
-
 **Done:**
 
-| Owners | Task |
-|------|------|
-| Dominguez, Ale G. 📝 | Fixed manipulation pages TDP2026 paper |
+- **Domínguez, Ale G.** 📝, Fixed manipulation pages for the TDP 2026 paper.
 
 **In Progress:**
 
-| Owners | Task |
-|------|------|
-| Fernando 💻 | Distance mask to only pick objects in range(minimum distance, maximum distance) |
-| Dominguez 💻| Import vamp to moveit environment |
-| Luis 💻 | Add interruption when impossible paths found. Reduced planning attempts.|
-| Emil 💻| Webots: Add gripper, zed camera and xarm controller to Frida in Webots |
-| Hector 💻| Getting cluster of transparent objects|
-| Efrain 💻| Mujoco: Add the xarm controller and camera to Mujoco|
+- **Fernando** 💻, Distance mask: only pick objects within `[min_distance, max_distance]`.
+- **Domínguez** 💻, Import VAMP to MoveIt environment.
+- **Luis** 💻, Add interruption when impossible paths are found; reduce planning attempts.
+- **Emil** 💻, Webots: add gripper, ZED, and xArm controller to FRIDA.
+- **Hector** 💻, Cluster of transparent objects.
+- **Efrain** 💻, MuJoCo: add xArm controller and camera.
 
 ## 2026-01-29
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  📝     | 
-| Ricardo  |  💻      |
-| Fernando |  💻        |
-| Luis     |  💻       |
-| Emil     |  💻📝     |
-| Fregoso  |              |
-| Paola    |  📝     |
-| Hector   |  💻     |
-| Efrain   |  💻     |
-
 **Done:**
 
-- Vamp integration with Frida
+- VAMP integration with FRIDA.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/zVAVS99MIHA" title="Vamp integration with Frida (Test1)" frameborder="0" allowfullscreen></iframe>
 
@@ -141,638 +159,437 @@ Member status:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-7KqlR9u-SM" title="Vamp integration with Frida (Test3)" frameborder="0" allowfullscreen></iframe>
 
-- Imported Frida's URDF to Webots
+- Imported FRIDA's URDF to Webots.
 
-![image](../../assets/development/manipulation/spotlights/2026-02-05/fridaWebots.jpeg)
+![Frida in Webots](../../assets/development/manipulation/spotlights/2026-02-05/fridaWebots.jpeg)
 
-- Spherization of Frida's gripper and base for vamp implementation
-
-- Fixed manipulation pages TDP2026 paper
+- Spherization of FRIDA's gripper and base for VAMP.
+- Fixed manipulation pages of the TDP 2026 paper.
 
 **In Progress:**
 
-- Getting cluster of transparent objects
-- Import vamp to moveit environment
-- Working on simulation:
-    - Mujoco: Add the xarm controller to Mujoco
-    - Webots: Add gripper, zed camera and xarm controller to Frida in Webots
+- Cluster of transparent objects.
+- Import VAMP to MoveIt environment.
+- Simulation: MuJoCo (xArm controller) and Webots (gripper, ZED, xArm controller).
 
-## 2026-01-29
-
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  📝     | 
-| Ricardo  |  💻      |
-| Fernando |  💻        |
-| Luis     |  💻       |
-| Emil     |  💻📝     |
-| Fregoso  |              |
-| Paola    |  📝     |
-| Hector   |  💻     |
-| Efrain   |  💻     |
+## 2026-01-22
 
 **Done:**
 
-- Vamp integration with xarm
+- VAMP integration with xArm.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XAExImV6TV4" title="Vamp integration with xarm" frameborder="0" allowfullscreen></iframe>
 
-- Webots connection with ROS2 for future manipulation implementation
+- Webots connection with ROS 2 for future manipulation implementation.
 
 **In Progress:**
 
-- Fixing the TDP2026 paper
-- Getting cluster of transparent objects
-- Vamp integration with Frida
-- Spherization of Frida's gripper and base for vamp implementation
-- Working on simulation:
-    - Mujoco: Add the xarm controller to Mujoco
-    - Webots: Spawn Frida in Webots
-
+- Fixing the TDP 2026 paper.
+- Cluster of transparent objects.
+- VAMP integration with FRIDA.
+- Spherization of FRIDA's gripper and base for VAMP.
+- Simulation: MuJoCo (xArm controller) and Webots (spawn FRIDA).
 
 ## 2026-01-15
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  📝     | 
-| Ricardo  |  💻      |
-| Fernando |  💻        |
-| Luis     |  💻       |
-| Emil     |  💻📝     |
-| Fregoso  |              |
-| Paola    |  📝     |
-| Hector   |  💻     |
-| Efrain   |  💻     |
-
 **Done:**
 
-- First manipulation meeting of 2026
+- First manipulation meeting of 2026.
 
 **In Progress:**
 
-- Fixing the TDP2026 paper
-- Getting cluster of transparent objects
-- Working on simulation
+- Fixing the TDP 2026 paper.
+- Cluster of transparent objects.
+- Working on simulation.
 
 ## 2025-11-21
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  📝     | 
-| Ricardo  |  💻      |
-| Fernando |  💻📝        |
-| Luis     |  💻📝        |
-| Emil     |  💻📝🔍     |
-| Fregoso  |              |
-| Paola    |  📝     |
-| Hector   |  💻     |
-
-**Main Priority:**
-
-- Add all the developments to the TDP2026 paper
+**Main priority:** add all developments to the TDP 2026 paper.
 
 **Done:**
 
--  Place objects around other objects (e.g. place cup at the right of zucaritas box)
--  Fixed repository dev/manipulation in the jetson orin
+- Place objects around other objects (e.g. place cup at the right of zucaritas box).
+- Fixed `dev/manipulation` repo on the Jetson Orin.
 
 **In Progress:**
 
-- Working on the TDP2026 paper
-- Correct and stabilize the follow face module to work in real time
-- Working on place trash action
-- Working on pick error
-- Fix octomap logic issues
-- Handle Exceptions in the manipulation pipeline
-- Implement vamp into the manipulation pipeline
-- Simulation:
-    - Mujoco: Add the environment of the receptionist to Mujoco
+- TDP 2026 paper.
+- Stabilize the follow-face module in real time.
+- Place-trash action.
+- Pick error.
+- Fix octomap logic issues.
+- Handle exceptions in the manipulation pipeline.
+- Implement VAMP in the manipulation pipeline.
+- Simulation: MuJoCo, receptionist environment.
 
-| Person | Assigned Tasks |
-| :--- | :--- |
-| **Domínguez** | `TDP2026 paper`, `Vamp integration`, `Mujoco environment` |
-| **Ale G.** | `TDP2026 paper` |
-| **Ricardo** | `Follow face module` |
-| **Fernando** |`Pick error`|
-| **Luis** |  `Octomap fix`, `Handle Exceptions` |
-| **Emil** | `TDP2026 paper`, `Place trash action` |
-| **Paola** | `TDP2026 paper` |
-| **Fregoso** | *(Pending)* |
-| **Hector** | `Detect transparent objects` |
+**Assignments:**
 
+- **Domínguez**, TDP 2026 paper, VAMP integration, MuJoCo environment.
+- **Ale G.**, TDP 2026 paper.
+- **Ricardo**, Follow-face module.
+- **Fernando**, Pick error.
+- **Luis**, Octomap fix, exception handling.
+- **Emil**, TDP 2026 paper, place-trash action.
+- **Paola**, TDP 2026 paper.
+- **Hector**, Detect transparent objects.
 
 ## 2025-11-14
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  📝     | 
-| Ricardo  |  💻      |
-| Fernando |  💻📝        |
-| Luis     |  💻📝        |
-| Emil     |  💻📝🔍     |
-| Fregoso  |              |
-| Paola    |  📝     |
-| Hector   |         |
-
-**Main Priority:**
-
-- Add all the developments to the TDP2026 paper
+**Main priority:** add all developments to the TDP 2026 paper.
 
 **Done:**
 
-- No major advances this week
+- No major advances this week.
 
 **In Progress:**
 
-- Working on the TDP2026 paper
-- Correct and stabilize the follow face module to work in real time
-- Working on place trash action
-- Working on pick error
-- Fix octomap logic issues
-- Handle Exceptions in the manipulation pipeline
-- Implement vamp into the manipulation pipeline
-- Simulation:
-    - Mujoco: Add the environment of the receptionist to Mujoco
+- TDP 2026 paper.
+- Stabilize the follow-face module in real time.
+- Place-trash action.
+- Pick error.
+- Fix octomap logic issues.
+- Handle exceptions in the manipulation pipeline.
+- Implement VAMP in the manipulation pipeline.
+- Simulation: MuJoCo, receptionist environment.
 
-| Person | Assigned Tasks |
-| :--- | :--- |
-| **Domínguez** | `TDP2026 paper`, `Vamp integration`, `Mujoco environment` |
-| **Ale G.** | `TDP2026 paper` |
-| **Ricardo** | `Follow face module` |
-| **Fernando** |`Pick error`, `Detect transparent objects`|
-| **Luis** |  `Octomap fix`, `Handle Exceptions` |
-| **Emil** | `TDP2026 paper`, `Place trash action` |
-| **Paola** | `TDP2026 paper` |
-| **Fregoso** | *(Pending)* |
-| **Hector** | *(Pending)* |
+**Assignments:**
 
+- **Domínguez**, TDP 2026 paper, VAMP integration, MuJoCo environment.
+- **Ale G.**, TDP 2026 paper.
+- **Ricardo**, Follow-face module.
+- **Fernando**, Pick error, detect transparent objects.
+- **Luis**, Octomap fix, exception handling.
+- **Emil**, TDP 2026 paper, place-trash action.
+- **Paola**, TDP 2026 paper.
 
 ## 2025-11-07
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  💻📝     | 
-| Ricardo  |  💻📝       |
-| Fernando |  💻📝        |
-| Luis     |  💻📝        |
-| Emil     |  💻📝🔍     |
-| Fregoso  |  💻📝       |
-| Paola    |  📝 🔍     |
-| Hector   |  💻📝       |
-
 **Done:**
 
-- Tested xarm sim with vamp
+- Tested xArm sim with VAMP.
 
 **In Progress:**
 
-- Correct and stabilize the follow face module to work in real time
-- Implement vamp into the manipulation pipeline
-- Working on the TDP2026 paper
-- Simulation:
-    - Mujoco: Add the environment of the receptionist to Mujoco
+- Stabilize the follow-face module in real time.
+- Implement VAMP in the manipulation pipeline.
+- TDP 2026 paper.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-10-16
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  💻📝     | 
-| Ricardo  |  💻📝       |
-| Fernando |  💻📝        |
-| Luis     |  💻📝        |
-| Emil     |  💻📝🔍     |
-| Fregoso  |  💻📝       |
-| Paola    |  📝 🔍     |
-| Hector   |  🤝         |
+**Done:**
 
-### Done
-- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
-- Test with vamp
-![image](../../assets/development/manipulation/spotlights/2025_10_16/vamp.png)
-- Get point cloud from a transparent object in real time
+- Unify movement control through ROS only (e.g. `joint_trajectory`); delete manual modes at runtime.
+- Tested with VAMP.
 
-| Before | After |
-| :---: | :---: |
-| ![Perception 1](../../assets/development/manipulation/spotlights/2025_10_16/antes.jpeg) | ![Perception 2](../../assets/development/manipulation/spotlights/2025_10_16/despues.jpeg) |
+  ![VAMP test](../../assets/development/manipulation/spotlights/2025_10_16/vamp.png)
 
-### In Progress
-- Correct and stabilize the follow face module to work in real time
-- Implement vamp into the manipulation pipeline
-- Working on the TDP2026 paper
-- Simulation:
-    - Mujoco
-        - Add the environment of the receptionist to Mujoco
+- Get a point cloud from a transparent object in real time.
+
+  ![Before transparent-object handling](../../assets/development/manipulation/spotlights/2025_10_16/antes.jpeg)
+  ![After transparent-object handling](../../assets/development/manipulation/spotlights/2025_10_16/despues.jpeg)
+
+**In Progress:**
+
+- Stabilize the follow-face module in real time.
+- Implement VAMP in the manipulation pipeline.
+- TDP 2026 paper.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-10-09
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻📝    |
-| Ale G.   |  💻📝     | 
-| Ricardo  |  💻📝       |
-| Fernando |  💻📝        |
-| Luis     |  💻📝        |
-| Emil     |  💻📝🔍     |
-| Fregoso  |  💻📝       |
-| Paola    |  📝 🔍     |
-| Hector   |  🤝         |
+**Done:**
 
-### Done
-- Test xarm with joint trajectory controller
-- Get point cloud from a transparent object
-- Inspect the pipeline and manage correctly the exceptions in each step
+- Tested xArm with joint trajectory controller.
+- Get a point cloud from a transparent object.
+- Inspect the pipeline and manage exceptions in each step.
 
-### In Progress
-- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
-- Correct and stabilize the follow face module to work in real time
-- Working on the TDP2026 paper
-- Simulation:
-    - Mujoco
-        - Add the environment of the receptionist to Mujoco
+**In Progress:**
 
-
-
+- Unify movement control through ROS only.
+- Stabilize the follow-face module in real time.
+- TDP 2026 paper.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-10-02
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻 📝    |
-| Ale G.   |  💻📝     | 
-| Ricardo  |  💻       |
-| Fernando |  💻        |
-| Luis     |  💻        |
-| Emil     |  💻 🔍     |
-| Fregoso  |  💻       |
-| Paola    |  📝 🔍     |
-| Hector   |  🤝         |
+**Done:**
 
-### Done
-- Added the urdf of Frida to Mujoco
+- Added FRIDA's URDF to MuJoCo.
 
-![image](../../assets/development/manipulation/spotlights/2025_10_2/MujocoUrdf.png)
+  ![FRIDA URDF in MuJoCo](../../assets/development/manipulation/spotlights/2025_10_2/MujocoUrdf.png)
 
-- Tests with clear grasps
+- Tests with clear grasps.
 
-![image](../../assets/development/manipulation/spotlights/2025_10_2/Clear.jpeg)
+  ![Clear grasps test](../../assets/development/manipulation/spotlights/2025_10_2/Clear.jpeg)
 
-- Onboarding
+- Onboarding.
 
-### In Progress
-- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
-- Inspect the pipeline and manage correctly the exceptions in each step
-- Correct and stabilize the follow face module to work in real time
-- Remake the follow person module to improve the reliability and accuracy
-- Working on the TDP2026 paper
-- Simulation:
-    - Mujoco
-        - Add the environment of the receptionist to Mujoco
+**In Progress:**
+
+- Unify movement control through ROS only.
+- Inspect the pipeline and manage exceptions in each step.
+- Stabilize the follow-face module in real time.
+- Remake the follow-person module to improve reliability and accuracy.
+- TDP 2026 paper.
+- Simulation: MuJoCo, receptionist environment.
 
 ## 2025-09-26
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻 📝    |
-| Ale G.   |  💻📝     | 
-| Ricardo  |  💻       |
-| Fernando |  💻        |
-| Luis     |  💻        |
-| Emil     |  💻 🔍     |
-| Fregoso  |  💻       |
-| Paola    |  📝 🔍     |
-| Hector   |  🤝         |
+**Done:**
 
-### Done
-- Already tried ClearGrasp with the realsense d435i camera
-- Mini OnBoarding 
+- Tried ClearGrasp with the RealSense D435i camera.
+- Mini onboarding.
 
-### In Progress
-- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
-- Inspect the pipeline and manage correctly the exceptions in each step
-- Correct and stabilize the follow face module to work in real time
-- Remake the follow person module to improve the reliability and accuracy
-- Working on the TDP2026 paper
-- Simulation:
-    - Mujoco
-        - Add the urdf of Frida
-        - Add the environment of the receptionist to Mujoco
-        - Make a way that allow us to enter more than two people to different simulations
+**In Progress:**
+
+- Unify movement control through ROS only.
+- Inspect the pipeline and manage exceptions in each step.
+- Stabilize the follow-face module in real time.
+- Remake the follow-person module to improve reliability and accuracy.
+- TDP 2026 paper.
+- Simulation: MuJoCo, add FRIDA URDF, receptionist environment, multi-person sim.
 
 ## 2025-09-18
-### News
-New member:
-- Hector Tovar
 
-| Name     | Status     |
-| -------- | ------     |
-| Domínguez|  💻 📝    |
-| Ale G.   |  💻📝     | 
-| Ricardo  |  💻       |
-| Fernando |  💻        |
-| Luis     |  💻        |
-| Emil     |  💻 🔍     |
-| Fregoso  |  💻       |
-| Paola    |  📝 🔍     |
-| Hector   |  🤝         |
+**News:** new member, Hector Tovar.
 
-### Done
-- Investigation on how to detect a transparent container
-![image](../../assets/development/manipulation/spotlights/2025_09_18/ClearGrasp.png)
-- Optimize the downsampling and clustering to improve the speed and accuracy in detected objects
+**Done:**
 
-| Before | After |
-| :---: | :---: |
-| ![Perception 1](../../assets/development/manipulation/spotlights/2025_09_18/Perception1.jpg) | ![Perception 2](../../assets/development/manipulation/spotlights/2025_09_18/Perception2.jpg) |
+- Investigation on how to detect a transparent container.
 
-<!-- ![image](../../assets/development/manipulation/spotlights/2025_09_18/Perception1.jpg) ![image](../../assets/development/manipulation/spotlights/2025_09_18/Perception2.jpg) -->
-- Testing MuJoco for simulation
-![image](../../assets/development/manipulation/spotlights/2025_09_18/Mujoco.png)
+  ![ClearGrasp investigation](../../assets/development/manipulation/spotlights/2025_09_18/ClearGrasp.png)
 
-### In Progress
-- Unify movement control using only ROS (e.g. joint_trajectory) and delete manual modes in runtime.
-<!-- - Simplify and standardize the API to make it more intuitive and less prone to errors -->
-- Inspect the pipeline and manage correctly the expceptions in each step
-- Correct and stabilize the follow face module to work in real time
-- Remake the follow person module to improve the reliability and accuracy
-- Working on the TDP2026 paper
-- Simulation:
-    - Mujoco
-        - Add the urdf of Frida to Mujoco
-        - Add the environment of the receptionist to Mujoco
-        - Make a way that allow us to enter more than two people to different simulations
+- Optimize downsampling and clustering to improve speed and accuracy on detected objects.
+
+  ![Perception before](../../assets/development/manipulation/spotlights/2025_09_18/Perception1.jpg)
+  ![Perception after](../../assets/development/manipulation/spotlights/2025_09_18/Perception2.jpg)
+
+- Testing MuJoCo for simulation.
+
+  ![MuJoCo testing](../../assets/development/manipulation/spotlights/2025_09_18/Mujoco.png)
+
+**In Progress:**
+
+- Unify movement control through ROS only.
+- Inspect the pipeline and manage exceptions in each step.
+- Stabilize the follow-face module in real time.
+- Remake the follow-person module to improve reliability and accuracy.
+- TDP 2026 paper.
+- Simulation: MuJoCo, add FRIDA URDF, receptionist environment, multi-person sim.
 
 ## 2025-07-05
 
-### Done
-- Added environment spherization to avoid collisions near the object to pick
-- Increased pipeline reliability (fixed lots of hanging issues)
-- Tuned GPD for new gripper, now has a better success rate
-- Fully tested for storing groceries task
+**Done:**
 
-### In Progress
-- Trajectory recording as a file
-- Trajectory projection
-- Serving cereal on container real robot tests
+- Added environment spherization to avoid collisions near the object to pick.
+- Increased pipeline reliability (fixed many hanging issues).
+- Tuned GPD for the new gripper; better success rate.
+- Fully tested for the Storing Groceries task.
+
+**In Progress:**
+
+- Trajectory recording to file.
+- Trajectory projection.
+- Serving cereal on container, real-robot tests.
 
 ## 2025-06-25
 
-### News
-New members:
-- Paola Llamas
-- Emil Winkler
+**News:** new members, Paola Llamas and Emil Winkler.
 
-### Done
-- Onboarding
-- Tested new GPDs, decided to keep the current one
-- Pointcloud resolution based on distance to points
+**Done:**
 
-### In Progress
-- Decided on proposal to open doors, using recorded trajectories and adjusting for new observations
-- Clustering door handles
-- Serving cereal on container
+- Onboarding.
+- Tested new GPDs; decided to keep the current one.
+- Pointcloud resolution scaled by distance to points.
 
-## 2025-04-24 ---> TMR
-This includes both weeks last week from april and developments right before and during TMR 2025.
+**In Progress:**
 
-### News
-TMR2025 finished, manipulation team had ONE SUCCESFUL PICK on rounds.
+- Decided on a proposal to open doors using recorded trajectories adjusted for new observations.
+- Clustering door handles.
+- Serving cereal on container.
 
-### Done
+## 2025-04-24, TMR
 
-- Place on shelfs done
-- New gripper fully tested and upgraded over previous pipeline
-- Added both vertical and horizontal grasping poses generation, tuned for new gripper
-- Fixed URDF precision issues
-- Tests with navigation and within task managers
+This entry covers the last week of April and developments right before and during TMR 2025.
 
+**News:** TMR 2025 finished; the manipulation team had **one successful pick** in the rounds.
+
+**Done:**
+
+- Place on shelves.
+- New gripper fully tested and upgraded over the previous pipeline.
+- Added both vertical and horizontal grasping pose generation, tuned for the new gripper.
+- Fixed URDF precision issues.
+- Tests with navigation and within task managers.
 
 ## 2025-04-24
 
-### News
-- Pick & Place on historic prime
+**News:** Pick & Place on historic prime.
 
-### Done
-- Place pipeline developed
-    - Has adaptability for any object size and table height
-    - Incorporated within pick code structure and ROS node, making it easy to use, develop and scale
-    - Tested on simulation and real robot
-- Heatmap extraction for place position
-    - Developed for Robocup 2024 but never used, works far better than previous KNN clustering
-![image](../../assets/development/manipulation/spotlights/2025_04_24/heatmap_result.png)
-- Pick and Place fully tested on real life
-    - Massive improvements on speed, obtained from collision object generation, reducing use of octomap and collision meshes and tuning GPD estimated grasp poses
-    - Planning times in comparison:
-        - Original MoveIt Pipeline (TMR2023, TDP2024): >1 minute
-        - Cartesian Planning (no collision detection, inferior working distance) (TMR2024, Robocup2024): ~20s
-        - New Moveit Pipeline (TMR2025): ~10s
-    - Octomap integrated within perception pipeline, enabling very safe pick and place operations
-    - Integrated on subtask manager for GPSR and Storing Groceries
-- New URDF for Simulation and Real robot
-    - Fixed for use on simulation
-    - Fixed a big issue which caused the pointcloud to be shifted ~3cm from its real position
-- Give & take operations for task manager
-- Improved face follower
-- Documentation and new easy to use launches for pick & place pipeline
+**Done:**
+
+- Place pipeline developed:
+    - Adaptable to any object size and table height.
+    - Incorporated within the pick code structure and ROS node, easy to use, develop, and scale.
+    - Tested on simulation and real robot.
+- Heatmap extraction for place position (developed for RoboCup 2024 but never used; works far better than the previous KNN clustering).
+
+  ![Heatmap result](../../assets/development/manipulation/spotlights/2025_04_24/heatmap_result.png)
+
+- Pick & Place fully tested in real life:
+    - Massive speed improvements from collision-object generation, reduced use of octomap and collision meshes, and tuning of GPD-estimated grasp poses.
+    - Planning times: MoveIt (TMR 2023, TDP 2024) > 1 min · Cartesian (TMR 2024, RoboCup 2024) ~20 s · new MoveIt pipeline (TMR 2025) ~10 s.
+    - Octomap integrated within the perception pipeline → safer pick/place.
+    - Integrated into the subtask manager for GPSR and Storing Groceries.
+- New URDF for simulation and real robot:
+    - Fixed for use on simulation.
+    - Fixed an issue that shifted the point cloud ~3 cm from its real position.
+- Give-&-take operations for the task manager.
+- Improved face follower.
+- Documentation and easy-to-use launches for the pick & place pipeline.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VFtXomtwfvM" title="Pick and Place tests April 24, 2025" frameborder="0" allowfullscreen></iframe>
 
+**In Progress:**
 
-### In Progress
-- Robot still has issues picking big objects
-- Storing Groceries task involves placing on a difficult surface and at a high risk of colliding, which requires further testing
-- Plane extraction to generate a collision object for the table requires tuning to be working on a wider range of scenarios
+- Picking big objects reliably.
+- Storing Groceries, placing on a difficult surface with high collision risk.
+- Plane extraction for the table collision object, tuning for more scenarios.
 
 ## 2025-04-10
 
-### News
-- No news
+**Done:**
 
-### Done
-- Added simulation with real robot's ZED camera and gripper, working with 2D and 3D camera
-- Fixed transform time issues when deploying some scripts on simulation e.g. object detector.
-- Integrated the full pick pipeline with object detector 2D on simulation. Refactored the code to make it easier to use and to scale better for new tasks.
-- Tested pipeline on real robot with ZED camera
-    - Once again, sim-to-real was smooth without any logic changes
-    - Adjustements were made so all our heavy topics use "Best Effort" QoS policy which made real-robot tests possible -> receiving images and pointclouds through WiFi.
-    - Robot was not able to pick the object as some URDF changes are yet to be added.
+- Added simulation with real robot's ZED camera and gripper, working in 2D and 3D.
+- Fixed transform-time issues when deploying scripts on simulation (e.g. object detector).
+- Integrated the full pick pipeline with the 2D object detector on simulation; refactor for scalability.
+- Tested pipeline on the real robot with the ZED camera:
+    - Sim-to-real was smooth, no logic changes.
+    - Heavy topics moved to *Best Effort* QoS, enabling real-robot tests over Wi-Fi.
+    - Robot could not pick due to pending URDF changes.
 - Face follow tested and working.
-- New poses for Carry my Luggage and Receptionist
+- New poses for Carry My Luggage and Receptionist.
 
-![image](../../assets/development/manipulation/spotlights/spotlight_2025_04_10_pickreal.jpeg)
+![Real-world pick attempt](../../assets/development/manipulation/spotlights/spotlight_2025_04_10_pickreal.jpeg)
 
-### In Progress
-- CuRobo environment setup
-- Three issues were detected on Receptionist runs:
-    - Sometimes, planning hangs on the custom planning_server, not detecting planning failed and not returning a result.
-    - GetJoints service may return all 0s.
-    - MoveIt did not notics position all 0s as invalid even when it's on collision
+**In Progress:**
+
+- CuRobo environment setup.
+- Three issues on Receptionist runs:
+    - Planning hangs on the custom `planning_server`.
+    - `GetJoints` service may return all zeros.
+    - MoveIt sometimes doesn't flag all-zero positions as invalid.
 - Place pipeline with all services added.
-- URDF QoL changes.
+- URDF quality-of-life changes.
 
 ## 2025-04-03
 
-### News
-- No news
+**Done:**
 
-### Done
-- Cleaned up task manager, got some remaining things ready for receptionist
-- Fixed an issue where collision objects were collising among themselves
-- Heatmap for getting place position
+- Cleaned up task manager; readied remaining items for Receptionist.
+- Fixed collision objects colliding among themselves.
+- Heatmap for getting place position.
 
-### In Progress
-- CuRobo worked on PCs, environment on the Orin is not ready yet.
-- List of GPDs ready, some already tested and discarded (SamsungLabs)
-    - Reason: Picks on unusable poses e.g. below the object, and has no way of taking as input the characteristics of the gripper.
-- Advances on the placing object pipeline.
+**In Progress:**
 
-### Notes
-- Slow week but the @Home manipulation team is known for rising from the ashes like a phoenix.
+- CuRobo worked on PCs; Orin environment not ready.
+- Listed candidate GPDs; some tested and discarded (e.g. SamsungLabs, picks on unusable poses, ignores gripper geometry).
+- Placing-object pipeline advances.
+
+**Notes:** slow week; the @Home manipulation team is known for rising from the ashes like a phoenix.
 
 ## 2025-03-27
-This includes both weeks from 2025-03-07 to 2025-03-20
 
-### News
-- No news
+This entry covers both weeks from 2025-03-07 to 2025-03-20.
 
-### Done
-- Cleaned up task manager, got some remaining things ready for receptionist
-- Fixed an issue where collision objects were collising among themselves
-- Heatmap for getting place position
+**News:** first pick of the year.
 
-### In Progress
-- CuRobo worked on PCs, environment on the Orin is not ready yet.
-- List of GPDs ready, some already tested and discarded (SamsungLabs)
-    - Reason: Picks on unusable poses e.g. below the object, and has no way of taking as input the characteristics of the gripper.
-- Advances on the placing object pipeline.
+**Done:**
 
-### Notes
-- Slow week but the @Home manipulation team is known for rising from the ashes like a phoenix.
+- Successful tests on simulation and real life, zero sim-to-real code changes.
+- GPD connection to ROS 2.
+- 2D detection handler to ease use of 2D object detection.
+- Documentation on running pick & place methods and all nodes for Receptionist.
 
-## 2025-03-27
-This includes both weeks from 2025-03-07 to 2025-03-20
+![Pick on simulation](../../assets/development/manipulation/spotlights/spotlight_2025_03_27_pick.jpg)
 
-### News
-- First pick of the year
+**In Progress:**
 
-### Done
-- Succesful tests on simulation and real life ---> not a line of code modified on sim2real
-- GPD connection to ROS2
-- 2D Detection handler to ease use of 2d object detection
-- Documentation on running pick and place methods and all nodes necessary for receptionist
+- Next-phase planning: new motion planning methods, faster 3D perception, constrained planning, task-specific work.
+- Place methods and tests.
+- Acceleration of perception_3d.
+- Looking for new GPDs.
 
-Pick on Simulation:
+**Notes:**
 
-![image](../../assets/development/manipulation/spotlights/spotlight_2025_03_27_pick.jpg)
-
-### In Progress
-- Planning of the next phase of the project:
-    - New motion planning methods
-    - Accelerating 3D perception
-    - Constrained Planning
-    - Task-specific work
-- Place methods and tests 
-- Accelerating perception 3D methods
-- Looking for new GPDs
-
-### Notes
-- Our additions to the pick pipeline show a SIGNIFICANT improvement in planning time, from several minutes to less than 10 seconds. 
-- We will begin the SOTA phase to improve all areas of the pipeline:
-    - Faster Motion planning
-    - Optimized Motion Planning
-    - Better GPDs
-
----
+- Pick-pipeline additions show a significant improvement in planning time, from several minutes to under 10 seconds.
+- Starting the SOTA phase to improve every area of the pipeline.
 
 ## 2025-03-20
-This includes both weeks from 2025-03-07 to 2025-03-20
 
-### News
-- We got early results on the March 15th demo. 
+This entry covers both weeks from 2025-03-07 to 2025-03-20.
 
-### Done
-- Pick server, which handles all motion planning to pick objects
-- Manipulation Core, that communicates with detector, GPD and pick server
-- Manipulation Server, which communicates external systems e.g. task manager, with the manipulation core
-- Object detector 2D with 3D point extraction
-- Object 3D extraction -> Clustering and mesh reconstruction
-    - We added a new method to accelerate planning by reconstructing the table as a box and the object as a set of spheres instead of a mesh
-- Gazebo simulation and moveit config seem to be all ready to use
-- Octomap working now on ZED input
-- Pick using 3D object extraction and pick server
- 
-### In Progress
-- Grasping pose detection connection to ROS2
-- Service to handle updating recent detections to avoid subscribers on many nodes
-- Integration of detection and GPD on Manipulation Core
-- Planning of the next phase of the project:
-    - New motion planning methods
-    - Accelerating 3D perception
-    - Constrained Planning
-    - Task-specific work 
+**News:** early results on the March-15 demo.
 
-### Notes
-- Moveit2 seems to have no real benefits over Moveit1 apart from the constrained planning feature. We expect other changes, such as the primitive object reconstruction to solve old planning time issues.
-- All code so far has not been migrated to ROS2 from its version on home-manipulation, but reworked and replanned for better maintainability and flexibility.
+**Done:**
 
----
+- Pick server (motion planning to pick objects).
+- Manipulation Core (communicates with detector, GPD, and pick server).
+- Manipulation Server (external interface, task manager ↔ manipulation core).
+- 2D object detector with 3D point extraction.
+- 3D object extraction, clustering and mesh reconstruction. New method: reconstruct the table as a box and the object as a set of spheres instead of a mesh, accelerates planning.
+- Gazebo simulation and MoveIt config ready.
+- Octomap working on ZED input.
+- Pick using 3D object extraction + pick server.
+
+**In Progress:**
+
+- Grasp-pose detection ROS 2 connection.
+- Service to handle updating recent detections (avoid many subscribers).
+- Detection + GPD integration in Manipulation Core.
+- Next-phase planning (as above).
+
+**Notes:**
+
+- MoveIt 2 has no real benefits over MoveIt 1 except constrained planning. Primitive object reconstruction is expected to fix old planning-time issues.
+- Code so far has been reworked from scratch (not migrated from `home-manipulation`) for maintainability and flexibility.
 
 ## 2025-03-06
 
-### News
-- no news
+**Done:**
 
-### Done
-- Object Detector 2D working with 2D, no 3D yet
-- Refactored Motion Planning and Object Detector code
-- Dashgo moveit config working
-- Working gripper with xarm_api
-- Working Action Services and services for most motion planning tasks (plan, execute, collision objects)
-- Demo for scholarships (??)
- 
-### In Progress
-- Object 2D projection to 3D
-- Object 3D extraction -> Clustering and mesh reconstruction
-- Full pick pipeline tests
-- Grasping pose detection
-- Working octomap from zed input
-- Gazebo simulation 
+- 2D object detector working in 2D (no 3D yet).
+- Refactored motion planning and object-detector code.
+- DashGo MoveIt config working.
+- Gripper working with `xarm_api`.
+- Action servers and services for most motion-planning tasks (plan, execute, collision objects).
+- Demo for scholarships.
 
-### Notes
-- We seem to be on track for good results on March 15th :)
+**In Progress:**
 
----
+- 2D → 3D projection.
+- 3D object extraction (clustering and mesh reconstruction).
+- Full pick-pipeline tests.
+- Grasp-pose detection.
+- Octomap from ZED input.
+- Gazebo simulation.
+
+**Notes:** on track for good results on March 15.
 
 ## 2025-02-27
 
-### News
-- Welcoming new team member: Ricardo Guerrero
-- New team for the February-May period:
-    * Iván Romero Wells
-    * José Luis Dominguez
-    * David Vázquez
-    * Alexis Chapa
-    * Alejandro González
-    * Ricardo Guerrero
-    * Gerardo Fregoso
-    * Yair Reyes
-    * Emiliano Flores
+**News:** new team member, Ricardo Guerrero. Team for the Feb–May period (9 members, the largest so far): Iván Romero Wells, José Luis Domínguez, David Vázquez, Alexis Chapa, Alejandro González, Ricardo Guerrero, Gerardo Fregoso, Yair Reyes, Emiliano Flores.
 
-This is the largest team we have had so far, with 9 members.
+**Done:**
 
-### Done
-- Table/Surface extraction migrated
-- MoveIt2 interface on Python integrated within subtask manager
-### In Progress
-- Object 2D detection and extraction
-- Object 3D extraction -> Clustering and mesh reconstruction
-- Pick and Place server for motion planning
+- Table / surface extraction migrated.
+- MoveIt 2 interface in Python integrated within the subtask manager.
 
-### Notes
-- A pick and place demo has been scheduled for March 15th, which will mark the start of development into the next phase of the project, involving new motion planning methods and accelerating 3D perception.
-- A pick and place demo has been scheduled for March 15th, which will mark the start of develoomoent into the next phase of the project, involving new motion planning methods and accelerating 3D perception.
+**In Progress:**
+
+- 2D object detection and extraction.
+- 3D object extraction (clustering and mesh reconstruction).
+- Pick & Place server for motion planning.
+
+**Notes:** a pick & place demo is scheduled for March 15, marking the start of the next phase (new motion-planning methods, accelerated 3D perception).
