@@ -5,15 +5,19 @@ The team aims to increase the robot sturdiness, aesthetics, user friendliness an
 **Current Mechanics Members:**
 
 - Alejandro González Escamilla
-- Alejandro Guerrero Carrillo
-- Marcela Jimenez Peñarrieta
 - Ian Manzano Iribas
-- Carlos Amín Méndez Cáceres
 - Barbara Alejandra Novau Martínez
-- Angela Leticia Rosales Díaz
-- Jordan Arturo Palafox Salinas
+- Rodrigo Bahena
+- Jeremy Martino (isai4vr)
+- Luis Alfonso Ramírez Cepeda (LARC)
+
 
 **Legacy Members**
 
-- Diego López Hernández
-- Leonardo Fabián Sánchez Hernández
+- Diego López Hernández (2024-2025)
+- Leonardo Fabián Sánchez Hernández (2020-2024)
+- Carlos Amín Méndez Cáceres (2019-2025)
+- Alejandro Guerrero Carrillo (2023-2025)
+- Jordan Arturo Palafox Salinas (2023-2025)
+- Marcela Jimenez Peñarrieta (2024-2025)
+
