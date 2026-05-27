@@ -14,11 +14,12 @@ Member-status legend used inline:
 ## 2026-05-26
 
 **Done:**
-
+- **Fernando** 💻, Fix remove plane
 - **Domínguez** 💻 — .
 
 **In Progress:**
 
+- **Fernando** 💻, Manage nodes respown and xarm restate
 - **Domínguez** 💻 — .
 - **Hector** 💻 , Get centroid and grasp marks for tableware
 - **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
