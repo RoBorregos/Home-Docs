@@ -22,6 +22,7 @@ Member-status legend used inline:
 - **Domínguez** 💻 — .
 - **Hector** 💻 , Get centroid and grasp marks for tableware
 - **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
+- **Santiago** 💻 , Fix ZED offset, urdf seems correct
 
 ## 2026-04-07
 
