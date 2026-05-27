@@ -11,6 +11,28 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-05-26
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Jocelyn   |        |
+| Benvenuto | 💻     |
+| Camila    | 💻     |
+| Didier    | 💻     |
+| Fabricio  |        |
+| Luis      | 💻     |
+| Oscar     |        |
+
+- **Development**
+  - Fine tuning parameters for the respeaker.
+  - Llamacpp merged in replacement of ollama.
+  - Improved download model.
+  - Start hear early deprioritized.
+  - Continuing work on gpsr merge.
+  - Retrained KWS detector model.
+  - Deprecate and fix shelf categorization.
+
 ## 2026-04-07
 
 | Name      | Status |
