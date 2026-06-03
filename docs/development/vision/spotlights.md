@@ -2,6 +2,15 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the vision team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-06-03
+
+**Done:**
+
+| Owners | Task |
+|--------|------|
+| JP | Filter inside house/room |
+| Danaé | Detect bag placed in robot - ROI |
+
 ## 2026-05-26
 
 **Done:**
