@@ -11,6 +11,18 @@ Member-status legend used inline:
 - 🔧 Bug fixing
 - 🤝 Participation in other subteam
 
+## 2026-06-02
+
+**Done:**
+- **Fernando** 💻, Error handler
+- **Domínguez** 💻, Test zed in parallel position
+
+**In Progress:**
+
+- **Hector** 💻 , Get centroid and grasp marks for tableware
+- **Emil** 💻 , Test rim aproximation and centroid using Open3D and PCA componentes on rim curve.
+- **Santiago** 💻 , Fix ZED offset, urdf seems correct
+
 ## 2026-05-26
 
 **Done:**
