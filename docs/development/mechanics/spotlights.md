@@ -2,6 +2,29 @@
 
 This page is a collection of weekly spotlights that highlight the progress of the Mechanics team. Each spotlight is a summary of the work done by the team in a week.
 
+## 2026-06-02
+
+**Done:**
+
+- Monitor support for omnibase, allowing for easier disassembly (LARC)
+- Battery drawer
+- ToF sensor for gripper CAD (Bahena)
+- Omnibase URDF update (Ale)
+
+**In Progress:**
+
+- Battery drawer stopper to avoid undesired opening (Babi)
+- Voltage Regulators case (Jeremy)
+- Cases for LiFePO4 bateries transportation (Jeremy)
+- ABS gears replacement with inner screw, resin gears did not worked (Jeremy)
+- Research about lever and torque in the robot (Salette)
+- Part of the omnibase cover (Ale)
+
+**Tasks in Hiatus and/or unassigned**
+
+- Gripper DC motor implementation
+- Build a fake washing machine
+
 ## 2026-05-26
 
 **Done:**
