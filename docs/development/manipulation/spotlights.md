@@ -14,6 +14,7 @@ Member-status legend used inline:
 ## 2026-06-02
 
 **Done:**
+
 - **Fernando** 💻, Error handler
 - **Domínguez** 💻, Test zed in parallel position
 
@@ -26,6 +27,7 @@ Member-status legend used inline:
 ## 2026-05-26
 
 **Done:**
+
 - **Fernando** 💻, Fix remove plane
 - **Domínguez** 💻, Merge vamp.
 - **Domínguez** 💻, Document Manipulation in Home Docs.
