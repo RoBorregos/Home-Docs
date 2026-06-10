@@ -11,6 +11,23 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-06-09
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻     |
+| Fregoso   |        |
+| Domínguez |        |
+| Camila    |        |
+| Danaé     |        |
+| Fernando  |        |
+| Benvenuto |        |
+
+**Development**
+
+- Moved display flags from hri for auto-complete.
+- Improved integration's image build time by avoiding unnecessary context transfer to the Docker daemon.
+
 ## 2026-05-26
 
 | Name      | Status |
