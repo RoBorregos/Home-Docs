@@ -11,6 +11,31 @@ Member status:
 - 🔧: Bug fixing
 - 🤝: Participation in other subteam
 
+## 2026-06-09
+
+| Name      | Status |
+| --------- | ------ |
+| Gilberto  | 💻🔧   |
+| Jocelyn   |        |
+| Benvenuto | 🔄     |
+| Camila    |        |
+| Didier    | 💻     |
+| Luis      | 💻     |
+| Oscar     |        |
+
+- **Development**
+  - Merged door and keyword Edge Impulse nodes into a single script that is launched twice.
+  - Added mock responses to subtask functions and depricated old mocking method.
+  - GPSR interleaved execution works! Improved task flow and user interaction.
+  - Trying different methods to train door event model in EI.
+
+- **Refactoring**
+  - Download model now saves EI API key in .env and replaces the already downloaded model.
+  - Is coherent check for GPSR commands was too strict and filtered out correct commands.
+
+- **Bug fixing**
+  - Display wasn't showing keywords.
+
 ## 2026-05-26
 
 | Name      | Status |
