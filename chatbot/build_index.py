@@ -1,0 +1,78 @@
+"""Build the search index: embed documentation chunks and write the artifacts.
+
+Usage (from the repository root):
+    .venv/bin/python chatbot/build_index.py
+
+Outputs:
+    docs/assets/search/index.json      chunk metadata
+    docs/assets/search/embeddings.bin  raw float32 matrix (N x DIM)
+"""
+
+import json
+from dataclasses import asdict
+from pathlib import Path
+
+import numpy as np
+from sentence_transformers import SentenceTransformer
+
+from chunker import Chunk, chunk_file
+
+MODEL_NAME = "all-MiniLM-L6-v2"
+DOCS_ROOT = Path("docs")
+OUT_DIR = Path("docs/assets/search")
+BATCH_SIZE = 64
+
+
+def collect_chunks(docs_root: Path) -> list[Chunk]:
+    """Walk the documentation tree in a deterministic order."""
+    chunks: list[Chunk] = []
+    for path in sorted(docs_root.rglob("*.md")):
+        chunks.extend(chunk_file(path, docs_root))
+    return chunks
+
+
+def embed(model: SentenceTransformer, chunks: list[Chunk]) -> np.ndarray:
+    """Encode chunk texts into a normalised float32 matrix."""
+    matrix = model.encode(
+        [chunk.text for chunk in chunks],
+        batch_size=BATCH_SIZE,
+        normalize_embeddings=True,
+    )
+    return np.asarray(matrix, dtype=np.float32)
+
+
+def write_artifacts(out_dir: Path, chunks: list[Chunk], matrix: np.ndarray) -> None:
+    """Write chunk metadata and the embedding matrix as a matched pair."""
+    out_dir.mkdir(parents=True, exist_ok=True)
+    (out_dir / "embeddings.bin").write_bytes(matrix.tobytes())
+
+    # The header lets a reader reject a stale index instead of silently
+    # returning results for the wrong chunks.
+    index = {
+        "model": MODEL_NAME,
+        "dim": int(matrix.shape[1]),
+        "count": len(chunks),
+        "chunks": [asdict(chunk) for chunk in chunks],
+    }
+    (out_dir / "index.json").write_text(
+        json.dumps(index, ensure_ascii=False), encoding="utf-8"
+    )
+
+
+def main() -> None:
+    chunks = collect_chunks(DOCS_ROOT)
+    if not chunks:
+        raise SystemExit(f"No chunks found under {DOCS_ROOT}/")
+
+    print(f"Embedding {len(chunks)} chunks with {MODEL_NAME}...")
+    model = SentenceTransformer(MODEL_NAME)
+    matrix = embed(model, chunks)
+    write_artifacts(OUT_DIR, chunks, matrix)
+
+    written = ("index.json", "embeddings.bin")
+    size_kb = sum((OUT_DIR / name).stat().st_size for name in written) / 1024
+    print(f"Wrote {len(chunks)} x {matrix.shape[1]} to {OUT_DIR}/ ({size_kb:.0f} KB)")
+
+
+if __name__ == "__main__":
+    main()
