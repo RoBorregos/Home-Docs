@@ -3,7 +3,7 @@
 Loads the artifacts from disk the way the browser will, then runs one search.
 
 Usage (from the repository root):
-    .venv/bin/python chatbot/verify_index.py
+    .venv/bin/python -m chatbot.verify_index
 """
 
 import json

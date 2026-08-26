@@ -1,0 +1,160 @@
+# Golden set for retrieval evaluation.
+#
+# Each entry pairs a question with the source file(s) that should answer it.
+# `expect` is a list because some questions are legitimately covered in more
+# than one place; a hit on any listed file counts as correct.
+#
+# Questions are phrased the way a team member would ask them, deliberately not
+# reusing the wording of the headings they should match. Copying heading text
+# would only measure string overlap.
+#
+# Caveat: these were written by reading the docs, so they inherit that reading.
+# Have the area leads review and extend them before trusting absolute numbers.
+
+# --- Hardware ---------------------------------------------------------------
+- query: "which camera does the robot use?"
+  expect: ["Overview/Hardware.md"]
+
+- query: "what lidar is mounted on the robot?"
+  expect: ["Overview/Hardware.md"]
+
+- query: "what onboard computer runs everything?"
+  expect: ["Overview/Hardware.md"]
+
+- query: "how many batteries does FRIDA carry and at what voltage?"
+  expect: ["Overview/Hardware.md"]
+
+- query: "what microcontroller is inside the gripper?"
+  expect: ["Overview/Hardware.md"]
+
+- query: "what mobile base is the robot built on?"
+  expect: ["Overview/Hardware.md"]
+
+- query: "what microphone and speaker are used for speech?"
+  expect: ["Overview/Hardware.md"]
+
+# --- Networking and infrastructure ------------------------------------------
+- query: "how do I connect remotely to the Orin?"
+  expect: ["Overview/Networking.md"]
+
+- query: "VNC is not working, how do I debug it?"
+  expect: ["Overview/Networking.md"]
+
+- query: "how is docker set up for this project?"
+  expect: ["Overview/Project Structure.md"]
+
+- query: "which host directories are mounted inside the container?"
+  expect: ["Overview/Project Structure.md"]
+
+- query: "how do I install tailscale?"
+  expect: ["resources/codelabs/general/tailscale.md"]
+
+- query: "how do I keep a process running after closing the terminal?"
+  expect: ["resources/codelabs/general/tmux.md"]
+
+# --- Competition ------------------------------------------------------------
+- query: "which tasks do we have to solve in the first stage?"
+  expect: ["Overview/Tasks.md"]
+
+- query: "what does the robot have to do in the receptionist test?"
+  expect: ["development/integration/Task Breakdown/Receptionist.md", "Overview/Tasks.md"]
+
+- query: "how are natural language commands broken into steps?"
+  expect:
+    - "development/integration/Task Breakdown/gpsr/GPSR.md"
+    - "development/integration/Task Breakdown/gpsr/examples.md"
+    - "development/integration/Task Breakdown/gpsr/detailed_functions.md"
+
+# --- Manipulation -----------------------------------------------------------
+- query: "how do I build the manipulation workspace from scratch?"
+  expect: ["development/manipulation/setup.md"]
+
+- query: "what do I need installed before compiling manipulation?"
+  expect: ["development/manipulation/setup.md"]
+
+- query: "how do I install and configure GPD?"
+  expect: ["development/manipulation/setup.md"]
+
+- query: "which ROS packages belong to manipulation?"
+  expect: ["development/manipulation/packages.md"]
+
+- query: "what is the motion planning package responsible for?"
+  expect: ["development/manipulation/packages.md"]
+
+- query: "how do I launch a pick task end to end?"
+  expect: ["development/manipulation/tasks.md"]
+
+- query: "is there a way to move the arm manually with the keyboard?"
+  expect: ["development/manipulation/tasks.md"]
+
+- query: "what fields does the manipulation action goal take?"
+  expect: ["development/manipulation/interfaces.md"]
+
+- query: "which nodes are involved when the robot picks an object?"
+  expect: ["development/manipulation/architecture.md"]
+
+- query: "what does the manipulation area cover?"
+  expect: ["development/manipulation/overview.md", "Areas/Manipulation.md"]
+
+# --- Navigation -------------------------------------------------------------
+- query: "how do I start the navigation stack?"
+  expect: ["development/navigation/overview.md"]
+
+- query: "how do I run localization with AMCL?"
+  expect: ["development/navigation/overview.md"]
+
+- query: "what is a reactive sequence node?"
+  expect: ["development/navigation/BTs.md"]
+
+- query: "how do behaviour trees talk to ROS2 actions?"
+  expect: ["development/navigation/BTs.md"]
+
+- query: "what do we use to build the map of the arena?"
+  expect: ["Areas/Navigation.md"]
+
+- query: "which local controller follows the planned path?"
+  expect: ["Areas/Navigation.md"]
+
+# --- Vision -----------------------------------------------------------------
+- query: "which nodes are available for detecting objects?"
+  expect: ["development/vision/overview.md"]
+
+- query: "how does the robot follow a specific person?"
+  expect: ["development/vision/overview.md"]
+
+# --- Omnibase ---------------------------------------------------------------
+- query: "why did we pick mecanum wheels for the new base?"
+  expect: ["development/omnibase/overview.md"]
+
+- query: "which motor driver controls the omnidirectional base?"
+  expect: ["development/omnibase/overview.md"]
+
+# --- HRI --------------------------------------------------------------------
+- query: "what does the command interpreter node do?"
+  expect: ["Areas/HRI.md"]
+
+- query: "which nodes handle speech and language processing?"
+  expect: ["Areas/HRI.md"]
+
+# --- Project management -----------------------------------------------------
+- query: "what meetings does the team have every week?"
+  expect: ["resources/pm/cadence.md"]
+
+- query: "who is responsible for writing the weekly spotlights?"
+  expect: ["resources/pm/cadence.md"]
+
+- query: "how do I request money to buy a part?"
+  expect: ["resources/pm/finances.md"]
+
+- query: "how should we estimate how long a task will take?"
+  expect: ["resources/pm/planning.md"]
+
+# --- Onboarding and codelabs ------------------------------------------------
+- query: "what are the basic commands to build and run a ROS2 node?"
+  expect: ["resources/codelabs/ros2.md"]
+
+- query: "I am new to the vision area, where do I start?"
+  expect: ["resources/onboarding/vision/Introduction.md"]
+
+- query: "how do I run the display with CUDA?"
+  expect: ["resources/codelabs/hri/display.md"]

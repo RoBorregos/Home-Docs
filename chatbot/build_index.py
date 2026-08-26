@@ -1,7 +1,7 @@
 """Build the search index: embed documentation chunks and write the artifacts.
 
 Usage (from the repository root):
-    .venv/bin/python chatbot/build_index.py
+    .venv/bin/python -m chatbot.build_index
 
 Outputs:
     docs/assets/search/index.json      chunk metadata
@@ -15,7 +15,7 @@ from pathlib import Path
 import numpy as np
 from sentence_transformers import SentenceTransformer
 
-from chunker import Chunk, chunk_file
+from chatbot.chunker import Chunk, chunk_file
 
 MODEL_NAME = "all-MiniLM-L6-v2"
 DOCS_ROOT = Path("docs")

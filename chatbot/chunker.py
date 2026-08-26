@@ -1,7 +1,7 @@
 """Split the MkDocs documentation into retrieval-sized chunks.
 
 Usage (from the repository root):
-    .venv/bin/python chatbot/chunker.py
+    .venv/bin/python -m chatbot.chunker
 """
 
 import random
