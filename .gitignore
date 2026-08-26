@@ -2,3 +2,85 @@ site/
 __pycache__/
 .vscode/
 .venv/
+
+# Jetson AGX Orin — Standalone Boot Kernel Panic (JetPack 7.2.1)
+
+## Summary
+
+After flashing JetPack 7.2.1 on a Jetson AGX Orin Devkit via SDK Manager, the board booted fine while connected to the host PC, but kernel panicked on every standalone boot (power via DC jack only, no USB-C host connection). Root cause: corrupted A/B boot redundancy variables in QSPI firmware, not disk/filesystem corruption. Fixed with a full reflash including QSPI.
+
+## Initial symptom
+
+- HDMI showed the NVIDIA logo then went black, never reaching login.
+- Visible trace referenced `camrtc_hsp_get_fw_hash` and `nv-l4t-usb-device-mode`.
+- No signal on `/dev/ttyACM0` via the USB-C flashing port when trying to debug, because that port only exposes a *virtual* console once Linux's USB Device Mode service has initialized, the very service suspected of failing.
+
+## Diagnostic process
+
+**1. Fixed debugging method.** The USB-C port (next to the 40-pin header) only gives console once userspace USB gadget software is up, useless for early panics. The correct port is the **USB Micro-B automation/debug port** (`idVendor=0955 idProduct=7045`, TOPO chip), exposing `/dev/ttyACM0-3` as real UART, independent of software state and working even with the board powered off. Used `picocom -b 115200 /dev/ttyACM0 -g log.txt`.
+
+**2. Verified storage integrity via UEFI Shell.** Pressed `s` at the UEFI prompt, ran `map -r` and browsed `fsN:`. Both eMMC and NVMe had intact GPT partition tables, and the rootfs filesystem structure was healthy. Ruled out disk/filesystem corruption.
+
+**3. Identified recovery-mode fallback.** Every boot (even after software `reboot`) fell into:
+```
+Mount initrd as rootfs and enter recovery mode
+```
+This is Jetson Linux's A/B redundancy mechanism: after exhausting boot retries, firmware stops attempting normal boot and permanently drops to a rescue initrd shell. The real rootfs still mounted cleanly from that shell (`mount /dev/nvme0n1p1 /mnt/real`), further confirming disk health.
+
+**4. pstore/ramoops attempt.** `ramoops` was enabled but only survives *warm* reboots, not power cuts. Physical DC-jack disconnects destroyed the evidence before it could be read; a software `reboot` preserved RAM but `/sys/fs/pstore/` stayed empty, meaning the panic occurred before ramoops initialized.
+
+**5. Definitive diagnosis.** From the rescue shell, chrooted into the real rootfs (bind-mounting `/proc`, `/sys`, `/dev`) and ran:
+```
+nvbootctrl -t rootfs dump-slots-info
+nvbootctrl -t rootfs get-current-slot
+```
+Result:
+```
+Error: read variable RootfsRedundancyLevel failed!
+Invalid current slot found: -2 (normally this means all slots are corrupted)
+```
+This confirmed the A/B slot state, stored in QSPI firmware (not main storage), was corrupted, likely from an incomplete write during the original flash. Firmware couldn't determine a valid boot slot, so it always fell back to rescue mode regardless of reboot method.
+
+## Root cause
+
+Corrupted A/B boot redundancy variables in QSPI firmware, most likely from an incomplete initial flash. Main storage (eMMC and NVMe) remained healthy throughout.
+
+## Fix: reflash configuration
+
+Performed via SDK Manager, Force Recovery mode, with these settings:
+
+| Setting | Value | Why |
+|---|---|---|
+| Target Hardware | Jetson AGX Orin **[64GB developer kit version]** | Matches the official P3737-0000 carrier board (not the generic module entry) |
+| JetPack version | 7.2.1 | Same as original install |
+| Flash method | **Direct Flash**, no reuse/incremental options | Forces a full rewrite, including QSPI |
+| OEM Configuration | **Pre-Config** (username `orin` + password set directly in SDK Manager) | Skips the manual OOBE wizard that required console access |
+| Storage Device | **NVMe** (overriding the eMMC default) | Better performance; existing FRIDA workspace lived there |
+| Host firewall | `sudo ufw disable` (temporary) | Required for the NFS-based flash flow used for NVMe |
+
+## Post-reflash verification
+
+1. Logged in with USB-C still connected, ran `sudo reboot` to confirm basic stability.
+2. **Key test**: fully disconnected the USB-C data cable, power via DC jack only, cold boot. Repeated 2-3 times to confirm consistency, not just a single lucky boot.
+3. Confirmed `nvbootctrl -t rootfs dump-slots-info` no longer threw the `RootfsRedundancyLevel` error.
+4. Standalone boot confirmed stable. ✅
+
+## SDK Components install (post-verification)
+
+Reopened SDK Manager without repeating the flash step:
+
+- At the flash confirmation window, chose **Skip** (device already flashed and running).
+- At the SDK Components install window: Connection USB, IP `192.168.55.1`, device username/password.
+- Recurring `packagekitd` apt lock conflict, resolved with:
+  ```bash
+  sudo systemctl stop packagekit
+  sudo systemctl disable packagekit
+  ```
+
+## Lessons learned
+
+- For early-boot debugging on the Jetson AGX Orin Devkit, always use the **USB Micro-B debug UART port**, not the USB-C flashing/OOBE port, since the latter depends on software that may itself be failing.
+- A physical power cut wipes `pstore`/`ramoops` evidence; prefer software `reboot` when trying to capture a panic.
+- `nvbootctrl` reporting `RootfsRedundancyLevel failed` / slot `-2` is a definitive sign of QSPI firmware corruption, distinct from filesystem/disk corruption.
+- When reflashing, explicitly confirm a **full** flash (no incremental/reuse) to guarantee QSPI gets rewritten.
+- Verify a real standalone boot (no host PC attached) **before** spending time installing additional SDK components on top of an unconfirmed base.
