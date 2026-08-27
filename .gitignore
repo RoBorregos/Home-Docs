@@ -84,3 +84,4 @@ Reopened SDK Manager without repeating the flash step:
 - `nvbootctrl` reporting `RootfsRedundancyLevel failed` / slot `-2` is a definitive sign of QSPI firmware corruption, distinct from filesystem/disk corruption.
 - When reflashing, explicitly confirm a **full** flash (no incremental/reuse) to guarantee QSPI gets rewritten.
 - Verify a real standalone boot (no host PC attached) **before** spending time installing additional SDK components on top of an unconfirmed base.
+.env

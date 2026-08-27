@@ -14,6 +14,10 @@ from pydantic import BaseModel, Field
 
 from chatbot.retrieval import Retriever
 
+from chatbot import llm
+from chatbot.prompt import build_prompt
+from chatbot.retrieval import Retriever, Result
+
 SNIPPET_CHARS = 300
 
 # Both spellings are distinct origins to a browser, and mkdocs serve prints the
@@ -96,4 +100,56 @@ def search(request: SearchRequest) -> SearchResponse:
             )
             for result in results
         ],
+    )
+
+def to_hit(result: Result) -> SearchHit:
+    return SearchHit(
+        url=result.chunk["url"],
+        breadcrumb=" > ".join(result.chunk["heading_path"]),
+        source=result.chunk["source"],
+        snippet=snippet_of(result.chunk),
+        year=result.chunk["year"],
+        score=round(result.score, 5),
+    )
+
+class AskRequest(BaseModel):
+    query: str = Field(min_length=1, max_length=500)
+    top_k: int = Field(default=5, ge=1, le=20)
+
+class AskResponse(BaseModel):
+    query:str
+    answer:str | None
+    reason: str | None
+    results: list[SearchHit]
+
+@app.post("/ask", response_model=AskResponse)
+def ask(request: AskRequest) -> AskResponse:
+    results = retriever.search(request.query, top_k=request.top_k)
+
+    if not results:
+        return AskResponse(
+            query=request.query,
+            answer=None,
+            reason="no_results",
+            results=[],
+        )
+
+    hits = [to_hit(result) for result in results]
+
+    try:
+        system, user = build_prompt(request.query, results)
+        answer = llm.generate(system, user)
+    except llm.LLMUnavailable as e:
+        return AskResponse(
+            query=request.query,
+            answer=None,
+            reason=e.reason,
+            results=hits,
+        )
+
+    return AskResponse(
+        query=request.query,
+        answer=answer,
+        reason=None,
+        results=hits,
     )
