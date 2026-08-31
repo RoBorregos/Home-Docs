@@ -5,6 +5,9 @@ A thin layer over Retriever: it owns no ranking logic of its own.
 Usage (from the repository root):
     .venv/bin/uvicorn chatbot.api:app --reload --port 8001
 
+Routes live under /api so the static site and this function can share a
+domain on Vercel, which removes the need for CORS in production.
+
 Port 8001 because `mkdocs serve` already occupies 8000.
 """
 
@@ -79,13 +82,13 @@ def snippet_of(chunk: dict) -> str:
     return body[:SNIPPET_CHARS].rsplit(" ", 1)[0] + "..."
 
 
-@app.get("/health")
+@app.get("/api/health")
 def health() -> dict:
     """Liveness probe. The widget calls this before rendering its button."""
     return {"status": "ok", "chunks": len(retriever.chunks)}
 
 
-@app.post("/search", response_model=SearchResponse)
+@app.post("/api/search", response_model=SearchResponse)
 def search(request: SearchRequest) -> SearchResponse:
     results = retriever.search(request.query, top_k=request.top_k)
     return SearchResponse(
@@ -123,7 +126,7 @@ class AskResponse(BaseModel):
     reason: str | None
     results: list[SearchHit]
 
-@app.post("/ask", response_model=AskResponse)
+@app.post("/api/ask", response_model=AskResponse)
 def ask(request: AskRequest) -> AskResponse:
     results = retriever.search(request.query, top_k=request.top_k)
 

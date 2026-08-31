@@ -21,7 +21,7 @@ from chatbot import embedding
 # Resolved from this file, not the working directory: retrieval.py is imported
 # by the API, which may be started from anywhere.
 REPO_ROOT = Path(__file__).resolve().parent.parent
-INDEX_DIR = REPO_ROOT / "docs/assets/search"
+INDEX_DIR = REPO_ROOT / "chatbot/index"
 CANDIDATES = 50          # dense candidates entering the fusion
 LEXICAL_CANDIDATES = 50  # BM25 candidates entering the fusion
 LEXICAL_WEIGHT = 0.25    # measured optimum; at 1.0 BM25 drowns out the dense ranking

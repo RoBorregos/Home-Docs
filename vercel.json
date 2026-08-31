@@ -1,0 +1,14 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bash scripts/build.sh",
+  "outputDirectory": "site",
+  "functions": {
+    "asgi.py": {
+      "maxDuration": 120,
+      "excludeFiles": "{docs/**,site/**,tests/**,.venv/**,chatbot/eval/**,scripts/**,.github/**}"
+    }
+  },
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/asgi.py" }
+  ]
+}

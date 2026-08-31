@@ -1,0 +1,6 @@
+.venv/
+.git/
+site/
+chatbot/index/
+chatbot/models/
+__pycache__/

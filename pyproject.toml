@@ -1,0 +1,13 @@
+[project]
+name = "home-docs-chatbot"
+version = "0.1.0"
+description = "Semantic search and answering over the RoBorregos @Home documentation"
+requires-python = ">=3.12"
+dependencies = [
+    "fastembed>=0.8",
+    "numpy>=1.26",
+    "fastapi>=0.115",
+    "google-genai>=1.0",
+    "python-dotenv>=1.0",
+    "pyyaml>=6.0",
+]

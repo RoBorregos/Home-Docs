@@ -10,13 +10,13 @@ docs/**/*.md
     │  chunker.py        split by heading, merge/split to size
     │  build_index.py    embed with all-MiniLM-L6-v2
     ▼
-docs/assets/search/      index.json (metadata) + embeddings.bin (float32 matrix)
+chatbot/index/           index.json (metadata) + embeddings.bin (float32 matrix)
     │
     │  retrieval.py      dense + BM25, fused with RRF, historical docs demoted
     │  prompt.py         numbered excerpts, citation rules
     │  llm.py            Gemini Flash, with model fallback on 503
     ▼
-api.py                   /search (fast) · /ask (answer) · /health
+api.py                   /api/search (fast) · /api/ask (answer) · /api/health
     ▲
     │  docs/assets/javascripts/chatbot.js
     └── widget: sources in ~100 ms, answer 4-35 s later
@@ -28,6 +28,7 @@ working and the widget still shows the sources.
 | File | Role |
 |---|---|
 | `chunker.py` | Markdown → 830 chunks with URL, heading path and year |
+| `embedding.py` | The embedding model (fastembed/ONNX), isolated in one function |
 | `build_index.py` | Chunks → embeddings, writes the two artifacts |
 | `retrieval.py` | Ranking: dense + BM25 + RRF + recency + one chunk per file |
 | `prompt.py` | Builds the prompt; no LLM dependency, inspectable offline |
@@ -39,12 +40,11 @@ working and the widget still shows the sources.
 ## Setup
 
 ```bash
-.venv/bin/pip install torch --index-url https://download.pytorch.org/whl/cpu
 .venv/bin/pip install -r chatbot/requirements.txt
 ```
 
-The CPU wheel is deliberate: the default one pulls ~2.5 GB of CUDA that 830
-chunks do not need.
+fastembed runs the model through ONNX with no torch: 250 MB resident instead of
+497 MB, which is what lets the API fit a serverless function.
 
 For answers, put a [Google AI Studio](https://aistudio.google.com/apikey) key in
 `.env` at the repository root (already gitignored):
@@ -83,7 +83,7 @@ Rebuild the index whenever the documentation changes.
 ```
 
 ```bash
-curl -s -X POST localhost:8001/ask -H 'Content-Type: application/json' \
+curl -s -X POST localhost:8001/api/ask -H 'Content-Type: application/json' \
   -d '{"query":"how do I install and configure GPD?"}' | python -m json.tool
 ```
 
@@ -105,6 +105,32 @@ changing the chunker, the model, or any ranking parameter.
 The golden set was written by reading the documentation, so it is a good tool for
 comparing configurations and a poor estimate of real-world quality. Extend it
 with questions the team actually asks.
+
+## Deployment
+
+The API is a plain ASGI app exposed as `app` in `asgi.py`, so any host that runs
+ASGI can serve it. Two things hold for every target:
+
+- `scripts/build.sh` produces everything a deployment needs: the rendered site,
+  the model in `chatbot/models/`, and the index in `chatbot/index/`. All three
+  are gitignored, so no binaries live in the repository.
+- `GEMINI_API_KEY` comes from the environment. Search works without it; only the
+  written answer needs it.
+
+Serving `/api/*` from the same origin as the docs removes the need for CORS. The
+widget already assumes that: it calls `/api` in production and
+`localhost:8001/api` when the page is served from localhost.
+
+**Container** — works on Render, Fly, Railway, Cloud Run or a plain VM:
+
+```bash
+docker build -t home-docs-chatbot .
+docker run -p 8000:8000 -e GEMINI_API_KEY=... home-docs-chatbot
+```
+
+**Vercel** — `vercel.json` is the adapter: it runs `scripts/build.sh`, serves
+`site/` statically and routes `/api/*` to the function. It is the only
+Vercel-specific file; nothing else in the repository refers to a platform.
 
 ## Tests
 

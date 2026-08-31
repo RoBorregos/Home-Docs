@@ -8,10 +8,17 @@ Its vectors are identical to sentence-transformers' (cosine 1.000000 on the same
 text), so an index built with either backend is readable by the other.
 """
 
+import os
+from pathlib import Path
+
 import numpy as np
 from fastembed import TextEmbedding
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
+
+# Kept inside the project so the build can download it once and ship it in the
+# deployment bundle; a serverless filesystem is read-only except /tmp.
+CACHE_DIR = Path(os.environ.get("FASTEMBED_CACHE", Path(__file__).resolve().parent / "models"))
 
 _model: TextEmbedding | None = None
 
@@ -20,7 +27,7 @@ def model() -> TextEmbedding:
     """Built on first use; loading costs a couple of seconds."""
     global _model
     if _model is None:
-        _model = TextEmbedding(MODEL_NAME)
+        _model = TextEmbedding(MODEL_NAME, cache_dir=str(CACHE_DIR))
     return _model
 
 

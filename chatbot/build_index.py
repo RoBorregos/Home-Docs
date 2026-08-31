@@ -4,8 +4,8 @@ Usage (from the repository root):
     .venv/bin/python -m chatbot.build_index
 
 Outputs:
-    docs/assets/search/index.json      chunk metadata
-    docs/assets/search/embeddings.bin  raw float32 matrix (N x DIM)
+    chatbot/index/index.json      chunk metadata
+    chatbot/index/embeddings.bin  raw float32 matrix (N x DIM)
 """
 
 import json
@@ -18,7 +18,7 @@ from chatbot import embedding
 from chatbot.chunker import Chunk, chunk_file
 
 DOCS_ROOT = Path("docs")
-OUT_DIR = Path("docs/assets/search")
+OUT_DIR = Path("chatbot/index")
 
 
 def collect_chunks(docs_root: Path) -> list[Chunk]:

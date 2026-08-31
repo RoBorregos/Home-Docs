@@ -12,7 +12,7 @@ from pathlib import Path
 import numpy as np
 from chatbot import embedding
 
-INDEX_DIR = Path("docs/assets/search")
+INDEX_DIR = Path("chatbot/index")
 QUERY = "which camera does the robot use?"
 TOP_K = 3
 

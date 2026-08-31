@@ -5,8 +5,9 @@
 // swaps only the content area, cannot destroy the panel.
 
 (function () {
-  // Change this when the backend is deployed.
-  var API_URL = "http://localhost:8001";
+  // Same origin in production, so no CORS. Locally the API is a second server.
+  var LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
+  var API_URL = LOCAL ? "http://localhost:8001/api" : "/api";
 
   var panel = null;
   var input = null;
