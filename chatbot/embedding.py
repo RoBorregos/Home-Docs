@@ -16,8 +16,7 @@ from fastembed import TextEmbedding
 
 MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 
-# Kept inside the project so the build can download it once and ship it in the
-# deployment bundle; a serverless filesystem is read-only except /tmp.
+# Inside the project so the build ships it: serverless filesystems are read-only.
 CACHE_DIR = Path(os.environ.get("FASTEMBED_CACHE", Path(__file__).resolve().parent / "models"))
 
 _model: TextEmbedding | None = None

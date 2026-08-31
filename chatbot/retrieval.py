@@ -18,8 +18,7 @@ from pathlib import Path
 import numpy as np
 from chatbot import embedding
 
-# Resolved from this file, not the working directory: retrieval.py is imported
-# by the API, which may be started from anywhere.
+# Resolved from this file: the API may be started from any directory.
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_DIR = REPO_ROOT / "chatbot/index"
 CANDIDATES = 50          # dense candidates entering the fusion
@@ -157,8 +156,7 @@ class Retriever:
         dense = self.matrix @ query_vector
         dense_ids = np.argsort(-dense)[:CANDIDATES].tolist() if use_dense else []
 
-        # Skipped entirely at zero weight: scoring BM25 and discarding it costs
-        # a full pass over the postings on every query.
+        # Skipped at zero weight: scoring and discarding costs a full pass.
         lexical_ids: list[int] = []
         if lexical_weight > 0:
             lexical = self.bm25.scores(tokenise(query))

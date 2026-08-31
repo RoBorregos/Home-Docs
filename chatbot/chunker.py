@@ -120,8 +120,7 @@ def mermaid_to_text(block_lines: list[str]) -> list[str]:
         if subgraph:
             labels.append(subgraph.group(1).strip().strip('"'))
 
-    # Nodes repeat once per edge; deduplicate so frequency does not skew the
-    # embedding towards whichever node has the most connections.
+    # Nodes repeat once per edge; deduplicate so frequency does not skew the vector.
     seen: set[str] = set()
     unique: list[str] = []
     for label in labels:
@@ -177,8 +176,7 @@ def split_sections(text: str) -> list[Section]:
         if heading:
             level = len(heading.group(1))
             title = heading.group(2).strip()
-            # Pop by level, not position: files that skip a level (H1 then H3)
-            # would otherwise nest siblings under each other.
+            # Pop by level, not position: skipped levels would nest siblings.
             while stack and stack[-1][0] >= level:
                 stack.pop()
             stack.append((level, title))
@@ -222,8 +220,7 @@ def merge_small(sections: list[Section]) -> list[Section]:
         fits = len(buffer.body) + len(section.body) + 2 <= MAX_CHARS_PER_CHUNK
         if len(buffer.body) < MIN_CHARS_PER_CHUNK and fits:
             shared = common_prefix(buffer.path, section.path)
-            # Headings dropped from the path must survive in the text, or the
-            # merged chunk embeds as an unlabelled average of several topics.
+            # Dropped headings must survive in the text, or the vector blurs.
             if shared != buffer.path:
                 buffer.body = with_heading(buffer)
                 buffer.title = shared[-1] if shared else None
@@ -293,8 +290,7 @@ def split_large(section: Section) -> list[Section]:
     if current:
         pieces.append("\n\n".join(current))
 
-    # Greedy packing leaves the remainder as the last piece. A 60-character
-    # orphan is worth less than a slightly oversized neighbour.
+    # Greedy packing leaves a remainder; an orphan is worse than a big neighbour.
     if len(pieces) >= 2 and len(pieces[-1]) < MIN_CHARS_PER_CHUNK:
         tail = pieces.pop()
         pieces[-1] = f"{pieces[-1]}\n\n{tail}"
@@ -342,8 +338,7 @@ def chunk_file(path: Path, docs_root: Path) -> list[Chunk]:
 
     chunks: list[Chunk] = []
     for section in sized:
-        # Applied after splitting so every part of a long section keeps its
-        # hierarchy: "Setup" alone is ambiguous, "Manipulation > Setup" is not.
+        # After splitting, so every part keeps its hierarchy for the vector.
         breadcrumb = " > ".join(section.path)
         text_to_embed = f"{breadcrumb}\n\n{section.body}" if breadcrumb else section.body
 

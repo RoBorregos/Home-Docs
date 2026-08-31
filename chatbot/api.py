@@ -17,11 +17,9 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
-from chatbot.retrieval import Retriever
-
 from chatbot import llm
 from chatbot.prompt import build_prompt
-from chatbot.retrieval import Retriever, Result
+from chatbot.retrieval import Result, Retriever
 
 log = logging.getLogger(__name__)
 

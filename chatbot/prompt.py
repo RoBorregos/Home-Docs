@@ -16,9 +16,7 @@ import sys
 
 from chatbot.retrieval import Result
 
-# Five chunks of at most 2000 characters is ~10k; the ceiling only bites if a
-# caller raises top_k. Excess is dropped from the tail, which is the
-# lowest-ranked material.
+# Only bites if a caller raises top_k; excess is dropped from the lowest ranks.
 MAX_CONTEXT_CHARS = 12000
 
 SYSTEM_PROMPT = """\

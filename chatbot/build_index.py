@@ -39,8 +39,7 @@ def write_artifacts(out_dir: Path, chunks: list[Chunk], matrix: np.ndarray) -> N
     out_dir.mkdir(parents=True, exist_ok=True)
     (out_dir / "embeddings.bin").write_bytes(matrix.tobytes())
 
-    # The header lets a reader reject a stale index instead of silently
-    # returning results for the wrong chunks.
+    # The header lets a reader reject a stale index instead of trusting it.
     index = {
         "model": embedding.MODEL_NAME,
         "dim": int(matrix.shape[1]),

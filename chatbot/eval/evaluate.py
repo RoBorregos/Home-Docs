@@ -45,8 +45,7 @@ def evaluate(retriever: Retriever, cases: list[dict], name: str, **options) -> S
     for case in cases:
         results = retriever.search(case["query"], top_k=TOP_K, **options)
 
-        # Deduplicate while preserving order: recall is measured per source
-        # file, since that is what the golden set names.
+        # Recall is measured per source file, which is what the golden set names.
         sources: list[str] = []
         for result in results:
             if result.chunk["source"] not in sources:
