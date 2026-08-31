@@ -27,7 +27,7 @@ LEXICAL_CANDIDATES = 50  # BM25 candidates entering the fusion
 LEXICAL_WEIGHT = 0.25    # measured optimum; at 1.0 BM25 drowns out the dense ranking
 RRF_K = 60               # rank damping; 60 comes from the original RRF paper
 HALF_LIFE_YEARS = 2      # a document this old scores half as much
-MAX_PER_SOURCE = 1       # diversity cap
+MAX_PER_SOURCE = 2       # answer-level eval: 87% vs 73% at 1 (file-level recall cannot see this)
 
 TOKEN = re.compile(r"[a-z0-9]+")
 

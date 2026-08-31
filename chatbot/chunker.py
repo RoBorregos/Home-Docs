@@ -136,7 +136,7 @@ def mermaid_to_text(block_lines: list[str]) -> list[str]:
 def split_sections(text: str) -> list[Section]:
     """Split markdown at headings, tracking the heading hierarchy."""
     sections: list[Section] = []
-    stack: list[str] = []
+    stack: list[tuple[int, str]] = []   # (level, title)
     current: Section | None = None
     lines: list[str] = []
     mermaid_buffer: list[str] | None = None
@@ -177,11 +177,12 @@ def split_sections(text: str) -> list[Section]:
         if heading:
             level = len(heading.group(1))
             title = heading.group(2).strip()
-            # Trim the stack to this heading's level, then push. A second H1
-            # therefore restarts the hierarchy instead of nesting under the first.
-            stack = stack[:level - 1]
-            stack.append(title)
-            open_section(title, stack)
+            # Pop by level, not position: files that skip a level (H1 then H3)
+            # would otherwise nest siblings under each other.
+            while stack and stack[-1][0] >= level:
+                stack.pop()
+            stack.append((level, title))
+            open_section(title, [heading_title for _, heading_title in stack])
         else:
             if current is None:
                 open_section(None, [])
@@ -201,6 +202,13 @@ def common_prefix(a: list[str], b: list[str]) -> list[str]:
     return shared
 
 
+def with_heading(section: Section) -> str:
+    """The body with its own heading kept, for sections whose path is collapsing."""
+    if section.title and not section.body.startswith(section.title):
+        return f"{section.title}\n{section.body}"
+    return section.body
+
+
 def merge_small(sections: list[Section]) -> list[Section]:
     """Absorb short sections into the next one, staying under the ceiling."""
     merged: list[Section] = []
@@ -213,12 +221,13 @@ def merge_small(sections: list[Section]) -> list[Section]:
 
         fits = len(buffer.body) + len(section.body) + 2 <= MAX_CHARS_PER_CHUNK
         if len(buffer.body) < MIN_CHARS_PER_CHUNK and fits:
-            buffer.body = f"{buffer.body}\n\n{section.body}".strip()
             shared = common_prefix(buffer.path, section.path)
-            # Once two topics are joined, the narrower title no longer describes
-            # the content, so fall back to the shared parent.
+            # Headings dropped from the path must survive in the text, or the
+            # merged chunk embeds as an unlabelled average of several topics.
             if shared != buffer.path:
+                buffer.body = with_heading(buffer)
                 buffer.title = shared[-1] if shared else None
+            buffer.body = f"{buffer.body}\n\n{with_heading(section)}".strip()
             buffer.path = shared
         else:
             merged.append(buffer)

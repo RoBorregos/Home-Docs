@@ -79,6 +79,7 @@ Rebuild the index whenever the documentation changes.
 .venv/bin/python -m chatbot.verify_index         # artifacts load and rank correctly
 .venv/bin/python -m chatbot.prompt "a question"  # the exact prompt, no API call
 .venv/bin/python -m chatbot.eval.evaluate        # recall@k and MRR per configuration
+.venv/bin/python -m chatbot.eval.answers         # citation validity and answer quality
 ```
 
 ```bash
@@ -91,9 +92,15 @@ response is not JSON.
 
 ## Current numbers
 
-Retrieval over the golden set: **R@1 0.67 · R@3 0.91 · R@5 0.96 · MRR 0.790**.
-`evaluate.py` compares configurations, so rerun it after changing the chunker,
-the model, or any ranking parameter.
+Retrieval (`eval/evaluate.py`): **R@1 0.64 · R@3 0.89 · R@5 0.96 · MRR 0.777**.
+
+Answers (`eval/answers.py`, one Gemini call per question): **100% answered ·
+98% cited a source · 0% invented citations · 87% cited the expected document**.
+
+The two disagree on `MAX_PER_SOURCE`, and the second wins. File-level recall
+cannot see a second chunk from an already-counted file, but that chunk is often
+what completes the answer: 87% against 73% at a cap of 1. Rerun both after
+changing the chunker, the model, or any ranking parameter.
 
 The golden set was written by reading the documentation, so it is a good tool for
 comparing configurations and a poor estimate of real-world quality. Extend it
