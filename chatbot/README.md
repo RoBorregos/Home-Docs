@@ -91,22 +91,6 @@ curl -s -X POST localhost:8001/api/ask -H 'Content-Type: application/json' \
 Drop the `| python -m json.tool` when debugging: it hides the real error if the
 response is not JSON.
 
-## Current numbers
-
-Retrieval (`eval/evaluate.py`): **R@1 0.64 · R@3 0.89 · R@5 0.96 · MRR 0.777**.
-
-Answers (`eval/answers.py`, one LLM call per question): **100% answered ·
-98% cited a source · 0% invented citations · 87% cited the expected document**.
-
-The two disagree on `MAX_PER_SOURCE`, and the second wins. File-level recall
-cannot see a second chunk from an already-counted file, but that chunk is often
-what completes the answer: 87% against 73% at a cap of 1. Rerun both after
-changing the chunker, the model, or any ranking parameter.
-
-The golden set was written by reading the documentation, so it is a good tool for
-comparing configurations and a poor estimate of real-world quality. Extend it
-with questions the team actually asks.
-
 ## Deployment
 
 The API is a plain ASGI app exposed as `app` in `asgi.py`, so any host that runs
