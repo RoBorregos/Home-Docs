@@ -5,8 +5,8 @@ A thin layer over Retriever: it owns no ranking logic of its own.
 Usage (from the repository root):
     .venv/bin/uvicorn chatbot.api:app --reload --port 8001
 
-Routes live under /api so the static site and this function can share a
-domain on Vercel, which removes the need for CORS in production.
+Routes live under /api so the docs and this app can share an origin in
+production, which removes the need for CORS.
 
 Port 8001 because `mkdocs serve` already occupies 8000.
 """

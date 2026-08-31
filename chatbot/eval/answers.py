@@ -9,7 +9,7 @@ Usage (from the repository root):
     .venv/bin/python -m chatbot.eval.answers --limit 10       # quick pass
     .venv/bin/python -m chatbot.eval.answers --show           # print each answer
 
-Costs one Gemini call per question, so a full run spends ~45 of the daily quota.
+Costs one LLM call per question, so a full run spends ~45 of the daily quota.
 """
 
 import re

@@ -1,3 +1,12 @@
+"""Gemini client for the answering layer.
+
+The only module that names the provider. Callers use generate() and
+is_configured(); swapping providers means rewriting this file and nothing else.
+
+Needs GEMINI_API_KEY in the environment. The module still imports without it, so
+search keeps working when generation cannot.
+"""
+
 import os
 from pathlib import Path
 

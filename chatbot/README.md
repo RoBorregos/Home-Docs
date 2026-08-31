@@ -14,9 +14,10 @@ chatbot/index/           index.json (metadata) + embeddings.bin (float32 matrix)
     │
     │  retrieval.py      dense + BM25, fused with RRF, historical docs demoted
     │  prompt.py         numbered excerpts, citation rules
-    │  llm.py            Gemini Flash, with model fallback on 503
+    │  llm.py            the LLM client, with model fallback when one is busy
     ▼
 api.py                   /api/search (fast) · /api/ask (answer) · /api/health
+    ▲                        an ASGI app; asgi.py exposes it for any host
     ▲
     │  docs/assets/javascripts/chatbot.js
     └── widget: sources in ~100 ms, answer 4-35 s later
@@ -32,7 +33,7 @@ working and the widget still shows the sources.
 | `build_index.py` | Chunks → embeddings, writes the two artifacts |
 | `retrieval.py` | Ranking: dense + BM25 + RRF + recency + one chunk per file |
 | `prompt.py` | Builds the prompt; no LLM dependency, inspectable offline |
-| `llm.py` | The only module that knows about Gemini |
+| `llm.py` | The only module that names a provider (currently Gemini) |
 | `api.py` | FastAPI wrapper over `Retriever` |
 | `verify_index.py` | Checks the artifacts load and answer a query |
 | `eval/` | 45-question golden set and the scoring harness |
@@ -94,7 +95,7 @@ response is not JSON.
 
 Retrieval (`eval/evaluate.py`): **R@1 0.64 · R@3 0.89 · R@5 0.96 · MRR 0.777**.
 
-Answers (`eval/answers.py`, one Gemini call per question): **100% answered ·
+Answers (`eval/answers.py`, one LLM call per question): **100% answered ·
 98% cited a source · 0% invented citations · 87% cited the expected document**.
 
 The two disagree on `MAX_PER_SOURCE`, and the second wins. File-level recall
