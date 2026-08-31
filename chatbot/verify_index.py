@@ -10,7 +10,7 @@ import json
 from pathlib import Path
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from chatbot import embedding
 
 INDEX_DIR = Path("docs/assets/search")
 QUERY = "which camera does the robot use?"
@@ -38,8 +38,7 @@ def main() -> None:
     print(f"Loaded {matrix.shape[0]} x {matrix.shape[1]} ({index['model']})")
     print(f"First vector norm: {np.linalg.norm(matrix[0]):.4f} (expected 1.0)")
 
-    model = SentenceTransformer(index["model"])
-    query_vector = model.encode(QUERY, normalize_embeddings=True).astype(np.float32)
+    query_vector = embedding.encode_one(QUERY)
     scores = matrix @ query_vector   # normalised vectors: dot product is cosine
 
     print(f"\nQuery: {QUERY}")

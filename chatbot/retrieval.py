@@ -16,7 +16,7 @@ from dataclasses import asdict, dataclass
 from pathlib import Path
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
+from chatbot import embedding
 
 # Resolved from this file, not the working directory: retrieval.py is imported
 # by the API, which may be started from anywhere.
@@ -134,7 +134,6 @@ class Retriever:
 
         self.chunks = index["chunks"]
         self.matrix = np.frombuffer(raw, dtype=np.float32).reshape(index["count"], index["dim"])
-        self.model = SentenceTransformer(index["model"])
         self.bm25 = BM25([tokenise(chunk["text"]) for chunk in self.chunks])
         self.latest_year = max((c["year"] for c in self.chunks if c["year"]), default=0)
 
@@ -154,7 +153,7 @@ class Retriever:
         The keyword arguments exist so the evaluation harness can ablate each
         stage; the defaults are the production configuration.
         """
-        query_vector = self.model.encode(query, normalize_embeddings=True).astype(np.float32)
+        query_vector = embedding.encode_one(query)
         dense = self.matrix @ query_vector
         dense_ids = np.argsort(-dense)[:CANDIDATES].tolist() if use_dense else []
 

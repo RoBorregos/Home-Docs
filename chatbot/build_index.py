@@ -13,14 +13,12 @@ from dataclasses import asdict
 from pathlib import Path
 
 import numpy as np
-from sentence_transformers import SentenceTransformer
 
+from chatbot import embedding
 from chatbot.chunker import Chunk, chunk_file
 
-MODEL_NAME = "all-MiniLM-L6-v2"
 DOCS_ROOT = Path("docs")
 OUT_DIR = Path("docs/assets/search")
-BATCH_SIZE = 64
 
 
 def collect_chunks(docs_root: Path) -> list[Chunk]:
@@ -31,14 +29,9 @@ def collect_chunks(docs_root: Path) -> list[Chunk]:
     return chunks
 
 
-def embed(model: SentenceTransformer, chunks: list[Chunk]) -> np.ndarray:
+def embed(chunks: list[Chunk]) -> np.ndarray:
     """Encode chunk texts into a normalised float32 matrix."""
-    matrix = model.encode(
-        [chunk.text for chunk in chunks],
-        batch_size=BATCH_SIZE,
-        normalize_embeddings=True,
-    )
-    return np.asarray(matrix, dtype=np.float32)
+    return embedding.encode([chunk.text for chunk in chunks])
 
 
 def write_artifacts(out_dir: Path, chunks: list[Chunk], matrix: np.ndarray) -> None:
@@ -49,7 +42,7 @@ def write_artifacts(out_dir: Path, chunks: list[Chunk], matrix: np.ndarray) -> N
     # The header lets a reader reject a stale index instead of silently
     # returning results for the wrong chunks.
     index = {
-        "model": MODEL_NAME,
+        "model": embedding.MODEL_NAME,
         "dim": int(matrix.shape[1]),
         "count": len(chunks),
         "chunks": [asdict(chunk) for chunk in chunks],
@@ -64,9 +57,8 @@ def main() -> None:
     if not chunks:
         raise SystemExit(f"No chunks found under {DOCS_ROOT}/")
 
-    print(f"Embedding {len(chunks)} chunks with {MODEL_NAME}...")
-    model = SentenceTransformer(MODEL_NAME)
-    matrix = embed(model, chunks)
+    print(f"Embedding {len(chunks)} chunks with {embedding.MODEL_NAME}...")
+    matrix = embed(chunks)
     write_artifacts(OUT_DIR, chunks, matrix)
 
     written = ("index.json", "embeddings.bin")
