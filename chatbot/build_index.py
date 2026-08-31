@@ -21,6 +21,8 @@ DOCS_ROOT = Path("docs")
 OUT_DIR = Path("chatbot/index")
 
 
+# --- steps ------------------------------------------------------------------
+
 def collect_chunks(docs_root: Path) -> list[Chunk]:
     """Walk the documentation tree in a deterministic order."""
     chunks: list[Chunk] = []
@@ -50,6 +52,8 @@ def write_artifacts(out_dir: Path, chunks: list[Chunk], matrix: np.ndarray) -> N
         json.dumps(index, ensure_ascii=False), encoding="utf-8"
     )
 
+
+# --- pipeline ---------------------------------------------------------------
 
 def main() -> None:
     chunks = collect_chunks(DOCS_ROOT)

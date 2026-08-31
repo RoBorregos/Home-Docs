@@ -11,15 +11,20 @@ from collections.abc import Iterator
 from dataclasses import dataclass, field, replace
 from pathlib import Path
 
+# --- parsing patterns -------------------------------------------------------
+
 FRONT_MATTER = re.compile(r"^---\n(.*?)\n---\n", re.DOTALL)
 FENCE = re.compile(r"^\s*(```|~~~)\s*([\w+-]*)")
 HEADING = re.compile(r"^(#{1,6})\s+(.+?)\s*#*$")
 HTML_TAG = re.compile(r"<[^>]+>")
 
+# --- size limits ------------------------------------------------------------
+
 MIN_CHARS_PER_CHUNK = 250    # below this, merge into the neighbouring section
 MAX_CHARS_PER_CHUNK = 2000   # above this, split (~500 tokens)
 
-# Mermaid blocks are diagram syntax, not prose. Only their labels are indexed.
+# --- mermaid ----------------------------------------------------------------
+# Diagram syntax, not prose: only the labels are indexed.
 MERMAID_KEYWORDS = {
     "graph", "flowchart", "sequencediagram", "classdiagram", "statediagram",
     "statediagram-v2", "erdiagram", "gantt", "pie", "journey",
@@ -30,6 +35,8 @@ BRACKETED = re.compile(r'[\[\(\{]{1,2}\s*"?([^\[\]\(\)\{\}"|]+?)"?\s*[\]\)\}]{1,
 EDGE_LABEL = re.compile(r"\|\s*([^|]+?)\s*\|")            # A -->|label| B
 SUBGRAPH = re.compile(r"^\s*subgraph\s+(.+)$", re.I)
 
+
+# --- types ------------------------------------------------------------------
 
 @dataclass
 class Section:
@@ -56,6 +63,8 @@ class Chunk:
     part: int = 1
     n_parts: int = 1
 
+
+# --- text helpers -----------------------------------------------------------
 
 def slugify(title: str) -> str:
     """Approximate the anchor MkDocs generates for a heading."""
@@ -132,6 +141,8 @@ def mermaid_to_text(block_lines: list[str]) -> list[str]:
     return unique
 
 
+# --- 1. split by heading ----------------------------------------------------
+
 def split_sections(text: str) -> list[Section]:
     """Split markdown at headings, tracking the heading hierarchy."""
     sections: list[Section] = []
@@ -190,6 +201,8 @@ def split_sections(text: str) -> list[Section]:
     return sections
 
 
+# --- 2. enforce the minimum size --------------------------------------------
+
 def common_prefix(a: list[str], b: list[str]) -> list[str]:
     """The hierarchy two sections share."""
     shared: list[str] = []
@@ -243,6 +256,8 @@ def merge_small(sections: list[Section]) -> list[Section]:
             merged.append(last)
     return merged
 
+
+# --- 3. enforce the maximum size --------------------------------------------
 
 def _atomic_units(body: str) -> list[str]:
     """Break a body into indivisible units: paragraphs and whole code blocks.
@@ -301,6 +316,8 @@ def split_large(section: Section) -> list[Section]:
     ]
 
 
+# --- 4. metadata ------------------------------------------------------------
+
 def to_url(path: Path, docs_root: Path, anchor: str | None) -> str:
     """Build the published URL for a section, quoting spaces in path names."""
     parts = list(path.relative_to(docs_root).with_suffix("").parts)
@@ -325,6 +342,8 @@ def extract_year(rel_path: Path) -> int | None:
             return None
     return None
 
+
+# --- the pipeline -----------------------------------------------------------
 
 def chunk_file(path: Path, docs_root: Path) -> list[Chunk]:
     """Turn one markdown file into chunks: split, then enforce min and max size."""
@@ -355,6 +374,8 @@ def chunk_file(path: Path, docs_root: Path) -> list[Chunk]:
 
     return chunks
 
+
+# --- inspection -------------------------------------------------------------
 
 def main() -> None:
     docs_root = Path("docs")

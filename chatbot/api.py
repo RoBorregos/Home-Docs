@@ -31,6 +31,9 @@ ALLOWED_ORIGINS = [
     "http://127.0.0.1:8000",
 ]
 
+
+# --- application ------------------------------------------------------------
+
 app = FastAPI(title="Home-Docs search", docs_url="/docs")
 app.add_middleware(
     CORSMiddleware,
@@ -43,10 +46,19 @@ app.add_middleware(
 retriever = Retriever()
 
 
+# --- request models ---------------------------------------------------------
+
 class SearchRequest(BaseModel):
     query: str = Field(min_length=1, max_length=500)
     top_k: int = Field(default=5, ge=1, le=20)
 
+
+class AskRequest(BaseModel):
+    query: str = Field(min_length=1, max_length=500)
+    top_k: int = Field(default=5, ge=1, le=20)
+
+
+# --- response models --------------------------------------------------------
 
 class SearchHit(BaseModel):
     url: str
@@ -62,13 +74,17 @@ class SearchResponse(BaseModel):
     results: list[SearchHit]
 
 
-def snippet_of(chunk: dict) -> str:
-    """Trim a chunk for display.
+class AskResponse(BaseModel):
+    query: str
+    answer: str | None   # None when generation could not run
+    reason: str | None   # why: quota_exceeded, timeout, not_configured...
+    results: list[SearchHit]
 
-    Done server-side so a search does not ship five full 2 KB chunks over the
-    wire to render 300 characters. The breadcrumb is stripped because the UI
-    already shows it as its own line.
-    """
+
+# --- helpers ----------------------------------------------------------------
+
+def snippet_of(chunk: dict) -> str:
+    """Trim a chunk for display, dropping the breadcrumb the UI shows separately."""
     body = chunk["text"]
     breadcrumb = " > ".join(chunk["heading_path"])
     if breadcrumb and body.startswith(breadcrumb):
@@ -80,31 +96,8 @@ def snippet_of(chunk: dict) -> str:
     return body[:SNIPPET_CHARS].rsplit(" ", 1)[0] + "..."
 
 
-@app.get("/api/health")
-def health() -> dict:
-    """Liveness probe. The widget calls this before rendering its button."""
-    return {"status": "ok", "chunks": len(retriever.chunks)}
-
-
-@app.post("/api/search", response_model=SearchResponse)
-def search(request: SearchRequest) -> SearchResponse:
-    results = retriever.search(request.query, top_k=request.top_k)
-    return SearchResponse(
-        query=request.query,
-        results=[
-            SearchHit(
-                url=result.chunk["url"],
-                breadcrumb=" > ".join(result.chunk["heading_path"]),
-                source=result.chunk["source"],
-                snippet=snippet_of(result.chunk),
-                year=result.chunk["year"],
-                score=round(result.score, 5),
-            )
-            for result in results
-        ],
-    )
-
 def to_hit(result: Result) -> SearchHit:
+    """Convert a retrieval result into the shape the client consumes."""
     return SearchHit(
         url=result.chunk["url"],
         breadcrumb=" > ".join(result.chunk["heading_path"]),
@@ -114,26 +107,36 @@ def to_hit(result: Result) -> SearchHit:
         score=round(result.score, 5),
     )
 
-class AskRequest(BaseModel):
-    query: str = Field(min_length=1, max_length=500)
-    top_k: int = Field(default=5, ge=1, le=20)
 
-class AskResponse(BaseModel):
-    query:str
-    answer:str | None
-    reason: str | None
-    results: list[SearchHit]
+# --- endpoints --------------------------------------------------------------
+
+@app.get("/api/health")
+def health() -> dict:
+    """Liveness probe. The widget calls this before rendering its button."""
+    return {"status": "ok", "chunks": len(retriever.chunks)}
+
+
+@app.post("/api/search", response_model=SearchResponse)
+def search(request: SearchRequest) -> SearchResponse:
+    """Retrieval only: fast enough to paint before an answer is ready."""
+    results = retriever.search(request.query, top_k=request.top_k)
+    return SearchResponse(
+        query=request.query,
+        results=[to_hit(result) for result in results],
+    )
+
 
 @app.post("/api/ask", response_model=AskResponse)
 def ask(request: AskRequest) -> AskResponse:
-    results = retriever.search(request.query, top_k=request.top_k)
+    """Retrieve, then answer from what was retrieved.
 
+    Sources come back whether or not generation succeeded, so a failed answer
+    still leaves the reader with the documents.
+    """
+    results = retriever.search(request.query, top_k=request.top_k)
     if not results:
         return AskResponse(
-            query=request.query,
-            answer=None,
-            reason="no_results",
-            results=[],
+            query=request.query, answer=None, reason="no_results", results=[]
         )
 
     hits = [to_hit(result) for result in results]
@@ -141,19 +144,13 @@ def ask(request: AskRequest) -> AskResponse:
     try:
         system, user = build_prompt(request.query, results)
         answer = llm.generate(system, user)
-    except llm.LLMUnavailable as e:
+    except llm.LLMUnavailable as error:
         # The client only sees `reason`; keep the provider's message here.
-        log.warning("generation failed (%s): %s", e.reason, e)
+        log.warning("generation failed (%s): %s", error.reason, error)
         return AskResponse(
-            query=request.query,
-            answer=None,
-            reason=e.reason,
-            results=hits,
+            query=request.query, answer=None, reason=error.reason, results=hits
         )
 
     return AskResponse(
-        query=request.query,
-        answer=answer,
-        reason=None,
-        results=hits,
+        query=request.query, answer=answer, reason=None, results=hits
     )

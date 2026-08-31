@@ -16,6 +16,8 @@ from google.genai import types
 
 load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 
+# --- model chain ------------------------------------------------------------
+
 MODELS = [
     "gemini-3.5-flash",       # ~4.6s, primary
     "gemini-3.5-flash-lite",  # ~1.1s, faster, used when the primary is busy
@@ -25,10 +27,16 @@ MODELS = [
 # Failures worth retrying on the next model rather than surfacing to the user.
 TRANSIENT = {"provider_error", "quota_exceeded", "timeout"}
 
+
+# --- generation settings ----------------------------------------------------
+
 TIMEOUT_MS = 60_000  # 60s: a thinking model over ~1.3k tokens of context
                      # needs far longer than a trivial prompt suggests
 MAX_OUTPUT_TOKENS = 1500  # covers internal reasoning AND the visible answer
 TEMPERATURE = 0.2
+
+
+# --- failures ---------------------------------------------------------------
 
 class LLMUnavailable(Exception):
 
@@ -36,6 +44,8 @@ class LLMUnavailable(Exception):
         super().__init__(detail or reason)
         self.reason = reason
 
+
+# --- client -----------------------------------------------------------------
 
 def is_configured() -> bool:
     return bool(os.environ.get("GEMINI_API_KEY"))
@@ -63,6 +73,8 @@ def classify(error: Exception) -> str:
     if "timeout" in message or "deadline" in message:
         return "timeout"
     return "error"
+
+# --- the call ---------------------------------------------------------------
 
 def generate(system: str, user: str) -> str:
     if not is_configured():

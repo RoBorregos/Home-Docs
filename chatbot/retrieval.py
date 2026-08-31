@@ -21,12 +21,17 @@ from chatbot import embedding
 # Resolved from this file: the API may be started from any directory.
 REPO_ROOT = Path(__file__).resolve().parent.parent
 INDEX_DIR = REPO_ROOT / "chatbot/index"
+# --- ranking parameters, all measured with eval/evaluate.py ------------------
+
 CANDIDATES = 50          # dense candidates entering the fusion
 LEXICAL_CANDIDATES = 50  # BM25 candidates entering the fusion
 LEXICAL_WEIGHT = 0.25    # measured optimum; at 1.0 BM25 drowns out the dense ranking
 RRF_K = 60               # rank damping; 60 comes from the original RRF paper
 HALF_LIFE_YEARS = 2      # a document this old scores half as much
 MAX_PER_SOURCE = 2       # answer-level eval: 87% vs 73% at 1 (file-level recall cannot see this)
+
+
+# --- lexical ranking --------------------------------------------------------
 
 TOKEN = re.compile(r"[a-z0-9]+")
 
@@ -73,6 +78,8 @@ class BM25:
 
         return scores
 
+# --- combining the two rankings ---------------------------------------------
+
 def reciprocal_rank_fusion(
     rankings: list[list[int]],
     k: float = RRF_K,
@@ -96,6 +103,8 @@ def reciprocal_rank_fusion(
 
     return fused
 
+# --- post-fusion adjustments ------------------------------------------------
+
 def recency_weight(year: int | None, latest: int, half_life: float = HALF_LIFE_YEARS) -> float:
     """Demote dated documents. Undated ones live under development/ and are current."""
     if year is None:
@@ -116,6 +125,8 @@ def cap_per_source(
         seen[source] += 1
         kept.append((doc_id, score))
     return kept
+
+# --- the retriever ----------------------------------------------------------
 
 @dataclass
 class Result:
@@ -197,6 +208,8 @@ class Retriever:
             )
             for doc_id, score in ranked[:top_k]
         ]
+
+# --- inspection -------------------------------------------------------------
 
 def main() -> None:
     query = " ".join(sys.argv[1:]) or "which camera does the robot use?"

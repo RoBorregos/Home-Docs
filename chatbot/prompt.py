@@ -19,6 +19,8 @@ from chatbot.retrieval import Result
 # Only bites if a caller raises top_k; excess is dropped from the lowest ranks.
 MAX_CONTEXT_CHARS = 12000
 
+# --- the prompt -------------------------------------------------------------
+
 SYSTEM_PROMPT = """\
 You answer questions about the RoBorregos @Home robotics documentation, using \
 only the excerpts supplied with each question.
@@ -55,6 +57,8 @@ Excerpts:
 
 Question: {query}"""
 
+
+# --- excerpt formatting -----------------------------------------------------
 
 def chunk_body(chunk: dict) -> str:
     """The chunk text without the breadcrumb the indexer prepended.
@@ -106,6 +110,8 @@ def format_context(results: list[Result], max_chars: int = MAX_CONTEXT_CHARS) ->
     return "\n\n".join(entries)
 
 
+# --- assembly ---------------------------------------------------------------
+
 def build_prompt(query: str, results: list[Result]) -> tuple[str, str]:
     """Return (system_prompt, user_prompt) for the supplied question.
 
@@ -116,6 +122,9 @@ def build_prompt(query: str, results: list[Result]) -> tuple[str, str]:
         context=format_context(results), query=query
     )
 
+
+
+# --- inspection -------------------------------------------------------------
 
 def main() -> None:
     from chatbot.retrieval import Retriever
