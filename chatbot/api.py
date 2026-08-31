@@ -8,6 +8,8 @@ Usage (from the repository root):
 Port 8001 because `mkdocs serve` already occupies 8000.
 """
 
+import logging
+
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
@@ -18,11 +20,11 @@ from chatbot import llm
 from chatbot.prompt import build_prompt
 from chatbot.retrieval import Retriever, Result
 
+log = logging.getLogger(__name__)
+
 SNIPPET_CHARS = 300
 
-# Both spellings are distinct origins to a browser, and mkdocs serve prints the
-# 127.0.0.1 one while people usually type localhost. Allowing only one is a
-# classic afternoon lost to CORS.
+# localhost and 127.0.0.1 are distinct origins: allowing only one breaks CORS.
 ALLOWED_ORIGINS = [
     "http://localhost:8000",
     "http://127.0.0.1:8000",
@@ -36,8 +38,7 @@ app.add_middleware(
     allow_headers=["Content-Type"],
 )
 
-# Loaded once at import time: building the BM25 index and loading the embedding
-# model takes seconds, which would be unusable per request.
+# Loaded once at import: building the index takes seconds, too slow per request.
 retriever = Retriever()
 
 
@@ -140,6 +141,8 @@ def ask(request: AskRequest) -> AskResponse:
         system, user = build_prompt(request.query, results)
         answer = llm.generate(system, user)
     except llm.LLMUnavailable as e:
+        # The client only sees `reason`; keep the provider's message here.
+        log.warning("generation failed (%s): %s", e.reason, e)
         return AskResponse(
             query=request.query,
             answer=None,
