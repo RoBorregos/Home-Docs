@@ -94,13 +94,16 @@ response is not JSON.
 ## Deployment
 
 The API is a plain ASGI app exposed as `app` in `asgi.py`, so any host that runs
-ASGI can serve it. Two things hold for every target:
+ASGI can serve it. Three things hold for every target:
 
 - `scripts/build.sh` produces everything a deployment needs: the rendered site,
   the model in `chatbot/models/`, and the index in `chatbot/index/`. All three
   are gitignored, so no binaries live in the repository.
 - `GEMINI_API_KEY` comes from the environment. Search works without it; only the
   written answer needs it.
+- `CHATBOT_ENV=production` turns off the interactive API console and the
+  development CORS origins. `vercel.json` and the `Dockerfile` already set it;
+  any other host has to.
 
 Serving `/api/*` from the same origin as the docs removes the need for CORS. The
 widget already assumes that: it calls `/api` in production and

@@ -12,5 +12,7 @@ COPY . .
 # runtime and starts with a read-only filesystem if the host wants one.
 RUN mkdocs build --strict && python -m chatbot.build_index
 
+ENV CHATBOT_ENV=production
+
 EXPOSE 8000
 CMD ["sh", "-c", "uvicorn asgi:app --host 0.0.0.0 --port ${PORT:-8000}"]

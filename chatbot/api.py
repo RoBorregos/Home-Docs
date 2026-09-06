@@ -12,6 +12,7 @@ Port 8001 because `mkdocs serve` already occupies 8000.
 """
 
 import logging
+import os
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
@@ -25,22 +26,34 @@ log = logging.getLogger(__name__)
 
 SNIPPET_CHARS = 300
 
-# localhost and 127.0.0.1 are distinct origins: allowing only one breaks CORS.
-ALLOWED_ORIGINS = [
-    "http://localhost:8000",
+# Every deployment target sets this; unset means a local development run.
+PRODUCTION = os.environ.get("CHATBOT_ENV") == "production"
+
+# Development only: in production the docs and the API share an origin.
+DEV_ORIGINS = [
+    "http://localhost:8000",   # localhost and 127.0.0.1 are distinct origins
     "http://127.0.0.1:8000",
 ]
 
 
 # --- application ------------------------------------------------------------
 
-app = FastAPI(title="Home-Docs search", docs_url="/docs")
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=ALLOWED_ORIGINS,
-    allow_methods=["GET", "POST"],
-    allow_headers=["Content-Type"],
+# Under /api because hosts pass the full path through; off in production, where
+# an interactive console is just a convenient way to spend the LLM quota.
+app = FastAPI(
+    title="Home-Docs search",
+    docs_url=None if PRODUCTION else "/api/docs",
+    openapi_url=None if PRODUCTION else "/api/openapi.json",
+    redoc_url=None,
 )
+
+if not PRODUCTION:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=DEV_ORIGINS,
+        allow_methods=["GET", "POST"],
+        allow_headers=["Content-Type"],
+    )
 
 # Loaded once at import: building the index takes seconds, too slow per request.
 retriever = Retriever()
@@ -55,7 +68,8 @@ class SearchRequest(BaseModel):
 
 class AskRequest(BaseModel):
     query: str = Field(min_length=1, max_length=500)
-    top_k: int = Field(default=5, ge=1, le=20)
+    # Lower than /search: every excerpt is prompt tokens someone else pays for.
+    top_k: int = Field(default=5, ge=1, le=8)
 
 
 # --- response models --------------------------------------------------------
