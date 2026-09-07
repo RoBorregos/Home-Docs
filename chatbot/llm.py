@@ -8,8 +8,10 @@ search keeps working when generation cannot.
 """
 
 import os
+import time
 from pathlib import Path
 
+import httpx
 from dotenv import load_dotenv
 from google import genai
 from google.genai import types
@@ -19,9 +21,9 @@ load_dotenv(Path(__file__).resolve().parent.parent / ".env")
 # --- model chain ------------------------------------------------------------
 
 MODELS = [
-    "gemini-3.5-flash",       # ~4.6s, primary
-    "gemini-3.5-flash-lite",  # ~1.1s, faster, used when the primary is busy
-    "gemini-3.1-flash-lite",  # last resort
+    "gemini-3.5-flash-lite",
+    "gemini-3.5-flash",
+    "gemini-3.1-flash-lite",
 ]
 
 # Failures worth retrying on the next model rather than surfacing to the user.
@@ -30,8 +32,12 @@ TRANSIENT = {"provider_error", "quota_exceeded", "timeout"}
 
 # --- generation settings ----------------------------------------------------
 
-TIMEOUT_MS = 60_000  # 60s: a thinking model over ~1.3k tokens of context
-                     # needs far longer than a trivial prompt suggests
+# One deadline for the whole chain.
+REQUEST_BUDGET_MS = 90_000
+
+# An even slice each, so the last model still gets a real turn.
+CALL_TIMEOUT_MS = REQUEST_BUDGET_MS // len(MODELS)
+
 MAX_OUTPUT_TOKENS = 1500  # covers internal reasoning AND the visible answer
 TEMPERATURE = 0.2
 
@@ -59,6 +65,10 @@ def client() -> genai.Client:
     return _client
 
 def classify(error: Exception) -> str:
+    # By type: a client-side timeout has no response whose message we could read.
+    if isinstance(error, httpx.TimeoutException):
+        return "timeout"
+
     code = getattr(error, "code", None)
     if code == 429:
         return "quota_exceeded"
@@ -76,22 +86,34 @@ def classify(error: Exception) -> str:
 
 # --- the call ---------------------------------------------------------------
 
+def config_for(system: str, timeout_ms: int) -> types.GenerateContentConfig:
+    """Per attempt, because the timeout shrinks as the shared budget is spent."""
+    return types.GenerateContentConfig(
+        system_instruction=system,
+        max_output_tokens=MAX_OUTPUT_TOKENS,
+        temperature=TEMPERATURE,
+        http_options=types.HttpOptions(timeout=timeout_ms),
+    )
+
+
 def generate(system: str, user: str) -> str:
     if not is_configured():
         raise LLMUnavailable("not_configured", "GEMINI_API_KEY not set")
 
-    config = types.GenerateContentConfig(
-        system_instruction=system,
-        max_output_tokens=MAX_OUTPUT_TOKENS,
-        temperature=TEMPERATURE,
-        http_options=types.HttpOptions(timeout=TIMEOUT_MS),
-    )
-
+    deadline = time.monotonic() + REQUEST_BUDGET_MS / 1000
     last: LLMUnavailable | None = None
+
     for model in MODELS:
+        remaining_ms = int((deadline - time.monotonic()) * 1000)
+        if remaining_ms <= 0:
+            # Surface the failure that spent the budget, not the budget itself.
+            raise last or LLMUnavailable("timeout", "budget spent before any model answered")
+
         try:
             response = client().models.generate_content(
-                model=model, contents=user, config=config
+                model=model,
+                contents=user,
+                config=config_for(system, min(CALL_TIMEOUT_MS, remaining_ms)),
             )
             break
         except Exception as e:
