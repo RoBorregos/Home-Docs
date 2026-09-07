@@ -78,7 +78,7 @@ def classify(error: Exception) -> str:
 
 def generate(system: str, user: str) -> str:
     if not is_configured():
-        raise LLMUnavailable("GEMINI_API_KEY not set")
+        raise LLMUnavailable("not_configured", "GEMINI_API_KEY not set")
 
     config = types.GenerateContentConfig(
         system_instruction=system,
