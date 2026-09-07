@@ -2,7 +2,7 @@
 FROM python:3.12-slim
 
 WORKDIR /app
-COPY requirements.txt chatbot/requirements.txt ./
+COPY requirements.txt ./
 COPY chatbot/requirements.txt chatbot/
 RUN pip install --no-cache-dir -r requirements.txt -r chatbot/requirements.txt
 
