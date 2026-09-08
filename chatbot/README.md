@@ -104,6 +104,9 @@ ASGI can serve it. Three things hold for every target:
 - `CHATBOT_ENV=production` turns off the interactive API console and the
   development CORS origins. `vercel.json` and the `Dockerfile` already set it;
   any other host has to.
+- `REQUEST_BUDGET_MS` is the deadline the whole model chain shares. It has to
+  stay under the request cap the host enforces (`maxDuration` on Vercel), with
+  room left for cold start and retrieval. Defaults to 90s.
 
 Serving `/api/*` from the same origin as the docs removes the need for CORS. The
 widget already assumes that: it calls `/api` in production and

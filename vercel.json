@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "buildCommand": "bash scripts/build.sh",
   "outputDirectory": "site",
-  "env": { "CHATBOT_ENV": "production" },
+  "env": { "CHATBOT_ENV": "production", "REQUEST_BUDGET_MS": "90000" },
   "functions": {
     "asgi.py": {
       "maxDuration": 120,

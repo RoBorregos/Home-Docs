@@ -32,8 +32,8 @@ TRANSIENT = {"provider_error", "quota_exceeded", "timeout"}
 
 # --- generation settings ----------------------------------------------------
 
-# One deadline for the whole chain.
-REQUEST_BUDGET_MS = 90_000
+# One deadline for the whole chain; must stay under the host's request cap.
+REQUEST_BUDGET_MS = int(os.environ.get("REQUEST_BUDGET_MS", 90_000))
 
 # An even slice each, so the last model still gets a real turn.
 CALL_TIMEOUT_MS = REQUEST_BUDGET_MS // len(MODELS)
