@@ -126,6 +126,39 @@ def cap_per_source(
         kept.append((doc_id, score))
     return kept
 
+# --- loading the index ------------------------------------------------------
+
+class StaleIndex(RuntimeError):
+    """The metadata and the embedding matrix do not describe the same build."""
+
+
+def load_index(index_dir: Path = INDEX_DIR) -> tuple[dict, np.ndarray]:
+    """Read the artifacts as a pair, refusing them if they disagree.
+
+    Both checks exist because the alternative is silent: a raw float32 buffer
+    reshapes into anything of the right size, and vectors from another model
+    still rank, just wrongly.
+    """
+    index = json.loads((index_dir / "index.json").read_text(encoding="utf-8"))
+    raw = (index_dir / "embeddings.bin").read_bytes()
+
+    if index["model"] != embedding.MODEL_NAME:
+        raise StaleIndex(
+            f"Index built with {index['model']}, this build embeds queries with "
+            f"{embedding.MODEL_NAME}. Rerun: python -m chatbot.build_index"
+        )
+
+    expected = index["count"] * index["dim"] * 4
+    if len(raw) != expected:
+        raise StaleIndex(
+            f"embeddings.bin is {len(raw)} bytes, expected {expected} for "
+            f"{index['count']} x {index['dim']}. Rerun: python -m chatbot.build_index"
+        )
+
+    matrix = np.frombuffer(raw, dtype=np.float32).reshape(index["count"], index["dim"])
+    return index, matrix
+
+
 # --- the retriever ----------------------------------------------------------
 
 @dataclass
@@ -139,11 +172,9 @@ class Retriever:
     """Loads the index once and answers many queries."""
 
     def __init__(self, index_dir: Path = INDEX_DIR):
-        index = json.loads((index_dir / "index.json").read_text(encoding="utf-8"))
-        raw = (index_dir / "embeddings.bin").read_bytes()
+        index, self.matrix = load_index(index_dir)
 
         self.chunks = index["chunks"]
-        self.matrix = np.frombuffer(raw, dtype=np.float32).reshape(index["count"], index["dim"])
         self.bm25 = BM25([tokenise(chunk["text"]) for chunk in self.chunks])
         self.latest_year = max((c["year"] for c in self.chunks if c["year"]), default=0)
 
