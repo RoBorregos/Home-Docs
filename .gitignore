@@ -1,3 +1,6 @@
 site/
 __pycache__/
 .vscode/
+.env
+.venv/*
+chatbot/
