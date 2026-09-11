@@ -8,6 +8,7 @@
   // Same origin in production, so no CORS. Locally the API is a second server.
   var LOCAL = location.hostname === "localhost" || location.hostname === "127.0.0.1";
   var API_URL = LOCAL ? "http://localhost:8001/api" : "/api";
+  var TOP_K = 5;
 
   var panel = null;
   var input = null;
@@ -140,6 +141,7 @@
 
   function ask(query) {
     var token = ++requestToken;
+    var answered = false;   // once /ask renders, its list is the one citations point to
     input.value = query;
 
     status(results, "Searching...");
@@ -149,13 +151,13 @@
     fetch(API_URL + "/search", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query: query, top_k: 5 }),
+      body: JSON.stringify({ query: query, top_k: TOP_K }),
     })
       .then(function (response) {
         return response.ok ? response.json() : Promise.reject(response.status);
       })
       .then(function (data) {
-        if (token !== requestToken) return;
+        if (token !== requestToken || answered) return;
         renderSources(data.results);
         if (!data.results.length) {
           stopElapsed();
@@ -163,7 +165,7 @@
         }
       })
       .catch(function (error) {
-        if (token !== requestToken) return;
+        if (token !== requestToken || answered) return;
         stopElapsed();
         status(results, "Search is unavailable. Is the backend running?");
         answerBox.innerHTML = "";
@@ -174,14 +176,17 @@
     fetch(API_URL + "/ask", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ query: query, top_k: 5 }),
+      body: JSON.stringify({ query: query, top_k: TOP_K }),
     })
       .then(function (response) {
         return response.ok ? response.json() : Promise.reject(response.status);
       })
       .then(function (data) {
         if (token !== requestToken) return;
+        answered = true;
         stopElapsed();
+        // Citations index into these results, so they replace the provisional list.
+        renderSources(data.results);
         renderAnswer(data);
       })
       .catch(function (error) {
