@@ -66,8 +66,11 @@
         var hit = hits[n - 1];
         // Out of range means an invented citation: render it as plain text.
         if (!hit) return String(n);
-        return '<a class="rb-ask-cite" href="' + escapeHtml(hit.url) +
-               '" title="' + escapeHtml(hit.source) + '">' + n + "</a>";
+        // Built as a node: serialising it escapes quotes that string concatenation would not.
+        var link = el("a", "rb-ask-cite", String(n));
+        link.setAttribute("href", hit.url);
+        link.setAttribute("title", hit.source);
+        return link.outerHTML;
       });
       return "[" + links.join(", ") + "]";
     });
