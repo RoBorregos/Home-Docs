@@ -1,3 +1,10 @@
 site/
 __pycache__/
+.pytest_cache/
 .vscode/
+.venv/
+.env
+
+# Built by scripts/build.sh, never committed
+chatbot/index/
+chatbot/models/
