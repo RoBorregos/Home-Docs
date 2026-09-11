@@ -12,7 +12,7 @@ import render  # noqa: E402
 from render import Run  # noqa: E402
 
 FIXTURE = json.loads((ROOT / "tests" / "fixtures" / "project_items.json").read_text())
-CFG = generate.load_config()
+CFG = {**generate.load_config(), "members": {"Fernando94654": "Fernando"}}
 SPRINTS = project.parse_sprints(FIXTURE["fields"], "Sprint")
 ITEMS = project.parse_items(FIXTURE["items"], "Sprint")
 S1, S2 = [s for s in SPRINTS if s.start in (date(2026, 8, 10), date(2026, 8, 31))]
@@ -72,6 +72,14 @@ class TestSections:
         body = render.section(Run("results", S2), manipulation(S2), CFG)
         assert "**1/3 tasks done (33%)** · P0: 1/2." in body
         assert "- **Unassigned** 💻 Pour (Todo, P0, [#3]" in body
+
+    def test_results_overview(self):
+        body = render.section(Run("results", S2), manipulation(S2), CFG, overview="Pick <done>, pour pending.")
+        assert "P0: 1/2.\n\nPick &lt;done&gt;, pour pending.\n\n**Done:**" in body
+
+    def test_overview_skipped_without_gemini(self, monkeypatch):
+        monkeypatch.delenv("GEMINI_API_KEY", raising=False)
+        assert generate.sprint_overview(Run("results", S2), "Manipulation", manipulation(S2), CFG) == ""
 
     def test_empty_area(self):
         body = render.section(Run("plan", S2), [], CFG)

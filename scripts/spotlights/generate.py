@@ -12,7 +12,7 @@ import yaml
 import project
 import render
 from render import Run
-from summarize import summarize
+from summarize import sprint_summary, summarize
 
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent.parent
@@ -92,6 +92,20 @@ def week_summaries(run: Run, items: list[project.Item], cfg: dict) -> dict[int, 
     return summarize([e for e in entries if e["comments"]], cfg["gemini_models"])
 
 
+def sprint_overview(run: Run, area: str, items: list[project.Item], cfg: dict) -> str:
+    whole_sprint = Run("results", run.sprint, start=run.sprint.start, end=run.sprint.end)
+    tasks = []
+    for item in items:
+        notes = [c.body for c in item.comments if render.in_window(whole_sprint, c.created, cfg)]
+        tasks.append({
+            "title": item.title,
+            "status": item.values.get(cfg["fields"]["status"], "No status"),
+            "priority": item.values.get(cfg["fields"]["priority"], ""),
+            "note": notes[-1] if notes else "",
+        })
+    return sprint_summary(area, run.sprint.title, tasks, cfg["gemini_models"])
+
+
 def hygiene(items: list[project.Item], cfg: dict) -> list[str]:
     area_field = cfg["fields"]["area"]
     problems = []
@@ -150,7 +164,8 @@ def main(argv: list[str] | None = None) -> None:
 
             area_items = [i for i in in_sprint if i.values.get(cfg["fields"]["area"]) == area]
             summaries = week_summaries(run, area_items, cfg) if run.kind == "week" else {}
-            body = render.section(run, area_items, cfg, summaries)
+            overview = sprint_overview(run, area, area_items, cfg) if run.kind == "results" else None
+            body = render.section(run, area_items, cfg, summaries, overview)
             touched = True
             if args.dry_run:
                 print(f"<!-- {path.relative_to(ROOT)} -->\n\n{body}")

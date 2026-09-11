@@ -16,7 +16,7 @@ Each section lists the sprint's issues for that area:
 
 - **Sprint plan**: every issue, grouped by Status.
 - **Week N**: issues closed that week (*Done this week*), issues in Review / Testing / In Progress, *Updates* (issues with comments that week, one English sentence written by Gemini), and a count of issues not started.
-- **Sprint results**: `done/total (%)`, P0 completion, the Done list, and the carried-over issues with their final status.
+- **Sprint results**: `done/total (%)`, P0 completion, a 2–3 sentence Gemini overview (what the sprint set out to do, what was delivered, what is pending), the Done list, and the carried-over issues with their final status. The overview is based on each task's title, final status, priority and latest comment from that sprint (cut to 300 characters), which keeps each call small.
 
 ## Page format
 
@@ -55,7 +55,7 @@ Each section lists the sprint's issues for that area:
 | `generate.py` | CLI entry point. Loads the config, fetches the board, decides which sections to write, and writes the pages and the PR report. |
 | `project.py` | Read-only GraphQL client. Fetches the Sprint iterations and all board items (paginated), then parses issues into `Sprint`, `Item` and `Comment` dataclasses. Draft issues, PRs and bot comments are skipped. |
 | `render.py` | Turns items into markdown sections and inserts or replaces the marker blocks in a page. Has no network access. |
-| `summarize.py` | Sends the week's comments to Gemini and gets back one English sentence per issue. Tries each model in `gemini_models`; on failure, or without `GEMINI_API_KEY`, it returns nothing and the bullet says "N new comments". |
+| `summarize.py` | Gemini calls. `summarize()` turns the week's comments into one English sentence per issue; `sprint_summary()` writes the sprint results overview. Both go through `ask()`, which tries each model in `gemini_models`. Without `GEMINI_API_KEY`, or when every model fails, the weekly bullet says "N new comments" and the overview is left out. |
 | `config.yml` | Board, field names, area → folder map, Kind → emoji, status order, member nicknames, Gemini models. |
 | `requirements.txt` | Runtime dependencies (`pyyaml`, `google-genai`). |
 
@@ -75,6 +75,7 @@ generate.main()
  └─ for each section, for each area:
       ├─ filter items by Sprint start date + Area
       ├─ week_summaries() → summarize()        weekly sections only
+      ├─ sprint_overview() → sprint_summary()  results sections only
       ├─ render.section()                      markdown body
       └─ render.upsert()                       write it into sprints.md
     then hygiene() + write_report()            PR description
@@ -86,7 +87,7 @@ generate.main()
 
 ```bash
 PROJECT_TOKEN="github_pat_..."   # required: read access to the org project and home2 issues
-GEMINI_API_KEY="..."             # optional: without it, Updates say "N new comments"
+GEMINI_API_KEY="..."             # optional: without it, Updates say "N new comments" and results have no overview
 ```
 
 ```bash

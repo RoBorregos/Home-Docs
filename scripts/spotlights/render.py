@@ -122,7 +122,7 @@ def week_section(run: Run, items: list[Item], cfg: dict, summaries: dict[int, st
     return out
 
 
-def results_section(run: Run, items: list[Item], cfg: dict) -> list[str]:
+def results_section(run: Run, items: list[Item], cfg: dict, overview: str | None) -> list[str]:
     status, priority = cfg["fields"]["status"], cfg["fields"]["priority"]
     done = [i for i in items if i.values.get(status) == "Done"]
     rest = status_order([i for i in items if i not in done], cfg)
@@ -132,19 +132,27 @@ def results_section(run: Run, items: list[Item], cfg: dict) -> list[str]:
     if p0:
         stats += f" · P0: {sum(i in done for i in p0)}/{len(p0)}"
     out = ["### Sprint results", "", f"{stats}.", ""]
+    if overview:
+        out += [escape(overview), ""]
     out += group("Done", [line(i, cfg) for i in done])
     out += group("Carried over", [line(i, cfg, status=True) for i in rest])
     return out
 
 
-def section(run: Run, items: list[Item], cfg: dict, summaries: dict[int, str] | None = None) -> str:
+def section(
+    run: Run,
+    items: list[Item],
+    cfg: dict,
+    summaries: dict[int, str] | None = None,
+    overview: str | None = None,
+) -> str:
     items = sorted(items, key=lambda i: i.number)
     if run.kind == "plan":
         lines = plan_section(run, items, cfg)
     elif run.kind == "week":
         lines = week_section(run, items, cfg, summaries or {})
     else:
-        lines = results_section(run, items, cfg)
+        lines = results_section(run, items, cfg, overview)
     if not items:
         lines = lines[:2] + ["_No tasks on the board for this area in this sprint._", ""]
     return "\n".join(lines).rstrip() + "\n"

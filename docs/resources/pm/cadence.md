@@ -154,7 +154,7 @@ Each area also has a **Sprints** page (`docs/development/<area>/sprints.md`) gen
 
 | When | Section |
 |---|---|
-| First Monday of a sprint | **Sprint plan** for the new sprint, plus **Sprint results** for the one that just closed |
+| First Monday of a sprint | **Sprint plan** for the new sprint, plus **Sprint results** for the one that just closed (completion stats and a short summary of goals vs. what was delivered) |
 | Every other Monday | **Week N**: tasks closed that week, tasks in progress, and a one-line summary of that week's issue comments |
 
 The output is only as good as the board. For every sprint issue:
