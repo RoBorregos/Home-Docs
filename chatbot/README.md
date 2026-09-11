@@ -35,6 +35,7 @@ working and the widget still shows the sources.
 | `prompt.py` | Builds the prompt; no LLM dependency, inspectable offline |
 | `llm.py` | The only module that names a provider (currently Gemini) |
 | `api.py` | FastAPI wrapper over `Retriever` |
+| `ratelimit.py` | Per-client and daily limits on `/api/ask`; search stays open |
 | `verify_index.py` | Checks the artifacts load and answer a query |
 | `eval/` | 45-question golden set and the scoring harness |
 
@@ -107,6 +108,10 @@ ASGI can serve it. Three things hold for every target:
 - `REQUEST_BUDGET_MS` is the deadline the whole model chain shares. It has to
   stay under the request cap the host enforces (`maxDuration` on Vercel), with
   room left for cold start and retrieval. Defaults to 90s.
+- `DAILY_ANSWERS` caps generated answers per day (default 400) so one script
+  cannot spend the whole provider quota. The limits live in process memory, so
+  on serverless each instance counts on its own; per-IP protection at the edge
+  (Vercel Firewall rate limit on `/api/ask`) is still worth adding.
 
 Serving `/api/*` from the same origin as the docs removes the need for CORS. The
 widget already assumes that: it calls `/api` in production and

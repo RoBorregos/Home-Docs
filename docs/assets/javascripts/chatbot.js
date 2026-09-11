@@ -21,6 +21,8 @@
   var REASONS = {
     not_configured: "Answers are not enabled on this backend. The matching documents are below.",
     quota_exceeded: "The daily API limit has been reached. The matching documents are below.",
+    rate_limited: "Too many questions in a short time. The matching documents are below.",
+    daily_cap: "The daily answer limit has been reached. The matching documents are below.",
     provider_error: "The model is busy right now.",
     timeout: "The model took too long to respond.",
     truncated: "The answer was cut off before it finished.",

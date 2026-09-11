@@ -14,12 +14,13 @@ Port 8001 because `mkdocs serve` already occupies 8000.
 import logging
 import os
 
-from fastapi import FastAPI
+from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel, Field
 
 from chatbot import llm
 from chatbot.prompt import build_prompt
+from chatbot.ratelimit import RateLimiter
 from chatbot.retrieval import Result, Retriever
 
 log = logging.getLogger(__name__)
@@ -57,6 +58,9 @@ if not PRODUCTION:
 
 # Loaded once at import: building the index takes seconds, too slow per request.
 retriever = Retriever()
+
+# Guards the LLM quota only; retrieval stays open to everyone.
+limiter = RateLimiter()
 
 
 # --- request models ---------------------------------------------------------
@@ -110,6 +114,15 @@ def snippet_of(chunk: dict) -> str:
     return body[:SNIPPET_CHARS].rsplit(" ", 1)[0] + "..."
 
 
+def client_address(http: Request) -> str:
+    """The caller's address, taken from the proxy header when behind one."""
+    # Only trusted in production, where a proxy sets it: clients can forge it.
+    forwarded = http.headers.get("x-forwarded-for")
+    if PRODUCTION and forwarded:
+        return forwarded.split(",")[0].strip()
+    return http.client.host if http.client else "unknown"
+
+
 def to_hit(result: Result) -> SearchHit:
     """Convert a retrieval result into the shape the client consumes."""
     return SearchHit(
@@ -141,7 +154,7 @@ def search(request: SearchRequest) -> SearchResponse:
 
 
 @app.post("/api/ask", response_model=AskResponse)
-def ask(request: AskRequest) -> AskResponse:
+def ask(request: AskRequest, http: Request) -> AskResponse:
     """Retrieve, then answer from what was retrieved.
 
     Sources come back whether or not generation succeeded, so a failed answer
@@ -154,6 +167,14 @@ def ask(request: AskRequest) -> AskResponse:
         )
 
     hits = [to_hit(result) for result in results]
+
+    # Checked after retrieval so a refused caller still gets the documents.
+    refusal = limiter.check(client_address(http))
+    if refusal:
+        log.info("refused (%s), %d answers today", refusal, limiter.answers_today)
+        return AskResponse(
+            query=request.query, answer=None, reason=refusal, results=hits
+        )
 
     try:
         system, user = build_prompt(request.query, results)
