@@ -19,6 +19,11 @@
     "what mobile base is the robot built on?",
   ];
 
+  // navigation.instant only intercepts links present at load, so clicking a
+  // source reloads the page. The thread is restored from here instead.
+  var STORE_KEY = "rb-ask-session";
+  var STORE_LIMIT = 10;
+
   var button = null;
   var panel = null;
   var input = null;
@@ -38,6 +43,57 @@
 
   var ICON =
     '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-4.97 0-9 3.58-9 8 0 2.27 1.07 4.3 2.79 5.75L5 21l4.2-2.1c.9.22 1.84.34 2.8.34 4.97 0 9-3.58 9-8s-4.03-8-9-8z"/></svg>';
+
+  // --- session -------------------------------------------------------------
+
+  // sessionStorage throws in some privacy modes; the widget works without it.
+  function readSession() {
+    try {
+      return JSON.parse(sessionStorage.getItem(STORE_KEY)) || { open: false, turns: [] };
+    } catch (error) {
+      return { open: false, turns: [] };
+    }
+  }
+
+  function writeSession(session) {
+    try {
+      sessionStorage.setItem(STORE_KEY, JSON.stringify(session));
+    } catch (error) {
+      /* Out of quota or blocked: the thread simply will not survive a reload. */
+    }
+  }
+
+  function rememberOpen(open) {
+    var session = readSession();
+    session.open = open;
+    writeSession(session);
+  }
+
+  // Snippets are no longer rendered, so they are dropped before storing.
+  function rememberTurn(data) {
+    var session = readSession();
+    session.turns.push({
+      query: data.query,
+      answer: data.answer,
+      reason: data.reason,
+      results: (data.results || []).map(function (hit) {
+        return {
+          url: hit.url,
+          breadcrumb: hit.breadcrumb,
+          source: hit.source,
+          year: hit.year,
+        };
+      }),
+    });
+    session.turns = session.turns.slice(-STORE_LIMIT);
+    writeSession(session);
+  }
+
+  function forgetTurns() {
+    var session = readSession();
+    session.turns = [];
+    writeSession(session);
+  }
 
   // --- helpers -------------------------------------------------------------
 
@@ -240,6 +296,7 @@
         // Citations index into these results, so they replace the provisional list.
         renderSources(turn.sources, data.results);
         renderAnswer(turn, data);
+        rememberTurn(data);
       })
       .catch(function (error) {
         turn.answered = true;
@@ -259,7 +316,18 @@
       node.remove();
     });
     empty.hidden = false;
+    forgetTurns();
     input.focus();
+  }
+
+  // Replays stored turns without asking again: no request, no quota.
+  function restoreThread(turns) {
+    turns.forEach(function (data) {
+      var turn = createTurn(data.query);
+      turn.answered = true;
+      renderSources(turn.sources, data.results);
+      renderAnswer(turn, data);
+    });
   }
 
   // --- panel ---------------------------------------------------------------
@@ -268,11 +336,13 @@
     return panel.getAttribute("data-open") === "true";
   }
 
-  function open() {
+  function open(focusInput) {
     panel.setAttribute("data-open", "true");
     button.setAttribute("aria-expanded", "true");
     button.setAttribute("data-hidden", "true");
-    input.focus();
+    rememberOpen(true);
+    // Not on restore: the reader clicked a source to read the page, not to type.
+    if (focusInput) input.focus();
   }
 
   // Focus returns to the button only when the user closed deliberately.
@@ -280,6 +350,7 @@
     panel.setAttribute("data-open", "false");
     button.setAttribute("aria-expanded", "false");
     button.setAttribute("data-hidden", "false");
+    rememberOpen(false);
     if (restoreFocus) button.focus();
   }
 
@@ -360,7 +431,7 @@
 
     button.addEventListener("click", function () {
       if (isOpen()) close(false);
-      else open();
+      else open(true);
     });
 
     form.addEventListener("submit", function (event) {
@@ -378,6 +449,10 @@
       if (panel.contains(event.target) || button.contains(event.target)) return;
       close(false);
     });
+
+    var session = readSession();
+    if (session.turns.length) restoreThread(session.turns);
+    if (session.open) open(false);
   }
 
   // No backend, no button: better invisible than broken on every click.
