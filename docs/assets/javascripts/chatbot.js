@@ -3,6 +3,8 @@
 // Two requests on purpose: /search paints sources in ~100ms, /ask fills the
 // answer in 4-35s later. Mounted on document.body so navigation.instant, which
 // swaps only the content area, cannot destroy the panel.
+//
+// Questions stack as turns.
 
 (function () {
   // Same origin in production, so no CORS. Locally the API is a second server.
@@ -10,14 +12,18 @@
   var API_URL = LOCAL ? "http://localhost:8001/api" : "/api";
   var TOP_K = 5;
 
+  // Taken from the golden set, so they are known to answer well.
+  var EXAMPLES = [
+    "which camera does the robot use?",
+    "how do I install and configure GPD?",
+    "what mobile base is the robot built on?",
+  ];
+
+  var button = null;
   var panel = null;
   var input = null;
-  var answerBox = null;
-  var results = null;
-
-  // Guards against a slow response overwriting a newer question.
-  var requestToken = 0;
-  var elapsedTimer = null;
+  var thread = null;
+  var empty = null;
 
   var REASONS = {
     not_configured: "Answers are not enabled on this backend. The matching documents are below.",
@@ -29,6 +35,11 @@
     truncated: "The answer was cut off before it finished.",
     no_results: "Nothing in the documentation matches that question.",
   };
+
+  var ICON =
+    '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3c-4.97 0-9 3.58-9 8 0 2.27 1.07 4.3 2.79 5.75L5 21l4.2-2.1c.9.22 1.84.34 2.8.34 4.97 0 9-3.58 9-8s-4.03-8-9-8z"/></svg>';
+
+  // --- helpers -------------------------------------------------------------
 
   function el(tag, className, text) {
     var node = document.createElement(tag);
@@ -57,7 +68,7 @@
     return "<p>" + html + "</p>";
   }
 
-  // Handles [1], [1][2] and [1, 2] — all three appear in real answers.
+  // Handles [1], [1][2] and [1, 2] - all three appear in real answers.
   function linkCitations(html, hits) {
     return html.replace(/\[\s*\d+(?:\s*,\s*\d+)*\s*\]/g, function (match) {
       var numbers = match.slice(1, -1).split(",");
@@ -81,74 +92,113 @@
     container.appendChild(el("div", "rb-ask-status", message));
   }
 
-  function startElapsed() {
+  // --- turns ---------------------------------------------------------------
+
+  // A turn owns its nodes, so a slow response can only write into its own.
+  function createTurn(query) {
+    var turn = {
+      node: el("div", "rb-ask-turn"),
+      answer: el("div", "rb-ask-answer-slot"),
+      sources: el("div", "rb-ask-sources"),
+      answered: false,
+      timer: null,
+    };
+
+    turn.answer.setAttribute("aria-live", "polite");
+    turn.node.appendChild(el("div", "rb-ask-question", query));
+    turn.node.appendChild(turn.answer);
+    turn.node.appendChild(turn.sources);
+
+    empty.hidden = true;
+    thread.appendChild(turn.node);
+    // Scrolling the thread directly: scrollIntoView would also move the page.
+    thread.scrollTop = thread.scrollHeight;
+    return turn;
+  }
+
+  function startElapsed(turn) {
     var started = Date.now();
-    stopElapsed();
+    stopElapsed(turn);
     // A rising counter reads as progress; a static spinner reads as a hang.
-    elapsedTimer = setInterval(function () {
+    turn.timer = setInterval(function () {
       var seconds = Math.round((Date.now() - started) / 1000);
-      status(answerBox, "Thinking... " + seconds + "s");
+      status(turn.answer, "Thinking... " + seconds + "s");
     }, 1000);
-    status(answerBox, "Thinking... 0s");
+    status(turn.answer, "Thinking... 0s");
   }
 
-  function stopElapsed() {
-    if (elapsedTimer) clearInterval(elapsedTimer);
-    elapsedTimer = null;
+  function stopElapsed(turn) {
+    if (turn.timer) clearInterval(turn.timer);
+    turn.timer = null;
   }
 
-  function renderSources(hits) {
-    results.innerHTML = "";
+  // Document plus deepest section.
+  function sourceTitle(hit) {
+    var file = hit.source.split("/").pop().replace(/\.md$/, "");
+    var path = (hit.breadcrumb || "").split(" > ");
+    var section = path[path.length - 1];
+    return { file: file, section: section === file ? "" : section };
+  }
+
+  function renderSources(container, hits) {
+    container.innerHTML = "";
     if (!hits.length) return;
 
-    results.appendChild(el("div", "rb-ask-sources-title", "Sources"));
+    container.appendChild(el("div", "rb-ask-sources-title", "Sources"));
 
     hits.forEach(function (hit, index) {
       var link = el("a", "rb-ask-hit");
       link.href = hit.url;
 
+      // The full path stays reachable on hover, now that the row is one line.
+      link.setAttribute("title", (hit.breadcrumb || hit.source) + "\n" + hit.source);
+
+      var title = sourceTitle(hit);
       var crumb = el("div", "rb-ask-crumb");
       crumb.appendChild(el("span", "rb-ask-num", String(index + 1)));
-      crumb.appendChild(el("span", null, hit.breadcrumb || hit.source));
+      crumb.appendChild(el("span", "rb-ask-doc", title.file));
+      if (title.section) {
+        crumb.appendChild(el("span", "rb-ask-sep", "\u203a"));
+        crumb.appendChild(el("span", "rb-ask-section", title.section));
+      }
       if (hit.year) crumb.appendChild(el("span", "rb-ask-year", hit.year));
 
       link.appendChild(crumb);
-      link.appendChild(el("div", "rb-ask-snippet", hit.snippet));
-      results.appendChild(link);
+      container.appendChild(link);
     });
   }
 
-  function renderAnswer(data) {
-    answerBox.innerHTML = "";
+  function renderAnswer(turn, data) {
+    turn.answer.innerHTML = "";
 
     if (data.answer) {
       var body = el("div", "rb-ask-answer");
       body.innerHTML = linkCitations(renderMarkdown(data.answer), data.results);
-      answerBox.appendChild(body);
+      turn.answer.appendChild(body);
       return;
     }
 
-    var note = el("div", "rb-ask-status", REASONS[data.reason] || "No answer available.");
-    answerBox.appendChild(note);
+    turn.answer.appendChild(
+      el("div", "rb-ask-status", REASONS[data.reason] || "No answer available.")
+    );
 
     // These clear on retry, so offer it instead of making the user retype.
     if (data.reason === "provider_error" || data.reason === "timeout") {
       var retry = el("button", "rb-ask-retry", "Try again");
       retry.type = "button";
       retry.addEventListener("click", function () {
-        ask(data.query);
+        run(turn, data.query);
       });
-      answerBox.appendChild(retry);
+      turn.answer.appendChild(retry);
     }
   }
 
-  function ask(query) {
-    var token = ++requestToken;
-    var answered = false;   // once /ask renders, its list is the one citations point to
-    input.value = query;
+  // --- asking --------------------------------------------------------------
 
-    status(results, "Searching...");
-    startElapsed();
+  function run(turn, query) {
+    turn.answered = false;
+    startElapsed(turn);
+    status(turn.sources, "Searching...");
 
     // Sources are ready in milliseconds and useful on their own.
     fetch(API_URL + "/search", {
@@ -160,18 +210,18 @@
         return response.ok ? response.json() : Promise.reject(response.status);
       })
       .then(function (data) {
-        if (token !== requestToken || answered) return;
-        renderSources(data.results);
+        if (turn.answered) return;
+        renderSources(turn.sources, data.results);
         if (!data.results.length) {
-          stopElapsed();
-          status(answerBox, REASONS.no_results);
+          stopElapsed(turn);
+          status(turn.answer, REASONS.no_results);
         }
       })
       .catch(function (error) {
-        if (token !== requestToken || answered) return;
-        stopElapsed();
-        status(results, "Search is unavailable. Is the backend running?");
-        answerBox.innerHTML = "";
+        if (turn.answered) return;
+        stopElapsed(turn);
+        status(turn.sources, "Search is unavailable. Is the backend running?");
+        turn.answer.innerHTML = "";
         console.error("[rb-ask] search", error);
       });
 
@@ -185,73 +235,133 @@
         return response.ok ? response.json() : Promise.reject(response.status);
       })
       .then(function (data) {
-        if (token !== requestToken) return;
-        answered = true;
-        stopElapsed();
+        turn.answered = true;
+        stopElapsed(turn);
         // Citations index into these results, so they replace the provisional list.
-        renderSources(data.results);
-        renderAnswer(data);
+        renderSources(turn.sources, data.results);
+        renderAnswer(turn, data);
       })
       .catch(function (error) {
-        if (token !== requestToken) return;
-        stopElapsed();
-        status(answerBox, "The answering service is unavailable.");
+        turn.answered = true;
+        stopElapsed(turn);
+        status(turn.answer, "The answering service is unavailable.");
         console.error("[rb-ask] ask", error);
       });
   }
 
-  function open() {
-    panel.setAttribute("data-open", "true");
+  function ask(query) {
+    input.value = "";
+    run(createTurn(query), query);
+  }
+
+  function clearThread() {
+    thread.querySelectorAll(".rb-ask-turn").forEach(function (node) {
+      node.remove();
+    });
+    empty.hidden = false;
     input.focus();
   }
 
-  function close() {
-    panel.setAttribute("data-open", "false");
+  // --- panel ---------------------------------------------------------------
+
+  function isOpen() {
+    return panel.getAttribute("data-open") === "true";
   }
 
-  function build() {
-    var button = el("button", "rb-ask-button", "Ask the docs");
-    button.type = "button";
+  function open() {
+    panel.setAttribute("data-open", "true");
+    button.setAttribute("aria-expanded", "true");
+    button.setAttribute("data-hidden", "true");
+    input.focus();
+  }
 
-    panel = el("div", "rb-ask-panel");
+  // Focus returns to the button only when the user closed deliberately.
+  function close(restoreFocus) {
     panel.setAttribute("data-open", "false");
+    button.setAttribute("aria-expanded", "false");
+    button.setAttribute("data-hidden", "false");
+    if (restoreFocus) button.focus();
+  }
 
+  function buildEmptyState() {
+    empty = el("div", "rb-ask-empty");
+    empty.appendChild(
+      el("p", null, "Ask a question about the RoBorregos @Home documentation.")
+    );
+
+    var list = el("div", "rb-ask-examples");
+    EXAMPLES.forEach(function (question) {
+      var example = el("button", "rb-ask-example", question);
+      example.type = "button";
+      example.addEventListener("click", function () {
+        ask(question);
+      });
+      list.appendChild(example);
+    });
+
+    empty.appendChild(list);
+    return empty;
+  }
+
+  function buildHeader() {
     var header = el("div", "rb-ask-header");
-    header.appendChild(el("span", null, "Ask the documentation"));
+
+    var title = el("div", "rb-ask-title", "Ask the documentation");
+    title.id = "rb-ask-title";
+    header.appendChild(title);
+
+    var clear = el("button", "rb-ask-clear", "Clear");
+    clear.type = "button";
+    clear.addEventListener("click", clearThread);
+    header.appendChild(clear);
+
     var closeButton = el("button", "rb-ask-close", "×");
     closeButton.type = "button";
     closeButton.setAttribute("aria-label", "Close");
+    closeButton.addEventListener("click", function () {
+      close(true);
+    });
     header.appendChild(closeButton);
+
+    return header;
+  }
+
+  function build() {
+    button = el("button", "rb-ask-button");
+    button.type = "button";
+    button.innerHTML = ICON;
+    button.appendChild(el("span", null, "Ask the docs"));
+    button.setAttribute("aria-expanded", "false");
+
+    panel = el("div", "rb-ask-panel");
+    panel.setAttribute("data-open", "false");
+    panel.setAttribute("role", "dialog");
+    panel.setAttribute("aria-labelledby", "rb-ask-title");
+
+    thread = el("div", "rb-ask-thread");
+    thread.appendChild(buildEmptyState());
 
     var form = el("form", "rb-ask-form");
     input = el("input", "rb-ask-input");
     input.type = "text";
-    input.placeholder = "e.g. how do I install GPD?";
+    input.placeholder = "Ask a question...";
+    input.setAttribute("aria-label", "Your question");
     var submit = el("button", "rb-ask-submit", "Ask");
     submit.type = "submit";
     form.appendChild(input);
     form.appendChild(submit);
 
-    var body = el("div", "rb-ask-body");
-    answerBox = el("div", "rb-ask-answer-slot");
-    results = el("div", "rb-ask-results");
-    body.appendChild(answerBox);
-    body.appendChild(results);
-
-    panel.appendChild(header);
+    panel.appendChild(buildHeader());
+    panel.appendChild(thread);
     panel.appendChild(form);
-    panel.appendChild(body);
 
     document.body.appendChild(button);
     document.body.appendChild(panel);
 
-    status(answerBox, "Ask a question about the documentation.");
-
     button.addEventListener("click", function () {
-      if (panel.getAttribute("data-open") === "true") close();
+      if (isOpen()) close(false);
       else open();
     });
-    closeButton.addEventListener("click", close);
 
     form.addEventListener("submit", function (event) {
       event.preventDefault();
@@ -260,13 +370,13 @@
     });
 
     document.addEventListener("keydown", function (event) {
-      if (event.key === "Escape") close();
+      if (event.key === "Escape" && isOpen()) close(true);
     });
 
     document.addEventListener("click", function (event) {
-      if (panel.getAttribute("data-open") !== "true") return;
+      if (!isOpen()) return;
       if (panel.contains(event.target) || button.contains(event.target)) return;
-      close();
+      close(false);
     });
   }
 
