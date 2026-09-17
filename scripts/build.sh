@@ -8,11 +8,14 @@
 # git and no host has to download them at runtime.
 set -euo pipefail
 
+# Run as modules: hosts install the entry-point scripts outside the PATH.
+PYTHON="${PYTHON:-$(command -v python3 || command -v python)}"
+
 echo "==> mkdocs"
-mkdocs build --strict
+"$PYTHON" -m mkdocs build --strict
 
 echo "==> embedding model + index"
-python -m chatbot.build_index
+"$PYTHON" -m chatbot.build_index
 
 echo "==> bundle contents"
 du -sh chatbot/models chatbot/index site
