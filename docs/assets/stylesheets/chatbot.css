@@ -1,0 +1,415 @@
+/* Semantic search widget. Colours follow the site's tokens, with Material's as a fallback. */
+
+:root {
+  --rb-ask-accent: var(--primary, var(--md-primary-fg-color));
+  --rb-ask-accent-strong: var(--accent, var(--md-accent-fg-color));
+  --rb-ask-on-accent: var(--md-primary-bg-color, #fff);
+  --rb-ask-surface: var(--card, var(--md-default-bg-color));
+  --rb-ask-sunken: var(--md-code-bg-color);
+  --rb-ask-text: var(--md-default-fg-color);
+  --rb-ask-muted: var(--md-default-fg-color--light);
+  --rb-ask-line: var(--md-default-fg-color--lightest);
+  --rb-ask-border: var(--md-default-fg-color--lighter);
+
+  --rb-ask-space-1: .35rem;
+  --rb-ask-space-2: .6rem;
+  --rb-ask-space-3: .9rem;
+  --rb-ask-space-4: 1.4rem;
+
+  --rb-ask-size-sm: .68rem;
+  --rb-ask-size-md: .78rem;
+  --rb-ask-size-lg: .85rem;
+
+  --rb-ask-radius: var(--radius, .5rem);
+  --rb-ask-radius-sm: .3rem;
+  --rb-ask-shadow: 0 2px 8px rgba(11, 22, 48, .16);
+  --rb-ask-shadow-lg: 0 12px 32px rgba(11, 22, 48, .22);
+}
+
+/* --- launcher ------------------------------------------------------------ */
+
+.rb-ask-button {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  gap: var(--rb-ask-space-1);
+  padding: .65rem 1.1rem;
+  border: none;
+  border-radius: 2rem;
+  background: var(--rb-ask-accent);
+  color: var(--rb-ask-on-accent);
+  box-shadow: var(--rb-ask-shadow);
+  font-family: var(--md-text-font-family);
+  font-size: var(--rb-ask-size-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+
+.rb-ask-button:hover {
+  background: var(--rb-ask-accent-strong);
+  box-shadow: var(--rb-ask-shadow-lg);
+  transform: translateY(-2px);
+}
+
+.rb-ask-button:active { transform: translateY(0); }
+
+.rb-ask-button svg {
+  width: 1rem;
+  height: 1rem;
+  fill: currentcolor;
+}
+
+/* Hidden while the panel is open: on narrow screens they overlap. */
+.rb-ask-button[data-hidden="true"] {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(.5rem);
+}
+
+/* --- panel --------------------------------------------------------------- */
+
+.rb-ask-panel {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 1.5rem;
+  z-index: 101;
+  display: flex;
+  flex-direction: column;
+  width: min(30rem, calc(100vw - 3rem));
+  height: min(36rem, calc(100vh - 6rem));
+  border-radius: var(--rb-ask-radius);
+  background: var(--rb-ask-surface);
+  box-shadow: var(--rb-ask-shadow-lg);
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(.5rem);
+  transition: opacity .15s ease, transform .15s ease, visibility .15s;
+}
+
+.rb-ask-panel[data-open="true"] {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* --- header -------------------------------------------------------------- */
+
+.rb-ask-header {
+  display: flex;
+  align-items: center;
+  gap: var(--rb-ask-space-2);
+  padding: var(--rb-ask-space-2) var(--rb-ask-space-3);
+  background: var(--rb-ask-accent);
+  color: var(--rb-ask-on-accent);
+}
+
+.rb-ask-title {
+  flex: 1;
+  font-size: var(--rb-ask-size-lg);
+  font-weight: 600;
+}
+
+.rb-ask-header button {
+  padding: .2rem .4rem;
+  border: none;
+  border-radius: var(--rb-ask-radius-sm);
+  background: none;
+  color: inherit;
+  font-family: inherit;
+  font-size: var(--rb-ask-size-sm);
+  line-height: 1;
+  opacity: .75;
+  cursor: pointer;
+  transition: opacity .15s ease, background .15s ease;
+}
+
+.rb-ask-header button:hover {
+  background: rgba(255, 255, 255, .15);
+  opacity: 1;
+}
+
+.rb-ask-header .rb-ask-close { font-size: 1.1rem; }
+
+/* --- thread -------------------------------------------------------------- */
+
+.rb-ask-thread {
+  flex: 1;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.rb-ask-turn { padding: var(--rb-ask-space-3); }
+
+.rb-ask-turn + .rb-ask-turn { border-top: 1px solid var(--rb-ask-line); }
+
+.rb-ask-question {
+  margin-bottom: var(--rb-ask-space-2);
+  color: var(--rb-ask-text);
+  font-size: var(--rb-ask-size-md);
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.rb-ask-answer {
+  color: var(--rb-ask-text);
+  font-size: var(--rb-ask-size-md);
+  line-height: 1.65;
+}
+
+.rb-ask-answer p { margin: 0 0 var(--rb-ask-space-2); }
+.rb-ask-answer p:last-child { margin-bottom: 0; }
+
+.rb-ask-answer code {
+  padding: .1rem .25rem;
+  border-radius: .2rem;
+  background: var(--rb-ask-sunken);
+  font-family: var(--md-code-font-family);
+  font-size: .9em;
+}
+
+.rb-ask-code {
+  margin: var(--rb-ask-space-2) 0;
+  padding: var(--rb-ask-space-2);
+  border-radius: var(--rb-ask-radius-sm);
+  background: var(--rb-ask-sunken);
+  overflow-x: auto;
+}
+
+.rb-ask-code code {
+  padding: 0;
+  background: none;
+  white-space: pre;
+}
+
+.rb-ask-cite {
+  color: var(--rb-ask-accent);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.rb-ask-cite:hover { text-decoration: underline; }
+
+.rb-ask-status {
+  color: var(--rb-ask-muted);
+  font-size: var(--rb-ask-size-md);
+  line-height: 1.6;
+}
+
+.rb-ask-retry {
+  margin-top: var(--rb-ask-space-2);
+  padding: .3rem .7rem;
+  border: 1px solid var(--rb-ask-border);
+  border-radius: var(--rb-ask-radius-sm);
+  background: none;
+  color: var(--rb-ask-text);
+  font-family: var(--md-text-font-family);
+  font-size: var(--rb-ask-size-sm);
+  cursor: pointer;
+}
+
+.rb-ask-retry:hover { background: var(--rb-ask-sunken); }
+
+/* --- sources ------------------------------------------------------------- */
+
+.rb-ask-sources { margin-top: var(--rb-ask-space-3); }
+
+.rb-ask-sources-title {
+  margin-bottom: var(--rb-ask-space-1);
+  color: var(--rb-ask-muted);
+  font-size: .62rem;
+  font-weight: 700;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.rb-ask-hit {
+  display: block;
+  padding: var(--rb-ask-space-1) var(--rb-ask-space-2);
+  border-radius: var(--rb-ask-radius-sm);
+  color: inherit;
+  text-decoration: none;
+  transition: background .15s ease;
+}
+
+.rb-ask-hit:hover { background: var(--rb-ask-sunken); }
+
+.rb-ask-crumb {
+  display: flex;
+  align-items: center;
+  gap: var(--rb-ask-space-1);
+  color: var(--rb-ask-accent);
+  font-size: var(--rb-ask-size-sm);
+  font-weight: 600;
+}
+
+/* min-width:0 lets the flex child shrink instead of forcing the row wider. */
+.rb-ask-crumb span {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rb-ask-doc { flex: none; }
+
+.rb-ask-sep {
+  flex: none;
+  color: var(--rb-ask-muted);
+  font-weight: 400;
+}
+
+/* The section absorbs the truncation: breadcrumbs can be a whole signature. */
+.rb-ask-section {
+  flex: 1 1 auto;
+  color: var(--rb-ask-muted);
+  font-weight: 400;
+}
+
+.rb-ask-num,
+.rb-ask-year {
+  flex: none;
+  min-width: 1.1rem;
+  padding: .05rem .3rem;
+  border-radius: .6rem;
+  font-size: .6rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.rb-ask-num {
+  background: var(--rb-ask-accent);
+  color: var(--rb-ask-on-accent);
+}
+
+/* Marks docs/years/ sources so the reader sees the answer describes a past state. */
+.rb-ask-year {
+  background: var(--rb-ask-line);
+  color: var(--rb-ask-muted);
+}
+
+.rb-ask-answer { overflow-wrap: break-word; }
+
+/* --- empty state --------------------------------------------------------- */
+
+.rb-ask-empty { padding: var(--rb-ask-space-4) var(--rb-ask-space-3); }
+
+.rb-ask-empty p {
+  margin: 0 0 var(--rb-ask-space-3);
+  color: var(--rb-ask-muted);
+  font-size: var(--rb-ask-size-md);
+  line-height: 1.6;
+}
+
+.rb-ask-examples {
+  display: flex;
+  flex-direction: column;
+  gap: var(--rb-ask-space-1);
+}
+
+.rb-ask-example {
+  padding: var(--rb-ask-space-2);
+  border: 1px solid var(--rb-ask-line);
+  border-radius: var(--rb-ask-radius-sm);
+  background: none;
+  color: var(--rb-ask-text);
+  font-family: var(--md-text-font-family);
+  font-size: var(--rb-ask-size-sm);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color .15s ease, background .15s ease;
+}
+
+.rb-ask-example:hover {
+  border-color: var(--rb-ask-accent);
+  background: var(--rb-ask-sunken);
+}
+
+/* --- form ---------------------------------------------------------------- */
+
+.rb-ask-form {
+  display: flex;
+  gap: var(--rb-ask-space-1);
+  padding: var(--rb-ask-space-2);
+  border-top: 1px solid var(--rb-ask-line);
+  background: var(--rb-ask-surface);
+}
+
+.rb-ask-input {
+  flex: 1;
+  min-width: 0;
+  padding: .5rem .7rem;
+  border: 1px solid var(--rb-ask-border);
+  border-radius: var(--rb-ask-radius-sm);
+  background: var(--rb-ask-surface);
+  color: var(--rb-ask-text);
+  font-family: var(--md-text-font-family);
+  font-size: var(--rb-ask-size-md);
+}
+
+.rb-ask-input:focus {
+  border-color: var(--rb-ask-accent);
+  outline: none;
+}
+
+.rb-ask-submit {
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: var(--rb-ask-radius-sm);
+  background: var(--rb-ask-accent);
+  color: var(--rb-ask-on-accent);
+  font-family: var(--md-text-font-family);
+  font-size: var(--rb-ask-size-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background .15s ease;
+}
+
+.rb-ask-submit:hover { background: var(--rb-ask-accent-strong); }
+
+/* --- focus --------------------------------------------------------------- */
+
+.rb-ask-button:focus-visible,
+.rb-ask-submit:focus-visible,
+.rb-ask-example:focus-visible,
+.rb-ask-retry:focus-visible,
+.rb-ask-hit:focus-visible,
+.rb-ask-cite:focus-visible {
+  outline: 2px solid var(--rb-ask-accent);
+  outline-offset: 2px;
+}
+
+.rb-ask-header button:focus-visible {
+  outline: 2px solid var(--rb-ask-on-accent);
+  outline-offset: 1px;
+}
+
+/* --- narrow screens ------------------------------------------------------ */
+
+@media screen and (max-width: 45em) {
+  .rb-ask-panel {
+    right: .5rem;
+    left: .5rem;
+    bottom: .5rem;
+    width: auto;
+    height: min(80vh, calc(100vh - 1rem));
+  }
+
+  .rb-ask-button {
+    right: .75rem;
+    bottom: .75rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rb-ask-button,
+  .rb-ask-panel,
+  .rb-ask-hit,
+  .rb-ask-example { transition: none; }
+
+  .rb-ask-button:hover { transform: none; }
+}
