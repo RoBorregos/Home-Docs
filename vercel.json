@@ -1,6 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "installCommand": "python3 -m pip install -r requirements.txt -r requirements-docs.txt --break-system-packages",
   "buildCommand": "bash scripts/build.sh",
   "outputDirectory": "site",
   "env": {

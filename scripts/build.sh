@@ -14,13 +14,19 @@ PYTHON="${PYTHON:-$(command -v python3 || command -v python)}"
 echo "==> mkdocs"
 "$PYTHON" -m mkdocs build --strict
 
+# Keep the downloader's chunk cache out of the project: it holds a second copy.
+export HF_XET_CACHE="${TMPDIR:-/tmp}/hf-xet-cache"
+
 echo "==> embedding model + index"
 "$PYTHON" -m chatbot.build_index
 
-# The hub cache symlinks snapshots to blobs. Replace each link with its target and drop the blobs.
+# The hub cache keeps a second copy of every file (blobs, and the xet chunk cache
+# when the host downloads through it). Only the snapshot is needed at runtime.
 echo "==> flattening the model cache"
 find chatbot/models -type l -exec sh -c 'cp --remove-destination "$(readlink -f "$1")" "$1"' _ {} \;
-rm -rf chatbot/models/models--*/blobs chatbot/models/.locks
+find chatbot/models -mindepth 1 -type f \
+  ! -path '*/snapshots/*' ! -path '*/refs/*' ! -name files_metadata.json -delete
+find chatbot/models -mindepth 1 -type d -empty -delete
 
 echo "==> bundle contents"
-du -sh chatbot/models chatbot/index site
+du -sh chatbot/models/* chatbot/index site

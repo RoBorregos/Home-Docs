@@ -1,4 +1,0 @@
-# Build-time only: renders the site, never imported by the chatbot at runtime.
-mkdocs-material
-mkdocs
-mkdocs-awesome-pages-plugin
