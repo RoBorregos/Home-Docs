@@ -1,4 +1,3 @@
-mkdocs-material
-mkdocs
-mkdocs-awesome-pages-plugin
+# Runtime dependencies only: this file is what the host bundles into the function.
+# Build-time dependencies live in requirements-docs.txt (installed by scripts/build.sh).
 -r chatbot/requirements.txt

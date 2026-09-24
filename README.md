@@ -17,8 +17,11 @@ git clone https://github.com/RoBorregos/Home-Docs.git
 2. Install the requirements
 
 ```
-pip install -r requirements.txt
+pip install -r requirements.txt -r requirements-docs.txt
 ```
+
+`requirements.txt` holds what the chatbot needs at runtime (it is what the host
+bundles into the function); `requirements-docs.txt` holds the site toolchain.
 
 3. Run the server
 
