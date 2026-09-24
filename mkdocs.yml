@@ -22,6 +22,7 @@ theme:
 
 extra_css:
   - assets/stylesheets/extra.css
+  - assets/stylesheets/chatbot.css
 
 markdown_extensions:
   - pymdownx.highlight:
@@ -62,3 +63,4 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/javascripts/scroll-unlock.js
   - assets/javascripts/mermaid-init.js
+  - assets/javascripts/chatbot.js

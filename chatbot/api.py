@@ -1,0 +1,191 @@
+"""HTTP API for documentation search.
+
+A thin layer over Retriever: it owns no ranking logic of its own.
+
+Usage (from the repository root):
+    .venv/bin/uvicorn chatbot.api:app --reload --port 8001
+
+Routes live under /api so the docs and this app can share an origin in
+production, which removes the need for CORS.
+
+Port 8001 because `mkdocs serve` already occupies 8000.
+"""
+
+import logging
+import os
+
+from fastapi import FastAPI, Request
+from fastapi.middleware.cors import CORSMiddleware
+from pydantic import BaseModel, Field
+
+from chatbot import llm
+from chatbot.prompt import build_prompt
+from chatbot.ratelimit import RateLimiter
+from chatbot.retrieval import Result, Retriever
+
+log = logging.getLogger(__name__)
+
+SNIPPET_CHARS = 300
+
+# Every deployment target sets this; unset means a local development run.
+PRODUCTION = os.environ.get("CHATBOT_ENV") == "production"
+
+# Development only: in production the docs and the API share an origin.
+DEV_ORIGINS = [
+    "http://localhost:8000",   # localhost and 127.0.0.1 are distinct origins
+    "http://127.0.0.1:8000",
+]
+
+
+# --- application ------------------------------------------------------------
+
+# Under /api because hosts pass the full path through; off in production, where
+# an interactive console is just a convenient way to spend the LLM quota.
+app = FastAPI(
+    title="Home-Docs search",
+    docs_url=None if PRODUCTION else "/api/docs",
+    openapi_url=None if PRODUCTION else "/api/openapi.json",
+    redoc_url=None,
+)
+
+if not PRODUCTION:
+    app.add_middleware(
+        CORSMiddleware,
+        allow_origins=DEV_ORIGINS,
+        allow_methods=["GET", "POST"],
+        allow_headers=["Content-Type"],
+    )
+
+# Loaded once at import: building the index takes seconds, too slow per request.
+retriever = Retriever()
+
+# Guards the LLM quota only; retrieval stays open to everyone.
+limiter = RateLimiter()
+
+
+# --- request models ---------------------------------------------------------
+
+class SearchRequest(BaseModel):
+    query: str = Field(min_length=1, max_length=500)
+    top_k: int = Field(default=5, ge=1, le=20)
+
+
+class AskRequest(BaseModel):
+    query: str = Field(min_length=1, max_length=500)
+    # Lower than /search: every excerpt is prompt tokens someone else pays for.
+    top_k: int = Field(default=5, ge=1, le=8)
+
+
+# --- response models --------------------------------------------------------
+
+class SearchHit(BaseModel):
+    url: str
+    breadcrumb: str
+    source: str
+    snippet: str
+    year: int | None
+    score: float
+
+
+class SearchResponse(BaseModel):
+    query: str
+    results: list[SearchHit]
+
+
+class AskResponse(BaseModel):
+    query: str
+    answer: str | None   # None when generation could not run
+    reason: str | None   # why: quota_exceeded, timeout, not_configured...
+    results: list[SearchHit]
+
+
+# --- helpers ----------------------------------------------------------------
+
+def snippet_of(chunk: dict) -> str:
+    """Trim a chunk for display, dropping the breadcrumb the UI shows separately."""
+    body = chunk["text"]
+    breadcrumb = " > ".join(chunk["heading_path"])
+    if breadcrumb and body.startswith(breadcrumb):
+        body = body[len(breadcrumb):]
+
+    body = " ".join(body.split())
+    if len(body) <= SNIPPET_CHARS:
+        return body
+    return body[:SNIPPET_CHARS].rsplit(" ", 1)[0] + "..."
+
+
+def client_address(http: Request) -> str:
+    """The caller's address, taken from the proxy header when behind one."""
+    # Only trusted in production, where a proxy sets it: clients can forge it.
+    forwarded = http.headers.get("x-forwarded-for")
+    if PRODUCTION and forwarded:
+        return forwarded.split(",")[0].strip()
+    return http.client.host if http.client else "unknown"
+
+
+def to_hit(result: Result) -> SearchHit:
+    """Convert a retrieval result into the shape the client consumes."""
+    return SearchHit(
+        url=result.chunk["url"],
+        breadcrumb=" > ".join(result.chunk["heading_path"]),
+        source=result.chunk["source"],
+        snippet=snippet_of(result.chunk),
+        year=result.chunk["year"],
+        score=round(result.score, 5),
+    )
+
+
+# --- endpoints --------------------------------------------------------------
+
+@app.get("/api/health")
+def health() -> dict:
+    """Liveness probe. The widget calls this before rendering its button."""
+    return {"status": "ok", "chunks": len(retriever.chunks)}
+
+
+@app.post("/api/search", response_model=SearchResponse)
+def search(request: SearchRequest) -> SearchResponse:
+    """Retrieval only: fast enough to paint before an answer is ready."""
+    results = retriever.search(request.query, top_k=request.top_k)
+    return SearchResponse(
+        query=request.query,
+        results=[to_hit(result) for result in results],
+    )
+
+
+@app.post("/api/ask", response_model=AskResponse)
+def ask(request: AskRequest, http: Request) -> AskResponse:
+    """Retrieve, then answer from what was retrieved.
+
+    Sources come back whether or not generation succeeded, so a failed answer
+    still leaves the reader with the documents.
+    """
+    results = retriever.search(request.query, top_k=request.top_k)
+    if not results:
+        return AskResponse(
+            query=request.query, answer=None, reason="no_results", results=[]
+        )
+
+    hits = [to_hit(result) for result in results]
+
+    # Checked after retrieval so a refused caller still gets the documents.
+    refusal = limiter.check(client_address(http))
+    if refusal:
+        log.info("refused (%s), %d answers today", refusal, limiter.answers_today)
+        return AskResponse(
+            query=request.query, answer=None, reason=refusal, results=hits
+        )
+
+    try:
+        system, user = build_prompt(request.query, results)
+        answer = llm.generate(system, user)
+    except llm.LLMUnavailable as error:
+        # The client only sees `reason`; keep the provider's message here.
+        log.warning("generation failed (%s): %s", error.reason, error)
+        return AskResponse(
+            query=request.query, answer=None, reason=error.reason, results=hits
+        )
+
+    return AskResponse(
+        query=request.query, answer=answer, reason=None, results=hits
+    )

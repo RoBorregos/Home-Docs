@@ -1,0 +1,21 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "bash scripts/build.sh",
+  "outputDirectory": "site",
+  "env": {
+    "CHATBOT_ENV": "production",
+    "REQUEST_BUDGET_MS": "90000"
+  },
+  "functions": {
+    "api/index.py": {
+      "maxDuration": 120,
+      "excludeFiles": "{docs/**,site/**,tests/**,.venv/**,chatbot/eval/**,scripts/**,.github/**}"
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/(.*)",
+      "destination": "/api/index"
+    }
+  ]
+}
