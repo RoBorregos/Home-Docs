@@ -150,12 +150,12 @@ Emojis next to the owner: 💻 development, 📝 docs, 🔍 research, 🔧 bug f
 
 ### Automated sprint spotlights
 
-Each area also has a **Sprints** page (`docs/development/<area>/sprints.md`) generated from the [Home2 project board](https://github.com/orgs/RoBorregos/projects/28). Every Monday a GitHub Action (`.github/workflows/spotlights.yml`) opens a PR on the `spotlights/auto` branch with:
+Each area also has a **Sprints** page (`docs/development/<area>/sprints.md`) generated from the [Home2 project board](https://github.com/orgs/RoBorregos/projects/28). Every week a GitHub Action (`.github/workflows/spotlights.yml`) opens a PR on the `spotlights/auto` branch with:
 
 | When | Section |
 |---|---|
-| First Monday of a sprint | **Sprint plan** for the new sprint, plus **Sprint results** for the one that just closed (completion stats and a short summary of goals vs. what was delivered) |
-| Every other Monday | **Week N**: tasks closed that week, tasks in progress, and a one-line summary of that week's issue comments |
+| First week of a sprint | **Sprint plan** for the new sprint, plus **Sprint results** for the one that just closed (completion stats and a short summary of goals vs. what was delivered) |
+| Every other week | **Week N**: tasks closed that week, tasks in progress, and a one-line summary of that week's issue comments |
 
 The output is only as good as the board. For every sprint issue:
 
@@ -163,7 +163,7 @@ The output is only as good as the board. For every sprint issue:
 - Set **Priority** and **Kind** when you can. Kind picks the emoji (🔍 research, 📝 documentation, 🔧 fix, 💻 everything else).
 - Post progress as **issue comments** during the week. They become the *Updates* bullets. Spanish is fine; the summary is written in English.
 
-Area PMs review their page in the PR and merge it before the next Monday run, because that run regenerates the PR. Videos and notes go in after merging, outside the `<!-- spotlight -->` markers, since a re-run rewrites everything inside them. Display names come from the `members` map in `scripts/spotlights/config.yml`. To run it by hand, use the workflow's **Run workflow** button (it can pick a mode, a date, and a dry run).
+Area PMs review their page in the PR and merge it before the next week run, because that run regenerates the PR. Videos and notes go in after merging, outside the `<!-- spotlight -->` markers, since a re-run rewrites everything inside them. Display names come from the `members` map in `scripts/spotlights/config.yml`. To run it by hand, use the workflow's **Run workflow** button (it can pick a mode, a date, and a dry run).
 
 ## Yearly calendar
 

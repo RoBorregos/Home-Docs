@@ -7,10 +7,10 @@ from datetime import date, datetime, timedelta
 from project import Item, Sprint
 
 BLOCK_RE = re.compile(
-    r"<!-- spotlight:(?P<sprint>\d{4}-\d{2}-\d{2}):(?P<key>[\w-]+) -->\n.*?<!-- /spotlight -->\n",
+    r"<!-- spotlight:(?P<sprint>\d{4}-\d{2}-\d{2}):(?P<key>[\w-]+) -->\r?\n.*?<!-- /spotlight -->\r?\n?",
     re.S,
 )
-SPRINT_RE = re.compile(r"^<!-- sprint:(?P<sprint>\d{4}-\d{2}-\d{2}) -->$", re.M)
+SPRINT_RE = re.compile(r"^<!-- sprint:(?P<sprint>\d{4}-\d{2}-\d{2}) -->\r?$", re.M)
 
 ACTIVE = ["Review", "Testing", "In Progress"]
 NOT_STARTED = ["Todo", "Backlog"]
@@ -62,10 +62,12 @@ def emoji(item: Item, cfg: dict) -> str:
     return cfg["kinds"].get(kind, cfg["default_kind"])[0]
 
 
-def line(item: Item, cfg: dict, status: bool = False, note: str | None = None) -> str:
+def line(item: Item, cfg: dict, status: bool = False, note: str | None = None,
+         extra: str | None = None) -> str:
     meta = [
         item.values.get(cfg["fields"]["status"]) if status else None,
         item.values.get(cfg["fields"]["priority"]),
+        extra,
         f"[#{item.number}]({item.url})",
     ]
     text = f"- {owners(item, cfg)} {emoji(item, cfg)} {escape(item.title)} ({', '.join(m for m in meta if m)})"
@@ -122,9 +124,19 @@ def week_section(run: Run, items: list[Item], cfg: dict, summaries: dict[int, st
     return out
 
 
-def results_section(run: Run, items: list[Item], cfg: dict, overview: str | None) -> list[str]:
-    status, priority = cfg["fields"]["status"], cfg["fields"]["priority"]
-    done = [i for i in items if i.values.get(status) == "Done"]
+def finished_in(item: Item, sprint: Sprint, cfg: dict, moved: dict[int, str]) -> bool:
+    """Done on the board. A task that left the sprint counts only if it closed before the sprint did."""
+    if item.values.get(cfg["fields"]["status"]) != "Done":
+        return False
+    if item.number not in moved or item.closed_at is None:
+        return True
+    return item.closed_at.astimezone(cfg["tz"]).date() < sprint.end
+
+
+def results_section(run: Run, items: list[Item], cfg: dict, overview: str | None,
+                    moved: dict[int, str]) -> list[str]:
+    priority = cfg["fields"]["priority"]
+    done = [i for i in items if finished_in(i, run.sprint, cfg, moved)]
     rest = status_order([i for i in items if i not in done], cfg)
     p0 = [i for i in items if i.values.get(priority) == "P0"]
 
@@ -135,7 +147,7 @@ def results_section(run: Run, items: list[Item], cfg: dict, overview: str | None
     if overview:
         out += [escape(overview), ""]
     out += group("Done", [line(i, cfg) for i in done])
-    out += group("Carried over", [line(i, cfg, status=True) for i in rest])
+    out += group("Carried over", [line(i, cfg, status=True, extra=moved.get(i.number)) for i in rest])
     return out
 
 
@@ -145,6 +157,7 @@ def section(
     cfg: dict,
     summaries: dict[int, str] | None = None,
     overview: str | None = None,
+    moved: dict[int, str] | None = None,
 ) -> str:
     items = sorted(items, key=lambda i: i.number)
     if run.kind == "plan":
@@ -152,7 +165,7 @@ def section(
     elif run.kind == "week":
         lines = week_section(run, items, cfg, summaries or {})
     else:
-        lines = results_section(run, items, cfg, overview)
+        lines = results_section(run, items, cfg, overview, moved or {})
     if not items:
         lines = lines[:2] + ["_No tasks on the board for this area in this sprint._", ""]
     return "\n".join(lines).rstrip() + "\n"
@@ -165,7 +178,7 @@ def skeleton(area: str, board_url: str, cfg: dict) -> str:
     return "\n".join([
         "# Sprints",
         "",
-        f"Sprint spotlights for the {area} area, generated every Monday from the "
+        f"Sprint spotlights for the {area} area, generated every week from the "
         f"[project board]({board_url}) and reviewed by the area PM before merging. Newest sprint first.",
         "",
         "Status legend:",
@@ -175,8 +188,29 @@ def skeleton(area: str, board_url: str, cfg: dict) -> str:
     ])
 
 
+def normalise(page: str) -> str:
+    """Hand edits and Windows checkouts can change the line endings the markers rely on."""
+    return page.replace("\r\n", "\n").rstrip("\n") + "\n"
+
+
 def sprint_heading(sprint: Sprint) -> str:
     return f"## {sprint.title} · {span(sprint.start, sprint.end)}"
+
+
+ISSUE_RE = re.compile(r"\[#(\d+)\]")
+
+
+def issue_numbers(text: str) -> list[int]:
+    """The issues a rendered section links to, in order, without repeats."""
+    return list(dict.fromkeys(int(n) for n in ISSUE_RE.findall(text)))
+
+
+def block_body(page: str, sprint_start: date, key: str) -> str | None:
+    sid = sprint_start.isoformat()
+    for match in BLOCK_RE.finditer(page):
+        if match["sprint"] == sid and match["key"] == key:
+            return match.group(0)
+    return None
 
 
 def has_block(page: str, run: Run) -> bool:
