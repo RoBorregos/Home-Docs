@@ -29,7 +29,7 @@ class TestParsing:
         assert SPRINTS == sorted(SPRINTS, key=lambda s: s.start)
 
     def test_items_skip_drafts_and_bots(self):
-        assert [i.number for i in ITEMS] == [1, 2, 3, 4]
+        assert [i.number for i in ITEMS] == [1, 2, 3, 4, 5, 6]
         first = ITEMS[0]
         assert first.values["Status"] == "Done" and first.sprint_start == S2.start
         assert [c.author for c in first.comments] == ["Fernando94654"]
@@ -94,6 +94,53 @@ class TestSections:
         problems = generate.hygiene(ITEMS, CFG)
         assert any("#3" in p and "no assignee" in p for p in problems)
         assert any("#4" in p and "no Area" in p for p in problems)
+
+
+class TestResultsFromPlan:
+    """Results are computed from the published plan, so tasks moved to another sprint still count."""
+
+    BOARD = {i.number: i for i in ITEMS}
+    TITLES = {s.start: s.title for s in SPRINTS}
+
+    def page_with_plan(self, numbers):
+        lines = [f"- **X** 💻 Task {n} ([#{n}](https://github.com/RoBorregos/home2/issues/{n}))" for n in numbers]
+        page = render.skeleton("Manipulation", "https://example.com", CFG)
+        return render.upsert(page, Run("plan", S2), "### Sprint plan\n\n" + "\n".join(lines) + "\n")
+
+    def test_reads_the_issue_numbers_back(self):
+        page = self.page_with_plan([1, 2, 3, 5])
+        assert render.issue_numbers(render.block_body(page, S2.start, "plan")) == [1, 2, 3, 5]
+        assert render.block_body(page, S2.start, "results") is None
+
+    def test_moved_task_still_counts(self):
+        run = Run("results", S2)
+        items, moved = generate.results_items(
+            self.page_with_plan([1, 2, 3, 5]), run, manipulation(S2), self.BOARD, self.TITLES)
+        assert [i.number for i in items] == [1, 2, 3, 5]
+        assert moved == {5: "moved to Sprint 3"}
+
+        body = render.section(run, items, CFG, moved=moved)
+        assert "**1/4 tasks done (25%)**" in body
+        assert "Teleoperation arm (Todo, P1, moved to Sprint 3, [#5]" in body
+
+    def test_without_a_plan_block_falls_back_to_the_board(self):
+        page = render.skeleton("Manipulation", "https://example.com", CFG)
+        items, moved = generate.results_items(
+            page, Run("results", S2), manipulation(S2), self.BOARD, self.TITLES)
+        assert [i.number for i in items] == [1, 2, 3] and moved == {}
+
+    def test_moved_task_finished_later_is_not_credited(self):
+        # #6 was planned in Sprint 1, moved to Sprint 2 and only closed on 2026-09-25
+        page = render.upsert(
+            render.skeleton("Vision", "https://example.com", CFG), Run("plan", S1),
+            "### Sprint plan\n\n- **X** 💻 Late merge ([#6](https://github.com/RoBorregos/home2/issues/6))\n")
+        run = Run("results", S1)
+        items, moved = generate.results_items(page, run, [], self.BOARD, self.TITLES)
+        assert moved == {6: "moved to Sprint 2"}
+
+        body = render.section(run, items, CFG, moved=moved)
+        assert "**0/1 tasks done (0%)**" in body
+        assert "**Carried over:**" in body and "Late merge (Done, moved to Sprint 2," in body
 
 
 class TestUpsert:

@@ -106,6 +106,22 @@ def sprint_overview(run: Run, area: str, items: list[project.Item], cfg: dict) -
     return sprint_summary(area, run.sprint.title, tasks, cfg["gemini_models"])
 
 
+def results_items(page: str, run: Run, area_items: list[project.Item], board: dict[int, project.Item],
+                  titles: dict[date, str]) -> tuple[list[project.Item], dict[int, str]]:
+    """The sprint's issues as published in its plan, so tasks moved to another sprint still count."""
+    plan = render.block_body(page, run.sprint.start, "plan")
+    if plan is None:
+        return area_items, {}
+
+    present = {i.number for i in area_items}
+    moved_items = [board[n] for n in render.issue_numbers(plan) if n in board and n not in present]
+    moved = {
+        i.number: f"moved to {titles[i.sprint_start]}" if i.sprint_start in titles else "no longer in a sprint"
+        for i in moved_items
+    }
+    return sorted(area_items + moved_items, key=lambda i: i.number), moved
+
+
 def hygiene(items: list[project.Item], cfg: dict) -> list[str]:
     area_field = cfg["fields"]["area"]
     problems = []
@@ -122,9 +138,11 @@ def hygiene(items: list[project.Item], cfg: dict) -> list[str]:
     return problems
 
 
-def write_report(path: Path, day: date, runs: list[Run], problems: list[str]) -> None:
+def write_report(path: Path, day: date, runs: list[Run], problems: list[str], notes: list[str]) -> None:
     lines = [f"Automated sprint spotlights generated for {day.isoformat()}.", "", "**Sections:**", ""]
     lines += [f"- {label(r)}" for r in runs] or ["- none"]
+    if notes:
+        lines += ["", "**Notes:**", "", *(f"- {n}" for n in notes)]
     if problems:
         lines += ["", "**Board hygiene** (these issues are missing from, or unassigned in, the docs):", "", *problems]
     lines += [
@@ -151,11 +169,13 @@ def main(argv: list[str] | None = None) -> None:
 
     runs = plan_runs(sprints, day, args.mode)
     extra = backfill_runs(sprints, day) if args.mode == "auto" else []
-    written, problems = [], []
+    written, problems, notes = [], [], []
+    board = {i.number: i for i in items}
+    titles = {s.start: s.title for s in sprints}
 
     for run in extra + runs:
         in_sprint = [i for i in items if i.sprint_start == run.sprint.start]
-        touched = False
+        touched, unplanned, moved_count = False, [], 0
         for area, folder in cfg["areas"].items():
             path = ROOT / folder / "sprints.md"
             page = path.read_text(encoding="utf-8") if path.exists() else render.skeleton(area, board_url, cfg)
@@ -163,9 +183,16 @@ def main(argv: list[str] | None = None) -> None:
                 continue
 
             area_items = [i for i in in_sprint if i.values.get(cfg["fields"]["area"]) == area]
+            moved: dict[int, str] = {}
+            if run.kind == "results":
+                area_items, moved = results_items(page, run, area_items, board, titles)
+                moved_count += len(moved)
+                if render.block_body(page, run.sprint.start, "plan") is None:
+                    unplanned.append(area)
+
             summaries = week_summaries(run, area_items, cfg) if run.kind == "week" else {}
             overview = sprint_overview(run, area, area_items, cfg) if run.kind == "results" else None
-            body = render.section(run, area_items, cfg, summaries, overview)
+            body = render.section(run, area_items, cfg, summaries, overview, moved)
             touched = True
             if args.dry_run:
                 print(f"<!-- {path.relative_to(ROOT)} -->\n\n{body}")
@@ -174,10 +201,16 @@ def main(argv: list[str] | None = None) -> None:
         if touched:
             written.append(run)
             problems += [p for p in hygiene(in_sprint, cfg) if p not in problems]
+            if moved_count:
+                notes.append(f"{label(run)}: {moved_count} task(s) moved out of the sprint on the "
+                             "board, counted here as carried over.")
+            if unplanned:
+                notes.append(f"{label(run)}: no published plan for {', '.join(unplanned)}; counted only "
+                             "what the board still has in the sprint.")
 
     print(f"{day}: " + ("; ".join(label(r) for r in written) or "nothing to generate"))
     if args.report:
-        write_report(args.report, day, written, problems)
+        write_report(args.report, day, written, problems, notes)
 
 
 if __name__ == "__main__":
