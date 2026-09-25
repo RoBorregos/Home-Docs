@@ -1,6 +1,8 @@
 name: Sprint spotlights
 
 on:
+  push:
+    branches: [spotlights-automation]
   schedule:
     - cron: "0 6 * * 1"  # Monday 00:00 in Monterrey, the sprint boundary
   workflow_dispatch:
