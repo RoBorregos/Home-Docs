@@ -9,6 +9,27 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-09-21 -->
+
+## Sprint 3 · 2026-09-21 → 2026-10-11
+
+<!-- spotlight:2026-09-21:plan -->
+
+### Sprint plan
+
+3 tasks planned for this sprint.
+
+**Todo:**
+
+- **Fernando Hernandez** 💻 Gazebo armonic pick&place sim ([#1299](https://github.com/RoBorregos/home2/issues/1299))
+- **Jared AlPa** 💻 Improve person searching ([#1313](https://github.com/RoBorregos/home2/issues/1313))
+
+**Backlog:**
+
+- **Champtiago** 💻 Geometric grasp generator + cartesian approach pick ([#1314](https://github.com/RoBorregos/home2/issues/1314))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -35,6 +56,29 @@ Status legend:
 ### Week 1 · 2026-08-31 → 2026-09-06
 
 **Not started:** 6 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-08-31:results -->
+
+### Sprint results
+
+**6/7 tasks done (86%)**.
+
+Manipulation Sprint 2 focused on system migration and code cleanup, successfully delivering tasks such as migrating Docker to Jazzy, pointing submodules to Jazzy branches, and completing full testing. Moving specific follow scripts from task manager to manipulation remains in progress.
+
+**Done:**
+
+- **Marco Alejandro Galindo de la Cruz** 💻 E-stop reduction ([#1147](https://github.com/RoBorregos/home2/issues/1147))
+- **Jared AlPa** 💻 Remove gazebo and mujoco code ([#1244](https://github.com/RoBorregos/home2/issues/1244))
+- **Fernando Hernandez** 💻 Point submodules to jazzy branches ([#1245](https://github.com/RoBorregos/home2/issues/1245))
+- **Fernando Hernandez** 💻 Migrate docker to jazzy ([#1246](https://github.com/RoBorregos/home2/issues/1246))
+- **Fernando Hernandez** 💻 Check VAMP status ([#1251](https://github.com/RoBorregos/home2/issues/1251))
+- **Fernando Hernandez**, **Jared AlPa**, **Marco Alejandro Galindo de la Cruz** 💻 Full testing ([#1252](https://github.com/RoBorregos/home2/issues/1252))
+
+**Carried over:**
+
+- **Champtiago** 💻 Move follow_face_node.py and follow_person_controller.py from task_manager to manipulation (In Progress, [#1282](https://github.com/RoBorregos/home2/issues/1282))
 
 <!-- /spotlight -->
 

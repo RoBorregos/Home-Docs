@@ -9,6 +9,22 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-09-21 -->
+
+## Sprint 3 · 2026-09-21 → 2026-10-11
+
+<!-- spotlight:2026-09-21:plan -->
+
+### Sprint plan
+
+1 tasks planned for this sprint.
+
+**Todo:**
+
+- **Becca-731**, **LARC** 💻 Solder and test gripper PCB (P1, [#1203](https://github.com/RoBorregos/home2/issues/1203))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -31,6 +47,24 @@ Status legend:
 ### Week 1 · 2026-08-31 → 2026-09-06
 
 **Not started:** 2 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-08-31:results -->
+
+### Sprint results
+
+**1/2 tasks done (50%)**.
+
+This sprint aimed to determine peak amperage and add a power cable for the hub. The team successfully added the extra 12V power cable for the hub (P1). Determining FRIDA's peak amperage requirement remains pending.
+
+**Done:**
+
+- **Jasiel Aldana Palacios** 💻 Add extra 12V power cable for hub (P1, [#1276](https://github.com/RoBorregos/home2/issues/1276))
+
+**Carried over:**
+
+- **Becca-731** 💻 Determine FRIDA's peak amperage requirement (Todo, [#1250](https://github.com/RoBorregos/home2/issues/1250))
 
 <!-- /spotlight -->
 

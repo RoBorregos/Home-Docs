@@ -9,6 +9,36 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-09-21 -->
+
+## Sprint 3 · 2026-09-21 → 2026-10-11
+
+<!-- spotlight:2026-09-21:plan -->
+
+### Sprint plan
+
+9 tasks planned for this sprint.
+
+**In Progress:**
+
+- **Luis Alvaro Rosales Salazar** 💻 Test hotword (P0, [#1155](https://github.com/RoBorregos/home2/issues/1155))
+- **Luis Alvaro Rosales Salazar** 💻 Fix grabbed in task_merger ([#1317](https://github.com/RoBorregos/home2/issues/1317))
+
+**Todo:**
+
+- **Unassigned** 💻 hric wake sounds (P0, [#682](https://github.com/RoBorregos/home2/issues/682))
+- **Andrés Rodríguez Cantú** 💻 Check image's dependencies (P1, [#921](https://github.com/RoBorregos/home2/issues/921))
+- **Angela Camila Tite Haro** 💻 Keywords in display (P0, [#1153](https://github.com/RoBorregos/home2/issues/1153))
+- **Luis Benvenuto** 💻 Speaker reminder (P0, [#1154](https://github.com/RoBorregos/home2/issues/1154))
+- **Andrés Rodríguez Cantú** 💻 Confirm function (P1, [#1158](https://github.com/RoBorregos/home2/issues/1158))
+- **Unassigned** 💻 Retrain and update command interpreter ([#1305](https://github.com/RoBorregos/home2/issues/1305))
+
+**Backlog:**
+
+- **Unassigned** 💻 Fix grabbed in task_merger ([#1316](https://github.com/RoBorregos/home2/issues/1316))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -44,6 +74,30 @@ Status legend:
 - **Angela Camila Tite Haro** 💻 Migrate display (P0, [#1151](https://github.com/RoBorregos/home2/issues/1151))
 
 **Not started:** 7 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-08-31:results -->
+
+### Sprint results
+
+**6/8 tasks done (75%)** · P0: 4/6.
+
+The HRI sprint focused on software updates, debugging, and system maintenance. The team successfully delivered the Qwen3.5 update, display migration, and fixes for llamacpp and HRI Jazzy. However, testing VLM/MLC and cleaning map areas reference remain pending for future sprints.
+
+**Done:**
+
+- **Luis Alvaro Rosales Salazar** 💻 Update to qwen3.5 (P0, [#853](https://github.com/RoBorregos/home2/issues/853))
+- **Luis Benvenuto** 💻 clean logs (P0, [#981](https://github.com/RoBorregos/home2/issues/981))
+- **Andrés Rodríguez Cantú** 💻 test STT programatically (P1, [#1011](https://github.com/RoBorregos/home2/issues/1011))
+- **Angela Camila Tite Haro** 💻 Migrate display (P0, [#1151](https://github.com/RoBorregos/home2/issues/1151))
+- **Luis Alvaro Rosales Salazar** 💻 fix llamacpp ([#1255](https://github.com/RoBorregos/home2/issues/1255))
+- **Luis Benvenuto** 💻 Fix hri jazzy (P0, [#1292](https://github.com/RoBorregos/home2/issues/1292))
+
+**Carried over:**
+
+- **Luis Alvaro Rosales Salazar** 💻 clean map areas reference (Todo, P0, [#1218](https://github.com/RoBorregos/home2/issues/1218))
+- **Juan Pablo Gutierrez** 💻 Test vlm/mlc (Backlog, P0, [#1148](https://github.com/RoBorregos/home2/issues/1148))
 
 <!-- /spotlight -->
 

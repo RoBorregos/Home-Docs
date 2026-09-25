@@ -9,6 +9,29 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-09-21 -->
+
+## Sprint 3 · 2026-09-21 → 2026-10-11
+
+<!-- spotlight:2026-09-21:plan -->
+
+### Sprint plan
+
+5 tasks planned for this sprint.
+
+**In Progress:**
+
+- **Juan Pablo Gutierrez** 💻 Detection of the person speaking (P1, [#1267](https://github.com/RoBorregos/home2/issues/1267))
+
+**Todo:**
+
+- **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Alejandro Galindo de la Cruz** 🔍 Semantic MAP ([#1268](https://github.com/RoBorregos/home2/issues/1268))
+- **Fernando Hernandez**, **Marco Alejandro Galindo de la Cruz** 🔍 Vision: embedding-based object recognition for setup-day onboarding ([#1310](https://github.com/RoBorregos/home2/issues/1310))
+- **Arturo Cabrera** 🔍 Benchmark newer VLM, and general models options ([#1311](https://github.com/RoBorregos/home2/issues/1311))
+- **Luis Alvaro Rosales Salazar** 🔍 Garment perception for the Doing Laundry ([#1312](https://github.com/RoBorregos/home2/issues/1312))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -47,6 +70,24 @@ Status legend:
 - **Marco Alejandro Galindo de la Cruz** 💻 Migrate vision from humble to jazzy (P0, [#1242](https://github.com/RoBorregos/home2/issues/1242))
 
 **Not started:** 1 task.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-08-31:results -->
+
+### Sprint results
+
+**5/5 tasks done (100%)** · P0: 2/2.
+
+This sprint focused on migrating the vision system from humble to jazzy and testing the zed2. The team successfully delivered all planned tasks, including the critical ROS 2 Jazzy migration and Orin benchmark comparison, leaving no items pending.
+
+**Done:**
+
+- **Juan Pablo Gutierrez** 💻 Move /utils folder from vision_general to script (P1, [#1241](https://github.com/RoBorregos/home2/issues/1241))
+- **Marco Alejandro Galindo de la Cruz** 💻 Migrate vision from humble to jazzy (P0, [#1242](https://github.com/RoBorregos/home2/issues/1242))
+- **Fernando Hernandez**, **Marco Alejandro Galindo de la Cruz** 💻 Testing zed2 in Jazzy - ubuntu24 (P0, [#1243](https://github.com/RoBorregos/home2/issues/1243))
+- **Juan Pablo Gutierrez** 💻 Improve and migrate cpu-cuda images ([#1301](https://github.com/RoBorregos/home2/issues/1301))
+- **Marco Alejandro Galindo de la Cruz** 💻 Vision/hric issue ([#1309](https://github.com/RoBorregos/home2/issues/1309))
 
 <!-- /spotlight -->
 
