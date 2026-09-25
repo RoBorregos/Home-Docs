@@ -1,6 +1,6 @@
 # Sprint spotlights
 
-Generates each area's `docs/development/<area>/sprints.md` from the [Home2 project board](https://github.com/orgs/RoBorregos/projects/28). A GitHub Action runs it every Monday and opens a PR for the area PMs to review.
+Generates each area's `docs/development/<area>/sprints.md` from the [Home2 project board](https://github.com/orgs/RoBorregos/projects/28). A GitHub Action runs it every week and opens a PR for the area PMs to review.
 
 ## What gets written
 
@@ -61,7 +61,7 @@ Each section lists the sprint's issues for that area:
 
 Related files outside this folder:
 
-- `.github/workflows/spotlights.yml`: the Monday cron and the manual trigger.
+- `.github/workflows/spotlights.yml`: the week cron and the manual trigger.
 - `tests/spotlights_test.py` and `tests/fixtures/project_items.json`: offline tests.
 - `docs/resources/pm/cadence.md`: the board conventions for PMs.
 
@@ -117,11 +117,11 @@ Options:
 
 ## GitHub Action
 
-`.github/workflows/spotlights.yml` runs every Monday at 06:00 UTC (00:00 Monterrey) and can be started from **Actions → Sprint spotlights → Run workflow** with `mode`, `date` and `dry_run`. It runs only on `RoBorregos/Home-Docs`, not on the preview fork.
+`.github/workflows/spotlights.yml` runs every week and can be started from **Actions → Sprint spotlights → Run workflow** with `mode`, `date` and `dry_run`. It runs only on `RoBorregos/Home-Docs`, not on the preview fork.
 
 Steps: install deps → generate → `pytest` (includes `mkdocs build --strict`) → open or update the PR on the `spotlights/auto` branch. The PR description lists the sections written and any board-hygiene problems. A dry run only writes to the job summary.
 
-Each run rebuilds the PR from `main`, so merge it before the next Monday. Edits made on the PR branch are lost.
+Each run rebuilds the PR from `main`, so merge it before the next week. Edits made on the PR branch are lost.
 
 One-time setup:
 

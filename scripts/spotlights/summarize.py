@@ -62,7 +62,8 @@ def summarize(entries: list[dict], models: list[str]) -> dict[int, str]:
     payload = [{**e, "comments": [c[:MAX_COMMENT_CHARS] for c in e["comments"]]} for e in entries]
     data = ask(WEEK_PROMPT + json.dumps(payload, ensure_ascii=False), models)
     try:
-        return {int(k): str(v).strip() for k, v in data.items() if str(v).strip()}
+        # A model that has nothing to say answers null; only real strings become bullets
+        return {int(k): v.strip() for k, v in data.items() if isinstance(v, str) and v.strip()}
     except (AttributeError, ValueError):
         return {}
 
@@ -73,4 +74,5 @@ def sprint_summary(area: str, sprint: str, tasks: list[dict], models: list[str])
         return ""
     payload = [{**t, "note": (t.get("note") or "")[:MAX_NOTE_CHARS]} for t in tasks]
     data = ask(f"{SPRINT_PROMPT}{area} ({sprint})\nTasks:\n{json.dumps(payload, ensure_ascii=False)}", models)
-    return str(data.get("summary", "")).strip() if isinstance(data, dict) else ""
+    summary = data.get("summary") if isinstance(data, dict) else None
+    return summary.strip() if isinstance(summary, str) else ""
