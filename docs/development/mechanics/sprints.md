@@ -1,6 +1,6 @@
 # Sprints
 
-Sprint spotlights for the Mechanics area, generated every Monday from the [project board](https://github.com/orgs/RoBorregos/projects/28) and reviewed by the area PM before merging. Newest sprint first.
+Sprint spotlights for the Mechanics area, generated every week from the [project board](https://github.com/orgs/RoBorregos/projects/28) and reviewed by the area PM before merging. Newest sprint first.
 
 Status legend:
 
