@@ -1,0 +1,334 @@
+{
+  "fields": [
+    {},
+    {
+      "name": "Sprint",
+      "configuration": {
+        "iterations": [
+          {
+            "title": "Sprint 2",
+            "startDate": "2026-08-31",
+            "duration": 21
+          },
+          {
+            "title": "Sprint 3",
+            "startDate": "2026-09-21",
+            "duration": 21
+          }
+        ],
+        "completedIterations": [
+          {
+            "title": "Sprint 1",
+            "startDate": "2026-08-10",
+            "duration": 21
+          },
+          {
+            "title": "Sprint 1",
+            "startDate": "2025-03-04",
+            "duration": 5
+          }
+        ]
+      }
+    }
+  ],
+  "items": [
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "Done",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "name": "Manipulation",
+            "field": {
+              "name": "Area"
+            }
+          },
+          {
+            "name": "P0",
+            "field": {
+              "name": "Priority"
+            }
+          },
+          {
+            "startDate": "2026-08-31",
+            "field": {
+              "name": "Sprint"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "Issue",
+        "number": 1,
+        "title": "Pick <cup> & place",
+        "url": "https://github.com/RoBorregos/home2/issues/1",
+        "state": "CLOSED",
+        "closedAt": "2026-09-03T18:00:00Z",
+        "assignees": {
+          "nodes": [
+            {
+              "login": "Fernando94654",
+              "name": "Fernando Hernandez Cantu"
+            }
+          ]
+        },
+        "comments": {
+          "nodes": [
+            {
+              "createdAt": "2026-09-02T15:00:00Z",
+              "body": "Ya qued\u00f3 el pick",
+              "author": {
+                "__typename": "User",
+                "login": "Fernando94654"
+              }
+            },
+            {
+              "createdAt": "2026-09-02T16:00:00Z",
+              "body": "Linked PR",
+              "author": {
+                "__typename": "Bot",
+                "login": "github-actions"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "In Progress",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "name": "Manipulation",
+            "field": {
+              "name": "Area"
+            }
+          },
+          {
+            "name": "research",
+            "field": {
+              "name": "Kind"
+            }
+          },
+          {
+            "startDate": "2026-08-31",
+            "field": {
+              "name": "Sprint"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "Issue",
+        "number": 2,
+        "title": "Grasp research",
+        "url": "https://github.com/RoBorregos/home2/issues/2",
+        "state": "OPEN",
+        "closedAt": null,
+        "assignees": {
+          "nodes": [
+            {
+              "login": "someone",
+              "name": "Some One"
+            }
+          ]
+        },
+        "comments": {
+          "nodes": []
+        }
+      }
+    },
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "Todo",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "name": "Manipulation",
+            "field": {
+              "name": "Area"
+            }
+          },
+          {
+            "name": "P0",
+            "field": {
+              "name": "Priority"
+            }
+          },
+          {
+            "startDate": "2026-08-31",
+            "field": {
+              "name": "Sprint"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "Issue",
+        "number": 3,
+        "title": "Pour",
+        "url": "https://github.com/RoBorregos/home2/issues/3",
+        "state": "OPEN",
+        "closedAt": null,
+        "assignees": {
+          "nodes": []
+        },
+        "comments": {
+          "nodes": []
+        }
+      }
+    },
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "Todo",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "startDate": "2026-08-10",
+            "field": {
+              "name": "Sprint"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "Issue",
+        "number": 4,
+        "title": "No area",
+        "url": "https://github.com/RoBorregos/home2/issues/4",
+        "state": "OPEN",
+        "closedAt": null,
+        "assignees": {
+          "nodes": []
+        },
+        "comments": {
+          "nodes": []
+        }
+      }
+    },
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "Todo",
+            "field": {
+              "name": "Status"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "DraftIssue"
+      }
+    },
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "Todo",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "name": "Manipulation",
+            "field": {
+              "name": "Area"
+            }
+          },
+          {
+            "startDate": "2026-09-21",
+            "field": {
+              "name": "Sprint"
+            }
+          },
+          {
+            "name": "P1",
+            "field": {
+              "name": "Priority"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "Issue",
+        "number": 5,
+        "title": "Teleoperation arm",
+        "url": "https://github.com/RoBorregos/home2/issues/5",
+        "state": "OPEN",
+        "closedAt": null,
+        "assignees": {
+          "nodes": [
+            {
+              "login": "someone",
+              "name": "Some One"
+            }
+          ]
+        },
+        "comments": {
+          "nodes": []
+        }
+      }
+    },
+    {
+      "fieldValues": {
+        "nodes": [
+          {
+            "name": "Done",
+            "field": {
+              "name": "Status"
+            }
+          },
+          {
+            "name": "Vision",
+            "field": {
+              "name": "Area"
+            }
+          },
+          {
+            "startDate": "2026-08-31",
+            "field": {
+              "name": "Sprint"
+            }
+          }
+        ]
+      },
+      "content": {
+        "__typename": "Issue",
+        "number": 6,
+        "title": "Late merge",
+        "url": "https://github.com/RoBorregos/home2/issues/6",
+        "state": "CLOSED",
+        "closedAt": "2026-09-25T18:00:00Z",
+        "assignees": {
+          "nodes": [
+            {
+              "login": "someone",
+              "name": "Some One"
+            }
+          ]
+        },
+        "comments": {
+          "nodes": []
+        }
+      }
+    }
+  ]
+}
