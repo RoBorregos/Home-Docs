@@ -165,7 +165,7 @@ def skeleton(area: str, board_url: str, cfg: dict) -> str:
     return "\n".join([
         "# Sprints",
         "",
-        f"Sprint spotlights for the {area} area, generated every Monday from the "
+        f"Sprint spotlights for the {area} area, generated every week from the "
         f"[project board]({board_url}) and reviewed by the area PM before merging. Newest sprint first.",
         "",
         "Status legend:",

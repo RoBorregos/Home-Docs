@@ -129,7 +129,7 @@ def write_report(path: Path, day: date, runs: list[Run], problems: list[str]) ->
         lines += ["", "**Board hygiene** (these issues are missing from, or unassigned in, the docs):", "", *problems]
     lines += [
         "",
-        "Area PMs: review your area's `sprints.md` and merge before the next Monday run, "
+        "Area PMs: review your area's `sprints.md` and merge before the next week run, "
         "which regenerates this PR. Add videos or notes after merging, outside the "
         "`<!-- spotlight -->` markers.",
     ]

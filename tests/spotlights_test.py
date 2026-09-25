@@ -41,8 +41,13 @@ class TestRunSelection:
         assert [(r.kind, r.sprint) for r in runs] == [("results", S1), ("plan", S2)]
 
     def test_mid_sprint_writes_last_full_week(self):
-        (run,) = generate.plan_runs(SPRINTS, date(2026, 9, 16))
+        (run,) = generate.plan_runs(SPRINTS, date(2026, 9, 14))
         assert (run.key, run.start, run.end) == ("week-2", date(2026, 9, 7), date(2026, 9, 14))
+
+    def test_window_follows_the_run_weekday(self):
+        # A Friday run reports the seven days before it, not the sprint's Monday week
+        (run,) = generate.plan_runs(SPRINTS, date(2026, 9, 18))
+        assert (run.key, run.start, run.end) == ("week-2", date(2026, 9, 11), date(2026, 9, 18))
 
     def test_explicit_modes(self):
         day = date(2026, 9, 7)
