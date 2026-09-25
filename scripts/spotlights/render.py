@@ -7,10 +7,10 @@ from datetime import date, datetime, timedelta
 from project import Item, Sprint
 
 BLOCK_RE = re.compile(
-    r"<!-- spotlight:(?P<sprint>\d{4}-\d{2}-\d{2}):(?P<key>[\w-]+) -->\n.*?<!-- /spotlight -->\n",
+    r"<!-- spotlight:(?P<sprint>\d{4}-\d{2}-\d{2}):(?P<key>[\w-]+) -->\r?\n.*?<!-- /spotlight -->\r?\n?",
     re.S,
 )
-SPRINT_RE = re.compile(r"^<!-- sprint:(?P<sprint>\d{4}-\d{2}-\d{2}) -->$", re.M)
+SPRINT_RE = re.compile(r"^<!-- sprint:(?P<sprint>\d{4}-\d{2}-\d{2}) -->\r?$", re.M)
 
 ACTIVE = ["Review", "Testing", "In Progress"]
 NOT_STARTED = ["Todo", "Backlog"]
@@ -186,6 +186,11 @@ def skeleton(area: str, board_url: str, cfg: dict) -> str:
         *(f"- {icon} {label}" for icon, label in legend),
         "",
     ])
+
+
+def normalise(page: str) -> str:
+    """Hand edits and Windows checkouts can change the line endings the markers rely on."""
+    return page.replace("\r\n", "\n").rstrip("\n") + "\n"
 
 
 def sprint_heading(sprint: Sprint) -> str:

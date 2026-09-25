@@ -178,7 +178,8 @@ def main(argv: list[str] | None = None) -> None:
         touched, unplanned, moved_count = False, [], 0
         for area, folder in cfg["areas"].items():
             path = ROOT / folder / "sprints.md"
-            page = path.read_text(encoding="utf-8") if path.exists() else render.skeleton(area, board_url, cfg)
+            page = render.normalise(path.read_text(encoding="utf-8")) if path.exists() \
+                else render.skeleton(area, board_url, cfg)
             if run in extra and render.has_block(page, run):
                 continue
 
