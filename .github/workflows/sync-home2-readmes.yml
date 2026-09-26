@@ -1,0 +1,53 @@
+name: Sync home2 READMEs
+
+on:
+  schedule:
+    - cron: "0 6 * * 1"
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: home2 branch, tag or sha
+        default: main
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency: sync-home2-readmes
+
+jobs:
+  sync:
+    # Skip the roborregosteam preview fork
+    if: github.repository == 'RoBorregos/Home-Docs'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements_test.txt
+
+      - name: Sync READMEs
+        id: sync
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REF: ${{ inputs.ref || 'main' }}
+        run: |
+          python scripts/sync_home2_readmes.py --ref "$REF" --report "$RUNNER_TEMP/report.md"
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Check docs build
+        run: pytest
+
+      - name: Open pull request
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: bot/sync-home2-readmes
+          delete-branch: true
+          add-paths: docs/development
+          commit-message: "docs: sync home2 READMEs (${{ steps.sync.outputs.sha }})"
+          title: "docs: sync home2 READMEs (${{ steps.sync.outputs.sha }})"
+          body-path: ${{ runner.temp }}/report.md
