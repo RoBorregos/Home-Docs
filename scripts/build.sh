@@ -20,7 +20,7 @@ echo "==> embedding model + index"
 # The hub cache symlinks snapshots to blobs. Replace each link with its target and drop the blobs.
 echo "==> flattening the model cache"
 find chatbot/models -type l -exec sh -c 'cp --remove-destination "$(readlink -f "$1")" "$1"' _ {} \;
-rm -rf chatbot/models/models--*/blobs chatbot/models/.locks
+rm -rf chatbot/models/models--*/blobs chatbot/models/blobs chatbot/models/.locks
 
 echo "==> bundle contents"
 du -sh chatbot/models chatbot/index site
