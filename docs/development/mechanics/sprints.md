@@ -21,6 +21,7 @@ Status legend:
 
 **Done:**
 
+- **Jeremy Martino** 💻 Arreglar robopatin ([#1228](https://github.com/RoBorregos/home2/issues/1228))
 - **Bárbara Alejandra Novau Martínez** 💻 Meeting with Dr. Cuan Semana Tec/Semana 1 ([#1270](https://github.com/RoBorregos/home2/issues/1270))
 
 **In Progress:**
@@ -30,10 +31,6 @@ Status legend:
 - **Unassigned** 💻 Machine new base ([#1231](https://github.com/RoBorregos/home2/issues/1231))
 - **LARC** 💻 Diseño CAD Nuevo elevador ([#1274](https://github.com/RoBorregos/home2/issues/1274))
 - **Unassigned** 💻 Schedule meeting with Advanced Candidates ([#1289](https://github.com/RoBorregos/home2/issues/1289))
-
-**Backlog:**
-
-- **Unassigned** 💻 Arreglar robopatin ([#1228](https://github.com/RoBorregos/home2/issues/1228))
 
 <!-- /spotlight -->
 
@@ -87,9 +84,9 @@ Status legend:
 
 ### Sprint results
 
-**7/13 tasks done (54%)**.
+**8/13 tasks done (62%)**.
 
-The mechanics sprint focused on gripper development, base designs, and component manufacturing preparation. The team successfully integrated the PCB into the new gripper, completed the elevator and new omni base BOMs, and 3D printed a TPU test gripper. Pending items include the financial viability check and final CAD details for the new omni base, along with implementing base improvements.
+This sprint focused on advancing the gripper design, elevator BOM, and omni base updates. The team successfully integrated the PCB into the new gripper, completed the elevator BOM, and 3D printed the TPU test gripper. Pending tasks include checking the financial viability of the new omni base and contacting Vitro for gear machining.
 
 **Done:**
 
@@ -99,6 +96,7 @@ The mechanics sprint focused on gripper development, base designs, and component
 - **Bárbara Alejandra Novau Martínez**, **Becca-731**, **LARC** 💻 Modificar engranes actuales para maquinar ([#1232](https://github.com/RoBorregos/home2/issues/1232))
 - **LARC** 💻 3D printing of test gripper with TPU ([#1238](https://github.com/RoBorregos/home2/issues/1238))
 - **Bárbara Alejandra Novau Martínez** 💻 Meeting of mechanics team specifically for gripper design ([#1271](https://github.com/RoBorregos/home2/issues/1271))
+- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino** 💻 Organize everyhting in locker/shelves ([#1273](https://github.com/RoBorregos/home2/issues/1273))
 - **Bárbara Alejandra Novau Martínez** 💻 Definir linear mechanism for new gripper ([#1288](https://github.com/RoBorregos/home2/issues/1288))
 
 **Carried over:**
@@ -107,7 +105,6 @@ The mechanics sprint focused on gripper development, base designs, and component
 - **Becca-731** 💻 Contactar a Vitro para maquinar engranes y buscar donaciones alternativas (In Progress, [#1230](https://github.com/RoBorregos/home2/issues/1230))
 - **Bárbara Alejandra Novau Martínez**, **marcelajimenez1**, **LARC** 💻 Gripper proposal defined! (In Progress, [#1256](https://github.com/RoBorregos/home2/issues/1256))
 - **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base (In Progress, [#1272](https://github.com/RoBorregos/home2/issues/1272))
-- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino** 💻 Organize everyhting in locker/shelves (In Progress, [#1273](https://github.com/RoBorregos/home2/issues/1273))
 - **Bárbara Alejandra Novau Martínez**, **Fernando Hernandez** 💻 Check viability of new omni base financially (Todo, [#1236](https://github.com/RoBorregos/home2/issues/1236))
 
 <!-- /spotlight -->

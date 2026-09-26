@@ -17,11 +17,15 @@ Status legend:
 
 ### Sprint plan
 
-1 tasks planned for this sprint.
+2 tasks planned for this sprint.
+
+**In Progress:**
+
+- **Becca-731**, **LARC** 💻 Solder and test gripper PCB (P1, [#1203](https://github.com/RoBorregos/home2/issues/1203))
 
 **Todo:**
 
-- **Becca-731**, **LARC** 💻 Solder and test gripper PCB (P1, [#1203](https://github.com/RoBorregos/home2/issues/1203))
+- **Jasiel Aldana Palacios** 💻 Update electronics diagram for FRIDA (P2, [#1319](https://github.com/RoBorregos/home2/issues/1319))
 
 <!-- /spotlight -->
 
@@ -54,9 +58,9 @@ Status legend:
 
 ### Sprint results
 
-**1/2 tasks done (50%)**.
+**1/3 tasks done (33%)**.
 
-This sprint aimed to determine peak amperage and add a power cable for the hub. The team successfully added the extra 12V power cable for the hub (P1). Determining FRIDA's peak amperage requirement remains pending.
+Sprint 2 focused on critical electronic tasks, successfully adding an extra 12V power cable for the hub. However, soldering and testing the P1 gripper PCB remains in progress, while determining FRIDA's peak amperage requirement is still pending.
 
 **Done:**
 
@@ -64,7 +68,8 @@ This sprint aimed to determine peak amperage and add a power cable for the hub. 
 
 **Carried over:**
 
-- **Becca-731** 💻 Determine FRIDA's peak amperage requirement (Todo, [#1250](https://github.com/RoBorregos/home2/issues/1250))
+- **Becca-731**, **LARC** 💻 Solder and test gripper PCB (In Progress, P1, moved to Sprint 3, [#1203](https://github.com/RoBorregos/home2/issues/1203))
+- **Becca-731** 💻 Determine FRIDA's peak amperage requirement (Todo, no longer in a sprint, [#1250](https://github.com/RoBorregos/home2/issues/1250))
 
 <!-- /spotlight -->
 

@@ -27,7 +27,7 @@ Status legend:
 **Todo:**
 
 - **Unassigned** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
-- **Unassigned** 💻 Agent skill to use orin correctly ([#1225](https://github.com/RoBorregos/home2/issues/1225))
+- **Jeremy Martino** 💻 Agent skill to use orin correctly ([#1225](https://github.com/RoBorregos/home2/issues/1225))
 - **Unassigned** 💻 Fix cpu and cuda ([#1304](https://github.com/RoBorregos/home2/issues/1304))
 
 **Backlog:**
@@ -89,9 +89,9 @@ Status legend:
 
 ### Sprint results
 
-**4/7 tasks done (57%)** · P0: 4/6.
+**4/9 tasks done (44%)** · P0: 4/6.
 
-This sprint focused on core setup and testing tasks. The team successfully delivered the Frida constants, wifi management script, map hardware requirements, and cleaned frida_constants, while navigation function testing remains under review. Important items such as standardizing mock functions and improving person searching are still pending in the backlog.
+The Integration sprint focused on core setup and testing. The team successfully delivered Frida constants, the wifi management script, and mapped hardware requirements. Meanwhile, testing navigation functions and improving logs remain pending, alongside lower priority items like simulation and person searching.
 
 **Done:**
 
@@ -103,6 +103,8 @@ This sprint focused on core setup and testing tasks. The team successfully deliv
 **Carried over:**
 
 - **Angela Camila Tite Haro** 💻 Test nav functions (Review, P0, [#1176](https://github.com/RoBorregos/home2/issues/1176))
+- **Angela Camila Tite Haro** 💻 Improve logs (In Progress, P1, moved to Sprint 3, [#1171](https://github.com/RoBorregos/home2/issues/1171))
+- **Gerardo Fregoso Jiménez** 💻 Simulation (Todo, P1, no longer in a sprint, [#1175](https://github.com/RoBorregos/home2/issues/1175))
 - **Fernando Hernandez** 💻 Improve person searching (Backlog, P1, [#1166](https://github.com/RoBorregos/home2/issues/1166))
 - **Fernando Hernandez** 💻 Standarize mock function (Backlog, P0, [#1249](https://github.com/RoBorregos/home2/issues/1249))
 
