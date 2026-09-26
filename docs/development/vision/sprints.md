@@ -77,9 +77,9 @@ Status legend:
 
 ### Sprint results
 
-**5/5 tasks done (100%)** · P0: 2/2.
+**5/6 tasks done (83%)** · P0: 2/2.
 
-This sprint focused on migrating the vision system from humble to jazzy and testing the zed2. The team successfully delivered all planned tasks, including the critical ROS 2 Jazzy migration and Orin benchmark comparison, leaving no items pending.
+The Vision sprint aimed to migrate the system, organize folders, and test hardware. Successfully delivered items include migrating vision from Humble to Jazzy and testing the zed2 in Jazzy. The detection of the person speaking remains pending.
 
 **Done:**
 
@@ -88,6 +88,10 @@ This sprint focused on migrating the vision system from humble to jazzy and test
 - **Fernando Hernandez**, **Marco Alejandro Galindo de la Cruz** 💻 Testing zed2 in Jazzy - ubuntu24 (P0, [#1243](https://github.com/RoBorregos/home2/issues/1243))
 - **Juan Pablo Gutierrez** 💻 Improve and migrate cpu-cuda images ([#1301](https://github.com/RoBorregos/home2/issues/1301))
 - **Marco Alejandro Galindo de la Cruz** 💻 Vision/hric issue ([#1309](https://github.com/RoBorregos/home2/issues/1309))
+
+**Carried over:**
+
+- **Juan Pablo Gutierrez** 💻 Detection of the person speaking (In Progress, P1, moved to Sprint 3, [#1267](https://github.com/RoBorregos/home2/issues/1267))
 
 <!-- /spotlight -->
 

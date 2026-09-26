@@ -81,9 +81,9 @@ Status legend:
 
 ### Sprint results
 
-**6/8 tasks done (75%)** · P0: 4/6.
+**6/9 tasks done (67%)** · P0: 4/7.
 
-The HRI sprint focused on software updates, debugging, and system maintenance. The team successfully delivered the Qwen3.5 update, display migration, and fixes for llamacpp and HRI Jazzy. However, testing VLM/MLC and cleaning map areas reference remain pending for future sprints.
+HRI Sprint 2 aimed to update models, clean logs and references, fix programs, and test features. The team successfully delivered the Qwen3.5 update, display migration, Jazzy fix, llamacpp fix, log cleaning, and STT testing. However, testing VLM/MLC, the speaker reminder, and cleaning map area references remain pending.
 
 **Done:**
 
@@ -96,8 +96,9 @@ The HRI sprint focused on software updates, debugging, and system maintenance. T
 
 **Carried over:**
 
+- **Juan Pablo Gutierrez** 💻 Test vlm/mlc (Todo, P0, [#1148](https://github.com/RoBorregos/home2/issues/1148))
+- **Luis Benvenuto** 💻 Speaker reminder (Todo, P0, moved to Sprint 3, [#1154](https://github.com/RoBorregos/home2/issues/1154))
 - **Luis Alvaro Rosales Salazar** 💻 clean map areas reference (Todo, P0, [#1218](https://github.com/RoBorregos/home2/issues/1218))
-- **Juan Pablo Gutierrez** 💻 Test vlm/mlc (Backlog, P0, [#1148](https://github.com/RoBorregos/home2/issues/1148))
 
 <!-- /spotlight -->
 

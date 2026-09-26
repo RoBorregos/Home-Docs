@@ -65,7 +65,7 @@ Status legend:
 
 **6/7 tasks done (86%)**.
 
-Manipulation Sprint 2 focused on system migration and code cleanup, successfully delivering tasks such as migrating Docker to Jazzy, pointing submodules to Jazzy branches, and completing full testing. Moving specific follow scripts from task manager to manipulation remains in progress.
+Sprint 2 for Manipulation focused on ROS 2 Jazzy migration, cleanup, and testing. All core tasks were completed, including E-stop reduction, submodule updates, Docker migration, and full testing. The only pending item is moving follow_face_node.py and follow_person_controller.py from task_manager to manipulation.
 
 **Done:**
 

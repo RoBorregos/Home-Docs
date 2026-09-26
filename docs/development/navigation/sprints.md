@@ -17,22 +17,21 @@ Status legend:
 
 ### Sprint plan
 
-6 tasks planned for this sprint.
+5 tasks planned for this sprint.
 
 **In Progress:**
 
-- **Angela Camila Tite Haro** 🔧 Review the follow person feature and either fix or finish it. (P2, [#1197](https://github.com/RoBorregos/home2/issues/1197))
+- **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
 
 **Todo:**
 
-- **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
 - **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
 
 **Backlog:**
 
-- **Unassigned** 💻 Remove or revive the nav_goal_arm_pointer dead path (P0, [#1146](https://github.com/RoBorregos/home2/issues/1146))
+- **Jared AlPa** 💻 Remove or revive the nav_goal_arm_pointer dead path (P0, [#1146](https://github.com/RoBorregos/home2/issues/1146))
 - **Unassigned** 💻 Look for ways to improve navigation in unmapped areas. (P2, [#1198](https://github.com/RoBorregos/home2/issues/1198))
-- **Unassigned** 💻 Reserach about semantic navigation ([#1220](https://github.com/RoBorregos/home2/issues/1220))
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
 
 <!-- /spotlight -->
 
@@ -78,7 +77,7 @@ Status legend:
 
 **3/4 tasks done (75%)** · P0: 0/1.
 
-This sprint focused on migrating the navigation stack to Jazzy and resolving control issues. The team successfully migrated Nav2, slam_toolbox, lidar drivers, and fixed FRIDA's movement when control is enabled. Meanwhile, rescuing the unmerged laundry nav work is still pending in testing.
+This sprint focused on migrating the navigation stack, slam_toolbox, and lidar drivers to Jazzy, and fixing FRIDA's movement issue, all of which were successfully delivered. Meanwhile, testing remains pending for the P0 task to rescue the unmerged laundry navigation work.
 
 **Done:**
 
