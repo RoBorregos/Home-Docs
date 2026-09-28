@@ -8,8 +8,6 @@ on:
       ref:
         description: home2 branch, tag or sha
         default: main
-  push:
-    branches: [readmeAutomation]
 
 permissions:
   contents: write
