@@ -1,0 +1,41 @@
+# Source board: https://github.com/orgs/RoBorregos/projects/28
+org: RoBorregos
+project: 28
+timezone: America/Monterrey
+
+# Project field names read from the board
+fields:
+  sprint: Sprint
+  area: Area
+  status: Status
+  priority: Priority
+  kind: Kind
+
+# Area option on the board -> docs folder that receives sprints.md
+areas:
+  HRI: docs/development/HRI
+  Vision: docs/development/vision
+  Manipulation: docs/development/manipulation
+  Navigation: docs/development/navigation
+  Integration: docs/development/integration
+  Mechanics: docs/development/mechanics
+  Electronics: docs/development/electronics
+
+# Kind option -> legend entry; anything else uses the default
+kinds:
+  research: ["🔍", "Research"]
+  documentation: ["📝", "Documentation"]
+  fix: ["🔧", "Bug fixing"]
+default_kind: ["💻", "Development"]
+
+# Display order of statuses inside each section
+statuses: [Done, Review, Testing, In Progress, Todo, Backlog]
+
+# GitHub login -> name shown in the docs (fallback: GitHub profile name, then login)
+members:
+  Fernando94654: Fernando Hernandez
+
+gemini_models:
+  - gemini-3.5-flash-lite
+  - gemini-3.5-flash
+  - gemini-3.1-flash-lite

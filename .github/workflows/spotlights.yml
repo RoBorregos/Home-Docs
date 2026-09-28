@@ -1,0 +1,67 @@
+name: Sprint spotlights
+
+on:
+  schedule:
+    - cron: "0 22 * * 5"  # Friday 16:00 in Monterrey
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: Sections to generate
+        type: choice
+        options: [auto, plan, weekly, results]
+        default: auto
+      date:
+        description: Run as if today were YYYY-MM-DD (empty = today)
+        required: false
+      dry_run:
+        description: Only print the sections to the job summary
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency: spotlights
+
+jobs:
+  generate:
+    # Skip the roborregosteam preview fork
+    if: github.repository == 'RoBorregos/Home-Docs'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install -r requirements_test.txt -r scripts/spotlights/requirements.txt
+
+      - name: Generate spotlights
+        shell: bash  # adds pipefail so a generator failure is not hidden by tee
+        env:
+          PROJECT_TOKEN: ${{ secrets.PROJECT_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          MODE: ${{ inputs.mode || 'auto' }}
+          RUN_DATE: ${{ inputs.date }}
+          DRY_RUN: ${{ inputs.dry_run && '--dry-run' || '' }}
+        run: |
+          python scripts/spotlights/generate.py --mode "$MODE" ${RUN_DATE:+--date "$RUN_DATE"} $DRY_RUN \
+            --report "$RUNNER_TEMP/report.md" | tee -a "$GITHUB_STEP_SUMMARY"
+
+      - name: Check docs build
+        if: ${{ !inputs.dry_run }}
+        run: pytest
+
+      - name: Open pull request
+        if: ${{ !inputs.dry_run }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          branch: spotlights/auto
+          delete-branch: true
+          add-paths: docs/development/*/sprints.md
+          commit-message: Update sprint spotlights
+          title: Sprint spotlights update
+          body-path: ${{ runner.temp }}/report.md
