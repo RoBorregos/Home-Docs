@@ -24,7 +24,6 @@ echo "==> embedding model + index"
 # when the host downloads through it). Only the snapshot is needed at runtime.
 echo "==> flattening the model cache"
 find chatbot/models -type l -exec sh -c 'cp --remove-destination "$(readlink -f "$1")" "$1"' _ {} \;
-rm -rf chatbot/models/models--*/blobs chatbot/models/blobs chatbot/models/.locks
 find chatbot/models -mindepth 1 -type f \
   ! -path '*/snapshots/*' ! -path '*/refs/*' ! -name files_metadata.json -delete
 find chatbot/models -mindepth 1 -type d -empty -delete
