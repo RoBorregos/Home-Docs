@@ -47,7 +47,7 @@ jobs:
         with:
           branch: bot/sync-home2-readmes
           delete-branch: true
-          add-paths: docs/development
+          add-paths: docs/Areas
           commit-message: "docs: sync home2 READMEs (${{ steps.sync.outputs.sha }})"
           title: "docs: sync home2 READMEs (${{ steps.sync.outputs.sha }})"
           body-path: ${{ runner.temp }}/report.md

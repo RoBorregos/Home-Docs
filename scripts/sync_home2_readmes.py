@@ -9,19 +9,19 @@ from pathlib import Path
 
 REPO = "RoBorregos/home2"
 DOCS = Path(__file__).resolve().parent.parent / "docs"
-DEV = DOCS / "development"
+AREAS = DOCS / "Areas"
 
 READMES = {
-    "README.md": ("repo/home2.md", "home2"),
-    "docker/README.md": ("integration/repo/docker.md", "Docker"),
-    "vision/README.md": ("vision/repo/vision.md", "Vision"),
-    "hri/README.md": ("HRI/repo/hri.md", "HRI"),
-    "hri/microservices/stt/README.md": ("HRI/repo/stt.md", "Speech to Text"),
-    "hri/proto_interfaces/README.md": ("HRI/repo/proto_interfaces.md", "Proto Interfaces"),
-    "hri/packages/display/display/README.md": ("HRI/repo/display.md", "Display"),
-    "manipulation/packages/pick_and_place/README.md": ("manipulation/repo/pick_and_place.md", "Pick and Place"),
-    "manipulation/packages/vamp_moveit_plugin/ReadMe.md": ("manipulation/repo/vamp_moveit_plugin.md", "VAMP MoveIt Plugin"),
-    "navigation/README.md": ("navigation/repo/navigation.md", "Navigation"),
+    "README.md": ("home2.md", "home2"),
+    "docker/README.md": ("Integration and Networks/docker.md", "Docker"),
+    "vision/README.md": ("Computer Vision/vision.md", "Vision"),
+    "hri/README.md": ("HRI/hri.md", "HRI"),
+    "hri/microservices/stt/README.md": ("HRI/stt.md", "Speech to Text"),
+    "hri/proto_interfaces/README.md": ("HRI/proto_interfaces.md", "Proto Interfaces"),
+    "hri/packages/display/display/README.md": ("HRI/display.md", "Display"),
+    "manipulation/packages/pick_and_place/README.md": ("Manipulation/pick_and_place.md", "Pick and Place"),
+    "manipulation/packages/vamp_moveit_plugin/ReadMe.md": ("Manipulation/vamp_moveit_plugin.md", "VAMP MoveIt Plugin"),
+    "navigation/README.md": ("Navigation/navigation.md", "Navigation"),
 }
 
 LINK = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)((?:\s+\"[^\"]*\")?)\)")
@@ -97,16 +97,17 @@ def build(sha):
         if not is_substantive(text):
             print(f"skip {src}: no content beyond headings", file=sys.stderr)
             continue
-        files[DEV / target] = render(src, title, text, last_change(src, sha))
+        files[AREAS / target] = render(src, title, text, last_change(src, sha))
 
-    for folder in sorted({p.parent for p in files}):
+    for folder in managed_dirs():
         pages = sorted(p.name for p in files if p.parent == folder)
-        files[folder / ".pages"] = "title: From home2 repo\nnav:\n" + "".join(f"    - {p}\n" for p in pages)
+        if pages:
+            files[folder / ".pages"] = f"title: {folder.name} (home2 repo)\nnav:\n" + "".join(f"    - {p}\n" for p in pages)
     return files
 
 
 def managed_dirs():
-    return {(DEV / target).parent for target, _ in READMES.values()}
+    return {(AREAS / target).parent for target, _ in READMES.values()} - {AREAS}
 
 
 def stale(files):
