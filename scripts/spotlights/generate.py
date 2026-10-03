@@ -36,20 +36,27 @@ def last_finished(sprints: list[project.Sprint], day: date) -> project.Sprint | 
     return max((s for s in sprints if s.end <= day), key=lambda s: s.end, default=None)
 
 
-def week_run(sprint: project.Sprint, week: int) -> Run:
-    start = sprint.start + timedelta(days=7 * (week - 1))
-    return Run("week", sprint, week, start, min(start + timedelta(days=7), sprint.end))
+def week_run(sprint: project.Sprint, week: int, offset: int = 0) -> Run:
+    """Week `week` of the sprint, reported up to the run day.
+
+    `offset` is how far past the sprint week the run happens. The window closes on the run day
+    instead of on the sprint week, so a week that ended on Sunday still carries whatever landed
+    before the meeting; the first week reaches back to the start of the sprint.
+    """
+    day = sprint.start + timedelta(days=7 * week + offset)
+    start = sprint.start if week == 1 else day - timedelta(days=6)
+    return Run("week", sprint, week, start, day + timedelta(days=1))
 
 
 def plan_runs(sprints: list[project.Sprint], day: date, mode: str = "auto") -> list[Run]:
     current, finished = current_sprint(sprints, day), last_finished(sprints, day)
-    weeks = (day - current.start).days // 7 if current else 0
+    weeks, offset = divmod((day - current.start).days, 7) if current else (0, 0)
 
     if mode == "plan":
         target = current or next((s for s in sprints if s.start > day), None)
         return [Run("plan", target)] if target else []
     if mode == "weekly":
-        return [week_run(current, weeks)] if weeks else []
+        return [week_run(current, weeks, offset)] if weeks else []
     if mode == "results":
         return [Run("results", finished)] if finished else []
 
@@ -58,7 +65,7 @@ def plan_runs(sprints: list[project.Sprint], day: date, mode: str = "auto") -> l
     if finished and (day - finished.end).days < 7:
         runs.append(Run("results", finished))
     if current:
-        runs.append(week_run(current, weeks) if weeks else Run("plan", current))
+        runs.append(week_run(current, weeks, offset) if weeks else Run("plan", current))
     return runs
 
 
@@ -67,8 +74,8 @@ def backfill_runs(sprints: list[project.Sprint], day: date) -> list[Run]:
     current, finished = current_sprint(sprints, day), last_finished(sprints, day)
     runs = [Run("results", finished)] if finished else []
     if current:
-        weeks = (day - current.start).days // 7
-        runs += [Run("plan", current)] + [week_run(current, w) for w in range(1, weeks)] if weeks else []
+        weeks, offset = divmod((day - current.start).days, 7)
+        runs += [Run("plan", current)] + [week_run(current, w, offset) for w in range(1, weeks)] if weeks else []
     return [r for r in runs if r not in plan_runs(sprints, day)]
 
 

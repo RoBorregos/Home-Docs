@@ -37,7 +37,11 @@ Status legend:
 
 <!-- spotlight:2026-09-21:week-1 -->
 
-### Week 1 · 2026-09-21 → 2026-09-27
+### Week 1 · 2026-09-21 → 2026-10-02
+
+**Done this week:**
+
+- **Angela Camila Tite Haro**, **Jeremy Martino** 💻 Finish migrating navigation images to Jazzy ([#1324](https://github.com/RoBorregos/home2/issues/1324))
 
 **Review:**
 
@@ -47,6 +51,12 @@ Status legend:
 
 - **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
 - **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
+
+**Updates:**
+
+- **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190)): The team researched motion planning solutions, recommending region goals, footprint-aware collision checking, safety filters, and distance-based settings.
+- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194)): The nav_central refactor reduced code duplication, fixed several bugs, and decided to keep the orchestrator node in Python.
+- **Angela Camila Tite Haro**, **Jeremy Martino** 💻 Finish migrating navigation images to Jazzy ([#1324](https://github.com/RoBorregos/home2/issues/1324)): 1 new comment
 
 **Not started:** 1 task.
 
@@ -94,7 +104,7 @@ Status legend:
 
 **3/4 tasks done (75%)** · P0: 0/1.
 
-This sprint focused on migrating the navigation stack, slam_toolbox, and lidar drivers to Jazzy, and fixing FRIDA's movement issue, all of which were successfully delivered. Meanwhile, testing remains pending for the P0 task to rescue the unmerged laundry navigation work.
+This sprint focused on migrating software and resolving control issues. The team successfully migrated Nav2, slam_toolbox, and lidar drivers to Jazzy, and fixed FRIDA not moving when control is enabled. However, the P0 task to rescue the unmerged laundry nav work is still in testing.
 
 **Done:**
 

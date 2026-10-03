@@ -47,10 +47,15 @@ class TestRunSelection:
         runs = generate.plan_runs(SPRINTS, date(2026, 8, 31))
         assert [(r.kind, r.sprint) for r in runs] == [("results", S1), ("plan", S2)]
 
-    def test_week_window_is_the_sprint_week_whatever_the_run_weekday(self):
-        monday, friday = generate.plan_runs(SPRINTS, date(2026, 9, 14)), generate.plan_runs(SPRINTS, date(2026, 9, 18))
-        for (run,) in (monday, friday):
-            assert (run.key, run.start, run.end) == ("week-2", date(2026, 9, 7), date(2026, 9, 14))
+    def test_week_window_closes_on_the_run_day(self):
+        # Sprint 2 starts Monday 2026-08-31; week 2 closed on Sunday the 13th, but a Friday run
+        # reports up to its own day, so the days between the two still count
+        (run,) = generate.plan_runs(SPRINTS, date(2026, 9, 18))
+        assert (run.key, run.start, run.end) == ("week-2", date(2026, 9, 12), date(2026, 9, 19))
+
+    def test_first_week_reaches_back_to_the_sprint_start(self):
+        (run,) = generate.plan_runs(SPRINTS, date(2026, 9, 11))
+        assert (run.key, run.start, run.end) == ("week-1", date(2026, 8, 31), date(2026, 9, 12))
 
     def test_explicit_modes(self):
         day = date(2026, 9, 7)

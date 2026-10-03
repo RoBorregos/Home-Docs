@@ -38,7 +38,11 @@ Status legend:
 
 <!-- spotlight:2026-09-21:week-1 -->
 
-### Week 1 · 2026-09-21 → 2026-09-27
+### Week 1 · 2026-09-21 → 2026-10-02
+
+**Done this week:**
+
+- **Jeremy Martino** 💻 Fix workflows for uploading images ([#1308](https://github.com/RoBorregos/home2/issues/1308))
 
 **In Progress:**
 
@@ -102,20 +106,20 @@ Status legend:
 
 ### Sprint results
 
-**4/9 tasks done (44%)** · P0: 4/6.
+**5/9 tasks done (56%)** · P0: 5/6.
 
-The Integration sprint focused on core setup and testing. The team successfully delivered Frida constants, the wifi management script, and mapped hardware requirements. Meanwhile, testing navigation functions and improving logs remain pending, alongside lower priority items like simulation and person searching.
+The Integration sprint focused on completing critical infrastructure and navigation tasks. The team successfully delivered the Frida constants, wifi management script, map hardware requirements, and navigation function tests. Meanwhile, improving logs remains in progress, while person searching, simulation, and standardizing mock functions are still pending.
 
 **Done:**
 
 - **Jeremy Martino** 💻 Frida constants (P0, [#1162](https://github.com/RoBorregos/home2/issues/1162))
 - **Luis Benvenuto** 💻 Wifi management script (P0, [#1173](https://github.com/RoBorregos/home2/issues/1173))
 - **Luis Benvenuto** 💻 Map hardware requirements (P0, [#1174](https://github.com/RoBorregos/home2/issues/1174))
+- **Angela Camila Tite Haro** 💻 Test nav functions (P0, [#1176](https://github.com/RoBorregos/home2/issues/1176))
 - **Jeremy Martino** 💻 clean frida_constants (P0, [#1219](https://github.com/RoBorregos/home2/issues/1219))
 
 **Carried over:**
 
-- **Angela Camila Tite Haro** 💻 Test nav functions (Review, P0, [#1176](https://github.com/RoBorregos/home2/issues/1176))
 - **Angela Camila Tite Haro** 💻 Improve logs (In Progress, P1, moved to Sprint 3, [#1171](https://github.com/RoBorregos/home2/issues/1171))
 - **Gerardo Fregoso Jiménez** 💻 Simulation (Todo, P1, no longer in a sprint, [#1175](https://github.com/RoBorregos/home2/issues/1175))
 - **Fernando Hernandez** 💻 Improve person searching (Backlog, P1, [#1166](https://github.com/RoBorregos/home2/issues/1166))

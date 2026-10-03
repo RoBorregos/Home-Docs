@@ -31,7 +31,7 @@ Status legend:
 
 <!-- spotlight:2026-09-21:week-1 -->
 
-### Week 1 · 2026-09-21 → 2026-09-27
+### Week 1 · 2026-09-21 → 2026-10-02
 
 **In Progress:**
 
@@ -72,7 +72,7 @@ Status legend:
 
 **1/3 tasks done (33%)**.
 
-Sprint 2 focused on critical electronic tasks, successfully adding an extra 12V power cable for the hub. However, soldering and testing the P1 gripper PCB remains in progress, while determining FRIDA's peak amperage requirement is still pending.
+This sprint focused on the Electronics area tasks. The team successfully added the extra 12V power cable for the hub. Meanwhile, soldering and testing the gripper PCB and determining FRIDA's peak amperage requirement remain pending.
 
 **Done:**
 

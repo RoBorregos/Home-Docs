@@ -36,7 +36,7 @@ Status legend:
 
 <!-- spotlight:2026-09-21:week-1 -->
 
-### Week 1 · 2026-09-21 → 2026-09-27
+### Week 1 · 2026-09-21 → 2026-10-02
 
 **Done this week:**
 
@@ -56,7 +56,7 @@ Status legend:
 **Updates:**
 
 - **Jeremy Martino** 💻 Arreglar robopatin ([#1228](https://github.com/RoBorregos/home2/issues/1228)): The robopatin was fixed, is fully operational, and is currently in use by the LARC team.
-- **Bárbara Alejandra Novau Martínez** 💻 Meeting with Dr. Cuan Semana Tec/Semana 1 ([#1270](https://github.com/RoBorregos/home2/issues/1270)): The meeting with Dr. Cuan was scheduled for Wednesday in the first week of October.
+- **Bárbara Alejandra Novau Martínez** 💻 Meeting with Dr. Cuan Semana Tec/Semana 1 ([#1270](https://github.com/RoBorregos/home2/issues/1270)): The meeting with Dr. Cuan was scheduled for Wednesday of the first week of October.
 
 <!-- /spotlight -->
 
@@ -110,17 +110,20 @@ Status legend:
 
 ### Sprint results
 
-**8/13 tasks done (62%)**.
+**11/13 tasks done (85%)**.
 
-This sprint focused on advancing the gripper design, elevator BOM, and omni base updates. The team successfully integrated the PCB into the new gripper, completed the elevator BOM, and 3D printed the TPU test gripper. Pending tasks include checking the financial viability of the new omni base and contacting Vitro for gear machining.
+This sprint focused on advancing the gripper design, elevator BOM, and omni base preparations. The team successfully delivered the new gripper proposal, TPU 3D printing, PCB integration, elevator BOM, and gear machining contacts, while finalizing the linear mechanism. Pending items include the implementation of base improvements and final CAD details for the new omni base.
 
 **Done:**
 
 - **Jasiel Aldana Palacios** 💻 Integrar PCB a nuevo diseño gripper ([#1208](https://github.com/RoBorregos/home2/issues/1208))
 - **Bárbara Alejandra Novau Martínez**, **LARC** 💻 BOM de elevador ([#1214](https://github.com/RoBorregos/home2/issues/1214))
 - **Jeremy Martino** 💻 BOM Base Omni nueva ([#1216](https://github.com/RoBorregos/home2/issues/1216))
+- **Becca-731** 💻 Contactar a Vitro para maquinar engranes y buscar donaciones alternativas ([#1230](https://github.com/RoBorregos/home2/issues/1230))
 - **Bárbara Alejandra Novau Martínez**, **Becca-731**, **LARC** 💻 Modificar engranes actuales para maquinar ([#1232](https://github.com/RoBorregos/home2/issues/1232))
+- **Bárbara Alejandra Novau Martínez**, **Fernando Hernandez** 💻 Check viability of new omni base financially ([#1236](https://github.com/RoBorregos/home2/issues/1236))
 - **LARC** 💻 3D printing of test gripper with TPU ([#1238](https://github.com/RoBorregos/home2/issues/1238))
+- **Bárbara Alejandra Novau Martínez**, **marcelajimenez1**, **LARC** 💻 Gripper proposal defined! ([#1256](https://github.com/RoBorregos/home2/issues/1256))
 - **Bárbara Alejandra Novau Martínez** 💻 Meeting of mechanics team specifically for gripper design ([#1271](https://github.com/RoBorregos/home2/issues/1271))
 - **Bárbara Alejandra Novau Martínez**, **Jeremy Martino** 💻 Organize everyhting in locker/shelves ([#1273](https://github.com/RoBorregos/home2/issues/1273))
 - **Bárbara Alejandra Novau Martínez** 💻 Definir linear mechanism for new gripper ([#1288](https://github.com/RoBorregos/home2/issues/1288))
@@ -128,10 +131,7 @@ This sprint focused on advancing the gripper design, elevator BOM, and omni base
 **Carried over:**
 
 - **Bárbara Alejandra Novau Martínez**, **Jeremy Martino**, **Becca-731**, **LARC** 💻 Implementación de propuestas de mejora para la base actual (In Progress, [#1229](https://github.com/RoBorregos/home2/issues/1229))
-- **Becca-731** 💻 Contactar a Vitro para maquinar engranes y buscar donaciones alternativas (In Progress, [#1230](https://github.com/RoBorregos/home2/issues/1230))
-- **Bárbara Alejandra Novau Martínez**, **marcelajimenez1**, **LARC** 💻 Gripper proposal defined! (In Progress, [#1256](https://github.com/RoBorregos/home2/issues/1256))
 - **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base (In Progress, [#1272](https://github.com/RoBorregos/home2/issues/1272))
-- **Bárbara Alejandra Novau Martínez**, **Fernando Hernandez** 💻 Check viability of new omni base financially (Todo, [#1236](https://github.com/RoBorregos/home2/issues/1236))
 
 <!-- /spotlight -->
 
