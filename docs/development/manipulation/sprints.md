@@ -30,6 +30,20 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-09-27
+
+**Testing:**
+
+- **Champtiago** 💻 Geometric grasp generator + cartesian approach pick ([#1314](https://github.com/RoBorregos/home2/issues/1314))
+
+**In Progress:**
+
+- **Jared AlPa** 💻 Improve person searching ([#1313](https://github.com/RoBorregos/home2/issues/1313))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

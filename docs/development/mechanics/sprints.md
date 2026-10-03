@@ -34,6 +34,32 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-09-27
+
+**Done this week:**
+
+- **Jeremy Martino** 💻 Arreglar robopatin ([#1228](https://github.com/RoBorregos/home2/issues/1228))
+- **Bárbara Alejandra Novau Martínez** 💻 Meeting with Dr. Cuan Semana Tec/Semana 1 ([#1270](https://github.com/RoBorregos/home2/issues/1270))
+
+**In Progress:**
+
+- **Jeremy Martino**, **Becca-731**, **LARC** 💻 Diseño propuesta de elevador de brazos ([#1212](https://github.com/RoBorregos/home2/issues/1212))
+- **Jeremy Martino**, **LARC** 💻 Checar como integrar brazos a elevador ([#1213](https://github.com/RoBorregos/home2/issues/1213))
+- **Unassigned** 💻 Machine new base ([#1231](https://github.com/RoBorregos/home2/issues/1231))
+- **LARC** 💻 Diseño CAD Nuevo elevador ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Unassigned** 💻 Schedule meeting with Advanced Candidates ([#1289](https://github.com/RoBorregos/home2/issues/1289))
+- **Unassigned** 💻 Machinge gripper mechanism (engrane) ([#1320](https://github.com/RoBorregos/home2/issues/1320))
+- **Becca-731** 💻 CAD of PCB Correct ([#1321](https://github.com/RoBorregos/home2/issues/1321))
+
+**Updates:**
+
+- **Jeremy Martino** 💻 Arreglar robopatin ([#1228](https://github.com/RoBorregos/home2/issues/1228)): The robopatin was fixed, is fully operational, and is currently in use by the LARC team.
+- **Bárbara Alejandra Novau Martínez** 💻 Meeting with Dr. Cuan Semana Tec/Semana 1 ([#1270](https://github.com/RoBorregos/home2/issues/1270)): The meeting with Dr. Cuan was scheduled for Wednesday in the first week of October.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

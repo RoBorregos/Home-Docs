@@ -36,6 +36,19 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-09-27
+
+**In Progress:**
+
+- **Angela Camila Tite Haro** 💻 Improve logs (P1, [#1171](https://github.com/RoBorregos/home2/issues/1171))
+- **Jared AlPa** 💻 l4t images workflow (P1, [#1185](https://github.com/RoBorregos/home2/issues/1185))
+
+**Not started:** 3 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

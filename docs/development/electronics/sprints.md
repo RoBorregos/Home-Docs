@@ -29,6 +29,18 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-09-27
+
+**In Progress:**
+
+- **Becca-731**, **LARC** 💻 Solder and test gripper PCB (P1, [#1203](https://github.com/RoBorregos/home2/issues/1203))
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
