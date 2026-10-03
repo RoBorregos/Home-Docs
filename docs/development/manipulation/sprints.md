@@ -30,6 +30,25 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-10-02
+
+**Done this week:**
+
+- **Fernando Hernandez** 💻 Gazebo armonic pick&place sim ([#1299](https://github.com/RoBorregos/home2/issues/1299))
+- **Jeremy Martino** 💻 Manipulation Docker images fail to build on Jazzy (Gazebo Classic packages) ([#1334](https://github.com/RoBorregos/home2/issues/1334))
+
+**Testing:**
+
+- **Champtiago** 💻 Geometric grasp generator + cartesian approach pick ([#1314](https://github.com/RoBorregos/home2/issues/1314))
+
+**In Progress:**
+
+- **Jared AlPa** 💻 Improve person searching ([#1313](https://github.com/RoBorregos/home2/issues/1313))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -63,9 +82,9 @@ Status legend:
 
 ### Sprint results
 
-**6/7 tasks done (86%)**.
+**7/7 tasks done (100%)**.
 
-Sprint 2 for Manipulation focused on ROS 2 Jazzy migration, cleanup, and testing. All core tasks were completed, including E-stop reduction, submodule updates, Docker migration, and full testing. The only pending item is moving follow_face_node.py and follow_person_controller.py from task_manager to manipulation.
+This sprint focused on migrating the system and conducting comprehensive testing for the manipulation area. All planned tasks were successfully completed, including Docker migration to Jazzy, submodules updates, code cleanup, and full testing.
 
 **Done:**
 
@@ -75,10 +94,7 @@ Sprint 2 for Manipulation focused on ROS 2 Jazzy migration, cleanup, and testing
 - **Fernando Hernandez** 💻 Migrate docker to jazzy ([#1246](https://github.com/RoBorregos/home2/issues/1246))
 - **Fernando Hernandez** 💻 Check VAMP status ([#1251](https://github.com/RoBorregos/home2/issues/1251))
 - **Fernando Hernandez**, **Jared AlPa**, **Marco Alejandro Galindo de la Cruz** 💻 Full testing ([#1252](https://github.com/RoBorregos/home2/issues/1252))
-
-**Carried over:**
-
-- **Champtiago** 💻 Move follow_face_node.py and follow_person_controller.py from task_manager to manipulation (In Progress, [#1282](https://github.com/RoBorregos/home2/issues/1282))
+- **Champtiago** 💻 Move follow_face_node.py and follow_person_controller.py from task_manager to manipulation ([#1282](https://github.com/RoBorregos/home2/issues/1282))
 
 <!-- /spotlight -->
 

@@ -29,6 +29,18 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-10-02
+
+**In Progress:**
+
+- **Becca-731**, **LARC** 💻 Solder and test gripper PCB (P1, [#1203](https://github.com/RoBorregos/home2/issues/1203))
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -60,7 +72,7 @@ Status legend:
 
 **1/3 tasks done (33%)**.
 
-Sprint 2 focused on critical electronic tasks, successfully adding an extra 12V power cable for the hub. However, soldering and testing the P1 gripper PCB remains in progress, while determining FRIDA's peak amperage requirement is still pending.
+This sprint focused on the Electronics area tasks. The team successfully added the extra 12V power cable for the hub. Meanwhile, soldering and testing the gripper PCB and determining FRIDA's peak amperage requirement remain pending.
 
 **Done:**
 

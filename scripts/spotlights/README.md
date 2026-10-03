@@ -9,13 +9,14 @@ Sprints are 3-week iterations of the board's `Sprint` field, starting on Monday.
 | Run day | Sections |
 |---|---|
 | First week of a sprint | **Sprint results** of the sprint that just ended, then the **Sprint plan** of the new one |
-| Day 7, day 14 | **Week N**: the last full week of the current sprint |
+| Later runs | **Week N**: the sprint week that closed, with its window extended to the run day |
 | Between sprints | Results of the last sprint only |
 
 Each section lists the sprint's issues for that area:
 
 - **Sprint plan**: every issue, grouped by Status.
-- **Week N**: issues closed that week (*Done this week*), issues in Review / Testing / In Progress, *Updates* (issues with comments that week, one English sentence written by Gemini), and a count of issues not started.
+- **Week N**: issues closed inside the window (*Done this week*), issues in Review / Testing / In Progress, *Updates* (issues commented inside the window, one English sentence written by Gemini), and a count of issues not started.
+  A weekly section is named after the sprint week that closed, but its **window ends on the run day**: the sprint week ends on Sunday and the meeting is on Friday, so whatever lands in between still counts for that week. Week 1 reaches back to the start of the sprint, and every later week starts where the previous one ended, so nothing is counted twice or dropped.
 - **Sprint results**: `done/total (%)`, P0 completion, a 2–3 sentence Gemini overview (what the sprint set out to do, what was delivered, what is pending), the Done list, and the carried-over issues with their final status. The overview is based on each task's title, final status, priority and latest comment from that sprint (cut to 300 characters), which keeps each call small.
 
 ## Page format

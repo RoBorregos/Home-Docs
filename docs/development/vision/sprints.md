@@ -32,6 +32,24 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-10-02
+
+**Review:**
+
+- **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Alejandro Galindo de la Cruz** 🔍 Semantic MAP ([#1268](https://github.com/RoBorregos/home2/issues/1268))
+- **Arturo Cabrera** 🔍 Benchmark newer VLM, and general models options ([#1311](https://github.com/RoBorregos/home2/issues/1311))
+
+**In Progress:**
+
+- **Juan Pablo Gutierrez** 💻 Detection of the person speaking (P1, [#1267](https://github.com/RoBorregos/home2/issues/1267))
+- **Fernando Hernandez**, **Marco Alejandro Galindo de la Cruz** 🔍 Vision: embedding-based object recognition for setup-day onboarding ([#1310](https://github.com/RoBorregos/home2/issues/1310))
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -79,7 +97,7 @@ Status legend:
 
 **5/6 tasks done (83%)** · P0: 2/2.
 
-The Vision sprint aimed to migrate the system, organize folders, and test hardware. Successfully delivered items include migrating vision from Humble to Jazzy and testing the zed2 in Jazzy. The detection of the person speaking remains pending.
+This sprint focused on migrating the vision system to ROS 2 Jazzy and improving CPU-CUDA images. The team successfully migrated the vision system, tested the zed2 camera on Ubuntu 24, and handled utilities, cpu-cuda images, and the vision/hric issue. However, the detection of the person speaking remains pending.
 
 **Done:**
 

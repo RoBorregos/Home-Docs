@@ -155,7 +155,7 @@ Each area also has a **Sprints** page (`docs/development/<area>/sprints.md`) gen
 | When | Section |
 |---|---|
 | First week of a sprint | **Sprint plan** for the new sprint, plus **Sprint results** for the one that just closed (completion stats and a short summary of goals vs. what was delivered) |
-| Every other week | **Week N**: tasks closed that week, tasks in progress, and a one-line summary of that week's issue comments |
+| The following runs | **Week N**: tasks closed since the previous run, tasks in progress, and a one-line summary of their comments. The window closes on the day the workflow runs, so work finished between the end of the sprint week and the meeting counts for that week |
 
 The output is only as good as the board. For every sprint issue:
 

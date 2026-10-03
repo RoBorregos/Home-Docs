@@ -39,6 +39,23 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-1 -->
+
+### Week 1 · 2026-09-21 → 2026-10-02
+
+**Done this week:**
+
+- **Luis Alvaro Rosales Salazar** 💻 Test hotword (P0, [#1155](https://github.com/RoBorregos/home2/issues/1155))
+- **Luis Alvaro Rosales Salazar** 💻 Fix grabbed in task_merger ([#1317](https://github.com/RoBorregos/home2/issues/1317))
+
+**Review:**
+
+- **Angela Camila Tite Haro** 💻 Keywords in display (P0, [#1153](https://github.com/RoBorregos/home2/issues/1153))
+
+**Not started:** 5 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
@@ -83,7 +100,7 @@ Status legend:
 
 **6/9 tasks done (67%)** · P0: 4/7.
 
-HRI Sprint 2 aimed to update models, clean logs and references, fix programs, and test features. The team successfully delivered the Qwen3.5 update, display migration, Jazzy fix, llamacpp fix, log cleaning, and STT testing. However, testing VLM/MLC, the speaker reminder, and cleaning map area references remain pending.
+This sprint focused on system updates, code cleanup, and testing for the HRI area. The team successfully delivered the P0 updates to qwen3.5, display migration, and hri jazzy fixes, alongside STT programmatic testing and log cleaning. However, critical P0 items such as testing vlm/mlc, speaker reminders, and cleaning map areas reference remain pending.
 
 **Done:**
 
