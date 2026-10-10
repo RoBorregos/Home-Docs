@@ -62,6 +62,27 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-2 -->
+
+### Week 2 · 2026-10-03 → 2026-10-09
+
+**Done this week:**
+
+- **Jared AlPa** 💻 Remove or revive the nav_goal_arm_pointer dead path (P0, [#1146](https://github.com/RoBorregos/home2/issues/1146))
+
+**Testing:**
+
+- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
+
+**In Progress:**
+
+- **Angela Camila Tite Haro**, **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347))
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

@@ -50,6 +50,33 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-2 -->
+
+### Week 2 · 2026-10-03 → 2026-10-09
+
+**Done this week:**
+
+- **Juan Pablo Gutierrez** 💻 Detection of the person speaking (P1, [#1267](https://github.com/RoBorregos/home2/issues/1267))
+- **Fernando Hernandez**, **Marco Alejandro Galindo de la Cruz** 🔍 Vision: embedding-based object recognition for setup-day onboarding ([#1310](https://github.com/RoBorregos/home2/issues/1310))
+- **Arturo Cabrera** 🔍 Benchmark newer VLM, and general models options ([#1311](https://github.com/RoBorregos/home2/issues/1311))
+
+**Review:**
+
+- **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Alejandro Galindo de la Cruz** 🔍 Semantic MAP ([#1268](https://github.com/RoBorregos/home2/issues/1268))
+
+**In Progress:**
+
+- **Arturo Cabrera** 💻 Add text embedding support to ImageEmbedder ([#1348](https://github.com/RoBorregos/home2/issues/1348))
+
+**Updates:**
+
+- **Arturo Cabrera** 🔍 Benchmark newer VLM, and general models options ([#1311](https://github.com/RoBorregos/home2/issues/1311)): Moondream 3.1 evaluation on Jetson AGX Orin was closed without implementation due to a persistent CUDA kernel error during initialization.
+- **Arturo Cabrera** 💻 Add text embedding support to ImageEmbedder ([#1348](https://github.com/RoBorregos/home2/issues/1348)): ImageEmbedder text embedding implementation was reduced to a minimal commit in PR 1358 with passing tests and benchmark results.
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

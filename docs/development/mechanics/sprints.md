@@ -60,6 +60,28 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-2 -->
+
+### Week 2 · 2026-10-03 → 2026-10-09
+
+**Done this week:**
+
+- **Bárbara Alejandra Novau Martínez** 💻 Schedule meeting with Advanced Candidates ([#1289](https://github.com/RoBorregos/home2/issues/1289))
+- **Becca-731** 💻 CAD of PCB Correct ([#1321](https://github.com/RoBorregos/home2/issues/1321))
+
+**In Progress:**
+
+- **Jeremy Martino**, **Becca-731**, **LARC** 💻 Diseño propuesta de elevador de brazos ([#1212](https://github.com/RoBorregos/home2/issues/1212))
+- **Jeremy Martino**, **LARC** 💻 Checar como integrar brazos a elevador ([#1213](https://github.com/RoBorregos/home2/issues/1213))
+- **Unassigned** 💻 Machine new base ([#1231](https://github.com/RoBorregos/home2/issues/1231))
+- **LARC** 💻 Diseño CAD Nuevo elevador ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Unassigned** 💻 Machinge gripper mechanism (engrane) ([#1320](https://github.com/RoBorregos/home2/issues/1320))
+- **Unassigned** 💻 Check is current gear is functional for new gripper in order to machine it ([#1361](https://github.com/RoBorregos/home2/issues/1361))
+- **Unassigned** 💻 Print new gripper test V3 ([#1362](https://github.com/RoBorregos/home2/issues/1362))
+- **Unassigned** 💻 Update BOM ([#1363](https://github.com/RoBorregos/home2/issues/1363))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
