@@ -56,6 +56,25 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-2 -->
+
+### Week 2 · 2026-10-03 → 2026-10-09
+
+**Done this week:**
+
+- **Angela Camila Tite Haro** 💻 Keywords in display (P0, [#1153](https://github.com/RoBorregos/home2/issues/1153))
+
+**In Progress:**
+
+- **Luis Benvenuto** 💻 hric wake sounds (P0, [#682](https://github.com/RoBorregos/home2/issues/682))
+- **Andrés Rodríguez Cantú** 💻 Check image's dependencies (P1, [#921](https://github.com/RoBorregos/home2/issues/921))
+- **Luis Benvenuto** 💻 Speaker reminder (P0, [#1154](https://github.com/RoBorregos/home2/issues/1154))
+- **Andrés Rodríguez Cantú** 💻 Confirm function (P1, [#1158](https://github.com/RoBorregos/home2/issues/1158))
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

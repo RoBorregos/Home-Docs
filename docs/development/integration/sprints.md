@@ -53,6 +53,26 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-2 -->
+
+### Week 2 · 2026-10-03 → 2026-10-09
+
+**Done this week:**
+
+- **Luis Benvenuto** 💻 Fix cpu and cuda ([#1304](https://github.com/RoBorregos/home2/issues/1304))
+
+**Review:**
+
+- **Jeremy Martino** 💻 Agent skill to use orin correctly ([#1225](https://github.com/RoBorregos/home2/issues/1225))
+
+**In Progress:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
+- **Angela Camila Tite Haro** 💻 Improve logs (P1, [#1171](https://github.com/RoBorregos/home2/issues/1171))
+- **Jared AlPa** 💻 l4t images workflow (P1, [#1185](https://github.com/RoBorregos/home2/issues/1185))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20

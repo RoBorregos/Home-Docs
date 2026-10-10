@@ -41,6 +41,20 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-09-21:week-2 -->
+
+### Week 2 · 2026-10-03 → 2026-10-09
+
+**Done this week:**
+
+- **Jasiel Aldana Palacios**, **luis123555** 💻 Update electronics diagram for FRIDA (P2, [#1319](https://github.com/RoBorregos/home2/issues/1319))
+
+**Updates:**
+
+- **Jasiel Aldana Palacios**, **luis123555** 💻 Update electronics diagram for FRIDA (P2, [#1319](https://github.com/RoBorregos/home2/issues/1319)): The FRIDA electronics diagram was updated, reviewed, and subsequently corrected based on the requested changes.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-08-31 -->
 
 ## Sprint 2 · 2026-08-31 → 2026-09-20
