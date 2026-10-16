@@ -9,6 +9,39 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+9 tasks planned for this sprint.
+
+**Done:**
+
+- **Jared AlPa** 💻 Laundry task manager (P0, [#1161](https://github.com/RoBorregos/home2/issues/1161))
+
+**In Progress:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
+
+**Todo:**
+
+- **Unassigned** 💻 Improve time logging in TMs (P2, [#1160](https://github.com/RoBorregos/home2/issues/1160))
+- **Luis Benvenuto**, **Fernando Hernandez** 💻 TDP general ([#1372](https://github.com/RoBorregos/home2/issues/1372))
+- **Jeremy Martino** 💻 TDP omnibase ([#1381](https://github.com/RoBorregos/home2/issues/1381))
+- **Fernando Hernandez**, **Jared AlPa** 💻 Non expert users experiment (P0, [#1383](https://github.com/RoBorregos/home2/issues/1383))
+- **Fernando Hernandez** 💻 Home-Docs General Updates ([#1389](https://github.com/RoBorregos/home2/issues/1389))
+- **Luis Benvenuto** 💻 Update overview/project_structure in Home-Docs ([#1392](https://github.com/RoBorregos/home2/issues/1392))
+
+**Backlog:**
+
+- **Unassigned** 💻 Clean repos ([#1390](https://github.com/RoBorregos/home2/issues/1390))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -70,6 +103,28 @@ Status legend:
 - **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
 - **Angela Camila Tite Haro** 💻 Improve logs (P1, [#1171](https://github.com/RoBorregos/home2/issues/1171))
 - **Jared AlPa** 💻 l4t images workflow (P1, [#1185](https://github.com/RoBorregos/home2/issues/1185))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**5/6 tasks done (83%)**.
+
+Integration Sprint 3 aimed to improve system performance and workflows. The team successfully delivered the P1 logs improvement and l4t images workflow, along with agent skill updates, CPU and CUDA fixes, and image upload workflows. The P1 task to improve speech dialogs remains in progress.
+
+**Done:**
+
+- **Angela Camila Tite Haro** 💻 Improve logs (P1, [#1171](https://github.com/RoBorregos/home2/issues/1171))
+- **Jared AlPa** 💻 l4t images workflow (P1, [#1185](https://github.com/RoBorregos/home2/issues/1185))
+- **Jeremy Martino** 💻 Agent skill to use orin correctly ([#1225](https://github.com/RoBorregos/home2/issues/1225))
+- **Jeremy Martino** 💻 Fix cpu and cuda ([#1304](https://github.com/RoBorregos/home2/issues/1304))
+- **Jeremy Martino** 💻 Fix workflows for uploading images ([#1308](https://github.com/RoBorregos/home2/issues/1308))
+
+**Carried over:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (In Progress, P1, moved to Sprint 4, [#1165](https://github.com/RoBorregos/home2/issues/1165))
 
 <!-- /spotlight -->
 
