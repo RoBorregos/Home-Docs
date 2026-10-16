@@ -113,7 +113,7 @@
   expect: ["Areas/Navigation/navigation.md"]
 
 - query: "which local controller follows the planned path?"
-  expect: ["years/2025/Navigation.md"]
+  expect: ["Areas/Navigation/navigation.md"]
 
 # --- Vision -----------------------------------------------------------------
 - query: "which nodes are available for detecting objects?"
@@ -131,7 +131,7 @@
 
 # --- HRI --------------------------------------------------------------------
 - query: "what does the command interpreter node do?"
-  expect: ["years/2025/Human-Robot Interaction/Areas/CommandInterpreter.md"]
+  expect: ["Areas/HRI/hri.md"]
 
 - query: "which nodes handle speech and language processing?"
   expect: ["Areas/HRI/hri.md"]
