@@ -94,7 +94,7 @@
   expect: ["development/manipulation/architecture.md"]
 
 - query: "what does the manipulation area cover?"
-  expect: ["development/manipulation/overview.md"]
+  expect: ["development/manipulation/overview.md", "Areas/Manipulation/manipulation.md"]
 
 # --- Navigation -------------------------------------------------------------
 - query: "how do I start the navigation stack?"
