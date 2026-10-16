@@ -5,7 +5,7 @@ title: "Navigation"
 # Navigation
 
 !!! info "Synced from home2"
-    Generated from [`home2/navigation/README.md`](https://github.com/RoBorregos/home2/blob/0ec5893c8db4c845b7d703fa23d4c1f0fcc1581b/navigation/README.md) @ `0ec5893` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
+    Generated from [`home2/navigation/README.md`](https://github.com/RoBorregos/home2/blob/5d03b75a3e8cef203857ad037a456f765fa6b3b1/navigation/README.md) @ `5d03b75` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
 
 Navigation handles mapping (SLAM), localization, path planning and following,
 semantic areas, table docking and person following for FRIDA. It runs on `ROS 2`
@@ -233,7 +233,7 @@ ros2 service call /navigation/undock_from_surface std_srvs/srv/Trigger {}
 ## Navigation services
 
 `nav_central` exposes the interface the rest of FRIDA uses. Names come from
-[`frida_constants/navigation_constants.py`](https://github.com/RoBorregos/home2/blob/0ec5893c8db4c845b7d703fa23d4c1f0fcc1581b/frida_constants/frida_constants/navigation_constants.py).
+[`frida_constants/navigation_constants.py`](https://github.com/RoBorregos/home2/blob/5d03b75a3e8cef203857ad037a456f765fa6b3b1/frida_constants/frida_constants/navigation_constants.py).
 
 | Service | Type | Purpose |
 | --- | --- | --- |
@@ -263,6 +263,49 @@ ros2 service call /navigation/query_path frida_interfaces/srv/NavQuery \
 ros2 service call /navigation/follow_person std_srvs/srv/SetBool "{data: true}"
 ros2 service call /navigation/follow_person std_srvs/srv/SetBool "{data: false}"
 ```
+
+## Testing
+
+[`task_manager/scripts/test/test_navigation_manager.py`](https://github.com/RoBorregos/home2/blob/5d03b75a3e8cef203857ad037a456f765fa6b3b1/task_manager/scripts/test/test_navigation_manager.py)
+first checks the basics — ODrive axis errors and states, bus voltage, the merged
+`/scan`, the `map -> base_link` TF and the `nav_central` services — and then runs
+the `NavigationTasks` functions, which do move the robot.
+
+```bash
+ros2 run task_manager test_navigation_manager.py
+```
+
+Failures print the reason, and the values read (voltages, axis states, scan
+quality, how far `Explore Zone` moved and how close `Return to Origin` stopped)
+are listed at the end. `Explore Zone` fails if the robot reports the goal reached
+without advancing at least 0.5 m of its 1 m step.
+
+`wheels:=true` spins the base in place while reading `/odrive/vel_est`, so it
+reports any wheel that does not turn or that turns the wrong way. It needs a
+clear floor and only `omni_basics.launch.py`:
+
+```bash
+ros2 run task_manager test_navigation_manager.py --ros-args -p wheels:=true
+```
+
+In the Gazebo sim (`./run.sh simulation --nav`, see
+[`simulation/frida_gz_sim`](https://github.com/RoBorregos/home2/blob/5d03b75a3e8cef203857ad037a456f765fa6b3b1/simulation/frida_gz_sim/README.md)) there is no
+ODrive, so `sim:=true` skips the motor, voltage and wheel checks:
+
+```bash
+./run.sh simulation   # shell in the sim container
+ros2 run task_manager test_navigation_manager.py --ros-args -p sim:=true
+```
+
+| Parameter | Default | |
+| --- | --- | --- |
+| `basics` | `true` | Run the base/lidar/TF/service checks |
+| `sim` | `false` | Gazebo sim: skip the ODrive motor, voltage and wheel checks |
+| `wheels` | `false` | Spin the base to test each wheel |
+| `dock` | `false` | Include `dock_table` |
+| `mocked` | `false` | Use the subtask manager mocks, skips the basics |
+| `clear_logs` | `true` | Hide the ROS logs while each test runs |
+| `cmd_vel_topic` / `stamped_cmd_vel` | `/cmd_vel` / `true` | Where the base listens and whether it expects `TwistStamped` |
 
 ## Nav_ui — live monitor & control panel
 

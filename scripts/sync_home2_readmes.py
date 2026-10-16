@@ -12,7 +12,7 @@ DOCS = Path(__file__).resolve().parent.parent / "docs"
 AREAS = DOCS / "Areas"
 
 READMES = {
-    "README.md": ("home2.md", "home2"),
+    "README.md": ("index.md", "home2"),
     "docker/README.md": ("Integration and Networks/docker.md", "Docker"),
     "vision/README.md": ("Computer Vision/vision.md", "Vision"),
     "hri/README.md": ("HRI/hri.md", "HRI"),
@@ -102,7 +102,7 @@ def build(sha):
     for folder in managed_dirs():
         pages = sorted(p.name for p in files if p.parent == folder)
         if pages:
-            files[folder / ".pages"] = f"title: {folder.name} (home2 repo)\nnav:\n" + "".join(f"    - {p}\n" for p in pages)
+            files[folder / ".pages"] = "nav:\n" + "".join(f"    - {p}\n" for p in pages)
     return files
 
 
