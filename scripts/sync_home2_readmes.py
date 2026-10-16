@@ -15,13 +15,18 @@ READMES = {
     "README.md": ("index.md", "home2"),
     "docker/README.md": ("Integration and Networks/docker.md", "Docker"),
     "vision/README.md": ("Computer Vision/vision.md", "Vision"),
+    "vision/packages/object_detector_2d/scripts/embedding_gallery/README.md": ("Computer Vision/embedding_gallery.md", "Embedding Gallery"),
     "hri/README.md": ("HRI/hri.md", "HRI"),
     "hri/microservices/stt/README.md": ("HRI/stt.md", "Speech to Text"),
     "hri/proto_interfaces/README.md": ("HRI/proto_interfaces.md", "Proto Interfaces"),
     "hri/packages/display/display/README.md": ("HRI/display.md", "Display"),
+    "manipulation/README.md": ("Manipulation/manipulation.md", "Manipulation"),
     "manipulation/packages/pick_and_place/README.md": ("Manipulation/pick_and_place.md", "Pick and Place"),
     "manipulation/packages/vamp_moveit_plugin/ReadMe.md": ("Manipulation/vamp_moveit_plugin.md", "VAMP MoveIt Plugin"),
     "navigation/README.md": ("Navigation/navigation.md", "Navigation"),
+    "navigation/packages/map_context/config/rosbag/README.md": ("Navigation/rosbag.md", "Rosbags"),
+    "simulation/frida_gz_sim/README.md": ("Simulation/simulation.md", "Simulation"),
+    "robot_description/frida_description/README.md": ("Simulation/frida_description.md", "FRIDA Description"),
 }
 
 LINK = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)((?:\s+\"[^\"]*\")?)\)")
@@ -54,11 +59,10 @@ def rewrite_links(text, src, sha):
         bang, label, target, title = m.groups()
         if re.match(r"^([a-z][a-z0-9+.-]*:|#)", target, re.I):
             return m.group(0)
-        if bang:
-            print(f"warning: relative image {target} in {src}", file=sys.stderr)
-            return m.group(0)
         path, _, frag = target.partition("#")
         resolved = posixpath.normpath(path.lstrip("/") if path.startswith("/") else posixpath.join(base, path))
+        if bang:
+            return f"![{label}](https://raw.githubusercontent.com/{REPO}/{sha}/{resolved}{title})"
         url = f"https://github.com/{REPO}/blob/{sha}/{resolved}" + (f"#{frag}" if frag else "")
         return f"[{label}]({url}{title})"
 
