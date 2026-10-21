@@ -1,4 +1,4 @@
-The mechanics team is in charge of the integration of the main two parts of our robot, composed of a xArm6 on top of a DashGo Dobot AMR (see Hardware Overview for more specifications). 
+The mechanics team is in charge of the integration of the main two parts of our robot, composed of a xArm6 on top of the team's custom omnidirectional base (see Hardware Overview and the Omnibase Overview for more specifications). 
 
 The team aims to increase the robot sturdiness, aesthetics, user friendliness and is currently developing a custom parallel gripper for the robot, being able to grasp the objects of the competition and give feedback to it.
 

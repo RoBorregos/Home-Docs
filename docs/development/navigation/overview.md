@@ -1,5 +1,8 @@
 # Navigation Docs
 
+!!! warning
+    This page describes the legacy setup on the Dashgo B1 base (`nav_basics.launch.py`, AMCL). FRIDA now runs on the custom omnidirectional base: see [Omnibase Setup](../omnibase/setup.md#bring-up) for its bring-up and the [home2 navigation README](https://github.com/RoBorregos/home2/tree/main/navigation) for the current navigation stack.
+
 ## How to Run
 
 1. Connect to `roborregos_home` on Wi-Fi.
