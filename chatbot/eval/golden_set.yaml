@@ -94,7 +94,7 @@
   expect: ["development/manipulation/architecture.md"]
 
 - query: "what does the manipulation area cover?"
-  expect: ["development/manipulation/overview.md", "Areas/Manipulation.md"]
+  expect: ["development/manipulation/overview.md", "Areas/Manipulation/manipulation.md"]
 
 # --- Navigation -------------------------------------------------------------
 - query: "how do I start the navigation stack?"
@@ -110,10 +110,10 @@
   expect: ["development/navigation/BTs.md"]
 
 - query: "what do we use to build the map of the arena?"
-  expect: ["Areas/Navigation.md"]
+  expect: ["Areas/Navigation/navigation.md"]
 
 - query: "which local controller follows the planned path?"
-  expect: ["Areas/Navigation.md"]
+  expect: ["Areas/Navigation/navigation.md"]
 
 # --- Vision -----------------------------------------------------------------
 - query: "which nodes are available for detecting objects?"
@@ -131,10 +131,10 @@
 
 # --- HRI --------------------------------------------------------------------
 - query: "what does the command interpreter node do?"
-  expect: ["Areas/HRI.md"]
+  expect: ["Areas/HRI/hri.md"]
 
 - query: "which nodes handle speech and language processing?"
-  expect: ["Areas/HRI.md"]
+  expect: ["Areas/HRI/hri.md"]
 
 # --- Project management -----------------------------------------------------
 - query: "what meetings does the team have every week?"
