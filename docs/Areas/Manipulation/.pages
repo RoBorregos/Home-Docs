@@ -1,4 +1,3 @@
 nav:
     - manipulation.md
     - pick_and_place.md
-    - vamp_moveit_plugin.md

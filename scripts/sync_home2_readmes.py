@@ -13,7 +13,6 @@ AREAS = DOCS / "Areas"
 
 READMES = {
     "README.md": ("index.md", "home2"),
-    "docker/README.md": ("Integration and Networks/docker.md", "Docker"),
     "vision/README.md": ("Computer Vision/vision.md", "Vision"),
     "vision/packages/object_detector_2d/scripts/embedding_gallery/README.md": ("Computer Vision/embedding_gallery.md", "Embedding Gallery"),
     "hri/README.md": ("HRI/hri.md", "HRI"),
@@ -28,6 +27,9 @@ READMES = {
     "simulation/frida_gz_sim/README.md": ("Simulation/simulation.md", "Simulation"),
     "robot_description/frida_description/README.md": ("Simulation/frida_description.md", "FRIDA Description"),
 }
+
+IGNORE_FILE = Path(__file__).resolve().parent / "home2_readmes.ignore"
+IGNORE = {l.strip() for l in IGNORE_FILE.read_text().splitlines() if l.strip() and not l.startswith("#")}
 
 LINK = re.compile(r"(!?)\[([^\]]*)\]\(([^)\s]+)((?:\s+\"[^\"]*\")?)\)")
 FENCE = re.compile(r"^\s*(```|~~~)")
@@ -97,6 +99,8 @@ def render(src, title, text, sha):
 def build(sha):
     files = {}
     for src, (target, title) in READMES.items():
+        if src in IGNORE:
+            continue
         text = fetch(f"https://raw.githubusercontent.com/{REPO}/{sha}/{src}")
         if not is_substantive(text):
             print(f"skip {src}: no content beyond headings", file=sys.stderr)
@@ -111,7 +115,7 @@ def build(sha):
 
 
 def managed_dirs():
-    return {(AREAS / target).parent for target, _ in READMES.values()} - {AREAS}
+    return {(AREAS / target).parent for src, (target, _) in READMES.items() if src not in IGNORE} - {AREAS}
 
 
 def stale(files):
