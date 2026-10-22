@@ -28,7 +28,7 @@
 </div>
 
 ### Mobility and Manipulation
-FRIDA moves on a **custom omnidirectional base** designed and built by the team (it replaced the EAI Dashgo B1), and a **uFactory xArm 6** is used for manipulation tasks and to mount the depth camera. See the [Omnibase Overview](../development/omnibase/overview.md) for the base design.
+FRIDA moves on a **custom omnidirectional base** designed and built by the team (it replaced the EAI Dashgo B1), and a **uFactory xArm 6** is used for manipulation tasks and to mount the depth camera. See [Omnibase](/Areas/Omnibase.md) for the base design and setup.
 
 ### Components
 
