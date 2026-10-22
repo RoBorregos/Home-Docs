@@ -28,20 +28,20 @@
 </div>
 
 ### Mobility and Manipulation
-A modified **EAI Dashgo B1** robot was used for mobility purposes, and a **uFactory xArm 6** was added for manipulation tasks and to mount the depth camera.
+FRIDA moves on a **custom omnidirectional base** designed and built by the team (it replaced the EAI Dashgo B1), and a **uFactory xArm 6** is used for manipulation tasks and to mount the depth camera. See [Omnibase](/Areas/Omnibase.md) for the base design and setup.
 
 ### Components
 
 #### Base
-- Chassis with a differential wheel configuration.
-- Motors with encoders for odometry purposes.
+- **Drive**: Four mecanum wheels, each driven by an EaglePower LA8308 90KV brushless motor through a 9:1 gearbox.
+- **Motor drivers**: Four ODrive S1 controllers on a CAN bus.
+- **Base controller**: STM32H755 running FreeRTOS for the mecanum kinematics and an on-board EKF that fuses wheel odometry with a BNO085 IMU. An ESP32 provides Bluetooth gamepad teleoperation.
 
 #### Computers
-- **NVIDIA Jetson AGX Orin 64GB**
+- **2× NVIDIA Jetson AGX Orin 64GB**
 
 #### Batteries
-- **24V Batteries**: A total of three 24v li-ion batteries are used, one for the xArm,
-Jetson Orin and Dashgo.
+- **LiFePO4 pack**: Eight 3.2 V 25 Ah cells in series (25.6 V, 640 Wh) with a Daly BMS, powering the whole robot.
 
 #### Arm
 - **Manipulator**: uFactory xArm 6.
@@ -57,15 +57,15 @@ sensors on each finger and an IR sensor for detecting objects in front of it. It
 - **Display**: HDMI LCD touchscreen display.
 
 #### Navigation
-- **Lidar**: RP Lidar A1.
+- **Lidar**: Two RPLIDAR C1 at opposite corners of the base, merged into a single 360° scan.
 
 #### Base Cover
-- Custom acrylic cover and aluminum profile structure for securing every component and hide the internal electronics.
+- Aluminum profile frame with MDF covers for securing every component and hiding the internal electronics.
 
 #### Physical Specifications
-- **Height**: 180 cm (fully extended).
-- **Base footprint**: 50 x 42 cm.
-- **Weight**: 40 kg.
+- **Height**: 170 cm (fully extended).
+- **Base footprint**: 64 x 50 cm.
+- **Weight**: 46 kg.
 
 ### Additional Devices
 - **Power Indicators**: For the xArm 6 and Jetson Orin batteries.

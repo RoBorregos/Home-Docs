@@ -11,3 +11,4 @@ The following sections describe the main software and hardware modules developed
 - [Computer Vision](/Areas/Computer%20Vision/vision.md): Describes the software modules that allow the robot to perceive the environment through cameras and other sensors.
 - [Simulation](/Areas/Simulation/simulation.md): Describes the simulation environment and robot model used to test the robot's software.
 - [Mechanics](/Areas/Mechanics.md): Describes the hardware modules that allow the robot to integrate their physical parts and interact with the environment.
+- [Omnibase](/Areas/Omnibase.md): Describes the design, electronics, firmware and setup of the custom omnidirectional base.

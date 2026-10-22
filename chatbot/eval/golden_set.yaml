@@ -124,10 +124,10 @@
 
 # --- Omnibase ---------------------------------------------------------------
 - query: "why did we pick mecanum wheels for the new base?"
-  expect: ["development/omnibase/overview.md"]
+  expect: ["Areas/Omnibase.md"]
 
 - query: "which motor driver controls the omnidirectional base?"
-  expect: ["development/omnibase/overview.md"]
+  expect: ["Areas/Omnibase.md"]
 
 # --- HRI --------------------------------------------------------------------
 - query: "what does the command interpreter node do?"
