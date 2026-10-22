@@ -4,4 +4,4 @@ Electronics and Control is the area in charge of the design, construction and ap
 
 ## Omnidirectional Base
 
-The low-level control of FRIDA's omnidirectional base (STM32 firmware, ODrive S1 motor control over CAN and on-MCU IMU fusion) lives in [RoBorregos/home-custom-base](https://github.com/RoBorregos/home-custom-base). See the [Omnibase overview](../development/omnibase/overview.md) for its design.
+The low-level control of FRIDA's omnidirectional base (STM32 firmware, ODrive S1 motor control over CAN and on-MCU IMU fusion) lives in [RoBorregos/home-custom-base](https://github.com/RoBorregos/home-custom-base).
