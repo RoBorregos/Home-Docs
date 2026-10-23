@@ -9,6 +9,39 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+7 tasks planned for this sprint.
+
+**Todo:**
+
+- **Andrés Rodríguez Cantú**, **Luis Benvenuto**, **Luis Alvaro Rosales Salazar** 💻 Non expert users (P0, [#1157](https://github.com/RoBorregos/home2/issues/1157))
+- **Luis Alvaro Rosales Salazar** 💻 clean map areas reference (P0, [#1218](https://github.com/RoBorregos/home2/issues/1218))
+- **Unassigned** 💻 Integrate new gpsr model ([#1382](https://github.com/RoBorregos/home2/issues/1382))
+- **Unassigned** 💻 Res: Confidence-calibrated clarification policy for ask_and_confirm (accept / ask-to-repeat / confirm) ([#1384](https://github.com/RoBorregos/home2/issues/1384))
+
+**Backlog:**
+
+- **Unassigned** 💻 TDP: speech ([#1415](https://github.com/RoBorregos/home2/issues/1415))
+- **Unassigned** 💻 TDP: NLP ([#1416](https://github.com/RoBorregos/home2/issues/1416))
+- **Unassigned** 💻 TDP: Display ([#1417](https://github.com/RoBorregos/home2/issues/1417))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**Not started:** 7 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -72,6 +105,31 @@ Status legend:
 - **Andrés Rodríguez Cantú** 💻 Confirm function (P1, [#1158](https://github.com/RoBorregos/home2/issues/1158))
 
 **Not started:** 1 task.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**6/9 tasks done (67%)** · P0: 3/4.
+
+Sprint 3 for HRI focused on core communication features. The team successfully delivered critical items like Keywords in display, Speaker reminder, and Test hotword. However, high-priority tasks such as hric wake sounds and Check image's dependencies remain in progress.
+
+**Done:**
+
+- **Angela Camila Tite Haro** 💻 Keywords in display (P0, [#1153](https://github.com/RoBorregos/home2/issues/1153))
+- **Luis Benvenuto** 💻 Speaker reminder (P0, [#1154](https://github.com/RoBorregos/home2/issues/1154))
+- **Luis Alvaro Rosales Salazar** 💻 Test hotword (P0, [#1155](https://github.com/RoBorregos/home2/issues/1155))
+- **Luis Alvaro Rosales Salazar** 💻 Retrain and update command interpreter ([#1305](https://github.com/RoBorregos/home2/issues/1305))
+- **Luis Alvaro Rosales Salazar** 💻 Fix grabbed in task_merger ([#1316](https://github.com/RoBorregos/home2/issues/1316))
+- **Luis Alvaro Rosales Salazar** 💻 Fix grabbed in task_merger ([#1317](https://github.com/RoBorregos/home2/issues/1317))
+
+**Carried over:**
+
+- **Luis Benvenuto** 💻 hric wake sounds (In Progress, P0, [#682](https://github.com/RoBorregos/home2/issues/682))
+- **Andrés Rodríguez Cantú** 💻 Check image's dependencies (In Progress, P1, [#921](https://github.com/RoBorregos/home2/issues/921))
+- **Andrés Rodríguez Cantú** 💻 Confirm function (In Progress, P1, [#1158](https://github.com/RoBorregos/home2/issues/1158))
 
 <!-- /spotlight -->
 
