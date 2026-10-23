@@ -9,6 +9,62 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+12 tasks planned for this sprint.
+
+**Done:**
+
+- **Jared AlPa** 💻 Laundry task manager (P0, [#1161](https://github.com/RoBorregos/home2/issues/1161))
+
+**In Progress:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
+
+**Todo:**
+
+- **Unassigned** 💻 Improve time logging in TMs (P2, [#1160](https://github.com/RoBorregos/home2/issues/1160))
+- **Luis Benvenuto**, **Fernando Hernandez** 💻 TDP general ([#1372](https://github.com/RoBorregos/home2/issues/1372))
+- **Jeremy Martino** 💻 TDP omnibase ([#1381](https://github.com/RoBorregos/home2/issues/1381))
+- **Fernando Hernandez**, **Jared AlPa** 💻 Non expert users experiment (P0, [#1383](https://github.com/RoBorregos/home2/issues/1383))
+- **Fernando Hernandez** 💻 Home-Docs General Updates ([#1389](https://github.com/RoBorregos/home2/issues/1389))
+- **Luis Benvenuto** 💻 Update overview/project_structure in Home-Docs ([#1392](https://github.com/RoBorregos/home2/issues/1392))
+- **Bárbara Alejandra Novau Martínez**, **Fernando Hernandez** 💻 TDP VIDEO ([#1413](https://github.com/RoBorregos/home2/issues/1413))
+
+**Backlog:**
+
+- **Unassigned** 💻 Clean repos ([#1390](https://github.com/RoBorregos/home2/issues/1390))
+- **Unassigned** 💻 TDP: Architecture ([#1418](https://github.com/RoBorregos/home2/issues/1418))
+- **Unassigned** 💻 TDP: Docker hub ([#1419](https://github.com/RoBorregos/home2/issues/1419))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**Done this week:**
+
+- **Jared AlPa** 💻 Laundry task manager (P0, [#1161](https://github.com/RoBorregos/home2/issues/1161))
+
+**In Progress:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
+
+**Updates:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165)): The current HRI model is being compared to assess its potential for improving dialog and task interaction flexibility.
+
+**Not started:** 10 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -70,6 +126,28 @@ Status legend:
 - **Luis Benvenuto** 💻 Improve speech dialogs in tasks (P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
 - **Angela Camila Tite Haro** 💻 Improve logs (P1, [#1171](https://github.com/RoBorregos/home2/issues/1171))
 - **Jared AlPa** 💻 l4t images workflow (P1, [#1185](https://github.com/RoBorregos/home2/issues/1185))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**5/6 tasks done (83%)**.
+
+Sprint 3 aimed to improve system integration through several key updates. The team successfully delivered improved logs, l4t images workflow, the agent skill for orin, and fixed CPU, CUDA, and image uploading workflows. However, improving speech dialogs in tasks remains in progress.
+
+**Done:**
+
+- **Angela Camila Tite Haro** 💻 Improve logs (P1, [#1171](https://github.com/RoBorregos/home2/issues/1171))
+- **Jared AlPa** 💻 l4t images workflow (P1, [#1185](https://github.com/RoBorregos/home2/issues/1185))
+- **Jeremy Martino** 💻 Agent skill to use orin correctly ([#1225](https://github.com/RoBorregos/home2/issues/1225))
+- **Jeremy Martino** 💻 Fix cpu and cuda ([#1304](https://github.com/RoBorregos/home2/issues/1304))
+- **Jeremy Martino** 💻 Fix workflows for uploading images ([#1308](https://github.com/RoBorregos/home2/issues/1308))
+
+**Carried over:**
+
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (In Progress, P1, moved to Sprint 4, [#1165](https://github.com/RoBorregos/home2/issues/1165))
 
 <!-- /spotlight -->
 

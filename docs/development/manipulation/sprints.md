@@ -9,6 +9,34 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+5 tasks planned for this sprint.
+
+**Todo:**
+
+- **Champtiago** 💻 Document the five pick strategies ([#1373](https://github.com/RoBorregos/home2/issues/1373))
+- **Marco Galindo** 💻 TCP: pick_benchmark ([#1374](https://github.com/RoBorregos/home2/issues/1374))
+- **Jared AlPa** 💻 TDP: Rerun placing trials for the heatmap placer ([#1375](https://github.com/RoBorregos/home2/issues/1375))
+- **Fernando Hernandez** 💻 TDP: Create the manipulation layered architecture figure ([#1376](https://github.com/RoBorregos/home2/issues/1376))
+- **Unassigned** 💻 TDP: benchmark new gripper ([#1412](https://github.com/RoBorregos/home2/issues/1412))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**Not started:** 5 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -60,6 +88,26 @@ Status legend:
 **Review:**
 
 - **Champtiago** 💻 Geometric grasp generator + cartesian approach pick ([#1314](https://github.com/RoBorregos/home2/issues/1314))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**3/4 tasks done (75%)**.
+
+Sprint 3 for Manipulation focused on simulation, search improvements, grasp generation, and Docker builds. The team successfully delivered the Gazebo harmonic pick and place simulation, improved person searching, and fixed the Jazzy Docker image build issue. The geometric grasp generator and cartesian approach pick remain pending in review.
+
+**Done:**
+
+- **Fernando Hernandez** 💻 Gazebo armonic pick&place sim ([#1299](https://github.com/RoBorregos/home2/issues/1299))
+- **Jared AlPa** 💻 Improve person searching ([#1313](https://github.com/RoBorregos/home2/issues/1313))
+- **Jeremy Martino** 💻 Manipulation Docker images fail to build on Jazzy (Gazebo Classic packages) ([#1334](https://github.com/RoBorregos/home2/issues/1334))
+
+**Carried over:**
+
+- **Champtiago** 💻 Geometric grasp generator + cartesian approach pick (Review, [#1314](https://github.com/RoBorregos/home2/issues/1314))
 
 <!-- /spotlight -->
 
