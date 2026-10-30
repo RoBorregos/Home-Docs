@@ -1,5 +1,11 @@
 # Team Members
 
+<p align="center">
+  <img src="/assets/landing/TeamPicture.jpeg" alt="RoBorregos @Home team with FRIDA">
+  <br>
+  <em>RoBorregos @Home team with FRIDA at RoboCup 2026, Incheon.</em>
+</p>
+
 ## Active Members
 
 <div class="grid-wrapper">

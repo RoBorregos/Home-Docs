@@ -5,7 +5,9 @@
 Welcome to the @Home competition documentation of [RoBorregos](https://roborregos.com), Robotics Representative Team of [Tecnológico de Monterrey](https://tec.mx). This documentation serves as a guide for our project, which focuses on researching and developing a multiproposal modular service robot for the [RoboCup@Home](https://athome.robocup.org/) competition. Our goal is to create a comprehensive software architecture that enables robots to perform various tasks that humans typically handle on a daily basis and adapting this software architecture in affordable hardware.
 
 <p align="center">
-  <img src="/assets/landing/TeamPicture.jpeg" alt="RoBorregos Logo">
+  <img src="/assets/landing/TeamPicture.jpeg" alt="RoBorregos @Home team with FRIDA">
+  <br>
+  <em>RoBorregos @Home team with FRIDA at RoboCup 2026, Incheon.</em>
 </p>
 
 ## About the Competition
