@@ -9,6 +9,58 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+6 tasks planned for this sprint.
+
+**Review:**
+
+- **Andrés Rodríguez Cantú** 💻 TDP: speech ([#1415](https://github.com/RoBorregos/home2/issues/1415))
+
+**Todo:**
+
+- **Unassigned** 💻 Non expert users (P0, [#1157](https://github.com/RoBorregos/home2/issues/1157))
+- **Luis Alvaro Rosales Salazar** 💻 Integrate new gpsr model ([#1382](https://github.com/RoBorregos/home2/issues/1382))
+- **Luis Benvenuto** 💻 Res: Confidence-calibrated clarification policy for ask_and_confirm (accept / ask-to-repeat / confirm) ([#1384](https://github.com/RoBorregos/home2/issues/1384))
+- **Luis Alvaro Rosales Salazar** 💻 TDP: NLP ([#1416](https://github.com/RoBorregos/home2/issues/1416))
+- **Angela Camila Tite Haro** 💻 TDP: Display ([#1417](https://github.com/RoBorregos/home2/issues/1417))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**Review:**
+
+- **Andrés Rodríguez Cantú** 💻 TDP: speech ([#1415](https://github.com/RoBorregos/home2/issues/1415))
+
+**Not started:** 5 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-2 -->
+
+### Week 2 · 2026-10-24 → 2026-10-30
+
+**Review:**
+
+- **Andrés Rodríguez Cantú** 💻 TDP: speech ([#1415](https://github.com/RoBorregos/home2/issues/1415))
+
+**Updates:**
+
+- **Andrés Rodríguez Cantú** 💻 TDP: speech ([#1415](https://github.com/RoBorregos/home2/issues/1415)): The TDP speech section was revised to detail the audio pipeline, including WhisperLive, MediaPipe, DeepFilterNet3, and Kokoro-82M containerized microservices.
+
+**Not started:** 5 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -72,6 +124,31 @@ Status legend:
 - **Andrés Rodríguez Cantú** 💻 Confirm function (P1, [#1158](https://github.com/RoBorregos/home2/issues/1158))
 
 **Not started:** 1 task.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**6/9 tasks done (67%)** · P0: 3/4.
+
+This sprint focused on delivering key HRI features and fixes. The team successfully implemented keywords in the display, speaker reminders, hotword testing, command interpreter retraining, and task_merger fixes. However, the P0 wake sounds and dependency checks remain pending.
+
+**Done:**
+
+- **Angela Camila Tite Haro** 💻 Keywords in display (P0, [#1153](https://github.com/RoBorregos/home2/issues/1153))
+- **Luis Benvenuto** 💻 Speaker reminder (P0, [#1154](https://github.com/RoBorregos/home2/issues/1154))
+- **Luis Alvaro Rosales Salazar** 💻 Test hotword (P0, [#1155](https://github.com/RoBorregos/home2/issues/1155))
+- **Luis Alvaro Rosales Salazar** 💻 Retrain and update command interpreter ([#1305](https://github.com/RoBorregos/home2/issues/1305))
+- **Luis Alvaro Rosales Salazar** 💻 Fix grabbed in task_merger ([#1316](https://github.com/RoBorregos/home2/issues/1316))
+- **Luis Alvaro Rosales Salazar** 💻 Fix grabbed in task_merger ([#1317](https://github.com/RoBorregos/home2/issues/1317))
+
+**Carried over:**
+
+- **Luis Benvenuto** 💻 hric wake sounds (Backlog, P0, [#682](https://github.com/RoBorregos/home2/issues/682))
+- **Andrés Rodríguez Cantú** 💻 Check image's dependencies (Backlog, P1, [#921](https://github.com/RoBorregos/home2/issues/921))
+- **Andrés Rodríguez Cantú** 💻 Confirm function (Backlog, P1, [#1158](https://github.com/RoBorregos/home2/issues/1158))
 
 <!-- /spotlight -->
 

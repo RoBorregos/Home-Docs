@@ -9,6 +9,61 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+6 tasks planned for this sprint.
+
+**Done:**
+
+- **Jared AlPa** 💻 TDP: Rerun placing trials for the heatmap placer ([#1375](https://github.com/RoBorregos/home2/issues/1375))
+
+**In Progress:**
+
+- **Fernando Hernandez** 💻 Pick Optimization ([#1435](https://github.com/RoBorregos/home2/issues/1435))
+
+**Todo:**
+
+- **Champtiago** 💻 Document the five pick strategies ([#1373](https://github.com/RoBorregos/home2/issues/1373))
+- **Marco Galindo** 💻 TCP: pick_benchmark ([#1374](https://github.com/RoBorregos/home2/issues/1374))
+- **Fernando Hernandez** 💻 TDP: Create the manipulation layered architecture figure ([#1376](https://github.com/RoBorregos/home2/issues/1376))
+- **Unassigned** 💻 TDP: benchmark new gripper ([#1412](https://github.com/RoBorregos/home2/issues/1412))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**In Progress:**
+
+- **Fernando Hernandez** 💻 Pick Optimization ([#1435](https://github.com/RoBorregos/home2/issues/1435))
+
+**Not started:** 4 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-2 -->
+
+### Week 2 · 2026-10-24 → 2026-10-30
+
+**Done this week:**
+
+- **Jared AlPa** 💻 TDP: Rerun placing trials for the heatmap placer ([#1375](https://github.com/RoBorregos/home2/issues/1375))
+
+**In Progress:**
+
+- **Fernando Hernandez** 💻 Pick Optimization ([#1435](https://github.com/RoBorregos/home2/issues/1435))
+
+**Not started:** 4 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -60,6 +115,23 @@ Status legend:
 **Review:**
 
 - **Champtiago** 💻 Geometric grasp generator + cartesian approach pick ([#1314](https://github.com/RoBorregos/home2/issues/1314))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**4/4 tasks done (100%)**.
+
+In Sprint 3, the Manipulation area aimed to resolve simulation, grasping, and environment issues. The team successfully delivered the Gazebo harmonic pick and place simulation, improved person searching, implemented the geometric grasp generator with cartesian approach pick, and fixed the manipulation Docker images failing on Jazzy. No pending items remain for this sprint.
+
+**Done:**
+
+- **Fernando Hernandez** 💻 Gazebo armonic pick&place sim ([#1299](https://github.com/RoBorregos/home2/issues/1299))
+- **Jared AlPa** 💻 Improve person searching ([#1313](https://github.com/RoBorregos/home2/issues/1313))
+- **Champtiago** 💻 Geometric grasp generator + cartesian approach pick ([#1314](https://github.com/RoBorregos/home2/issues/1314))
+- **Jeremy Martino** 💻 Manipulation Docker images fail to build on Jazzy (Gazebo Classic packages) ([#1334](https://github.com/RoBorregos/home2/issues/1334))
 
 <!-- /spotlight -->
 

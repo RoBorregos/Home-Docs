@@ -9,6 +9,75 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+8 tasks planned for this sprint.
+
+**Done:**
+
+- **Arturo Cabrera** 💻 TDP: Replace DLib face recognition text with InsightFace + TensorRT ([#1367](https://github.com/RoBorregos/home2/issues/1367))
+- **Marco Galindo** 💻 TDP: Verify and update the person tracking and Re-ID description ([#1368](https://github.com/RoBorregos/home2/issues/1368))
+- **Juan Pablo Gutierrez** 💻 TDP: Update pose and gesture text (YOLO11 pose, MediaPipe, Moondream2 over gRPC) ([#1369](https://github.com/RoBorregos/home2/issues/1369))
+- **Marco Galindo** 💻 TDP: embedding gallery contribution ([#1370](https://github.com/RoBorregos/home2/issues/1370))
+- **Fernando Hernandez** 💻 TDP: update Object detector pipeline ([#1371](https://github.com/RoBorregos/home2/issues/1371))
+- **Arturo Cabrera** 🔧 Clean docker-l4t ([#1377](https://github.com/RoBorregos/home2/issues/1377))
+
+**In Progress:**
+
+- **Juan Pablo Gutierrez** 💻 Finals commands node: CLIP embeddings for semantic navigation ([#1378](https://github.com/RoBorregos/home2/issues/1378))
+- **Mario Casas Donjuan** 💻 Integrate talk detection into follow face ([#1431](https://github.com/RoBorregos/home2/issues/1431))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**Done this week:**
+
+- **Fernando Hernandez** 💻 TDP: update Object detector pipeline ([#1371](https://github.com/RoBorregos/home2/issues/1371))
+
+**In Progress:**
+
+- **Juan Pablo Gutierrez** 💻 Finals commands node: CLIP embeddings for semantic navigation ([#1378](https://github.com/RoBorregos/home2/issues/1378))
+- **Mario Casas Donjuan** 💻 Integrate talk detection into follow face ([#1431](https://github.com/RoBorregos/home2/issues/1431))
+
+**Updates:**
+
+- **Arturo Cabrera** 🔧 Clean docker-l4t ([#1377](https://github.com/RoBorregos/home2/issues/1377)): Hard-coded dependencies were moved to requirements files and `libportaudio2` was added to fix sounddevice imports successfully.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-2 -->
+
+### Week 2 · 2026-10-24 → 2026-10-30
+
+**Done this week:**
+
+- **Arturo Cabrera** 💻 TDP: Replace DLib face recognition text with InsightFace + TensorRT ([#1367](https://github.com/RoBorregos/home2/issues/1367))
+- **Marco Galindo** 💻 TDP: Verify and update the person tracking and Re-ID description ([#1368](https://github.com/RoBorregos/home2/issues/1368))
+- **Juan Pablo Gutierrez** 💻 TDP: Update pose and gesture text (YOLO11 pose, MediaPipe, Moondream2 over gRPC) ([#1369](https://github.com/RoBorregos/home2/issues/1369))
+- **Marco Galindo** 💻 TDP: embedding gallery contribution ([#1370](https://github.com/RoBorregos/home2/issues/1370))
+- **Arturo Cabrera** 🔧 Clean docker-l4t ([#1377](https://github.com/RoBorregos/home2/issues/1377))
+
+**In Progress:**
+
+- **Juan Pablo Gutierrez** 💻 Finals commands node: CLIP embeddings for semantic navigation ([#1378](https://github.com/RoBorregos/home2/issues/1378))
+- **Mario Casas Donjuan** 💻 Integrate talk detection into follow face ([#1431](https://github.com/RoBorregos/home2/issues/1431))
+
+**Updates:**
+
+- **Arturo Cabrera** 💻 TDP: Replace DLib face recognition text with InsightFace + TensorRT ([#1367](https://github.com/RoBorregos/home2/issues/1367)): The team replaced the dlib face recognition pipeline with InsightFace, enhanced frames with CLAHE, and optimized inference using TensorRT on the Jetson.
+- **Marco Galindo** 💻 TDP: embedding gallery contribution ([#1370](https://github.com/RoBorregos/home2/issues/1370)): 1 new comment
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -74,6 +143,28 @@ Status legend:
 - **Arturo Cabrera** 💻 Add text embedding support to ImageEmbedder ([#1348](https://github.com/RoBorregos/home2/issues/1348)): ImageEmbedder text embedding implementation was reduced to a minimal commit in PR 1358 with passing tests and benchmark results.
 
 **Not started:** 1 task.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**4/6 tasks done (67%)**.
+
+This sprint focused on improving the vision system's perception and object recognition capabilities. The team successfully delivered the detection of the speaking person, embedding-based object recognition, newer VLM benchmarking, and text embedding support for ImageEmbedder. Meanwhile, semantic map review and garment perception for doing laundry remain pending.
+
+**Done:**
+
+- **Juan Pablo Gutierrez** 💻 Detection of the person speaking (P1, [#1267](https://github.com/RoBorregos/home2/issues/1267))
+- **Fernando Hernandez**, **Marco Galindo** 🔍 Vision: embedding-based object recognition for setup-day onboarding ([#1310](https://github.com/RoBorregos/home2/issues/1310))
+- **Arturo Cabrera** 🔍 Benchmark newer VLM, and general models options ([#1311](https://github.com/RoBorregos/home2/issues/1311))
+- **Arturo Cabrera** 💻 Add text embedding support to ImageEmbedder ([#1348](https://github.com/RoBorregos/home2/issues/1348))
+
+**Carried over:**
+
+- **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Galindo** 🔍 Semantic MAP (Review, [#1268](https://github.com/RoBorregos/home2/issues/1268))
+- **Luis Alvaro Rosales Salazar** 🔍 Garment perception for the Doing Laundry (Backlog, [#1312](https://github.com/RoBorregos/home2/issues/1312))
 
 <!-- /spotlight -->
 
