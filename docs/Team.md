@@ -121,7 +121,7 @@
         <li><span class="member-year">2025</span> HRI, Integration</li>
         <li><span class="member-year">2026</span> Navigation</li>
     </ul>
-    <img src="/assets/members/Fotos_members/DSC_4016.jpg"/>
+    <img src="/assets/members/Fotos_members/camila-tite.jpg" alt="Angela Camila Tite Haro"/>
 </div>
 
 <div class="grid-cell">
