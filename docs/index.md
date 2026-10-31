@@ -14,6 +14,12 @@ Welcome to the @Home competition documentation of [RoBorregos](https://roborrego
 
 The RoboCup@Home league is the largest annual competition for autonomous service robots. It aims to develop service and assistive robot technology for future domestic applications. The competition evaluates robots' abilities in a realistic home environment through benchmark tests.
 
+### RoboCup@Home 2026 video
+
+<p align="center">
+<iframe width="560" height="315" src="https://www.youtube.com/embed/qUQNTDRBEKw" title="RoboCup@Home Video 2026" frameborder="0" allowfullscreen></iframe>
+</p>
+
 <div id="carousel" class="carousel">
   <div class="carousel-item active">
     <img src="/assets/mpPose.jpg" alt="Robot mmpose">
@@ -97,10 +103,26 @@ document.addEventListener('DOMContentLoaded', () => {
 ## Explore Our Work
 
 <details>
+  <summary>Achievements from 2026</summary>
+  <ul>
+    <li><a href="years/2026/">2026 season and work since RoboCup 2026</a></li>
+  </ul>
+</details>
+
+<details>
+  <summary>Achievements from 2025</summary>
+  <ul>
+    <li><a href="years/2025/Computer%20Vision/">Computer Vision</a></li>
+    <li><a href="years/2025/Human-Robot%20Interaction/">Human-Robot Interaction</a></li>
+    <li><a href="years/2025/Manipulation/Architecture/">Manipulation</a></li>
+    <li><a href="years/2025/Navigation/">Navigation</a></li>
+  </ul>
+</details>
+
+<details>
   <summary>Achievements from 2024</summary>
   <ul>
-    <li><a href="years/2024/">Achievements from 2024</a></li>
-    <li><a href="years/2024/">Achievements from 2024</a></li>
+    <li><a href="years/2024/">2024</a></li>
   </ul>
 </details>
 
@@ -108,14 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
   <summary>Achievements from 2023</summary>
   <ul>
     <li><a href="years/2023/">2023</a></li>
-    <li><a href="years/2023/">2023</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Prior achievements</summary>
   <ul>
-    <li><a href="years/2022/">2022 - Jun 2023</a></li>
     <li><a href="years/2022/">2022 - Jun 2023</a></li>
   </ul>
 </details>
@@ -127,6 +147,24 @@ document.addEventListener('DOMContentLoaded', () => {
   </ul>
 </details>
 
+## Qualification Material
+
+Material for the RoboCup@Home 2027 qualification:
+
+- **Team Description Paper**: TODO: link to the 2027 TDP PDF. Previous TDPs are listed in [Publications](/Publications.md).
+- **Team video**: [RoboCup@Home 2026 video](https://www.youtube.com/watch?v=qUQNTDRBEKw). More videos in [Media](/Overview/Media.md).
+- **Robot**: [Hardware overview](/Overview/Hardware.md) of FRIDA.
+- **Competition history**: [previous RoboCup and TMR participations](/Overview/Achievements.md).
+- **Team**: [Team leadership and members](/Team.md).
+
+### Open Source Software
+
+All of FRIDA's software is open source and documented:
+
+- [RoBorregos/home2](https://github.com/RoBorregos/home2): main repository with the ROS 2 packages for HRI, vision, manipulation, navigation, simulation and the task managers.
+- [RoBorregos/home-custom-base](https://github.com/RoBorregos/home-custom-base): firmware (STM32, ODrive S1 over CAN, on-MCU EKF) and ROS 2 dashboard for the custom omnidirectional base.
+- [RoBorregos/home-pipelines](https://github.com/RoBorregos/home-pipelines): Jupyter notebook pipelines for the HRI command interpreter and the vision object detector.
+
 ## Sections
 
 This project is divided into several sections, each focusing on a specific aspect of the competition and the history of our team. The sections are as follows:
@@ -135,6 +173,9 @@ This project is divided into several sections, each focusing on a specific aspec
 - [Publications](/Publications.md): Academic papers and research work by our team members.
 - [Areas](/Areas/index.md): Describes the main software and hardware modules develop by the team to achive the functionalities in the robot.
 - [Team Members](/Team.md): Lists the team members and their roles in the project.
+- [Competition History](/Overview/Achievements.md): Previous RoboCup and Mexican Robotics Tournament participations.
+- [2026](/years/2026/index.md)
+- [2025](/years/2025/Computer%20Vision/index.md)
 - [2024](/years/2024/index.md)
 - [2023](/years/2023/index.md)
 - [2022](/years/2022/index.md)

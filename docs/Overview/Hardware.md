@@ -25,7 +25,19 @@
       <img class="timeline-image" src="/assets/overview/frida.png" alt="Robot 2025" />
     </div>
   </div>
+
+  <div class="timeline-arrow" aria-hidden="true">&rarr;</div>
+
+  <div class="timeline-item">
+    <div class="label">2026</div>
+    <div class="timeline-image-wrap">
+      <img class="timeline-image" src="/assets/landing/TeamPicture.jpeg" alt="Robot 2026" />
+    </div>
+  </div>
 </div>
+
+!!! warning "TODO"
+    Replace the 2026 image with a photo of FRIDA alone on the omnidirectional base (save it under `docs/assets/overview/`).
 
 ### Mobility and Manipulation
 FRIDA moves on a **custom omnidirectional base** designed and built by the team (it replaced the EAI Dashgo B1), and a **uFactory xArm 6** is used for manipulation tasks and to mount the depth camera. See [Omnibase](/Areas/Omnibase.md) for the base design and setup.
@@ -73,5 +85,9 @@ sensors on each finger and an IR sensor for detecting objects in front of it. It
 
 ---
 
-
-
+### Software stack
+- **ROS 2 Jazzy** (migrated from Humble after RoboCup 2026), running in Docker containers per area (CPU, CUDA and JetPack 7 L4T images).
+- **CycloneDDS** as the DDS middleware, with shared memory transport.
+- **Nav2** for navigation, **MoveIt 2** with an IKFast plugin for the xArm 6.
+- **Gazebo Harmonic** for simulation.
+- All the software is open source in [RoBorregos/home2](https://github.com/RoBorregos/home2).

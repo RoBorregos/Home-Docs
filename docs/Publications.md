@@ -12,6 +12,15 @@ Our research focuses on several key areas in service robotics:
 - **Human-Robot Interaction**: Improving communication and interaction between humans and service robots
 - **Computer Vision**: Object detection, recognition, and scene understanding for domestic environments
 
+## Team Description Papers
+
+| Year | Event | Paper |
+| --- | --- | --- |
+| 2027 | RoboCup@Home 2027, Nuremberg | TODO: link to PDF |
+| 2026 | RoboCup@Home 2026, Incheon | TODO: link to PDF |
+| 2025 | RoboCup@Home 2025, Salvador | TODO: link to PDF |
+| 2024 | RoboCup@Home 2024, Eindhoven | TODO: link to PDF |
+
 ## @Home Papers
 
 Adán Flores-Ramírez et al. Taming the llm: Reliable task planning for robotics

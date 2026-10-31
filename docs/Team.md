@@ -6,6 +6,14 @@
   <em>RoBorregos @Home team with FRIDA at RoboCup 2026, Incheon.</em>
 </p>
 
+## Team Leadership
+
+| Role | Name | Contact |
+| --- | --- | --- |
+| Principal Investigator | TODO | TODO: link to PI website |
+| Team Leader | TODO | TODO |
+| Contact Person | TODO | TODO: email |
+
 ## Active Members
 
 <div class="grid-wrapper">
