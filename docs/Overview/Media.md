@@ -13,6 +13,16 @@ Use the arrows or the thumbnails to browse, and click the photo to open it in fu
 
 === "2026"
 
+    **RoboCup 2026, Incheon**
+
+    <div class="photo-gallery">
+      <a href="../../assets/landing/robocup2026/team-songdo.jpg" target="_blank" title="The team with FRIDA at RoboCup 2026, Songdo ConvensiA"><img src="../../assets/landing/robocup2026/team-songdo.jpg" alt="The team with FRIDA at RoboCup 2026, Songdo ConvensiA" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2026/frida-arena.jpg" target="_blank" title="FRIDA in the @Home arena at RoboCup 2026"><img src="../../assets/landing/robocup2026/frida-arena.jpg" alt="FRIDA in the @Home arena at RoboCup 2026" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2026/team-tec-flag.jpg" target="_blank" title="The team and advisors with FRIDA at RoboCup 2026"><img src="../../assets/landing/robocup2026/team-tec-flag.jpg" alt="The team and advisors with FRIDA at RoboCup 2026" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2026/with-tidyboy.jpg" target="_blank" title="RoBorregos with team Tidyboy at RoboCup 2026"><img src="../../assets/landing/robocup2026/with-tidyboy.jpg" alt="RoBorregos with team Tidyboy at RoboCup 2026" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2026/with-inha-united.jpg" target="_blank" title="RoBorregos with team Inha United at RoboCup 2026"><img src="../../assets/landing/robocup2026/with-inha-united.jpg" alt="RoBorregos with team Inha United at RoboCup 2026" loading="lazy"></a>
+    </div>
+
     **TMR 2026, UTBIS, Ciudad Modelo, Puebla**
 
     <div class="photo-gallery">

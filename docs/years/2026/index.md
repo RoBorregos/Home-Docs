@@ -3,6 +3,12 @@
 This year, after being [accepted](https://athome.robocup.org/2026-qualified-teams/) to participate in RoboCup 2026 held in Incheon, South Korea, the team focused on replacing the commercial base with a custom omnidirectional base, hardening the software for the updated rulebook tasks (HRIC, Pick and Place Challenge, Laundry, Restaurant and GPSR), and standardizing how every area builds, runs and is tested. The team won **1st place at the Mexican Robotics Tournament (TMR 2026)** and placed **9th at RoboCup 2026** (July; Incheon, South Korea). See [Competition History](../../Overview/Achievements.md).
 
 <p align="center">
+  <img src="/assets/landing/robocup2026/team-songdo.jpg" alt="The team with FRIDA at RoboCup 2026, Incheon" width="600">
+  <br>
+  <em>The team with FRIDA at RoboCup 2026, Incheon.</em>
+</p>
+
+<p align="center">
   <img src="/assets/landing/tmr2026/team.jpg" alt="The team with FRIDA at TMR 2026" width="600">
   <br>
   <em>The team with FRIDA at TMR 2026, Puebla, where it won first place.</em>
