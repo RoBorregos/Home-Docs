@@ -36,7 +36,7 @@
         <li><span class="member-year">2023-2024</span> Integration and Networks, HRI</li>
         <li><span class="member-year">2025</span> HRI, Integration</li>
     </ul>
-    <img src="https://roborregos.com/static/media/106.166704418035e85da17e.jpg"/>
+    <img src="/assets/members/roborregos/106.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -46,7 +46,7 @@
     <ul>
         <li><span class="member-year">2023-2024</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/99.984ac4eac675b0c597bc.jpg"/>
+    <img src="/assets/members/roborregos/99.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -70,7 +70,7 @@
         <li><span class="member-year">2024</span> Navigation, Manipulation, Integration and Networks</li>
         <li><span class="member-year">2025</span> Navigation, Integration</li>
     </ul>
-    <img src="https://roborregos.com/static/media/117.b6cdf3161ceef48e1ade.jpg"/>
+    <img src="/assets/members/roborregos/117.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -81,7 +81,7 @@
         <li><span class="member-year">2024</span> Mechanics, Navigation, Manipulation</li>
         <li><span class="member-year">2025</span> Mechanics, Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/123.5ae3b21cfcd73cd22887.jpg"/>
+    <img src="/assets/members/roborregos/123.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -103,7 +103,7 @@
         <li><span class="member-year">2024</span> Computer Vision</li>
         <li><span class="member-year">2025</span> Vision, HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/124.6a62f10bb96a26d8135f.jpg"/>
+    <img src="/assets/members/roborregos/124.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -114,7 +114,7 @@
         <li><span class="member-year">2024</span> HRI</li>
         <li><span class="member-year">2025</span> HRI, Integration</li>
     </ul>
-    <img src="https://roborregos.com/static/media/125.f4ace8a93550a09c5128.jpg"/>
+    <img src="/assets/members/roborregos/125.jpg"/>
 </div>
 
 
@@ -270,7 +270,7 @@
         <li><span class="member-year">2022-2023</span> Electronics and control</li>
         <li><span class="member-year">2024</span> Human-Robot Interaction</li>
     </ul>
-    <img src="https://roborregos.com/static/media/83.6e4c832a22fdf5dfa5fa.jpg"/>
+    <img src="/assets/members/roborregos/83.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -281,7 +281,7 @@
         <li><span class="member-year">2023-2024</span> Electronics and control</li>
         <li><span class="member-year">2024</span> Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/97.359d6e4af766de9d1b88.jpg"/>
+    <img src="/assets/members/roborregos/97.jpg"/>
 </div>
 <div class="grid-cell">
     <h3>
@@ -290,7 +290,7 @@
     <ul>
         <li><span class="member-year">2022-2024</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/88.7803cc23c7a37b21f01c.jpg"/>
+    <img src="/assets/members/roborregos/88.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -300,7 +300,7 @@
     <ul>
         <li><span class="member-year">2022</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/67.7343eb59874e532c076f.jpg"/>
+    <img src="/assets/members/roborregos/67.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -310,7 +310,7 @@
     <ul>
         <li><span class="member-year">2022-2023</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/57.33285e8f3065021f6884.jpg"/>
+    <img src="/assets/members/roborregos/57.jpg"/>
 </div>
 <div class="grid-cell">
     <h3>
@@ -319,7 +319,7 @@
     <ul>
         <li><span class="member-year">2022</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/78.3398be9e734e4e2a5fa5.jpg"/>
+    <img src="/assets/members/roborregos/78.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -329,7 +329,7 @@
     <ul>
         <li><span class="member-year">2023</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/85.04d591823c2c12b2c547.jpg"/>
+    <img src="/assets/members/roborregos/85.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -339,7 +339,7 @@
     <ul>
         <li><span class="member-year">2022</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/101.4772205eee89cf2404f7.jpg"/>
+    <img src="/assets/members/roborregos/101.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -350,7 +350,7 @@
         <li><span class="member-year">2022-2023</span> Integration and Networks, Speech</li>
         <li><span class="member-year">2023</span> HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/82.7751939ec99ba8c5fe7f.jpg"/>
+    <img src="/assets/members/roborregos/82.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -360,7 +360,7 @@
     <ul>
         <li><span class="member-year">2021</span> Integration, Navigation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/17.b0f650025bf96923e29a.jpg"/>
+    <img src="/assets/members/roborregos/17.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -370,7 +370,7 @@
     <ul>
         <li><span class="member-year">2021-2023</span> Integration, Navigation and Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/43.6e5e6d4856a68267712a.jpg"/>
+    <img src="/assets/members/roborregos/43.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -380,7 +380,7 @@
     <ul>
         <li><span class="member-year">2022-2023</span> Navigation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/43.6e5e6d4856a68267712a.jpg"/>
+    <img src="/assets/members/roborregos/43.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -401,7 +401,7 @@
         <li><span class="member-year">2022-2023</span> Navigation</li>
         <li><span class="member-year">2024</span> Navigation, Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/90.4501a4911b07be5fa3f8.jpg"/>
+    <img src="/assets/members/roborregos/90.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -412,7 +412,7 @@
         <li><span class="member-year">2022-2024</span> Manipulation</li>
         <li><span class="member-year">2024</span> HRI, Integration and Networks</li>
     </ul>
-    <img src="https://roborregos.com/static/media/111.a4da858a52011ad98889.jpg"/>
+    <img src="/assets/members/roborregos/111.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -422,7 +422,7 @@
     <ul>
         <li><span class="member-year">2022</span> Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/84.45b995cd781f95ca7ce1.jpg"/>
+    <img src="/assets/members/roborregos/84.jpg"/>
 </div>
 
 
@@ -434,7 +434,7 @@
         <li><span class="member-year">2022-2024</span> Computer Vision</li>
         <li><span class="member-year">2023-2024</span> Integration and Networks, Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/112.9e78d7a308ad70d4441d.jpg"/>
+    <img src="/assets/members/roborregos/112.jpg"/>
 </div>
 
 
@@ -445,7 +445,7 @@
     <ul>
         <li><span class="member-year">2023</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/100.52649f4c1be4e4bcd44f.jpg"/>
+    <img src="/assets/members/roborregos/100.jpg"/>
 </div>
 
 
@@ -456,7 +456,7 @@
     <ul>
         <li><span class="member-year">2021-2023</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/42.ebca574f5a5442800434.jpg"/>
+    <img src="/assets/members/roborregos/42.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -466,7 +466,7 @@
     <ul>
         <li><span class="member-year">2021-2023</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/38.2a4777c69a11ce18fc37.jpg"/>
+    <img src="/assets/members/roborregos/38.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -477,7 +477,7 @@
         <li><span class="member-year">2022-2023</span> Computer Vision</li>
         <li><span class="member-year">2023-2024</span> Integration and Networks, HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/79.0372d50e867d9ee51d8b.jpg"/>
+    <img src="/assets/members/roborregos/79.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -487,7 +487,7 @@
     <ul>
         <li><span class="member-year">2023-2024</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/98.e1b5b2211e50e4a0e5a1.jpg"/>
+    <img src="/assets/members/roborregos/98.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -508,7 +508,7 @@
         <li><span class="member-year">2023-2024</span> Navigation</li>
         <li><span class="member-year">2024</span> HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/108.e6bab4a8181dfe9ca5f1.jpg"/>
+    <img src="/assets/members/roborregos/108.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -518,7 +518,7 @@
     <ul>
         <li><span class="member-year">2023</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/107.18c192fc30590d4ef01b.jpg"/>
+    <img src="/assets/members/roborregos/107.jpg"/>
 
 </div>
 
@@ -529,7 +529,7 @@
     <ul>
         <li><span class="member-year">2023-2024</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/110.cf33d9a4d87decbca9bd.jpg"/>
+    <img src="/assets/members/roborregos/110.jpg"/>
 
 </div>
 
@@ -560,7 +560,7 @@
     <ul>
         <li><span class="member-year">2023-2024</span> Electronics and control</li>
     </ul>
-    <img src="https://roborregos.com/static/media/104.10e0236302a54ae4786a.jpg"/>
+    <img src="/assets/members/roborregos/104.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -570,7 +570,7 @@
     <ul>
         <li><span class="member-year">2023-2024</span> Electronics and control</li>
     </ul>
-    <img src="https://roborregos.com/static/media/92.d78372460235cb830306.jpg"/>
+    <img src="/assets/members/roborregos/92.jpg"/>
 
 </div>
 
@@ -581,7 +581,7 @@
     <ul>
         <li><span class="member-year">2023-2024</span> HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/102.f93af00887e4279db81f.jpg"/>
+    <img src="/assets/members/roborregos/102.jpg"/>
 </div>
 
 
