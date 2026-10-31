@@ -211,7 +211,7 @@
         Jeremy Isai Martino Dávila
     </h3>
     <ul>
-        <li><span class="member-year">2026</span> Omnidirectional Base</li>
+        <li><span class="member-year">2026</span> Omnidirectional Base, Navigation</li>
     </ul>
     <img src="/assets/members/Fotos_members/jeremy_martino.jpg"/>
 </div>
