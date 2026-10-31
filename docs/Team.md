@@ -213,7 +213,7 @@
     <ul>
         <li><span class="member-year">2026</span> Omnidirectional Base</li>
     </ul>
-    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
+    <img src="/assets/members/Fotos_members/jeremy_martino.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -223,7 +223,7 @@
     <ul>
         <li><span class="member-year">2026</span> Electronics</li>
     </ul>
-    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
+    <img src="/assets/members/Fotos_members/jasiel_aldana.jpg"/>
 </div>
 
 </div>
