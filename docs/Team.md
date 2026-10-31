@@ -211,7 +211,7 @@
         Jeremy Isai Martino Dávila
     </h3>
     <ul>
-        <li><span class="member-year">2026</span> Omnidirectional Base</li>
+        <li><span class="member-year">2026</span> Omnidirectional Base, Navigation</li>
     </ul>
     <img src="/assets/members/Fotos_members/jeremy_martino.jpg"/>
 </div>
@@ -224,6 +224,17 @@
         <li><span class="member-year">2026</span> Electronics</li>
     </ul>
     <img src="/assets/members/Fotos_members/jasiel_aldana.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Marco Galindo
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Vision, Manipulation</li>
+        <li><a href="mailto:A00845553@tec.mx">A00845553@tec.mx</a></li>
+    </ul>
+    <img src="/assets/members/Fotos_members/marco_galindo.jpg" alt="Marco Galindo"/>
 </div>
 
 </div>
