@@ -27,40 +27,6 @@
 ## Active Members
 
 <div class="grid-wrapper">
-<div class="grid-cell">
-    <h3>
-        Oscar Arreola
-    </h3>
-    <ul>
-        <li><span class="member-year">2023</span> Navigation</li>
-        <li><span class="member-year">2023-2024</span> Integration and Networks, HRI</li>
-        <li><span class="member-year">2025</span> HRI, Integration</li>
-    </ul>
-    <img src="/assets/members/roborregos/106.jpg"/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Alejandro Guerrero
-    </h3>
-    <ul>
-        <li><span class="member-year">2023-2024</span> Mechanics</li>
-    </ul>
-    <img src="/assets/members/roborregos/99.jpg"/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Alejandra Coeto
-    </h3>
-    <ul>
-        <li><span class="member-year">2023-2024</span> Computer Vision</li>
-        <li><span class="member-year">2024</span> Integration and Networks</li>
-        <li><span class="member-year">2025</span> Vision, Integration</li>
-    </ul>
-    <img src="/assets/members/Fotos_members/alejandra-coeto.jpg" alt="Alejandra Coeto"/>
-</div>
-
 
 <div class="grid-cell">
     <h3>
@@ -117,17 +83,6 @@
     <img src="/assets/members/roborregos/125.jpg"/>
 </div>
 
-
-<div class="grid-cell">
-    <h3>
-        Danaé Sánchez
-    </h3>
-    <ul>
-        <li><span class="member-year">2025</span> Vision, Navigation, Integration</li>
-    </ul>
-    <img src="/assets/members/Fotos_members/DSC_4006.jpg"/>
-</div>
-
 <div class="grid-cell">
     <h3>
         Hector Tovar
@@ -148,7 +103,6 @@
     <img src="/assets/members/Fotos_members/DSC_3967.jpg"/>
 </div>
 
-
 <div class="grid-cell">
     <h3>
         Fernando Hernandez
@@ -159,7 +113,6 @@
     <img src="/assets/members/Fotos_members/DSC_3979.jpg"/>
 </div>
 
-
 <div class="grid-cell">
     <h3>
         Camila Tite
@@ -169,7 +122,6 @@
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4016.jpg"/>
 </div>
-
 
 <div class="grid-cell">
     <h3>
@@ -200,7 +152,6 @@
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4012.jpg"/>
 </div>
-
 
 <div class="grid-cell">
     <h3>
@@ -257,6 +208,50 @@
 ## Legacy Members
 
 <div class="grid-wrapper">
+
+<div class="grid-cell">
+    <h3>
+        Oscar Arreola
+    </h3>
+    <ul>
+        <li><span class="member-year">2023</span> Navigation</li>
+        <li><span class="member-year">2023-2024</span> Integration and Networks, HRI</li>
+        <li><span class="member-year">2025</span> HRI, Integration</li>
+    </ul>
+    <img src="/assets/members/roborregos/106.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandro Guerrero
+    </h3>
+    <ul>
+        <li><span class="member-year">2023-2024</span> Mechanics</li>
+    </ul>
+    <img src="/assets/members/roborregos/99.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandra Coeto
+    </h3>
+    <ul>
+        <li><span class="member-year">2023-2024</span> Computer Vision</li>
+        <li><span class="member-year">2024</span> Integration and Networks</li>
+        <li><span class="member-year">2025</span> Vision, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/alejandra-coeto.jpg" alt="Alejandra Coeto"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Danaé Sánchez
+    </h3>
+    <ul>
+        <li><span class="member-year">2025</span> Vision, Navigation, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4006.jpg"/>
+</div>
 
 
 
