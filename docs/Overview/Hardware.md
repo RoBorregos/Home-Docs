@@ -31,13 +31,10 @@
   <div class="timeline-item">
     <div class="label">2026</div>
     <div class="timeline-image-wrap">
-      <img class="timeline-image" src="/assets/landing/TeamPicture.jpeg" alt="Robot 2026" />
+      <img class="timeline-image" src="/assets/overview/frida-2026.jpg" alt="Robot 2026" />
     </div>
   </div>
 </div>
-
-!!! warning "TODO"
-    Replace the 2026 image with a photo of FRIDA alone on the omnidirectional base (save it under `docs/assets/overview/`).
 
 ### Mobility and Manipulation
 FRIDA moves on a **custom omnidirectional base** designed and built by the team (it replaced the EAI Dashgo B1), and a **uFactory xArm 6** is used for manipulation tasks and to mount the depth camera. See [Omnibase](/Areas/Omnibase.md) for the base design and setup.

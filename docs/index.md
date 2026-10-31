@@ -22,6 +22,12 @@ The RoboCup@Home league is the largest annual competition for autonomous service
 
 <div id="carousel" class="carousel">
   <div class="carousel-item active">
+    <img src="/assets/landing/tmr2026/frida-door.jpg" alt="FRIDA during the HRI Challenge at TMR 2026, Puebla">
+  </div>
+  <div class="carousel-item">
+    <img src="/assets/landing/tmr2026/first-place.jpg" alt="First place in RoboCup@Home at TMR 2026, Puebla">
+  </div>
+  <div class="carousel-item">
     <img src="/assets/landing/robocup2025/frida-arena.jpg" alt="FRIDA running a task in the arena at RoboCup 2025, Salvador">
   </div>
   <div class="carousel-item">

@@ -9,7 +9,19 @@ Throughout the years, the Robocup@Home team at RoBorregos has had the opportunit
 
 ## Photos
 
-Click a photo to open it in full size.
+Use the arrows or the thumbnails to browse, and click the photo to open it in full size.
+
+=== "2026"
+
+    **TMR 2026, UTBIS, Ciudad Modelo, Puebla**
+
+    <div class="photo-gallery">
+      <a href="../../assets/landing/tmr2026/team.jpg" target="_blank" title="The team with FRIDA at TMR 2026"><img src="../../assets/landing/tmr2026/team.jpg" alt="The team with FRIDA at TMR 2026" loading="lazy"></a>
+      <a href="../../assets/landing/tmr2026/first-place.jpg" target="_blank" title="First place in RoboCup@Home at TMR 2026"><img src="../../assets/landing/tmr2026/first-place.jpg" alt="First place in RoboCup@Home at TMR 2026" loading="lazy"></a>
+      <a href="../../assets/landing/tmr2026/frida-door.jpg" target="_blank" title="FRIDA during the HRI Challenge at TMR 2026"><img src="../../assets/landing/tmr2026/frida-door.jpg" alt="FRIDA during the HRI Challenge at TMR 2026" loading="lazy"></a>
+      <a href="../../assets/landing/tmr2026/frida-hric.jpg" target="_blank" title="Referees scoring FRIDA in the arena at TMR 2026"><img src="../../assets/landing/tmr2026/frida-hric.jpg" alt="Referees scoring FRIDA in the arena at TMR 2026" loading="lazy"></a>
+      <a href="../../assets/landing/tmr2026/team-pit.jpg" target="_blank" title="The team preparing a run at TMR 2026"><img src="../../assets/landing/tmr2026/team-pit.jpg" alt="The team preparing a run at TMR 2026" loading="lazy"></a>
+    </div>
 
 === "2025"
 

@@ -18,6 +18,12 @@ RoBorregos started developing for @Home in 2019. The team debuted in the @Home B
 
 ## Mexican Robotics Tournament (TMR)
 
+<p align="center">
+  <img src="/assets/landing/tmr2026/first-place.jpg" alt="First place in RoboCup@Home at TMR 2026" width="500">
+  <br>
+  <em>First place in RoboCup@Home at TMR 2026, Puebla.</em>
+</p>
+
 | Year | Category | Location | Result |
 | --- | --- | --- | --- |
 | 2026 | RoboCup@Home | UTBIS, Ciudad Modelo, San José Chiapa, Puebla (April 16-18) | 1st place |
