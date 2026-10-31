@@ -8,7 +8,6 @@ theme:
     - content.code.annotate
     - navigation.instant
     - navigation.tracking
-    - navigation.indexes
     - navigation.top
     - search.suggest
     - search.highlight

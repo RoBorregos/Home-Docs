@@ -1,1 +1,4 @@
 collapse_single_pages: true
+nav:
+    - Overview: index.md
+    - ...
