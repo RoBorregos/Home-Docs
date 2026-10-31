@@ -29,9 +29,8 @@ RoBorregos started developing for @Home in 2019. The team debuted in the @Home B
 | 2026 | RoboCup@Home | UTBIS, Ciudad Modelo, San José Chiapa, Puebla (April 16-18) | 1st place |
 | 2025 | RoboCup@Home | UAM Iztapalapa, Mexico City (May 7-9) | 2nd place |
 | 2024 | RoboCup@Home OPL | Monterrey, Mexico | 2nd place |
-| 2023 | RoboCup@Home OPL | | First participation in the OPL |
-| 2022 | @Home Beginners | | Best HRI and object recognition systems |
-| 2021 | @Home Beginners | | Best HRI and object recognition systems |
+| 2023 | RoboCup@Home OPL | Mexico | First participation in the OPL |
+| 2021-2022 | @Home Beginners | Mexico | Recognition for the best HRI and object recognition systems |
 
 ## Other competitions and awards
 
