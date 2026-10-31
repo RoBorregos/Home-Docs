@@ -1,9 +1,6 @@
 # Achievements from 2026
 
-This year, after being [accepted](https://athome.robocup.org/2026-qualified-teams/) to participate in RoboCup 2026 held in Incheon, South Korea, the team focused on replacing the commercial base with a custom omnidirectional base, hardening the software for the updated rulebook tasks (HRIC, Pick and Place Challenge, Laundry, Restaurant and GPSR), and standardizing how every area builds, runs and is tested. The robot competed at the Mexican Robotics Tournament (TMR 2026) and at RoboCup 2026 (July; Incheon, South Korea).
-
-!!! warning "TODO"
-    Add the final placement at TMR 2026 and RoboCup 2026 Incheon, and any awards. See [Competition History](../../Overview/Achievements.md).
+This year, after being [accepted](https://athome.robocup.org/2026-qualified-teams/) to participate in RoboCup 2026 held in Incheon, South Korea, the team focused on replacing the commercial base with a custom omnidirectional base, hardening the software for the updated rulebook tasks (HRIC, Pick and Place Challenge, Laundry, Restaurant and GPSR), and standardizing how every area builds, runs and is tested. The team won **1st place at the Mexican Robotics Tournament (TMR 2026)** and placed **9th at RoboCup 2026** (July; Incheon, South Korea). See [Competition History](../../Overview/Achievements.md).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qUQNTDRBEKw" title="RoboCup@Home Video 2026" frameborder="0" allowfullscreen></iframe>
 

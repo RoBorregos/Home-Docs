@@ -2,6 +2,13 @@
 
 Throughout the years, the Robocup@Home team at RoBorregos has had the opportunity to participate in various events and competitions. Here are some of the highlights of our journey.
 
+## Press
+
+- *Desarrollan estudiantes del Tec su "robotina"*, [El Norte](https://www.elnorte.com/desarrollan-estudiantes-del-tec-su-robotina/ar3218970).
+- El Norte, printed edition, section Vida, July 23, 2026: [page scan](https://www.elnorte.com/edicionimpresa/aplicacionEI/webview/compartir/ImagenEdImpresa.aspx?Titulo=Vida&Resumen=23+de+julio&img=https://hemerotecalibre.elnorte.com/20260723/large/NVID20260723-004.JPG&md5=caa5e4c3b1ef30694a54de9a512a0490).
+
+## Videos
+
 ### RoboCup@Home 2026 Qualification video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/qUQNTDRBEKw" title="RoboCup@Home Video 2026" frameborder="0" allowfullscreen></iframe>

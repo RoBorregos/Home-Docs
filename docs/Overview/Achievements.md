@@ -3,22 +3,22 @@
 RoBorregos @Home participates every year in the Mexican Robotics Tournament (TMR) and, since 2024, in the international RoboCup@Home Open Platform League.
 
 !!! warning "TODO"
-    Fill in the results and confirm the participations before 2024 with the team.
+    Fill in the 2024 results and the TMR locations, and confirm the participations before 2024 with the team.
 
 ## RoboCup@Home
 
 | Year | Event | Location | Result |
 | --- | --- | --- | --- |
-| 2026 | RoboCup@Home OPL ([qualified teams](https://athome.robocup.org/2026-qualified-teams/)) | Incheon, South Korea | TODO |
-| 2025 | RoboCup@Home OPL | Salvador, Brazil | TODO |
+| 2026 | RoboCup@Home OPL ([qualified teams](https://athome.robocup.org/2026-qualified-teams/)) | Incheon, South Korea | 9th place |
+| 2025 | RoboCup@Home OPL | Salvador, Brazil | 7th place |
 | 2024 | RoboCup@Home OPL ([qualified teams](https://athome.robocup.org/2024-qualified-teams/)) | Eindhoven, Netherlands | TODO |
 
 ## Mexican Robotics Tournament (TMR)
 
 | Year | Category | Location | Result |
 | --- | --- | --- | --- |
-| 2026 | RoboCup@Home | TODO | TODO |
-| 2025 | RoboCup@Home | TODO | TODO |
+| 2026 | RoboCup@Home | TODO | 1st place |
+| 2025 | RoboCup@Home | TODO | 2nd place |
 | 2024 | RoboCup@Home | Monterrey, Mexico | TODO |
 
 ## Season pages
