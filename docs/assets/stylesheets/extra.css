@@ -184,22 +184,43 @@ body {
 }
 
 .md-typeset .grid-cell h3 {
-  margin: 12px 14px 0;
-  font-size: 0.95rem;
+  margin: 14px 14px 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
   line-height: 1.25;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  color: var(--primary);
 }
 
 .md-typeset .grid-cell ul {
-  margin: 6px 14px 14px;
-  padding-left: 1rem;
-  color: var(--muted);
+  list-style: none;
+  margin: 10px 14px 16px;
+  padding: 0;
   font-size: 0.78rem;
-  line-height: 1.35;
+  line-height: 1.4;
+  color: #3d4a63;
 }
 
 .md-typeset .grid-cell ul li {
-  margin: 0 0 0.25em;
+  margin: 0 0 6px;
+}
+
+.md-typeset .grid-cell ul li::before {
+  content: none;
+}
+
+/* Year badge in front of each role */
+.member-year {
+  display: inline-block;
+  margin-right: 4px;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: rgba(11, 37, 69, 0.08);
+  color: var(--primary);
+  font-size: 0.7rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
 }
 
 /* Images gallery */
