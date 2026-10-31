@@ -48,7 +48,7 @@ These are the major achievements divided by area:
 
 - A single centralized YOLO node shared by all vision tasks.
 - New detections: [trash and trashcans](Computer%20Vision/Object%20Detection/Trash%20Detection.md), cutlery, hands, customers (Restaurant) and dishwasher.
-- [Person tracking](Computer-Vision/Tracker/info.md) with DeepSORT and a Swin Transformer ReID model.
+- [Person tracking](Computer%20Vision/Tracker/info.md) with DeepSORT and a Swin Transformer ReID model.
 - Zero-shot object detection with frame skipping, and duplicated and far detections handling.
 - `vision_general` separated from the model nodes (`models-ros`), and a standardized 2D to 3D point conversion.
 

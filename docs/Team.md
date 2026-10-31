@@ -115,7 +115,7 @@
 
 <div class="grid-cell">
     <h3>
-        Camila Tite
+        Angela Camila Tite Haro
     </h3>
     <ul>
         <li><span class="member-year">2025</span> HRI, Integration</li>
@@ -140,6 +140,7 @@
     </h3>
     <ul>
         <li><span class="member-year">2025</span> HRI, Manipulation</li>
+        <li><span class="member-year">2026</span> HRI, Integration</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4011.jpg"/>
 </div>
@@ -149,7 +150,7 @@
         Daniel Hinojosa
     </h3>
     <ul>
-        <li><span class="member-year">2025</span> Navegation, Omnidirectional Base</li>
+        <li><span class="member-year">2025</span> Navigation, Omnidirectional Base</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4012.jpg"/>
 </div>
@@ -169,7 +170,7 @@
         Rodrigo Gamboa
     </h3>
     <ul>
-        <li><span class="member-year">2025</span> Electronics, Navegation</li>
+        <li><span class="member-year">2025</span> Electronics, Navigation</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3995.jpg"/>
 </div>
@@ -190,6 +191,7 @@
     </h3>
     <ul>
         <li><span class="member-year">2025</span> Mechanics</li>
+        <li><span class="member-year">2026</span> Mechanics</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3954.jpg"/>
 </div>
@@ -204,6 +206,26 @@
     <img src="/assets/members/Fotos_members/DSC_4004.jpg"/>
 
 </div>
+<div class="grid-cell">
+    <h3>
+        Jeremy Isai Martino Dávila
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Omnidirectional Base</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Jasiel Aldana Palacios
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Electronics</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
+</div>
+
 </div>
 
 ## Legacy Members

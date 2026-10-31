@@ -1,5 +1,5 @@
 nav:
+    - Overview: hri.md
     - display.md
-    - hri.md
     - proto_interfaces.md
     - stt.md

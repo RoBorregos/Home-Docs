@@ -13,7 +13,7 @@ RoBorregos started developing for @Home in 2019. The team debuted in the @Home B
 | Year | Event | Location | Result |
 | --- | --- | --- | --- |
 | 2026 | RoboCup@Home OPL ([qualified teams](https://athome.robocup.org/2026-qualified-teams/)) | Songdo ConvensiA, Incheon, South Korea | 9th place |
-| 2025 | RoboCup@Home OPL | Salvador, Brazil | 7th place |
+| 2025 | RoboCup@Home OPL | Salvador, Brazil | 6th place |
 | 2024 | RoboCup@Home OPL ([qualified teams](https://athome.robocup.org/2024-qualified-teams/)) | Eindhoven, Netherlands | 16th place |
 
 ## Mexican Robotics Tournament (TMR)

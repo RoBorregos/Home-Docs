@@ -181,7 +181,7 @@ Material for the RoboCup@Home 2027 qualification:
 - **Team Description Paper**: [RoboCup@Home 2026 TDP](/assets/tdp/RoBorregos_TDP_RoboCup2026.pdf). Previous TDPs are listed in [Publications](/Publications.md).
 - **Team video**: [RoboCup@Home 2026 video](https://www.youtube.com/watch?v=qUQNTDRBEKw). More videos in [Media](/Overview/Media.md).
 - **Robot**: [Hardware overview](/Overview/Hardware.md) of FRIDA.
-- **Competition history**: 1st place at TMR 2026, 9th place at RoboCup 2026 Incheon, 2nd place at TMR 2025, 7th place at RoboCup 2025 Salvador, 2nd place at TMR 2024 and 16th place at RoboCup 2024 Eindhoven. See [all participations](/Overview/Achievements.md).
+- **Competition history**: 1st place at TMR 2026, 9th place at RoboCup 2026 Incheon, 2nd place at TMR 2025, 6th place at RoboCup 2025 Salvador, 2nd place at TMR 2024 and 16th place at RoboCup 2024 Eindhoven. See [all participations](/Overview/Achievements.md).
 - **Press**: [El Norte coverage](/Overview/Media.md#press).
 - **Team**: [Team leadership and members](/Team.md).
 
