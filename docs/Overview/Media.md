@@ -9,31 +9,36 @@ Throughout the years, the Robocup@Home team at RoBorregos has had the opportunit
 
 ## Photos
 
-### RoboCup 2025, Salvador
+Click a photo to open it in full size.
 
-<div class="grid" markdown>
+=== "2025"
 
-![The team working on FRIDA's arm at RoboCup 2025](../assets/landing/robocup2025/frida-team-arm.jpg)
+    **RoboCup 2025, Salvador**
 
-![FRIDA at RoboCup 2025](../assets/landing/robocup2025/frida-portrait.jpg)
+    <div class="photo-gallery">
+      <a href="../../assets/landing/robocup2025/frida-arena.jpg" target="_blank" title="FRIDA running a task in the arena at RoboCup 2025"><img src="../../assets/landing/robocup2025/frida-arena.jpg" alt="FRIDA running a task in the arena at RoboCup 2025" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2025/team-pit.jpg" target="_blank" title="The team with FRIDA in the pit area at RoboCup 2025"><img src="../../assets/landing/robocup2025/team-pit.jpg" alt="The team with FRIDA in the pit area at RoboCup 2025" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2025/frida-team-arm.jpg" target="_blank" title="The team working on FRIDA's arm at RoboCup 2025"><img src="../../assets/landing/robocup2025/frida-team-arm.jpg" alt="The team working on FRIDA's arm at RoboCup 2025" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2025/frida-portrait.jpg" target="_blank" title="FRIDA at RoboCup 2025"><img src="../../assets/landing/robocup2025/frida-portrait.jpg" alt="FRIDA at RoboCup 2025" loading="lazy"></a>
+    </div>
 
-![FRIDA running a task in the arena at RoboCup 2025](../assets/landing/robocup2025/frida-arena.jpg)
+    **TMR 2025, UAM Iztapalapa**
 
-![The team in the pit area at RoboCup 2025](../assets/landing/robocup2025/team-pit.jpg)
+    <div class="photo-gallery">
+      <a href="../../assets/landing/tmr2025/team.jpg" target="_blank" title="The team with FRIDA at TMR 2025"><img src="../../assets/landing/tmr2025/team.jpg" alt="The team with FRIDA at TMR 2025" loading="lazy"></a>
+      <a href="../../assets/landing/tmr2025/frida-referee.jpg" target="_blank" title="A referee checking FRIDA at TMR 2025"><img src="../../assets/landing/tmr2025/frida-referee.jpg" alt="A referee checking FRIDA at TMR 2025" loading="lazy"></a>
+      <a href="../../assets/landing/tmr2025/frida-arena.jpg" target="_blank" title="FRIDA in the arena at TMR 2025"><img src="../../assets/landing/tmr2025/frida-arena.jpg" alt="FRIDA in the arena at TMR 2025" loading="lazy"></a>
+    </div>
 
-</div>
+=== "2024"
 
-### RoboCup 2024, Eindhoven
+    **RoboCup 2024, Eindhoven**
 
-<div class="grid" markdown>
-
-![FRIDA in the kitchen at RoboCup 2024](../assets/landing/robocup2024/frida-kitchen.jpg)
-
-![FRIDA with a referee at RoboCup 2024](../assets/landing/robocup2024/frida-dashgo.jpg)
-
-![The team preparing FRIDA at RoboCup 2024](../assets/landing/robocup2024/frida-arena.jpg)
-
-</div>
+    <div class="photo-gallery">
+      <a href="../../assets/landing/robocup2024/frida-kitchen.jpg" target="_blank" title="FRIDA in the kitchen at RoboCup 2024"><img src="../../assets/landing/robocup2024/frida-kitchen.jpg" alt="FRIDA in the kitchen at RoboCup 2024" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2024/frida-dashgo.jpg" target="_blank" title="FRIDA with a referee at RoboCup 2024"><img src="../../assets/landing/robocup2024/frida-dashgo.jpg" alt="FRIDA with a referee at RoboCup 2024" loading="lazy"></a>
+      <a href="../../assets/landing/robocup2024/frida-arena.jpg" target="_blank" title="The team preparing FRIDA at RoboCup 2024"><img src="../../assets/landing/robocup2024/frida-arena.jpg" alt="The team preparing FRIDA at RoboCup 2024" loading="lazy"></a>
+    </div>
 
 ## Videos
 
