@@ -16,7 +16,6 @@ Our research focuses on several key areas in service robotics:
 
 | Year | Event | Paper |
 | --- | --- | --- |
-| 2027 | RoboCup@Home 2027, Nuremberg | TODO: link to PDF |
 | 2026 | RoboCup@Home 2026, Incheon | TODO: link to PDF |
 | 2025 | RoboCup@Home 2025, Salvador | TODO: link to PDF |
 | 2024 | RoboCup@Home 2024, Eindhoven | TODO: link to PDF |

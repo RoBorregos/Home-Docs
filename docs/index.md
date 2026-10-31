@@ -160,7 +160,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 Material for the RoboCup@Home 2027 qualification:
 
-- **Team Description Paper**: TODO: link to the 2027 TDP PDF. Previous TDPs are listed in [Publications](/Publications.md).
 - **Team video**: [RoboCup@Home 2026 video](https://www.youtube.com/watch?v=qUQNTDRBEKw). More videos in [Media](/Overview/Media.md).
 - **Robot**: [Hardware overview](/Overview/Hardware.md) of FRIDA.
 - **Competition history**: 1st place at TMR 2026, 9th place at RoboCup 2026 Incheon, 2nd place at TMR 2025 and 7th place at RoboCup 2025 Salvador. See [all participations](/Overview/Achievements.md).
