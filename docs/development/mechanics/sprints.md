@@ -9,6 +9,94 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:plan -->
+
+### Sprint plan
+
+15 tasks planned for this sprint.
+
+**Done:**
+
+- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino**, **Becca-731**, **LARC** 💻 Implementation of expansion of current base ([#1229](https://github.com/RoBorregos/home2/issues/1229))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Define percentage of ideal soft and non-soft patterns of new gripper ([#1366](https://github.com/RoBorregos/home2/issues/1366))
+- **Jeremy Martino** 📝 TDP: Omnibase as main contribution in abstract and research focus ([#1407](https://github.com/RoBorregos/home2/issues/1407))
+- **Jeremy Martino** 📝 TDP: Update hardware description annex for the omnibase ([#1409](https://github.com/RoBorregos/home2/issues/1409))
+
+**In Progress:**
+
+- **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base ([#1272](https://github.com/RoBorregos/home2/issues/1272))
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Unassigned** 💻 Machinge gripper mechanism (engrane) ([#1320](https://github.com/RoBorregos/home2/issues/1320))
+- **Gael Infante Lozano** 💻 Check is current gear is functional for new gripper in order to machine it ([#1361](https://github.com/RoBorregos/home2/issues/1361))
+- **Bárbara Alejandra Novau Martínez** 💻 Update BOM ([#1363](https://github.com/RoBorregos/home2/issues/1363))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Download and start learning Altair Inspire ([#1365](https://github.com/RoBorregos/home2/issues/1365))
+- **LARC** 💻 Migrate OnShape Assembly to SolidWorks of new base ([#1402](https://github.com/RoBorregos/home2/issues/1402))
+- **Unassigned** 💻 Add gripper design to GrabCAD ([#1404](https://github.com/RoBorregos/home2/issues/1404))
+
+**Todo:**
+
+- **Gael Infante Lozano** 💻 Check battery drawer ([#1403](https://github.com/RoBorregos/home2/issues/1403))
+- **Unassigned** 💻 Confirm literature of new gripper design ([#1406](https://github.com/RoBorregos/home2/issues/1406))
+- **Bárbara Alejandra Novau Martínez** 💻 Check Delrin machining providers or the possibility to machine it in campus ([#1414](https://github.com/RoBorregos/home2/issues/1414))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-1 -->
+
+### Week 1 · 2026-10-12 → 2026-10-23
+
+**Done this week:**
+
+- **Jeremy Martino** 📝 TDP: Omnibase as main contribution in abstract and research focus ([#1407](https://github.com/RoBorregos/home2/issues/1407))
+- **Jeremy Martino** 📝 TDP: Update hardware description annex for the omnibase ([#1409](https://github.com/RoBorregos/home2/issues/1409))
+
+**In Progress:**
+
+- **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base ([#1272](https://github.com/RoBorregos/home2/issues/1272))
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Unassigned** 💻 Machinge gripper mechanism (engrane) ([#1320](https://github.com/RoBorregos/home2/issues/1320))
+- **Gael Infante Lozano** 💻 Check is current gear is functional for new gripper in order to machine it ([#1361](https://github.com/RoBorregos/home2/issues/1361))
+- **Bárbara Alejandra Novau Martínez** 💻 Update BOM ([#1363](https://github.com/RoBorregos/home2/issues/1363))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Download and start learning Altair Inspire ([#1365](https://github.com/RoBorregos/home2/issues/1365))
+- **LARC** 💻 Migrate OnShape Assembly to SolidWorks of new base ([#1402](https://github.com/RoBorregos/home2/issues/1402))
+- **Unassigned** 💻 Add gripper design to GrabCAD ([#1404](https://github.com/RoBorregos/home2/issues/1404))
+
+**Not started:** 3 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-10-12:week-2 -->
+
+### Week 2 · 2026-10-24 → 2026-10-30
+
+**Done this week:**
+
+- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino**, **Becca-731**, **LARC** 💻 Implementation of expansion of current base ([#1229](https://github.com/RoBorregos/home2/issues/1229))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Define percentage of ideal soft and non-soft patterns of new gripper ([#1366](https://github.com/RoBorregos/home2/issues/1366))
+
+**In Progress:**
+
+- **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base ([#1272](https://github.com/RoBorregos/home2/issues/1272))
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Unassigned** 💻 Machinge gripper mechanism (engrane) ([#1320](https://github.com/RoBorregos/home2/issues/1320))
+- **Gael Infante Lozano** 💻 Check is current gear is functional for new gripper in order to machine it ([#1361](https://github.com/RoBorregos/home2/issues/1361))
+- **Bárbara Alejandra Novau Martínez** 💻 Update BOM ([#1363](https://github.com/RoBorregos/home2/issues/1363))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Download and start learning Altair Inspire ([#1365](https://github.com/RoBorregos/home2/issues/1365))
+- **LARC** 💻 Migrate OnShape Assembly to SolidWorks of new base ([#1402](https://github.com/RoBorregos/home2/issues/1402))
+- **Unassigned** 💻 Add gripper design to GrabCAD ([#1404](https://github.com/RoBorregos/home2/issues/1404))
+
+**Updates:**
+
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Define percentage of ideal soft and non-soft patterns of new gripper ([#1366](https://github.com/RoBorregos/home2/issues/1366)): We plan to implement a less soft pattern comprising 20% of the design, keeping the current design at 80%.
+
+**Not started:** 3 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
@@ -79,6 +167,29 @@ Status legend:
 - **Unassigned** 💻 Check is current gear is functional for new gripper in order to machine it ([#1361](https://github.com/RoBorregos/home2/issues/1361))
 - **Unassigned** 💻 Print new gripper test V3 ([#1362](https://github.com/RoBorregos/home2/issues/1362))
 - **Unassigned** 💻 Update BOM ([#1363](https://github.com/RoBorregos/home2/issues/1363))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-09-21:results -->
+
+### Sprint results
+
+**6/7 tasks done (86%)**.
+
+This mechanics sprint focused on integrating arms into the elevator, fixing the robopatin, and working on CAD designs. The team successfully fixed the robopatin, corrected the PCB CAD, and printed the new gripper test V3, while the new elevator CAD design remains in progress.
+
+**Done:**
+
+- **Jeremy Martino**, **LARC** 💻 Checar como integrar brazos a elevador ([#1213](https://github.com/RoBorregos/home2/issues/1213))
+- **Jeremy Martino** 💻 Arreglar robopatin ([#1228](https://github.com/RoBorregos/home2/issues/1228))
+- **Bárbara Alejandra Novau Martínez** 💻 Meeting with Dr. Cuan Semana Tec/Semana 1 ([#1270](https://github.com/RoBorregos/home2/issues/1270))
+- **Bárbara Alejandra Novau Martínez** 💻 Schedule meeting with Advanced Candidates ([#1289](https://github.com/RoBorregos/home2/issues/1289))
+- **Becca-731** 💻 CAD of PCB Correct ([#1321](https://github.com/RoBorregos/home2/issues/1321))
+- **LARC** 💻 Print new gripper test V3 ([#1362](https://github.com/RoBorregos/home2/issues/1362))
+
+**Carried over:**
+
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator (In Progress, moved to Sprint 4, [#1274](https://github.com/RoBorregos/home2/issues/1274))
 
 <!-- /spotlight -->
 
