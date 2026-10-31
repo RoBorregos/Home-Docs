@@ -10,9 +10,19 @@
 
 | Role | Name | Contact |
 | --- | --- | --- |
-| Principal Investigator | TODO | TODO: link to PI website |
-| Team Leader | TODO | TODO |
-| Contact Person | TODO | TODO: email |
+| Project Manager | Fernando Hernández Cantú | [A00841856@tec.mx](mailto:A00841856@tec.mx) |
+
+### Area Project Managers
+
+| Area | Name | Contact |
+| --- | --- | --- |
+| Navigation | Angela Camila Tite Haro | [A00841255@tec.mx](mailto:A00841255@tec.mx) |
+| Manipulation | Fernando Hernández Cantú | [A00841856@tec.mx](mailto:A00841856@tec.mx) |
+| Computer Vision | Fernando Hernández Cantú | [A00841856@tec.mx](mailto:A00841856@tec.mx) |
+| HRI and Integration | Luis Santiago Benvenuto Valerdi | [A01286400@tec.mx](mailto:A01286400@tec.mx) |
+| Omnidirectional Base | Jeremy Isai Martino Dávila | [A00842786@tec.mx](mailto:A00842786@tec.mx) |
+| Electronics | Jasiel Aldana Palacios | [A00844836@tec.mx](mailto:A00844836@tec.mx) |
+| Mechanics | Bárbara Alejandra Novau Martínez | [A01199205@tec.mx](mailto:A01199205@tec.mx) |
 
 ## Active Members
 
@@ -48,7 +58,7 @@
         <li>2024 Integration and Networks</li>
         <li>2025 Vision, Integration</li>
     </ul>
-    <img src="https://roborregos.com/static/media/103.dcb5398110fcf54713bb.jpg"/>
+    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
 </div>
 
 
