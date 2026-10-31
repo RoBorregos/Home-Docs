@@ -7,6 +7,20 @@ Throughout the years, the Robocup@Home team at RoBorregos has had the opportunit
 - *Desarrollan estudiantes del Tec su "robotina"*, [El Norte](https://www.elnorte.com/desarrollan-estudiantes-del-tec-su-robotina/ar3218970).
 - El Norte, printed edition, section Vida, July 23, 2026: [page scan](https://www.elnorte.com/edicionimpresa/aplicacionEI/webview/compartir/ImagenEdImpresa.aspx?Titulo=Vida&Resumen=23+de+julio&img=https://hemerotecalibre.elnorte.com/20260723/large/NVID20260723-004.JPG&md5=caa5e4c3b1ef30694a54de9a512a0490).
 
+## Photos
+
+### RoboCup 2024, Eindhoven
+
+<div class="grid" markdown>
+
+![FRIDA in the kitchen at RoboCup 2024](../assets/landing/robocup2024/frida-kitchen.jpg)
+
+![FRIDA with a referee at RoboCup 2024](../assets/landing/robocup2024/frida-dashgo.jpg)
+
+![The team preparing FRIDA at RoboCup 2024](../assets/landing/robocup2024/frida-arena.jpg)
+
+</div>
+
 ## Videos
 
 ### RoboCup@Home 2026 Qualification video
