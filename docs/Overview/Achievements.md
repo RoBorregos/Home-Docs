@@ -4,6 +4,12 @@ RoBorregos started developing for @Home in 2019. The team debuted in the @Home B
 
 ## RoboCup@Home
 
+<p align="center">
+  <img src="/assets/landing/robocup2025/team-pit.jpg" alt="The team with FRIDA at RoboCup 2025, Salvador" width="600">
+  <br>
+  <em>The team with FRIDA at RoboCup 2025, Salvador.</em>
+</p>
+
 | Year | Event | Location | Result |
 | --- | --- | --- | --- |
 | 2026 | RoboCup@Home OPL ([qualified teams](https://athome.robocup.org/2026-qualified-teams/)) | Incheon, South Korea | 9th place |

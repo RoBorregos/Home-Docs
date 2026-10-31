@@ -22,6 +22,12 @@ The RoboCup@Home league is the largest annual competition for autonomous service
 
 <div id="carousel" class="carousel">
   <div class="carousel-item active">
+    <img src="/assets/landing/robocup2025/frida-arena.jpg" alt="FRIDA running a task in the arena at RoboCup 2025, Salvador">
+  </div>
+  <div class="carousel-item">
+    <img src="/assets/landing/robocup2025/team-pit.jpg" alt="The team with FRIDA at RoboCup 2025, Salvador">
+  </div>
+  <div class="carousel-item">
     <img src="/assets/landing/robocup2024/frida-kitchen.jpg" alt="FRIDA in the kitchen at RoboCup 2024, Eindhoven">
   </div>
   <div class="carousel-item">

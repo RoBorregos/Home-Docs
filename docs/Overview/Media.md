@@ -9,6 +9,20 @@ Throughout the years, the Robocup@Home team at RoBorregos has had the opportunit
 
 ## Photos
 
+### RoboCup 2025, Salvador
+
+<div class="grid" markdown>
+
+![The team working on FRIDA's arm at RoboCup 2025](../assets/landing/robocup2025/frida-team-arm.jpg)
+
+![FRIDA at RoboCup 2025](../assets/landing/robocup2025/frida-portrait.jpg)
+
+![FRIDA running a task in the arena at RoboCup 2025](../assets/landing/robocup2025/frida-arena.jpg)
+
+![The team in the pit area at RoboCup 2025](../assets/landing/robocup2025/team-pit.jpg)
+
+</div>
+
 ### RoboCup 2024, Eindhoven
 
 <div class="grid" markdown>
