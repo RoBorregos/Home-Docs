@@ -63,4 +63,5 @@ extra_javascript:
   - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
   - assets/javascripts/scroll-unlock.js
   - assets/javascripts/mermaid-init.js
+  - assets/javascripts/photo-gallery.js
   - assets/javascripts/chatbot.js

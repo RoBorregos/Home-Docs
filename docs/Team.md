@@ -6,53 +6,37 @@
   <em>RoBorregos @Home team with FRIDA at RoboCup 2026, Incheon.</em>
 </p>
 
+## Team Leadership
+
+| Role | Name | Contact |
+| --- | --- | --- |
+| Project Manager | Fernando Hernández Cantú | [A00841856@tec.mx](mailto:A00841856@tec.mx) |
+
+### Area Project Managers
+
+| Area | Name | Contact |
+| --- | --- | --- |
+| Navigation | Angela Camila Tite Haro | [A00841255@tec.mx](mailto:A00841255@tec.mx) |
+| Manipulation | Fernando Hernández Cantú | [A00841856@tec.mx](mailto:A00841856@tec.mx) |
+| Computer Vision | Fernando Hernández Cantú | [A00841856@tec.mx](mailto:A00841856@tec.mx) |
+| HRI and Integration | Luis Santiago Benvenuto Valerdi | [A01286400@tec.mx](mailto:A01286400@tec.mx) |
+| Omnidirectional Base | Jeremy Isai Martino Dávila | [A00842786@tec.mx](mailto:A00842786@tec.mx) |
+| Electronics | Jasiel Aldana Palacios | [A00844836@tec.mx](mailto:A00844836@tec.mx) |
+| Mechanics | Bárbara Alejandra Novau Martínez | [A01199205@tec.mx](mailto:A01199205@tec.mx) |
+
 ## Active Members
 
 <div class="grid-wrapper">
-<div class="grid-cell">
-    <h3>
-        Oscar Arreola
-    </h3>
-    <ul>
-        <li>2023 Navigation</li>
-        <li>2023-2024 Integration and Networks, HRI</li>
-        <li>2025 HRI, Integration</li>
-    </ul>
-    <img src="https://roborregos.com/static/media/106.166704418035e85da17e.jpg"/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Alejandro Guerrero
-    </h3>
-    <ul>
-        <li>2023-2024 Mechanics</li>
-    </ul>
-    <img src="https://roborregos.com/static/media/99.984ac4eac675b0c597bc.jpg"/>
-</div>
-
-<div class="grid-cell">
-    <h3>
-        Alejandra Coeto
-    </h3>
-    <ul>
-        <li>2023-2024 Computer Vision</li>
-        <li>2024 Integration and Networks</li>
-        <li>2025 Vision, Integration</li>
-    </ul>
-    <img src="https://roborregos.com/static/media/103.dcb5398110fcf54713bb.jpg"/>
-</div>
-
 
 <div class="grid-cell">
     <h3>
         Gerardo Fregoso
     </h3>
     <ul>
-        <li>2024 Navigation, Manipulation, Integration and Networks</li>
-        <li>2025 Navigation, Integration</li>
+        <li><span class="member-year">2024</span> Navigation, Manipulation, Integration and Networks</li>
+        <li><span class="member-year">2025</span> Navigation, Integration</li>
     </ul>
-    <img src="https://roborregos.com/static/media/117.b6cdf3161ceef48e1ade.jpg"/>
+    <img src="/assets/members/roborregos/117.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -60,10 +44,10 @@
         Alejandro González
     </h3>
     <ul>
-        <li>2024 Mechanics, Navigation, Manipulation</li>
-        <li>2025 Mechanics, Manipulation</li>
+        <li><span class="member-year">2024</span> Mechanics, Navigation, Manipulation</li>
+        <li><span class="member-year">2025</span> Mechanics, Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/123.5ae3b21cfcd73cd22887.jpg"/>
+    <img src="/assets/members/roborregos/123.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -71,8 +55,8 @@
         José Luis Domínguez
     </h3>
     <ul>
-        <li>2024 Navigation, Manipulation</li>
-        <li>2025 Manipulation, Integration</li>
+        <li><span class="member-year">2024</span> Navigation, Manipulation</li>
+        <li><span class="member-year">2025</span> Manipulation, Integration</li>
     </ul>
     <img src="/assets/members/Fotos_members/nueva_foto.jpg"/>
 </div>
@@ -82,10 +66,10 @@
         Jocelyn Velarde
     </h3>
     <ul>
-        <li>2024 Computer Vision</li>
-        <li>2025 Vision, HRI</li>
+        <li><span class="member-year">2024</span> Computer Vision</li>
+        <li><span class="member-year">2025</span> Vision, HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/124.6a62f10bb96a26d8135f.jpg"/>
+    <img src="/assets/members/roborregos/124.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -93,21 +77,10 @@
         Gilberto Malagamba
     </h3>
     <ul>
-        <li>2024 HRI</li>
-        <li>2025 HRI, Integration</li>
+        <li><span class="member-year">2024</span> HRI</li>
+        <li><span class="member-year">2025</span> HRI, Integration</li>
     </ul>
-    <img src="https://roborregos.com/static/media/125.f4ace8a93550a09c5128.jpg"/>
-</div>
-
-
-<div class="grid-cell">
-    <h3>
-        Danaé Sánchez
-    </h3>
-    <ul>
-        <li>2025 Vision, Navigation, Integration</li>
-    </ul>
-    <img src="/assets/members/Fotos_members/DSC_4006.jpg"/>
+    <img src="/assets/members/roborregos/125.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -115,7 +88,7 @@
         Hector Tovar
     </h3>
     <ul>
-        <li>2025 Vision, Manipulation</li>
+        <li><span class="member-year">2025</span> Vision, Manipulation</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3980.jpg"/>
 </div>
@@ -125,40 +98,38 @@
         Emil Winkler
     </h3>
     <ul>
-        <li>2025 Manipulation</li>
+        <li><span class="member-year">2025</span> Manipulation</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3967.jpg"/>
 </div>
-
 
 <div class="grid-cell">
     <h3>
         Fernando Hernandez
     </h3>
     <ul>
-        <li>2025 Vision, Manipulation, Integration</li>
+        <li><span class="member-year">2025</span> Vision, Manipulation, Integration</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3979.jpg"/>
 </div>
 
-
 <div class="grid-cell">
     <h3>
-        Camila Tite
+        Angela Camila Tite Haro
     </h3>
     <ul>
-        <li>2025 HRI, Integration</li>
+        <li><span class="member-year">2025</span> HRI, Integration</li>
+        <li><span class="member-year">2026</span> Navigation</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4016.jpg"/>
 </div>
-
 
 <div class="grid-cell">
     <h3>
         Daniela Herrera
     </h3>
     <ul>
-        <li>2025 Vision</li>
+        <li><span class="member-year">2025</span> Vision</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4003.jpg"/>
 </div>
@@ -168,7 +139,8 @@
         Luis Benvenuto
     </h3>
     <ul>
-        <li>2025 HRI, Manipulation</li>
+        <li><span class="member-year">2025</span> HRI, Manipulation</li>
+        <li><span class="member-year">2026</span> HRI, Integration</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4011.jpg"/>
 </div>
@@ -178,18 +150,17 @@
         Daniel Hinojosa
     </h3>
     <ul>
-        <li>2025 Navegation, Omnidirectional Base</li>
+        <li><span class="member-year">2025</span> Navigation, Omnidirectional Base</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4012.jpg"/>
 </div>
-
 
 <div class="grid-cell">
     <h3>
         Samuel Granados
     </h3>
     <ul>
-        <li>2025 Electronics</li>
+        <li><span class="member-year">2025</span> Electronics</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3977.jpg"/>
 </div>
@@ -199,7 +170,7 @@
         Rodrigo Gamboa
     </h3>
     <ul>
-        <li>2025 Electronics, Navegation</li>
+        <li><span class="member-year">2025</span> Electronics, Navigation</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3995.jpg"/>
 </div>
@@ -209,7 +180,7 @@
         Brisma Alvarez
     </h3>
     <ul>
-        <li>2025 Vision</li>
+        <li><span class="member-year">2025</span> Vision</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3974.jpg"/>
 </div>
@@ -219,7 +190,8 @@
         Barbara Novau
     </h3>
     <ul>
-        <li>2025 Mechanics</li>
+        <li><span class="member-year">2025</span> Mechanics</li>
+        <li><span class="member-year">2026</span> Mechanics</li>
     </ul>
     <img src="/assets/members/Fotos_members/DSC_3954.jpg"/>
 </div>
@@ -229,16 +201,80 @@
         Paola Llamas
     </h3>
     <ul>
-        <li>2025 Manipulation</li> 
+        <li><span class="member-year">2025</span> Manipulation</li> 
     </ul>
     <img src="/assets/members/Fotos_members/DSC_4004.jpg"/>
 
 </div>
+<div class="grid-cell">
+    <h3>
+        Jeremy Isai Martino Dávila
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Omnidirectional Base</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Jasiel Aldana Palacios
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Electronics</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/placeholder.svg" alt="Photo not available"/>
+</div>
+
 </div>
 
 ## Legacy Members
 
 <div class="grid-wrapper">
+
+<div class="grid-cell">
+    <h3>
+        Oscar Arreola
+    </h3>
+    <ul>
+        <li><span class="member-year">2023</span> Navigation</li>
+        <li><span class="member-year">2023-2024</span> Integration and Networks, HRI</li>
+        <li><span class="member-year">2025</span> HRI, Integration</li>
+    </ul>
+    <img src="/assets/members/roborregos/106.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandro Guerrero
+    </h3>
+    <ul>
+        <li><span class="member-year">2023-2024</span> Mechanics</li>
+    </ul>
+    <img src="/assets/members/roborregos/99.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Alejandra Coeto
+    </h3>
+    <ul>
+        <li><span class="member-year">2023-2024</span> Computer Vision</li>
+        <li><span class="member-year">2024</span> Integration and Networks</li>
+        <li><span class="member-year">2025</span> Vision, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/alejandra-coeto.jpg" alt="Alejandra Coeto"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Danaé Sánchez
+    </h3>
+    <ul>
+        <li><span class="member-year">2025</span> Vision, Navigation, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/DSC_4006.jpg"/>
+</div>
 
 
 
@@ -249,10 +285,10 @@
         Leonardo LLanas
     </h3>
     <ul>
-        <li>2022-2023 Electronics and control</li>
-        <li>2024-Human-Robot Interaction</li>
+        <li><span class="member-year">2022-2023</span> Electronics and control</li>
+        <li><span class="member-year">2024</span> Human-Robot Interaction</li>
     </ul>
-    <img src="https://roborregos.com/static/media/83.6e4c832a22fdf5dfa5fa.jpg"/>
+    <img src="/assets/members/roborregos/83.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -260,19 +296,19 @@
         David Vázquez
     </h3>
     <ul>
-        <li>2023-2024 Electronics and control</li>
-        <li>2024-Manipulation</li>
+        <li><span class="member-year">2023-2024</span> Electronics and control</li>
+        <li><span class="member-year">2024</span> Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/97.359d6e4af766de9d1b88.jpg"/>
+    <img src="/assets/members/roborregos/97.jpg"/>
 </div>
 <div class="grid-cell">
     <h3>
         Leonardo Sánchez
     </h3>
     <ul>
-        <li>2022-2024 Mechanics</li>
+        <li><span class="member-year">2022-2024</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/88.7803cc23c7a37b21f01c.jpg"/>
+    <img src="/assets/members/roborregos/88.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -280,9 +316,9 @@
         Ignacio Maldonado
     </h3>
     <ul>
-        <li>2022 Mechanics</li>
+        <li><span class="member-year">2022</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/67.7343eb59874e532c076f.jpg"/>
+    <img src="/assets/members/roborregos/67.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -290,18 +326,18 @@
         Karyme Ezrré
     </h3>
     <ul>
-        <li>2022-2023 Mechanics</li>
+        <li><span class="member-year">2022-2023</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/57.33285e8f3065021f6884.jpg"/>
+    <img src="/assets/members/roborregos/57.jpg"/>
 </div>
 <div class="grid-cell">
     <h3>
         Lorena Martínez
     </h3>
     <ul>
-        <li>2022 Mechanics</li>
+        <li><span class="member-year">2022</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/78.3398be9e734e4e2a5fa5.jpg"/>
+    <img src="/assets/members/roborregos/78.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -309,9 +345,9 @@
         Michell Sarmiento
     </h3>
     <ul>
-        <li>2023 Mechanics</li>
+        <li><span class="member-year">2023</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/85.04d591823c2c12b2c547.jpg"/>
+    <img src="/assets/members/roborregos/85.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -319,9 +355,9 @@
         José Fragoso
     </h3>
     <ul>
-        <li>2022 Mechanics</li>
+        <li><span class="member-year">2022</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/101.4772205eee89cf2404f7.jpg"/>
+    <img src="/assets/members/roborregos/101.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -329,10 +365,10 @@
       Kevin Vega
     </h3>
     <ul>
-        <li>2022-2023 Integration and Networks, Speech</li>
-        <li>2023 HRI</li>
+        <li><span class="member-year">2022-2023</span> Integration and Networks, Speech</li>
+        <li><span class="member-year">2023</span> HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/82.7751939ec99ba8c5fe7f.jpg"/>
+    <img src="/assets/members/roborregos/82.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -340,9 +376,9 @@
       Aurora Tijerina
     </h3>
     <ul>
-        <li>2021 Integration, Navigation</li>
+        <li><span class="member-year">2021</span> Integration, Navigation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/17.b0f650025bf96923e29a.jpg"/>
+    <img src="/assets/members/roborregos/17.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -350,9 +386,9 @@
         José Cisneros  
     </h3>
     <ul>
-        <li>2021-2023 Integration, Navigation and Manipulation</li>
+        <li><span class="member-year">2021-2023</span> Integration, Navigation and Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/43.6e5e6d4856a68267712a.jpg"/>
+    <img src="/assets/members/roborregos/43.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -360,9 +396,9 @@
         Bryan Márquez
     </h3>
     <ul>
-        <li>2022-2023 Navigation</li>
+        <li><span class="member-year">2022-2023</span> Navigation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/43.6e5e6d4856a68267712a.jpg"/>
+    <img src="/assets/members/roborregos/43.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -370,7 +406,7 @@
         Edison Altamirano
     </h3>
     <ul>
-        <li>2022-2023 Navigation</li>
+        <li><span class="member-year">2022-2023</span> Navigation</li>
     </ul>
     <img src="/assets/members/Edison.png"/>
 </div>
@@ -380,10 +416,10 @@
         Alexis Chapa
     </h3>
     <ul>
-        <li>2022-2023 Navigation</li>
-        <li>2024 Navigation, Manipulation</li>
+        <li><span class="member-year">2022-2023</span> Navigation</li>
+        <li><span class="member-year">2024</span> Navigation, Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/90.4501a4911b07be5fa3f8.jpg"/>
+    <img src="/assets/members/roborregos/90.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -391,10 +427,10 @@
       Adán Flores
     </h3>
     <ul>
-        <li>2022-2024 Manipulation</li>
-        <li>2024 HRI, Integration and Networks</li>
+        <li><span class="member-year">2022-2024</span> Manipulation</li>
+        <li><span class="member-year">2024</span> HRI, Integration and Networks</li>
     </ul>
-    <img src="https://roborregos.com/static/media/111.a4da858a52011ad98889.jpg"/>
+    <img src="/assets/members/roborregos/111.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -402,9 +438,9 @@
         Erasmo Villarreal
     </h3>
     <ul>
-        <li>2022 Manipulation</li>
+        <li><span class="member-year">2022</span> Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/84.45b995cd781f95ca7ce1.jpg"/>
+    <img src="/assets/members/roborregos/84.jpg"/>
 </div>
 
 
@@ -413,10 +449,10 @@
         Emiliano Flores
     </h3>
     <ul>
-        <li>2022-2024 Computer Vision</li>
-        <li>2023-2024 Integration and Networks, Manipulation</li>
+        <li><span class="member-year">2022-2024</span> Computer Vision</li>
+        <li><span class="member-year">2023-2024</span> Integration and Networks, Manipulation</li>
     </ul>
-    <img src="https://roborregos.com/static/media/112.9e78d7a308ad70d4441d.jpg"/>
+    <img src="/assets/members/roborregos/112.jpg"/>
 </div>
 
 
@@ -425,9 +461,9 @@
         Jonatan de la Rosa
     </h3>
     <ul>
-        <li>2023 Computer Vision</li>
+        <li><span class="member-year">2023</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/100.52649f4c1be4e4bcd44f.jpg"/>
+    <img src="/assets/members/roborregos/100.jpg"/>
 </div>
 
 
@@ -436,9 +472,9 @@
         Jamir Leal
     </h3>
     <ul>
-        <li>2021-2023 Computer Vision</li>
+        <li><span class="member-year">2021-2023</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/42.ebca574f5a5442800434.jpg"/>
+    <img src="/assets/members/roborregos/42.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -446,9 +482,9 @@
         Aldo Samaniego
     </h3>
     <ul>
-        <li>2021-2023 Computer Vision</li>
+        <li><span class="member-year">2021-2023</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/38.2a4777c69a11ce18fc37.jpg"/>
+    <img src="/assets/members/roborregos/38.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -456,10 +492,10 @@
         Iván Romero
     </h3>
     <ul>
-        <li>2022-2023 Computer Vision</li>
-        <li>2023-2024 Integration and Networks, HRI</li>
+        <li><span class="member-year">2022-2023</span> Computer Vision</li>
+        <li><span class="member-year">2023-2024</span> Integration and Networks, HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/79.0372d50e867d9ee51d8b.jpg"/>
+    <img src="/assets/members/roborregos/79.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -467,9 +503,9 @@
         José Benvenuto
     </h3>
     <ul>
-        <li>2023-2024 Computer Vision</li>
+        <li><span class="member-year">2023-2024</span> Computer Vision</li>
     </ul>
-    <img src="https://roborregos.com/static/media/98.e1b5b2211e50e4a0e5a1.jpg"/>
+    <img src="/assets/members/roborregos/98.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -477,7 +513,7 @@
         Marina Villanueva
     </h3>
     <ul>
-        <li>2023-2024 HRI</li>
+        <li><span class="member-year">2023-2024</span> HRI</li>
     </ul>
     <img src="/assets/members/Fotos_members/placeholder.svg"/>
 </div>
@@ -487,10 +523,10 @@
         Diego Hernández
     </h3>
     <ul>
-        <li>2023-2024 Navigation</li>
-        <li>2024 HRI</li>
+        <li><span class="member-year">2023-2024</span> Navigation</li>
+        <li><span class="member-year">2024</span> HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/108.e6bab4a8181dfe9ca5f1.jpg"/>
+    <img src="/assets/members/roborregos/108.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -498,9 +534,9 @@
         Jordan Palafox
     </h3>
     <ul>
-        <li>2023 Mechanics</li>
+        <li><span class="member-year">2023</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/107.18c192fc30590d4ef01b.jpg"/>
+    <img src="/assets/members/roborregos/107.jpg"/>
 
 </div>
 
@@ -509,9 +545,9 @@
         Jesús de Anda
     </h3>
     <ul>
-        <li>2023-2024 Mechanics</li>
+        <li><span class="member-year">2023-2024</span> Mechanics</li>
     </ul>
-    <img src="https://roborregos.com/static/media/110.cf33d9a4d87decbca9bd.jpg"/>
+    <img src="/assets/members/roborregos/110.jpg"/>
 
 </div>
 
@@ -520,7 +556,7 @@
         Diego López
     </h3>
     <ul>
-        <li>2023 Mechanics</li>
+        <li><span class="member-year">2023</span> Mechanics</li>
     </ul>
     <img src="/assets/members/Fotos_members/placeholder.svg"/>
 </div>
@@ -530,7 +566,7 @@
         Gustavo Gámez
     </h3>
     <ul>
-        <li>2023 Mechanics</li>
+        <li><span class="member-year">2023</span> Mechanics</li>
     </ul>
     <img src="/assets/members/Fotos_members/placeholder.svg"/>
 </div>
@@ -540,9 +576,9 @@
         Ángel Cervantes
     </h3>
     <ul>
-        <li>2023-2024 Electronics and control</li>
+        <li><span class="member-year">2023-2024</span> Electronics and control</li>
     </ul>
-    <img src="https://roborregos.com/static/media/104.10e0236302a54ae4786a.jpg"/>
+    <img src="/assets/members/roborregos/104.jpg"/>
 </div>
 
 <div class="grid-cell">
@@ -550,9 +586,9 @@
         Yair Reyes
     </h3>
     <ul>
-        <li>2023-2024 Electronics and control</li>
+        <li><span class="member-year">2023-2024</span> Electronics and control</li>
     </ul>
-    <img src="https://roborregos.com/static/media/92.d78372460235cb830306.jpg"/>
+    <img src="/assets/members/roborregos/92.jpg"/>
 
 </div>
 
@@ -561,9 +597,9 @@
         Francisco Salas
     </h3>
     <ul>
-        <li>2023-2024 HRI</li>
+        <li><span class="member-year">2023-2024</span> HRI</li>
     </ul>
-    <img src="https://roborregos.com/static/media/102.f93af00887e4279db81f.jpg"/>
+    <img src="/assets/members/roborregos/102.jpg"/>
 </div>
 
 

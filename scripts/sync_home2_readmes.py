@@ -110,8 +110,19 @@ def build(sha):
     for folder in managed_dirs():
         pages = sorted(p.name for p in files if p.parent == folder)
         if pages:
-            files[folder / ".pages"] = "nav:\n" + "".join(f"    - {p}\n" for p in pages)
+            files[folder / ".pages"] = nav_file(folder, pages)
     return files
+
+
+def nav_file(folder, pages):
+    # In a folder with several pages, list the area's own README first as "Overview",
+    # so the nav doesn't repeat the folder name (HRI > HRI).
+    overview = {target for src, (target, _) in READMES.items() if src.count("/") == 1}
+    main = [p for p in pages if (folder / p).relative_to(AREAS).as_posix() in overview]
+    if len(pages) < 2 or not main:
+        return "nav:\n" + "".join(f"    - {p}\n" for p in pages)
+    rest = [p for p in pages if p != main[0]]
+    return f"nav:\n    - Overview: {main[0]}\n" + "".join(f"    - {p}\n" for p in rest)
 
 
 def managed_dirs():

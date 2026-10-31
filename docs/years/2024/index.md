@@ -2,6 +2,12 @@
 
 This year, after being [accepted](https://athome.robocup.org/2024-qualified-teams/) to participate in RoboCup 2024 held in Eindhoven, Netherlands, the team focused in developing a robust and reliable set of software modules, tailored to the specific needs for the tasks for the updated rulebook. This approach, had the purpose of showcasing a functional robot for both the Mexican Robotics Tournament (April; Monterrey, Mexico) and the RoboCup (July; Eindhoven, Netherlands).
 
+<p align="center">
+  <img src="/assets/landing/robocup2024/frida-dashgo.jpg" alt="FRIDA at RoboCup 2024, Eindhoven" width="600">
+  <br>
+  <em>FRIDA at RoboCup 2024, Eindhoven.</em>
+</p>
+
 The robot was renamed as FRIDA (Friendly Robotic Interactive Domestic Assistant), an acronym reflecting the purporse of the robot, and the name in reference to Mexican culture.
 
 With the vast knowledge acquired during the international tournament, the team defined the new objectives for the remainder of the year to be: an increased focus in research and literature review, and centralized and offline refactorization of the software and systems.

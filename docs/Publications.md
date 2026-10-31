@@ -12,12 +12,20 @@ Our research focuses on several key areas in service robotics:
 - **Human-Robot Interaction**: Improving communication and interaction between humans and service robots
 - **Computer Vision**: Object detection, recognition, and scene understanding for domestic environments
 
+## Team Description Papers
+
+| Year | Event | Paper |
+| --- | --- | --- |
+| 2026 | RoboCup@Home 2026, Incheon | [PDF](assets/tdp/RoBorregos_TDP_RoboCup2026.pdf) |
+| 2025 | RoboCup@Home 2025, Salvador | [PDF](assets/tdp/RoBorregos_TDP_RoboCup2025.pdf) |
+| 2024 | RoboCup@Home 2024, Eindhoven | [PDF](assets/tdp/RoBorregos_TDP_RoboCup2024.pdf) |
+
 ## @Home Papers
 
 Adán Flores-Ramírez et al. Taming the llm: Reliable task planning for robotics
 using parsing and grounding. In Lourdes Martínez-Villaseñor, Roberto A. Vázquez,
 and Gilberto Ochoa-Ruiz, editors, Advances in Soft Computing, pages 296–312,
-Cham, 2026. Springer Nature Switzerland.
+Cham, 2026. Springer Nature Switzerland. **2nd Best Student Paper** at the 24th Mexican International Conference on Artificial Intelligence (MICAI 2025).
 
 ## Other Team Papers
 
