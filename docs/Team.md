@@ -237,6 +237,26 @@
     <img src="/assets/members/Fotos_members/marco_galindo.jpg" alt="Marco Galindo"/>
 </div>
 
+<div class="grid-cell">
+    <h3>
+        Santiago Ramírez Cepeda
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Manipulation, Electronics, Omnidirectional Base</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/champtiago.jpg"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
+        Luis Alfonso Ramírez Cepeda
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> Mechanics, Electronics, Omnidirectional Base</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/larc.jpg"/>
+</div>
+
 </div>
 
 ## Legacy Members
