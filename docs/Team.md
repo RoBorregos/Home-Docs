@@ -206,6 +206,18 @@
     <img src="/assets/members/Fotos_members/DSC_4004.jpg"/>
 
 </div>
+
+<div class="grid-cell">
+    <h3>
+        Juan Pablo Gutierrez
+    </h3>
+    <ul>
+        <li><span class="member-year">2025</span> Vision</li>
+        <li><span class="member-year">2026</span> Vision</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/juan_pablo_gutierrez.jpg"/>
+</div>
+
 <div class="grid-cell">
     <h3>
         Jeremy Isai Martino Dávila
