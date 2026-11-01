@@ -236,6 +236,16 @@
     <img src="/assets/members/Fotos_members/jared_aldana.jpg"/>
 </div>
 
+<div class="grid-cell">
+    <h3>
+        Luis Alvaro Rosales Salazar
+    </h3>
+    <ul>
+        <li><span class="member-year">2026</span> HRI, Vision</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/LuisRosales.jpg" alt="Luis Alvaro Rosales Salazar"/>
+</div>
+
 </div>
 
 ## Legacy Members
