@@ -5,7 +5,7 @@ title: "Pick and Place"
 # Pick and Place
 
 !!! info "Synced from home2"
-    Generated from [`home2/manipulation/packages/pick_and_place/README.md`](https://github.com/RoBorregos/home2/blob/57818016e7635df0b9089c4df38e899d30957f54/manipulation/packages/pick_and_place/README.md) @ `5781801` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
+    Generated from [`home2/manipulation/packages/pick_and_place/README.md`](https://github.com/RoBorregos/home2/blob/20c6c71aef2dffcc02fa4c8173fe8985493e060d/manipulation/packages/pick_and_place/README.md) @ `20c6c71` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
 
 The manipulation task layer. One node, `manipulation_core`, accepts a task (pick, place, pour),
 runs it start to finish, and reports success. It owns no motion planning and no perception of its
@@ -13,7 +13,7 @@ own -- it drives the nodes that do.
 
 ## External contract
 
-Everything outside this package talks to it through exactly three interfaces. They are stable;
+Everything outside this package talks to it through exactly five interfaces. They are stable;
 nothing else here is public.
 
 | Interface | Type | Used by |
@@ -21,11 +21,12 @@ nothing else here is public.
 | `/manipulation/manipulation_action_server` | `ManipulationAction` | `task_manager` (pick / place / pour / place_on_shelf / place_in_point), `keyboard_input.py`, `pick_benchmark.py`, `manipulation_client.py` |
 | `/manipulation/go_to_hand_action_server` | `GoToHand` | `task_manager` (handover) |
 | `/manipulation/fixed_distance_move` | `FixedDistanceMove` | `task_manager` (`move_arm_vertical`) |
+| `/follow_face`, `/follow_person` | `FollowFace` | `task_manager` (`follow_face`, `follow_person`) |
 
 ## System context
 
-A node exists here only if it owns expensive state. MoveIt, GPD and the point-cloud pipeline each
-do; the pick, place and pour flows do not, so they are functions in one node rather than three.
+A node exists here only if it owns expensive state. MoveIt, GPD, the grasp generator and the
+point-cloud pipeline each do; the pick, place and pour flows do not, so they are functions in one node rather than three.
 
 ```mermaid
 flowchart TD
@@ -37,7 +38,7 @@ flowchart TD
 
     core -->|MoveToPose, MoveJoints| mp[motion_planning_server<br/>owns MoveIt]
     core -->|GraspDetection| gpd[gpd_service<br/>owns GPD]
-    core -->|EstimateFlatGrasp| fge[flat_grasp_estimator]
+    core -->|GenerateGrasps| gen[grasp_generator<br/>owns the geometric grasp maths]
     core -->|PickPerceptionService<br/>PlacePerceptionService| p3d[perception_3d<br/>owns the cloud pipeline]
     core -->|HeatmapPlace| hm[heatmapPlace_Server]
     core -->|set_mode, set_state<br/>vc_set_cartesian_velocity| xarm[xArm driver]
@@ -46,7 +47,7 @@ flowchart TD
 ```
 
 The arm is driven two ways. Normal motion goes through `motion_planning_server` and MoveIt. The
-descents bypass it: they switch the xArm into cartesian-velocity mode (mode 5) and close the loop
+descents and the geometric approach bypass it: they switch the xArm into cartesian-velocity mode (mode 5) and close the loop
 themselves, because MoveIt cannot plan into a basket the octomap has filled with noise. Mode 5 takes
 the trajectory controller offline, so it is always entered through a context manager that restores
 mode 1 on the way out.
@@ -102,7 +103,8 @@ pick_and_place/
 │   │   ├── pick.py              stare -> perceive -> strategy -> return
 │   │   ├── place.py             choose a pose -> reach it -> release -> return
 │   │   ├── pour.py              find container -> grasp source -> tilt -> return
-│   │   ├── strategies.py        the 3 grasp motions + the STRATEGIES table
+│   │   ├── strategies.py        the 4 grasp motions + the STRATEGIES table
+│   │   ├── follow.py            face / person tracking velocity commands
 │   │   ├── classification.py    object_name -> strategy key
 │   │   ├── profiles.py          YAML loading and validation
 │   │   └── errors.py            PickAttemptFailed / PickAborted / PickHardwareError
@@ -124,19 +126,31 @@ pick_and_place/
 
 1. **Look** — `_move_to_stare_pose` moves to the named pose for this strategy
    (`STARE_POSES`, defaulting to `table_stare`).
-2. **Perceive** — `_perceive` splits two ways. Flat, rim, bowl and peak objects ask
-   `flat_grasp_estimator` for one top-down pose (`_perceive_flat`); it deliberately does *not*
-   cluster, because clustering adds the table as an obstacle and MoveIt then rejects every
-   near-table path. Everything else is detected, clustered and measured (`_perceive_cluster`).
-3. **Grasp** — `_grasp_sets` yields batches of candidates: one batch from the estimator, or one per
-   GPD config so an unreachable config falls back to the next. `_run_strategy` applies the tip
-   offset along the gripper's approach axis, then hands each candidate to the strategy until one
-   succeeds.
+2. **Perceive** — `_perceive` splits two ways. Every strategy except `gpd` asks the **grasp
+   generator** (`_perceive_grasps`) for ranked grasp poses; it deliberately does *not* cluster,
+   because clustering adds the table as an obstacle and MoveIt then rejects every near-table path.
+   The generator answers per class: one top-down pose for flat, rim and peak objects; for a solid
+   it fits a box, cylinder or sphere to the depth, tries every approach (top, diagonal, front, both
+   closing axes, both flips) and returns the ones that clear the table, the neighbours and the
+   gripper body, best first, plus the **fitted shape** as a collision object. `gpd` is detected,
+   clustered and measured instead (`_perceive_cluster`).
+3. **Grasp** — `_grasp_sets` yields batches of candidates: the generator's top five for a fitted
+   shape, its one pose and the flip for a flat object, or one batch per GPD config so an
+   unreachable config falls back to the next. `_run_strategy` applies the tip offset along the
+   gripper's approach axis, then hands each candidate to the strategy until one succeeds.
 4. **Return** — `_return_to_carry_pose`. Shelf picks retract to `front_stare` first; rim picks hold
    position (a basket is carried where it was grasped); everything else returns to a stare pose.
 
 The gripper opens *after* perceiving and *before* grasping — the fingers are in the camera's view
 while it looks.
+
+The pipeline never asks *which* strategy is running to decide these things; the data does:
+
+| Decision | Driven by |
+|---|---|
+| Add the fitted shape to the planning scene, and report its heights to `place` | the generator's response carries a fitted object |
+| Retry with GPD when perception or every candidate fails | `fallback_to_gpd` in the strategy's profile |
+| Shelf and pour picks use GPD instead of the geometric generator | `resolve_pick_strategy(name, force_gpd=...)` |
 
 ### Where the flow goes
 
@@ -150,7 +164,7 @@ flowchart TD
 
     Pick -->|"object name → strategy key"| Cls[pipelines/classification.py]
     Pick -->|"look for the object"| Perc[robot/perception.py]
-    Perc -->|"a grasp pose, or a point cloud"| Pick
+    Perc -->|"ranked grasp poses, or a point cloud"| Pick
     Pick -->|"grasp pose → EE-link pose"| Geo[robot/geometry.py]
     Pick -->|"one candidate at a time"| Str[pipelines/strategies.py]
     Str -->|"move, descend, grip"| Arm[robot/arm.py]
@@ -164,8 +178,10 @@ flowchart TD
 
 ## Pick strategies
 
-Which strategy runs is decided by `classification.resolve_pick_strategy(object_name)`. Order
-matters there: `bowl` is a member of `RIM_NAMES`, so it is tested first.
+Which strategy runs is decided by `classification.resolve_pick_strategy(object_name, force_gpd)`.
+Order matters there: `bowl` is a member of `RIM_NAMES`, so it is tested first. A name that is not
+listed is a solid and goes to `geometric`; shelf and pour picks (`force_gpd`) send it to `gpd`
+instead.
 
 | Profile | Objects | Class | How it grasps |
 |---|---|---|---|
@@ -173,7 +189,8 @@ matters there: `bowl` is a member of `RIM_NAMES`, so it is tested first.
 | `rim` | basket, laundry_basket | `FixedDistanceDescentPick` | Straddles the rim; fingers close around the wall. |
 | `bowl` | bowl | `FixedDistanceDescentPick` | Same motion, much shorter descent. |
 | `peak` | clothes | `FixedDistanceDescentPick` | Descends onto the highest content in a cavity. |
-| `gpd` | anything else | `DirectGraspPick` | Plans straight to a GPD grasp. The only strategy that attaches the object in the planning scene, and so the only one that reports object heights to `place`. |
+| `geometric` | any other name: cans, boxes, fruit | `CartesianApproachPick` | Backs off along the generator's approach axis, drives straight in under cartesian velocity, closes, then attaches the fitted shape and reports object heights to `place`. Falls back to `gpd` when it fails. |
+| `gpd` | no name, shelf and pour picks, the geometric fallback | `DirectGraspPick` | Plans straight to a GPD grasp. Attaches the object in the planning scene and reports object heights to `place`. |
 
 Rim, bowl and peak are one algorithm with three parameter sets. The descent distance is always
 `pre_grasp_height - grasp_z_tweak`:
@@ -186,7 +203,7 @@ Rim, bowl and peak are one algorithm with three parameter sets. The descent dist
 
 ## Configuration
 
-Every tuned number lives in [`config/pick_profiles.yaml`](https://github.com/RoBorregos/home2/blob/57818016e7635df0b9089c4df38e899d30957f54/manipulation/packages/pick_and_place/config/pick_profiles.yaml) — pre-grasp
+Every tuned number lives in [`config/pick_profiles.yaml`](https://github.com/RoBorregos/home2/blob/20c6c71aef2dffcc02fa4c8173fe8985493e060d/manipulation/packages/pick_and_place/config/pick_profiles.yaml) — pre-grasp
 heights, descent distances and speeds, gripper settle times, and the flat strategy's contact-force
 thresholds. Retuning is a YAML edit, not a code change.
 
@@ -196,7 +213,12 @@ wrong types, a descent that resolves non-positive, a `jump_trip` above the hard 
 force-guard timeout too short to cover the pre-grasp height.
 
 The tip offsets stay ROS parameters because they are physical properties of the gripper:
-`ee_link_offset` (−0.09 in the launch file), `rim_tip_offset`, `bowl_tip_offset`.
+`ee_link_offset` (−0.09 in the launch file), `rim_tip_offset`, `bowl_tip_offset` and
+`geometric_tip_offset` (−`GRIPPER_REACH`, flange to fingertip). The gripper's dimensions live in
+`frida_constants/manipulation_constants.py`.
+
+`grasp_generator`'s `cylinder_diagonal` parameter (default `True`) replaces the top-down cylinder
+grasps with a 45 degree one. The place then turns the gripper straight down, so the can hangs upright.
 
 ## Adding or tuning a pick behavior
 
@@ -205,7 +227,8 @@ The tip offsets stay ROS parameters because they are physical properties of the 
   `classification.PICK_STRATEGY_KEYS` and `_STRATEGY_BY_OBJECT_NAME`, and add one line to
   `strategies.STRATEGIES` pointing at the class that serves it.
 - **New motion algorithm** — add one class to `strategies.py` implementing
-  `attempt(arm, candidate) -> PickOutcome`, then register it as above. It may only use `RobotArm`
+  `attempt(arm, candidate) -> PickOutcome`, then register it as above. Set `fallback_to_gpd: true`
+  in its profile if a failed pick should be retried with GPD. It may only use `RobotArm`
   methods; if you need something the arm cannot do, add it to `robot/arm.py` first.
 
 A profile whose key has no registered class fails at startup, not on the first pick of that type.
@@ -237,7 +260,7 @@ colcon test --packages-select pick_and_place && colcon test-result --verbose
 Or directly, inside the container (pytest ships as a module, not a binary):
 
 ```bash
-python3 -m pytest test/ -q      # 30 tests, 39 cases
+python3 -m pytest test/ -q      # 39 tests, 48 cases
 ```
 
 No ROS graph and no hardware: the pipelines run against `FakeArm` / `FakePerception`.
