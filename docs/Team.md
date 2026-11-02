@@ -233,7 +233,7 @@
         Jasiel Aldana Palacios
     </h3>
     <ul>
-        <li><span class="member-year">2026</span> Electronics</li>
+        <li><span class="member-year">2026</span> Electronics, Navigation, Omnidirectional Base</li>
     </ul>
     <img src="/assets/members/Fotos_members/jasiel_aldana.jpg"/>
 </div>
