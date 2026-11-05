@@ -250,6 +250,13 @@
 
 <div class="grid-cell">
     <h3>
+        Luis Alvaro Rosales Salazar
+    </h3>
+    <ul>
+        <li><span class="member-year">2025</span> HRI</li>
+        <li><span class="member-year">2026</span> HRI, Integration</li>
+    </ul>
+    <img src="/assets/members/Fotos_members/LuisRosales.jpg" alt="Luis Alvaro Rosales Salazar"/>
         Marco Galindo
     </h3>
     <ul>
