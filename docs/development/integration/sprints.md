@@ -9,6 +9,57 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-11-02 -->
+
+## Sprint 5 · 2026-11-02 → 2026-11-22
+
+<!-- spotlight:2026-11-02:plan -->
+
+### Sprint plan
+
+3 tasks planned for this sprint.
+
+**Todo:**
+
+- **Unassigned** 💻 Improve time logging in TMs (P2, [#1160](https://github.com/RoBorregos/home2/issues/1160))
+
+**Backlog:**
+
+- **Jared AlPa** 💻 Optimize frida interfaces ([#1460](https://github.com/RoBorregos/home2/issues/1460))
+- **Unassigned** 💻 Fix TDP ([#1480](https://github.com/RoBorregos/home2/issues/1480))
+
+<!-- /spotlight -->
+
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:results -->
+
+### Sprint results
+
+**6/10 tasks done (60%)** · P0: 1/2.
+
+Sprint 4 for Integration aimed to deliver key tasks including the laundry task manager and various TDP components, all of which were successfully completed alongside documentation updates. However, the critical P0 non-expert users experiment remains pending, while repo cleanup, the TDP video, and speech dialog improvements are still in progress or backlog.
+
+**Done:**
+
+- **Jared AlPa** 💻 Laundry task manager (P0, [#1161](https://github.com/RoBorregos/home2/issues/1161))
+- **Fernando Hernandez** 💻 TDP general ([#1372](https://github.com/RoBorregos/home2/issues/1372))
+- **Jeremy Martino** 💻 TDP omnibase ([#1381](https://github.com/RoBorregos/home2/issues/1381))
+- **Fernando Hernandez**, **Angela Camila Tite Haro** 💻 Home-Docs General Updates ([#1389](https://github.com/RoBorregos/home2/issues/1389))
+- **Luis Benvenuto** 💻 Update overview/project_structure in Home-Docs ([#1392](https://github.com/RoBorregos/home2/issues/1392))
+- **Luis Benvenuto** 💻 TDP: Architecture ([#1418](https://github.com/RoBorregos/home2/issues/1418))
+
+**Carried over:**
+
+- **Fernando Hernandez**, **Jeremy Martino** 💻 Clean repos (In Progress, [#1390](https://github.com/RoBorregos/home2/issues/1390))
+- **Bárbara Alejandra Novau Martínez**, **Fernando Hernandez** 💻 TDP VIDEO (In Progress, [#1413](https://github.com/RoBorregos/home2/issues/1413))
+- **Fernando Hernandez**, **Jared AlPa** 💻 Non expert users experiment (Todo, P0, [#1383](https://github.com/RoBorregos/home2/issues/1383))
+- **Luis Benvenuto** 💻 Improve speech dialogs in tasks (Backlog, P1, [#1165](https://github.com/RoBorregos/home2/issues/1165))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11

@@ -9,6 +9,61 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-11-02 -->
+
+## Sprint 5 · 2026-11-02 → 2026-11-22
+
+<!-- spotlight:2026-11-02:plan -->
+
+### Sprint plan
+
+7 tasks planned for this sprint.
+
+**Done:**
+
+- **Arturo Cabrera** 💻 Run zed without router ([#1453](https://github.com/RoBorregos/home2/issues/1453))
+
+**Review:**
+
+- **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Galindo** 🔍 Semantic MAP ([#1268](https://github.com/RoBorregos/home2/issues/1268))
+
+**In Progress:**
+
+- **Mario Casas Donjuan** 💻 Integrate talk detection into follow face ([#1431](https://github.com/RoBorregos/home2/issues/1431))
+- **Marco Galindo** 💻 Run embedding gallery in its own detector node ([#1449](https://github.com/RoBorregos/home2/issues/1449))
+- **Fernando Hernandez** 💻 Research LFM2.5-VL por pose detection ([#1472](https://github.com/RoBorregos/home2/issues/1472))
+
+**Todo:**
+
+- **Fernando Hernandez** 💻 Optimize vision ([#1473](https://github.com/RoBorregos/home2/issues/1473))
+- **Arturo Cabrera** 💻 Load yolo11m-pose only once ([#1475](https://github.com/RoBorregos/home2/issues/1475))
+
+<!-- /spotlight -->
+
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:results -->
+
+### Sprint results
+
+**7/7 tasks done (100%)**.
+
+Sprint 4 focused on updating TDP documentation and cleaning up the vision environment. The team successfully delivered the InsightFace face recognition replacement, person tracking updates, YOLO11 pose text, embedding gallery contributions, object detector pipeline updates, Docker-l4t dependency cleanup, and CLIP embeddings for semantic navigation. There are no pending tasks remaining.
+
+**Done:**
+
+- **Arturo Cabrera** 💻 TDP: Replace DLib face recognition text with InsightFace + TensorRT ([#1367](https://github.com/RoBorregos/home2/issues/1367))
+- **Marco Galindo** 💻 TDP: Verify and update the person tracking and Re-ID description ([#1368](https://github.com/RoBorregos/home2/issues/1368))
+- **Juan Pablo Gutierrez** 💻 TDP: Update pose and gesture text (YOLO11 pose, MediaPipe, Moondream2 over gRPC) ([#1369](https://github.com/RoBorregos/home2/issues/1369))
+- **Marco Galindo** 💻 TDP: embedding gallery contribution ([#1370](https://github.com/RoBorregos/home2/issues/1370))
+- **Fernando Hernandez** 💻 TDP: update Object detector pipeline ([#1371](https://github.com/RoBorregos/home2/issues/1371))
+- **Arturo Cabrera** 🔧 Clean docker-l4t ([#1377](https://github.com/RoBorregos/home2/issues/1377))
+- **Juan Pablo Gutierrez** 💻 Finals commands node: CLIP embeddings for semantic navigation ([#1378](https://github.com/RoBorregos/home2/issues/1378))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11

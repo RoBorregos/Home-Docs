@@ -9,6 +9,51 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-11-02 -->
+
+## Sprint 5 · 2026-11-02 → 2026-11-22
+
+<!-- spotlight:2026-11-02:plan -->
+
+### Sprint plan
+
+4 tasks planned for this sprint.
+
+**Todo:**
+
+- **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks ([#1456](https://github.com/RoBorregos/home2/issues/1456))
+- **Luis Alvaro Rosales Salazar** 💻 Move euclidean distance to nav distance ([#1457](https://github.com/RoBorregos/home2/issues/1457))
+- **Angela Camila Tite Haro** 💻 Filter keywords on display ([#1458](https://github.com/RoBorregos/home2/issues/1458))
+- **Mario Casas Donjuan** 💻 Voice recognition ([#1459](https://github.com/RoBorregos/home2/issues/1459))
+
+<!-- /spotlight -->
+
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:results -->
+
+### Sprint results
+
+**3/6 tasks done (50%)** · P0: 0/1.
+
+This sprint focused on delivering documentation tasks for the Human-Robot Interaction area. The team successfully completed the TDP sections for speech, NLP, and display. Meanwhile, the critical P0 task for non-expert users remains pending, along with the GPSR model integration and the confidence-calibrated clarification policy.
+
+**Done:**
+
+- **Andrés Rodríguez Cantú** 💻 TDP: speech ([#1415](https://github.com/RoBorregos/home2/issues/1415))
+- **Luis Alvaro Rosales Salazar** 💻 TDP: NLP ([#1416](https://github.com/RoBorregos/home2/issues/1416))
+- **Angela Camila Tite Haro** 💻 TDP: Display ([#1417](https://github.com/RoBorregos/home2/issues/1417))
+
+**Carried over:**
+
+- **Unassigned** 💻 Non expert users (Todo, P0, [#1157](https://github.com/RoBorregos/home2/issues/1157))
+- **Luis Alvaro Rosales Salazar** 💻 Integrate new gpsr model (Backlog, [#1382](https://github.com/RoBorregos/home2/issues/1382))
+- **Luis Benvenuto** 💻 Res: Confidence-calibrated clarification policy for ask_and_confirm (accept / ask-to-repeat / confirm) (Backlog, [#1384](https://github.com/RoBorregos/home2/issues/1384))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11

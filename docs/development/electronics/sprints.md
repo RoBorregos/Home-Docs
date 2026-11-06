@@ -9,6 +9,49 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-11-02 -->
+
+## Sprint 5 · 2026-11-02 → 2026-11-22
+
+<!-- spotlight:2026-11-02:plan -->
+
+### Sprint plan
+
+2 tasks planned for this sprint.
+
+**Backlog:**
+
+- **Jasiel Aldana Palacios**, **Becca-731** 💻 Add missing items to the electronics BOM ([#1455](https://github.com/RoBorregos/home2/issues/1455))
+- **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477))
+
+<!-- /spotlight -->
+
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:results -->
+
+### Sprint results
+
+**5/6 tasks done (83%)** · P0: 2/3.
+
+This sprint focused on hardware maintenance, documentation, and technical reporting. The team successfully investigated FRIDA battery issues, crimped the CAN port pins, and completed all documentation tasks, including the TDP Omnibase section and custom base Home-Docs. The high-priority documentation for new PCB developments for FRIDA remains pending in the backlog.
+
+**Done:**
+
+- **Champtiago**, **Becca-731**, **LARC** 💻 Crimp the CAN port pins (P0, [#1387](https://github.com/RoBorregos/home2/issues/1387))
+- **Jeremy Martino** 📝 TDP: Omnibase section in Scientific contributions and current work ([#1408](https://github.com/RoBorregos/home2/issues/1408))
+- **Jeremy Martino** 📝 Home-Docs: Document the custom omnibase ([#1410](https://github.com/RoBorregos/home2/issues/1410))
+- **Jeremy Martino** 📝 Reference home-custom-base repo in Home-Docs and home2 README ([#1411](https://github.com/RoBorregos/home2/issues/1411))
+- **LARC** 💻 Investigate FRIDA battery issues (P0, [#1426](https://github.com/RoBorregos/home2/issues/1426))
+
+**Carried over:**
+
+- **Rodro**, **Jasiel Aldana Palacios**, **Becca-731** 💻 [TDP] Document new PCB developments for FRIDA (Backlog, P0, [#1397](https://github.com/RoBorregos/home2/issues/1397))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
