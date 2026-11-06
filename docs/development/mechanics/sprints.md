@@ -9,6 +9,65 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-11-02 -->
+
+## Sprint 5 · 2026-11-02 → 2026-11-22
+
+<!-- spotlight:2026-11-02:plan -->
+
+### Sprint plan
+
+5 tasks planned for this sprint.
+
+**Done:**
+
+- **Jeremy Martino** 💻 Add FRIDA CAD to a new repo (P1, [#1470](https://github.com/RoBorregos/home2/issues/1470))
+
+**In Progress:**
+
+- **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base ([#1272](https://github.com/RoBorregos/home2/issues/1272))
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+
+**Todo:**
+
+- **Bárbara Alejandra Novau Martínez** 💻 Make new URDF for FRIDA ([#1461](https://github.com/RoBorregos/home2/issues/1461))
+- **Bárbara Alejandra Novau Martínez** 💻 Organize CAD Files and upload FRIDA Assembly to GitHub ([#1462](https://github.com/RoBorregos/home2/issues/1462))
+
+<!-- /spotlight -->
+
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:results -->
+
+### Sprint results
+
+**7/13 tasks done (54%)**.
+
+Mechanics Sprint 4 successfully delivered the base expansion, gripper mechanism machining, gripper soft patterns definition, and TDP omnibase updates. The battery drawer is currently in testing, while tasks such as updating the BOM, learning Altair Inspire, migrating assemblies, and updating GrabCAD remain in progress.
+
+**Done:**
+
+- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino**, **Becca-731**, **LARC** 💻 Implementation of expansion of current base ([#1229](https://github.com/RoBorregos/home2/issues/1229))
+- **Bárbara Alejandra Novau Martínez** 💻 Machinge gripper mechanism (engrane) ([#1320](https://github.com/RoBorregos/home2/issues/1320))
+- **Gael Infante Lozano** 💻 Check is current gear is functional for new gripper in order to machine it ([#1361](https://github.com/RoBorregos/home2/issues/1361))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Define percentage of ideal soft and non-soft patterns of new gripper ([#1366](https://github.com/RoBorregos/home2/issues/1366))
+- **Jeremy Martino** 📝 TDP: Omnibase as main contribution in abstract and research focus ([#1407](https://github.com/RoBorregos/home2/issues/1407))
+- **Jeremy Martino** 📝 TDP: Update hardware description annex for the omnibase ([#1409](https://github.com/RoBorregos/home2/issues/1409))
+- **Bárbara Alejandra Novau Martínez** 💻 Check Delrin machining providers or the possibility to machine it in campus ([#1414](https://github.com/RoBorregos/home2/issues/1414))
+
+**Carried over:**
+
+- **Gael Infante Lozano** 💻 Check battery drawer (Testing, [#1403](https://github.com/RoBorregos/home2/issues/1403))
+- **Bárbara Alejandra Novau Martínez** 💻 Update BOM (In Progress, [#1363](https://github.com/RoBorregos/home2/issues/1363))
+- **marcelajimenez1**, **Jeremy Martino**, **Becca-731** 💻 Download and start learning Altair Inspire (In Progress, [#1365](https://github.com/RoBorregos/home2/issues/1365))
+- **LARC** 💻 Migrate OnShape Assembly to SolidWorks of new base (In Progress, [#1402](https://github.com/RoBorregos/home2/issues/1402))
+- **LARC** 💻 Add gripper design to GrabCAD (In Progress, [#1404](https://github.com/RoBorregos/home2/issues/1404))
+- **Unassigned** 💻 Confirm literature of new gripper design (In Progress, [#1406](https://github.com/RoBorregos/home2/issues/1406))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11

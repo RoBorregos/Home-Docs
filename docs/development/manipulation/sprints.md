@@ -9,6 +9,51 @@ Status legend:
 - 📝 Documentation
 - 🔧 Bug fixing
 
+<!-- sprint:2026-11-02 -->
+
+## Sprint 5 · 2026-11-02 → 2026-11-22
+
+<!-- spotlight:2026-11-02:plan -->
+
+### Sprint plan
+
+6 tasks planned for this sprint.
+
+**Done:**
+
+- **Champtiago** 🔧 Reject concurrent manipulation goals (P2, [#1438](https://github.com/RoBorregos/home2/issues/1438))
+
+**Todo:**
+
+- **Fernando Hernandez** 💻 move_group segfaults while serializing the octomap during place ([#1447](https://github.com/RoBorregos/home2/issues/1447))
+- **Jared AlPa** 💻 Pick flat optimization ([#1464](https://github.com/RoBorregos/home2/issues/1464))
+- **Champtiago** 💻 Pick plate ([#1465](https://github.com/RoBorregos/home2/issues/1465))
+- **Marco Galindo** 💻 Shelf P&P optimization ([#1467](https://github.com/RoBorregos/home2/issues/1467))
+- **LARC** 💻 Correct ZED calibration ([#1468](https://github.com/RoBorregos/home2/issues/1468))
+
+<!-- /spotlight -->
+
+<!-- sprint:2026-10-12 -->
+
+## Sprint 4 · 2026-10-12 → 2026-11-01
+
+<!-- spotlight:2026-10-12:results -->
+
+### Sprint results
+
+**4/4 tasks done (100%)**.
+
+This sprint focused on completing key manipulation tasks. The team successfully delivered all planned items, including documenting the five pick strategies, finishing the TCP pick_benchmark, completing the TDP for rerun placing trials, and finishing Pick Optimization. There are no pending items remaining.
+
+**Done:**
+
+- **Champtiago** 💻 Document the five pick strategies ([#1373](https://github.com/RoBorregos/home2/issues/1373))
+- **Fernando Hernandez**, **Marco Galindo** 💻 TCP: pick_benchmark ([#1374](https://github.com/RoBorregos/home2/issues/1374))
+- **Jared AlPa** 💻 TDP: Rerun placing trials for the heatmap placer ([#1375](https://github.com/RoBorregos/home2/issues/1375))
+- **Fernando Hernandez** 💻 Pick Optimization ([#1435](https://github.com/RoBorregos/home2/issues/1435))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-09-21 -->
 
 ## Sprint 3 · 2026-09-21 → 2026-10-11
