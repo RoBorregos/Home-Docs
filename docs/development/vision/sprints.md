@@ -27,15 +27,18 @@ Status legend:
 
 - **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Galindo** 🔍 Semantic MAP ([#1268](https://github.com/RoBorregos/home2/issues/1268))
 
+**Testing:**
+
+- **Marco Galindo** 💻 Run embedding gallery in its own detector node ([#1449](https://github.com/RoBorregos/home2/issues/1449))
+
 **In Progress:**
 
 - **Mario Casas Donjuan** 💻 Integrate talk detection into follow face ([#1431](https://github.com/RoBorregos/home2/issues/1431))
-- **Marco Galindo** 💻 Run embedding gallery in its own detector node ([#1449](https://github.com/RoBorregos/home2/issues/1449))
 - **Fernando Hernandez** 💻 Research LFM2.5-VL por pose detection ([#1472](https://github.com/RoBorregos/home2/issues/1472))
+- **Fernando Hernandez** 💻 Optimize vision ([#1473](https://github.com/RoBorregos/home2/issues/1473))
 
 **Todo:**
 
-- **Fernando Hernandez** 💻 Optimize vision ([#1473](https://github.com/RoBorregos/home2/issues/1473))
 - **Arturo Cabrera** 💻 Load yolo11m-pose only once ([#1475](https://github.com/RoBorregos/home2/issues/1475))
 
 <!-- /spotlight -->
@@ -50,7 +53,7 @@ Status legend:
 
 **7/7 tasks done (100%)**.
 
-Sprint 4 focused on updating TDP documentation and cleaning up the vision environment. The team successfully delivered the InsightFace face recognition replacement, person tracking updates, YOLO11 pose text, embedding gallery contributions, object detector pipeline updates, Docker-l4t dependency cleanup, and CLIP embeddings for semantic navigation. There are no pending tasks remaining.
+This sprint focused on updating technical documentation and cleaning up the Docker environment. The team successfully delivered the InsightFace and TensorRT face recognition transition, person tracking, pose descriptions, embedding gallery, object detector updates, CLIP embeddings for finals, and cleaned the docker-l4t dependencies. No tasks remain pending.
 
 **Done:**
 

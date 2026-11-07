@@ -43,7 +43,7 @@ Status legend:
 
 **4/4 tasks done (100%)**.
 
-This sprint focused on completing key manipulation tasks. The team successfully delivered all planned items, including documenting the five pick strategies, finishing the TCP pick_benchmark, completing the TDP for rerun placing trials, and finishing Pick Optimization. There are no pending items remaining.
+Manipulation Sprint 4 successfully delivered all planned tasks, including documenting the five pick strategies, completing the pick_benchmark TCP, running placing trials for the heatmap placer TDP, and finishing the Pick Optimization. There are no pending items remaining for this sprint.
 
 **Done:**
 

@@ -17,14 +17,15 @@ Status legend:
 
 ### Sprint plan
 
-4 tasks planned for this sprint.
+5 tasks planned for this sprint.
 
 **Todo:**
 
-- **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks ([#1456](https://github.com/RoBorregos/home2/issues/1456))
+- **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks (P0, [#1456](https://github.com/RoBorregos/home2/issues/1456))
 - **Luis Alvaro Rosales Salazar** 💻 Move euclidean distance to nav distance ([#1457](https://github.com/RoBorregos/home2/issues/1457))
 - **Angela Camila Tite Haro** 💻 Filter keywords on display ([#1458](https://github.com/RoBorregos/home2/issues/1458))
 - **Mario Casas Donjuan** 💻 Voice recognition ([#1459](https://github.com/RoBorregos/home2/issues/1459))
+- **Luis Benvenuto** 💻 TDP fix ([#1481](https://github.com/RoBorregos/home2/issues/1481))
 
 <!-- /spotlight -->
 
@@ -38,7 +39,7 @@ Status legend:
 
 **3/6 tasks done (50%)** · P0: 0/1.
 
-This sprint focused on delivering documentation tasks for the Human-Robot Interaction area. The team successfully completed the TDP sections for speech, NLP, and display. Meanwhile, the critical P0 task for non-expert users remains pending, along with the GPSR model integration and the confidence-calibrated clarification policy.
+This sprint focused on delivering documentation and interaction features for the HRI area. The team successfully completed the TDP sections for speech, NLP, and display. Meanwhile, the P0 task regarding non-expert users and other backlog items remain pending.
 
 **Done:**
 
