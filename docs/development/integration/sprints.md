@@ -40,7 +40,7 @@ Status legend:
 
 **6/10 tasks done (60%)** · P0: 1/2.
 
-Sprint 4 for Integration aimed to deliver key tasks including the laundry task manager and various TDP components, all of which were successfully completed alongside documentation updates. However, the critical P0 non-expert users experiment remains pending, while repo cleanup, the TDP video, and speech dialog improvements are still in progress or backlog.
+Sprint 4 focused on delivering key integration tasks and documentation. The team successfully completed the P0 Laundry task manager along with multiple TDP and documentation updates. The P0 non-expert users experiment remains pending, while tasks like clean repos and the TDP video are still in progress.
 
 **Done:**
 

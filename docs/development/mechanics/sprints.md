@@ -45,7 +45,7 @@ Status legend:
 
 **7/13 tasks done (54%)**.
 
-Mechanics Sprint 4 successfully delivered the base expansion, gripper mechanism machining, gripper soft patterns definition, and TDP omnibase updates. The battery drawer is currently in testing, while tasks such as updating the BOM, learning Altair Inspire, migrating assemblies, and updating GrabCAD remain in progress.
+Sprint 4 focused on advancing the mechanical design and documentation for the robotics team. The team successfully machined the gripper mechanism, defined its pattern percentages, expanded the current base, and completed the omnibase TDP contributions. Pending items include updating the BOM, learning Altair Inspire, and migrating the OnShape assembly to SolidWorks.
 
 **Done:**
 

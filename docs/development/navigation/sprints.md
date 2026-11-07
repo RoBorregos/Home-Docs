@@ -17,7 +17,12 @@ Status legend:
 
 ### Sprint plan
 
-8 tasks planned for this sprint.
+10 tasks planned for this sprint.
+
+**Done:**
+
+- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347))
 
 **Review:**
 
@@ -25,22 +30,19 @@ Status legend:
 
 **Testing:**
 
-- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
 - **Jared AlPa** 💻 Rescue the unmerged laundry nav work (P0, [#1196](https://github.com/RoBorregos/home2/issues/1196))
 
 **In Progress:**
 
 - **Jasiel Aldana Palacios** 💻 Look for ways to improve navigation in unmapped areas. (P2, [#1198](https://github.com/RoBorregos/home2/issues/1198))
-- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347))
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
 - **Angela Camila Tite Haro** 🔍 Investigate and implement a simulation of the current navigation stack on Unitree G1 ([#1463](https://github.com/RoBorregos/home2/issues/1463))
+- **Angela Camila Tite Haro** 💻 Add motion planning in Nav UI ([#1482](https://github.com/RoBorregos/home2/issues/1482))
 
 **Todo:**
 
 - **Angela Camila Tite Haro** 🔧 Review the follow person feature and either fix or finish it. (P2, [#1197](https://github.com/RoBorregos/home2/issues/1197))
-
-**Backlog:**
-
-- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
+- **Jeremy Martino** 💻 odrive_dashboard: receiver thread dies on USB disconnect and never reconnects ([#1485](https://github.com/RoBorregos/home2/issues/1485))
 
 <!-- /spotlight -->
 
@@ -54,7 +56,7 @@ Status legend:
 
 **4/5 tasks done (80%)**.
 
-Sprint 4 for Navigation focused on writing the Technical Description Paper (TDP) sections. The team successfully delivered the nav stack, omnibase, semantic navigation, approach planner, limitations, future work, and annex sections. Only the navigation experiments and metrics remain in progress, specifically pending real-robot trials while simulation results are completed.
+This navigation sprint focused on writing multiple sections of the TDP. The team successfully delivered the nav stack, omnibase, semantic navigation, approach planner, limitations, future work, and annex sections. Meanwhile, the nav experiments and metrics task remains in progress, with simulation results completed but real-robot trials still pending.
 
 **Done:**
 

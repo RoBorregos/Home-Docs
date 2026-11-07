@@ -36,7 +36,7 @@ Status legend:
 
 **5/6 tasks done (83%)** · P0: 2/3.
 
-This sprint focused on hardware maintenance, documentation, and technical reporting. The team successfully investigated FRIDA battery issues, crimped the CAN port pins, and completed all documentation tasks, including the TDP Omnibase section and custom base Home-Docs. The high-priority documentation for new PCB developments for FRIDA remains pending in the backlog.
+This sprint focused on hardware maintenance, documentation, and the FRIDA battery issues. The team successfully crimped the CAN port pins, investigated the FRIDA battery pack, and completed several documentation tasks including the custom omnibase and TDP scientific contributions. Meanwhile, documenting new PCB developments for FRIDA remains pending in the backlog.
 
 **Done:**
 
