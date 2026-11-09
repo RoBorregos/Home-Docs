@@ -5,7 +5,7 @@ title: "Pick and Place"
 # Pick and Place
 
 !!! info "Synced from home2"
-    Generated from [`home2/manipulation/packages/pick_and_place/README.md`](https://github.com/RoBorregos/home2/blob/20c6c71aef2dffcc02fa4c8173fe8985493e060d/manipulation/packages/pick_and_place/README.md) @ `20c6c71` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
+    Generated from [`home2/manipulation/packages/pick_and_place/README.md`](https://github.com/RoBorregos/home2/blob/8a999884c74a4d6da9c52bd32df14adf79e6ee6c/manipulation/packages/pick_and_place/README.md) @ `8a99988` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
 
 The manipulation task layer. One node, `manipulation_core`, accepts a task (pick, place, pour),
 runs it start to finish, and reports success. It owns no motion planning and no perception of its
@@ -115,6 +115,9 @@ pick_and_place/
 │   ├── utils/                   grasp + collision helpers shared with perception_3d
 │   ├── keyboard_input.py        operator TUI
 │   ├── pick_benchmark.py        success-rate harness
+│   ├── experiment_trial.py      one benchmark step per call, without prompts
+│   ├── generate_scenes.py       fixed clutter scenes for the benchmark
+│   ├── scene_overlay.py         live camera over a saved scene, on port 8090
 │   ├── manipulation_client.py   RViz clicked-point bridge
 │   └── fix_position_to_plane.py separate node: where to stand for a surface
 └── test/
@@ -203,7 +206,7 @@ Rim, bowl and peak are one algorithm with three parameter sets. The descent dist
 
 ## Configuration
 
-Every tuned number lives in [`config/pick_profiles.yaml`](https://github.com/RoBorregos/home2/blob/20c6c71aef2dffcc02fa4c8173fe8985493e060d/manipulation/packages/pick_and_place/config/pick_profiles.yaml) — pre-grasp
+Every tuned number lives in [`config/pick_profiles.yaml`](https://github.com/RoBorregos/home2/blob/8a999884c74a4d6da9c52bd32df14adf79e6ee6c/manipulation/packages/pick_and_place/config/pick_profiles.yaml) — pre-grasp
 heights, descent distances and speeds, gripper settle times, and the flat strategy's contact-force
 thresholds. Retuning is a YAML edit, not a code change.
 
@@ -245,8 +248,14 @@ Operator tools:
 ```bash
 ros2 run pick_and_place keyboard_input.py                      # menu-driven pick/place/pour
 ros2 run pick_and_place pick_benchmark.py --mode flat --trials 10
+ros2 run pick_and_place pick_benchmark.py --mode object --method geometric --objects apple --place
+ros2 run pick_and_place experiment_trial.py pick --method gpd --object apple
+ros2 run pick_and_place generate_scenes.py
+ros2 run pick_and_place scene_overlay.py --scene 1
 ros2 run pick_and_place manipulation_client.py                 # pick an RViz clicked point
 ```
+
+`pick_method` on `manipulation_core` selects the method for benchmarks: `auto` is the normal behavior, `gpd` forces GPD, and `geometric` turns off the GPD fallback through `PickRequest.gpd_fallback`, which overrides `fallback_to_gpd` in the profile. Flat, rim, bowl and peak picks keep their strategy with any value. The benchmark tools return it to `auto`. Results are in `manipulation/benchmarks/`.
 
 Live phase state is published as action feedback (`execution_state`), e.g. `flat pose=0 alt=2/descend`.
 
