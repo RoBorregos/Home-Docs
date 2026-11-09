@@ -5,7 +5,7 @@ title: "Vision"
 # Vision
 
 !!! info "Synced from home2"
-    Generated from [`home2/vision/README.md`](https://github.com/RoBorregos/home2/blob/1f892d9f34418964f19af0b928ac1d49b485108b/vision/README.md) @ `1f892d9` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
+    Generated from [`home2/vision/README.md`](https://github.com/RoBorregos/home2/blob/700cfbd57c27de7fa52a54d8724fad24ed633578/vision/README.md) @ `700cfbd` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
 
 Vision turns the ZED's RGB-D stream into everything the task managers need to reason about
 the world: object detections with 3D points, people with poses, gestures and clothing
@@ -134,9 +134,10 @@ must therefore never start two `image_orienter` instances — the per-task launc
 | `embedding_box_proposer` | `yoloe-11l-seg-pf.pt` | `yolo_e` | 0.25 |
 | `embedding_gallery` | DINOv2 ViT-B/14 + `gallery/` | `embedding` | per-object similarity floor |
 
-`ObjectDetect2D` runs the models listed under `models:` in `config/parameters.yaml`
-(currently `yolo_finetuned` and `embedding_gallery`). `embedding_box_proposer` is not a
-detector on its own: `embedding_gallery` calls it to get class-agnostic boxes.
+`ObjectDetect2D` loads the models listed under `models:` in `config/parameters.yaml`
+(currently `yolo_finetuned`). `embedding_gallery` runs in its own node, `GalleryDetect2D`.
+`embedding_box_proposer` is not a detector on its own: `embedding_gallery` calls it to get
+class-agnostic boxes.
 
 Adding a model with the same architecture is a two-step change: drop the `.pt` beside
 `registry.py` and add one dict entry. A model with conflicting dependencies, or one needing
@@ -212,11 +213,18 @@ handles projection and visualization. `vision_general` has the same pattern in
 Each node has a fixed activation topic (`/vision/object_detector/active`,
 `/vision/zero_shot_detector/active`) so a task manager can idle the GPU between steps.
 
+The gallery process is not started by default. Start it explicitly with:
+
+```bash
+ros2 launch object_detector_2d object_detector_node.launch.py enable_gallery:=true
+```
+
+
 #### Adding an object to the gallery (few-shot)
 
 `yolo_finetuned` only knows its training classes. Other objects can be added from photos, with
 no retraining: YOLOE proposes boxes and DINOv2 matches each crop against a per-object gallery.
-It runs alongside `yolo_finetuned` (both are listed in `config/parameters.yaml`).
+It runs alongside `yolo_finetuned`.
 
 Put 10-30 photos in
 `vision/packages/object_detector_2d/scripts/embedding_gallery/gallery_photos/<object_name>/`,
@@ -227,8 +235,8 @@ cd /workspace/src/vision/packages/object_detector_2d/scripts/embedding_gallery
 ./add_object.sh <object_name>    # then restart ObjectDetect2D
 ```
 
-Options, accuracy and troubleshooting: [`embedding_gallery/README.md`](https://github.com/RoBorregos/home2/blob/1f892d9f34418964f19af0b928ac1d49b485108b/vision/packages/object_detector_2d/scripts/embedding_gallery/README.md).
-The benchmark behind the defaults: [`benchmarks/embedding_gallery/`](https://github.com/RoBorregos/home2/blob/1f892d9f34418964f19af0b928ac1d49b485108b/vision/benchmarks/embedding_gallery/README.md).
+Options, accuracy and troubleshooting: [`embedding_gallery/README.md`](https://github.com/RoBorregos/home2/blob/700cfbd57c27de7fa52a54d8724fad24ed633578/vision/packages/object_detector_2d/scripts/embedding_gallery/README.md).
+The benchmark behind the defaults: [`benchmarks/embedding_gallery/`](https://github.com/RoBorregos/home2/blob/700cfbd57c27de7fa52a54d8724fad24ed633578/vision/benchmarks/embedding_gallery/README.md).
 
 ### `vision_general`
 
