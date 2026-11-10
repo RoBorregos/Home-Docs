@@ -257,6 +257,10 @@
         <li><span class="member-year">2026</span> HRI, Integration</li>
     </ul>
     <img src="/assets/members/Fotos_members/LuisRosales.jpg" alt="Luis Alvaro Rosales Salazar"/>
+</div>
+
+<div class="grid-cell">
+    <h3>
         Marco Galindo
     </h3>
     <ul>
