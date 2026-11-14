@@ -30,6 +30,18 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**In Progress:**
+
+- **Fernando Hernandez** 💻 Research the use of behavior trees instead of FSMs in TM. ([#1500](https://github.com/RoBorregos/home2/issues/1500))
+
+**Not started:** 4 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

@@ -35,6 +35,34 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Jeremy Martino** 💻 Add FRIDA CAD to a new repo ([#1469](https://github.com/RoBorregos/home2/issues/1469))
+- **Jeremy Martino** 💻 Add FRIDA CAD to a new repo (P1, [#1470](https://github.com/RoBorregos/home2/issues/1470))
+
+**Testing:**
+
+- **Gael Infante Lozano** 💻 Check battery drawer ([#1403](https://github.com/RoBorregos/home2/issues/1403))
+
+**In Progress:**
+
+- **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base ([#1272](https://github.com/RoBorregos/home2/issues/1272))
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator ([#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Bárbara Alejandra Novau Martínez** 💻 Define specific areas of opportunities of current grippper version. ([#1497](https://github.com/RoBorregos/home2/issues/1497))
+
+**Updates:**
+
+- **Jeremy Martino** 💻 Add FRIDA CAD to a new repo ([#1469](https://github.com/RoBorregos/home2/issues/1469)): 1 new comment
+- **Jeremy Martino** 💻 Add FRIDA CAD to a new repo (P1, [#1470](https://github.com/RoBorregos/home2/issues/1470)): 1 new comment
+
+**Not started:** 4 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

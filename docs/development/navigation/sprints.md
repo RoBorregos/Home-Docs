@@ -44,6 +44,39 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347))
+- **Angela Camila Tite Haro** 🔍 Investigate and implement a simulation of the current navigation stack on Unitree G1 ([#1463](https://github.com/RoBorregos/home2/issues/1463))
+
+**Review:**
+
+- **Angela Camila Tite Haro**, **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
+
+**Testing:**
+
+- **Jasiel Aldana Palacios** 💻 Look for ways to improve navigation in unmapped areas. (P2, [#1198](https://github.com/RoBorregos/home2/issues/1198))
+
+**In Progress:**
+
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
+- **Angela Camila Tite Haro** 💻 Add motion planning in Nav UI ([#1482](https://github.com/RoBorregos/home2/issues/1482))
+- **Jeremy Martino** 💻 odrive_dashboard: receiver thread dies on USB disconnect and never reconnects ([#1485](https://github.com/RoBorregos/home2/issues/1485))
+
+**Updates:**
+
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318)): The team tested a hybrid mapping approach using RTAB-Map with the ZED camera to successfully add solid table obstacles into the static map.
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347)): Navigation tests on the 4-wheel base showed reliable goal reaching, an open lab corridor, and faster, smoother movement without limp-mode workarounds.
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01
