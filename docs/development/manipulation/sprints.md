@@ -33,6 +33,18 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Champtiago** 🔧 Reject concurrent manipulation goals (P2, [#1438](https://github.com/RoBorregos/home2/issues/1438))
+
+**Not started:** 5 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

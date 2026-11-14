@@ -40,6 +40,34 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Marco Galindo** 💻 Run embedding gallery in its own detector node ([#1449](https://github.com/RoBorregos/home2/issues/1449))
+- **Arturo Cabrera** 💻 Run zed without router ([#1453](https://github.com/RoBorregos/home2/issues/1453))
+- **Fernando Hernandez** 💻 Research LFM2.5-VL por pose detection ([#1472](https://github.com/RoBorregos/home2/issues/1472))
+- **Fernando Hernandez** 💻 Optimize vision ([#1473](https://github.com/RoBorregos/home2/issues/1473))
+
+**Review:**
+
+- **Juan Pablo Gutierrez**, **Fernando Hernandez**, **Angela Camila Tite Haro**, **Marco Galindo** 🔍 Semantic MAP ([#1268](https://github.com/RoBorregos/home2/issues/1268))
+
+**In Progress:**
+
+- **Mario Casas Donjuan** 💻 Integrate talk detection into follow face ([#1431](https://github.com/RoBorregos/home2/issues/1431))
+
+**Updates:**
+
+- **Marco Galindo** 💻 Run embedding gallery in its own detector node ([#1449](https://github.com/RoBorregos/home2/issues/1449)): The embedding gallery detector node task was completed successfully.
+- **Arturo Cabrera** 💻 Run zed without router ([#1453](https://github.com/RoBorregos/home2/issues/1453)): ZED no longer crashes during image building, and further testing of vision with and without the router is needed.
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01
