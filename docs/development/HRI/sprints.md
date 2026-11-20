@@ -28,6 +28,38 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Luis Benvenuto** 💻 Clean HRIHand ([#1489](https://github.com/RoBorregos/home2/issues/1489))
+
+**In Progress:**
+
+- **Andrés Rodríguez Cantú** 💻 Test confirm (P1, [#1152](https://github.com/RoBorregos/home2/issues/1152))
+- **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks (P0, [#1456](https://github.com/RoBorregos/home2/issues/1456))
+- **Angela Camila Tite Haro** 💻 Filter keywords on display ([#1458](https://github.com/RoBorregos/home2/issues/1458))
+
+**Not started:** 6 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-11-02:week-2 -->
+
+### Week 2 · 2026-11-14 → 2026-11-20
+
+**In Progress:**
+
+- **Andrés Rodríguez Cantú** 💻 Test confirm (P1, [#1152](https://github.com/RoBorregos/home2/issues/1152))
+- **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks (P0, [#1456](https://github.com/RoBorregos/home2/issues/1456))
+- **Angela Camila Tite Haro** 💻 Filter keywords on display ([#1458](https://github.com/RoBorregos/home2/issues/1458))
+
+**Not started:** 6 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

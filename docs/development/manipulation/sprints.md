@@ -33,6 +33,51 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Champtiago** 🔧 Reject concurrent manipulation goals (P2, [#1438](https://github.com/RoBorregos/home2/issues/1438))
+- **LARC** 💻 Correct ZED calibration ([#1468](https://github.com/RoBorregos/home2/issues/1468))
+
+**Review:**
+
+- **Jared AlPa** 💻 Pick flat optimization ([#1464](https://github.com/RoBorregos/home2/issues/1464))
+
+**Testing:**
+
+- **Champtiago** 💻 Pick plate ([#1465](https://github.com/RoBorregos/home2/issues/1465))
+
+**In Progress:**
+
+- **Fernando Hernandez** 💻 move_group segfaults while serializing the octomap during place ([#1447](https://github.com/RoBorregos/home2/issues/1447))
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-11-02:week-2 -->
+
+### Week 2 · 2026-11-14 → 2026-11-20
+
+**Done this week:**
+
+- **Marco Galindo** 💻 Shelf P&P optimization ([#1467](https://github.com/RoBorregos/home2/issues/1467))
+
+**Review:**
+
+- **Jared AlPa** 💻 Pick flat optimization ([#1464](https://github.com/RoBorregos/home2/issues/1464))
+
+**Testing:**
+
+- **Champtiago** 💻 Pick plate ([#1465](https://github.com/RoBorregos/home2/issues/1465))
+
+**In Progress:**
+
+- **Fernando Hernandez** 💻 move_group segfaults while serializing the octomap during place ([#1447](https://github.com/RoBorregos/home2/issues/1447))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

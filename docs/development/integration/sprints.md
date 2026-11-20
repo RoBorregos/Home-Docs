@@ -30,6 +30,36 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**In Progress:**
+
+- **Jared AlPa** 💻 Optimize frida interfaces ([#1460](https://github.com/RoBorregos/home2/issues/1460))
+- **Fernando Hernandez** 💻 Research the use of behavior trees instead of FSMs in TM. ([#1500](https://github.com/RoBorregos/home2/issues/1500))
+
+**Not started:** 2 tasks.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-11-02:week-2 -->
+
+### Week 2 · 2026-11-14 → 2026-11-20
+
+**Done this week:**
+
+- **Angela Camila Tite Haro** 💻 Remove heavy files ([#1505](https://github.com/RoBorregos/home2/issues/1505))
+
+**In Progress:**
+
+- **Jared AlPa** 💻 Optimize frida interfaces ([#1460](https://github.com/RoBorregos/home2/issues/1460))
+- **Fernando Hernandez** 💻 Research the use of behavior trees instead of FSMs in TM. ([#1500](https://github.com/RoBorregos/home2/issues/1500))
+
+**Not started:** 2 tasks.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

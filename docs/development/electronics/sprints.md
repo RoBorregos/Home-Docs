@@ -26,6 +26,32 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-11-02:week-2 -->
+
+### Week 2 · 2026-11-14 → 2026-11-20
+
+**Done this week:**
+
+- **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477))
+- **Champtiago**, **Jasiel Aldana Palacios**, **LARC** 💻 Review FRIDA’s emergency stop button: xArm 6 not initializing (P0, [#1504](https://github.com/RoBorregos/home2/issues/1504))
+
+**Updates:**
+
+- **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477)): The team decided to add a USB hub instead of repairing the Orin to avoid repair uncertainties and risks.
+- **Champtiago**, **Jasiel Aldana Palacios**, **LARC** 💻 Review FRIDA’s emergency stop button: xArm 6 not initializing (P0, [#1504](https://github.com/RoBorregos/home2/issues/1504)): The damaged emergency stop button preventing the xArm 6 from initializing was replaced, and the arm now initializes correctly.
+
+**Not started:** 1 task.
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

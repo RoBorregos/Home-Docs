@@ -44,6 +44,53 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:week-1 -->
+
+### Week 1 · 2026-11-02 → 2026-11-13
+
+**Done this week:**
+
+- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347))
+- **Angela Camila Tite Haro** 🔍 Investigate and implement a simulation of the current navigation stack on Unitree G1 ([#1463](https://github.com/RoBorregos/home2/issues/1463))
+
+**Testing:**
+
+- **Angela Camila Tite Haro**, **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
+- **Angela Camila Tite Haro** 🔧 Review the follow person feature and either fix or finish it. (P2, [#1197](https://github.com/RoBorregos/home2/issues/1197))
+- **Jasiel Aldana Palacios** 💻 Look for ways to improve navigation in unmapped areas. (P2, [#1198](https://github.com/RoBorregos/home2/issues/1198))
+- **Jeremy Martino** 💻 odrive_dashboard: receiver thread dies on USB disconnect and never reconnects ([#1485](https://github.com/RoBorregos/home2/issues/1485))
+
+**In Progress:**
+
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
+- **Angela Camila Tite Haro** 💻 Add motion planning in Nav UI ([#1482](https://github.com/RoBorregos/home2/issues/1482))
+
+**Updates:**
+
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318)): We tested a hybrid mapping approach merging ZED depth grids into slam_toolbox maps, and verified the optimal footprint radius successfully.
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347)): Navigation performance testing with the 4-wheel base on FRIDA showed reliable goal-reaching, open corridors, and smoother movement.
+
+<!-- /spotlight -->
+
+<!-- spotlight:2026-11-02:week-2 -->
+
+### Week 2 · 2026-11-14 → 2026-11-20
+
+**Testing:**
+
+- **Angela Camila Tite Haro**, **Jeremy Martino** 🔍 Research motion planning in navigation (P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
+- **Angela Camila Tite Haro** 🔧 Review the follow person feature and either fix or finish it. (P2, [#1197](https://github.com/RoBorregos/home2/issues/1197))
+- **Jasiel Aldana Palacios** 💻 Look for ways to improve navigation in unmapped areas. (P2, [#1198](https://github.com/RoBorregos/home2/issues/1198))
+- **Jeremy Martino** 💻 odrive_dashboard: receiver thread dies on USB disconnect and never reconnects ([#1485](https://github.com/RoBorregos/home2/issues/1485))
+
+**In Progress:**
+
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
+- **Angela Camila Tite Haro** 💻 Add motion planning in Nav UI ([#1482](https://github.com/RoBorregos/home2/issues/1482))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01
