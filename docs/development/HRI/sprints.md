@@ -53,10 +53,11 @@ Status legend:
 **In Progress:**
 
 - **Andrés Rodríguez Cantú** 💻 Test confirm (P1, [#1152](https://github.com/RoBorregos/home2/issues/1152))
+- **Andrés Rodríguez Cantú** 💻 Hotwords locations (P1, [#1440](https://github.com/RoBorregos/home2/issues/1440))
 - **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks (P0, [#1456](https://github.com/RoBorregos/home2/issues/1456))
 - **Angela Camila Tite Haro** 💻 Filter keywords on display ([#1458](https://github.com/RoBorregos/home2/issues/1458))
 
-**Not started:** 6 tasks.
+**Not started:** 5 tasks.
 
 <!-- /spotlight -->
 

@@ -40,15 +40,15 @@ Status legend:
 
 **Done this week:**
 
+- **Jasiel Aldana Palacios**, **Becca-731** 💻 Add missing items to the electronics BOM ([#1455](https://github.com/RoBorregos/home2/issues/1455))
 - **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477))
 - **Champtiago**, **Jasiel Aldana Palacios**, **LARC** 💻 Review FRIDA’s emergency stop button: xArm 6 not initializing (P0, [#1504](https://github.com/RoBorregos/home2/issues/1504))
 
 **Updates:**
 
-- **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477)): The team decided to add a USB hub instead of repairing the Orin to avoid repair uncertainties and risks.
-- **Champtiago**, **Jasiel Aldana Palacios**, **LARC** 💻 Review FRIDA’s emergency stop button: xArm 6 not initializing (P0, [#1504](https://github.com/RoBorregos/home2/issues/1504)): The damaged emergency stop button preventing the xArm 6 from initializing was replaced, and the arm now initializes correctly.
-
-**Not started:** 1 task.
+- **Jasiel Aldana Palacios**, **Becca-731** 💻 Add missing items to the electronics BOM ([#1455](https://github.com/RoBorregos/home2/issues/1455)): The electronics BOM has been successfully completed and purchased.
+- **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477)): The team decided to use a USB hub instead of repairing the Orin to avoid repair uncertainties and risks.
+- **Champtiago**, **Jasiel Aldana Palacios**, **LARC** 💻 Review FRIDA’s emergency stop button: xArm 6 not initializing (P0, [#1504](https://github.com/RoBorregos/home2/issues/1504)): The damaged emergency stop button was replaced, allowing the xArm 6 to power on and initialize correctly.
 
 <!-- /spotlight -->
 
