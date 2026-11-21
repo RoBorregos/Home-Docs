@@ -72,6 +72,10 @@ Status legend:
 
 - **Bárbara Alejandra Novau Martínez** 💻 Define specific areas of opportunities of current grippper version. ([#1497](https://github.com/RoBorregos/home2/issues/1497))
 
+**Review:**
+
+- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino** 💻 Make new URDF for FRIDA ([#1461](https://github.com/RoBorregos/home2/issues/1461))
+
 **Testing:**
 
 - **Gael Infante Lozano** 💻 Check battery drawer ([#1403](https://github.com/RoBorregos/home2/issues/1403))
@@ -81,13 +85,12 @@ Status legend:
 - **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base ([#1272](https://github.com/RoBorregos/home2/issues/1272))
 - **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator ([#1274](https://github.com/RoBorregos/home2/issues/1274))
 - **Bárbara Alejandra Novau Martínez** 💻 Organize CAD Files and upload FRIDA Assembly to GitHub ([#1462](https://github.com/RoBorregos/home2/issues/1462))
+- **Jeremy Martino**, **LARC** 💻 Laser cut MDF covers for current base and paint. ([#1498](https://github.com/RoBorregos/home2/issues/1498))
 - **LARC** 💻 Print gear test using nylon filament. ([#1499](https://github.com/RoBorregos/home2/issues/1499))
 
 **Updates:**
 
-- **Bárbara Alejandra Novau Martínez** 💻 Define specific areas of opportunities of current grippper version. ([#1497](https://github.com/RoBorregos/home2/issues/1497)): The current gripper version showed poor grip with bare TPU and heavy or thin objects, along with deformation over time.
-
-**Not started:** 2 tasks.
+- **Bárbara Alejandra Novau Martínez** 💻 Define specific areas of opportunities of current grippper version. ([#1497](https://github.com/RoBorregos/home2/issues/1497)): Current gripper issues include poor grip on bare TPU, deformation over time, and difficulty handling heavy or thin objects.
 
 <!-- /spotlight -->
 
