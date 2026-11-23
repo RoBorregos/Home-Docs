@@ -5,7 +5,7 @@ title: "Vision"
 # Vision
 
 !!! info "Synced from home2"
-    Generated from [`home2/vision/README.md`](https://github.com/RoBorregos/home2/blob/a8637ea057fbc81247908e29489b597d0289b272/vision/README.md) @ `a8637ea` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
+    Generated from [`home2/vision/README.md`](https://github.com/RoBorregos/home2/blob/26d99264701f4f2fef2451011a0de8bd59ff1ec2/vision/README.md) @ `26d9926` by `scripts/sync_home2_readmes.py`. Edit the README in home2 instead of this page.
 
 Vision turns the ZED's RGB-D stream into everything the task managers need to reason about
 the world: object detections with 3D points, people with poses, gestures and clothing
@@ -45,7 +45,7 @@ home2/
 │   │   │   ├── object_detector_node.launch.py       # image_orienter + ObjectDetect2D
 │   │   │   ├── zero_shot_object_detector_node.launch.py
 │   │   │   └── object_detector_combined.launch.py   # both detectors at once
-│   │   ├── models/                        # Custom weights (robocup2026_v1.pt, tmr2025.pt)
+│   │   ├── models/                        # Custom weights (robocup2026_v1.pt)
 │   │   └── scripts/
 │   │       ├── base_detector_node.py      # Shared base: params, TF, 3D projection, markers
 │   │       ├── object_detector_node.py    # Runs N YOLO models, IoU-dedupes across them
@@ -236,8 +236,8 @@ cd /workspace/src/vision/packages/object_detector_2d/scripts/embedding_gallery
 ./add_object.sh <object_name>    # then restart ObjectDetect2D
 ```
 
-Options, accuracy and troubleshooting: [`embedding_gallery/README.md`](https://github.com/RoBorregos/home2/blob/a8637ea057fbc81247908e29489b597d0289b272/vision/packages/object_detector_2d/scripts/embedding_gallery/README.md).
-The benchmark behind the defaults: [`benchmarks/embedding_gallery/`](https://github.com/RoBorregos/home2/blob/a8637ea057fbc81247908e29489b597d0289b272/vision/benchmarks/embedding_gallery/README.md).
+Options, accuracy and troubleshooting: [`embedding_gallery/README.md`](https://github.com/RoBorregos/home2/blob/26d99264701f4f2fef2451011a0de8bd59ff1ec2/vision/packages/object_detector_2d/scripts/embedding_gallery/README.md).
+The benchmark behind the defaults: [`benchmarks/embedding_gallery/`](https://github.com/RoBorregos/home2/blob/26d99264701f4f2fef2451011a0de8bd59ff1ec2/vision/benchmarks/embedding_gallery/README.md).
 
 ### `vision_general`
 
