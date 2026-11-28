@@ -78,6 +78,28 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:results -->
+
+### Sprint results
+
+**5/6 tasks done (83%)**.
+
+This sprint focused on manipulation tasks, successfully delivering concurrent goal rejection, octomap segfault fixes, pick and shelf optimizations, and ZED calibration. Meanwhile, the pick plate task remains pending in testing.
+
+**Done:**
+
+- **Champtiago** 🔧 Reject concurrent manipulation goals (P2, [#1438](https://github.com/RoBorregos/home2/issues/1438))
+- **Fernando Hernandez** 💻 move_group segfaults while serializing the octomap during place ([#1447](https://github.com/RoBorregos/home2/issues/1447))
+- **Jared AlPa** 💻 Pick flat optimization ([#1464](https://github.com/RoBorregos/home2/issues/1464))
+- **Marco Galindo** 💻 Shelf P&P optimization ([#1467](https://github.com/RoBorregos/home2/issues/1467))
+- **LARC** 💻 Correct ZED calibration ([#1468](https://github.com/RoBorregos/home2/issues/1468))
+
+**Carried over:**
+
+- **Champtiago** 💻 Pick plate (Testing, [#1465](https://github.com/RoBorregos/home2/issues/1465))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

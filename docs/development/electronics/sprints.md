@@ -52,6 +52,22 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:results -->
+
+### Sprint results
+
+**3/3 tasks done (100%)** · P0: 1/1.
+
+Sprint 5 aimed to update the electronics BOM, resolve the Orin's USB port issue, and fix FRIDA's emergency stop button. The team successfully completed all planned tasks: the BOM was finished and purchased, a USB hub was added to the Orin, and the damaged emergency stop button was replaced to allow the xArm 6 to initialize. No items remain pending.
+
+**Done:**
+
+- **Jasiel Aldana Palacios**, **Becca-731** 💻 Add missing items to the electronics BOM ([#1455](https://github.com/RoBorregos/home2/issues/1455))
+- **Jasiel Aldana Palacios** 💻 Identify the Orin's USB port model and find where to replace it ([#1477](https://github.com/RoBorregos/home2/issues/1477))
+- **Champtiago**, **Jasiel Aldana Palacios**, **LARC** 💻 Review FRIDA’s emergency stop button: xArm 6 not initializing (P0, [#1504](https://github.com/RoBorregos/home2/issues/1504))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01
