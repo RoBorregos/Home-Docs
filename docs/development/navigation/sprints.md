@@ -91,6 +91,32 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:results -->
+
+### Sprint results
+
+**5/10 tasks done (50%)** · P0: 3/3.
+
+Sprint 5 focused on core navigation improvements, successfully delivering the Nav Refactor, rescue of laundry nav work, 4-wheel base performance testing, Unitree G1 simulation, and Nav UI motion planning. However, motion planning research and the follow person feature remain under review, while mapping improvements and the odrive dashboard issue are still in testing.
+
+**Done:**
+
+- **Jeremy Martino** 💻 Nav Refactor (P0, [#1194](https://github.com/RoBorregos/home2/issues/1194))
+- **Jared AlPa** 💻 Rescue the unmerged laundry nav work (P0, [#1196](https://github.com/RoBorregos/home2/issues/1196))
+- **Jeremy Martino** 💻 Test navigation performance with 4-wheel base (P0, [#1347](https://github.com/RoBorregos/home2/issues/1347))
+- **Angela Camila Tite Haro** 🔍 Investigate and implement a simulation of the current navigation stack on Unitree G1 ([#1463](https://github.com/RoBorregos/home2/issues/1463))
+- **Angela Camila Tite Haro** 💻 Add motion planning in Nav UI ([#1482](https://github.com/RoBorregos/home2/issues/1482))
+
+**Carried over:**
+
+- **Angela Camila Tite Haro**, **Jeremy Martino** 🔍 Research motion planning in navigation (Review, P1, [#1190](https://github.com/RoBorregos/home2/issues/1190))
+- **Angela Camila Tite Haro** 🔧 Review the follow person feature and either fix or finish it. (Review, P2, [#1197](https://github.com/RoBorregos/home2/issues/1197))
+- **Jasiel Aldana Palacios** 💻 Look for ways to improve navigation in unmapped areas. (Testing, P2, [#1198](https://github.com/RoBorregos/home2/issues/1198))
+- **Jeremy Martino** 💻 Investigate ways to improve mapping (Testing, P1, [#1318](https://github.com/RoBorregos/home2/issues/1318))
+- **Jeremy Martino** 💻 odrive_dashboard: receiver thread dies on USB disconnect and never reconnects (Testing, [#1485](https://github.com/RoBorregos/home2/issues/1485))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

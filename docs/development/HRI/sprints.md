@@ -60,6 +60,33 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:results -->
+
+### Sprint results
+
+**7/11 tasks done (64%)**.
+
+The HRI sprint focused on enhancing communication, mapping references, and data extraction. Key deliverables included integrating the new GPSR model, adding hotwords locations, and filtering keywords on display. Meanwhile, tasks such as voice recognition and improving speech dialogs remain pending or under review.
+
+**Done:**
+
+- **Didi-121** 💻 clean map areas reference ([#1218](https://github.com/RoBorregos/home2/issues/1218))
+- **Luis Alvaro Rosales Salazar** 💻 Integrate new gpsr model ([#1382](https://github.com/RoBorregos/home2/issues/1382))
+- **Andrés Rodríguez Cantú** 💻 Hotwords locations ([#1440](https://github.com/RoBorregos/home2/issues/1440))
+- **Angela Camila Tite Haro** 💻 Filter keywords on display ([#1458](https://github.com/RoBorregos/home2/issues/1458))
+- **Luis Benvenuto** 💻 TDP fix ([#1481](https://github.com/RoBorregos/home2/issues/1481))
+- **Luis Benvenuto** 💻 Clean HRIHand ([#1489](https://github.com/RoBorregos/home2/issues/1489))
+- **Luis Benvenuto** 💻 Improve extract data ([#1523](https://github.com/RoBorregos/home2/issues/1523))
+
+**Carried over:**
+
+- **Andrés Rodríguez Cantú** 💻 Improve speech dialogs in tasks (Review, [#1456](https://github.com/RoBorregos/home2/issues/1456))
+- **Andrés Rodríguez Cantú** 💻 Test confirm (In Progress, [#1152](https://github.com/RoBorregos/home2/issues/1152))
+- **Luis Alvaro Rosales Salazar** 💻 Move euclidean distance to nav distance (In Progress, [#1457](https://github.com/RoBorregos/home2/issues/1457))
+- **Mario Casas Donjuan** 💻 Voice recognition (In Progress, [#1459](https://github.com/RoBorregos/home2/issues/1459))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

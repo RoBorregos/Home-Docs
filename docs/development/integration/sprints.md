@@ -60,6 +60,28 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:results -->
+
+### Sprint results
+
+**5/6 tasks done (83%)**.
+
+Integration Sprint 5 focused on optimizing system interfaces, cleaning files, and researching behavior trees. The team successfully delivered the task simulation harness, removed heavy files, fixed TDP, optimized frida interfaces, and completed the behavior tree research. Only the P2 task to improve time logging in TMs remains pending.
+
+**Done:**
+
+- **Jared AlPa** 💻 Optimize frida interfaces ([#1460](https://github.com/RoBorregos/home2/issues/1460))
+- **Luis Benvenuto** 💻 Fix TDP ([#1480](https://github.com/RoBorregos/home2/issues/1480))
+- **Fernando Hernandez** 💻 Research the use of behavior trees instead of FSMs in TM. ([#1500](https://github.com/RoBorregos/home2/issues/1500))
+- **Angela Camila Tite Haro** 💻 Remove heavy files ([#1505](https://github.com/RoBorregos/home2/issues/1505))
+- **Fernando Hernandez** 💻 Task simulation harness ([#1529](https://github.com/RoBorregos/home2/issues/1529))
+
+**Carried over:**
+
+- **Unassigned** 💻 Improve time logging in TMs (Todo, P2, no longer in a sprint, [#1160](https://github.com/RoBorregos/home2/issues/1160))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01

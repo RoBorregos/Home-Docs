@@ -91,6 +91,31 @@ Status legend:
 
 <!-- /spotlight -->
 
+<!-- spotlight:2026-11-02:results -->
+
+### Sprint results
+
+**2/9 tasks done (22%)**.
+
+Mechanics Sprint 5 focused on CAD designs, testing, and documentation. The team successfully added the FRIDA CAD to a new repo and defined specific gripper opportunities. Meanwhile, tasks like the new omni base CAD, elevator design, battery drawer testing, and FRIDA URDF creation remain pending.
+
+**Done:**
+
+- **Jeremy Martino** 💻 Add FRIDA CAD to a new repo ([#1469](https://github.com/RoBorregos/home2/issues/1469))
+- **Bárbara Alejandra Novau Martínez** 💻 Define specific areas of opportunities of current grippper version. ([#1497](https://github.com/RoBorregos/home2/issues/1497))
+
+**Carried over:**
+
+- **Bárbara Alejandra Novau Martínez**, **Jeremy Martino** 💻 Make new URDF for FRIDA (Review, [#1461](https://github.com/RoBorregos/home2/issues/1461))
+- **Gael Infante Lozano** 💻 Check battery drawer (Testing, [#1403](https://github.com/RoBorregos/home2/issues/1403))
+- **Bárbara Alejandra Novau Martínez**, **LARC** 💻 Final details of CAD new omni base (In Progress, [#1272](https://github.com/RoBorregos/home2/issues/1272))
+- **LARC**, **Gael Infante Lozano** 💻 New CAD design of possible elevator (In Progress, [#1274](https://github.com/RoBorregos/home2/issues/1274))
+- **Bárbara Alejandra Novau Martínez** 💻 Organize CAD Files and upload FRIDA Assembly to GitHub (In Progress, [#1462](https://github.com/RoBorregos/home2/issues/1462))
+- **Jeremy Martino**, **LARC** 💻 Laser cut MDF covers for current base and paint. (In Progress, [#1498](https://github.com/RoBorregos/home2/issues/1498))
+- **LARC** 💻 Print gear test using nylon filament. (In Progress, [#1499](https://github.com/RoBorregos/home2/issues/1499))
+
+<!-- /spotlight -->
+
 <!-- sprint:2026-10-12 -->
 
 ## Sprint 4 · 2026-10-12 → 2026-11-01
